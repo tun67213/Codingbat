@@ -23,7 +23,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/arvindhvelrajan/Documents/GitHub/Codingbat",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -45,6 +47,7 @@
       <updated>1726019978301</updated>
       <workItem from="1726019979556" duration="65000" />
       <workItem from="1726020059935" duration="790000" />
+      <workItem from="1726048576862" duration="81000" />
     </task>
     <servers />
   </component>
