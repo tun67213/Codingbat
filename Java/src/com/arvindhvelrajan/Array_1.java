@@ -11,7 +11,7 @@ import static com.arvindhvelrajan.UI_Functions.*;
 public class Array_1
 {
 	/**
-	 * This function will print the class name, informing the user running main that this is the Warmup-1 module.
+	 * This function will print the class name, informing the user running main that this is the Array-1 module.
 	 */
 	public void welcome()
 	{

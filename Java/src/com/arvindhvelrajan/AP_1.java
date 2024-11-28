@@ -11,7 +11,7 @@ import static com.arvindhvelrajan.UI_Functions.*;
 public class AP_1
 {
 	/**
-	 * This function will print the class name, informing the user running main that this is the Warmup-1 module.
+	 * This function will print the class name, informing the user running main that this is the AP-1 module.
 	 */
 	public void welcome()
 	{
