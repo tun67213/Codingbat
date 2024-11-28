@@ -1,5 +1,7 @@
 package com.arvindhvelrajan;
 
+import java.util.Arrays;
+
 import static com.arvindhvelrajan.UI_Functions.*;
 
 /**
@@ -139,6 +141,117 @@ public class Array_3
 	 */
 	public void main(String[] args)
 	{
-		
+		welcome();
+		printFunction("maxSpan");
+		System.out.println("maxSpan([1, 2, 1, 1, 3]) --> " + maxSpan(new int[] {1, 2, 1, 1, 3}));
+		System.out.println("maxSpan([1, 4, 2, 1, 4, 1, 4]) --> " + maxSpan(new int[] {1, 4, 2, 1, 4, 1, 4}));
+		System.out.println("maxSpan([1, 4, 2, 1, 4, 4, 4]) --> " + maxSpan(new int[] {1, 4, 2, 1, 4, 1, 4}));
+		System.out.println("maxSpan([3, 3, 3]) --> " + maxSpan(new int[] {3, 3, 3}));
+		System.out.println("maxSpan([3, 9, 3]) --> " + maxSpan(new int[] {3, 9, 3}));
+		System.out.println("maxSpan([3, 9, 9]) --> " + maxSpan(new int[] {3, 9, 9}));
+		System.out.println("maxSpan([3, 9]) --> " + maxSpan(new int[] {3, 9}));
+		System.out.println("maxSpan([3, 3]) --> " + maxSpan(new int[] {3, 3}));
+		System.out.println("maxSpan([]) --> " + maxSpan(new int[] {}));
+		System.out.println("maxSpan([1]) --> " + maxSpan(new int[] {1}));
+		printFunction("fix34");
+		System.out.println("fix34([1, 3, 1, 4]) --> " + Arrays.toString(fix34(new int[] {1, 3, 1, 4})));
+		System.out.println("fix34([1, 3, 1, 4, 4, 3, 1]) --> " + Arrays.toString(fix34(new int[] {1, 3, 1, 4, 4, 3, 1})));
+		System.out.println("fix34([3, 2, 2, 4]) --> " + Arrays.toString(fix34(new int[] {3, 2, 2, 4})));
+		System.out.println("fix34([3, 2, 3, 2, 4, 4]) --> " + Arrays.toString(fix34(new int[] {3, 2, 3, 2, 4, 4})));
+		System.out.println("fix34([2, 3, 2, 3, 2, 4, 4]) --> " + Arrays.toString(fix34(new int[] {2, 3, 2, 3, 2, 4, 4})));
+		System.out.println("fix34([5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5]) --> " + Arrays.toString(fix34(new int[] {5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5})));
+		System.out.println("fix34([3, 1, 4]) --> " + Arrays.toString(fix34(new int[] {3, 1, 4})));
+		System.out.println("fix34([3, 4, 1]) --> " + Arrays.toString(fix34(new int[] {3, 4, 1})));
+		System.out.println("fix34([1, 1, 1]) --> " + Arrays.toString(fix34(new int[] {1, 1, 1})));
+		System.out.println("fix34([1]) --> " + Arrays.toString(fix34(new int[] {1})));
+		System.out.println("fix34([]) --> " + Arrays.toString(fix34(new int[] {})));
+		System.out.println("fix34([7, 3, 7, 7, 4]) --> " + Arrays.toString(fix34(new int[] {7, 3, 7, 7, 4})));
+		System.out.println("fix34([3, 1, 4, 3, 1, 4]) --> " + Arrays.toString(fix34(new int[] {3, 1, 4, 3, 1, 4})));
+		System.out.println("fix34([3, 1, 1, 3, 4, 4]) --> " + Arrays.toString(fix34(new int[] {3, 1, 1, 3, 4, 4})));
+		printFunction("fix45");
+		System.out.println("fix45([5, 4, 9, 4, 9, 5]) --> " + Arrays.toString(fix45(new int[] {5, 4, 9, 4, 9, 5})));
+		System.out.println("fix45([1, 4, 1, 5]) --> " + Arrays.toString(fix45(new int[] {1, 4, 1, 5})));
+		System.out.println("fix45([1, 4, 1, 5, 5, 4, 1]) --> " + Arrays.toString(fix45(new int[] {1, 4, 1, 5, 5, 4, 1})));
+		System.out.println("fix45([4, 9, 4, 9, 5, 5, 4, 9, 5]) --> " + Arrays.toString(fix45(new int[] {4, 9, 4, 9, 5, 5, 4, 9, 5})));
+		System.out.println("fix45([5, 5, 4, 1, 4, 1]) --> " + Arrays.toString(fix45(new int[] {5, 5, 4, 1, 4, 1})));
+		System.out.println("fix45([4, 2, 2, 5]) --> " + Arrays.toString(fix45(new int[] {4, 2, 2, 5})));
+		System.out.println("fix45([4, 2, 4, 2, 5, 5]) --> " + Arrays.toString(fix45(new int[] {4, 2, 4, 2, 5, 5})));
+		System.out.println("fix45([4, 2, 4, 5, 5]) --> " + Arrays.toString(fix45(new int[] {4, 2, 4, 5, 5})));
+		System.out.println("fix45([1, 1, 1]) --> " + Arrays.toString(fix45(new int[] {1, 1, 1})));
+		System.out.println("fix45([4, 5]) --> " + Arrays.toString(fix45(new int[] {4, 5})));
+		System.out.println("fix45([5, 4, 1]) --> " + Arrays.toString(fix45(new int[] {5, 4, 1})));
+		System.out.println("fix45([]) --> " + Arrays.toString(fix45(new int[] {})));
+		System.out.println("fix45([5, 4, 5, 4, 1]) --> " + Arrays.toString(fix45(new int[] {5, 4, 5, 4, 1})));
+		System.out.println("fix45([4, 5, 4, 1, 5]) --> " + Arrays.toString(fix45(new int[] {4, 5, 4, 1, 5})));
+		System.out.println("fix45([3, 4, 5]) --> " + Arrays.toString(fix45(new int[] {3, 4, 5})));
+		System.out.println("fix45([4, 1, 5]) --> " + Arrays.toString(fix45(new int[] {4, 1, 5})));
+		System.out.println("fix45([5, 4, 1]) --> " + Arrays.toString(fix45(new int[] {5, 4, 1})));
+		System.out.println("fix45([2, 4, 2, 5]) --> " + Arrays.toString(fix45(new int[] {2, 4, 2, 5})));
+		printFunction("canBalance");
+		System.out.println("canBalance([1, 1, 1, 2, 1]) --> " + canBalance(new int[] {1, 1, 1, 2, 1}));
+		System.out.println("canBalance([2, 1, 1, 2, 1]) --> " + canBalance(new int[] {2, 1, 1, 2, 1}));
+		System.out.println("canBalance([10, 10]) --> " + canBalance(new int[] {10, 10}));
+		System.out.println("canBalance([10, 0, 1, -1, 10]) --> " + canBalance(new int[] {10, 0, 1, -1, 10}));
+		System.out.println("canBalance([1, 1, 1, 1, 4]) --> " + canBalance(new int[] {1, 1, 1, 1, 4}));
+		System.out.println("canBalance([2, 1, 1, 1, 4]) --> " + canBalance(new int[] {2, 1, 1, 1, 4}));
+		System.out.println("canBalance([2, 3, 4, 1, 2]) --> " + canBalance(new int[] {2, 3, 4, 1, 2}));
+		System.out.println("canBalance([1, 2, 3, 1, 0, 2, 3]) --> " + canBalance(new int[] {1, 2, 3, 1, 0, 2, 3}));
+		System.out.println("canBalance([1, 2, 3, 1, 0, 1, 3]) --> " + canBalance(new int[] {1, 2, 3, 1, 0, 1, 3}));
+		System.out.println("canBalance([1]) --> " + canBalance(new int[] {1}));
+		System.out.println("canBalance([1, 1, 1, 2, 1]) --> " + canBalance(new int[] {1, 1, 1, 2, 1}));
+		printFunction("linearIn");
+		System.out.println("linearIn([1, 2, 4, 6], [2, 4]) --> " + linearIn(new int[] {1, 2, 4, 6}, new int[] {2, 4}));
+		System.out.println("linearIn([1, 2, 4, 6], [2, 3, 4]) --> " + linearIn(new int[] {1, 2, 4, 6}, new int[] {2, 3, 4}));
+		System.out.println("linearIn([1, 2, 4, 4, 6], [2, 4]) --> " + linearIn(new int[] {1, 2, 4, 4, 6}, new int[] {2, 4}));
+		System.out.println("linearIn([2, 2, 4, 4, 6, 6], [2, 4]) --> " + linearIn(new int[] {2, 2, 4, 4, 6, 6}, new int[] {2, 4}));
+		System.out.println("linearIn([2, 2, 2, 2, 2], [2, 2]) --> " + linearIn(new int[] {2, 2, 2, 2, 2}, new int[] {2, 2}));
+		System.out.println("linearIn([2, 2, 2, 2, 2], [2, 4]) --> " + linearIn(new int[] {2, 2, 2, 2, 2}, new int[] {2, 4}));
+		System.out.println("linearIn([2, 2, 2, 2, 4], [2, 4]) --> " + linearIn(new int[] {2, 2, 2, 2, 4}, new int[] {2, 4}));
+		System.out.println("linearIn([1, 2, 3], [2]) --> " + linearIn(new int[] {1, 2, 3}, new int[] {2}));
+		System.out.println("linearIn([1, 2, 3], [-1]) --> " + linearIn(new int[] {1, 2, 3}, new int[] {-1}));
+		System.out.println("linearIn([1, 2, 3], []) --> " + linearIn(new int[] {1, 2, 3}, new int[] {}));
+		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [-1, 0, 3, 12]) --> " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {-1, 0, 3, 12}));
+		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [0, 3, 12, 14]) --> " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {0, 3, 12, 14}));
+		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [-1, 10, 11]) --> " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {-1, 10, 11}));
+		printFunction("squareUp");
+		System.out.println("squareUp(3) --> " + Arrays.toString(squareUp(3)));
+		System.out.println("squareUp(2) --> " + Arrays.toString(squareUp(2)));
+		System.out.println("squareUp(4) --> " + Arrays.toString(squareUp(4)));
+		System.out.println("squareUp(1) --> " + Arrays.toString(squareUp(1)));
+		System.out.println("squareUp(0) --> " + Arrays.toString(squareUp(0)));
+		System.out.println("squareUp(6) --> " + Arrays.toString(squareUp(6)));
+		printFunction("seriesUp");
+		System.out.println("seriesUp(3) --> " + Arrays.toString(seriesUp(3)));
+		System.out.println("seriesUp(4) --> " + Arrays.toString(seriesUp(4)));
+		System.out.println("seriesUp(2) --> " + Arrays.toString(seriesUp(2)));
+		System.out.println("seriesUp(1) --> " + Arrays.toString(seriesUp(1)));
+		System.out.println("seriesUp(0) --> " + Arrays.toString(seriesUp(0)));
+		System.out.println("seriesUp(6) --> " + Arrays.toString(seriesUp(6)));
+		printFunction("maxMirror");
+		System.out.println("maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) --> " + maxMirror(new int[] {1, 2, 3, 8, 9, 3, 2, 1}));
+		System.out.println("maxMirror([1, 2, 1, 4]) --> " + maxMirror(new int[] {1, 2, 1, 4}));
+		System.out.println("maxMirror([7, 1, 2, 9, 7, 2, 1]) --> " + maxMirror(new int[] {7, 1, 2, 9, 7, 2, 1}));
+		System.out.println("maxMirror([21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9]) --> " + maxMirror(new int[] {21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9}));
+		System.out.println("maxMirror([1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25]) --> " + maxMirror(new int[] {1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25}));
+		System.out.println("maxMirror([1, 2, 3, 2, 1]) --> " + maxMirror(new int[] {1, 2, 3, 2, 1}));
+		System.out.println("maxMirror([1, 2, 3, 3, 8]) --> " + maxMirror(new int[] {1, 2, 3, 3, 8}));
+		System.out.println("maxMirror([1, 2, 7, 8, 1, 7, 2]) --> " + maxMirror(new int[] {1, 2, 7, 8, 1, 7, 2}));
+		System.out.println("maxMirror([1, 1, 1]) --> " + maxMirror(new int[] {1, 1, 1}));
+		System.out.println("maxMirror([1]) --> " + maxMirror(new int[] {1}));
+		System.out.println("maxMirror([]) --> " + maxMirror(new int[] {}));
+		System.out.println("maxMirror([9, 1, 1, 4, 2, 1, 1, 1]) --> " + maxMirror(new int[] {9, 1, 1, 4, 2, 1, 1, 1}));
+		System.out.println("maxMirror([5, 9, 9, 4, 5, 4, 9, 9, 2]) --> " + maxMirror(new int[] {5, 9, 9, 4, 5, 4, 9, 9, 2}));
+		System.out.println("maxMirror([5, 9, 9, 6, 5, 4, 9, 9, 2]) --> " + maxMirror(new int[] {5, 9, 9, 6, 5, 4, 9, 9, 2}));
+		System.out.println("maxMirror([5, 9, 1, 6, 5, 4, 1, 9, 5]) --> " + maxMirror(new int[] {5, 9, 1, 6, 5, 4, 1, 9, 5}));
+		printFunction("countClumps");
+		System.out.println("countClumps([1, 2, 2, 3, 4, 4]) --> " + countClumps(new int[] {1, 2, 2, 3, 4, 4}));
+		System.out.println("countClumps([1, 1, 2, 1, 1]) --> " + countClumps(new int[] {1, 1, 2, 1, 1}));
+		System.out.println("countClumps([1, 1, 1, 1, 1]) --> " + countClumps(new int[] {1, 1, 1, 1, 1}));
+		System.out.println("countClumps([1, 2, 3]) --> " + countClumps(new int[] {1, 2, 3}));
+		System.out.println("countClumps([2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) --> " + countClumps(new int[] {2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) --> " + countClumps(new int[] {0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) --> " + countClumps(new int[] {0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) --> " + countClumps(new int[] {0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([]) --> " + countClumps(new int[] {}));
 	}
 }
