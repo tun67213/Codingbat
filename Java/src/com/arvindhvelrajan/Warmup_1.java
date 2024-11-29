@@ -235,7 +235,11 @@ public class Warmup_1
 	 */
 	public String backAround(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str + str + str;
+		}
+		return str.substring(str.length() - 1) + str + str.substring(str.length() - 1);
 	}
 
 	/**
