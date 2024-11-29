@@ -86,5 +86,18 @@ public class Warmup_1
 		System.out.println("sumDouble(0, 0) --> " + sumDouble(0, 0));
 		System.out.println("sumDouble(0, 1) --> " + sumDouble(0, 1));
 		System.out.println("sumDouble(3, 4) --> " + sumDouble(3, 4));
+		printFunction("diff21");
+		System.out.println("diff21(19) --> " + diff21(19));
+		System.out.println("diff21(10) --> " + diff21(10));
+		System.out.println("diff21(21) --> " + diff21(21));
+		System.out.println("diff21(22) --> " + diff21(22));
+		System.out.println("diff21(25) --> " + diff21(25));
+		System.out.println("diff21(30) --> " + diff21(30));
+		System.out.println("diff21(0) --> " + diff21(0));
+		System.out.println("diff21(1) --> " + diff21(1));
+		System.out.println("diff21(2) --> " + diff21(2));
+		System.out.println("diff21(-1) --> " + diff21(-1));
+		System.out.println("diff21(-2) --> " + diff21(-2));
+		System.out.println("diff21(50) --> " + diff21(50));
 	}
 }
