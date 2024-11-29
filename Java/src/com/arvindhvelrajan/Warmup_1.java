@@ -119,5 +119,16 @@ public class Warmup_1
 		System.out.println("diff21(-1) --> " + diff21(-1));
 		System.out.println("diff21(-2) --> " + diff21(-2));
 		System.out.println("diff21(50) --> " + diff21(50));
+		printFunction("parrotTrouble");
+		System.out.println("parrotTrouble(true, 6) --> " + parrotTrouble(true, 6));
+		System.out.println("parrotTrouble(true, 7) --> " + parrotTrouble(true, 7));
+		System.out.println("parrotTrouble(false, 6) --> " + parrotTrouble(false, 6));
+		System.out.println("parrotTrouble(true, 21) --> " + parrotTrouble(true, 21));
+		System.out.println("parrotTrouble(false, 21) --> " + parrotTrouble(false, 21));
+		System.out.println("parrotTrouble(false, 20) --> " + parrotTrouble(false, 20));
+		System.out.println("parrotTrouble(true, 23) --> " + parrotTrouble(true, 23));
+		System.out.println("parrotTrouble(false, 23) --> " + parrotTrouble(false, 23));
+		System.out.println("parrotTrouble(true, 20) --> " + parrotTrouble(true, 20));
+		System.out.println("parrotTrouble(false, 12) --> " + parrotTrouble(false, 12));
 	}
 }
