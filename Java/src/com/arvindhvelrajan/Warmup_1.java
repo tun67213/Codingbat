@@ -550,12 +550,25 @@ public class Warmup_1
 	 */
 	public String everyNth(String str, int n)
 	{
-		String sub = "";
-		for(int i = 0; i < str.length(); i += n)
+//		String sub = "";
+//		for(int i = 0; i < str.length(); i += n)
+//		{
+//			sub += str.charAt(i);
+//		}
+//		return sub;
+		return everyNthRecursive(str, n);
+	}
+	private String everyNthRecursive(String str, int n)
+	{
+		if(str.length() <= 1)
 		{
-			sub += str.charAt(i);
+			return str;
 		}
-		return sub;
+		if(str.length() < n)
+		{
+			return str.substring(0, 1);
+		}
+		return str.substring(0, 1) + everyNthRecursive(str.substring(n), n);
 	}
 
 	/**
