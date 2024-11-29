@@ -308,7 +308,7 @@ public class Warmup_1
 	}
 
 	/**
-	 * This private helper function will be used to check if the provided value is within range or not.
+	 * This private helper function will be used to check if the provided value is within the range of 10 and 20 or not.
 	 */
 	private boolean inRange(int a)
 	{
