@@ -13,7 +13,7 @@ public class Warmup_1
 	 */
 	public static void welcome()
 	{
-		System.out.println("Warmup_1 Functions");
+		System.out.println("Warmup_1 Functions\n");
 	}
 
 	/**
