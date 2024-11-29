@@ -1,5 +1,7 @@
 package com.arvindhvelrajan;
 
+import static com.arvindhvelrajan.UI_Functions.*;
+
 /**
  * @author arvindhvelrajan
  * @code This class is to demonstrate the implementation for all functions in Warmup-1 from codingbat.com
@@ -29,5 +31,10 @@ public class Warmup_1
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("sleepIn");
+		System.out.println("sleepIn(false, false) --> " + sleepIn(false, false));
+		System.out.println("sleepIn(true, false) --> " + sleepIn(true, false));
+		System.out.println("sleepIn(false, true) --> " + sleepIn(false, true));
+		System.out.println("sleepIn(true, true) --> " + sleepIn(true, true));
 	}
 }
