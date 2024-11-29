@@ -7,6 +7,14 @@ package com.arvindhvelrajan;
 public class Warmup_2
 {
 	/**
+	 * @code This function welcomes the user to this class
+	 */
+	public static void welcome()
+	{
+		System.out.println("\n\nWarmup_2 Functions\n");
+	}
+
+	/**
 	 * @param args Commandline arguments
 	 */
 	public void main(String[] args)
