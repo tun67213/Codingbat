@@ -100,7 +100,7 @@ public class Warmup_1
 	 */
 	public boolean makes10(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a == 10 || b == 10 || a + b == 10;
 	}
 
 	/**
