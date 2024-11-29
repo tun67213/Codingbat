@@ -113,7 +113,7 @@ public class Warmup_1
 	 */
 	public boolean nearHundred(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;
 	}
 
 	/**
