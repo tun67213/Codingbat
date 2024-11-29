@@ -205,6 +205,26 @@ public class Warmup_1
 	}
 
 	/**
+	 * The implementation above for front3() is correct and runs as expected.
+	 * However, the following recursive implementation does the exact same.
+	 * Take a moment to think about how this would work the same.
+	 *
+	 * If the word itself was less than or equal to three characters, the function would
+	 * simply append three copies of the string and return it.
+	 * Otherwise, it would cut off one character at a time from the end of the provided string,
+	 * shortening it to a length of three, at which point, it would simply return three
+	 * concatenated copies.
+	 */
+	private String front3Recursive(String str)
+	{
+		if(str.length() <= 3)
+		{
+			return str + str + str;
+		}
+		return front3Recursive(str.substring(0, str.length() - 1));
+	}
+
+	/**
 	 * Given a string, take the last char and return a new string with the last char added at the front and back,
 	 * so "cat" yields "tcatt". The original string will be length 1 or more.
 	 *
