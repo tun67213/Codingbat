@@ -196,5 +196,24 @@ public class Warmup_1
 		System.out.println("nearHundred(210) --> " + nearHundred(210));
 		System.out.println("nearHundred(211) --> " + nearHundred(211));
 		System.out.println("nearHundred(290) --> " + nearHundred(290));
+		printFunction("posNeg");
+		System.out.println("posNeg(1, -1, false) --> " + posNeg(1, -1, false));
+		System.out.println("posNeg(-1, 1, false) --> " + posNeg(-1, 1, false));
+		System.out.println("posNeg(-4, -5, true) --> " + posNeg(-4, -5, true));
+		System.out.println("posNeg(-4, 5, false) --> " + posNeg(-4, 5, true));
+		System.out.println("posNeg(-4, 5, true) --> " + posNeg(-4, 5, true));
+		System.out.println("posNeg(1, 1, false) --> " + posNeg(1, 1, false));
+		System.out.println("posNeg(-1, -1, false) --> " + posNeg(-1, -1, false));
+		System.out.println("posNeg(1, -1, true) --> " + posNeg(1, -1, true));
+		System.out.println("posNeg(-1, 1, true) --> " + posNeg(-1, 1, true));
+		System.out.println("posNeg(1, 1, true) --> " + posNeg(1, 1, true));
+		System.out.println("posNeg(-1, -1, true) --> " + posNeg(-1, -1, true));
+		System.out.println("posNeg(5, -5, false) --> " + posNeg(5, -5, false));
+		System.out.println("posNeg(-6, 6, false) --> " + posNeg(-6, 6, false));
+		System.out.println("posNeg(-5, -6, false) --> " + posNeg(-5, -6, false));
+		System.out.println("posNeg(-2, -1, false) --> " + posNeg(-2, -1, false));
+		System.out.println("posNeg(1, 2, false) --> " + posNeg(1, 2, false));
+		System.out.println("posNeg(-5, 6, true) --> " + posNeg(-5, 6, true));
+		System.out.println("posNeg(-5, -5, true) --> " + posNeg(-5, -5, true));
 	}
 }
