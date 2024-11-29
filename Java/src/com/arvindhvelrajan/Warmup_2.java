@@ -6,5 +6,11 @@ package com.arvindhvelrajan;
  */
 public class Warmup_2
 {
-	
+	/**
+	 * @param args Commandline arguments
+	 */
+	public void main(String[] args)
+	{
+
+	}
 }
