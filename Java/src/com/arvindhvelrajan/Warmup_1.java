@@ -48,5 +48,10 @@ public class Warmup_1
 		System.out.println("sleepIn(true, false) --> " + sleepIn(true, false));
 		System.out.println("sleepIn(false, true) --> " + sleepIn(false, true));
 		System.out.println("sleepIn(true, true) --> " + sleepIn(true, true));
+		printFunction("monkeyTrouble");
+		System.out.println("monkeyTrouble(true, true) --> " + monkeyTrouble(true, true));
+		System.out.println("monkeyTrouble(false, false) --> " + monkeyTrouble(false, false));
+		System.out.println("monkeyTrouble(true, false) --> " + monkeyTrouble(true, false)););
+		System.out.println("monkeyTrouble(false, true) --> " + monkeyTrouble(false, true));
 	}
 }
