@@ -63,7 +63,7 @@ public class Warmup_1
 		printFunction("monkeyTrouble");
 		System.out.println("monkeyTrouble(true, true) --> " + monkeyTrouble(true, true));
 		System.out.println("monkeyTrouble(false, false) --> " + monkeyTrouble(false, false));
-		System.out.println("monkeyTrouble(true, false) --> " + monkeyTrouble(true, false)););
+		System.out.println("monkeyTrouble(true, false) --> " + monkeyTrouble(true, false));
 		System.out.println("monkeyTrouble(false, true) --> " + monkeyTrouble(false, true));
 	}
 }
