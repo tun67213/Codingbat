@@ -65,5 +65,14 @@ public class Warmup_1
 		System.out.println("monkeyTrouble(false, false) --> " + monkeyTrouble(false, false));
 		System.out.println("monkeyTrouble(true, false) --> " + monkeyTrouble(true, false));
 		System.out.println("monkeyTrouble(false, true) --> " + monkeyTrouble(false, true));
+		printFunction("sumDouble");
+		System.out.println("sumDouble(1, 2) --> " + sumDouble(1, 2));
+		System.out.println("sumDouble(3, 2) --> " + sumDouble(3, 2));
+		System.out.println("sumDouble(2, 2) --> " + sumDouble(2, 2));
+		System.out.println("sumDouble(-1, 0) --> " + sumDouble(-1, 0));
+		System.out.println("sumDouble(3, 3) --> " + sumDouble(3, 3));
+		System.out.println("sumDouble(0, 0) --> " + sumDouble(0, 0));
+		System.out.println("sumDouble(0, 1) --> " + sumDouble(0, 1));
+		System.out.println("sumDouble(3, 4) --> " + sumDouble(3, 4));
 	}
 }
