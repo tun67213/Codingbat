@@ -386,7 +386,16 @@ public class Warmup_1
 	 */
 	public String startOz(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		if(str.length() >= 1 && str.substring(0, 1).equals("o"))
+		{
+			sub += "o";
+		}
+		if(str.length() >= 2 && str.substring(1, 2).equals("z"))
+		{
+			sub += "z";
+		}
+		return sub;
 	}
 
 	/**
