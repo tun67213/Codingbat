@@ -550,7 +550,12 @@ public class Warmup_1
 	 */
 	public String everyNth(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		for(int i = 0; i < str.length(); i += n)
+		{
+			sub += str.charAt(i);
+		}
+		return sub;
 	}
 
 	/**
