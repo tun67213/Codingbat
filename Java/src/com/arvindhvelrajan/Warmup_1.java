@@ -292,7 +292,7 @@ public class Warmup_1
 	 */
 	public boolean icyHot(int temp1, int temp2)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return (temp1 > 100 && temp2 < 0) || (temp1 < 0 && temp2 > 100);
 	}
 
 	/**
