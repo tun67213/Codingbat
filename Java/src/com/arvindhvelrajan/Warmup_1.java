@@ -51,7 +51,12 @@ public class Warmup_1
 	 */
 	public int sumDouble(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int sum = a + b;
+		if(a == b)
+		{
+			sum *= 2;
+		}
+		return sum;
 	}
 
 	/**
