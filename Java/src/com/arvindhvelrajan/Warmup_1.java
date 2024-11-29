@@ -142,5 +142,15 @@ public class Warmup_1
 		System.out.println("parrotTrouble(false, 23) --> " + parrotTrouble(false, 23));
 		System.out.println("parrotTrouble(true, 20) --> " + parrotTrouble(true, 20));
 		System.out.println("parrotTrouble(false, 12) --> " + parrotTrouble(false, 12));
+		printFunction("makes10");
+		System.out.println("makes10(9, 10) --> " + makes10(9, 10));
+		System.out.println("makes10(9, 9) --> " + makes10(9, 9));
+		System.out.println("makes10(1, 9) --> " + makes10(1, 9));
+		System.out.println("makes10(10, 1) --> " + makes10(10, 1));
+		System.out.println("makes10(10, 10) --> " + makes10(10, 10));
+		System.out.println("makes10(8, 2) --> " + makes10(8, 2));
+		System.out.println("makes10(8, 3) --> " + makes10(8, 3));
+		System.out.println("makes10(10, 42) --> " + makes10(10, 42));
+		System.out.println("makes10(12, -2) --> " + makes10(12, -2));
 	}
 }
