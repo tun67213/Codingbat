@@ -8,6 +8,6 @@ public class Array_3
 {
 	private void welcome()
 	{
-		System.out.println("Array-3 Functions\n");
+		System.out.println("\n\nArray-3 Functions\n");
 	}
 }

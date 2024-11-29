@@ -8,6 +8,6 @@ public class Functional_1
 {
 	private void welcome()
 	{
-		System.out.println("Functional-1 Functions\n");
+		System.out.println("\n\nFunctional-1 Functions\n");
 	}
 }

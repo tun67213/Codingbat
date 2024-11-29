@@ -8,6 +8,6 @@ public class String_1
 {
 	private void welcome()
 	{
-		System.out.println("String-1 Functions\n");
+		System.out.println("\n\nString-1 Functions\n");
 	}
 }

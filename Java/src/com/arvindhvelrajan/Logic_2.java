@@ -8,6 +8,6 @@ public class Logic_2
 {
 	private void welcome()
 	{
-		System.out.println("Logic-2 Functions\n");
+		System.out.println("\n\nLogic-2 Functions\n");
 	}
 }

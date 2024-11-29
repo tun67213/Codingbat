@@ -8,6 +8,6 @@ public class Map_1
 {
 	private void welcome()
 	{
-		System.out.println("Map-1 Functions\n");
+		System.out.println("\n\nMap-1 Functions\n");
 	}
 }

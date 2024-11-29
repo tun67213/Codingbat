@@ -8,6 +8,6 @@ public class AP_1
 {
 	private void welcome()
 	{
-		System.out.println("AP-1 Functions\n");
+		System.out.println("\n\nAP-1 Functions\n");
 	}
 }
