@@ -26,5 +26,16 @@ public class Warmup_1Test
 		assertEquals(false, monkeyTrouble(false, true));
 	}
 
-
+	@Test
+	public void testSumDouble()
+	{
+		assertEquals(3, sumDouble(1, 2));
+		assertEquals(5, sumDouble(3, 2));
+		assertEquals(8, sumDouble(2, 2));
+		assertEquals(-1, sumDouble(-1, 0));
+		assertEquals(12, sumDouble(3, 3));
+		assertEquals(0, sumDouble(0, 0));
+		assertEquals(1, sumDouble(0, 1));
+		assertEquals(7, sumDouble(3, 4));
+	}
 }
