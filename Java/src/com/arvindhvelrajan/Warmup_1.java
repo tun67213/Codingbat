@@ -164,5 +164,25 @@ public class Warmup_1
 		System.out.println("makes10(8, 3) --> " + makes10(8, 3));
 		System.out.println("makes10(10, 42) --> " + makes10(10, 42));
 		System.out.println("makes10(12, -2) --> " + makes10(12, -2));
+		printFunction("nearHundred");
+		System.out.println("nearHundred(93) --> " + nearHundred(93));
+		System.out.println("nearHundred(90) --> " + nearHundred(90));
+		System.out.println("nearHundred(89) --> " + nearHundred(89));
+		System.out.println("nearHundred(110) --> " + nearHundred(110));
+		System.out.println("nearHundred(111) --> " + nearHundred(111));
+		System.out.println("nearHundred(121) --> " + nearHundred(121));
+		System.out.println("nearHundred(-101) --> " + nearHundred(-101));
+		System.out.println("nearHundred(-209) --> " + nearHundred(-209));
+		System.out.println("nearHundred(190) --> " + nearHundred(190));
+		System.out.println("nearHundred(209) --> " + nearHundred(209));
+		System.out.println("nearHundred(0) --> " + nearHundred(0));
+		System.out.println("nearHundred(5) --> " + nearHundred(5));
+		System.out.println("nearHundred(-50) --> " + nearHundred(-50));
+		System.out.println("nearHundred(191) --> " + nearHundred(191));
+		System.out.println("nearHundred(189) --> " + nearHundred(189));
+		System.out.println("nearHundred(200) --> " + nearHundred(200));
+		System.out.println("nearHundred(210) --> " + nearHundred(210));
+		System.out.println("nearHundred(211) --> " + nearHundred(211));
+		System.out.println("nearHundred(290) --> " + nearHundred(290));
 	}
 }
