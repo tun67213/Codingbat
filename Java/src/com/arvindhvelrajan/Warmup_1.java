@@ -568,7 +568,7 @@ public class Warmup_1
 		{
 			return str.substring(0, 1);
 		}
-		return str.substring(0, 1) + everyNthRecursive(str.substring(n), n);
+		return str.charAt(0) + everyNthRecursive(str.substring(n), n);
 	}
 
 	/**
