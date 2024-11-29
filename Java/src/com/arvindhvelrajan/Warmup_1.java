@@ -144,7 +144,11 @@ public class Warmup_1
 	 */
 	public String notString(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.startsWith("not"))
+		{
+			return str;
+		}
+		return "not " + str;
 	}
 
 	/**
