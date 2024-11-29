@@ -1,0 +1,21 @@
+package com.arvindhvelrajan;
+
+/**
+ * @author arvindhvelrajan
+ * @code This class is to run all the functions provided in this module
+ */
+public class Main
+{
+	public static void welcome()
+	{
+		System.out.println("Welcome to Codingbat.com Java Function Demonstration!\n");
+	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public static void main(String[] args)
+	{
+		welcome();
+	}
+}
