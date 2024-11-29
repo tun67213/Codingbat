@@ -88,7 +88,7 @@ public class Warmup_1
 	 */
 	public boolean parrotTrouble(boolean talking, int hour)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return talking && (hour < 7 || hour > 20);
 	}
 
 	/**
