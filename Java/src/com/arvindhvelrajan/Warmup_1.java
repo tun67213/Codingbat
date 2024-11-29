@@ -320,7 +320,7 @@ public class Warmup_1
 	 */
 	private boolean isTeen(int a)
 	{
-		throw new UnsupportedOperationException("Not yet implemented");
+		return a >= 13 && a <= 19;
 	}
 
 	/**
