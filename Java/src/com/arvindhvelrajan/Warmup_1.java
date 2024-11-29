@@ -530,6 +530,15 @@ public class Warmup_1
 			return str.toUpperCase();
 		}
 		return str.substring(0, str.length() - 3) + str.substring(str.length() - 3).toUpperCase();
+//		return endUpRecursive(str);
+	}
+	private String endUpRecursive(String str)
+	{
+		if(str.length() <= 3)
+		{
+			return str.toUpperCase();
+		}
+		return str.charAt(0) + endUpRecursive(str.substring(1));
 	}
 
 	/**
