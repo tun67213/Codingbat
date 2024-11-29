@@ -202,6 +202,7 @@ public class Warmup_1
 		}
 		String sub = str.substring(0, 3);
 		return sub + sub + sub;
+//		return front3Recursive(str);
 	}
 
 	/**
