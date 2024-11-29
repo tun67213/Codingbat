@@ -316,6 +316,14 @@ public class Warmup_1
 	}
 
 	/**
+	 * This helper function will help determine whether a function is a 'teen' or not.
+	 */
+	private boolean isTeen(int a)
+	{
+		throw new UnsupportedOperationException("Not yet implemented");
+	}
+
+	/**
 	 * We'll say that a number is "teen" if it is in the range 13..19 inclusive.
 	 * Given 3 int values, return true if 1 or more of them are teen.
 	 *
