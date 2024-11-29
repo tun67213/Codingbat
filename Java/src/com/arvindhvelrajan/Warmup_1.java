@@ -374,7 +374,7 @@ public class Warmup_1
 	 */
 	public boolean mixStart(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.length() >= 3 && str.substring(1, 3).equals("ix");
 	}
 
 	/**
