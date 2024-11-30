@@ -360,5 +360,15 @@ public class String_1
 		System.out.println("middleTwo(\"Practice\") --> \"" + middleTwo("Practice") + "\"");
 		System.out.println("middleTwo(\"ab\") --> \"" + middleTwo("ab") + "\"");
 		System.out.println("middleTwo(\"0123456789\") --> \"" + middleTwo("0123456789") + "\"");
+		printFunction("endsLy");
+		System.out.println("endsLy(\"oddly\") --> " + endsLy("oddly"));
+		System.out.println("endsLy(\"y\") --> " + endsLy("y"));
+		System.out.println("endsLy(\"oddy\") --> " + endsLy("oddy"));
+		System.out.println("endsLy(\"oddl\") --> " + endsLy("oddl"));
+		System.out.println("endsLy(\"olydd\") --> " + endsLy("olydd"));
+		System.out.println("endsLy(\"ly\") --> " + endsLy("ly"));
+		System.out.println("endsLy(\"\") --> " + endsLy(""));
+		System.out.println("endsLy(\"falsey\") --> " + endsLy("falsey"));
+		System.out.println("endsLy(\"evenly\") --> " + endsLy("evenly"));
 	}
 }
