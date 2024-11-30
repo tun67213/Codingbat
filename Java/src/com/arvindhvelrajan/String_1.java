@@ -545,5 +545,11 @@ public class String_1
 		System.out.println("conCat(\"\", \"cat\") --> \"" + conCat("", "cat") + "\"");
 		System.out.println("conCat(\"pig\", \"g\") --> \"" + conCat("pig", "g") + "\"");
 		System.out.println("conCat(\"pig\", \"doggy\") --> \"" + conCat("pig", "doggy") + "\"");
+		printFunction("lastTwo");
+		System.out.println("lastTwo(\"coding\") --> \"" + lastTwo("coding") + "\"");
+		System.out.println("lastTwo(\"cat\") --> \"" + lastTwo("cat") + "\"");
+		System.out.println("lastTwo(\"ab\") --> \"" + lastTwo("ab") + "\"");
+		System.out.println("lastTwo(\"a\") --> \"" + lastTwo("a") + "\"");
+		System.out.println("lastTwo(\"\") --> \"" + lastTwo("") + "\"");
 	}
 }
