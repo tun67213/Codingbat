@@ -111,6 +111,19 @@ public class String_1
 	}
 
 	/**
+	 * Given a string, return a version without the first and last char, so "Hello" yields "ell".
+	 * The string length will be at least 2.
+	 *
+	 * withoutEnd("Hello") → "ell"
+	 * withoutEnd("java") → "av"
+	 * withoutEnd("coding") → "odin"
+	 */
+	public String withoutEnd(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
