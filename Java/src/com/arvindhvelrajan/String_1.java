@@ -21,6 +21,6 @@ public class String_1
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
