@@ -77,5 +77,15 @@ public class Warmup_2
 		System.out.println("frontTimes(\"A\", 4) --> \"" + frontTimes("A", 4) + "\"");
 		System.out.println("frontTimes(\"\", 4) --> \"" + frontTimes("", 4) + "\"");
 		System.out.println("frontTimes(\"Abc\", 0) --> \"" + frontTimes("Abc", 0) + "\"");
+		printFunction("countXX");
+		System.out.println("countXX(\"abcxx\") --> " + countXX("abcxx"));
+		System.out.println("countXX(\"xxx\") --> " + countXX("xxx"));
+		System.out.println("countXX(\"xxxx\") --> " + countXX("xxxx"));
+		System.out.println("countXX(\"abc\") --> " + countXX("abc"));
+		System.out.println("countXX(\"Hello there\") --> " + countXX("Hello there"));
+		System.out.println("countXX(\"Hexxo thxxe\") --> " + countXX("Hexxo thxxe"));
+		System.out.println("countXX(\"\") --> " + countXX("\"\""));
+		System.out.println("countXX(\"Kittens\") --> " + countXX("Kittens"));
+		System.out.println("countXX(\"Kittensxxx\") --> " + countXX("Kittensxxx"));
 	}
 }
