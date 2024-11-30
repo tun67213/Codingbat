@@ -482,5 +482,19 @@ public class Warmup_1
 		System.out.println("hasTeen(14, 2, 20) --> " + hasTeen(14, 2, 20));
 		System.out.println("hasTeen(4, 2, 20) --> " + hasTeen(4, 2, 20));
 		System.out.println("hasTeen(11, 22, 22) --> " + hasTeen(11, 22, 22));
+		printFunction("loneTeen");
+		System.out.println("loneTeen(13, 99) --> " + loneTeen(13, 99));
+		System.out.println("loneTeen(21, 19) --> " + loneTeen(21, 19));
+		System.out.println("loneTeen(13, 13) --> " + loneTeen(13, 13));
+		System.out.println("loneTeen(14, 20) --> " + loneTeen(14, 20));
+		System.out.println("loneTeen(20, 15) --> " + loneTeen(20, 15));
+		System.out.println("loneTeen(16, 17) --> " + loneTeen(16, 17));
+		System.out.println("loneTeen(16, 9) --> " + loneTeen(16, 9));
+		System.out.println("loneTeen(16, 18) --> " + loneTeen(16, 18));
+		System.out.println("loneTeen(13, 19) --> " + loneTeen(13, 19));
+		System.out.println("loneTeen(13, 20) --> " + loneTeen(13, 20));
+		System.out.println("loneTeen(6, 18) --> " + loneTeen(6, 18));
+		System.out.println("loneTeen(99, 13) --> " + loneTeen(99, 13));
+		System.out.println("loneTeen(99, 99) --> " + loneTeen(99, 99));
 	}
 }
