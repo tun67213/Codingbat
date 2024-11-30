@@ -320,5 +320,13 @@ public class String_1
 		System.out.println("theEnd(\"chocolate\", false) --> \"" + theEnd("chocolate", false) + "\"");
 		System.out.println("theEnd(\"1234\", true) --> \"" + theEnd("1234", true) + "\"");
 		System.out.println("theEnd(\"code\", false) --> \"" + theEnd("code", false) + "\"");
+		printFunction("withouEnd2");
+		System.out.println("withouEnd2(\"Hello\") --> \"" + withouEnd2("Hello") + "\"");
+		System.out.println("withouEnd2(\"abc\") --> \"" + withouEnd2("abc") + "\"");
+		System.out.println("withouEnd2(\"ab\") --> \"" + withouEnd2("ab") + "\"");
+		System.out.println("withouEnd2(\"a\") --> \"" + withouEnd2("a") + "\"");
+		System.out.println("withouEnd2(\"\") --> \"" + withouEnd2("") + "\"");
+		System.out.println("withouEnd2(\"coldy\") --> \"" + withouEnd2("coldy") + "\"");
+		System.out.println("withouEnd2(\"java code\") --> \"" + withouEnd2("java code") + "\"");
 	}
 }
