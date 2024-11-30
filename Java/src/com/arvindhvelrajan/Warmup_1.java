@@ -289,6 +289,18 @@ public class Warmup_1
 	}
 
 	/**
+	 * Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+	 *
+	 * mixStart("mix snacks") → true
+	 * mixStart("pix snacks") → true
+	 * mixStart("piz snacks") → false
+	 */
+	public boolean mixStart(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
