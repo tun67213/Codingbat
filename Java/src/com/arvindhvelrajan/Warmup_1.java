@@ -603,5 +603,17 @@ public class Warmup_1
 		System.out.println("intMax(6, 2, 5) --> " + intMax(6, 2, 5));
 		System.out.println("intMax(5, 6, 2) --> " + intMax(5, 6, 2));
 		System.out.println("intMax(5, 2, 6) --> " + intMax(5, 2, 6));
+		printFunction("close10");
+		System.out.println("close10(8, 13) --> " + close10(8, 13));
+		System.out.println("close10(13, 8) --> " + close10(13, 8));
+		System.out.println("close10(13, 7) --> " + close10(13, 7));
+		System.out.println("close10(7, 13) --> " + close10(7, 13));
+		System.out.println("close10(9, 13) --> " + close10(9, 13));
+		System.out.println("close10(13, 8) --> " + close10(13, 8));
+		System.out.println("close10(10, 12) --> " + close10(10, 12));
+		System.out.println("close10(11, 10) --> " + close10(11, 10));
+		System.out.println("close10(5, 21) --> " + close10(5, 21));
+		System.out.println("close10(0, 20) --> " + close10(0, 20));
+		System.out.println("close10(10, 10) --> " + close10(10, 10));
 	}
 }
