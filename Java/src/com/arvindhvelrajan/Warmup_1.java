@@ -436,5 +436,13 @@ public class Warmup_1
 		System.out.println("icyHot(-1, 100) --> " + icyHot(-1, 100));
 		System.out.println("icyHot(-2, -2) --> " + icyHot(-2, -2));
 		System.out.println("icyHot(120, 120) --> " + icyHot(120, 120));
+		printFunction("in1020");
+		System.out.println("in1020(12, 99) --> " + in1020(12, 99));
+		System.out.println("in1020(21, 12) --> " + in1020(21, 12));
+		System.out.println("in1020(8, 99) --> " + in1020(8, 99));
+		System.out.println("in1020(99, 10) --> " + in1020(99, 10));
+		System.out.println("in1020(20, 20) --> " + in1020(20, 20));
+		System.out.println("in1020(21, 21) --> " + in1020(21, 21));
+		System.out.println("in1020(9, 9) --> " + in1020(9, 9));
 	}
 }
