@@ -125,5 +125,15 @@ public class Warmup_2
 		System.out.println("doubleX(\"xx\") --> " + doubleX("xx"));
 		System.out.println("doubleX(\"xax\") --> " + doubleX("xax"));
 		System.out.println("doubleX(\"xaxx\") --> " + doubleX("xaxx"));
+		printFunction("stringBits");
+		System.out.println("stringBits(\"Hello\") --> \"" + stringBits("Hello") + "\"");
+		System.out.println("stringBits(\"Hi\") --> \"" + stringBits("Hi") + "\"");
+		System.out.println("stringBits(\"Heeololeo\") --> \"" + stringBits("Heeololeo") + "\"");
+		System.out.println("stringBits(\"HiHiHi\") --> \"" + stringBits("HiHiHi") + "\"");
+		System.out.println("stringBits(\"\") --> \"" + stringBits("") + "\"");
+		System.out.println("stringBits(\"Greetings\") --> \"" + stringBits("Greetings") + "\"");
+		System.out.println("stringBits(\"Chocolate\") --> \"" + stringBits("Chocolate") + "\"");
+		System.out.println("stringBits(\"pi\") --> \"" + stringBits("pi") + "\"");
+		System.out.println("stringBits(\"hxaxpxpxy\") --> \"" + stringBits("hxaxpxpxy") + "\"");
 	}
 }
