@@ -173,5 +173,19 @@ public class Warmup_2
 		System.out.println("stringSplosion(\"Bye\") --> \"" + stringSplosion("Bye") + "\"");
 		System.out.println("stringSplosion(\"Good\") --> \"" + stringSplosion("Good") + "\"");
 		System.out.println("stringSplosion(\"Bad\") --> \"" + stringSplosion("Bad") + "\"");
+		printFunction("last2");
+		System.out.println("last2(\"hixxhi\") --> " + last2("hixxhi"));
+		System.out.println("last2(\"xaxxaxaxx\") --> " + last2("xaxxaxaxx"));
+		System.out.println("last2(\"axxxaaxx\") --> " + last2("axxxaaxx"));
+		System.out.println("last2(\"xxaxxaxxaxx\") --> " + last2("xxaxxaxxaxx"));
+		System.out.println("last2(\"xaxaxaxx\") --> " + last2("xaxaxaxx"));
+		System.out.println("last2(\"xxxx\") --> " + last2("xxxx"));
+		System.out.println("last2(\"13121312\") --> " + last2("13121312"));
+		System.out.println("last2(\"11212\") --> " + last2("11212"));
+		System.out.println("last2(\"13121311\") --> " + last2("13121311"));
+		System.out.println("last2(\"1717171\") --> " + last2("1717171"));
+		System.out.println("last2(\"hi\") --> " + last2("hi"));
+		System.out.println("last2(\"h\") --> " + last2("h"));
+		System.out.println("last2(\"\") --> " + last2(""));
 	}
 }
