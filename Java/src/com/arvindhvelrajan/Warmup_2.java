@@ -199,5 +199,13 @@ public class Warmup_2
 		System.out.println("last2(\"hi\") --> " + last2("hi"));
 		System.out.println("last2(\"h\") --> " + last2("h"));
 		System.out.println("last2(\"\") --> " + last2(""));
+		printFunction("arrayCount9");
+		System.out.println("arrayCount9([1, 2, 9]) --> " + arrayCount9(new int[] {1, 2, 9}));
+		System.out.println("arrayCount9([1, 9, 9]) --> " + arrayCount9(new int[] {1, 9, 9}));
+		System.out.println("arrayCount9([1, 9, 9, 3, 9]) --> " + arrayCount9(new int[] {1, 9, 9, 3, 9}));
+		System.out.println("arrayCount9([1, 2, 3]) --> " + arrayCount9(new int[] {1, 2, 3}));
+		System.out.println("arrayCount9([]) --> " + arrayCount9(new int[] {}));
+		System.out.println("arrayCount9([4, 2, 4, 3, 1]) --> " + arrayCount9(new int[] {4, 2, 4, 3, 1}));
+		System.out.println("arrayCount9([9, 2, 4, 3, 1]) --> " + arrayCount9(new int[] {9, 2, 4, 3, 1}));
 	}
 }
