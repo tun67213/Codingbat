@@ -579,5 +579,17 @@ public class Warmup_1
 		System.out.println("startOz(\"aztec\") --> \"" + startOz("aztec") + "\"");
 		System.out.println("startOz(\"zzzz\") --> \""  + startOz("zzzz") + "\"");
 		System.out.println("startOz(\"oznic\") --> \"" + startOz("oznic") + "\"");
+		printFunction("intMax");
+		System.out.println("intMax(1, 2, 3) --> " + intMax(1, 2, 3));
+		System.out.println("intMax(1, 3, 2) --> " + intMax(1, 3, 2));
+		System.out.println("intMax(3, 2, 1) --> " + intMax(3, 2, 1));
+		System.out.println("intMax(9, 3, 3) --> " + intMax(9, 3, 3));
+		System.out.println("intMax(3, 9, 3) --> " + intMax(3, 9, 3));
+		System.out.println("intMax(3, 3, 9) --> " + intMax(3, 3, 9));
+		System.out.println("intMax(8, 2, 3) --> " + intMax(8, 2, 3));
+		System.out.println("intMax(-3, -1, -2) --> " + intMax(-3, -1, 2));
+		System.out.println("intMax(6, 2, 5) --> " + intMax(6, 2, 5));
+		System.out.println("intMax(5, 6, 2) --> " + intMax(5, 6, 2));
+		System.out.println("intMax(5, 2, 6) --> " + intMax(5, 2, 6));
 	}
 }
