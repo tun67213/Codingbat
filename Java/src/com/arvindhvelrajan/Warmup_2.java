@@ -17,10 +17,22 @@ public class Warmup_2
 	}
 
 	/**
+	 * Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+	 *
+	 * stringTimes("Hi", 2) → "HiHi"
+	 * stringTimes("Hi", 3) → "HiHiHi"
+	 * stringTimes("Hi", 1) → "Hi"
+	 */
+	public String stringTimes(String str, int n)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
 	{
-			
+		
 	}
 }
