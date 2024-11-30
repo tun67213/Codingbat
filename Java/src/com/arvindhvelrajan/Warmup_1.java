@@ -227,5 +227,12 @@ public class Warmup_1
 		System.out.println("posNeg(1, 2, false) --> " + posNeg(1, 2, false));
 		System.out.println("posNeg(-5, 6, true) --> " + posNeg(-5, 6, true));
 		System.out.println("posNeg(-5, -5, true) --> " + posNeg(-5, -5, true));
+		printFunction("notString");
+		System.out.println("notString(\"candy\") --> \"" + notString("candy") + "\"");
+		System.out.println("notString(\"x\") --> \"" + notString("x") + "\"");
+		System.out.println("notString(\"not bad\") --> \"" + notString("not bad") + "\"");
+		System.out.println("notString(\"not\") --> \"" + notString("not") + "\"");
+		System.out.println("notString(\"is not\") --> \"" + notString("is not") + "\"");;
+		System.out.println("notString(\"no\") --> \"" + notString("no") + "\"");
 	}
 }
