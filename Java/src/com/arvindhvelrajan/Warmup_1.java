@@ -396,5 +396,14 @@ public class Warmup_1
 		System.out.println("front22(\"a\") --> \"" + front22("a") + "\"");
 		System.out.println("front22(\"\") --> \"" + front22("") + "\"");
 		System.out.println("front22(\"Logic\") --> \"" + front22("Logic") + "\"");
+		printFunction("startHi");
+		System.out.println("startHi(\"hi there\") --> " + startHi("hi there"));
+		System.out.println("startHi(\"hi\") --> " + startHi("hi"));
+		System.out.println("startHi(\"hello hi\") --> " + startHi("hello hi"));
+		System.out.println("startHi(\"he\") --> " + startHi("he"));
+		System.out.println("startHi(\"h\") --> " + startHi("h"));
+		System.out.println("startHi(\"\") --> " + startHi(""));
+		System.out.println("startHi(\"ho hi\") --> " + startHi("ho hi"));
+		System.out.println("startHi(\"hi ho\") --> " + startHi("hi ho"));
 	}
 }
