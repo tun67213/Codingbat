@@ -34,5 +34,15 @@ public class Warmup_2
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("stringTimes");
+		System.out.println("stringTimes(\"Hi\", 2) --> \"" + stringTimes("Hi", 2) + "\"");
+		System.out.println("stringTimes(\"Hi\", 3) --> \"" + stringTimes("Hi", 3) + "\"");
+		System.out.println("stringTimes(\"Hi\", 1) --> \"" + stringTimes("Hi", 1) + "\"");
+		System.out.println("stringTimes(\"Hi\", 0) --> \"" + stringTimes("Hi", 0) + "\"");
+		System.out.println("stringTimes(\"Oh Boy!\", 2) --> \"" + stringTimes("Oh Boy!", 2) + "\"");
+		System.out.println("stringTimes(\"x\", 4) --> \"" + stringTimes("x", 4) + "\"");
+		System.out.println("stringTimes(\"\", 4) --> \"" + stringTimes("", 4) + "\"");
+		System.out.println("stringTimes(\"code\", 2) --> \"" + stringTimes("code", 2) + "\"");
+		System.out.println("stringTimes(\"code\", 3) --> \"" + stringTimes("code", 3) + "\"");
 	}
 }
