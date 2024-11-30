@@ -208,5 +208,17 @@ public class String_1
 		System.out.println("withoutEnd(\"Chocolate!\") --> \"" + withoutEnd("Chocolate!") + "\"");
 		System.out.println("withoutEnd(\"kitten\") --> \"" + withoutEnd("kitten") + "\"");
 		System.out.println("withoutEnd(\"woohoo\") --> \"" + withoutEnd("woohoo") + "\"");
+		printFunction("comboString");
+		System.out.println("comboString(\"Hello\", \"hi\") --> \"" + comboString("Hello", "hi") + "\"");
+		System.out.println("comboString(\"hi\", \"Hello\") --> \"" + comboString("hi", "Hello") + "\"");
+		System.out.println("comboString(\"aaa\", \"b\") --> \"" + comboString("aaa", "b") + "\"");
+		System.out.println("comboString(\"b\", \"aaa\") --> \"" + comboString("b", "aaa") + "\"");
+		System.out.println("comboString(\"aaa\", \"\") --> \"" + comboString("aaa", "") + "\"");
+		System.out.println("comboString(\"\", \"bb\") --> \"" + comboString("", "bb") + "\"");
+		System.out.println("comboString(\"aaa\", \"1234\") --> \"" + comboString("aaa", "1234") + "\"");
+		System.out.println("comboString(\"aaa\", \"bb\") --> \"" + comboString("aaa", "bb") + "\"");
+		System.out.println("comboString(\"a\", \"bb\") --> \"" + comboString("a", "bb") + "\"");
+		System.out.println("comboString(\"bb\", \"a\") --> \"" + comboString("bb", "a") + "\"");
+		System.out.println("comboString(\"xyz\", \"ab\") --> \"" + comboString("xyz", "ab") + "\"");
 	}
 }
