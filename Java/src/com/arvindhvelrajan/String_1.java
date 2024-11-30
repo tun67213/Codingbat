@@ -213,6 +213,18 @@ public class String_1
 	}
 
 	/**
+	 * Given a string, return true if it ends in "ly".
+	 *
+	 * endsLy("oddly") → true
+	 * endsLy("y") → false
+	 * endsLy("oddy") → false
+	 */
+	public boolean endsLy(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
