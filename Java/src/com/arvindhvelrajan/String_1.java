@@ -456,5 +456,16 @@ public class String_1
 		System.out.println("middleThree(\"java yet java\") --> \"" + middleThree("java yet java") + "\"");
 		System.out.println("middleThree(\"Chocolate\") --> \"" + middleThree("Chocolate") + "\"");
 		System.out.println("middleThree(\"XabcxyzabcX\") --> \"" + middleThree("XabcxyzabcX") + "\"");
+		printFunction("hasBad");
+		System.out.println("hasBad(\"badxx\") --> \"" + hasBad("badxx") + "\"");
+		System.out.println("hasBad(\"xbadxx\") --> \"" + hasBad("xbadxx") + "\"");
+		System.out.println("hasBad(\"xxbadxx\") --> \"" + hasBad("xxbadxx") + "\"");
+		System.out.println("hasBad(\"code\") --> \"" + hasBad("code") + "\"");
+		System.out.println("hasBad(\"bad\") --> \"" + hasBad("bad") + "\"");
+		System.out.println("hasBad(\"ba\") --> \"" + hasBad("ba") + "\"");
+		System.out.println("hasBad(\"xba\") --> \"" + hasBad("xba") + "\"");
+		System.out.println("hasBad(\"xbad\") --> \"" + hasBad("xbad") + "\"");
+		System.out.println("hasBad(\"\") --> \"" + hasBad("") + "\"");
+		System.out.println("hasBad(\"badyy\") --> \"" + hasBad("badyy") + "\"");
 	}
 }
