@@ -434,5 +434,13 @@ public class String_1
 		System.out.println("twoChar(\"Hello\", 6) --> \"" + twoChar("Hello", 6) + "\"");
 		System.out.println("twoChar(\"Hello\", -1) --> \"" + twoChar("Hello", -1) + "\"");
 		System.out.println("twoChar(\"yay\", 0) --> \"" + twoChar("yay", 0) + "\"");
+		printFunction("middleThree");
+		System.out.println("middleThree(\"Candy\") --> \"" + middleThree("Candy") + "\"");
+		System.out.println("middleThree(\"and\") --> \"" + middleThree("and") + "\"");
+		System.out.println("middleThree(\"solving\") --> \"" + middleThree("solving") + "\"");
+		System.out.println("middleThree(\"Hi yet Hi\") --> \"" + middleThree("Hi yet Hi") + "\"");
+		System.out.println("middleThree(\"java yet java\") --> \"" + middleThree("java yet java") + "\"");
+		System.out.println("middleThree(\"Chocolate\") --> \"" + middleThree("Chocolate") + "\"");
+		System.out.println("middleThree(\"XabcxyzabcX\") --> \"" + middleThree("XabcxyzabcX") + "\"");
 	}
 }
