@@ -509,5 +509,17 @@ public class Warmup_1
 		System.out.println("loneTeen(6, 18) --> " + loneTeen(6, 18));
 		System.out.println("loneTeen(99, 13) --> " + loneTeen(99, 13));
 		System.out.println("loneTeen(99, 99) --> " + loneTeen(99, 99));
+		printFunction("delDel");
+		System.out.println("delDel(\"adelbc\") --> \"" + delDel("adelbc") + "\"");
+		System.out.println("delDel(\"adelHello\") --> \"" + delDel("adelHello") + "\"");
+		System.out.println("delDel(\"adedbc\") --> \"" + delDel("adedbc") + "\"");
+		System.out.println("delDel(\"abcdel\") --> \"" + delDel("abcdel") + "\"");
+		System.out.println("delDel(\"add\") --> \"" + delDel("add") + "\"");
+		System.out.println("delDel(\"ad\") --> \"" + delDel("ad") + "\"");
+		System.out.println("delDel(\"a\") --> \"" + delDel("a") + "\"");
+		System.out.println("delDel(\"\") --> \"" + delDel("") + "\"");
+		System.out.println("delDel(\"del\") --> \"" + delDel("del") + "\"");
+		System.out.println("delDel(\"adel\") --> \"" + delDel("adel") + "\"");
+		System.out.println("delDel(\"aadelbb\") --> \"" + delDel("aadelbb") + "\"");
 	}
 }
