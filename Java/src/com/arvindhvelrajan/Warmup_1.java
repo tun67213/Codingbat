@@ -456,5 +456,17 @@ public class Warmup_1
 		System.out.println("in1020(20, 20) --> " + in1020(20, 20));
 		System.out.println("in1020(21, 21) --> " + in1020(21, 21));
 		System.out.println("in1020(9, 9) --> " + in1020(9, 9));
+		printFunction("hasTeen");
+		System.out.println("hasTeen(13, 20, 10) --> " + hasTeen(13, 20, 10));
+		System.out.println("hasTeen(20, 19, 10) --> " + hasTeen(20, 19, 10));
+		System.out.println("hasTeen(20, 10, 13) --> " + hasTeen(20, 10, 13));
+		System.out.println("hasTeen(1, 20, 12) --> " + hasTeen(1, 20, 12));
+		System.out.println("hasTeen(19, 20, 12) --> " + hasTeen(19, 20, 12));
+		System.out.println("hasTeen(12, 20, 19) --> " + hasTeen(12, 20, 19));
+		System.out.println("hasTeen(12, 9, 20) --> " + hasTeen(12, 9, 20));
+		System.out.println("hasTeen(12, 18, 20) --> " + hasTeen(12, 18, 20));
+		System.out.println("hasTeen(14, 2, 20) --> " + hasTeen(14, 2, 20));
+		System.out.println("hasTeen(4, 2, 20) --> " + hasTeen(4, 2, 20));
+		System.out.println("hasTeen(11, 22, 22) --> " + hasTeen(11, 22, 22));
 	}
 }
