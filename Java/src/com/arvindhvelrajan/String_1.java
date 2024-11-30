@@ -297,5 +297,16 @@ public class String_1
 		System.out.println("right2(\"code\") --> \"" + right2("code") + "\"");
 		System.out.println("right2(\"cat\") --> \"" + right2("cat") + "\"");
 		System.out.println("right2(\"12345\") --> \"" + right2("12345") + "\"");
+		printFunction("theEnd");
+		System.out.println("theEnd(\"Hello\", true) --> \"" + theEnd("Hello", true) + "\"");
+		System.out.println("theEnd(\"Hello\", false) --> \"" + theEnd("Hello", false) + "\"");
+		System.out.println("theEnd(\"oh\", true) --> \"" + theEnd("oh", true) + "\"");
+		System.out.println("theEnd(\"oh\", false) --> \"" + theEnd("oh", false) + "\"");
+		System.out.println("theEnd(\"x\", true) --> \"" + theEnd("x", true) + "\"");
+		System.out.println("theEnd(\"x\", false) --> \"" + theEnd("x", false) + "\"");
+		System.out.println("theEnd(\"java\", true) --> \"" + theEnd("java", true) + "\"");
+		System.out.println("theEnd(\"chocolate\", false) --> \"" + theEnd("chocolate", false) + "\"");
+		System.out.println("theEnd(\"1234\", true) --> \"" + theEnd("1234", true) + "\"");
+		System.out.println("theEnd(\"code\", false) --> \"" + theEnd("code", false) + "\"");
 	}
 }
