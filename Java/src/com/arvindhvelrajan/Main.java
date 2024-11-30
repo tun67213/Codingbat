@@ -17,5 +17,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		welcome();
+		Warmup_1 warmup1 = new Warmup_1();
+		warmup1.main(args);
 	}
 }
