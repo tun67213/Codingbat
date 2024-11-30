@@ -296,5 +296,13 @@ public class Warmup_1
 		System.out.println("frontBack(\"Chocolate\") --> \"" + frontBack("Chocolate") + "\"");
 		System.out.println("frontBack(\"aavJ\") --> \"" + frontBack("aavJ") + "\"");
 		System.out.println("frontBack(\"hello\") --> \"" + frontBack("hello") + "\"");
+		printFunction("front3");
+		System.out.println("front3(\"Java\") --> \"" + front3("Java") + "\"");
+		System.out.println("front3(\"Chocolate\") --> \"" + front3("Chocolate") + "\"");
+		System.out.println("front3(\"abc\") --> \"" + front3("abc") + "\"");
+		System.out.println("front3(\"abcXYZ\") --> \"" + front3("abcXYZ") + "\"");
+		System.out.println("front3(\"ab\") --> \"" + front3("ab") + "\"");
+		System.out.println("front3(\"a\") --> \"" + front3("a") + "\"");
+		System.out.println("front3(\"\") --> \"" + front3("") + "\"");
 	}
 }
