@@ -219,5 +219,18 @@ public class Warmup_2
 		System.out.println("arrayCount9([]) --> " + arrayCount9(new int[] {}));
 		System.out.println("arrayCount9([4, 2, 4, 3, 1]) --> " + arrayCount9(new int[] {4, 2, 4, 3, 1}));
 		System.out.println("arrayCount9([9, 2, 4, 3, 1]) --> " + arrayCount9(new int[] {9, 2, 4, 3, 1}));
+		printFunction("arrayFront9");
+		System.out.println("arrayFront9([1, 2, 9, 3, 4]) --> " + arrayFront9(new int[] {1, 2, 9, 3, 4}));
+		System.out.println("arrayFront9([1, 2, 3, 4, 9]) --> " + arrayFront9(new int[] {1, 2, 3, 4, 9}));
+		System.out.println("arrayFront9([1, 2, 3, 4, 5]) --> " + arrayFront9(new int[] {1, 2, 3, 4, 5}));
+		System.out.println("arrayFront9([9, 2, 3]) --> " + arrayFront9(new int[] {9, 2, 3}));
+		System.out.println("arrayFront9([1, 9, 9]) --> " + arrayFront9(new int[] {1, 9, 9}));
+		System.out.println("arrayFront9([1, 2, 3]) --> " + arrayFront9(new int[] {1, 2, 3}));
+		System.out.println("arrayFront9([1, 9]) --> " + arrayFront9(new int[] {1, 9}));
+		System.out.println("arrayFront9([5, 5]) --> " + arrayFront9(new int[] {5, 5}));
+		System.out.println("arrayFront9([2]) --> " + arrayFront9(new int[] {2}));
+		System.out.println("arrayFront9([9]) --> " + arrayFront9(new int[] {9}));
+		System.out.println("arrayFront9([]) --> " + arrayFront9(new int[] {}));
+		System.out.println("arrayFront9([3, 9, 2, 3, 3]) --> " + arrayFront9(new int[] {3, 9, 2, 3, 3}));
 	}
 }
