@@ -376,5 +376,13 @@ public class Warmup_1
 		System.out.println("or35(121) --> " + or35(121));
 		System.out.println("or35(122) --> " + or35(122));
 		System.out.println("or35(123) --> " + or35(123));
+		printFunction("front22");
+		System.out.println("front22(\"kitten\") --> \"" + front22("kitten") + "\"");
+		System.out.println("front22(\"Ha\") --> \"" + front22("Ha") + "\"");
+		System.out.println("front22(\"abc\") --> \"" + front22("abc") + "\"");
+		System.out.println("front22(\"ab\") --> \"" + front22("ab") + "\"");
+		System.out.println("front22(\"a\") --> \"" + front22("a") + "\"");
+		System.out.println("front22(\"\") --> \"" + front22("") + "\"");
+		System.out.println("front22(\"Logic\") --> \"" + front22("Logic") + "\"");
 	}
 }
