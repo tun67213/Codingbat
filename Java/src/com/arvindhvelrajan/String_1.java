@@ -342,5 +342,11 @@ public class String_1
 		System.out.println("withouEnd2(\"\") --> \"" + withouEnd2("") + "\"");
 		System.out.println("withouEnd2(\"coldy\") --> \"" + withouEnd2("coldy") + "\"");
 		System.out.println("withouEnd2(\"java code\") --> \"" + withouEnd2("java code") + "\"");
+		printFunction("middleTwo");
+		System.out.println("middleTwo(\"string\") --> \"" + middleTwo("string") + "\"");
+		System.out.println("middleTwo(\"code\") --> \"" + middleTwo("code") + "\"");
+		System.out.println("middleTwo(\"Practice\") --> \"" + middleTwo("Practice") + "\"");
+		System.out.println("middleTwo(\"ab\") --> \"" + middleTwo("ab") + "\"");
+		System.out.println("middleTwo(\"0123456789\") --> \"" + middleTwo("0123456789") + "\"");
 	}
 }
