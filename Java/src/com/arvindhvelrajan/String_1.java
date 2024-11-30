@@ -57,5 +57,15 @@ public class String_1
 		System.out.println("helloName(\"ho ho ho\") --> \"" + helloName("ho ho ho") + "\"");
 		System.out.println("helloName(\"xyz!\") --> \"" + helloName("xyz!") + "\"");
 		System.out.println("helloName(\"Hello\") --> \"" + helloName("Hello") + "\"");
+		printFunction("makeAbba");
+		System.out.println("makeAbba(\"Hi\", \"Bye\") --> \"" + makeAbba("Hi", "Bye") + "\"");
+		System.out.println("makeAbba(\"Yo\", \"Alice\") --> \"" + makeAbba("Yo", "Alice") + "\"");
+		System.out.println("makeAbba(\"What\", \"Up\") --> \"" + makeAbba("What", "Up") + "\"");
+		System.out.println("makeAbba(\"aaa\", \"bbb\") --> \"" + makeAbba("aaa", "bbb") + "\"");
+		System.out.println("makeAbba(\"x\", \"y\") --> \"" + makeAbba("x", "y") + "\"");
+		System.out.println("makeAbba(\"x\", \"\") --> \"" + makeAbba("x", "") + "\"");
+		System.out.println("makeAbba(\"\", \"y\") --> \"" + makeAbba("", "y") + "\"");
+		System.out.println("makeAbba(\"Bo\", \"Ya\") --> \"" + makeAbba("Bo", "Ya") + "\"");
+		System.out.println("makeAbba(\"Ya\", \"Ya\") --> \"" + makeAbba("Ya", "Ya") + "\"");
 	}
 }
