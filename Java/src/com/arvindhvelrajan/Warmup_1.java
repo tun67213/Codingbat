@@ -417,5 +417,12 @@ public class Warmup_1
 		System.out.println("startHi(\"\") --> " + startHi(""));
 		System.out.println("startHi(\"ho hi\") --> " + startHi("ho hi"));
 		System.out.println("startHi(\"hi ho\") --> " + startHi("hi ho"));
+		printFunction("icyHot");
+		System.out.println("icyHot(120, -1) --> " + icyHot(120, -1));
+		System.out.println("icyHot(-1, 120) --> " + icyHot(-1, 120));
+		System.out.println("icyHot(2, 120) --> " + icyHot(2, 120));
+		System.out.println("icyHot(-1, 100) --> " + icyHot(-1, 100));
+		System.out.println("icyHot(-2, -2) --> " + icyHot(-2, -2));
+		System.out.println("icyHot(120, 120) --> " + icyHot(120, 120));
 	}
 }
