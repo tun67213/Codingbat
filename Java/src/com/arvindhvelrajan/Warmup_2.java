@@ -33,6 +33,6 @@ public class Warmup_2
 	 */
 	public void main(String[] args)
 	{
-		
+		welcome();
 	}
 }
