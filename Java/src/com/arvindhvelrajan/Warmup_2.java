@@ -81,6 +81,18 @@ public class Warmup_2
 	}
 
 	/**
+	 * Given a non-empty string like "Code" return a string like "CCoCodCode".
+	 *
+	 * stringSplosion("Code") → "CCoCodCode"
+	 * stringSplosion("abc") → "aababc"
+	 * stringSplosion("ab") → "aab"
+	 */
+	public String stringSplosion(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
