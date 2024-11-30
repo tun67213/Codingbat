@@ -187,6 +187,14 @@ public class String_1
 		System.out.println("firstHalf(\"\") --> \"" + firstHalf("") + "\"");
 		System.out.println("firstHalf(\"0123456789\") --> \"" + firstHalf("0123456789") + "\"");
 		System.out.println("firstHalf(\"kitten\") --> \"" + firstHalf("kitten") + "\"");
-
+		printFunction("withoutEnd");
+		System.out.println("withoutEnd(\"Hello\") --> \"" + withoutEnd("Hello") + "\"");
+		System.out.println("withoutEnd(\"java\") --> \"" + withoutEnd("java") + "\"");
+		System.out.println("withoutEnd(\"coding\") --> \"" + withoutEnd("coding") + "\"");
+		System.out.println("withoutEnd(\"code\") --> \"" + withoutEnd("code") + "\"");
+		System.out.println("withoutEnd(\"ab\") --> \"" + withoutEnd("ab") + "\"");
+		System.out.println("withoutEnd(\"Chocolate!\") --> \"" + withoutEnd("Chocolate!") + "\"");
+		System.out.println("withoutEnd(\"kitten\") --> \"" + withoutEnd("kitten") + "\"");
+		System.out.println("withoutEnd(\"woohoo\") --> \"" + withoutEnd("woohoo") + "\"");
 	}
 }
