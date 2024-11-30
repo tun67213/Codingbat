@@ -699,5 +699,13 @@ public class Warmup_1
 		System.out.println("stringE(\"Hll\") --> " + stringE("Hll"));
 		System.out.println("stringE(\"e\") --> " + stringE("e"));
 		System.out.println("stringE(\"\") --> " + stringE(""));
+		printFunction("lastDigit");
+		System.out.println("lastDigit(7, 17) --> " + lastDigit(7, 17));
+		System.out.println("lastDigit(6, 17) --> " + lastDigit(6, 17));
+		System.out.println("lastDigit(3, 113) --> " + lastDigit(3, 113));
+		System.out.println("lastDigit(114, 113) --> " + lastDigit(114, 113));
+		System.out.println("lastDigit(114, 4) --> " + lastDigit(114, 4));
+		System.out.println("lastDigit(10, 0) --> " + lastDigit(10, 0));
+		System.out.println("lastDigit(11, 0) --> " + lastDigit(11, 0));
 	}
 }
