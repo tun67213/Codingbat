@@ -502,5 +502,15 @@ public class String_1
 		System.out.println("atFirst(\"kitten\") --> \"" + atFirst("kitten") + "\"");
 		System.out.println("atFirst(\"java\") --> \"" + atFirst("java") + "\"");
 		System.out.println("atFirst(\"j\") --> \"" + atFirst("j") + "\"");
+		printFunction("lastChars");
+		System.out.println("lastChars(\"last\", \"chars\") --> \"" + lastChars("last", "chars") + "\"");
+		System.out.println("lastChars(\"yo\", \"java\") --> \"" + lastChars("yo", "java") + "\"");
+		System.out.println("lastChars(\"hi\", \"\") --> \"" + lastChars("hi", "") + "\"");
+		System.out.println("lastChars(\"\", \"hello\") --> \"" + lastChars("", "hello") + "\"");
+		System.out.println("lastChars(\"\", \"\") --> \"" + lastChars("", "") + "\"");
+		System.out.println("lastChars(\"kitten\", \"hi\") --> \"" + lastChars("kitten", "hi") + "\"");
+		System.out.println("lastChars(\"k\", \"zip\") --> \"" + lastChars("k", "zip") + "\"");
+		System.out.println("lastChars(\"kitten\", \"\") --> \"" + lastChars("kitten", "") + "\"");
+		System.out.println("lastChars(\"kitten\", \"zip\") --> \"" + lastChars("kitten", "zip") + "\"");
 	}
 }
