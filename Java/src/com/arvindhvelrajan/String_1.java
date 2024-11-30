@@ -105,5 +105,11 @@ public class String_1
 		System.out.println("makeTags(\"body\", \"Heart\") --> \"" + makeTags("body", "Heart") + "\"");
 		System.out.println("makeTags(\"i\", \"i\") --> \"" + makeTags("i", "i") + "\"");
 		System.out.println("makeTags(\"i\", \"\") --> \"" + makeTags("i", "") + "\"");
+		printFunction("makeOutWord");
+		System.out.println("makeOutWord(\"<<>>\", \"Yay\") --> \"" + makeOutWord("<<>>", "Yay") + "\"");
+		System.out.println("makeOutWord(\"<<>>\", \"WooHoo\") --> \"" + makeOutWord("<<>>", "WooHoo") + "\"");
+		System.out.println("makeOutWord(\"[[]]\", \"word\") --> \"" + makeOutWord("[[]]", "word") + "\"");
+		System.out.println("makeOutWord(\"HHoo\", \"Hello\") --> \"" + makeOutWord("HHoo", "Hello"));
+		System.out.println("makeOutWord(\"abyz\", \"YAY\") --> \"" + makeOutWord("abyz", "YAY"));
 	}
 }
