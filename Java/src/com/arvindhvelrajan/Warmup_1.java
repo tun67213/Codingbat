@@ -275,5 +275,14 @@ public class Warmup_1
 		System.out.println("missingChar(\"code\", 2) --> \"" + missingChar("code", 2) + "\"");
 		System.out.println("missingChar(\"code\", 3) --> \"" + missingChar("code", 3) + "\"");
 		System.out.println("missingChar(\"chocolate\", 8) --> \"" + missingChar("chocolate", 8) + "\"");
+		printFunction("frontBack");
+		System.out.println("frontBack(\"code\") --> \"" + frontBack("code") + "\"");
+		System.out.println("frontBack(\"a\") --> \"" + frontBack("a") + "\"");
+		System.out.println("frontBack(\"ab\") --> \"" + frontBack("ab") + "\"");
+		System.out.println("frontBack(\"abc\") --> \"" + frontBack("abc") + "\"");
+		System.out.println("frontBack(\"\") --> \"" + frontBack("") + "\"");
+		System.out.println("frontBack(\"Chocolate\") --> \"" + frontBack("Chocolate") + "\"");
+		System.out.println("frontBack(\"aavJ\") --> \"" + frontBack("aavJ") + "\"");
+		System.out.println("frontBack(\"hello\") --> \"" + frontBack("hello") + "\"");
 	}
 }
