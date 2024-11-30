@@ -320,6 +320,18 @@ public class String_1
 	}
 
 	/**
+	 * Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so "coding" yields "codign".
+	 *
+	 * lastTwo("coding") → "codign"
+	 * lastTwo("cat") → "cta"
+	 * lastTwo("ab") → "ba"
+	 */
+	public String lastTwo(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
