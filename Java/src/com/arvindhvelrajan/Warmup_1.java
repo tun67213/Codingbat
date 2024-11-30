@@ -719,5 +719,13 @@ public class Warmup_1
 		System.out.println("lastDigit(114, 4) --> " + lastDigit(114, 4));
 		System.out.println("lastDigit(10, 0) --> " + lastDigit(10, 0));
 		System.out.println("lastDigit(11, 0) --> " + lastDigit(11, 0));
+		printFunction("endUp");
+		System.out.println("endUp(\"Hello\") --> \"" + endUp("Hello") + "\"");
+		System.out.println("endUp(\"hi there\") --> \"" + endUp("hi there") + "\"");
+		System.out.println("endUp(\"hi\") --> \"" + endUp("hi") + "\"");
+		System.out.println("endUp(\"woo hoo\") --> \"" + endUp("woo hoo") + "\"");
+		System.out.println("endUp(\"xyz12\") --> \"" + endUp("xyz12") + "\"");
+		System.out.println("endUp(\"x\") --> \"" + endUp("x") + "\"");
+		System.out.println("endUp(\"\") --> \"" + endUp("") + "\"");
 	}
 }
