@@ -656,5 +656,17 @@ public class Warmup_1
 		System.out.println("in3050(50, 51) --> " + in3050(50, 51));
 		System.out.println("in3050(35, 36) --> " + in3050(35, 36));
 		System.out.println("in3050(35, 45) --> " + in3050(35, 45));
+		printFunction("max1020");
+		System.out.println("max1020(11, 19) --> " + max1020(11, 19));
+		System.out.println("max1020(19, 11) --> " + max1020(19, 11));
+		System.out.println("max1020(11, 9) --> " + max1020(11, 9));
+		System.out.println("max1020(9, 21) --> " + max1020(9, 21));
+		System.out.println("max1020(10, 21) --> " + max1020(10, 21));
+		System.out.println("max1020(21, 10) --> " + max1020(21, 10));
+		System.out.println("max1020(9, 11) --> " + max1020(9, 11));
+		System.out.println("max1020(23, 10) --> " + max1020(23, 10));
+		System.out.println("max1020(20, 10) --> " + max1020(20, 10));
+		System.out.println("max1020(7, 20) --> " + max1020(7, 20));
+		System.out.println("max1020(17, 16) --> " + max1020(17, 16));
 	}
 }
