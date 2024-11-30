@@ -18,6 +18,8 @@ public class Main
 	{
 		welcome();
 		Warmup_1 warmup1 = new Warmup_1();
+		Warmup_2 warmup2 = new Warmup_2();
 		warmup1.main(args);
+		warmup2.main(args);
 	}
 }
