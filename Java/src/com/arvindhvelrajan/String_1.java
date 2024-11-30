@@ -232,5 +232,15 @@ public class String_1
 		System.out.println("comboString(\"a\", \"bb\") --> \"" + comboString("a", "bb") + "\"");
 		System.out.println("comboString(\"bb\", \"a\") --> \"" + comboString("bb", "a") + "\"");
 		System.out.println("comboString(\"xyz\", \"ab\") --> \"" + comboString("xyz", "ab") + "\"");
+		printFunction("nonStart");
+		System.out.println("nonStart(\"Hello\", \"There\") --> \"" + nonStart("Hello", "There") + "\"");
+		System.out.println("nonStart(\"java\", \"code\") --> \"" + nonStart("java", "code") + "\"");
+		System.out.println("nonStart(\"shotl\", \"java\") --> \"" + nonStart("shotl", "java") + "\"");
+		System.out.println("nonStart(\"ab\", \"xy\") --> \"" + nonStart("ab", "xy") + "\"");
+		System.out.println("nonStart(\"ab\", \"x\") --> \"" + nonStart("ab", "x") + "\"");
+		System.out.println("nonStart(\"x\", \"ac\") --> \"" + nonStart("x", "ac") + "\"");
+		System.out.println("nonStart(\"a\", \"x\") --> \"" + nonStart("a", "x") + "\"");
+		System.out.println("nonStart(\"kit\", \"kat\") --> \"" + nonStart("kit", "kat") + "\"");
+		System.out.println("nonStart(\"mart\", \"dart\") --> \"" + nonStart("mart", "dart") + "\"");
 	}
 }
