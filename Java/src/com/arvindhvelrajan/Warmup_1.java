@@ -160,7 +160,9 @@ public class Warmup_1
 	}
 
 	/**
-	 * Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
+	 * Given a string, we'll say that the front is the first 3 chars of the string.
+	 * If the string length is less than 3, the front is whatever is there.
+	 * Return a new string which is 3 copies of the front.
 	 *
 	 * front3("Java") → "JavJavJav"
 	 * front3("Chocolate") → "ChoChoCho"
@@ -172,7 +174,8 @@ public class Warmup_1
 	}
 
 	/**
-	 * Given a string, take the last char and return a new string with the last char added at the front and back, so "cat" yields "tcatt". The original string will be length 1 or more.
+	 * Given a string, take the last char and return a new string with the last char added at the front and back,
+	 * so "cat" yields "tcatt". The original string will be length 1 or more.
 	 *
 	 * backAround("cat") → "tcatt"
 	 * backAround("Hello") → "oHelloo"
