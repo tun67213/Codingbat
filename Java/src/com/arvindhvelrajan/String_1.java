@@ -276,5 +276,12 @@ public class String_1
 		System.out.println("left2(\"12345\") --> \"" + left2("12345") + "\"");
 		System.out.println("left2(\"Chocolate\") --> \"" + left2("Chocolate") + "\"");
 		System.out.println("left2(\"bricks\") --> \"" + left2("bricks") + "\"");
+		printFunction("right2");
+		System.out.println("right2(\"Hello\") --> \"" + right2("Hello") + "\"");
+		System.out.println("right2(\"java\") --> \"" + right2("java") + "\"");
+		System.out.println("right2(\"Hi\") --> \"" + right2("Hi") + "\"");
+		System.out.println("right2(\"code\") --> \"" + right2("code") + "\"");
+		System.out.println("right2(\"cat\") --> \"" + right2("cat") + "\"");
+		System.out.println("right2(\"12345\") --> \"" + right2("12345") + "\"");
 	}
 }
