@@ -101,5 +101,17 @@ public class Warmup_2
 		System.out.println("countXX(\"\") --> " + countXX("\"\""));
 		System.out.println("countXX(\"Kittens\") --> " + countXX("Kittens"));
 		System.out.println("countXX(\"Kittensxxx\") --> " + countXX("Kittensxxx"));
+		printFunction("doubleX");
+		System.out.println("doubleX(\"axxbb\") --> " + doubleX("axxbb"));
+		System.out.println("doubleX(\"axaxax\") --> " + doubleX("axaxax"));
+		System.out.println("doubleX(\"xxxxx\") --> " + doubleX("xxxxx"));
+		System.out.println("doubleX(\"xaxxx\") --> " + doubleX("xaxxx"));
+		System.out.println("doubleX(\"aaaax\") --> " + doubleX("aaaax"));
+		System.out.println("doubleX(\"\") --> " + doubleX(""));
+		System.out.println("doubleX(\"abc\") --> " + doubleX("abc"));
+		System.out.println("doubleX(\"x\") --> " + doubleX("x"));
+		System.out.println("doubleX(\"xx\") --> " + doubleX("xx"));
+		System.out.println("doubleX(\"xax\") --> " + doubleX("xax"));
+		System.out.println("doubleX(\"xaxx\") --> " + doubleX("xaxx"));
 	}
 }
