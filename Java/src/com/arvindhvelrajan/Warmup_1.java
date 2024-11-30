@@ -214,6 +214,18 @@ public class Warmup_1
 	}
 
 	/**
+	 * Given a string, return true if the string starts with "hi" and false otherwise.
+	 *
+	 * startHi("hi there") → true
+	 * startHi("hi") → true
+	 * startHi("hello hi") → false
+	 */
+	public boolean startHi(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
