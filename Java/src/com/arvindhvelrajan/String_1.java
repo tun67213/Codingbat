@@ -405,5 +405,21 @@ public class String_1
 		System.out.println("nTwice(\"Hello\", 4) --> \"" + nTwice("Hello", 4) + "\"");
 		System.out.println("nTwice(\"Code\", 4) --> \"" + nTwice("Code", 4) + "\"");
 		System.out.println("nTwice(\"Code\", 2) --> \"" + nTwice("Code", 2) + "\"");
+		printFunction("twoChar");
+		System.out.println("twoChar(\"java\", 0) --> \"" + twoChar("java", 0) + "\"");
+		System.out.println("twoChar(\"java\", 2) --> \"" + twoChar("java", 2) + "\"");
+		System.out.println("twoChar(\"java\", 3) --> \"" + twoChar("java", 3) + "\"");
+		System.out.println("twoChar(\"java\", 4) --> \"" + twoChar("java", 4) + "\"");
+		System.out.println("twoChar(\"java\", -1) --> \"" + twoChar("java", -1) + "\"");
+		System.out.println("twoChar(\"Hello\", 0) --> \"" + twoChar("Hello", 0) + "\"");
+		System.out.println("twoChar(\"Hello\", 1) --> \"" + twoChar("Hello", 1) + "\"");
+		System.out.println("twoChar(\"Hello\", 99) --> \"" + twoChar("Hello", 99) + "\"");
+		System.out.println("twoChar(\"Hello\", 3) --> \"" + twoChar("Hello", 3) + "\"");
+		System.out.println("twoChar(\"Hello\", 4) --> \"" + twoChar("Hello", 4) + "\"");
+		System.out.println("twoChar(\"Hello\", 5) --> \"" + twoChar("Hello", 5) + "\"");
+		System.out.println("twoChar(\"Hello\", -7) --> \"" + twoChar("Hello", -7) + "\"");
+		System.out.println("twoChar(\"Hello\", 6) --> \"" + twoChar("Hello", 6) + "\"");
+		System.out.println("twoChar(\"Hello\", -1) --> \"" + twoChar("Hello", -1) + "\"");
+		System.out.println("twoChar(\"yay\", 0) --> \"" + twoChar("yay", 0) + "\"");
 	}
 }
