@@ -57,5 +57,13 @@ public class Warmup_2
 		System.out.println("stringTimes(\"\", 4) --> \"" + stringTimes("", 4) + "\"");
 		System.out.println("stringTimes(\"code\", 2) --> \"" + stringTimes("code", 2) + "\"");
 		System.out.println("stringTimes(\"code\", 3) --> \"" + stringTimes("code", 3) + "\"");
+		printFunction("frontTimes");
+		System.out.println("frontTimes(\"Chocolate\", 2) --> \"" + frontTimes("Chocolate", 2) + "\"");
+		System.out.println("frontTimes(\"Chocolate\", 3) --> \"" + frontTimes("Chocolate", 3) + "\"");
+		System.out.println("frontTimes(\"Abc\", 3) --> \"" + frontTimes("Abc", 3) + "\"");
+		System.out.println("frontTimes(\"Ab\", 4) --> \"" + frontTimes("Ab", 4) + "\"");
+		System.out.println("frontTimes(\"A\", 4) --> \"" + frontTimes("A", 4) + "\"");
+		System.out.println("frontTimes(\"\", 4) --> \"" + frontTimes("", 4) + "\"");
+		System.out.println("frontTimes(\"Abc\", 0) --> \"" + frontTimes("Abc", 0) + "\"");
 	}
 }
