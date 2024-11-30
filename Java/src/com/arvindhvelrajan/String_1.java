@@ -145,5 +145,14 @@ public class String_1
 		System.out.println("extraEnd(\"Hi\") --> \"" + extraEnd("Hi") + "\"");
 		System.out.println("extraEnd(\"Candy\") --> \"" + extraEnd("Candy") + "\"");
 		System.out.println("extraEnd(\"Code\") --> \"" + extraEnd("Code") + "\"");
+		printFunction("firstTwo");
+		System.out.println("firstTwo(\"Hello\") --> \"" + firstTwo("Hello") + "\"");
+		System.out.println("firstTwo(\"abcdefg\") --> \"" + firstTwo("abcdefg") + "\"");
+		System.out.println("firstTwo(\"ab\") --> \"" + firstTwo("ab") + "\"");
+		System.out.println("firstTwo(\"a\") --> \"" + firstTwo("a") + "\"");
+		System.out.println("firstTwo(\"\") --> \"" + firstTwo("") + "\"");
+		System.out.println("firstTwo(\"Kitten\") --> \"" + firstTwo("Kitten") + "\"");
+		System.out.println("firstTwo(\"hi\") --> \"" + firstTwo("hi") + "\"");
+		System.out.println("firstTwo(\"hiya\") --> \"" + firstTwo("hiya") + "\"");
 	}
 }
