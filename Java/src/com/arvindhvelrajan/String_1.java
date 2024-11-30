@@ -166,5 +166,14 @@ public class String_1
 		System.out.println("firstTwo(\"Kitten\") --> \"" + firstTwo("Kitten") + "\"");
 		System.out.println("firstTwo(\"hi\") --> \"" + firstTwo("hi") + "\"");
 		System.out.println("firstTwo(\"hiya\") --> \"" + firstTwo("hiya") + "\"");
+		printFunction("firstHalf");
+		System.out.println("firstHalf(\"WooHoo\") --> \"" + firstHalf("WooHoo") + "\"");
+		System.out.println("firstHalf(\"HelloThere\") --> \"" + firstHalf("HelloThere") + "\"");
+		System.out.println("firstHalf(\"abcdef\") --> \"" + firstHalf("abcdef") + "\"");
+		System.out.println("firstHalf(\"ab\") --> \"" + firstHalf("ab") + "\"");
+		System.out.println("firstHalf(\"\") --> \"" + firstHalf("") + "\"");
+		System.out.println("firstHalf(\"0123456789\") --> \"" + firstHalf("0123456789") + "\"");
+		System.out.println("firstHalf(\"kitten\") --> \"" + firstHalf("kitten") + "\"");
+
 	}
 }
