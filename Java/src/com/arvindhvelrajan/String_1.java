@@ -383,5 +383,13 @@ public class String_1
 		System.out.println("endsLy(\"\") --> " + endsLy(""));
 		System.out.println("endsLy(\"falsey\") --> " + endsLy("falsey"));
 		System.out.println("endsLy(\"evenly\") --> " + endsLy("evenly"));
+		printFunction("nTwice");
+		System.out.println("nTwice(\"Hello\", 2) --> \"" + nTwice("Hello", 2) + "\"");
+		System.out.println("nTwice(\"Chocolate\", 3) --> \"" + nTwice("Chocolate", 3) + "\"");
+		System.out.println("nTwice(\"Chocolate\", 1) --> \"" + nTwice("Chocolate", 1) + "\"");
+		System.out.println("nTwice(\"Chocolate\", 0) --> \"" + nTwice("Chocolate", 0) + "\"");
+		System.out.println("nTwice(\"Hello\", 4) --> \"" + nTwice("Hello", 4) + "\"");
+		System.out.println("nTwice(\"Code\", 4) --> \"" + nTwice("Code", 4) + "\"");
+		System.out.println("nTwice(\"Code\", 2) --> \"" + nTwice("Code", 2) + "\"");
 	}
 }
