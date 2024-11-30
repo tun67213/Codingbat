@@ -339,5 +339,28 @@ public class Warmup_1
 		System.out.println("backAround(\"abc\") --> \"" + backAround("abc") + "\"");
 		System.out.println("backAround(\"read\") --> \"" + backAround("read") + "\"");
 		System.out.println("backAround(\"boo\") --> \"" + backAround("boo") + "\"");
+		printFunction("or35");
+		System.out.println("or35(3) --> " + or35(3));
+		System.out.println("or35(10) --> " + or35(10));
+		System.out.println("or35(8) --> " + or35(8));
+		System.out.println("or35(15) --> " + or35(15));
+		System.out.println("or35(5) --> " + or35(5));
+		System.out.println("or35(9) --> " + or35(9));
+		System.out.println("or35(4) --> " + or35(4));
+		System.out.println("or35(7) --> " + or35(7));
+		System.out.println("or35(6) --> " + or35(6));
+		System.out.println("or35(17) --> " + or35(17));
+		System.out.println("or35(18) --> " + or35(18));
+		System.out.println("or35(29) --> " + or35(29));
+		System.out.println("or35(20) --> " + or35(20));
+		System.out.println("or35(21) --> " + or35(21));
+		System.out.println("or35(22) --> " + or35(22));
+		System.out.println("or35(45) --> " + or35(45));
+		System.out.println("or35(99) --> " + or35(99));
+		System.out.println("or35(100) --> " + or35(100));
+		System.out.println("or35(101) --> " + or35(101));
+		System.out.println("or35(121) --> " + or35(121));
+		System.out.println("or35(122) --> " + or35(122));
+		System.out.println("or35(123) --> " + or35(123));
 	}
 }
