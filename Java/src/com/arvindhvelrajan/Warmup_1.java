@@ -680,5 +680,12 @@ public class Warmup_1
 		System.out.println("max1020(20, 10) --> " + max1020(20, 10));
 		System.out.println("max1020(7, 20) --> " + max1020(7, 20));
 		System.out.println("max1020(17, 16) --> " + max1020(17, 16));
+		printFunction("stringE");
+		System.out.println("stringE(\"Hello\") --> " + stringE("Hello"));
+		System.out.println("stringE(\"Heelle\") --> " + stringE("Heelle"));
+		System.out.println("stringE(\"Heelele\") --> " + stringE("Heelele"));
+		System.out.println("stringE(\"Hll\") --> " + stringE("Hll"));
+		System.out.println("stringE(\"e\") --> " + stringE("e"));
+		System.out.println("stringE(\"\") --> " + stringE(""));
 	}
 }
