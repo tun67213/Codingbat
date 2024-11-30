@@ -15,4 +15,12 @@ public class Warmup_2
 	{
 		System.out.println("\n\nWarmup-2 Functions\n");
 	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public void main(String[] args)
+	{
+			
+	}
 }
