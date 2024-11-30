@@ -254,5 +254,14 @@ public class String_1
 		System.out.println("nonStart(\"a\", \"x\") --> \"" + nonStart("a", "x") + "\"");
 		System.out.println("nonStart(\"kit\", \"kat\") --> \"" + nonStart("kit", "kat") + "\"");
 		System.out.println("nonStart(\"mart\", \"dart\") --> \"" + nonStart("mart", "dart") + "\"");
+		printFunction("left2");
+		System.out.println("left2(\"Hello\") --> \"" + left2("Hello") + "\"");
+		System.out.println("left2(\"java\") --> \"" + left2("java") + "\"");
+		System.out.println("left2(\"Hi\") --> \"" + left2("Hi") + "\"");
+		System.out.println("left2(\"code\") --> \"" + left2("code") + "\"");
+		System.out.println("left2(\"cat\") --> \"" + left2("cat") + "\"");
+		System.out.println("left2(\"12345\") --> \"" + left2("12345") + "\"");
+		System.out.println("left2(\"Chocolate\") --> \"" + left2("Chocolate") + "\"");
+		System.out.println("left2(\"bricks\") --> \"" + left2("bricks") + "\"");
 	}
 }
