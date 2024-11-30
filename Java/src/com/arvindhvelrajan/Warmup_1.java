@@ -276,6 +276,19 @@ public class Warmup_1
 	}
 
 	/**
+	 * Given a string, if the string "del" appears starting at index 1,
+	 * return a string where that "del" has been deleted. Otherwise, return the string unchanged.
+	 *
+	 * delDel("adelbc") → "abc"
+	 * delDel("adelHello") → "aHello"
+	 * delDel("adedbc") → "adedbc"
+	 */
+	public String delDel(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
