@@ -526,5 +526,12 @@ public class String_1
 		System.out.println("lastChars(\"k\", \"zip\") --> \"" + lastChars("k", "zip") + "\"");
 		System.out.println("lastChars(\"kitten\", \"\") --> \"" + lastChars("kitten", "") + "\"");
 		System.out.println("lastChars(\"kitten\", \"zip\") --> \"" + lastChars("kitten", "zip") + "\"");
+		printFunction("conCat");
+		System.out.println("conCat(\"abc\", \"cat\") --> \"" + conCat("abc", "cat") + "\"");
+		System.out.println("conCat(\"dog\", \"cat\") --> \"" + conCat("dog", "cat") + "\"");
+		System.out.println("conCat(\"abc\", \"\") --> \"" + conCat("abc", "") + "\"");
+		System.out.println("conCat(\"\", \"cat\") --> \"" + conCat("", "cat") + "\"");
+		System.out.println("conCat(\"pig\", \"g\") --> \"" + conCat("pig", "g") + "\"");
+		System.out.println("conCat(\"pig\", \"doggy\") --> \"" + conCat("pig", "doggy") + "\"");
 	}
 }
