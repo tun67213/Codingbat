@@ -148,5 +148,16 @@ public class Warmup_2
 		System.out.println("stringBits(\"Chocolate\") --> \"" + stringBits("Chocolate") + "\"");
 		System.out.println("stringBits(\"pi\") --> \"" + stringBits("pi") + "\"");
 		System.out.println("stringBits(\"hxaxpxpxy\") --> \"" + stringBits("hxaxpxpxy") + "\"");
+		printFunction("stringSplosion");
+		System.out.println("stringSplosion(\"Code\") --> \"" + stringSplosion("Code") + "\"");
+		System.out.println("stringSplosion(\"abc\") --> \"" + stringSplosion("abc") + "\"");
+		System.out.println("stringSplosion(\"ab\") --> \"" + stringSplosion("ab") + "\"");
+		System.out.println("stringSplosion(\"x\") --> \"" + stringSplosion("x") + "\"");
+		System.out.println("stringSplosion(\"fade\") --> \"" + stringSplosion("fade") + "\"");
+		System.out.println("stringSplosion(\"There\") --> \"" + stringSplosion("There") + "\"");
+		System.out.println("stringSplosion(\"Kitten\") --> \"" + stringSplosion("Kitten") + "\"");
+		System.out.println("stringSplosion(\"Bye\") --> \"" + stringSplosion("Bye") + "\"");
+		System.out.println("stringSplosion(\"Good\") --> \"" + stringSplosion("Good") + "\"");
+		System.out.println("stringSplosion(\"Bad\") --> \"" + stringSplosion("Bad") + "\"");
 	}
 }
