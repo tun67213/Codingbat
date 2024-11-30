@@ -17,6 +17,18 @@ public class String_1
 	}
 
 	/**
+	 * Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
+	 *
+	 * helloName("Bob") → "Hello Bob!"
+	 * helloName("Alice") → "Hello Alice!"
+	 * helloName("X") → "Hello X!"
+	 */
+	public String helloName(String name)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
