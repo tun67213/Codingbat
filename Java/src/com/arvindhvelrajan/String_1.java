@@ -479,5 +479,13 @@ public class String_1
 		System.out.println("hasBad(\"xbad\") --> \"" + hasBad("xbad") + "\"");
 		System.out.println("hasBad(\"\") --> \"" + hasBad("") + "\"");
 		System.out.println("hasBad(\"badyy\") --> \"" + hasBad("badyy") + "\"");
+		printFunction("atFirst");
+		System.out.println("atFirst(\"hello\") --> \"" + atFirst("hello") + "\"");
+		System.out.println("atFirst(\"hi\") --> \"" + atFirst("hi") + "\"");
+		System.out.println("atFirst(\"h\") --> \"" + atFirst("h") + "\"");
+		System.out.println("atFirst(\"\") --> \"" + atFirst("") + "\"");
+		System.out.println("atFirst(\"kitten\") --> \"" + atFirst("kitten") + "\"");
+		System.out.println("atFirst(\"java\") --> \"" + atFirst("java") + "\"");
+		System.out.println("atFirst(\"j\") --> \"" + atFirst("j") + "\"");
 	}
 }
