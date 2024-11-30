@@ -554,5 +554,18 @@ public class Warmup_1
 		System.out.println("mixStart(\"ni\") --> \"" + mixStart("ni") + "\"");
 		System.out.println("mixStart(\"n\") --> \"" + mixStart("n") + "\"");
 		System.out.println("mixStart(\"\") --> \"" + mixStart("") + "\"");
+		printFunction("startOz");
+		System.out.println("startOz(\"ozymandias\") --> \"" + startOz("ozymandias") + "\"");
+		System.out.println("startOz(\"bzoo\") --> \"" + startOz("bzoo") + "\"");
+		System.out.println("startOz(\"oxx\") --> \"" + startOz("oxx") + "\"");
+		System.out.println("startOz(\"oz\") --> \"" + startOz("oz") + "\"");
+		System.out.println("startOz(\"ounce\") --> \"" + startOz("ounce") + "\"");
+		System.out.println("startOz(\"o\") --> \"" + startOz("o") + "\"");
+		System.out.println("startOz(\"abc\") --> \"" + startOz("abc") + "\"");
+		System.out.println("startOz(\"\") --> \"" + startOz("") + "\"");
+		System.out.println("startOz(\"zoo\") --> \"" + startOz("zoo") + "\"");
+		System.out.println("startOz(\"aztec\") --> \"" + startOz("aztec") + "\"");
+		System.out.println("startOz(\"zzzz\") --> \""  + startOz("zzzz") + "\"");
+		System.out.println("startOz(\"oznic\") --> \"" + startOz("oznic") + "\"");
 	}
 }
