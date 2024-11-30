@@ -187,6 +187,18 @@ public class String_1
 	}
 
 	/**
+	 * Given a string, return a version without both the first and last char of the string. The string may be any length, including 0.
+	 *
+	 * withouEnd2("Hello") → "ell"
+	 * withouEnd2("abc") → "b"
+	 * withouEnd2("ab") → ""
+	 */
+	public String withouEnd2(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
