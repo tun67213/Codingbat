@@ -148,6 +148,18 @@ public class Warmup_1
 	}
 
 	/**
+	 * Given a string, return a new string where the first and last chars have been exchanged.
+	 *
+	 * frontBack("code") → "eodc"
+	 * frontBack("a") → "a"
+	 * frontBack("ab") → "ba"
+	 */
+	public String frontBack(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
