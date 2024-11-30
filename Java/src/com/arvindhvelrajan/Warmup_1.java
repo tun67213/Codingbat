@@ -630,5 +630,18 @@ public class Warmup_1
 		System.out.println("close10(5, 21) --> " + close10(5, 21));
 		System.out.println("close10(0, 20) --> " + close10(0, 20));
 		System.out.println("close10(10, 10) --> " + close10(10, 10));
+		printFunction("in3050");
+		System.out.println("in3050(30, 31) --> " + in3050(30, 31));
+		System.out.println("in3050(30, 41) --> " + in3050(30, 41));
+		System.out.println("in3050(40, 50) --> " + in3050(40, 50));
+		System.out.println("in3050(40, 51) --> " + in3050(40, 51));
+		System.out.println("in3050(39, 50) --> " + in3050(39, 50));
+		System.out.println("in3050(50, 39) --> " + in3050(50, 39));
+		System.out.println("in3050(40, 39) --> " + in3050(40, 39));
+		System.out.println("in3050(49, 48) --> " + in3050(49, 48));
+		System.out.println("in3050(50, 40) --> " + in3050(50, 40));
+		System.out.println("in3050(50, 51) --> " + in3050(50, 51));
+		System.out.println("in3050(35, 36) --> " + in3050(35, 36));
+		System.out.println("in3050(35, 45) --> " + in3050(35, 45));
 	}
 }
