@@ -565,5 +565,17 @@ public class String_1
 		System.out.println("lastTwo(\"ab\") --> \"" + lastTwo("ab") + "\"");
 		System.out.println("lastTwo(\"a\") --> \"" + lastTwo("a") + "\"");
 		System.out.println("lastTwo(\"\") --> \"" + lastTwo("") + "\"");
+		printFunction("seeColor");
+		System.out.println("seeColor(\"redxx\") --> \"" + seeColor("redxx") + "\"");
+		System.out.println("seeColor(\"xxred\") --> \"" + seeColor("xxred") + "\"");
+		System.out.println("seeColor(\"blueTimes\") --> \"" + seeColor("blueTimes") + "\"");
+		System.out.println("seeColor(\"NoColor\") --> \"" + seeColor("NoColor") + "\"");
+		System.out.println("seeColor(\"red\") --> \"" + seeColor("red") + "\"");
+		System.out.println("seeColor(\"re\") --> \"" + seeColor("re") + "\"");
+		System.out.println("seeColor(\"blu\") --> \"" + seeColor("blu") + "\"");
+		System.out.println("seeColor(\"blue\") --> \"" + seeColor("blue") + "\"");
+		System.out.println("seeColor(\"a\") --> \"" + seeColor("a") + "\"");
+		System.out.println("seeColor(\"\") --> \"" + seeColor("") + "\"");
+		System.out.println("seeColor(\"xyzred\") --> \"" + seeColor("xyzred") + "\"");
 	}
 }
