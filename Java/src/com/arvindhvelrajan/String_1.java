@@ -29,6 +29,18 @@ public class String_1
 	}
 
 	/**
+	 * Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
+	 *
+	 * makeAbba("Hi", "Bye") → "HiByeByeHi"
+	 * makeAbba("Yo", "Alice") → "YoAliceAliceYo"
+	 * makeAbba("What", "Up") → "WhatUpUpWhat"
+	 */
+	public String makeAbba(String a, String b)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
