@@ -124,5 +124,11 @@ public class String_1
 		System.out.println("makeOutWord(\"[[]]\", \"word\") --> \"" + makeOutWord("[[]]", "word") + "\"");
 		System.out.println("makeOutWord(\"HHoo\", \"Hello\") --> \"" + makeOutWord("HHoo", "Hello"));
 		System.out.println("makeOutWord(\"abyz\", \"YAY\") --> \"" + makeOutWord("abyz", "YAY"));
+		printFunction("extraEnd");
+		System.out.println("extraEnd(\"Hello\") --> \"" + extraEnd("Hello") + "\"");
+		System.out.println("extraEnd(\"ab\") --> \"" + extraEnd("ab") + "\"");
+		System.out.println("extraEnd(\"Hi\") --> \"" + extraEnd("Hi") + "\"");
+		System.out.println("extraEnd(\"Candy\") --> \"" + extraEnd("Candy") + "\"");
+		System.out.println("extraEnd(\"Code\") --> \"" + extraEnd("Code") + "\"");
 	}
 }
