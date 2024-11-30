@@ -13,4 +13,12 @@ public class String_1
 	{
 		System.out.println("\n\nString-1 Functions\n");
 	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public void main(String[] args)
+	{
+		
+	}
 }
