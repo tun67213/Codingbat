@@ -289,7 +289,8 @@ public class Warmup_1
 	}
 
 	/**
-	 * Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
+	 * Return true if the given string begins with "mix", except the 'm' can be anything,
+	 * so "pix", "9ix" .. all count.
 	 *
 	 * mixStart("mix snacks") → true
 	 * mixStart("pix snacks") → true
