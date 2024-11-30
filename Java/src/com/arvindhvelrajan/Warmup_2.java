@@ -268,5 +268,16 @@ public class Warmup_2
 		System.out.println("array123([1, 2]) --> " + array123(new int[]{1, 2}));
 		System.out.println("array123([1]) --> " + array123(new int[] {1}));
 		System.out.println("array123([]) --> " + array123(new int[] {}));
+		printFunction("stringMatch");
+		System.out.println("stringMatch(\"xxcaazz\", \"xxbaaz\") --> " + stringMatch("xxcaazz", "xxbaaz"));
+		System.out.println("stringMatch(\"abc\", \"abc\") --> " + stringMatch("abc", "abc"));
+		System.out.println("stringMatch(\"abc\", \"axc\") --> " + stringMatch("abc", "axc"));
+		System.out.println("stringMatch(\"hello\", \"he\") --> " + stringMatch("hello", "he"));
+		System.out.println("stringMatch(\"he\", \"hello\") --> " + stringMatch("he", "hello"));
+		System.out.println("stringMatch(\"h\", \"hello\") --> " + stringMatch("h", "hello"));
+		System.out.println("stringMatch(\"\", \"hello\") --> " + stringMatch("", "hello"));
+		System.out.println("stringMatch(\"aabbccdd\", \"abbbxxd\") --> " + stringMatch("aabbccdd", "abbbxxd"));
+		System.out.println("stringMatch(\"aaxxaaxx\", \"iaxxai\") --> " + stringMatch("aaxxaaxx", "iaxxai"));
+		System.out.println("stringMatch(\"iaxxai\", \"aaxxaaxx\") --> " + stringMatch("iaxxai", "aaxxaaxx"));
 	}
 }
