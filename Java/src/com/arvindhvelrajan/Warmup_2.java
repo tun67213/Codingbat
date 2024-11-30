@@ -244,5 +244,15 @@ public class Warmup_2
 		System.out.println("arrayFront9([9]) --> " + arrayFront9(new int[] {9}));
 		System.out.println("arrayFront9([]) --> " + arrayFront9(new int[] {}));
 		System.out.println("arrayFront9([3, 9, 2, 3, 3]) --> " + arrayFront9(new int[] {3, 9, 2, 3, 3}));
+		printFunction("array123");
+		System.out.println("array123([1, 1, 2, 3, 1]) --> " + array123(new int[] {1, 1, 2, 3, 1}));
+		System.out.println("array123([1, 1, 2, 4, 1]) --> " + array123(new int[] {1, 1, 2, 4, 1}));
+		System.out.println("array123([1, 1, 2, 1, 2, 3]) --> " + array123(new int[] {1, 1, 2, 1, 2, 3}));
+		System.out.println("array123([1, 2, 3, 1, 2, 3]) --> " + array123(new int[] {1, 2, 3, 1, 2, 3}));
+		System.out.println("array123([1, 2, 3]) --> " + array123(new int[] {1, 2, 3}));
+		System.out.println("array123([1, 1, 1]) --> " + array123(new int[] {1, 1, 1}));
+		System.out.println("array123([1, 2]) --> " + array123(new int[]{1, 2}));
+		System.out.println("array123([1]) --> " + array123(new int[] {1}));
+		System.out.println("array123([]) --> " + array123(new int[] {}));
 	}
 }
