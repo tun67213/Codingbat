@@ -8,6 +8,9 @@ import static com.arvindhvelrajan.UI_Functions.*;
  */
 public class Warmup_1
 {
+	/**
+	 * This function introduces the user to the class that is being demonstrated.
+	 */
 	private void welcome()
 	{
 		System.out.println("Warmup-1 Functions\n");
