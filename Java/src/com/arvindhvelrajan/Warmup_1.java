@@ -533,5 +533,13 @@ public class Warmup_1
 		System.out.println("delDel(\"del\") --> \"" + delDel("del") + "\"");
 		System.out.println("delDel(\"adel\") --> \"" + delDel("adel") + "\"");
 		System.out.println("delDel(\"aadelbb\") --> \"" + delDel("aadelbb") + "\"");
+		printFunction("mixStart");
+		System.out.println("mixStart(\"mix snacks\") --> " + mixStart("mix snacks"));
+		System.out.println("mixStart(\"pix snacks\") --> " + mixStart("pix snacks"));
+		System.out.println("mixStart(\"piz snacks\") --> " + mixStart("piz snacks"));
+		System.out.println("mixStart(\"nix\") --> \"" + mixStart("nix") + "\"");
+		System.out.println("mixStart(\"ni\") --> \"" + mixStart("ni") + "\"");
+		System.out.println("mixStart(\"n\") --> \"" + mixStart("n") + "\"");
+		System.out.println("mixStart(\"\") --> \"" + mixStart("") + "\"");
 	}
 }
