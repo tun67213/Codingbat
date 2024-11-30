@@ -246,5 +246,16 @@ public class Warmup_1
 		System.out.println("notString(\"not\") --> \"" + notString("not") + "\"");
 		System.out.println("notString(\"is not\") --> \"" + notString("is not") + "\"");;
 		System.out.println("notString(\"no\") --> \"" + notString("no") + "\"");
+		printFunction("missingChar");
+		System.out.println("missingChar(\"kitten\", 1) --> \"" + missingChar("kitten", 1) + "\"");
+		System.out.println("missingChar(\"kitten\", 0) --> \"" + missingChar("kitten", 0) + "\"");
+		System.out.println("missingChar(\"kitten\", 4) --> \"" + missingChar("kitten", 4) + "\"");
+		System.out.println("missingChar(\"Hi\", 0) --> \"" + missingChar("Hi", 0) + "\"");
+		System.out.println("missingChar(\"Hi\", 1) --> \"" + missingChar("Hi", 1) + "\"");
+		System.out.println("missingChar(\"code\", 0) --> \"" + missingChar("code", 0) + "\"");
+		System.out.println("missingChar(\"code\", 1) --> \"" + missingChar("code", 1) + "\"");
+		System.out.println("missingChar(\"code\", 2) --> \"" + missingChar("code", 2) + "\"");
+		System.out.println("missingChar(\"code\", 3) --> \"" + missingChar("code", 3) + "\"");
+		System.out.println("missingChar(\"chocolate\", 8) --> \"" + missingChar("chocolate", 8) + "\"");
 	}
 }
