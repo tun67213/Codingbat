@@ -79,5 +79,13 @@ public class String_1
 		System.out.println("makeAbba(\"\", \"y\") --> \"" + makeAbba("", "y") + "\"");
 		System.out.println("makeAbba(\"Bo\", \"Ya\") --> \"" + makeAbba("Bo", "Ya") + "\"");
 		System.out.println("makeAbba(\"Ya\", \"Ya\") --> \"" + makeAbba("Ya", "Ya") + "\"");
+		printFunction("makeTags");
+		System.out.println("makeTags(\"i\", \"Yay\") --> \"" + makeTags("i", "Yay") + "\"");
+		System.out.println("makeTags(\"i\", \"Hello\") --> \"" + makeTags("i", "Hello") + "\"");
+		System.out.println("makeTags(\"cite\", \"Yay\") --> \"" + makeTags("cite", "Yay") + "\"");
+		System.out.println("makeTags(\"address\", \"here\") --> \"" + makeTags("address", "here") + "\"");
+		System.out.println("makeTags(\"body\", \"Heart\") --> \"" + makeTags("body", "Heart") + "\"");
+		System.out.println("makeTags(\"i\", \"i\") --> \"" + makeTags("i", "i") + "\"");
+		System.out.println("makeTags(\"i\", \"\") --> \"" + makeTags("i", "") + "\"");
 	}
 }
