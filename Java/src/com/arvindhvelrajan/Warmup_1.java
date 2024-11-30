@@ -316,5 +316,12 @@ public class Warmup_1
 		System.out.println("front3(\"ab\") --> \"" + front3("ab") + "\"");
 		System.out.println("front3(\"a\") --> \"" + front3("a") + "\"");
 		System.out.println("front3(\"\") --> \"" + front3("") + "\"");
+		printFunction("backAround");
+		System.out.println("backAround(\"cat\") --> \"" + backAround("cat") + "\"");
+		System.out.println("backAround(\"Hello\") --> \"" + backAround("Hello") + "\"");
+		System.out.println("backAround(\"a\") --> \"" + backAround("a") + "\"");
+		System.out.println("backAround(\"abc\") --> \"" + backAround("abc") + "\"");
+		System.out.println("backAround(\"read\") --> \"" + backAround("read") + "\"");
+		System.out.println("backAround(\"boo\") --> \"" + backAround("boo") + "\"");
 	}
 }
