@@ -682,5 +682,25 @@ public class String_1
 		System.out.println("without2(\"x\") --> \"" + without2("x") + "\"");
 		System.out.println("without2(\"\") --> \"" + without2("") + "\"");
 		System.out.println("without2(\"Fruits\") --> \"" + without2("Fruits") + "\"");
+		printFunction("deFront");
+		System.out.println("deFront(\"Hello\") --> \"" + deFront("Hello") + "\"");
+		System.out.println("deFront(\"java\") --> \"" + deFront("java") + "\"");
+		System.out.println("deFront(\"away\") --> \"" + deFront("away") + "\"");
+		System.out.println("deFront(\"axy\") --> \"" + deFront("axy") + "\"");
+		System.out.println("deFront(\"abc\") --> \"" + deFront("abc") + "\"");
+		System.out.println("deFront(\"xby\") --> \"" + deFront("xby") + "\"");
+		System.out.println("deFront(\"ab\") --> \"" + deFront("ab") + "\"");
+		System.out.println("deFront(\"ax\") --> \"" + deFront("ax") + "\"");
+		System.out.println("deFront(\"axb\") --> \"" + deFront("axb") + "\"");
+		System.out.println("deFront(\"aaa\") --> \"" + deFront("aaa") + "\"");
+		System.out.println("deFront(\"xbc\") --> \"" + deFront("xbc") + "\"");
+		System.out.println("deFront(\"bbb\") --> \"" + deFront("bbb") + "\"");
+		System.out.println("deFront(\"bazz\") --> \"" + deFront("bazz") + "\"");
+		System.out.println("deFront(\"ba\") --> \"" + deFront("ba") + "\"");
+		System.out.println("deFront(\"abxyz\") --> \"" + deFront("abxyz") + "\"");
+		System.out.println("deFront(\"hi\") --> \"" + deFront("hi") + "\"");
+		System.out.println("deFront(\"his\") --> \"" + deFront("his") + "\"");
+		System.out.println("deFront(\"xz\") --> \"" + deFront("xz") + "\"");
+		System.out.println("deFront(\"zzz\") --> \"" + deFront("zzz") + "\"");
 	}
 }
