@@ -590,5 +590,16 @@ public class String_1
 		System.out.println("seeColor(\"a\") --> \"" + seeColor("a") + "\"");
 		System.out.println("seeColor(\"\") --> \"" + seeColor("") + "\"");
 		System.out.println("seeColor(\"xyzred\") --> \"" + seeColor("xyzred") + "\"");
+		printFunction("frontAgain");
+		System.out.println("frontAgain(\"edited\") --> " + frontAgain("edited"));
+		System.out.println("frontAgain(\"edit\") --> " + frontAgain("edit"));
+		System.out.println("frontAgain(\"jj\") --> " + frontAgain("jj"));
+		System.out.println("frontAgain(\"jjj\") --> " + frontAgain("jjj"));
+		System.out.println("frontAgain(\"jjjj\") --> " + frontAgain("jjjj"));
+		System.out.println("frontAgain(\"jjjk\") --> " + frontAgain("jjjk"));
+		System.out.println("frontAgain(\"x\") --> " + frontAgain("x"));
+		System.out.println("frontAgain(\"\") --> " + frontAgain(""));
+		System.out.println("frontAgain(\"java\") --> " + frontAgain("java"));
+		System.out.println("frontAgain(\"javaja\") --> " + frontAgain("javaja"));
 	}
 }
