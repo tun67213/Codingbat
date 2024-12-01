@@ -745,5 +745,18 @@ public class String_1
 		System.out.println("startWord(\"hippo\", \"xyz\") --> \"" + startWord("hippo", "xyz") + "\"");
 		System.out.println("startWord(\"kitten\", \"cit\") --> \"" + startWord("kitten", "cit") + "\"");
 		System.out.println("startWord(\"kit\", \"cit\") --> \"" + startWord("kit", "cit") + "\"");
+		printFunction("withoutX");
+		System.out.println("withoutX(\"xHix\") --> \"" + withoutX("xHix") + "\"");
+		System.out.println("withoutX(\"xHi\") --> \"" + withoutX("xHi") + "\"");
+		System.out.println("withoutX(\"Hxix\") --> \"" + withoutX("Hxix") + "\"");
+		System.out.println("withoutX(\"Hi\") --> \"" + withoutX("Hi") + "\"");
+		System.out.println("withoutX(\"xxHi\") --> \"" + withoutX("xxHi") + "\"");
+		System.out.println("withoutX(\"Hix\") --> \"" + withoutX("Hix") + "\"");
+		System.out.println("withoutX(\"xaxbx\") --> \"" + withoutX("xaxbx") + "\"");
+		System.out.println("withoutX(\"xx\") --> \"" + withoutX("xx") + "\"");
+		System.out.println("withoutX(\"x\") --> \"" + withoutX("x") + "\"");
+		System.out.println("withoutX(\"\") --> \"" + withoutX("") + "\"");
+		System.out.println("withoutX(\"Hello\") --> \"" + withoutX("Hello") + "\"");
+		System.out.println("withoutX(\"Hexllo\") --> \"" + withoutX("Hexllo") + "\"");
 	}
 }
