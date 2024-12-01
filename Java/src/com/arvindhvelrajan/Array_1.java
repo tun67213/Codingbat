@@ -34,5 +34,18 @@ public class Array_1
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("firstLast6");
+		System.out.println("firstLast6([1, 2, 6]) --> " + firstLast6(new int[] {1, 2, 6}));
+		System.out.println("firstLast6([6, 1, 2, 3]) --> " + firstLast6(new int[] {6, 1, 2, 3}));
+		System.out.println("firstLast6([13, 6, 1, 2, 3]) --> " + firstLast6(new int[] {13, 6, 1, 2, 3}));
+		System.out.println("firstLast6([3, 2, 1]) --> " + firstLast6(new int[] {3, 2, 1}));
+		System.out.println("firstLast6([3, 6, 1]) --> " + firstLast6(new int[] {3, 6, 1}));
+		System.out.println("firstLast6([3, 6]) --> " + firstLast6(new int[] {3, 6}));
+		System.out.println("firstLast6([6]) --> " + firstLast6(new int[] {6}));
+		System.out.println("firstLast6([3]) --> " + firstLast6(new int[] {3}));
+		System.out.println("firstLast6([5, 6]) --> " + firstLast6(new int[] {5, 6}));
+		System.out.println("firstLast6([5, 5]) --> " + firstLast6(new int[] {5, 5}));
+		System.out.println("firstLast6([1, 2, 3, 4, 6]) --> " + firstLast6(new int[] {1, 2, 3, 4, 6}));
+		System.out.println("firstLast6([1, 2, 3, 4]) --> " + firstLast6(new int[] {1, 2, 3, 4}));
 	}
 }
