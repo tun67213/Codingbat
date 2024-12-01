@@ -6,6 +6,9 @@ package com.arvindhvelrajan;
  */
 public class Array_1
 {
+	/**
+	 * This function introduces the user to the class that is being demonstrated.
+	 */
 	private void welcome()
 	{
 		System.out.println("\n\nArray-1 Functions\n");
