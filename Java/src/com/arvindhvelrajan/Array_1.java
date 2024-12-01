@@ -61,5 +61,15 @@ public class Array_1
 		System.out.println("firstLast6([5, 5]) --> " + firstLast6(new int[] {5, 5}));
 		System.out.println("firstLast6([1, 2, 3, 4, 6]) --> " + firstLast6(new int[] {1, 2, 3, 4, 6}));
 		System.out.println("firstLast6([1, 2, 3, 4]) --> " + firstLast6(new int[] {1, 2, 3, 4}));
+		printFunction("sameFirstLast");
+		System.out.println("sameFirstLast([1, 2, 3]) --> " + sameFirstLast(new int[] {1, 2, 3}));
+		System.out.println("sameFirstLast([1, 2, 3, 1]) --> " + sameFirstLast(new int[] {1, 2, 3, 1}));
+		System.out.println("sameFirstLast([1, 2, 1]) --> " + sameFirstLast(new int[] {1, 2, 1}));
+		System.out.println("sameFirstLast([7]) --> " + sameFirstLast(new int[] {7}));
+		System.out.println("sameFirstLast([]) --> " + sameFirstLast(new int[] {}));
+		System.out.println("sameFirstLast([1, 2, 3, 4, 5, 1]) --> " + sameFirstLast(new int[] {1, 2, 3, 4, 5, 1}));
+		System.out.println("sameFirstLast([1, 2, 3, 4, 5, 13]) --> " + sameFirstLast(new int[] {1, 2, 3, 4, 5, 13}));
+		System.out.println("sameFirstLast([13, 2, 3, 4, 5, 13]) --> " + sameFirstLast(new int[] {13, 2, 3, 4, 5, 13}));
+		System.out.println("sameFirstLast([7, 7]) --> " + sameFirstLast(new int[] {7, 7}));
 	}
 }
