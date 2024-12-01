@@ -636,5 +636,12 @@ public class String_1
 		System.out.println("minCat(\"abc\", \"x\") --> \"" + minCat("abc", "x") + "\"");
 		System.out.println("minCat(\"x\", \"abc\") --> \"" + minCat("x", "abc") + "\"");
 		System.out.println("minCat(\"abc\", \"\") --> \"" + minCat("abc", "") + "\"");
+		printFunction("extraFront");
+		System.out.println("extraFront(\"Hello\") --> \"" + extraFront("Hello") + "\"");
+		System.out.println("extraFront(\"ab\") --> \"" + extraFront("ab") + "\"");
+		System.out.println("extraFront(\"H\") --> \"" + extraFront("H") + "\"");
+		System.out.println("extraFront(\"\") --> \"" + extraFront("") + "\"");
+		System.out.println("extraFront(\"Candy\") --> \"" + extraFront("Candy") + "\"");
+		System.out.println("extraFront(\"Code\") --> \"" + extraFront("Code") + "\"");
 	}
 }
