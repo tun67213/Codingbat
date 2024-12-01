@@ -718,5 +718,19 @@ public class String_1
 		System.out.println("deFront(\"his\") --> \"" + deFront("his") + "\"");
 		System.out.println("deFront(\"xz\") --> \"" + deFront("xz") + "\"");
 		System.out.println("deFront(\"zzz\") --> \"" + deFront("zzz") + "\"");
+		printFunction("startWord");
+		System.out.println("startWord(\"hippo\", \"hi\") --> \"" + startWord("hippo", "hi") + "\"");
+		System.out.println("startWord(\"hippo\", \"xip\") --> \"" + startWord("hippo", "xip") + "\"");
+		System.out.println("startWord(\"hippo\", \"i\") --> \"" + startWord("hippo", "i") + "\"");
+		System.out.println("startWord(\"h\", \"ix\") --> \"" + startWord("h", "ix") + "\"");
+		System.out.println("startWord(\"\", \"i\") --> \"" + startWord("", "i") + "\"");
+		System.out.println("startWord(\"hip\", \"zi\") --> \"" + startWord("hip", "zi") + "\"");
+		System.out.println("startWord(\"hip\", \"zip\") --> \"" + startWord("hip", "zip") + "\"");
+		System.out.println("startWord(\"hip\", \"zig\") --> \"" + startWord("hip", "zip") + "\"");
+		System.out.println("startWord(\"h\", \"z\") --> \"" + startWord("h", "z") + "\"");
+		System.out.println("startWord(\"hippo\", \"xippo\") --> \"" + startWord("hippo", "xippo") + "\"");
+		System.out.println("startWord(\"hippo\", \"xyz\") --> \"" + startWord("hippo", "xyz") + "\"");
+		System.out.println("startWord(\"kitten\", \"cit\") --> \"" + startWord("kitten", "cit") + "\"");
+		System.out.println("startWord(\"kit\", \"cit\") --> \"" + startWord("kit", "cit") + "\"");
 	}
 }
