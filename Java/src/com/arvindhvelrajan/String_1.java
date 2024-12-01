@@ -758,6 +758,5 @@ public class String_1
 		System.out.println("withoutX(\"\") --> \"" + withoutX("") + "\"");
 		System.out.println("withoutX(\"Hello\") --> \"" + withoutX("Hello") + "\"");
 		System.out.println("withoutX(\"Hexllo\") --> \"" + withoutX("Hexllo") + "\"");
-		System.out.println("withoutX(\"xHxllo\") --> \"" + withoutX("xHxllo") + "\"");
 	}
 }
