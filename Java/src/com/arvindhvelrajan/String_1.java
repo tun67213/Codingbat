@@ -771,5 +771,18 @@ public class String_1
 		System.out.println("withoutX(\"\") --> \"" + withoutX("") + "\"");
 		System.out.println("withoutX(\"Hello\") --> \"" + withoutX("Hello") + "\"");
 		System.out.println("withoutX(\"Hexllo\") --> \"" + withoutX("Hexllo") + "\"");
+		printFunction("withoutX2");
+		System.out.println("withoutX2(\"xHi\") --> \"" + withoutX2("xHi") + "\"");
+		System.out.println("withoutX2(\"Hxi\") --> \"" + withoutX2("Hxi") + "\"");
+		System.out.println("withoutX2(\"Hi\") --> \"" + withoutX2("Hi") + "\"");
+		System.out.println("withoutX2(\"xxHi\") --> \"" + withoutX2("xxHi") + "\"");
+		System.out.println("withoutX2(\"Hix\") --> \"" + withoutX2("Hix") + "\"");
+		System.out.println("withoutX2(\"xaxb\") --> \"" + withoutX2("xaxb") + "\"");
+		System.out.println("withoutX2(\"xx\") --> \"" + withoutX2("xx") + "\"");
+		System.out.println("withoutX2(\"x\") --> \"" + withoutX2("x") + "\"");
+		System.out.println("withoutX2(\"\") --> \"" + withoutX2("") + "\"");
+		System.out.println("withoutX2(\"Hello\") --> \"" + withoutX2("Hello") + "\"");
+		System.out.println("withoutX2(\"Hexllo\") --> \"" + withoutX2("Hexllo") + "\"");
+		System.out.println("withoutX2(\"xHxllo\") --> \"" + withoutX2("xHxllo") + "\"");
 	}
 }
