@@ -616,5 +616,12 @@ public class String_1
 		System.out.println("frontAgain(\"\") --> " + frontAgain(""));
 		System.out.println("frontAgain(\"java\") --> " + frontAgain("java"));
 		System.out.println("frontAgain(\"javaja\") --> " + frontAgain("javaja"));
+		printFunction("minCat");
+		System.out.println("minCat(\"Hello\", \"Hi\") --> \"" + minCat("Hello", "Hi") + "\"");
+		System.out.println("minCat(\"Hello\", \"java\") --> \"" + minCat("Hello", "java") + "\"");
+		System.out.println("minCat(\"java\", \"Hello\") --> \"" + minCat("java", "Hello") + "\"");
+		System.out.println("minCat(\"abc\", \"x\") --> \"" + minCat("abc", "x") + "\"");
+		System.out.println("minCat(\"x\", \"abc\") --> \"" + minCat("x", "abc") + "\"");
+		System.out.println("minCat(\"abc\", \"\") --> \"" + minCat("abc", "") + "\"");
 	}
 }
