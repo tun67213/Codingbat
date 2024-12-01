@@ -658,5 +658,15 @@ public class String_1
 		System.out.println("extraFront(\"\") --> \"" + extraFront("") + "\"");
 		System.out.println("extraFront(\"Candy\") --> \"" + extraFront("Candy") + "\"");
 		System.out.println("extraFront(\"Code\") --> \"" + extraFront("Code") + "\"");
+		printFunction("without2");
+		System.out.println("without2(\"HelloHe\") --> \"" + without2("HelloHe") + "\"");
+		System.out.println("without2(\"HelloHi\") --> \"" + without2("HelloHi") + "\"");
+		System.out.println("without2(\"Hi\") --> \"" + without2("Hi") + "\"");
+		System.out.println("without2(\"Chocolate\") --> \"" + without2("Chocolate") + "\"");
+		System.out.println("without2(\"xxx\") --> \"" + without2("xxx") + "\"");
+		System.out.println("without2(\"xx\") --> \"" + without2("xx") + "\"");
+		System.out.println("without2(\"x\") --> \"" + without2("x") + "\"");
+		System.out.println("without2(\"\") --> \"" + without2("") + "\"");
+		System.out.println("without2(\"Fruits\") --> \"" + without2("Fruits") + "\"");
 	}
 }
