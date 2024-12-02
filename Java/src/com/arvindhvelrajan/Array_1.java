@@ -239,5 +239,14 @@ public class Array_1
 		System.out.println("middleWay([1, 9, 7], [4, 8, 8]) --> " + Arrays.toString(middleWay(new int[] {1, 9, 7}, new int[] {4, 8, 8})));
 		System.out.println("middleWay([1, 2, 3], [3, 1, 4]) --> " + Arrays.toString(middleWay(new int[] {1, 2, 3}, new int[] {3, 1, 4})));
 		System.out.println("middleWay([1, 2, 3], [4, 1, 1]) --> " + Arrays.toString(middleWay(new int[] {1, 2, 3}, new int[] {4, 1, 1})));
+		printFunction("makeEnds");
+		System.out.println("makeEnds([1, 2, 3]) --> " + Arrays.toString(makeEnds(new int[] {1, 2, 3})));
+		System.out.println("makeEnds([1, 2, 3, 4]) --> " + Arrays.toString(makeEnds(new int[] {1, 2, 3, 4})));
+		System.out.println("makeEnds([7, 4, 6, 2]) --> " + Arrays.toString(makeEnds(new int[] {7, 4, 6, 2})));
+		System.out.println("makeEnds([1, 2, 2, 2, 2, 2, 2, 3]) --> " + Arrays.toString(makeEnds(new int[] {1, 2, 2, 2, 2})));
+		System.out.println("makeEnds([7, 4]) --> " + Arrays.toString(makeEnds(new int[] {7, 4})));
+		System.out.println("makeEnds([7]) --> " + Arrays.toString(makeEnds(new int[] {7})));
+		System.out.println("makeEnds([5, 2, 9]) --> " + Arrays.toString(makeEnds(new int[] {5, 2, 9})));
+		System.out.println("makeEnds([2, 3, 4, 1]) --> " + Arrays.toString(makeEnds(new int[] {2, 3, 4, 1})));
 	}
 }
