@@ -282,5 +282,17 @@ public class Array_1
 		System.out.println("has23([7, 7]) --> " + has23(new int[] {7, 7}));
 		System.out.println("has23([3, 9]) --> " + has23(new int[] {3, 9}));
 		System.out.println("has23([9, 5]) --> " + has23(new int[] {9, 5}));
+		printFunction("no23");
+		System.out.println("no23([4, 5]) --> " + no23(new int[] {4, 5}));
+		System.out.println("no23([4, 2]) --> " + no23(new int[] {4, 2}));
+		System.out.println("no23([3, 5]) --> " + no23(new int[] {3, 5}));
+		System.out.println("no23([1, 9]) --> " + no23(new int[] {1, 9}));
+		System.out.println("no23([2, 9]) --> " + no23(new int[] {2, 9}));
+		System.out.println("no23([1, 3]) --> " + no23(new int[] {1, 3}));
+		System.out.println("no23([1, 1]) --> " + no23(new int[] {1, 1}));
+		System.out.println("no23([2, 2]) --> " + no23(new int[] {2, 2}));
+		System.out.println("no23([3, 3]) --> " + no23(new int[] {3, 3}));
+		System.out.println("no23([7, 8]) --> " + no23(new int[] {7, 8}));
+		System.out.println("no23([8, 7]) --> " + no23(new int[] {8, 7}));
 	}
 }
