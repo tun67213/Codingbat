@@ -135,5 +135,11 @@ public class Array_1
 		System.out.println("sum3([1, 2, 1]) --> " + sum3(new int[] {1, 2, 1}));
 		System.out.println("sum3([1, 1, 1]) --> " + sum3(new int[] {1, 1, 1}));
 		System.out.println("sum3([2, 7, 2]) --> " + sum3(new int[] {2, 7, 2}));
+		printFunction("rotateLeft3");
+		System.out.println("rotateLeft3([1, 2, 3]) --> " + Arrays.toString(rotateLeft3(new int[] {1, 2, 3})));
+		System.out.println("rotateLeft3([5, 11, 9]) --> " + Arrays.toString(rotateLeft3(new int[] {5, 11, 9})));
+		System.out.println("rotateLeft3([7, 0, 0]) --> " + Arrays.toString(rotateLeft3(new int[] {7, 0, 0})));
+		System.out.println("rotateLeft3([1, 2, 1]) --> " + Arrays.toString(rotateLeft3(new int[] {1, 2, 1})));
+		System.out.println("rotateLeft3([0, 0, 1]) --> " + Arrays.toString(rotateLeft3(new int[] {0, 0, 1})));
 	}
 }
