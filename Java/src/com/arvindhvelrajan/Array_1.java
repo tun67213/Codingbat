@@ -43,6 +43,16 @@ public class Array_1
 	}
 
 	/**
+	 * Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
+	 *
+	 * makePi() → [3, 1, 4]
+	 */
+	public int[] makePi()
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
