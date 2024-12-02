@@ -116,5 +116,12 @@ public class Array_1
 		System.out.println("commonEnd([1, 2, 3], [1, 3]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {1, 3}));
 		System.out.println("commonEnd([1, 2, 3], [1]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {1}));
 		System.out.println("commonEnd([1, 2, 3], [2]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {2}));
+		printFunction("sum3");
+		System.out.println("sum3([1, 2, 3]) --> " + sum3(new int[] {1, 2, 3}));
+		System.out.println("sum3([5, 11, 2]) --> " + sum3(new int[] {5, 11, 2}));
+		System.out.println("sum3([7, 0, 0]) --> " + sum3(new int[] {7, 0, 0}));
+		System.out.println("sum3([1, 2, 1]) --> " + sum3(new int[] {1, 2, 1}));
+		System.out.println("sum3([1, 1, 1]) --> " + sum3(new int[] {1, 1, 1}));
+		System.out.println("sum3([2, 7, 2]) --> " + sum3(new int[] {2, 7, 2}));
 	}
 }
