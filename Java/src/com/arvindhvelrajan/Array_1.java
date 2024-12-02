@@ -176,5 +176,14 @@ public class Array_1
 		System.out.println("reverse3([2, 11, 3]) --> " + Arrays.toString(reverse3(new int[] {2, 11, 3})));
 		System.out.println("reverse3([0, 6, 5]) --> " + Arrays.toString(reverse3(new int[] {0, 6, 5})));
 		System.out.println("reverse3([7, 2, 3]) --> " + Arrays.toString(reverse3(new int[] {7, 2, 3})));
+		printFunction("maxEnd3");
+		System.out.println("maxEnd3([1, 2, 3]) --> " + Arrays.toString(maxEnd3(new int[] {1, 2, 3})));
+		System.out.println("maxEnd3([11, 5, 9]) --> " + Arrays.toString(maxEnd3(new int[] {11, 5, 9})));
+		System.out.println("maxEnd3([2, 11, 3]) --> " + Arrays.toString(maxEnd3(new int[] {2, 11, 3})));
+		System.out.println("maxEnd3([11, 3, 3]) --> " + Arrays.toString(maxEnd3(new int[] {11, 3, 3})));
+		System.out.println("maxEnd3([3, 11, 11]) --> " + Arrays.toString(maxEnd3(new int[] {3, 11, 11})));
+		System.out.println("maxEnd3([2, 2, 2]) --> " + Arrays.toString(maxEnd3(new int[] {2, 2, 2})));
+		System.out.println("maxEnd3([2, 11, 2]) --> " + Arrays.toString(maxEnd3(new int[] {2, 11, 2})));
+		System.out.println("maxEnd3([0, 0, 1]) --> " + Arrays.toString(maxEnd3(new int[] {0, 0, 1})));
 	}
 }
