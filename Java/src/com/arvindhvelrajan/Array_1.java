@@ -154,5 +154,14 @@ public class Array_1
 		System.out.println("rotateLeft3([7, 0, 0]) --> " + Arrays.toString(rotateLeft3(new int[] {7, 0, 0})));
 		System.out.println("rotateLeft3([1, 2, 1]) --> " + Arrays.toString(rotateLeft3(new int[] {1, 2, 1})));
 		System.out.println("rotateLeft3([0, 0, 1]) --> " + Arrays.toString(rotateLeft3(new int[] {0, 0, 1})));
+		printFunction("reverse3");
+		System.out.println("reverse3([1, 2, 3]) --> " + Arrays.toString(reverse3(new int[] {1, 2, 3})));
+		System.out.println("reverse3([5, 11, 9]) --> " + Arrays.toString(reverse3(new int[] {5, 11, 9})));
+		System.out.println("reverse3([7, 0, 0]) --> " + Arrays.toString(reverse3(new int[] {7, 0, 0})));
+		System.out.println("reverse3([2, 1, 2]) --> " + Arrays.toString(reverse3(new int[] {2, 1, 2})));
+		System.out.println("reverse3([1, 2, 1]) --> " + Arrays.toString(reverse3(new int[] {1, 2, 1})));
+		System.out.println("reverse3([2, 11, 3]) --> " + Arrays.toString(reverse3(new int[] {2, 11, 3})));
+		System.out.println("reverse3([0, 6, 5]) --> " + Arrays.toString(reverse3(new int[] {0, 6, 5})));
+		System.out.println("reverse3([7, 2, 3]) --> " + Arrays.toString(reverse3(new int[] {7, 2, 3})));
 	}
 }
