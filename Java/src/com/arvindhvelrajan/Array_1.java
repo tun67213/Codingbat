@@ -219,5 +219,12 @@ public class Array_1
 		System.out.println("sum2([]) --> " + sum2(new int[] {}));
 		System.out.println("sum2([4, 5, 6]) --> " + sum2(new int[] {4, 5, 6}));
 		System.out.println("sum2([4]) --> " + sum2(new int[] {4}));
+		printFunction("middleWay");
+		System.out.println("middleWay([1, 2, 3], [4, 5, 6]) --> " + Arrays.toString(middleWay(new int[] {1, 2, 3}, new int[] {4, 5, 6})));
+		System.out.println("middleWay([7, 7, 7], [3, 8, 0]) --> " + Arrays.toString(middleWay(new int[] {7, 7, 7}, new int[] {3, 8, 0})));
+		System.out.println("middleWay([5, 2, 9], [1, 4, 5]) --> " + Arrays.toString(middleWay(new int[] {5, 2, 9}, new int[] {1, 4, 5})));
+		System.out.println("middleWay([1, 9, 7], [4, 8, 8]) --> " + Arrays.toString(middleWay(new int[] {1, 9, 7}, new int[] {4, 8, 8})));
+		System.out.println("middleWay([1, 2, 3], [3, 1, 4]) --> " + Arrays.toString(middleWay(new int[] {1, 2, 3}, new int[] {3, 1, 4})));
+		System.out.println("middleWay([1, 2, 3], [4, 1, 1]) --> " + Arrays.toString(middleWay(new int[] {1, 2, 3}, new int[] {4, 1, 1})));
 	}
 }
