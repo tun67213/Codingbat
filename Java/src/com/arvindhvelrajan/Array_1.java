@@ -331,5 +331,15 @@ public class Array_1
 		System.out.println("makeLast([1, 2, 3, 4]) --> " + Arrays.toString(makeLast(new int[] {1, 2, 3, 4})));
 		System.out.println("makeLast([1, 2, 3, 0]) --> " + Arrays.toString(makeLast(new int[] {1, 2, 3, 0})));
 		System.out.println("makeLast([2, 4]) --> " + Arrays.toString(makeLast(new int[] {2, 4})));
+		printFunction("double23");
+		System.out.println("double23([2, 2]) --> " + double23(new int[] {2, 2}));
+		System.out.println("double23([3, 3]) --> " + double23(new int[] {3, 3}));
+		System.out.println("double23([2, 3]) --> " + double23(new int[] {2, 3}));
+		System.out.println("double23([3, 2] )--> " + double23(new int[] {3, 2}));
+		System.out.println("double23([4, 5]) --> " + double23(new int[] {4, 5}));
+		System.out.println("double23([2]) --> " + double23(new int[] {2}));
+		System.out.println("double23([3]) --> " + double23(new int[] {3}));
+		System.out.println("double23([]) --> " + double23(new int[] {}));
+		System.out.println("double23([3, 4]) --> " + double23(new int[] {3, 4}));
 	}
 }
