@@ -308,5 +308,15 @@ public class Array_1
 		System.out.println("no23([3, 3]) --> " + no23(new int[] {3, 3}));
 		System.out.println("no23([7, 8]) --> " + no23(new int[] {7, 8}));
 		System.out.println("no23([8, 7]) --> " + no23(new int[] {8, 7}));
+		printFunction("makeLast");
+		System.out.println("makeLast([4, 5, 6]) --> " + Arrays.toString(makeLast(new int[] {4, 5, 6})));
+		System.out.println("makeLast([1, 2]) --> " + Arrays.toString(makeLast(new int[] {1, 2})));
+		System.out.println("makeLast([3]) --> " + Arrays.toString(makeLast(new int[] {3})));
+		System.out.println("makeLast([0]) --> " + Arrays.toString(makeLast(new int[] {0})));
+		System.out.println("makeLast([7, 7, 7]) --> " + Arrays.toString(makeLast(new int[] {7, 7, 7})));
+		System.out.println("makeLast([3, 1, 4]) --> " + Arrays.toString(makeLast(new int[] {3, 1, 4})));
+		System.out.println("makeLast([1, 2, 3, 4]) --> " + Arrays.toString(makeLast(new int[] {1, 2, 3, 4})));
+		System.out.println("makeLast([1, 2, 3, 0]) --> " + Arrays.toString(makeLast(new int[] {1, 2, 3, 0})));
+		System.out.println("makeLast([2, 4]) --> " + Arrays.toString(makeLast(new int[] {2, 4})));
 	}
 }
