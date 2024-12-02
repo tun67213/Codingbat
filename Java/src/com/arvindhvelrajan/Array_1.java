@@ -353,5 +353,12 @@ public class Array_1
 		System.out.println("double23([3]) --> " + double23(new int[] {3}));
 		System.out.println("double23([]) --> " + double23(new int[] {}));
 		System.out.println("double23([3, 4]) --> " + double23(new int[] {3, 4}));
+		printFunction("fix23");
+		System.out.println("fix23([1, 2, 3]) --> " + Arrays.toString(fix23(new int[] {1, 2, 3})));
+		System.out.println("fix23([2, 3, 5]) --> " + Arrays.toString(fix23(new int[] {2, 3, 5})));
+		System.out.println("fix23([1, 2, 1]) --> " + Arrays.toString(fix23(new int[] {1, 2, 1})));
+		System.out.println("fix23([3, 2, 1]) --> " + Arrays.toString(fix23(new int[] {3, 2, 1})));
+		System.out.println("fix23([2, 2, 3]) --> " + Arrays.toString(fix23(new int[] {2, 2, 3})));
+		System.out.println("fix23([2, 3, 3]) --> " + Arrays.toString(fix23(new int[] {2, 3, 3})));
 	}
 }
