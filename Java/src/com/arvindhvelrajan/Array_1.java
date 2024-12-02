@@ -81,5 +81,7 @@ public class Array_1
 		System.out.println("sameFirstLast([1, 2, 3, 4, 5, 13]) --> " + sameFirstLast(new int[] {1, 2, 3, 4, 5, 13}));
 		System.out.println("sameFirstLast([13, 2, 3, 4, 5, 13]) --> " + sameFirstLast(new int[] {13, 2, 3, 4, 5, 13}));
 		System.out.println("sameFirstLast([7, 7]) --> " + sameFirstLast(new int[] {7, 7}));
+		printFunction("makePi");
+		System.out.println("makePi() --> " + Arrays.toString(makePi()));
 	}
 }
