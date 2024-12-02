@@ -98,5 +98,11 @@ public class Array_1
 		System.out.println("sameFirstLast([7, 7]) --> " + sameFirstLast(new int[] {7, 7}));
 		printFunction("makePi");
 		System.out.println("makePi() --> " + Arrays.toString(makePi()));
+		printFunction("commonEnd");
+		System.out.println("commonEnd([1, 2, 3], [7, 3]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {7, 3}));
+		System.out.println("commonEnd([1, 2, 3], [7, 3, 2]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {7, 3, 2}));
+		System.out.println("commonEnd([1, 2, 3], [1, 3]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {1, 3}));
+		System.out.println("commonEnd([1, 2, 3], [1]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {1}));
+		System.out.println("commonEnd([1, 2, 3], [2]) --> " + commonEnd(new int[] {1, 2, 3}, new int[] {2}));
 	}
 }
