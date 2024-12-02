@@ -131,6 +131,18 @@ public class Array_1
 	}
 
 	/**
+	 * Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
+	 *
+	 * middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]
+	 * middleWay([7, 7, 7], [3, 8, 0]) → [7, 8]
+	 * middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]
+	 */
+	public int[] middleWay(int[] a, int[] b)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
@@ -198,5 +210,14 @@ public class Array_1
 		System.out.println("maxEnd3([2, 2, 2]) --> " + Arrays.toString(maxEnd3(new int[] {2, 2, 2})));
 		System.out.println("maxEnd3([2, 11, 2]) --> " + Arrays.toString(maxEnd3(new int[] {2, 11, 2})));
 		System.out.println("maxEnd3([0, 0, 1]) --> " + Arrays.toString(maxEnd3(new int[] {0, 0, 1})));
+		printFunction("sum2");
+		System.out.println("sum2([1, 2, 3]) --> " + sum2(new int[] {1, 2, 3}));
+		System.out.println("sum2([1, 1]) --> " + sum2(new int[] {1, 1}));
+		System.out.println("sum2([1, 1, 1, 1]) --> " + sum2(new int[] {1, 1, 1, 1}));
+		System.out.println("sum2([1, 2]) --> " + sum2(new int[] {1, 2}));
+		System.out.println("sum2([1]) --> " + sum2(new int[] {1}));
+		System.out.println("sum2([]) --> " + sum2(new int[] {}));
+		System.out.println("sum2([4, 5, 6]) --> " + sum2(new int[] {4, 5, 6}));
+		System.out.println("sum2([4]) --> " + sum2(new int[] {4}));
 	}
 }
