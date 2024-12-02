@@ -260,5 +260,15 @@ public class Array_1
 		System.out.println("makeEnds([7]) --> " + Arrays.toString(makeEnds(new int[] {7})));
 		System.out.println("makeEnds([5, 2, 9]) --> " + Arrays.toString(makeEnds(new int[] {5, 2, 9})));
 		System.out.println("makeEnds([2, 3, 4, 1]) --> " + Arrays.toString(makeEnds(new int[] {2, 3, 4, 1})));
+		printFunction("has23");
+		System.out.println("has23([2, 5]) --> " + has23(new int[] {2, 5}));
+		System.out.println("has23([4, 3]) --> " + has23(new int[] {4, 3}));
+		System.out.println("has23([4, 5]) --> " + has23(new int[] {4, 5}));
+		System.out.println("has23([2, 2]) --> " + has23(new int[] {2, 2}));
+		System.out.println("has23([3, 2]) --> " + has23(new int[] {3, 2}));
+		System.out.println("has23([3, 3]) --> " + has23(new int[] {3, 3}));
+		System.out.println("has23([7, 7]) --> " + has23(new int[] {7, 7}));
+		System.out.println("has23([3, 9]) --> " + has23(new int[] {3, 9}));
+		System.out.println("has23([9, 5]) --> " + has23(new int[] {9, 5}));
 	}
 }
