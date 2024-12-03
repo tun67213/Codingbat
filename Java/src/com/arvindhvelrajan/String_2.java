@@ -299,5 +299,15 @@ public class String_2
 		System.out.println("repeatEnd(\"1234\", 2) → \"" + repeatEnd("1234", 2) + "\"");
 		System.out.println("repeatEnd(\"1234\", 3) → \"" + repeatEnd("1234", 3) + "\"");
 		System.out.println("repeatEnd(\"\", 0) --> \"" + repeatEnd("", 0) + "\"");
+		printFunction("repeatFront");
+		System.out.println("repeatFront(\"Chocolate\", 4) → \"" + repeatFront("Chocolate", 4) + "\"");
+		System.out.println("repeatFront(\"Chocolate\", 3) → \"" + repeatFront("Chocolate", 3) + "\"");
+		System.out.println("repeatFront(\"Ice Cream\", 2) → \"" + repeatFront("Ice Cream", 2) + "\"");
+		System.out.println("repeatFront(\"Ice Cream\", 1) → \"" + repeatFront("Ice Cream", 1) + "\"");
+		System.out.println("repeatFront(\"Ice Cream\", 0) → \"" + repeatFront("Ice Cream", 0) + "\"");
+		System.out.println("repeatFront(\"xyz\", 3) → \"" + repeatFront("xyz", 3) + "\"");
+		System.out.println("repeatFront(\"\", 0) → \"" + repeatFront("", 0) + "\"");
+		System.out.println("repeatFront(\"Java\", 4) → \"" + repeatFront("Java", 4) + "\"");
+		System.out.println("repeatFront(\"Java\", 1) → \"" + repeatFront("Java", 1) + "\"");
 	}
 }
