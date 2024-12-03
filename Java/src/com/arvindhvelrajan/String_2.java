@@ -56,5 +56,15 @@ public class String_2
 		System.out.println("doubleChar(\"a\") --> \"" + doubleChar("a") + "\"");
 		System.out.println("doubleChar(\".\") --> \"" + doubleChar(".") + "\"");
 		System.out.println("doubleChar(\"aa\") --> \"" + doubleChar("aa") + "\"");
+		printFunction("countHi");
+		System.out.println("countHi(\"abc hi ho\") --> " + countHi("abc hi ho"));
+		System.out.println("countHi(\"ABChi hi\") --> " + countHi("ABChi hi"));
+		System.out.println("countHi(\"hihi\") --> " + countHi("hihi"));
+		System.out.println("countHi(\"hiHIhi\") --> " + countHi("hiHIhi"));
+		System.out.println("countHi(\"\") --> \"" + countHi("") + "\"");
+		System.out.println("countHi(\"h\") --> \"" + countHi("h") + "\"");
+		System.out.println("countHi(\"hi\") --> " + countHi("hi") + "\"");
+		System.out.println("countHi(\"Hi is no HI on ahI\") --> " + countHi("Hi is no HI on ahI"));
+		System.out.println("countHi(\"hiho not HOHIhi\") --> " + countHi("hiho not HOHIhi"));
 	}
 }
