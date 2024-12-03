@@ -188,5 +188,19 @@ public class String_2
 		System.out.println("xyzThere(\"12.xyz\") --> " + xyzThere("12.xyz"));
 		System.out.println("xyzThere(\"12xyz\") --> " + xyzThere("12xyz"));
 		System.out.println("xyzThere(\"1.xyz.xyz2.xyz\") --> " + xyzThere("1.xyz.xyz2.xyz"));
+		printFunction("bobThere");
+		System.out.println("bobThere(\"abcbob\") --> " + bobThere("abcbob"));
+		System.out.println("bobThere(\"b9b\") --> " + bobThere("b9b"));
+		System.out.println("bobThere(\"bac\") --> " + bobThere("bac"));
+		System.out.println("bobThere(\"bbb\") --> " + bobThere("bbb"));
+		System.out.println("bobThere(\"abcdefb\") --> " + bobThere("abcdefb"));
+		System.out.println("bobThere(\"123abcbcdbabxyz\") --> " + bobThere("123abcbcdbabxyz"));
+		System.out.println("bobThere(\"b12\") --> " + bobThere("b12"));
+		System.out.println("bobThere(\"b1b\") --> " + bobThere("b1b"));
+		System.out.println("bobThere(\"b12b1b\") --> " + bobThere("b12b1b"));
+		System.out.println("bobThere(\"bbc\") --> " + bobThere("bbc"));
+		System.out.println("bobThere(\"bbb\")--> " + bobThere("bbb"));
+		System.out.println("bobThere(\"bb\") --> " + bobThere("bb"));
+		System.out.println("bobThere(\"b\") --> " + bobThere("b"));
 	}
 }
