@@ -335,5 +335,22 @@ public class Logic_1
 		System.out.println("more20(41) --> " + more20(41));
 		System.out.println("more20(39) --> " + more20(39));
 		System.out.println("more20(42) --> " + more20(42));
+		printFunction("old35");
+		System.out.println("old35(3) --> " + old35(3));
+		System.out.println("old35(10) --> " + old35(10));
+		System.out.println("old35(15) --> " + old35(15));
+		System.out.println("old35(5) --> " + old35(5));
+		System.out.println("old35(9) --> " + old35(9));
+		System.out.println("old35(8) --> " + old35(8));
+		System.out.println("old35(7) --> " + old35(7));
+		System.out.println("old35(6) --> " + old35(6));
+		System.out.println("old35(17) --> " + old35(17));
+		System.out.println("old35(18) --> " + old35(18));
+		System.out.println("old35(29) --> " + old35(29));
+		System.out.println("old35(20) --> " + old35(20));
+		System.out.println("old35(21) --> " + old35(21));
+		System.out.println("old35(22) --> " + old35(22));
+		System.out.println("old35(45) --> " + old35(45));
+		System.out.println("old35(99) --> " + old35(99));
 	}
 }
