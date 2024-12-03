@@ -791,5 +791,18 @@ public class Logic_1
 		System.out.println("redTicket(1, 2, 2) --> " + redTicket(1, 2, 2));
 		System.out.println("redTicket(0, 2, 0) --> " + redTicket(0, 2, 0));
 		System.out.println("redTicket(1, 1, 2) --> " + redTicket(1, 1, 2));
+		printFunction("greenTicket");
+		System.out.println("greenTicket(1, 2, 3) --> " + greenTicket(1, 2, 3));
+		System.out.println("greenTicket(2, 2, 2) --> " + greenTicket(2, 2, 2));
+		System.out.println("greenTicket(1, 1, 2) --> " + greenTicket(1, 1, 2));
+		System.out.println("greenTicket(2, 1, 1) --> " + greenTicket(2, 1, 1));
+		System.out.println("greenTicket(1, 2, 1) --> " + greenTicket(1, 2, 1));
+		System.out.println("greenTicket(3, 2, 1) --> " + greenTicket(3, 2, 1));
+		System.out.println("greenTicket(0, 0, 0) --> " + greenTicket(0, 0, 0));
+		System.out.println("greenTicket(2, 0, 0) --> " + greenTicket(2, 0, 0));
+		System.out.println("greenTicket(0, 9, 10) --> " + greenTicket(0, 9, 10));
+		System.out.println("greenTicket(0, 10, 0) --> " + greenTicket(0, 10, 0));
+		System.out.println("greenTicket(9, 9, 9) --> " + greenTicket(9, 9, 9));
+		System.out.println("greenTicket(9, 0, 9) --> " + greenTicket(9, 0, 9));
 	}
 }
