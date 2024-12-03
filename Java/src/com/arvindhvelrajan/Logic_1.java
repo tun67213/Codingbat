@@ -365,5 +365,28 @@ public class Logic_1
 		System.out.println("old35(22) --> " + old35(22));
 		System.out.println("old35(45) --> " + old35(45));
 		System.out.println("old35(99) --> " + old35(99));
+		printFunction("less20");
+		System.out.println("less20(18) --> " + less20(18));
+		System.out.println("less20(19) --> " + less20(19));
+		System.out.println("less20(20) --> " + less20(20));
+		System.out.println("less20(8) --> " + less20(8));
+		System.out.println("less20(17) --> " + less20(17));
+		System.out.println("less20(23) --> " + less20(23));
+		System.out.println("less20(25) --> " + less20(25));
+		System.out.println("less20(30) --> " + less20(30));
+		System.out.println("less20(31) --> " + less20(31));
+		System.out.println("less20(58) --> " + less20(58));
+		System.out.println("less20(59) --> " + less20(59));
+		System.out.println("less20(60) --> " + less20(60));
+		System.out.println("less20(61) --> " + less20(61));
+		System.out.println("less20(62) --> " + less20(62));
+		System.out.println("less20(1017) --> " + less20(1017));
+		System.out.println("less20(1018) --> " + less20(1018));
+		System.out.println("less20(1019) --> " + less20(1019));
+		System.out.println("less20(1020) --> " + less20(1020));
+		System.out.println("less20(1021) --> " + less20(1021));
+		System.out.println("less20(1022) --> " + less20(1022));
+		System.out.println("less20(1023) --> " + less20(1023));
+		System.out.println("less20(37) --> " + less20(37));
 	}
 }
