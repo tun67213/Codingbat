@@ -489,5 +489,16 @@ public class Array_1
 		System.out.println("midThree([1, 2, 3, 4, 5]) --> " + Arrays.toString(midThree(new int[] {1, 2, 3, 4, 5})));
 		System.out.println("midThree([8, 6, 7, 5, 3, 0, 9]) --> " + Arrays.toString(midThree(new int[] {8, 6, 7, 5, 3, 0, 9})));
 		System.out.println("midThree([1, 2, 3]) --> " + Arrays.toString(midThree(new int[] {1, 2, 3})));
+		printFunction("maxTriple");
+		System.out.println("maxTriple([1, 2, 3]) --> " + maxTriple(new int[] {1, 2, 3}));
+		System.out.println("maxTriple([1, 5, 3]) --> " + maxTriple(new int[] {1, 5, 3}));
+		System.out.println("maxTriple([5, 2, 3]) --> " + maxTriple(new int[] {5, 2, 3}));
+		System.out.println("maxTriple([1, 2, 3, 1, 1]) --> " + maxTriple(new int[] {1, 2, 3, 1, 1}));
+		System.out.println("maxTriple([1, 7, 3, 1, 5]) --> " + maxTriple(new int[] {1, 7, 3, 1, 5}));
+		System.out.println("maxTriple([5, 1, 3, 7, 1]) --> " + maxTriple(new int[] {5, 1, 3, 7, 1}));
+		System.out.println("maxTriple([5, 1, 7, 3, 7, 8, 1]) --> " + maxTriple(new int[] {5, 1, 7, 3, 7, 8, 1}));
+		System.out.println("maxTriple([5, 1, 7, 9, 7, 8, 1]) --> " + maxTriple(new int[] {5, 1, 7, 9, 7, 8, 1}));
+		System.out.println("maxTriple([5, 1, 7, 3, 7, 8, 9]) --> " + maxTriple(new int[] {5, 1, 7, 3, 7, 8, 9}));
+		System.out.println("maxTriple([2, 2, 5, 1, 1]) --> " + maxTriple(new int[] {2, 2, 5, 1, 1}));
 	}
 }
