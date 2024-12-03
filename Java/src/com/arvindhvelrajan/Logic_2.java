@@ -99,5 +99,17 @@ public class Logic_2
 		System.out.println("loneSum(2, 9, 3) --> " + loneSum(2, 9, 3));
 		System.out.println("loneSum(4, 2, 3) --> " + loneSum(4, 2, 3));
 		System.out.println("loneSum(1, 3, 1) --> " + loneSum(1, 3, 1));
+		printFunction("luckySum");
+		System.out.println("luckySum(1, 2, 3) --> " + luckySum(1, 2, 3));
+		System.out.println("luckySum(1, 2, 13) --> " + luckySum(1, 2, 13));
+		System.out.println("luckySum(1, 13, 3) --> " + luckySum(1, 13, 3));
+		System.out.println("luckySum(1, 13, 13) --> " + luckySum(1, 13, 13));
+		System.out.println("luckySum(6, 5, 2) --> " + luckySum(6, 5, 2));
+		System.out.println("luckySum(13, 2, 3) --> " + luckySum(13, 2, 3));
+		System.out.println("luckySum(13, 13, 2) --> " + luckySum(13, 13, 2));
+		System.out.println("luckySum(9, 4, 13) --> " + luckySum(9, 4, 13));
+		System.out.println("luckySum(8, 13, 2) --> " + luckySum(8, 13, 2));
+		System.out.println("luckySum(7, 2, 1) --> " + luckySum(7, 2, 1));
+		System.out.println("luckySum(3, 3, 13) --> " + luckySum(3, 3, 13));
 	}
 }
