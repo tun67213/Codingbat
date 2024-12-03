@@ -67,5 +67,18 @@ public class Logic_1
 		System.out.println("cigarParty(39, false) --> " + cigarParty(39, false));
 		System.out.println("cigarParty(40, true) --> " + cigarParty(40, true));
 		System.out.println("cigarParty(39, true) --> " + cigarParty(39, true));
+		printFunction("dateFashion");
+		System.out.println("dateFashion(5, 10) --> " + dateFashion(5, 10));
+		System.out.println("dateFashion(5, 2) --> " + dateFashion(5, 2));
+		System.out.println("dateFashion(5, 5) --> " + dateFashion(5, 5));
+		System.out.println("dateFashion(3, 3) --> " + dateFashion(3, 3));
+		System.out.println("dateFashion(10, 2) --> " + dateFashion(10, 2));
+		System.out.println("dateFashion(2, 9) --> " + dateFashion(2, 9));
+		System.out.println("dateFashion(9, 9) --> " + dateFashion(9, 9));
+		System.out.println("dateFashion(10, 5) --> " + dateFashion(10, 5));
+		System.out.println("dateFashion(2, 2) --> " + dateFashion(2, 2));
+		System.out.println("dateFashion(3, 7) --> " + dateFashion(3, 7));
+		System.out.println("dateFashion(2, 7) --> " + dateFashion(2, 7));
+		System.out.println("dateFashion(6, 2) --> " + dateFashion(6, 2));
 	}
 }
