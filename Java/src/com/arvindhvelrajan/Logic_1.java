@@ -152,5 +152,15 @@ public class Logic_1
 		System.out.println("caughtSpeeding(40, false) --> " + caughtSpeeding(40, false));
 		System.out.println("caughtSpeeding(40, true) --> " + caughtSpeeding(40, true));
 		System.out.println("caughtSpeeding(90, false) --> " + caughtSpeeding(90, false));
+		printFunction("sortaSum");
+		System.out.println("sortaSum(3, 4) --> " + sortaSum(3, 4));
+		System.out.println("sortaSum(9, 4) --> " + sortaSum(9, 4));
+		System.out.println("sortaSum(10, 11) --> " + sortaSum(10, 11));
+		System.out.println("sortaSum(12, -3) --> " + sortaSum(12, -3));
+		System.out.println("sortaSum(-3, 12) --> " + sortaSum(-3, 12));
+		System.out.println("sortaSum(4, 5) --> " + sortaSum(4, 5));
+		System.out.println("sortaSum(4, 6) --> " + sortaSum(4, 6));
+		System.out.println("sortaSum(14, 7) --> " + sortaSum(14, 7));
+		System.out.println("sortaSum(14, 6) --> " + sortaSum(14, 6));
 	}
 }
