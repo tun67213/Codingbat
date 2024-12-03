@@ -600,5 +600,18 @@ public class Logic_1
 		System.out.println("twoAsOne(5, 4, 9) --> " + twoAsOne(5, 4, 9));
 		System.out.println("twoAsOne(3, 3, 0) --> " + twoAsOne(3, 3, 0));
 		System.out.println("twoAsOne(3, 3, 2) --> " + twoAsOne(3, 3, 2));
+		printFunction("inOrder");
+		System.out.println("inOrder(1, 2, 4, false) --> " + inOrder(1, 2, 4, false));
+		System.out.println("inOrder(1, 2, 1, false) --> " + inOrder(1, 2, 1, false));
+		System.out.println("inOrder(1, 1, 2, true) --> " + inOrder(1, 1, 2, true));
+		System.out.println("inOrder(3, 2, 4, false) --> " + inOrder(3, 2, 4, false));
+		System.out.println("inOrder(2, 3, 4, false) --> " + inOrder(2, 3, 4, false));
+		System.out.println("inOrder(3, 2, 4, true) --> " + inOrder(3, 2, 4, true));
+		System.out.println("inOrder(4, 2, 2, true) --> " + inOrder(4, 2, 2, true));
+		System.out.println("inOrder(4, 5, 2, true) --> " + inOrder(4, 5, 2, true));
+		System.out.println("inOrder(2, 4, 6, true) --> " + inOrder(2, 4, 6, true));
+		System.out.println("inOrder(7, 9, 10, false) --> " + inOrder(7, 9, 10, false));
+		System.out.println("inOrder(7, 5, 6, true) --> " + inOrder(7, 5, 6, true));
+		System.out.println("inOrder(7, 5, 4, true) --> " + inOrder(7, 5, 4, true));
 	}
 }
