@@ -486,5 +486,19 @@ public class Logic_1
 		System.out.println("answerCell(true, true, false) --> " + answerCell(true, true, false));
 		System.out.println("answerCell(false, true, false) --> " + answerCell(false, true, false));
 		System.out.println("answerCell(true, true, true) --> " + answerCell(true, true, true));
+		printFunction("teaParty");
+		System.out.println("teaParty(6, 8) --> " + teaParty(6, 8));
+		System.out.println("teaParty(3, 8) --> " + teaParty(3, 8));
+		System.out.println("teaParty(20, 6) --> " + teaParty(20, 6));
+		System.out.println("teaParty(12, 6) --> " + teaParty(12, 6));
+		System.out.println("teaParty(11, 6) --> " + teaParty(11, 6));
+		System.out.println("teaParty(11, 4) --> " + teaParty(11, 4));
+		System.out.println("teaParty(4, 5) --> " + teaParty(4, 5));
+		System.out.println("teaParty(5, 5) --> " + teaParty(5, 5));
+		System.out.println("teaParty(6, 6) --> " + teaParty(6, 6));
+		System.out.println("teaParty(5, 10) --> " + teaParty(5, 10));
+		System.out.println("teaParty(5, 9) --> " + teaParty(5, 9));
+		System.out.println("teaParty(10, 4) --> " + teaParty(10, 4));
+		System.out.println("teaParty(10, 20) --> " + teaParty(10, 20));
 	}
 }
