@@ -236,5 +236,21 @@ public class Logic_1
 		System.out.println("love6(8, 3) --> " + love6(8, 3));
 		System.out.println("love6(3, 3) --> " + love6(3, 3));
 		System.out.println("love6(3, 4) --> " + love6(3, 4));
+		printFunction("in1To10");
+		System.out.println("in1To10(5, false) --> " + in1To10(5, false));
+		System.out.println("in1To10(11, false) --> " + in1To10(11, false));
+		System.out.println("in1To10(11, true) --> " + in1To10(11, true));
+		System.out.println("in1To10(10, false) --> " + in1To10(10, false));
+		System.out.println("in1To10(10, true) --> " + in1To10(10, true));
+		System.out.println("in1To10(9, false) --> " + in1To10(9, false));
+		System.out.println("in1To10(9, true) --> " + in1To10(9, true));
+		System.out.println("in1To10(1, false) --> " + in1To10(1, false));
+		System.out.println("in1To10(1, true) --> " + in1To10(1, true));
+		System.out.println("in1To10(0, false) --> " + in1To10(0, false));
+		System.out.println("in1To10(0, true) --> " + in1To10(0, true));
+		System.out.println("in1To10(-1, false) --> " + in1To10(-1, false));
+		System.out.println("in1To10(-1, true) --> " + in1To10(-1, true));
+		System.out.println("in1To10(99, false) --> " + in1To10(99, false));
+		System.out.println("in1To10(99, true) --> " + in1To10(99, true));
 	}
 }
