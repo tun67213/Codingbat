@@ -76,5 +76,15 @@ public class Logic_2
 		System.out.println("makeBricks(20, 0, 21) --> " + makeBricks(20, 0, 21));
 		System.out.println("makeBricks(20, 4, 51) --> " + makeBricks(20, 4, 51));
 		System.out.println("makeBricks(20, 4, 39) --> " + makeBricks(20, 4, 39));
+		printFunction("loneSum");
+		System.out.println("loneSum(1, 2, 3) --> " + loneSum(1, 2 ,3));
+		System.out.println("loneSum(3, 2, 3) --> " + loneSum(3, 2, 3));
+		System.out.println("loneSum(3, 3, 3) --> " + loneSum(3, 3, 3));
+		System.out.println("loneSum(9, 2, 2) --> " + loneSum(9, 2, 2));
+		System.out.println("loneSum(2, 2, 9) --> " + loneSum(2, 2, 9));
+		System.out.println("loneSum(2, 9, 2) --> " + loneSum(2, 9, 2));
+		System.out.println("loneSum(2, 9, 3) --> " + loneSum(2, 9, 3));
+		System.out.println("loneSum(4, 2, 3) --> " + loneSum(4, 2, 3));
+		System.out.println("loneSum(1, 3, 1) --> " + loneSum(1, 3, 1));
 	}
 }
