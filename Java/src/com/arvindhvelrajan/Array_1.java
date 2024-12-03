@@ -520,7 +520,7 @@ public class Array_1
 		System.out.println("frontPiece([]) --> " + Arrays.toString(frontPiece(new int[] {})));
 		System.out.println("frontPiece([6, 5, 0]) --> " + Arrays.toString(frontPiece(new int[] {6, 5, 0})));
 		System.out.println("frontPiece([6, 5]) --> " + Arrays.toString(frontPiece(new int[] {6, 5})));
-		System.out.println("frontPiece([3, 1, 4, 1, 5]) --> " + Arrays.toString(new int[] {3, 1, 4, 1, 5}));
-		System.out.println("frontPiece([6]) --> " + Arrays.toString(new int[] {6}));
+		System.out.println("frontPiece([3, 1, 4, 1, 5]) --> " + Arrays.toString(frontPiece(new int[] {3, 1, 4, 1, 5})));
+		System.out.println("frontPiece([6]) --> " + Arrays.toString(frontPiece(new int[] {6})));
 	}
 }
