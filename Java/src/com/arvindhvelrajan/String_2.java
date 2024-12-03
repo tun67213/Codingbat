@@ -276,5 +276,14 @@ public class String_2
 		System.out.println("mixString(\"a\", \"bx\") → \"" + mixString("a", "bx") + "\"");
 		System.out.println("mixString(\"So\", \"Long\") → \"" + mixString("So", "Long") + "\"");
 		System.out.println("mixString(\"Long\", \"So\") → \"" + mixString("Long", "So") + "\"");
+		printFunction("repeatEnd");
+		System.out.println("repeatEnd(\"Hello\", 3) → \"" + repeatEnd("Hello", 3) + "\"");
+		System.out.println("repeatEnd(\"Hello\", 2) → \"" + repeatEnd("Hello", 2) + "\"");
+		System.out.println("repeatEnd(\"Hello\", 1) → \"" + repeatEnd("Hello", 1) + "\"");
+		System.out.println("repeatEnd(\"Hello\", 0) → \"" + repeatEnd("Hello", 0) + "\"");
+		System.out.println("repeatEnd(\"abc\", 3) → \"" + repeatEnd("abc", 3) + "\"");
+		System.out.println("repeatEnd(\"1234\", 2) → \"" + repeatEnd("1234", 2) + "\"");
+		System.out.println("repeatEnd(\"1234\", 3) → \"" + repeatEnd("1234", 3) + "\"");
+		System.out.println("repeatEnd(\"\", 0) --> \"" + repeatEnd("", 0) + "\"");
 	}
 }
