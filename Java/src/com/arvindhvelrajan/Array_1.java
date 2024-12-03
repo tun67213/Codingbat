@@ -372,5 +372,16 @@ public class Array_1
 		System.out.println("fix23([3, 2, 1]) --> " + Arrays.toString(fix23(new int[] {3, 2, 1})));
 		System.out.println("fix23([2, 2, 3]) --> " + Arrays.toString(fix23(new int[] {2, 2, 3})));
 		System.out.println("fix23([2, 3, 3]) --> " + Arrays.toString(fix23(new int[] {2, 3, 3})));
+		printFunction("start1");
+		System.out.println("start1([1, 2, 3], [1, 3]) --> " + start1(new int[] {1, 2, 3}, new int[] {1, 3}));
+		System.out.println("start1([7, 2, 3], [1]) --> " + start1(new int[] {7, 2, 3}, new int[] {1}));
+		System.out.println("start1([1, 2], []) --> " + start1(new int[] {1, 2}, new int[] {}));
+		System.out.println("start1([], [1, 2]) --> " + start1(new int[] {}, new int[] {1, 2}));
+		System.out.println("start1([7], []) --> " + start1(new int[] {7}, new int[] {}));
+		System.out.println("start1([7], [1]) --> " + start1(new int[] {7}, new int[] {1}));
+		System.out.println("start1([1], [1]) --> " + start1(new int[] {1}, new int[] {1}));
+		System.out.println("start1([7], [8]) --> " + start1(new int[] {7}, new int[] {8}));
+		System.out.println("start1([], []) --> " + start1(new int[] {}, new int[] {}));
+		System.out.println("start1([1, 3], [1]) --> " + start1(new int[] {1, 3}, new int[] {1}));
 	}
 }
