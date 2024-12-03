@@ -462,5 +462,12 @@ public class Logic_1
 		System.out.println("teenSum(2, 17) --> " + teenSum(2, 17));
 		System.out.println("teenSum(2, 16) --> " + teenSum(2, 16));
 		System.out.println("teenSum(6, 7) --> " + teenSum(6, 7));
+		printFunction("answerCell");
+		System.out.println("answerCell(false, false, false) --> " + answerCell(false, false, false));
+		System.out.println("answerCell(false, false, true) --> " + answerCell(false, false, true));
+		System.out.println("answerCell(true, false, false) --> " + answerCell(true, false, false));
+		System.out.println("answerCell(true, true, false) --> " + answerCell(true, true, false));
+		System.out.println("answerCell(false, true, false) --> " + answerCell(false, true, false));
+		System.out.println("answerCell(true, true, true) --> " + answerCell(true, true, true));
 	}
 }
