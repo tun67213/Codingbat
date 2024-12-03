@@ -653,5 +653,19 @@ public class Logic_1
 		System.out.println("inOrderEqual(2, 2, 1, true) --> " + inOrderEqual(2, 2, 1, true));
 		System.out.println("inOrderEqual(9, 2, 2, true) --> " + inOrderEqual(9, 2, 2, true));
 		System.out.println("inOrderEqual(0, 1, 0, true) --> " + inOrderEqual(0, 1, 0, true));
+		printFunction("lastDigit");
+		System.out.println("lastDigit(23, 19, 13) --> " + lastDigit(23, 19, 13));
+		System.out.println("lastDigit(23, 19, 12) --> " + lastDigit(23, 19, 12));
+		System.out.println("lastDigit(23, 19, 3) --> " + lastDigit(23, 19, 3));
+		System.out.println("lastDigit(23, 19, 39) --> " + lastDigit(23, 19, 39));
+		System.out.println("lastDigit(1, 2, 3) --> " + lastDigit(1, 2, 3));
+		System.out.println("lastDigit(1, 1, 2) --> " + lastDigit(1, 1, 2));
+		System.out.println("lastDigit(1, 2, 2) --> " + lastDigit(1, 2, 2));
+		System.out.println("lastDigit(14, 25, 43) --> " + lastDigit(14, 25, 43));
+		System.out.println("lastDigit(14, 25, 45) --> " + lastDigit(14, 25, 45));
+		System.out.println("lastDigit(248, 106, 1002) --> " + lastDigit(248, 106, 1002));
+		System.out.println("lastDigit(248, 106, 1008) --> " + lastDigit(248, 106, 1008));
+		System.out.println("lastDigit(10, 11, 20) --> " + lastDigit(10, 11, 20));
+		System.out.println("lastDigit(0, 11, 0) --> " + lastDigit(0, 11, 0));
 	}
 }
