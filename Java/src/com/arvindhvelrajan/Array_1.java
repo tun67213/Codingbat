@@ -535,5 +535,25 @@ public class Array_1
 		System.out.println("frontPiece([6, 5]) --> " + Arrays.toString(frontPiece(new int[] {6, 5})));
 		System.out.println("frontPiece([3, 1, 4, 1, 5]) --> " + Arrays.toString(frontPiece(new int[] {3, 1, 4, 1, 5})));
 		System.out.println("frontPiece([6]) --> " + Arrays.toString(frontPiece(new int[] {6})));
+		printFunction("unlucky1");
+		System.out.println("unlucky1([1, 3, 4, 5]) --> " + unlucky1(new int[] {1, 3, 4, 5}));
+		System.out.println("unlucky1([2, 1, 3, 4, 5]) --> " + unlucky1(new int[] {2, 1, 3, 4, 5}));
+		System.out.println("unlucky1([1, 1, 1]) --> " + unlucky1(new int[] {1, 1, 1}));
+		System.out.println("unlucky1([1, 3, 1]) --> " + unlucky1(new int[] {1, 3, 1}));
+		System.out.println("unlucky1([1, 1, 3]) --> " + unlucky1(new int[] {1, 1, 3}));
+		System.out.println("unlucky1([1, 2, 3]) --> " + unlucky1(new int[] {1, 2, 3}));
+		System.out.println("unlucky1([3, 3, 3]) --> " + unlucky1(new int[] {3, 3, 3}));
+		System.out.println("unlucky1([1, 3]) --> " + unlucky1(new int[] {1, 3}));
+		System.out.println("unlucky1([1, 4]) --> " + unlucky1(new int[] {1, 4}));
+		System.out.println("unlucky1([1]) --> " + unlucky1(new int[] {1}));
+		System.out.println("unlucky1([]) --> " + unlucky1(new int[] {}));
+		System.out.println("unlucky1([1, 1, 1, 3, 1]) --> " + unlucky1(new int[] {1, 1, 1, 3, 1}));
+		System.out.println("unlucky1([1, 1, 3, 1, 1]) --> " + unlucky1(new int[] {1, 1, 3, 1, 1}));
+		System.out.println("unlucky1([1, 1, 1, 1, 3]) --> " + unlucky1(new int[] {1, 1, 1, 1, 3}));
+		System.out.println("unlucky1([1, 4, 1, 5]) --> " + unlucky1(new int[] {1, 4, 1, 5}));
+		System.out.println("unlucky1([1, 1, 2, 3]) --> " + unlucky1(new int[] {1, 1, 2, 3}));
+		System.out.println("unlucky1([2, 3, 2, 1]) --> " + unlucky1(new int[] {2, 3, 2, 1}));
+		System.out.println("unlucky1([2, 3, 1, 3]) --> " + unlucky1(new int[] {2, 3, 1, 3}));
+		System.out.println("unlucky1([[1, 2, 3, 4, 1, 3]) --> " + unlucky1(new int[] {1, 2, 3, 4, 1, 3}));
 	}
 }
