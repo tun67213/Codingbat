@@ -708,5 +708,18 @@ public class Logic_1
 		System.out.println("lessBy10(3, 30, 3) --> " + lessBy10(3, 30, 3));
 		System.out.println("lessBy10(2, 2, -8) --> " + lessBy10(2, 2, -8));
 		System.out.println("lessBy10(2, 8, 12) --> " + lessBy10(2, 8, 12));
+		printFunction("withoutDoubles");
+		System.out.println("withoutDoubles(2, 3, true) --> " + withoutDoubles(2, 3, true));
+		System.out.println("withoutDoubles(3, 3, true) --> " + withoutDoubles(3, 3, true));
+		System.out.println("withoutDoubles(3, 3, false) --> " + withoutDoubles(3, 3, false));
+		System.out.println("withoutDoubles(2, 3, false) --> " + withoutDoubles(2, 3, false));
+		System.out.println("withoutDoubles(5, 4, true) --> " + withoutDoubles(5, 4, true));
+		System.out.println("withoutDoubles(5, 4, false) --> " + withoutDoubles(5, 4, false));
+		System.out.println("withoutDoubles(5, 5, true) --> " + withoutDoubles(5, 5, true));
+		System.out.println("withoutDoubles(5, 5, false) --> " + withoutDoubles(5, 5, false));
+		System.out.println("withoutDoubles(6, 6, true) --> " + withoutDoubles(6, 6, true));
+		System.out.println("withoutDoubles(6, 6, false) --> " + withoutDoubles(6, 6, false));
+		System.out.println("withoutDoubles(1, 6, true) --> " + withoutDoubles(1, 6, true));
+		System.out.println("withoutDoubles(6, 1, false) --> " + withoutDoubles(6, 1, false));
 	}
 }
