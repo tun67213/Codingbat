@@ -515,5 +515,22 @@ public class Logic_1
 		System.out.println("teaParty(5, 9) --> " + teaParty(5, 9));
 		System.out.println("teaParty(10, 4) --> " + teaParty(10, 4));
 		System.out.println("teaParty(10, 20) --> " + teaParty(10, 20));
+		printFunction("fizzString");
+		System.out.println("fizzString(\"fig\") --> \"" + fizzString("fig") + "\"");
+		System.out.println("fizzString(\"dib\") --> \"" + fizzString("dib") + "\"");
+		System.out.println("fizzString(\"fib\") --> \"" + fizzString("fib") + "\"");
+		System.out.println("fizzString(\"abc\") --> \"" + fizzString("abc") + "\"");
+		System.out.println("fizzString(\"fooo\") --> \"" + fizzString("fooo") + "\"");
+		System.out.println("fizzString(\"booo\") --> \"" + fizzString("booo") + "\"");
+		System.out.println("fizzString(\"ooob\") --> \"" + fizzString("ooob") + "\"");
+		System.out.println("fizzString(\"fooob\") --> \"" + fizzString("fooob") + "\"");
+		System.out.println("fizzString(\"f\") --> \"" + fizzString("f") + "\"");
+		System.out.println("fizzString(\"b\") --> \"" + fizzString("b") + "\"");
+		System.out.println("fizzString(\"abcb\") --> \"" + fizzString("abcb") + "\"");
+		System.out.println("fizzString(\"Hello\") --> \"" + fizzString("Hello") + "\"");
+		System.out.println("fizzString(\"Hellob\") --> \"" + fizzString("Hellob") + "\"");
+		System.out.println("fizzString(\"af\") --> \"" + fizzString("af") + "\"");
+		System.out.println("fizzString(\"bf\") --> \"" + fizzString("bf") + "\"");
+		System.out.println("fizzString(\"fb\") --> \"" + fizzString("fb") + "\"");
 	}
 }
