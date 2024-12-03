@@ -222,5 +222,21 @@ public class Logic_2
 		System.out.println("closeFar(8, 9, 10) --> " + closeFar(8, 9, 10));
 		System.out.println("closeFar(8, 9, 7) --> " + closeFar(8, 9, 7));
 		System.out.println("closeFar(8, 6, 9) --> " + closeFar(8, 6, 9));
+		printFunction("blackjack");
+		System.out.println("blackjack(19, 21) --> " + blackjack(19, 21));
+		System.out.println("blackjack(21, 19) --> " + blackjack(21, 19));
+		System.out.println("blackjack(19, 22) --> " + blackjack(19, 22));
+		System.out.println("blackjack(22, 19) --> " + blackjack(22, 19));
+		System.out.println("blackjack(22, 50) --> " + blackjack(22, 50));
+		System.out.println("blackjack(22, 22) --> " + blackjack(22, 22));
+		System.out.println("blackjack(33, 1) --> " + blackjack(33, 1));
+		System.out.println("blackjack(1, 2) --> " + blackjack(1, 2));
+		System.out.println("blackjack(34, 33) --> " + blackjack(34, 33));
+		System.out.println("blackjack(17, 19) --> " + blackjack(17, 19));
+		System.out.println("blackjack(18, 17) --> " + blackjack(18, 17));
+		System.out.println("blackjack(16, 23) --> " + blackjack(16, 23));
+		System.out.println("blackjack(3, 4) --> " + blackjack(3, 4));
+		System.out.println("blackjack(3, 2) --> " + blackjack(3, 2));
+		System.out.println("blackjack(21, 20) --> " + blackjack(21, 20));
 	}
 }
