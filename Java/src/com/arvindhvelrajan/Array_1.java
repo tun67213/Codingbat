@@ -596,5 +596,13 @@ public class Array_1
 		System.out.println("make2([7, 8], [1, 2, 3]) --> " + Arrays.toString(make2(new int[] {7, 8}, new int[] {1, 2, 3})));
 		System.out.println("make2([7], [1, 2, 3]) --> " + Arrays.toString(make2(new int[] {7}, new int[] {1, 2, 3})));
 		System.out.println("make2([5, 4], [2, 3, 7]) --> " + Arrays.toString(make2(new int[] {5, 4}, new int[] {2, 3, 7})));
+		printFunction("front11");
+		System.out.println("front11([1, 2, 3], [7, 9, 8]) --> " + Arrays.toString(front11(new int[] {1, 2, 3}, new int[] {7, 9, 8})));
+		System.out.println("front11([1], [2]) --> " + Arrays.toString(front11(new int[] {1}, new int[] {2})));
+		System.out.println("front11([1, 7], []) --> " + Arrays.toString(front11(new int[] {1, 7}, new int[] {})));
+		System.out.println("front11([], [2, 8]) --> " + Arrays.toString(front11(new int[] {}, new int[] {2, 8})));
+		System.out.println("front11([], []) --> " + Arrays.toString(front11(new int[] {}, new int[] {})));
+		System.out.println("front11([3], [1, 4, 1, 9]) --> " + Arrays.toString(front11(new int[] {3}, new int[] {1, 4, 1, 9})));
+		System.out.println("front11([1, 4, 1, 9], []) --> " + Arrays.toString(front11(new int[] {1, 4, 1, 9}, new int[] {})));
 	}
 }
