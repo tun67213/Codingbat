@@ -8,6 +8,9 @@ import static com.arvindhvelrajan.UI_Functions.*;
  */
 public class Logic_1
 {
+	/**
+	 * This function introduces the user to the class that is being demonstrated.
+	 */
 	private void welcome()
 	{
 		System.out.println("\n\nLogic-1 Functions\n");
