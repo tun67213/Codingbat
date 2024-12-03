@@ -163,5 +163,25 @@ public class Logic_2
 		System.out.println("noTeenSum(5, 17, 18) --> " + noTeenSum(5, 17, 18));
 		System.out.println("noTeenSum(17, 18, 16) --> " + noTeenSum(17, 18, 16));
 		System.out.println("noTeenSum(17, 19, 18) --> " + noTeenSum(17, 19, 18));
+		printFunction("roundSum");
+		System.out.println("roundSum(16, 17, 18) --> " + roundSum(16, 17, 18));
+		System.out.println("roundSum(12, 13, 14) --> " + roundSum(12, 13, 14));
+		System.out.println("roundSum(6, 4, 4) --> " + roundSum(6, 4, 4));
+		System.out.println("roundSum(4, 6, 5) --> " + roundSum(4, 6, 5));
+		System.out.println("roundSum(4, 4, 6) --> " + roundSum(4, 4, 6));
+		System.out.println("roundSum(9, 4, 4) --> " + roundSum(9, 4, 4));
+		System.out.println("roundSum(0, 0, 1) --> " + roundSum(0, 0, 1));
+		System.out.println("roundSum(0, 9, 0) --> " + roundSum(0, 9, 0));
+		System.out.println("roundSum(10, 10, 19) --> " + roundSum(10, 10, 19));
+		System.out.println("roundSum(20, 30, 40) --> " + roundSum(20, 30, 40));
+		System.out.println("roundSum(45, 21, 30) --> " + roundSum(45, 21, 30));
+		System.out.println("roundSum(23, 11, 26) --> " + roundSum(23, 11, 26));
+		System.out.println("roundSum(23, 24, 25) --> " + roundSum(23, 24, 25));
+		System.out.println("roundSum(25, 24, 25) --> " + roundSum(25, 24, 25));
+		System.out.println("roundSum(23, 24, 29) --> " + roundSum(23, 24, 29));
+		System.out.println("roundSum(11, 24, 36) --> " + roundSum(11, 24, 36));
+		System.out.println("roundSum(24, 36, 32) --> " + roundSum(24, 36, 32));
+		System.out.println("roundSum(14, 12, 26) --> " + roundSum(14, 12, 26));
+		System.out.println("roundSum(12, 10, 24) --> " + roundSum(12, 10, 24));
 	}
 }
