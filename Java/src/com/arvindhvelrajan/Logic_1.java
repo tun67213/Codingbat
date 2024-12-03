@@ -300,5 +300,27 @@ public class Logic_1
 		System.out.println("specialEleven(52) --> " + specialEleven(52));
 		System.out.println("specialEleven(54) --> " + specialEleven(54));
 		System.out.println("specialEleven(55) --> " + specialEleven(55));
+		printFunction("more20");
+		System.out.println("more20(20) --> " + more20(20));
+		System.out.println("more20(21) --> " + more20(21));
+		System.out.println("more20(22) --> " + more20(22));
+		System.out.println("more20(23) --> " + more20(23));
+		System.out.println("more20(25) --> " + more20(25));
+		System.out.println("more20(30) --> " + more20(30));
+		System.out.println("more20(31) --> " + more20(31));
+		System.out.println("more20(59) --> " + more20(59));
+		System.out.println("more20(60) --> " + more20(60));
+		System.out.println("more20(61) --> " + more20(61));
+		System.out.println("more20(62) --> " + more20(62));
+		System.out.println("more20(1020) --> " + more20(1020));
+		System.out.println("more20(1021) --> " + more20(1021));
+		System.out.println("more20(1000) --> " + more20(1000));
+		System.out.println("more20(1001) --> " + more20(1001));
+		System.out.println("more20(50) --> " + more20(50));
+		System.out.println("more20(55) --> " + more20(55));
+		System.out.println("more20(40) --> " + more20(40));
+		System.out.println("more20(41) --> " + more20(41));
+		System.out.println("more20(39) --> " + more20(39));
+		System.out.println("more20(42) --> " + more20(42));
 	}
 }
