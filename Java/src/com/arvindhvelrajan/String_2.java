@@ -249,5 +249,19 @@ public class String_2
 		System.out.println("xyBalance(\"yxyxyxyx\") → " + xyBalance("yxyxyxyx"));
 		System.out.println("xyBalance(\"yxyxyxyxy\") → " + xyBalance("yxyxyxyxy"));
 		System.out.println("xyBalance(\"12xabxxydxyxyzz\") → " + xyBalance("12xabxxydxyxyzz"));
+		printFunction("mixString");
+		System.out.println("mixString(\"abc\", \"xyz\") → \"" + mixString("abc", "xyz") + "\"");
+		System.out.println("mixString(\"Hi\", \"There\") → \"" + mixString("Hi", "There") + "\"");
+		System.out.println("mixString(\"xxxx\", \"There\") → \"" + mixString("xxxx", "There") + "\"");
+		System.out.println("mixString(\"xxx\", \"X\") → \"" + mixString("xxx", "X") + "\"");
+		System.out.println("mixString(\"2/\", \"27 around\") → \"" + mixString("2/", "27 around") + "\"");
+		System.out.println("mixString(\"\", \"Hello\") → \"" + mixString("", "Hello") + "\"");
+		System.out.println("mixString(\"Abc\", \"\") → \"" + mixString("Abc", "") + "\"");
+		System.out.println("mixString(\"\", \"\") → \"" + mixString("", "") + "\"");
+		System.out.println("mixString(\"a\", \"b\") → \"" + mixString("a", "b") + "\"");
+		System.out.println("mixString(\"ax\", \"b\") → \"" + mixString("ax", "b") + "\"");
+		System.out.println("mixString(\"a\", \"bx\") → \"" + mixString("a", "bx") + "\"");
+		System.out.println("mixString(\"So\", \"Long\") → \"" + mixString("So", "Long") + "\"");
+		System.out.println("mixString(\"Long\", \"So\") → \"" + mixString("Long", "So") + "\"");
 	}
 }
