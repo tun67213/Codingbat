@@ -253,5 +253,20 @@ public class Logic_2
 		System.out.println("blackjack(3, 4) --> " + blackjack(3, 4));
 		System.out.println("blackjack(3, 2) --> " + blackjack(3, 2));
 		System.out.println("blackjack(21, 20) --> " + blackjack(21, 20));
+		printFunction("evenlySpaced");
+		System.out.println("evenlySpaced(2, 4, 6) --> " + evenlySpaced(2, 4, 6));
+		System.out.println("evenlySpaced(4, 6, 2) --> " + evenlySpaced(4, 6, 2));
+		System.out.println("evenlySpaced(4, 6, 3) --> " + evenlySpaced(4, 6, 3));
+		System.out.println("evenlySpaced(6, 2, 4) --> " + evenlySpaced(6, 2, 4));
+		System.out.println("evenlySpaced(6, 2, 8) --> " + evenlySpaced(6, 2, 8));
+		System.out.println("evenlySpaced(2, 2, 2) --> " + evenlySpaced(2, 2, 2));
+		System.out.println("evenlySpaced(2, 2, 3) --> " + evenlySpaced(2, 2, 3));
+		System.out.println("evenlySpaced(9, 10, 11) --> " + evenlySpaced(9, 10, 11));
+		System.out.println("evenlySpaced(10, 9, 11) --> " + evenlySpaced(10, 9, 11));
+		System.out.println("evenlySpaced(10, 9, 9) --> " + evenlySpaced(10, 9, 9));
+		System.out.println("evenlySpaced(2, 4, 4) --> " + evenlySpaced(2, 4, 4));
+		System.out.println("evenlySpaced(2, 2, 4) --> " + evenlySpaced(2, 2, 4));
+		System.out.println("evenlySpaced(3, 6, 12) --> " + evenlySpaced(3, 6, 12));
+		System.out.println("evenlySpaced(12, 3, 6) --> " + evenlySpaced(12, 3, 6));
 	}
 }
