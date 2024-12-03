@@ -627,5 +627,18 @@ public class Logic_1
 		System.out.println("inOrder(7, 9, 10, false) --> " + inOrder(7, 9, 10, false));
 		System.out.println("inOrder(7, 5, 6, true) --> " + inOrder(7, 5, 6, true));
 		System.out.println("inOrder(7, 5, 4, true) --> " + inOrder(7, 5, 4, true));
+		printFunction("inOrderEqual");
+		System.out.println("inOrderEqual(2, 5, 11, false) --> " + inOrderEqual(2, 5, 11, false));
+		System.out.println("inOrderEqual(5, 7, 6, false) --> " + inOrderEqual(5, 7, 6, false));
+		System.out.println("inOrderEqual(5, 5, 7, true) --> " + inOrderEqual(5, 5, 7, true));
+		System.out.println("inOrderEqual(5, 5, 7, false) --> " + inOrderEqual(5, 5, 7, false));
+		System.out.println("inOrderEqual(2, 5, 4, false) --> " + inOrderEqual(2, 5, 4, false));
+		System.out.println("inOrderEqual(3, 4, 3, false) --> " + inOrderEqual(3, 4, 3, false));
+		System.out.println("inOrderEqual(3, 4, 4, false) --> " + inOrderEqual(3, 4, 4, false));
+		System.out.println("inOrderEqual(1, 5, 5, true) --> " + inOrderEqual(1, 5, 5, true));
+		System.out.println("inOrderEqual(5, 5, 5, true) --> " + inOrderEqual(5, 5, 5, true));
+		System.out.println("inOrderEqual(2, 2, 1, true) --> " + inOrderEqual(2, 2, 1, true));
+		System.out.println("inOrderEqual(9, 2, 2, true) --> " + inOrderEqual(9, 2, 2, true));
+		System.out.println("inOrderEqual(0, 1, 0, true) --> " + inOrderEqual(0, 1, 0, true));
 	}
 }
