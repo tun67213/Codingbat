@@ -472,5 +472,9 @@ public class Array_1
 		System.out.println("swapEnds([3, 1, 4, 1, 5, 9]) --> " + Arrays.toString(new int[] {3, 1, 4, 1, 5, 9}));
 		System.out.println("swapEnds([1, 2]) --> " + Arrays.toString(swapEnds(new int[] {1, 2})));
 		System.out.println("swapEnds([1]) --> " + Arrays.toString(swapEnds(new int[] {1})));
+		printFunction("midThree");
+		System.out.println("midThree([1, 2, 3, 4, 5]) --> " + Arrays.toString(midThree(new int[] {1, 2, 3, 4, 5})));
+		System.out.println("midThree([8, 6, 7, 5, 3, 0, 9]) --> " + Arrays.toString(midThree(new int[] {8, 6, 7, 5, 3, 0, 9})));
+		System.out.println("midThree([1, 2, 3]) --> " + Arrays.toString(midThree(new int[] {1, 2, 3})));
 	}
 }
