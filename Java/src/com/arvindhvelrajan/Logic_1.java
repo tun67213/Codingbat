@@ -736,5 +736,17 @@ public class Logic_1
 		System.out.println("withoutDoubles(6, 6, false) --> " + withoutDoubles(6, 6, false));
 		System.out.println("withoutDoubles(1, 6, true) --> " + withoutDoubles(1, 6, true));
 		System.out.println("withoutDoubles(6, 1, false) --> " + withoutDoubles(6, 1, false));
+		printFunction("maxMod5");
+		System.out.println("maxMod5(2, 3) --> " + maxMod5(2, 3));
+		System.out.println("maxMod5(6, 2) --> " + maxMod5(6, 2));
+		System.out.println("maxMod5(3, 2) --> " + maxMod5(3, 2));
+		System.out.println("maxMod5(8, 12) --> " + maxMod5(8, 12));
+		System.out.println("maxMod5(7, 12) --> " + maxMod5(7, 12));
+		System.out.println("maxMod5(11, 6) --> " + maxMod5(11, 6));
+		System.out.println("maxMod5(2, 7) --> " + maxMod5(2, 7));
+		System.out.println("maxMod5(7, 7) --> " + maxMod5(7, 7));
+		System.out.println("maxMod5(9, 1) --> " + maxMod5(9, 1));
+		System.out.println("maxMod5(9, 14) --> " + maxMod5(9, 14));
+		System.out.println("maxMod5(1, 2) --> " + maxMod5(1, 2));
 	}
 }
