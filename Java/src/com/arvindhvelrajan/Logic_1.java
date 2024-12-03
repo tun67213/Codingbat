@@ -177,5 +177,15 @@ public class Logic_1
 		System.out.println("sortaSum(4, 6) --> " + sortaSum(4, 6));
 		System.out.println("sortaSum(14, 7) --> " + sortaSum(14, 7));
 		System.out.println("sortaSum(14, 6) --> " + sortaSum(14, 6));
+		printFunction("alarmClock");
+		System.out.println("alarmClock(1, false) --> \"" + alarmClock(1, false) + "\"");
+		System.out.println("alarmClock(5, false) --> \"" + alarmClock(5, false) + "\"");
+		System.out.println("alarmClock(0, false) --> \"" + alarmClock(0, false) + "\"");
+		System.out.println("alarmClock(6, false) --> \"" + alarmClock(6, false) + "\"");
+		System.out.println("alarmClock(0, true) --> \"" + alarmClock(0, true) + "\"");
+		System.out.println("alarmClock(6, true) --> \"" + alarmClock(6, true) + "\"");
+		System.out.println("alarmClock(1, true) --> \"" + alarmClock(1, true) + "\"");
+		System.out.println("alarmClock(3, true) --> \"" + alarmClock(3, true) + "\"");
+		System.out.println("alarmClock(5, true) --> \"" + alarmClock(5, true) + "\"");
 	}
 }
