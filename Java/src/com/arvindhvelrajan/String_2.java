@@ -17,6 +17,18 @@ public class String_2
 	}
 
 	/**
+	 * Given a string, return a string where for every char in the original, there are two chars.
+	 *
+	 * doubleChar("The") → "TThhee"
+	 * doubleChar("AAbb") → "AAAAbbbb"
+	 * doubleChar("Hi-There") → "HHii--TThheerree"
+	 */
+	public String doubleChar(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
