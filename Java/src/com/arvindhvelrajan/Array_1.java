@@ -417,5 +417,11 @@ public class Array_1
 		System.out.println("biggerTwo([2, 2], [1, 3]) --> " + Arrays.toString(biggerTwo(new int[] {2, 2}, new int[] {1, 3})));
 		System.out.println("biggerTwo([1, 3], [2, 2]) --> " + Arrays.toString(biggerTwo(new int[] {1, 3}, new int[] {2, 2})));
 		System.out.println("biggerTwo([6, 7], [3, 1]) --> " + Arrays.toString(biggerTwo(new int[] {6, 7}, new int[] {3, 1})));
+		printFunction("makeMiddle");
+		System.out.println("makeMiddle([1, 2, 3, 4]) --> " + Arrays.toString(makeMiddle(new int[] {1, 2, 3, 4})));
+		System.out.println("makeMiddle([7, 1, 2, 3, 4, 9]) --> " + Arrays.toString(makeMiddle(new int[] {7, 1, 2, 3, 4, 9})));
+		System.out.println("makeMiddle([1, 2]) --> " + Arrays.toString(makeMiddle(new int[] {1, 2})));
+		System.out.println("makeMiddle([5, 2, 4, 7]) --> " + Arrays.toString(makeMiddle(new int[] {5, 2, 4, 7})));
+		System.out.println("makeMiddle([9, 0, 4, 3, 9, 1]) --> " + Arrays.toString(makeMiddle(new int[] {9, 0, 4, 3, 9, 1})));
 	}
 }
