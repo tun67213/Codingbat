@@ -431,5 +431,22 @@ public class Logic_1
 		System.out.println("nearTen(158) --> " + nearTen(158));
 		System.out.println("nearTen(3) --> " + nearTen(3));
 		System.out.println("nearTen(1) --> " + nearTen(1));
+		printFunction("teenSum");
+		System.out.println("teenSum(3, 4) --> " + teenSum(3, 4));
+		System.out.println("teenSum(10, 13) --> " + teenSum(10, 13));
+		System.out.println("teenSum(13, 2) --> " + teenSum(13, 2));
+		System.out.println("teenSum(3, 19) --> " + teenSum(3, 19));
+		System.out.println("teenSum(13, 13) --> " + teenSum(13, 13));
+		System.out.println("teenSum(10, 10) --> " + teenSum(10, 10));
+		System.out.println("teenSum(6, 14) --> " + teenSum(6, 14));
+		System.out.println("teenSum(15, 2) --> " + teenSum(15, 2));
+		System.out.println("teenSum(19, 19) --> " + teenSum(19, 19));
+		System.out.println("teenSum(19, 20) --> " + teenSum(19, 20));
+		System.out.println("teenSum(2, 18) --> " + teenSum(2, 18));
+		System.out.println("teenSum(12, 4) --> " + teenSum(12, 4));
+		System.out.println("teenSum(2, 20) --> " + teenSum(2, 20));
+		System.out.println("teenSum(2, 17) --> " + teenSum(2, 17));
+		System.out.println("teenSum(2, 16) --> " + teenSum(2, 16));
+		System.out.println("teenSum(6, 7) --> " + teenSum(6, 7));
 	}
 }
