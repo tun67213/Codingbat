@@ -544,5 +544,23 @@ public class Logic_1
 		System.out.println("fizzString(\"af\") --> \"" + fizzString("af") + "\"");
 		System.out.println("fizzString(\"bf\") --> \"" + fizzString("bf") + "\"");
 		System.out.println("fizzString(\"fb\") --> \"" + fizzString("fb") + "\"");
+		printFunction("fizzString2");
+		System.out.println("fizzString2(1) --> " + fizzString2(1));
+		System.out.println("fizzString2(2) --> " + fizzString2(2));
+		System.out.println("fizzString2(3) --> " + fizzString2(3));
+		System.out.println("fizzString2(4) --> " + fizzString2(4));
+		System.out.println("fizzString2(5) --> " + fizzString2(5));
+		System.out.println("fizzString2(6) --> " + fizzString2(6));
+		System.out.println("fizzString2(7) --> " + fizzString2(7));
+		System.out.println("fizzString2(8) --> " + fizzString2(8));
+		System.out.println("fizzString2(9) --> " + fizzString2(9));
+		System.out.println("fizzString2(15) --> " + fizzString2(15));
+		System.out.println("fizzString2(16) --> " + fizzString2(16));
+		System.out.println("fizzString2(18) --> " + fizzString2(18));
+		System.out.println("fizzString2(19) --> " + fizzString2(19));
+		System.out.println("fizzString2(21) --> " + fizzString2(21));
+		System.out.println("fizzString2(44) --> " + fizzString2(44));
+		System.out.println("fizzString2(45) --> " + fizzString2(45));
+		System.out.println("fizzString2(100) --> " + fizzString2(100));
 	}
 }
