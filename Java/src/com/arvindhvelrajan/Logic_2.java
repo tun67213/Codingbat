@@ -10,4 +10,12 @@ public class Logic_2
 	{
 		System.out.println("\n\nLogic-2 Functions\n");
 	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public void main(String[] args)
+	{
+		
+	}
 }
