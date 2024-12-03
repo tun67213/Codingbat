@@ -846,5 +846,16 @@ public class Logic_1
 		System.out.println("blueTicket(8, 4, 3) --> " + blueTicket(8, 4, 3));
 		System.out.println("blueTicket(8, 4, 2) --> " + blueTicket(8, 4, 2));
 		System.out.println("blueTicket(8, 4, 1) --> " + blueTicket(8, 4, 1));
+		printFunction("shareDigit");
+		System.out.println("shareDigit(12, 23) --> " + shareDigit(12, 23));
+		System.out.println("shareDigit(12, 43) --> " + shareDigit(12, 43));
+		System.out.println("shareDigit(12, 44) --> " + shareDigit(12, 44));
+		System.out.println("shareDigit(23, 12) --> " + shareDigit(23, 12));
+		System.out.println("shareDigit(23, 39) --> " + shareDigit(23, 39));
+		System.out.println("shareDigit(23, 19) --> " + shareDigit(23, 19));
+		System.out.println("shareDigit(30, 90) --> " + shareDigit(30, 90));
+		System.out.println("shareDigit(30, 91) --> " + shareDigit(30, 91));
+		System.out.println("shareDigit(55, 55) --> " + shareDigit(55, 55));
+		System.out.println("shareDigit(55, 44) --> " + shareDigit(55, 44));
 	}
 }
