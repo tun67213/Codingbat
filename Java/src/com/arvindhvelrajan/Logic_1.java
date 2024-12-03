@@ -764,5 +764,17 @@ public class Logic_1
 		System.out.println("maxMod5(9, 1) --> " + maxMod5(9, 1));
 		System.out.println("maxMod5(9, 14) --> " + maxMod5(9, 14));
 		System.out.println("maxMod5(1, 2) --> " + maxMod5(1, 2));
+		printFunction("redTicket");
+		System.out.println("redTicket(2, 2, 2) --> " + redTicket(2, 2, 2));
+		System.out.println("redTicket(2, 2, 1) --> " + redTicket(2, 2, 1));
+		System.out.println("redTicket(0, 0, 0) --> " + redTicket(0, 0, 0));
+		System.out.println("redTicket(2, 0, 0) --> " + redTicket(2, 0, 0));
+		System.out.println("redTicket(1, 1, 1) --> " + redTicket(1, 1, 1));
+		System.out.println("redTicket(1, 2, 1) --> " + redTicket(1, 2, 1));
+		System.out.println("redTicket(1, 2, 0) --> " + redTicket(1, 2, 0));
+		System.out.println("redTicket(0, 2, 2) --> " + redTicket(0, 2, 2));
+		System.out.println("redTicket(1, 2, 2) --> " + redTicket(1, 2, 2));
+		System.out.println("redTicket(0, 2, 0) --> " + redTicket(0, 2, 0));
+		System.out.println("redTicket(1, 1, 2) --> " + redTicket(1, 1, 2));
 	}
 }
