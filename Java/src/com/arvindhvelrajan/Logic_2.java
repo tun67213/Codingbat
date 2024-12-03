@@ -31,6 +31,35 @@ public class Logic_2
 	public void main(String[] args)
 	{
 		welcome();
-		
+		printFunction("makeBricks");
+		System.out.println("makeBricks(3, 1, 8) --> " + makeBricks(3, 1, 8));
+		System.out.println("makeBricks(3, 1, 9) --> " + makeBricks(3, 1, 9));
+		System.out.println("makeBricks(3, 2, 10) --> " + makeBricks(3, 2, 10));
+		System.out.println("makeBricks(3, 2, 8) --> " + makeBricks(3, 2, 8));
+		System.out.println("makeBricks(3, 2, 9) --> " + makeBricks(3, 2, 9));
+		System.out.println("makeBricks(6, 1, 11) --> " + makeBricks(6, 1, 11));
+		System.out.println("makeBricks(6, 0, 11) --> " + makeBricks(6, 0, 11));
+		System.out.println("makeBricks(1, 4, 11) --> " + makeBricks(1, 4, 11));
+		System.out.println("makeBricks(0, 3, 10) --> " + makeBricks(0, 3, 10));
+		System.out.println("makeBricks(1, 4, 12) --> " + makeBricks(1, 4, 12));
+		System.out.println("makeBricks(3, 1, 7) --> " + makeBricks(3, 1, 7));
+		System.out.println("makeBricks(1, 1, 7) --> " + makeBricks(1, 1, 7));
+		System.out.println("makeBricks(2, 1, 7) --> " + makeBricks(2, 1, 7));
+		System.out.println("makeBricks(7, 1, 11) --> " + makeBricks(7, 1, 11));
+		System.out.println("makeBricks(7, 1, 8) --> " + makeBricks(7, 1, 8));
+		System.out.println("makeBricks(7, 1, 13) --> " + makeBricks(7, 1, 13));
+		System.out.println("makeBricks(43, 1, 46) --> " + makeBricks(43, 1, 46));
+		System.out.println("makeBricks(40, 1, 46) --> " + makeBricks(40, 1, 46));
+		System.out.println("makeBricks(40, 2, 47) --> " + makeBricks(40, 2, 47));
+		System.out.println("makeBricks(40, 2, 50) --> " + makeBricks(40, 2, 50));
+		System.out.println("makeBricks(40, 2, 52) --> " + makeBricks(40, 2, 52));
+		System.out.println("makeBricks(22, 2, 33) --> " + makeBricks(22, 2, 33));
+		System.out.println("makeBricks(0, 2, 10) --> " + makeBricks(0, 2, 10));
+		System.out.println("makeBricks(1000000, 1000, 1000100) --> " + makeBricks(1000000, 1000, 1000100));
+		System.out.println("makeBricks(2, 1000000, 100003) --> " + makeBricks(2, 1000000, 100003));
+		System.out.println("makeBricks(20, 0, 19) --> " + makeBricks(20, 0, 19));
+		System.out.println("makeBricks(20, 0, 21) --> " + makeBricks(20, 0, 21));
+		System.out.println("makeBricks(20, 4, 51) --> " + makeBricks(20, 4, 51));
+		System.out.println("makeBricks(20, 4, 39) --> " + makeBricks(20, 4, 39));
 	}
 }
