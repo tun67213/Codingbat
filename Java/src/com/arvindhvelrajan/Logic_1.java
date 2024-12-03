@@ -872,5 +872,21 @@ public class Logic_1
 		System.out.println("shareDigit(30, 91) --> " + shareDigit(30, 91));
 		System.out.println("shareDigit(55, 55) --> " + shareDigit(55, 55));
 		System.out.println("shareDigit(55, 44) --> " + shareDigit(55, 44));
+		printFunction("sumLimit");
+		System.out.println("sumLimit(2, 3) --> " + sumLimit(2, 3));
+		System.out.println("sumLimit(8, 3) --> " + sumLimit(8, 3));
+		System.out.println("sumLimit(8, 1) --> " + sumLimit(8, 1));
+		System.out.println("sumLimit(11, 39) --> " + sumLimit(11, 39));
+		System.out.println("sumLimit(11, 99) --> " + sumLimit(11, 99));
+		System.out.println("sumLimit(0, 0) --> " + sumLimit(0, 0));
+		System.out.println("sumLimit(99, 0) --> " + sumLimit(99, 0));
+		System.out.println("sumLimit(99, 1) --> " + sumLimit(99, 1));
+		System.out.println("sumLimit(123, 1) --> " + sumLimit(123, 1));
+		System.out.println("sumLimit(1, 123) --> " + sumLimit(1, 123));
+		System.out.println("sumLimit(23, 60) --> " + sumLimit(23, 60));
+		System.out.println("sumLimit(23, 80) --> " + sumLimit(23, 80));
+		System.out.println("sumLimit(9000, 1) --> " + sumLimit(9000, 1));
+		System.out.println("sumLimit(90000000, 1) --> " + sumLimit(90000000, 1));
+		System.out.println("sumLimit(9000, 1000) --> " + sumLimit(9000, 1000));
 	}
 }
