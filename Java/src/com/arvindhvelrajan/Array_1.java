@@ -513,5 +513,14 @@ public class Array_1
 		System.out.println("maxTriple([5, 1, 7, 9, 7, 8, 1]) --> " + maxTriple(new int[] {5, 1, 7, 9, 7, 8, 1}));
 		System.out.println("maxTriple([5, 1, 7, 3, 7, 8, 9]) --> " + maxTriple(new int[] {5, 1, 7, 3, 7, 8, 9}));
 		System.out.println("maxTriple([2, 2, 5, 1, 1]) --> " + maxTriple(new int[] {2, 2, 5, 1, 1}));
+		printFunction("frontPiece");
+		System.out.println("frontPiece([1, 2, 3]) --> " + Arrays.toString(frontPiece(new int[] {1, 2, 3})));
+		System.out.println("frontPiece([1, 2]) --> " + Arrays.toString(frontPiece(new int[] {1, 2})));
+		System.out.println("frontPiece([1]) --> " + Arrays.toString(frontPiece(new int[] {1})));
+		System.out.println("frontPiece([]) --> " + Arrays.toString(frontPiece(new int[] {})));
+		System.out.println("frontPiece([6, 5, 0]) --> " + Arrays.toString(frontPiece(new int[] {6, 5, 0})));
+		System.out.println("frontPiece([6, 5]) --> " + Arrays.toString(frontPiece(new int[] {6, 5})));
+		System.out.println("frontPiece([3, 1, 4, 1, 5]) --> " + Arrays.toString(new int[] {3, 1, 4, 1, 5}));
+		System.out.println("frontPiece([6]) --> " + Arrays.toString(new int[] {6}));
 	}
 }
