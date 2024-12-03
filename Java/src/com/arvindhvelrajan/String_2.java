@@ -322,5 +322,17 @@ public class String_2
 		System.out.println("repeatFront(\"\", 0) → \"" + repeatFront("", 0) + "\"");
 		System.out.println("repeatFront(\"Java\", 4) → \"" + repeatFront("Java", 4) + "\"");
 		System.out.println("repeatFront(\"Java\", 1) → \"" + repeatFront("Java", 1) + "\"");
+		printFunction("repeatSeparator");
+		System.out.println("repeatSeparator(\"Word\", \"X\", 3) → \"" + repeatSeparator("Word", "X", 3) + "\"");
+		System.out.println("repeatSeparator(\"This\", \"And\", 2) → \"" + repeatSeparator("This", "And", 2) + "\"");
+		System.out.println("repeatSeparator(\"This\", \"And\", 1) → \"" + repeatSeparator("This", "And", 1) + "\"");
+		System.out.println("repeatSeparator(\"Hi\", \"-n-\", 2) → \"" + repeatSeparator("Hi", "-n-", 2) + "\"");
+		System.out.println("repeatSeparator(\"AAA\", \"\", 1) → \"" + repeatSeparator("AAA", "", 1) + "\"");
+		System.out.println("repeatSeparator(\"AAA\", \"\", 0) → \"" + repeatSeparator("AAA", "", 0) + "\"");
+		System.out.println("repeatSeparator(\"A\", \"B\", 5) → \"" + repeatSeparator("A", "B", 5) + "\"");
+		System.out.println("repeatSeparator(\"abc\", \"XX\", 3) → \"" + repeatSeparator("abc", "XX", 3) + "\"");
+		System.out.println("repeatSeparator(\"abc\", \"XX\", 2) → \"" + repeatSeparator("abc", "XX", 2) + "\"");
+		System.out.println("repeatSeparator(\"abc\", \"XX\", 1) → \"" + repeatSeparator("abc", "XX", 1) + "\"");
+		System.out.println("repeatSeparator(\"XYZ\", \"a\", 2) → \"" + repeatSeparator("XYZ", "a", 2) + "\"");
 	}
 }
