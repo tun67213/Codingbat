@@ -201,5 +201,26 @@ public class Logic_1
 		System.out.println("alarmClock(1, true) --> \"" + alarmClock(1, true) + "\"");
 		System.out.println("alarmClock(3, true) --> \"" + alarmClock(3, true) + "\"");
 		System.out.println("alarmClock(5, true) --> \"" + alarmClock(5, true) + "\"");
+		printFunction("love6");
+		System.out.println("love6(6, 4) --> " + love6(6, 4));
+		System.out.println("love6(4, 5) --> " + love6(4, 5));
+		System.out.println("love6(1, 5) --> " + love6(1, 5));
+		System.out.println("love6(1, 6) --> " + love6(1, 6));
+		System.out.println("love6(1, 8) --> " + love6(1, 8));
+		System.out.println("love6(1, 7) --> " + love6(1, 7));
+		System.out.println("love6(7, 5) --> " + love6(7, 5));
+		System.out.println("love6(8, 2) --> " + love6(8, 2));
+		System.out.println("love6(6, 6) --> " + love6(6, 6));
+		System.out.println("love6(-6, 2) --> " + love6(-6, 2));
+		System.out.println("love6(-4, -10) --> " + love6(-4, -10));
+		System.out.println("love6(-7, 1) --> " + love6(-7, 1));
+		System.out.println("love6(7, -1) --> " + love6(7, -1));
+		System.out.println("love6(-6, 12) --> " + love6(-6, 12));
+		System.out.println("love6(-2, -4) --> " + love6(-2, -4));
+		System.out.println("love6(7, 1) --> " + love6(7, 1));
+		System.out.println("love6(0, 9) --> " + love6(0, 9));
+		System.out.println("love6(8, 3) --> " + love6(8, 3));
+		System.out.println("love6(3, 3) --> " + love6(3, 3));
+		System.out.println("love6(3, 4) --> " + love6(3, 4));
 	}
 }
