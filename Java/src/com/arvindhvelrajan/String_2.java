@@ -80,6 +80,18 @@ public class String_2
 	}
 
 	/**
+	 * Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
+	 *
+	 * xyzThere("abcxyz") → true
+	 * xyzThere("abc.xyz") → false
+	 * xyzThere("xyz.abc") → true
+	 */
+	public boolean xyzThere(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
