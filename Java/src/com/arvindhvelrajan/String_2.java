@@ -92,6 +92,18 @@ public class String_2
 	}
 
 	/**
+	 * Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.
+	 *
+	 * bobThere("abcbob") → true
+	 * bobThere("b9b") → true
+	 * bobThere("bac") → false
+	 */
+	public boolean bobThere(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
