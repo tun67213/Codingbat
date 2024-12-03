@@ -41,6 +41,18 @@ public class String_2
 	}
 
 	/**
+	 * Return true if the string "cat" and "dog" appear the same number of times in the given string.
+	 *
+	 * catDog("catdog") → true
+	 * catDog("catcat") → false
+	 * catDog("1cat1cadodog") → true
+	 */
+	public boolean catDog(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
