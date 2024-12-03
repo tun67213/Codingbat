@@ -401,5 +401,21 @@ public class Logic_1
 		System.out.println("less20(1022) --> " + less20(1022));
 		System.out.println("less20(1023) --> " + less20(1023));
 		System.out.println("less20(37) --> " + less20(37));
+		printFunction("nearTen");
+		System.out.println("nearTen(12) --> " + nearTen(12));
+		System.out.println("nearTen(17) --> " + nearTen(17));
+		System.out.println("nearTen(19) --> " + nearTen(19));
+		System.out.println("nearTen(31) --> " + nearTen(31));
+		System.out.println("nearTen(6) --> " + nearTen(6));
+		System.out.println("nearTen(10) --> " + nearTen(10));
+		System.out.println("nearTen(11) --> " + nearTen(11));
+		System.out.println("nearTen(21) --> " + nearTen(21));
+		System.out.println("nearTen(22) --> " + nearTen(22));
+		System.out.println("nearTen(23) --> " + nearTen(23));
+		System.out.println("nearTen(54) --> " + nearTen(54));
+		System.out.println("nearTen(155) --> " + nearTen(155));
+		System.out.println("nearTen(158) --> " + nearTen(158));
+		System.out.println("nearTen(3) --> " + nearTen(3));
+		System.out.println("nearTen(1) --> " + nearTen(1));
 	}
 }
