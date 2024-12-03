@@ -266,5 +266,26 @@ public class Logic_1
 		System.out.println("in1To10(-1, true) --> " + in1To10(-1, true));
 		System.out.println("in1To10(99, false) --> " + in1To10(99, false));
 		System.out.println("in1To10(99, true) --> " + in1To10(99, true));
+		printFunction("specialEleven");
+		System.out.println("specialEleven(22) --> " + specialEleven(22));
+		System.out.println("specialEleven(23) --> " + specialEleven(23));
+		System.out.println("specialEleven(24) --> " + specialEleven(24));
+		System.out.println("specialEleven(21) --> " + specialEleven(21));
+		System.out.println("specialEleven(11) --> " + specialEleven(11));
+		System.out.println("specialEleven(12) --> " + specialEleven(12));
+		System.out.println("specialEleven(10) --> " + specialEleven(10));
+		System.out.println("specialEleven(9) --> " + specialEleven(9));
+		System.out.println("specialEleven(8) --> " + specialEleven(8));
+		System.out.println("specialEleven(0) --> " + specialEleven(0));
+		System.out.println("specialEleven(1) --> " + specialEleven(1));
+		System.out.println("specialEleven(2) --> " + specialEleven(2));
+		System.out.println("specialEleven(121) --> " + specialEleven(121));
+		System.out.println("specialEleven(122) --> " + specialEleven(122));
+		System.out.println("specialEleven(123) --> " + specialEleven(123));
+		System.out.println("specialEleven(46) --> " + specialEleven(46));
+		System.out.println("specialEleven(49) --> " + specialEleven(49));
+		System.out.println("specialEleven(52) --> " + specialEleven(52));
+		System.out.println("specialEleven(54) --> " + specialEleven(54));
+		System.out.println("specialEleven(55) --> " + specialEleven(55));
 	}
 }
