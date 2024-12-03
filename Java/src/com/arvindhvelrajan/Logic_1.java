@@ -574,5 +574,18 @@ public class Logic_1
 		System.out.println("fizzString2(44) --> " + fizzString2(44));
 		System.out.println("fizzString2(45) --> " + fizzString2(45));
 		System.out.println("fizzString2(100) --> " + fizzString2(100));
+		printFunction("twoAsOne");
+		System.out.println("twoAsOne(1, 2, 3) --> " + twoAsOne(1, 2, 3));
+		System.out.println("twoAsOne(3, 2, 1) --> " + twoAsOne(3, 2, 1));
+		System.out.println("twoAsOne(3, 2, 2) --> " + twoAsOne(3, 2, 2));
+		System.out.println("twoAsOne(2, 3, 1) --> " + twoAsOne(2, 3, 1));
+		System.out.println("twoAsOne(5, 3, -2) --> " + twoAsOne(5, 3, -2));
+		System.out.println("twoAsOne(5, 3, -3) --> " + twoAsOne(5, 3, -3));
+		System.out.println("twoAsOne(2, 5, 3) --> " + twoAsOne(2, 5, 3));
+		System.out.println("twoAsOne(9, 5, 5) --> " + twoAsOne(9, 5, 5));
+		System.out.println("twoAsOne(9, 4, 5) --> " + twoAsOne(9, 4, 5));
+		System.out.println("twoAsOne(5, 4, 9) --> " + twoAsOne(5, 4, 9));
+		System.out.println("twoAsOne(3, 3, 0) --> " + twoAsOne(3, 3, 0));
+		System.out.println("twoAsOne(3, 3, 2) --> " + twoAsOne(3, 3, 2));
 	}
 }
