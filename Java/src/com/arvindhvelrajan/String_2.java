@@ -105,5 +105,20 @@ public class String_2
 		System.out.println("catDog(\"ca\") --> " + catDog("ca"));
 		System.out.println("catDog(\"c\") --> " + catDog("c"));
 		System.out.println("catDog(\"\") --> " + catDog(""));
+		printFunction("countCode");
+		System.out.println("countCode(\"aaacodebbb\") --> " + countCode("aaacodebbb"));
+		System.out.println("countCode(\"codexxcode\") --> " + countCode("codexxcode"));
+		System.out.println("countCode(\"cozexxcope\") --> " + countCode("cozexxcope"));
+		System.out.println("countCode(\"cozfxxcope\") --> " + countCode("cozfxxcope"));
+		System.out.println("countCode(\"xxcozeyycop\") --> " + countCode("xxcozeyycop"));
+		System.out.println("countCode(\"cozcop\") --> " + countCode("cozcop"));
+		System.out.println("countCode(\"abcxyz\") --> " + countCode("abcxyz"));
+		System.out.println("countCode(\"code\") --> " + countCode("code"));
+		System.out.println("countCode(\"ode\") --> " + countCode("ode"));
+		System.out.println("countCode(\"c\") --> " + countCode("c"));
+		System.out.println("countCode(\"\") --> " + countCode(""));
+		System.out.println("countCode(\"AAcodeBBcoleCCccoreDD\") --> " + countCode("AAcodeBBcoleCCccoreDD"));
+		System.out.println("countCode(\"AAcodeBBcoleCCccorfDD\") --> " + countCode("AAcodeBBcoleCCccorfDD"));
+		System.out.println("countCode(\"coAcodeBcoleccoreDD\") --> " + countCode("coAcodeBcoleccoreDD"));
 	}
 }
