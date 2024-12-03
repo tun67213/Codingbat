@@ -396,5 +396,13 @@ public class Array_1
 		System.out.println("start1([7], [8]) --> " + start1(new int[] {7}, new int[] {8}));
 		System.out.println("start1([], []) --> " + start1(new int[] {}, new int[] {}));
 		System.out.println("start1([1, 3], [1]) --> " + start1(new int[] {1, 3}, new int[] {1}));
+		printFunction("biggerTwo");
+		System.out.println("biggerTwo([1, 2], [3, 4]) --> " + Arrays.toString(biggerTwo(new int[] {1, 2}, new int[] {3, 4})));
+		System.out.println("biggerTwo([3, 4], [1, 2]) --> " + Arrays.toString(biggerTwo(new int[] {3, 4}, new int[] {1, 2})));
+		System.out.println("biggerTwo([1, 1], [1, 2]) --> " + Arrays.toString(biggerTwo(new int[] {1, 1}, new int[] {1, 2})));
+		System.out.println("biggerTwo([2, 1], [1, 1]) --> " + Arrays.toString(biggerTwo(new int[] {2, 1}, new int[] {1, 1})));
+		System.out.println("biggerTwo([2, 2], [1, 3]) --> " + Arrays.toString(biggerTwo(new int[] {2, 2}, new int[] {1, 3})));
+		System.out.println("biggerTwo([1, 3], [2, 2]) --> " + Arrays.toString(biggerTwo(new int[] {1, 3}, new int[] {2, 2})));
+		System.out.println("biggerTwo([6, 7], [3, 1]) --> " + Arrays.toString(biggerTwo(new int[] {6, 7}, new int[] {3, 1})));
 	}
 }
