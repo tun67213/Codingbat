@@ -34,5 +34,15 @@ public class String_2
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("doubleChar");
+		System.out.println("doubleChar(\"The\") --> \"" + doubleChar("The") + "\"");
+		System.out.println("doubleChar(\"AAbb\") --> \"" + doubleChar("AAbb") + "\"");
+		System.out.println("doubleChar(\"Hi-There\") --> \"" + doubleChar("Hi-There") + "\"");
+		System.out.println("doubleChar(\"Word!\") --> \"" + doubleChar("Word!") + "\"");
+		System.out.println("doubleChar(\"!!\") --> \"" + doubleChar("!!") + "\"");
+		System.out.println("doubleChar(\"\") --> \"" + doubleChar("") + "\"");
+		System.out.println("doubleChar(\"a\") --> \"" + doubleChar("a") + "\"");
+		System.out.println("doubleChar(\".\") --> \"" + doubleChar(".") + "\"");
+		System.out.println("doubleChar(\"aa\") --> \"" + doubleChar("aa") + "\"");
 	}
 }
