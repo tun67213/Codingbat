@@ -95,5 +95,19 @@ public class Logic_1
 		System.out.println("dateFashion(3, 7) --> " + dateFashion(3, 7));
 		System.out.println("dateFashion(2, 7) --> " + dateFashion(2, 7));
 		System.out.println("dateFashion(6, 2) --> " + dateFashion(6, 2));
+		printFunction("squirrelPlay");
+		System.out.println("squirrelPlay(70, false) --> " + squirrelPlay(70, false));
+		System.out.println("squirrelPlay(95, false) --> " + squirrelPlay(95, false));
+		System.out.println("squirrelPlay(95, true) --> " + squirrelPlay(95, true));
+		System.out.println("squirrelPlay(90, false) --> " + squirrelPlay(90, false));
+		System.out.println("squirrelPlay(90, true) --> " + squirrelPlay(90, true));
+		System.out.println("squirrelPlay(50, false) --> " + squirrelPlay(50, false));
+		System.out.println("squirrelPlay(50, true) --> " + squirrelPlay(50, true));
+		System.out.println("squirrelPlay(100, false) --> " + squirrelPlay(100, false));
+		System.out.println("squirrelPlay(100, true) --> " + squirrelPlay(100, true));
+		System.out.println("squirrelPlay(105, true) --> " + squirrelPlay(105, true));
+		System.out.println("squirrelPlay(59, false) --> " + squirrelPlay(59, false));
+		System.out.println("squirrelPlay(59, true) --> " + squirrelPlay(59, true));
+		System.out.println("squirrelPlay(60, false) --> " + squirrelPlay(60, false));
 	}
 }
