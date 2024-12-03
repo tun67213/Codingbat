@@ -161,5 +161,20 @@ public class String_2
 		System.out.println("endOther(\"abcXYZ\", \"abcDEF\") --> " + endOther("abcXYZ", "abcDEF"));
 		System.out.println("endOther(\"ab\", \"ab12\") --> " + endOther("ab", "ab12"));
 		System.out.println("endOther(\"ab\", \"12ab\") --> " + endOther("ab", "12ab"));
+		printFunction("xyzThere");
+		System.out.println("xyzThere(\"abcxyz\") --> " + xyzThere("abcxyz"));
+		System.out.println("xyzThere(\"abc.xyz\") --> " + xyzThere("abc.xyz"));
+		System.out.println("xyzThere(\"xyz.abc\") --> " + xyzThere("xyz.abc"));
+		System.out.println("xyzThere(\"abcxy\") --> " + xyzThere("abcxy"));
+		System.out.println("xyzThere(\"xyz\") --> " + xyzThere("xyz"));
+		System.out.println("xyzThere(\"xy\") --> " + xyzThere("xy"));
+		System.out.println("xyzThere(\"x\") --> " + xyzThere("x"));
+		System.out.println("xyzThere(\"\") --> " + xyzThere(""));
+		System.out.println("xyzThere(\"abc.xyzxyz\") --> " + xyzThere("abc.xyzxyz"));
+		System.out.println("xyzThere(\"abc.xxyz\") --> " + xyzThere("abc.xxyz"));
+		System.out.println("xyzThere(\".xyz\") --> " + xyzThere(".xyz"));
+		System.out.println("xyzThere(\"12.xyz\") --> " + xyzThere("12.xyz"));
+		System.out.println("xyzThere(\"12xyz\") --> " + xyzThere("12xyz"));
+		System.out.println("xyzThere(\"1.xyz.xyz2.xyz\") --> " + xyzThere("1.xyz.xyz2.xyz"));
 	}
 }
