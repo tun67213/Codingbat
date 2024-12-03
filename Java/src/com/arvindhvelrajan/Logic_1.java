@@ -244,7 +244,7 @@ public class Logic_1
 	 * teaParty(3, 8) → 0
 	 * teaParty(20, 6) → 2
 	 */
-	public int teaPart(int tea, int candy)
+	public int teaParty(int tea, int candy)
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
