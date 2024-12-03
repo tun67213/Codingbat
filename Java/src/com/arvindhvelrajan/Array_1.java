@@ -570,5 +570,18 @@ public class Array_1
 		System.out.println("unlucky1([2, 3, 2, 1]) --> " + unlucky1(new int[] {2, 3, 2, 1}));
 		System.out.println("unlucky1([2, 3, 1, 3]) --> " + unlucky1(new int[] {2, 3, 1, 3}));
 		System.out.println("unlucky1([[1, 2, 3, 4, 1, 3]) --> " + unlucky1(new int[] {1, 2, 3, 4, 1, 3}));
+		printFunction("make2");
+		System.out.println("make2([4, 5], [1, 2, 3]) --> " + Arrays.toString(make2(new int[] {4, 5}, new int[] {1, 2, 3})));
+		System.out.println("make2([4], [1, 2, 3]) --> " + Arrays.toString(make2(new int[] {4}, new int[] {1, 2, 3})));
+		System.out.println("make2([], [1, 2]) --> " + Arrays.toString(make2(new int[] {}, new int[] {1, 2})));
+		System.out.println("make2([1, 2], []) --> " + Arrays.toString(make2(new int[] {1, 2}, new int[] {})));
+		System.out.println("make2([3], [1, 2, 3]) --> " + Arrays.toString(make2(new int[] {3}, new int[] {1, 2, 3})));
+		System.out.println("make2([3], [1]) --> " + Arrays.toString(make2(new int[] {3}, new int[] {1})));
+		System.out.println("make2([3, 1, 4], []) --> " + Arrays.toString(make2(new int[] {3, 1, 4}, new int[] {})));
+		System.out.println("make2([1], [1]) --> " + Arrays.toString(make2(new int[] {1}, new int[] {1})));
+		System.out.println("make2([1, 2, 3], [7, 8]) --> " + Arrays.toString(make2(new int[] {1, 2, 3}, new int[] {7, 8})));
+		System.out.println("make2([7, 8], [1, 2, 3]) --> " + Arrays.toString(make2(new int[] {7, 8}, new int[] {1, 2, 3})));
+		System.out.println("make2([7], [1, 2, 3]) --> " + Arrays.toString(make2(new int[] {7}, new int[] {1, 2, 3})));
+		System.out.println("make2([5, 4], [2, 3, 7]) --> " + Arrays.toString(make2(new int[] {5, 4}, new int[] {2, 3, 7})));
 	}
 }
