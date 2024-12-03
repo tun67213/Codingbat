@@ -134,5 +134,20 @@ public class String_2
 		System.out.println("countCode(\"AAcodeBBcoleCCccoreDD\") --> " + countCode("AAcodeBBcoleCCccoreDD"));
 		System.out.println("countCode(\"AAcodeBBcoleCCccorfDD\") --> " + countCode("AAcodeBBcoleCCccorfDD"));
 		System.out.println("countCode(\"coAcodeBcoleccoreDD\") --> " + countCode("coAcodeBcoleccoreDD"));
+		printFunction("endOther");
+		System.out.println("endOther(\"Hiabc\", \"abc\") --> " + endOther("Hiabc", "abc"));
+		System.out.println("endOther(\"AbC\", \"HiaBc\") --> " + endOther("AbC", "HiaBc"));
+		System.out.println("endOther(\"abc\", \"abXabc\") --> " + endOther("abc", "abXabc"));
+		System.out.println("endOther(\"Hiabc\", \"abcd\") --> " + endOther("Hiabc", "abcd"));
+		System.out.println("endOther(\"Hiabc\", \"bc\") --> " + endOther("Hiabc", "bc"));
+		System.out.println("endOther(\"Hiabcx\", \"bc\") --> " + endOther("Hiabcx", "bc"));
+		System.out.println("endOther(\"abc\", \"abc\") --> " + endOther("abc", "abc"));
+		System.out.println("endOther(\"xyz\", \"12xyz\") --> " + endOther("xyz", "12xyz"));
+		System.out.println("endOther(\"yz\", \"12xz\") --> " + endOther("yz", "12xz"));
+		System.out.println("endOther(\"Z\", \"12xz\") --> " + endOther("Z", "12xz"));
+		System.out.println("endOther(\"12\", \"12\") --> " + endOther("12", "12"));
+		System.out.println("endOther(\"abcXYZ\", \"abcDEF\") --> " + endOther("abcXYZ", "abcDEF"));
+		System.out.println("endOther(\"ab\", \"ab12\") --> " + endOther("ab", "ab12"));
+		System.out.println("endOther(\"ab\", \"12ab\") --> " + endOther("ab", "12ab"));
 	}
 }
