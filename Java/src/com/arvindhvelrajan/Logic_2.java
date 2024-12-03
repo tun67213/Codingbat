@@ -129,5 +129,22 @@ public class Logic_2
 		System.out.println("luckySum(8, 13, 2) --> " + luckySum(8, 13, 2));
 		System.out.println("luckySum(7, 2, 1) --> " + luckySum(7, 2, 1));
 		System.out.println("luckySum(3, 3, 13) --> " + luckySum(3, 3, 13));
+		printFunction("noTeenSum");
+		System.out.println("noTeenSum(1, 2, 3) --> " + noTeenSum(1, 2, 3));
+		System.out.println("noTeenSum(2, 13, 1) --> " + noTeenSum(2, 13, 1));
+		System.out.println("noTeenSum(2, 1, 14) --> " + noTeenSum(2, 1, 14));
+		System.out.println("noTeenSum(2, 1, 15) --> " + noTeenSum(2, 1, 15));
+		System.out.println("noTeenSum(2, 1, 16) --> " + noTeenSum(2, 1, 16));
+		System.out.println("noTeenSum(2, 1, 17) --> " + noTeenSum(2, 1, 17));
+		System.out.println("noTeenSum(17, 1, 2) --> " + noTeenSum(17, 1, 2));
+		System.out.println("noTeenSum(2, 15, 2) --> " + noTeenSum(2, 15, 2));
+		System.out.println("noTeenSum(16, 17, 18) --> " + noTeenSum(16, 17, 18));
+		System.out.println("noTeenSum(17, 18, 19) --> " + noTeenSum(17, 18, 19));
+		System.out.println("noTeenSum(15, 16, 1) --> " + noTeenSum(15, 16, 1));
+		System.out.println("noTeenSum(15, 15, 19) --> " + noTeenSum(15, 15, 19));
+		System.out.println("noTeenSum(15, 19, 16) --> " + noTeenSum(15, 19, 16));
+		System.out.println("noTeenSum(5, 17, 18) --> " + noTeenSum(5, 17, 18));
+		System.out.println("noTeenSum(17, 18, 16) --> " + noTeenSum(17, 18, 16));
+		System.out.println("noTeenSum(17, 19, 18) --> " + noTeenSum(17, 19, 18));
 	}
 }
