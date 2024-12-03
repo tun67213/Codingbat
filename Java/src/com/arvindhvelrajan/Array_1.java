@@ -435,5 +435,9 @@ public class Array_1
 		System.out.println("makeMiddle([1, 2]) --> " + Arrays.toString(makeMiddle(new int[] {1, 2})));
 		System.out.println("makeMiddle([5, 2, 4, 7]) --> " + Arrays.toString(makeMiddle(new int[] {5, 2, 4, 7})));
 		System.out.println("makeMiddle([9, 0, 4, 3, 9, 1]) --> " + Arrays.toString(makeMiddle(new int[] {9, 0, 4, 3, 9, 1})));
+		printFunction("plusTwo");
+		System.out.println("plusTwo([1, 2], [3, 4]) --> " + Arrays.toString(plusTwo(new int[] {1, 2}, new int[] {3, 4})));
+		System.out.println("plusTwo([4, 4], [2, 2]) --> " + Arrays.toString(plusTwo(new int[] {4, 4}, new int[] {2, 2})));
+		System.out.println("plusTwo([9, 2], [3, 4]) --> " + Arrays.toString(plusTwo(new int[] {9, 2}, new int[] {3, 4})));
 	}
 }
