@@ -197,5 +197,18 @@ public class Logic_2
 		System.out.println("roundSum(24, 36, 32) --> " + roundSum(24, 36, 32));
 		System.out.println("roundSum(14, 12, 26) --> " + roundSum(14, 12, 26));
 		System.out.println("roundSum(12, 10, 24) --> " + roundSum(12, 10, 24));
+		printFunction("closeFar");
+		System.out.println("closeFar(1, 2, 10) --> " + closeFar(1, 2, 10));
+		System.out.println("closeFar(1, 2, 3) --> " + closeFar(1, 2 ,3));
+		System.out.println("closeFar(4, 1, 3) --> " + closeFar(4, 1, 3));
+		System.out.println("closeFar(4, 5, 3) --> " + closeFar(4, 5, 3));
+		System.out.println("closeFar(4, 3, 5) --> " + closeFar(4, 3, 5));
+		System.out.println("closeFar(-1, 10, 0) --> " + closeFar(-1, 10, 0));
+		System.out.println("closeFar(0, -1, 10) --> " + closeFar(0, -1, 10));
+		System.out.println("closeFar(10, 10, 8) --> " + closeFar(10, 10, 8));
+		System.out.println("closeFar(10, 8, 9) --> " + closeFar(10, 8, 9));
+		System.out.println("closeFar(8, 9, 10) --> " + closeFar(8, 9, 10));
+		System.out.println("closeFar(8, 9, 7) --> " + closeFar(8, 9, 7));
+		System.out.println("closeFar(8, 6, 9) --> " + closeFar(8, 6, 9));
 	}
 }
