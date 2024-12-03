@@ -78,5 +78,19 @@ public class String_2
 		System.out.println("countHi(\"hi\") --> " + countHi("hi") + "\"");
 		System.out.println("countHi(\"Hi is no HI on ahI\") --> " + countHi("Hi is no HI on ahI"));
 		System.out.println("countHi(\"hiho not HOHIhi\") --> " + countHi("hiho not HOHIhi"));
+		printFunction("catDog");
+		System.out.println("catDog(\"catdog\") --> " + catDog("catdog"));
+		System.out.println("catDog(\"catcat\") --> " + catDog("catcat"));
+		System.out.println("catDog(\"1cat1cadodog\") --> " + catDog("1cat1cadodog"));
+		System.out.println("catDog(\"catxxdogxxxdog\") --> " + catDog("catxxdogxxxdog"));
+		System.out.println("catDog(\"catxdogxdogxcat\") --> " + catDog("catxdogxdogxcat"));
+		System.out.println("catDog(\"catxdogxdogxca\") --> " + catDog("catxdogxdogxca"));
+		System.out.println("catDog(\"dogdogcat\") --> " + catDog("dogdogcat"));
+		System.out.println("catDog(\"dogogcat\") --> " + catDog("dogogcat"));
+		System.out.println("catDog(\"dog\") --> " + catDog("dog"));
+		System.out.println("catDog(\"cat\") --> " + catDog("cat"));
+		System.out.println("catDog(\"ca\") --> " + catDog("ca"));
+		System.out.println("catDog(\"c\") --> " + catDog("c"));
+		System.out.println("catDog(\"\") --> " + catDog(""));
 	}
 }
