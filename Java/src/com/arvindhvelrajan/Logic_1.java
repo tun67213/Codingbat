@@ -679,5 +679,20 @@ public class Logic_1
 		System.out.println("lastDigit(248, 106, 1008) --> " + lastDigit(248, 106, 1008));
 		System.out.println("lastDigit(10, 11, 20) --> " + lastDigit(10, 11, 20));
 		System.out.println("lastDigit(0, 11, 0) --> " + lastDigit(0, 11, 0));
+		printFunction("lessBy10");
+		System.out.println("lessBy10(1, 7, 11) --> " + lessBy10(1, 7, 11));
+		System.out.println("lessBy10(1, 7, 10) --> " + lessBy10(1, 7, 10));
+		System.out.println("lessBy10(11, 1, 7) --> " + lessBy10(11, 1, 7));
+		System.out.println("lessBy10(10, 7, 1) --> " + lessBy10(10, 7, 1));
+		System.out.println("lessBy10(-10, 2, 2) --> " + lessBy10(-10, 2, 2));
+		System.out.println("lessBy10(2, 11, 11) --> " + lessBy10(2, 11, 11));
+		System.out.println("lessBy10(3, 3, 30) --> " + lessBy10(3, 3, 30));
+		System.out.println("lessBy10(3, 3, 3) --> " + lessBy10(3, 3, 3));
+		System.out.println("lessBy10(10, 1, 11) --> " + lessBy10(10, 1, 11));
+		System.out.println("lessBy10(10, 11, 1) --> " + lessBy10(10, 11, 1));
+		System.out.println("lessBy10(10, 11, 2) --> " + lessBy10(10, 11, 2));
+		System.out.println("lessBy10(3, 30, 3) --> " + lessBy10(3, 30, 3));
+		System.out.println("lessBy10(2, 2, -8) --> " + lessBy10(2, 2, -8));
+		System.out.println("lessBy10(2, 8, 12) --> " + lessBy10(2, 8, 12));
 	}
 }
