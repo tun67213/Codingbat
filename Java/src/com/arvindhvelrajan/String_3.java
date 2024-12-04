@@ -63,5 +63,25 @@ public class String_3
 		System.out.println("countYZ(\"aaz yyz my\") → " + countYZ("aaz yyz my"));
 		System.out.println("countYZ(\"y2bz\") → " + countYZ("y2bz"));
 		System.out.println("countYZ(\"zxyx\") → " + countYZ("zxyx"));
+		printFunction("withoutString");
+		System.out.println("withoutString(\"Hello there\", \"llo\") → \"" + withoutString("Hello there", "llo") + "\"");
+		System.out.println("withoutString(\"Hello there\", \"e\") → \"" + withoutString("Hello there", "e") + "\"");
+		System.out.println("withoutString(\"Hello there\", \"x\") → \"" + withoutString("Hello there", "x") + "\"");
+		System.out.println("withoutString(\"There is a FISH\", \"IS\") → \"" + withoutString("There is a FISH", "IS") + "\"");
+		System.out.println("withoutString(\"THIS is a FISH\", \"is\") → \"" + withoutString("THIS is a FISH", "is") + "\"");
+		System.out.println("withoutString(\"THIS is a FISH\", \"iS\") → \"" + withoutString("THIS is a FISH", "iS") + "\"");
+		System.out.println("withoutString(\"abxxxxab\", \"xx\") → \"" + withoutString("abxxxxab", "xx") + "\"");
+		System.out.println("withoutString(\"abxxxab\", \"xx\") → \"" + withoutString("abxxxab", "xx") + "\"");
+		System.out.println("withoutString(\"abxxxab\", \"x\") → \"" + withoutString("abxxxab", "x") + "\"");
+		System.out.println("withoutString(\"xxx\", \"x\") → \"" + withoutString("xxx", "x") + "\"");
+		System.out.println("withoutString(\"xxx\", \"xx\") → \"" + withoutString("xxx", "xx") + "\"");
+		System.out.println("withoutString(\"xyzzy\", \"Y\") → \"" + withoutString("xyzzy", "Y") + "\"");
+		System.out.println("withoutString(\"\", \"x\") → \"" + withoutString("", "x") + "\"");
+		System.out.println("withoutString(\"abcabc\", \"b\") → \"" + withoutString("abcabc", "b") + "\"");
+		System.out.println("withoutString(\"AA22bb\", \"2\") → \"" + withoutString("AA22bb", "2") + "\"");
+		System.out.println("withoutString(\"1111\", \"1\") → \"" + withoutString("1111", "1") + "\"");
+		System.out.println("withoutString(\"1111\", \"11\") → \"" + withoutString("1111", "11") + "\"");
+		System.out.println("withoutString(\"MkjtMkx\", \"Mk\") → \"" + withoutString("MkjtMkx", "Mk") + "\"");
+		System.out.println("withoutString(\"Hi HoHo\", \"Ho\") → \"" + withoutString("Hi HoHo", "Ho") + "\"");
 	}
 }
