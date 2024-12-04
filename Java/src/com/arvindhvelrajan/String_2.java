@@ -551,5 +551,16 @@ public class String_2
 		System.out.println("starOut(\"*a\") → \"" + starOut("*a") + "\"");
 		System.out.println("starOut(\"*\") → \"" + starOut("*") + "\"");
 		System.out.println("starOut(\"\") → \"" + starOut("") + "\"");
+		printFunction("plusOut");
+		System.out.println("plusOut(\"12xy34\", \"xy\") → \"" + plusOut("12xy34", "xy") + "\"");
+		System.out.println("plusOut(\"12xy34\", \"1\") → \"" + plusOut("12xy34", "1") + "\"");
+		System.out.println("plusOut(\"12xy34xyabcxy\", \"xy\") → \"" + plusOut("12xy34xyabcxy", "xy") + "\"");
+		System.out.println("plusOut(\"abXYabcXYZ\", \"ab\") → \"" + plusOut("abXYabcXYZ", "ab") + "\"");
+		System.out.println("plusOut(\"abXYabcXYZ\", \"abc\") → \"" + plusOut("abXYabcXYZ", "abc") + "\"");
+		System.out.println("plusOut(\"abXYabcXYZ\", \"XY\") → \"" + plusOut("abXYabcXYZ", "XY") + "\"");
+		System.out.println("plusOut(\"abXYxyzXYZ\", \"XYZ\") → \"" + plusOut("abXYxyzXYZ", "XYZ") + "\"");
+		System.out.println("plusOut(\"--++ab\", \"++\") → \"" + plusOut("--++ab", "++") + "\"");
+		System.out.println("plusOut(\"aaxxxxbb\", \"xx\") → \"" + plusOut("aaxxxxbb", "xx") + "\"");
+		System.out.println("plusOut(\"123123\", \"3\") → \"" + plusOut("123123", "3") + "\"");
 	}
 }
