@@ -214,6 +214,19 @@ public class String_2
 	}
 
 	/**
+	 * Returns true if for every '*' (star) in the string, if there are chars both immediately before and after
+	 * the star, they are the same.
+	 *
+	 * sameStarChar("xy*yzz") → true
+	 * sameStarChar("xy*zzz") → false
+	 * sameStarChar("*xa*az") → true
+	 */
+	public boolean sameStarChar(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
