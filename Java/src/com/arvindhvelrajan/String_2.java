@@ -435,9 +435,9 @@ public class String_2
 		System.out.println("xyzMiddle(\"AxyzxyzBB\") → " + xyzMiddle("AxyzxyzBB"));
 		System.out.println("xyzMiddle(\"\") → " + xyzMiddle(""));
 		System.out.println("xyzMiddle(\"x\") → " + xyzMiddle("x"));
-		System.out.println("xyzMiddle(\"xy\") --> " + xyzMiddle("xy"));
-		System.out.println("xyzMiddle(\"xyz\") --> " + xyzMiddle("xyz"));
-		System.out.println("xyzMiddle(\"xyzz\") --> " + xyzMiddle("xyzz"));
+		System.out.println("xyzMiddle(\"xy\") → " + xyzMiddle("xy"));
+		System.out.println("xyzMiddle(\"xyz\") → " + xyzMiddle("xyz"));
+		System.out.println("xyzMiddle(\"xyzz\") → " + xyzMiddle("xyzz"));
 		printFunction("getSandwich");
 		System.out.println("getSandwich(\"breadjambread\") → \"" + getSandwich("breadjambread") + "\"");
 		System.out.println("getSandwich(\"xxbreadjambreadyy\") → \"" + getSandwich("xxbreadjambreadyy") + "\"");
@@ -464,5 +464,22 @@ public class String_2
 		System.out.println("sameStarChar(\"12*2*3*\") → " + sameStarChar("12*2*3*"));
 		System.out.println("sameStarChar(\"*\") → " + sameStarChar("*"));
 		System.out.println("sameStarChar(\"**\") → " + sameStarChar("**"));
+		printFunction("oneTwo");
+		System.out.println("oneTwo(\"abc\") → \"" + oneTwo("abc") + "\"");
+		System.out.println("oneTwo(\"tca\") → \"" + oneTwo("tca") + "\"");
+		System.out.println("oneTwo(\"tcagdo\") → \"" + oneTwo("tcagdo") + "\"");
+		System.out.println("oneTwo(\"chocolate\") → \"" + oneTwo("chocolate") + "\"");
+		System.out.println("oneTwo(\"1234567890\") → \"" + oneTwo("1234567890") + "\"");
+		System.out.println("oneTwo(\"xabxabxabxabxabxabxab\") → \"" + oneTwo("xabxabxabxabxabxabxab"));
+		System.out.println("oneTwo(\"abcdefx\") → \"" + oneTwo("abcdefx") + "\"");
+		System.out.println("oneTwo(\"abcdefxy\") → \"" + oneTwo("abcdefxy") + "\"");
+		System.out.println("oneTwo(\"abcdefxyz\") → \"" + oneTwo("abcdefxyz") + "\"");
+		System.out.println("oneTwo(\"\") → \"" + oneTwo("") + "\"");
+		System.out.println("oneTwo(\"x\") → \"" + oneTwo("x") + "\"");
+		System.out.println("oneTwo(\"xy\") → \"" + oneTwo("xy") + "\"");
+		System.out.println("oneTwo(\"xyz\") → \"" + oneTwo("xyz") + "\"");
+		System.out.println("oneTwo(\"abcdefghijklkmnopqrstuvwxyz1234567890\") → \"" + oneTwo("abcdefghijklkmnopqrstuvwxyz1234567890") + "\"");
+		System.out.println("oneTwo(\"abcdefghijklkmnopqrstuvwxyz123456789\") → \"" + oneTwo("abcdefghijklkmnopqrstuvwxyz123456789") + "\"");
+		System.out.println("oneTwo(\"abcdefghijklkmnopqrstuvwxyz12345678\") → \"" + oneTwo("abcdefghijklkmnopqrstuvwxyz12345678") + "\"");
 	}
 }
