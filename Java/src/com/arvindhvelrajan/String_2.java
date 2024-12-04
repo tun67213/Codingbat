@@ -375,5 +375,27 @@ public class String_2
 		System.out.println("prefixAgain(\"a\", 1) → " + prefixAgain("a", 1));
 		System.out.println("prefixAgain(\"aa\", 1) → " + prefixAgain("aa", 1));
 		System.out.println("prefixAgain(\"ab\", 1) → " + prefixAgain("ab", 1));
+		printFunction("xyzMiddle");
+		System.out.println("xyzMiddle(\"AAxyzBB\") → " + xyzMiddle("AAxyzBB"));
+		System.out.println("xyzMiddle(\"AxyzBB\") → " + xyzMiddle("AxyzBB"));
+		System.out.println("xyzMiddle(\"AxyzBBB\") → " + xyzMiddle("AxyzBBB"));
+		System.out.println("xyzMiddle(\"AxyzBBBB\") → " + xyzMiddle("AxyzBBBB"));
+		System.out.println("xyzMiddle(\"AAAxyzB\") → " + xyzMiddle("AAAxyzB"));
+		System.out.println("xyzMiddle(\"AAAxyzBB\") → " + xyzMiddle("AAAxyzBB"));
+		System.out.println("xyzMiddle(\"AAAAxyzBB\") → " + xyzMiddle("AAAAxyzBB"));
+		System.out.println("xyzMiddle(\"AAAAAxyzBBB\") → " + xyzMiddle("AAAAAxyzBBB"));
+		System.out.println("xyzMiddle(\"1x345xyz12x4\") → " + xyzMiddle("1x345xyz12x4"));
+		System.out.println("xyzMiddle(\"xyzAxyzBBB\") → " + xyzMiddle("xyzAxyzBBB"));
+		System.out.println("xyzMiddle(\"xyzAxyzBxyz\") → " + xyzMiddle("xyzAxyzBxyz"));
+		System.out.println("xyzMiddle(\"xyzxyzAxyzBxyzxyz\") → " + xyzMiddle("xyzxyzAxyzBxyzxyzxyz"));
+		System.out.println("xyzMiddle(\"xyzxyzxyzBxyzxyz\") → " + xyzMiddle("xyzxyzxyzBxyzxyzxyzxyz"));
+		System.out.println("xyzMiddle(\"xyzxyzAxyzxyzxyz\") → " + xyzMiddle("xyzxyzAxyzxyzxyzxyzxyz"));
+		System.out.println("xyzMiddle(\"xyzxyzAxyzxyzxy\") → " + xyzMiddle("xyzxyzAxyzxyzxyzxy"));
+		System.out.println("xyzMiddle(\"AxyzxyzBB\") → " + xyzMiddle("AxyzxyzBB"));
+		System.out.println("xyzMiddle(\"\") → " + xyzMiddle(""));
+		System.out.println("xyzMiddle(\"x\") → " + xyzMiddle("x"));
+		System.out.println("xyzMiddle(\"xy\") --> " + xyzMiddle("xy"));
+		System.out.println("xyzMiddle(\"xyz\") --> " + xyzMiddle("xyz"));
+		System.out.println("xyzMiddle(\"xyzz\") --> " + xyzMiddle("xyzz"));
 	}
 }
