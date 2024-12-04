@@ -519,5 +519,24 @@ public class String_2
 		System.out.println("zipZap(\"abcppp\") → \"" + zipZap("abcppp") + "\"");
 		System.out.println("zipZap(\"azbcppp\") → \"" + zipZap("azbcppp") + "\"");
 		System.out.println("zipZap(\"azbcpzpp\") → \"" + zipZap("azbcpzpp") + "\"");
+		printFunction("starOut");
+		System.out.println("starOut(\"ab*cd\") → \"" + starOut("ab*cd") + "\"");
+		System.out.println("starOut(\"ab**cd\") → \"" + starOut("ab**cd") + "\"");
+		System.out.println("starOut(\"sm*eilly\") → \"" + starOut("sm*eilly") + "\"");
+		System.out.println("starOut(\"sm*eil*ly\") → \"" + starOut("sm*eil*ly") + "\"");
+		System.out.println("starOut(\"sm**eil*ly\") → \"" + starOut("sm**eil*ly") + "\"");
+		System.out.println("starOut(\"sm***eil*ly\") → \"" + starOut("sm***eil*ly") + "\"");
+		System.out.println("starOut(\"stringy*\") → \"" + starOut("stringy") + "\"");
+		System.out.println("starOut(\"*stringy\") → \"" + starOut("*stringy") + "\"");
+		System.out.println("starOut(\"*str*in*gy\") → \"" + starOut("*str*in*gy") + "\"");
+		System.out.println("starOut(\"abc\") → \"" + starOut("abc") + "\"");
+		System.out.println("starOut(\"a*bc\") → \"" + starOut("a*bc") + "\"");
+		System.out.println("starOut(\"ab\") → \"" + starOut("ab") + "\"");
+		System.out.println("starOut(\"a*b\") → \"" + starOut("a*b") + "\"");
+		System.out.println("starOut(\"a\") → \"" + starOut("a") + "\"");
+		System.out.println("starOut(\"a*\") → \"" + starOut("a*") + "\"");
+		System.out.println("starOut(\"*a\") → \"" + starOut("*a") + "\"");
+		System.out.println("starOut(\"*\") → \"" + starOut("*") + "\"");
+		System.out.println("starOut(\"\") → \"" + starOut("") + "\"");
 	}
 }
