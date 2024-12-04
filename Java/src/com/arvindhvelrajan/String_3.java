@@ -120,5 +120,18 @@ public class String_3
 		System.out.println("equalIsNot(\"isisnotno7Not\") → " + equalIsNot("isisnotno7Not"));
 		System.out.println("equalIsNot(\"isnotis\") → " + equalIsNot("isnotis"));
 		System.out.println("equalIsNot(\"mis3notpotbotis\") → " + equalIsNot("mis3notpotbotis"));
+		printFunction("gHappy");
+		System.out.println("gHappy(\"xxggxx\") → " + gHappy("xxggxx"));
+		System.out.println("gHappy(\"xxgxx\") → " + gHappy("xxgxx"));
+		System.out.println("gHappy(\"xxggyygxx\") → " + gHappy("xxggyygxx"));
+		System.out.println("gHappy(\"g\") → " + gHappy("g"));
+		System.out.println("gHappy(\"gg\") → " + gHappy("gg"));
+		System.out.println("gHappy(\"\") → " + gHappy(""));
+		System.out.println("gHappy(\"xxgggxyz\") → " + gHappy("xxgggxyz"));
+		System.out.println("gHappy(\"xxgggxyg\") → " + gHappy("xxgggxyg"));
+		System.out.println("gHappy(\"xxgggxygg\") → " + gHappy("xxgggxygg"));
+		System.out.println("gHappy(\"mgm\") → " + gHappy("mgm"));
+		System.out.println("gHappy(\"mggm\") → " + gHappy("mggm"));
+		System.out.println("gHappy(\"yyygggxyy\") → " + gHappy("yyygggxyy"));
 	}
 }
