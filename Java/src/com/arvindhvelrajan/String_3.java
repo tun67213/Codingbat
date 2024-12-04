@@ -37,5 +37,17 @@ public class String_3
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("countYZ");
+		System.out.println("countYZ(\"fez day\") → " + countYZ("fez day"));
+		System.out.println("countYZ(\"day fez\") → " + countYZ("day fez"));
+		System.out.println("countYZ(\"day fyyyz\") → " + countYZ("day fyyyz"));
+		System.out.println("countYZ(\"day yak\") → " + countYZ("day yak"));
+		System.out.println("countYZ(\"day:yak\") → " + countYZ("day:yak"));
+		System.out.println("countYZ(\"!!day--yaz!!\") → " + countYZ("!!day--yaz!!"));
+		System.out.println("countYZ(\"yak zak\") → " + countYZ("yak zak"));
+		System.out.println("countYZ(\"DAY abc XYZ\") → " + countYZ("DAY abc XYZ"));
+		System.out.println("countYZ(\"aaz yyz my\") → " + countYZ("aaz yyz my"));
+		System.out.println("countYZ(\"y2bz\") → " + countYZ("y2bz"));
+		System.out.println("countYZ(\"zxyx\") → " + countYZ("zxyx"));
 	}
 }
