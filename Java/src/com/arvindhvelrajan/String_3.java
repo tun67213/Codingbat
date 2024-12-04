@@ -46,6 +46,19 @@ public class String_3
 	}
 
 	/**
+	 * Given a string, return true if the number of appearances of "is" anywhere in the string is equal to the number of
+	 * appearances of "not" anywhere in the string (case sensitive).
+	 *
+	 * equalIsNot("This is not") → false
+	 * equalIsNot("This is notnot") → true
+	 * equalIsNot("noisxxnotyynotxisi") → true
+	 */
+	public boolean equalIsNot(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
