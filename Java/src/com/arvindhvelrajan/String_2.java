@@ -348,5 +348,18 @@ public class String_2
 		System.out.println("repeatSeparator(\"abc\", \"XX\", 2) → \"" + repeatSeparator("abc", "XX", 2) + "\"");
 		System.out.println("repeatSeparator(\"abc\", \"XX\", 1) → \"" + repeatSeparator("abc", "XX", 1) + "\"");
 		System.out.println("repeatSeparator(\"XYZ\", \"a\", 2) → \"" + repeatSeparator("XYZ", "a", 2) + "\"");
+		printFunction("prefixAgain");
+		System.out.println("prefixAgain(\"abXYabc\", 1) → " + prefixAgain("abXYabc", 1));
+		System.out.println("prefixAgain(\"abXYabc\", 2) → " + prefixAgain("abXYabc", 2));
+		System.out.println("prefixAgain(\"abXYabc\", 3) → " + prefixAgain("abXYabc", 3));
+		System.out.println("prefixAgain(\"xyzxyxyxy\", 2) → " + prefixAgain("xyzxyxyxy", 2));
+		System.out.println("prefixAgain(\"xyzxyxyxy\", 3) → " + prefixAgain("xyzxyxyxy", 3));
+		System.out.println("prefixAgain(\"Hi12345Hi6789Hi10\", 1) → " + prefixAgain("Hi12345Hi6789Hi10", 1));
+		System.out.println("prefixAgain(\"Hi12345Hi6789Hi10\", 2) → " + prefixAgain("Hi12345Hi6789Hi10", 2));
+		System.out.println("prefixAgain(\"Hi12345Hi6789Hi10\", 3) → " + prefixAgain("Hi12345Hi6789Hi10", 3));
+		System.out.println("prefixAgain(\"Hi12345Hi6789Hi10\", 4) → " + prefixAgain("Hi12345Hi6789Hi10", 4));
+		System.out.println("prefixAgain(\"a\", 1) → " + prefixAgain("a", 1));
+		System.out.println("prefixAgain(\"aa\", 1) → " + prefixAgain("aa", 1));
+		System.out.println("prefixAgain(\"ab\", 1) → " + prefixAgain("ab", 1));
 	}
 }
