@@ -96,5 +96,16 @@ public class String_3
 		System.out.println("withoutString(\"1111\", \"11\") → \"" + withoutString("1111", "11") + "\"");
 		System.out.println("withoutString(\"MkjtMkx\", \"Mk\") → \"" + withoutString("MkjtMkx", "Mk") + "\"");
 		System.out.println("withoutString(\"Hi HoHo\", \"Ho\") → \"" + withoutString("Hi HoHo", "Ho") + "\"");
+		printFunction("equalIsNot");
+		System.out.println("equalIsNot(\"This is not\") → " + equalIsNot("This is not"));
+		System.out.println("equalIsNot(\"This is notnot\") → " + equalIsNot("This is notnot"));
+		System.out.println("equalIsNot(\"noisxxnotyynotxisi\") → " + equalIsNot("noisxxnotyynotxisi"));
+		System.out.println("equalIsNot(\"noisxxnotyynotxsi\") → " + equalIsNot("noisxxnotyynotxsi"));
+		System.out.println("equalIsNot(\"xxxyyyzzzintint\") → " + equalIsNot("xxxyyyzzzintint"));
+		System.out.println("equalIsNot(\"\") → " + equalIsNot(""));
+		System.out.println("equalIsNot(\"isisnotnot\") → " + equalIsNot("isisnotnot"));
+		System.out.println("equalIsNot(\"isisnotno7Not\") → " + equalIsNot("isisnotno7Not"));
+		System.out.println("equalIsNot(\"isnotis\") → " + equalIsNot("isnotis"));
+		System.out.println("equalIsNot(\"mis3notpotbotis\") → " + equalIsNot("mis3notpotbotis"));
 	}
 }
