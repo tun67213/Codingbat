@@ -6,6 +6,9 @@ package com.arvindhvelrajan;
  */
 public class String_3
 {
+	/**
+	 * This function introduces the user to the class that is being demonstrated.
+	 */
 	private void welcome()
 	{
 		System.out.println("\n\nString-3 Functions\n");
