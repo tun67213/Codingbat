@@ -494,5 +494,18 @@ public class String_2
 		System.out.println("oneTwo(\"abcdefghijklkmnopqrstuvwxyz1234567890\") → \"" + oneTwo("abcdefghijklkmnopqrstuvwxyz1234567890") + "\"");
 		System.out.println("oneTwo(\"abcdefghijklkmnopqrstuvwxyz123456789\") → \"" + oneTwo("abcdefghijklkmnopqrstuvwxyz123456789") + "\"");
 		System.out.println("oneTwo(\"abcdefghijklkmnopqrstuvwxyz12345678\") → \"" + oneTwo("abcdefghijklkmnopqrstuvwxyz12345678") + "\"");
+		printFunction("zipZap");
+		System.out.println("zipZap(\"zipXzap\") → \"" + zipZap("zipXzap") + "\"");
+		System.out.println("zipZap(\"zopzop\") → \"" + zipZap("zopzop") + "\"");
+		System.out.println("zipZap(\"zzzopzop\") → \"" + zipZap("zzzopzop") + "\"");
+		System.out.println("zipZap(\"zibzap\") → \"" + zipZap("zibzap") + "\"");
+		System.out.println("zipZap(\"zip\") → \"" + zipZap("zip") + "\"");
+		System.out.println("zipZap(\"zi\") → \"" + zipZap("zi") + "\"");
+		System.out.println("zipZap(\"z\") → \"" + zipZap("z") + "\"");
+		System.out.println("zipZap(\"\") → \"" + zipZap("") + "\"");
+		System.out.println("zipZap(\"zzp\") → \"" + zipZap("zzp") + "\"");
+		System.out.println("zipZap(\"abcppp\") → \"" + zipZap("abcppp") + "\"");
+		System.out.println("zipZap(\"azbcppp\") → \"" + zipZap("azbcppp") + "\"");
+		System.out.println("zipZap(\"azbcpzpp\") → \"" + zipZap("azbcpzpp") + "\"");
 	}
 }
