@@ -437,5 +437,18 @@ public class String_2
 		System.out.println("getSandwich(\"breadbreaxbread\") → \"" + getSandwich("breadbreaxbread") + "\"");
 		System.out.println("getSandwich(\"breaxbreadybread\") → \"" + getSandwich("breaxbreadybread") + "\"");
 		System.out.println("getSandwich(\"breadbreadbreadbread\") → \"" + getSandwich("breadbreadbreadbread") + "\"");
+		printFunction("sameStarChar");
+		System.out.println("sameStarChar(\"xy*yzz\") → " + sameStarChar("xy*yzz"));
+		System.out.println("sameStarChar(\"xy*zzz\") → " + sameStarChar("xy*zzz"));
+		System.out.println("sameStarChar(\"*xa*az\") → " + sameStarChar("*xa*az"));
+		System.out.println("sameStarChar(\"*xa*bz\") → " + sameStarChar("*xa*bz"));
+		System.out.println("sameStarChar(\"*xa*a\") → " + sameStarChar("*xa*a"));
+		System.out.println("sameStarChar(\"\") → " + sameStarChar(""));
+		System.out.println("sameStarChar(\"*xa*a*a\") → " + sameStarChar("*xa*a*a"));
+		System.out.println("sameStarChar(\"*xa*a*b\") → " + sameStarChar("*xa*a*b"));
+		System.out.println("sameStarChar(\"*12*2*2\") → " + sameStarChar("*12*2*2"));
+		System.out.println("sameStarChar(\"12*2*3*\") → " + sameStarChar("12*2*3*"));
+		System.out.println("sameStarChar(\"*\") → " + sameStarChar("*"));
+		System.out.println("sameStarChar(\"**\") → " + sameStarChar("**"));
 	}
 }
