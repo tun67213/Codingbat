@@ -411,5 +411,18 @@ public class String_2
 		System.out.println("xyzMiddle(\"xy\") --> " + xyzMiddle("xy"));
 		System.out.println("xyzMiddle(\"xyz\") --> " + xyzMiddle("xyz"));
 		System.out.println("xyzMiddle(\"xyzz\") --> " + xyzMiddle("xyzz"));
+		printFunction("getSandwich");
+		System.out.println("getSandwich(\"breadjambread\") → \"" + getSandwich("breadjambread") + "\"");
+		System.out.println("getSandwich(\"xxbreadjambreadyy\") → \"" + getSandwich("xxbreadjambreadyy") + "\"");
+		System.out.println("getSandwich(\"xxbreadyy\") → \"" + getSandwich("xxbreadyy") + "\"");
+		System.out.println("getSandwich(\"xxbreadbreadjambreadyy\") → \"" + getSandwich("xxbreadbreadjambreadyy") + "\"");
+		System.out.println("getSandwich(\"breadAbread\") → \"" + getSandwich("breadAbread") + "\"");
+		System.out.println("getSandwich(\"breadbread\")  → \"" + getSandwich("breadbread") + "\"");
+		System.out.println("getSandwich(\"abcbreaz\")  → \"" + getSandwich("abcbreaz") + "\"");
+		System.out.println("getSandwich(\"xyz\") → \"" + getSandwich("xyz") + "\"");
+		System.out.println("getSandwich(\"\") → \"" + getSandwich("") + "\"");
+		System.out.println("getSandwich(\"breadbreaxbread\") → \"" + getSandwich("breadbreaxbread") + "\"");
+		System.out.println("getSandwich(\"breaxbreadybread\") → \"" + getSandwich("breaxbreadybread") + "\"");
+		System.out.println("getSandwich(\"breadbreadbreadbread\") → \"" + getSandwich("breadbreadbreadbread") + "\"");
 	}
 }
