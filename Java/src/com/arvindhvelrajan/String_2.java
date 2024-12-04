@@ -574,5 +574,19 @@ public class String_2
 		System.out.println("plusOut(\"--++ab\", \"++\") → \"" + plusOut("--++ab", "++") + "\"");
 		System.out.println("plusOut(\"aaxxxxbb\", \"xx\") → \"" + plusOut("aaxxxxbb", "xx") + "\"");
 		System.out.println("plusOut(\"123123\", \"3\") → \"" + plusOut("123123", "3") + "\"");
+		printFunction("wordEnds");
+		System.out.println("wordEnds(\"abcXY123XYijk\", \"XY\") → \"" + wordEnds("abcXY123XYijk", "XY") + "\"");
+		System.out.println("wordEnds(\"XY123XY\", \"XY\") → \"" + wordEnds("XY123XY", "XY") + "\"");
+		System.out.println("wordEnds(\"XY1XY\", \"XY\") → \"" + wordEnds("XY1XY", "XY") + "\"");
+		System.out.println("wordEnds(\"XYXY\", \"XY\") → \"" + wordEnds("XYXY", "XY") + "\"");
+		System.out.println("wordEnds(\"XY\", \"XY\") → \"" + wordEnds("XY", "XY") + "\"");
+		System.out.println("wordEnds(\"Hi\", \"XY\") → \"" + wordEnds("Hi", "XY") + "\"");
+		System.out.println("wordEnds(\"\", \"XY\") → \"" + wordEnds("", "XY") + "\"");
+		System.out.println("wordEnds(\"abc1xyz1i1j\", \"1\") → \"" + wordEnds("abc1xyz1i1j", "1") + "\"");
+		System.out.println("wordEnds(\"abc1xyz1\", \"1\") → \"" + wordEnds("abc1xyz1", "1") + "\"");
+		System.out.println("wordEnds(\"abc1xyz11\", \"1\") → \"" + wordEnds("abc1xyz11", "1") + "\"");
+		System.out.println("wordEnds(\"abc1xyz1abc\", \"abc\") → \"" + wordEnds("abc1xyz1abc", "abc") + "\"");
+		System.out.println("wordEnds(\"abc1xyz1abc\", \"b\") → \"" + wordEnds("abc1xyz1abc", "b") + "\"");
+		System.out.println("wordEnds(\"abc1abc1abc\", \"abc\") → \"" + wordEnds("abc1abc1abc", "abc") + "\"");
 	}
 }
