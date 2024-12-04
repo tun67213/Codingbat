@@ -325,7 +325,7 @@ public class String_2
 		System.out.println("repeatEnd(\"abc\", 3) → \"" + repeatEnd("abc", 3) + "\"");
 		System.out.println("repeatEnd(\"1234\", 2) → \"" + repeatEnd("1234", 2) + "\"");
 		System.out.println("repeatEnd(\"1234\", 3) → \"" + repeatEnd("1234", 3) + "\"");
-		System.out.println("repeatEnd(\"\", 0) --> \"" + repeatEnd("", 0) + "\"");
+		System.out.println("repeatEnd(\"\", 0) → \"" + repeatEnd("", 0) + "\"");
 		printFunction("repeatFront");
 		System.out.println("repeatFront(\"Chocolate\", 4) → \"" + repeatFront("Chocolate", 4) + "\"");
 		System.out.println("repeatFront(\"Chocolate\", 3) → \"" + repeatFront("Chocolate", 3) + "\"");
