@@ -299,5 +299,21 @@ public class Array_2
 		System.out.println("fizzArray(0) → " + Arrays.toString(fizzArray(0)));
 		System.out.println("fizzArray(2) → " + Arrays.toString(fizzArray(2)));
 		System.out.println("fizzArray(7) → " + Arrays.toString(fizzArray(7)));
+		printFunction("only14");
+		System.out.println("only14([1, 4, 1, 4]) → " + only14(new int[] {1, 4, 1, 4}));
+		System.out.println("only14([1, 4, 2, 4]) → " + only14(new int[] {1, 4, 2, 4}));
+		System.out.println("only14([1, 1]) → " + only14(new int[] {1, 1}));
+		System.out.println("only14([4, 1]) → " + only14(new int[] {4, 1}));
+		System.out.println("only14([2]) → " + only14(new int[] {2}));
+		System.out.println("only14([]) → " + only14(new int[] {}));
+		System.out.println("only14([1, 4, 1, 3]) → " + only14(new int[] {1, 4, 1, 3}));
+		System.out.println("only14([3, 1, 3]) → " + only14(new int[] {3, 1, 3}));
+		System.out.println("only14([1]) → " + only14(new int[] {1}));
+		System.out.println("only14([4]) → " + only14(new int[] {4}));
+		System.out.println("only14([3, 4]) → " + only14(new int[] {3, 4}));
+		System.out.println("only14([1, 3, 4]) → " + only14(new int[] {1, 3, 4}));
+		System.out.println("only14([1, 1, 1]) → " + only14(new int[] {1, 1, 1}));
+		System.out.println("only14([1, 1, 1, 5]) → " + only14(new int[] {1, 1, 1, 5}));
+		System.out.println("only14([4, 1, 4, 1]) → " + only14(new int[] {4, 1, 4, 1}));
 	}
 }
