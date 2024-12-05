@@ -19,6 +19,6 @@ public class Array_2
 	 */
 	public void main(String[] args)
 	{
-		
+		welcome();
 	}
 }
