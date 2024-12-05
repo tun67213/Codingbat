@@ -25,5 +25,7 @@ public class Main
 		string1.main(args);
 		Array_1 array1 = new Array_1();
 		array1.main(args);
+		Logic_1 logic1 = new Logic_1();
+		logic1.main(args);
 	}
 }
