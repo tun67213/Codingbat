@@ -275,5 +275,15 @@ public class String_3
 		System.out.println("maxBlock(\"XXBBBBbbxx\") → " + maxBlock("XXBBBBbbxx"));
 		System.out.println("maxBlock(\"XXBBBbbxxXXXX\") → " + maxBlock("XXBBBbbxxXXXX"));
 		System.out.println("maxBlock(\"XX2222BBBbbXX2222\") → " + maxBlock("XX2222BBBbbXX2222"));
+		printFunction("sumNumbers");
+		System.out.println("sumNumbers(\"abc123xyz\") → " + sumNumbers("abc123xyz"));
+		System.out.println("sumNumbers(\"aa11b33\") → " + sumNumbers("aa11b33"));
+		System.out.println("sumNumbers(\"7 11\") → " + sumNumbers("7 11"));
+		System.out.println("sumNumbers(\"Chocolate\") → " + sumNumbers("Chocolate"));
+		System.out.println("sumNumbers(\"5hoco1a1e\") → " + sumNumbers("5hoco1a1e"));
+		System.out.println("sumNumbers(\"5$$1;;1!!\") → " + sumNumbers("5$$1;;1!!"));
+		System.out.println("sumNumbers(\"a1234bb11\") → " + sumNumbers("a1234bb11"));
+		System.out.println("sumNumbers(\"\") → " + sumNumbers(""));
+		System.out.println("sumNumbers(\"a22bbb3\") → " + sumNumbers("a22bbb3"));
 	}
 }
