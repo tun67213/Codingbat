@@ -280,5 +280,12 @@ public class Array_2
 		System.out.println("more14([4, 1, 4, 6]) → " + more14(new int[] {4, 1, 4, 6}));
 		System.out.println("more14([4, 1, 4, 6, 1]) → " + more14(new int[] {4, 1, 4, 6, 1}));
 		System.out.println("more14([1, 4, 1, 4, 1, 6]) → " + more14(new int[] {1, 4, 1, 4, 1, 6}));
+		printFunction("fizzArray");
+		System.out.println("fizzArray(4) → " + Arrays.toString(fizzArray(4)));
+		System.out.println("fizzArray(1) → " + Arrays.toString(fizzArray(1)));
+		System.out.println("fizzArray(10) → " + Arrays.toString(fizzArray(10)));
+		System.out.println("fizzArray(0) → " + Arrays.toString(fizzArray(0)));
+		System.out.println("fizzArray(2) → " + Arrays.toString(fizzArray(2)));
+		System.out.println("fizzArray(7) → " + Arrays.toString(fizzArray(7)));
 	}
 }
