@@ -35,5 +35,14 @@ public class Array_2
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("countEvens");
+		System.out.println("countEvens([2, 1, 2, 3, 4]) → " + countEvens(new int[] {2, 1, 2 ,3, 4}));
+		System.out.println("countEvens([2, 2, 0]) → " + countEvens(new int[] {2, 2, 0}));
+		System.out.println("countEvens([1, 3, 5]) → " + countEvens(new int[] {1, 3, 5}));
+		System.out.println("countEvens([]) → " + countEvens(new int[] {}));
+		System.out.println("countEvens([11, 9, 0, 1]) → " + countEvens(new int[] {11, 9, 0, 1}));
+		System.out.println("countEvens([2, 11, 9, 0]) → " + countEvens(new int[] {2, 11, 9, 0}));
+		System.out.println("countEvens([2]) → " + countEvens(new int[] {2}));
+		System.out.println("countEvens([2, 5, 12]) → " + countEvens(new int[] {2, 5, 12}));
 	}
 }
