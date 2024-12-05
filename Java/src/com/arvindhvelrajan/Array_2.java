@@ -115,5 +115,20 @@ public class Array_2
 		System.out.println("centeredAverage([4, 4, 4, 4, 5]) → " + centeredAverage(new int[] {4, 4, 4, 4, 5}));
 		System.out.println("centeredAverage([4, 4, 4, 1, 5]) → " + centeredAverage(new int[] {4, 4, 4, 1, 5}));
 		System.out.println("centeredAverage([6, 4, 8, 12, 3]) → " + centeredAverage(new int[] {6, 4, 8, 12, 3}));
+		printFunction("sum13");
+		System.out.println("sum13([1, 2, 2, 1]) → " + sum13(new int[] {1, 2, 2, 1}));
+		System.out.println("sum13([1, 1]) → " + sum13(new int[] {1, 1}));
+		System.out.println("sum13([1, 2, 2, 1, 13]) → " + sum13(new int[] {1, 2, 2, 1, 13}));
+		System.out.println("sum13([1, 2, 13, 2, 1, 13]) → " + sum13(new int[] {1, 2, 13, 2, 1, 13}));
+		System.out.println("sum13([13, 1, 2, 13, 2, 1, 13]) → " + sum13(new int[] {13, 1, 2, 13, 2, 1, 13}));
+		System.out.println("sum13([]) → " + sum13(new int[] {}));
+		System.out.println("sum13([13]) → " + sum13(new int[] {13}));
+		System.out.println("sum13([13, 13]) → " + sum13(new int[] {13, 13}));
+		System.out.println("sum13([13, 0, 13]) → " + sum13(new int[] {13, 0, 13}));
+		System.out.println("sum13([13, 1, 13]) → " + sum13(new int[] {13, 1, 13}));
+		System.out.println("sum13([5, 7, 2]) → " + sum13(new int[] {5, 7, 2}));
+		System.out.println("sum13([5, 13, 2]) → " + sum13(new int[] {5, 13, 2}));
+		System.out.println("sum13([0]) → " + sum13(new int[] {0}));
+		System.out.println("sum13([13, 0]) → " + sum13(new int[] {13, 0}));
 	}
 }
