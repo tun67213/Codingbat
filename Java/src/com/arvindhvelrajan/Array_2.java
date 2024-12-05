@@ -348,6 +348,14 @@ public class Array_2
 		System.out.println("only14([1, 1, 1]) → " + only14(new int[] {1, 1, 1}));
 		System.out.println("only14([1, 1, 1, 5]) → " + only14(new int[] {1, 1, 1, 5}));
 		System.out.println("only14([4, 1, 4, 1]) → " + only14(new int[] {4, 1, 4, 1}));
-
+		printFunction("fizzArray2");
+		System.out.println("fizzArray2(4) → " + toString(fizzArray2(4)));
+		System.out.println("fizzArray2(10) → " + toString(fizzArray2(10)));
+		System.out.println("fizzArray2(2) → " + toString(fizzArray2(2)));
+		System.out.println("fizzArray2(1) → " + toString(fizzArray2(1)));
+		System.out.println("fizzArray2(0) → " + toString(fizzArray2(0)));
+		System.out.println("fizzArray2(7) → " + toString(fizzArray2(7)));
+		System.out.println("fizzArray2(9) → " + toString(fizzArray2(9)));
+		System.out.println("fizzArray2(11) → " + toString(fizzArray2(11)));
 	}
 }
