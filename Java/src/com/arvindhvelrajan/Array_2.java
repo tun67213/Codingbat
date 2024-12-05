@@ -369,5 +369,25 @@ public class Array_2
 		System.out.println("fizzArray2(7) → " + toString(fizzArray2(7)));
 		System.out.println("fizzArray2(9) → " + toString(fizzArray2(9)));
 		System.out.println("fizzArray2(11) → " + toString(fizzArray2(11)));
+		printFunction("no14");
+		System.out.println("no14([1, 2, 3]) → " + no14(new int[] {1, 2, 3}));
+		System.out.println("no14([1, 2, 3, 4]) → " + no14(new int[] {1, 2, 3, 4}));
+		System.out.println("no14([2, 3, 4]) → " + no14(new int[] {2, 3, 4}));
+		System.out.println("no14([1, 1, 4, 4]) → " + no14(new int[] {1, 1, 4, 4}));
+		System.out.println("no14([2, 2, 4, 4]) → " + no14(new int[] {2, 2, 4, 4}));
+		System.out.println("no14([2, 3, 4, 1]) → " + no14(new int[] {2, 3, 4, 1}));
+		System.out.println("no14([2, 1, 1]) → " + no14(new int[] {2, 1, 1}));
+		System.out.println("no14([1, 4]) → " + no14(new int[] {1, 4}));
+		System.out.println("no14([2]) → " + no14(new int[] {2}));
+		System.out.println("no14([2, 1]) → " + no14(new int[] {2, 1}));
+		System.out.println("no14([1]) → " + no14(new int[] {1}));
+		System.out.println("no14([4]) → " + no14(new int[] {4}));
+		System.out.println("no14([]) → " + no14(new int[] {}));
+		System.out.println("no14([1, 1, 1, 1]) → " + no14(new int[] {1, 1, 1, 1}));
+		System.out.println("no14([9, 4, 4, 1]) → " + no14(new int[] {9, 4, 4, 1}));
+		System.out.println("no14([4, 2, 3, 1]) → " + no14(new int[] {4, 2, 3, 1}));
+		System.out.println("no14([4, 2, 3, 5]) → " + no14(new int[] {4, 2, 3, 5}));
+		System.out.println("no14([4, 4, 2]) → " + no14(new int[] {4, 4, 2}));
+		System.out.println("no14([1, 4, 4]) → " + no14(new int[] {1, 4, 4}));
 	}
 }
