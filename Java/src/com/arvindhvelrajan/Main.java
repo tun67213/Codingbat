@@ -21,5 +21,7 @@ public class Main
 		warmup1.main(args);
 		Warmup_2 warmup2 = new Warmup_2();
 		warmup2.main(args);
+		String_1 string1 = new String_1();
+		string1.main(args);
 	}
 }
