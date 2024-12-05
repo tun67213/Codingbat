@@ -299,5 +299,17 @@ public class String_3
 		System.out.println("sumNumbers(\"a1234bb11\") → " + sumNumbers("a1234bb11"));
 		System.out.println("sumNumbers(\"\") → " + sumNumbers(""));
 		System.out.println("sumNumbers(\"a22bbb3\") → " + sumNumbers("a22bbb3"));
+		printFunction("notReplace");
+		System.out.println("notReplace(\"is test\") → \"" + notReplace("is test") + "\"");
+		System.out.println("notReplace(\"is-is\") → \"" + notReplace("is-is") + "\"");
+		System.out.println("notReplace(\"This is right\") → \"" + notReplace("This is right") + "\"");
+		System.out.println("notReplace(\"This is isabell\") → \"" + notReplace("This is isabell") + "\"");
+		System.out.println("notReplace(\"\") → \"" + notReplace("") + "\"");
+		System.out.println("notReplace(\"is\") → \"" + notReplace("is") + "\"");
+		System.out.println("notReplace(\"isis\") → \"" + notReplace("isis") + "\"");
+		System.out.println("notReplace(\"Dis is bliss is\") → \"" + notReplace("Dis is bliss is") + "\"");
+		System.out.println("notReplace(\"is his\") → \"" + notReplace("is his") + "\"");
+		System.out.println("notReplace(\"xis yis\") → \"" + notReplace("xis yis") + "\"");
+		System.out.println("notReplace(\"AAAis is\") → \"" + notReplace("AAAis is") + "\"");
 	}
 }
