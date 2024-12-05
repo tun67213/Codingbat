@@ -197,5 +197,18 @@ public class Array_2
 		System.out.println("has22([]]) → " + has22(new int[] {}));
 		System.out.println("has22([3, 3, 2, 2]) → " + has22(new int[] {3, 3, 2, 2}));
 		System.out.println("has22([5, 2, 5, 2]) → " + has22(new int[] {5, 2, 5, 2}));
+		printFunction("lucky13");
+		System.out.println("lucky13([0, 2, 4]) → " + lucky13(new int[] {0, 2, 4}));
+		System.out.println("lucky13([1, 2, 3]) → " + lucky13(new int[] {1, 2, 3}));
+		System.out.println("lucky13([1, 2, 4]) → " + lucky13(new int[] {1, 2, 4}));
+		System.out.println("lucky13([2, 7, 2, 8]) → " + lucky13(new int[] {2, 7, 2, 8}));
+		System.out.println("lucky13([2, 7, 1, 8]) → " + lucky13(new int[] {2, 7, 1, 8}));
+		System.out.println("lucky13([3, 7, 2, 8]) → " + lucky13(new int[] {3, 7, 2, 8}));
+		System.out.println("lucky13([2, 7, 2, 1]) → " + lucky13(new int[] {2, 7, 2, 1}));
+		System.out.println("lucky13([1, 2]) → " + lucky13(new int[] {1, 2}));
+		System.out.println("lucky13([2, 2]) → " + lucky13(new int[] {2, 2}));
+		System.out.println("lucky13([2]]) → " + lucky13(new int[] {2}));
+		System.out.println("lucky13([3]) → " + lucky13(new int[] {3}));
+		System.out.println("lucky13([]) → " + lucky13(new int[] {}));
 	}
 }
