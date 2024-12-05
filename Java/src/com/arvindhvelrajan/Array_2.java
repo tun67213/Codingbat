@@ -143,5 +143,20 @@ public class Array_2
 		System.out.println("sum13([5, 13, 2]) → " + sum13(new int[] {5, 13, 2}));
 		System.out.println("sum13([0]) → " + sum13(new int[] {0}));
 		System.out.println("sum13([13, 0]) → " + sum13(new int[] {13, 0}));
+		printFunction("sum67");
+		System.out.println("sum67([1, 2, 2]) → " + sum67(new int[] {1, 2, 2}));
+		System.out.println("sum67([1, 2, 2, 6, 99, 99, 7]) → " + sum67(new int[] {1, 2, 2, 6, 99, 99, 7}));
+		System.out.println("sum67([1, 1, 6, 7, 2]) → " + sum67(new int[] {1, 1, 6, 7, 2}));
+		System.out.println("sum67([1, 6, 2, 2, 7, 1, 6, 99, 99, 7]) → " + sum67(new int[] {1, 6, 2, 2, 7, 1, 6, 99, 99, 7}));
+		System.out.println("sum67([1, 6, 2, 6, 2, 7, 1, 6, 99, 99, 7]) → " + sum67(new int[] {1, 6, 2, 6, 2, 7, 1, 6, 99, 99, 7}));
+		System.out.println("sum67([2, 7, 6, 2, 6, 7, 2, 7]) → " + sum67(new int[] {2, 7, 6, 2, 6, 7, 2, 7}));
+		System.out.println("sum67([2, 7, 6, 2, 6, 2, 7]) → " + sum67(new int[] {2, 7, 6, 2, 6, 2, 7}));
+		System.out.println("sum67([1, 6, 7, 7]) → " + sum67(new int[] {1, 6, 7, 7}));
+		System.out.println("sum67([6, 7, 1, 6, 7, 7]) → " + sum67(new int[] {6, 7, 1, 6, 7, 7}));
+		System.out.println("sum67([6, 8, 1, 6, 7]) → " + sum67(new int[] {6, 8, 1, 6, 7}));
+		System.out.println("sum67([]) → " + sum67(new int[] {}));
+		System.out.println("sum67([6, 7, 11]) → " + sum67(new int[] {6, 7, 11}));
+		System.out.println("sum67([11, 6, 7, 11]) → " + sum67(new int[] {11, 6, 7, 11}));
+		System.out.println("sum67([2, 2, 6, 7, 7]) → " + sum67(new int[] {2, 2, 6, 7, 7}));
 	}
 }
