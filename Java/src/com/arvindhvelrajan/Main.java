@@ -33,5 +33,7 @@ public class Main
 		string2.main(args);
 		String_3 string3 = new String_3();
 		string3.main(args);
+		Array_2 array2 = new Array_2();
+		array2.main(args);
 	}
 }
