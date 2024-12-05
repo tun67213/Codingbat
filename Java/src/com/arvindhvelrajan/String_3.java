@@ -174,5 +174,15 @@ public class String_3
 		System.out.println("countTriple(\"abYYXabXXYXXab\") → " + countTriple("abYYXabXXYXXab"));
 		System.out.println("countTriple(\"abYYXabXXYXXab\") → " + countTriple("abYYXabXXYXXab"));
 		System.out.println("countTriple(\"122abhhh2\") → " + countTriple("122abhhh2"));
+		printFunction("sumDigits");
+		System.out.println("sumDigits(\"aa1bc2d3\") → " + sumDigits("aa1bc2d3"));
+		System.out.println("sumDigits(\"aa11b33\") → " + sumDigits("aa11b33"));
+		System.out.println("sumDigits(\"Chocolate\") → " + sumDigits("Chocolate"));
+		System.out.println("sumDigits(\"5hoco1a1e\") → " + sumDigits("5hoco1a1e"));
+		System.out.println("sumDigits(\"123abc123\") → " + sumDigits("123abc123"));
+		System.out.println("sumDigits(\"\") → " + sumDigits(""));
+		System.out.println("sumDigits(\"Hello\") → " + sumDigits("Hello"));
+		System.out.println("sumDigits(\"X1z9b2\") → " + sumDigits("X1z9b2"));
+		System.out.println("sumDigits(\"5432a\") → " + sumDigits("5432a"));
 	}
 }
