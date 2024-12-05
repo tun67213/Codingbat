@@ -222,5 +222,18 @@ public class Array_2
 		System.out.println("lucky13([2]]) → " + lucky13(new int[] {2}));
 		System.out.println("lucky13([3]) → " + lucky13(new int[] {3}));
 		System.out.println("lucky13([]) → " + lucky13(new int[] {}));
+		printFunction("sum28");
+		System.out.println("sum28([2, 3, 2, 2, 4, 2]) → " + sum28(new int[] {2, 3, 2, 2, 4, 2}));
+		System.out.println("sum28([2, 3, 2, 2, 4, 2, 2]) → " + sum28(new int[] {2, 3, 2, 2, 4, 2, 2}));
+		System.out.println("sum28([1, 2, 3, 4]) → " + sum28(new int[] {1, 2, 3, 4}));
+		System.out.println("sum28([2, 2, 2, 2]) → " + sum28(new int[] {2, 2, 2, 2}));
+		System.out.println("sum28([1, 2, 2, 2, 2, 4]) → " + sum28(new int[] {1, 2, 2, 2, 2, 4}));
+		System.out.println("sum28([]) → " + sum28(new int[] {}));
+		System.out.println("sum28([2]) → " + sum28(new int[] {2}));
+		System.out.println("sum28([8]) → " + sum28(new int[] {8}));
+		System.out.println("sum28([2, 2, 2]) → " + sum28(new int[] {2, 2, 2}));
+		System.out.println("sum28([2, 2, 2, 2, 2]) → " + sum28(new int[] {2, 2, 2, 2, 2}));
+		System.out.println("sum28([1, 2, 2, 1, 2, 2]) → " + sum28(new int[] {1, 2, 2, 1, 2, 2}));
+		System.out.println("sum28([5, 2, 2, 2, 4, 2]) → " + sum28(new int[] {5, 2, 2, 2, 4, 2}));
 	}
 }
