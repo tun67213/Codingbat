@@ -13,4 +13,12 @@ public class Array_2
 	{
 		System.out.println("\n\nArray-2 Functions\n");
 	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public void main(String[] args)
+	{
+		
+	}
 }
