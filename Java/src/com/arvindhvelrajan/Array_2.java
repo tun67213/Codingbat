@@ -150,6 +150,18 @@ public class Array_2
 	}
 
 	/**
+	 * iven an array of ints, return true if every element is a 1 or a 4.
+	 *
+	 * only14([1, 4, 1, 4]) → true
+	 * only14([1, 4, 2, 4]) → false
+	 * only14([1, 1]) → true
+	 */
+	public boolean only14(int[] nums)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
