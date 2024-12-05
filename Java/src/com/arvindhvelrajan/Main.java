@@ -31,5 +31,7 @@ public class Main
 		logic2.main(args);
 		String_2 string2 = new String_2();
 		string2.main(args);
+		String_3 string3 = new String_3();
+		string3.main(args);
 	}
 }
