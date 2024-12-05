@@ -402,5 +402,22 @@ public class Array_2
 		System.out.println("no14([4, 2, 3, 5]) → " + no14(new int[] {4, 2, 3, 5}));
 		System.out.println("no14([4, 4, 2]) → " + no14(new int[] {4, 4, 2}));
 		System.out.println("no14([1, 4, 4]) → " + no14(new int[] {1, 4, 4}));
+		printFunction("isEverywhere");
+		System.out.println("isEverywhere([1, 2, 1, 3], 1) → " + isEverywhere(new int[] {1, 2, 1, 3}, 1));
+		System.out.println("isEverywhere([1, 2, 1, 3], 2) → " + isEverywhere(new int[] {1, 2, 1, 3}, 2));
+		System.out.println("isEverywhere([1, 2, 1, 3, 4], 1) → " + isEverywhere(new int[] {1, 2, 1, 3, 4}, 1));
+		System.out.println("isEverywhere([2, 1, 2, 1], 1) → " + isEverywhere(new int[] {2, 1, 2, 1}, 1));
+		System.out.println("isEverywhere([2, 1, 2, 1], 2) → " + isEverywhere(new int[] {2, 1, 2, 1}, 2));
+		System.out.println("isEverywhere([2, 1, 2, 3, 1], 2) → " + isEverywhere(new int[] {2, 1, 2, 3, 1}, 2));
+		System.out.println("isEverywhere([3, 1], 3) → " + isEverywhere(new int[] {3, 1}, 3));
+		System.out.println("isEverywhere([3, 1], 2) → " + isEverywhere(new int[] {3, 1}, 2));
+		System.out.println("isEverywhere([3], 1) → " + isEverywhere(new int[] {3}, 1));
+		System.out.println("isEverywhere([], 1) → " + isEverywhere(new int[] {}, 1));
+		System.out.println("isEverywhere([1, 2, 1, 2, 3, 2, 5], 2) → " + isEverywhere(new int[] {1, 2, 1, 2, 3, 2, 5}, 2));
+		System.out.println("isEverywhere([1, 2, 1, 1, 1, 2], 2) → " + isEverywhere(new int[] {1, 2, 1, 1, 1, 2}, 2));
+		System.out.println("isEverywhere([2, 1, 2, 1, 1, 2], 2) → " + isEverywhere(new int[] {2, 1, 2, 1, 1, 2}, 2));
+		System.out.println("isEverywhere([2, 1, 2, 2, 2, 1, 1, 2], 2) → " + isEverywhere(new int[] {2, 1, 2, 2, 2, 2, 1, 1, 2}, 2));
+		System.out.println("isEverywhere([2, 1, 2, 2, 2, 1, 2, 1], 2) → " + isEverywhere(new int[] {2, 1, 2, 2, 2, 1, 2, 1}, 2));
+		System.out.println("isEverywhere([2, 1, 2, 1, 2], 2) → " + isEverywhere(new int[] {2, 1, 2, 1, 2}, 2));
 	}
 }
