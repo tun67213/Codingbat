@@ -197,5 +197,18 @@ public class String_3
 		System.out.println("sumDigits(\"Hello\") → " + sumDigits("Hello"));
 		System.out.println("sumDigits(\"X1z9b2\") → " + sumDigits("X1z9b2"));
 		System.out.println("sumDigits(\"5432a\") → " + sumDigits("5432a"));
+		printFunction("sameEnds");
+		System.out.println("sameEnds(\"abXYab\") → \"" + sameEnds("abXYab") + "\"");
+		System.out.println("sameEnds(\"xx\") → \"" + sameEnds("xx") + "\"");
+		System.out.println("sameEnds(\"xxx\") → \"" + sameEnds("xxx") + "\"");
+		System.out.println("sameEnds(\"xxxx\") → \"" + sameEnds("xxxx") + "\"");
+		System.out.println("sameEnds(\"javaXYZjava\") → \"" + sameEnds("javaXYZjava") + "\"");
+		System.out.println("sameEnds(\"javajava\") → \"" + sameEnds("javajava") + "\"");
+		System.out.println("sameEnds(\"xavaXYZjava\") → \"" + sameEnds("xavaXYZjava") + "\"");
+		System.out.println("sameEnds(\"Hello! and Hello!\") → \"" + sameEnds("Hello! and Hello!") + "\"");
+		System.out.println("sameEnds(\"x\") → \"" + sameEnds("x") + "\"");
+		System.out.println("sameEnds(\"\") → \"" + sameEnds("") + "\"");
+		System.out.println("sameEnds(\"abcd\") → \"" + sameEnds("abcd") + "\"");
+		System.out.println("sameEnds(\"mymmy\") → \"" + sameEnds("mymmy") + "\"");
 	}
 }
