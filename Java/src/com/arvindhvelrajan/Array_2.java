@@ -176,6 +176,24 @@ public class Array_2
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
+	private String toString(String[] nums)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		for(int i = 0; i < nums.length; i++)
+		{
+			buff.append("\"");
+			buff.append(nums[i]);
+			buff.append("\"");
+			if(i != nums.length - 1)
+			{
+				buff.append(", ");
+			}
+		}
+		buff.append("]");
+		return buff.toString();
+	}
+
 	/**
 	 * @param args commandline arguments
 	 */
@@ -330,5 +348,6 @@ public class Array_2
 		System.out.println("only14([1, 1, 1]) → " + only14(new int[] {1, 1, 1}));
 		System.out.println("only14([1, 1, 1, 5]) → " + only14(new int[] {1, 1, 1, 5}));
 		System.out.println("only14([4, 1, 4, 1]) → " + only14(new int[] {4, 1, 4, 1}));
+
 	}
 }
