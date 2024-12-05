@@ -85,5 +85,22 @@ public class Array_2
 		System.out.println("bigDiff([5, 1, 6, 1, 9, 9]) → " + bigDiff(new int[] {5, 1, 6, 1, 9, 9}));
 		System.out.println("bigDiff([7, 6, 8, 5]) → " + bigDiff(new int[] {7, 6, 8, 5}));
 		System.out.println("bigDiff([7, 7, 6, 8, 5, 5, 6]) → " + bigDiff(new int[] {7, 7, 6, 8, 5, 5, 6}));
+		printFunction("centeredAverage");
+		System.out.println("centeredAverage([1, 2, 3, 4, 100]) → " + centeredAverage(new int[] {1, 2, 3, 4, 100}));
+		System.out.println("centeredAverage([1, 1, 5, 5, 10, 8, 7]) → " + centeredAverage(new int[] {1, 1, 5, 5, 10, 8, 7}));
+		System.out.println("centeredAverage([-10, -4, -2, -4, -2, 0]) → " + centeredAverage(new int[] {-10, -4, -2, -4, -2, 0}));
+		System.out.println("centeredAverage([5, 3, 4, 6, 2]) → " + centeredAverage(new int[] {5, 3, 4, 6, 2}));
+		System.out.println("centeredAverage([5, 3, 4, 0, 100]) → " + centeredAverage(new int[] {5, 3, 4, 0, 100}));
+		System.out.println("centeredAverage([100, 0, 5, 3, 4]) → " + centeredAverage(new int[] {100, 0, 5, 3, 4}));
+		System.out.println("centeredAverage([4, 0, 100]) → " + centeredAverage(new int[] {4, 0, 100}));
+		System.out.println("centeredAverage([0, 2, 3, 4, 100]) → " + centeredAverage(new int[] {0, 2, 3, 4, 100}));
+		System.out.println("centeredAverage([1, 1, 100]) → " + centeredAverage(new int[] {1, 1, 100}));
+		System.out.println("centeredAverage([7, 7, 7]) → " + centeredAverage(new int[] {7, 7, 7}));
+		System.out.println("centeredAverage([1, 7, 8]) → " + centeredAverage(new int[] {1, 7, 8}));
+		System.out.println("centeredAverage([1, 1, 99, 99]) → " + centeredAverage(new int[] {1, 1, 99, 99}));
+		System.out.println("centeredAverage([1000, 0, 1, 99]) → " + centeredAverage(new int[] {1000, 0, 1, 99}));
+		System.out.println("centeredAverage([4, 4, 4, 4, 5]) → " + centeredAverage(new int[] {4, 4, 4, 4, 5}));
+		System.out.println("centeredAverage([4, 4, 4, 1, 5]) → " + centeredAverage(new int[] {4, 4, 4, 1, 5}));
+		System.out.println("centeredAverage([6, 4, 8, 12, 3]) → " + centeredAverage(new int[] {6, 4, 8, 12, 3}));
 	}
 }
