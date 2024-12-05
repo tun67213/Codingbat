@@ -170,5 +170,20 @@ public class Array_2
 		System.out.println("sum67([6, 7, 11]) → " + sum67(new int[] {6, 7, 11}));
 		System.out.println("sum67([11, 6, 7, 11]) → " + sum67(new int[] {11, 6, 7, 11}));
 		System.out.println("sum67([2, 2, 6, 7, 7]) → " + sum67(new int[] {2, 2, 6, 7, 7}));
+		printFunction("has22");
+		System.out.println("has22([1, 2, 2]) → " + has22(new int[] {1, 2, 2}));
+		System.out.println("has22([1, 2, 1, 2]) → " + has22(new int[] {1, 2, 1, 2}));
+		System.out.println("has22([2, 1, 2]) → " + has22(new int[] {2, 1, 2}));
+		System.out.println("has22([2, 2, 1, 2]) → " + has22(new int[] {2, 2, 1, 2}));
+		System.out.println("has22([1, 3, 2]) → " + has22(new int[] {1, 3, 2}));
+		System.out.println("has22([1, 3, 2, 2]) → " + has22(new int[] {1, 3, 2, 2}));
+		System.out.println("has22([2, 3, 2, 2]) → " + has22(new int[] {2, 3, 2, 2}));
+		System.out.println("has22([4, 2, 4, 2, 2, 5]) → " + has22(new int[] {4, 2, 4, 2, 2, 5}));
+		System.out.println("has22([1, 2]) → " + has22(new int[] {1, 2}));
+		System.out.println("has22([2, 2]) → " + has22(new int[] {2, 2}));
+		System.out.println("has22([2]) → " + has22(new int[] {2}));
+		System.out.println("has22([]]) → " + has22(new int[] {}));
+		System.out.println("has22([3, 3, 2, 2]) → " + has22(new int[] {3, 3, 2, 2}));
+		System.out.println("has22([5, 2, 5, 2]) → " + has22(new int[] {5, 2, 5, 2}));
 	}
 }
