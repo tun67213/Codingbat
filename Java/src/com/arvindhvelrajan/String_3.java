@@ -224,5 +224,17 @@ public class String_3
 		System.out.println("sameEnds(\"\") → \"" + sameEnds("") + "\"");
 		System.out.println("sameEnds(\"abcd\") → \"" + sameEnds("abcd") + "\"");
 		System.out.println("sameEnds(\"mymmy\") → \"" + sameEnds("mymmy") + "\"");
+		printFunction("mirrorEnds");
+		System.out.println("mirrorEnds(\"abXYZba\") → \"" + mirrorEnds("abXYZba") + "\"");
+		System.out.println("mirrorEnds(\"abca\") → \"" + mirrorEnds("abca") + "\"");
+		System.out.println("mirrorEnds(\"aba\") → \"" + mirrorEnds("aba") + "\"");
+		System.out.println("mirrorEnds(\"abab\") → \"" + mirrorEnds("abab") + "\"");
+		System.out.println("mirrorEnds(\"xxx\") → \"" + mirrorEnds("xxx") + "\"");
+		System.out.println("mirrorEnds(\"xxYxx\") → \"" + mirrorEnds("xxYxx") + "\"");
+		System.out.println("mirrorEnds(\"Hi and iH\") → \"" + mirrorEnds("Hi and iH") + "\"");
+		System.out.println("mirrorEnds(\"x\") → \"" + mirrorEnds("x") + "\"");
+		System.out.println("mirrorEnds(\"\") → \"" + mirrorEnds("") + "\"");
+		System.out.println("mirrorEnds(\"123and then 321\") → \"" + mirrorEnds("123and then 321") + "\"");
+		System.out.println("mirrorEnds(\"band andab\") → \"" + mirrorEnds("band andab") + "\"");
 	}
 }
