@@ -29,5 +29,7 @@ public class Main
 		logic1.main(args);
 		Logic_2 logic2 = new Logic_2();
 		logic2.main(args);
+		String_2 string2 = new String_2();
+		string2.main(args);
 	}
 }
