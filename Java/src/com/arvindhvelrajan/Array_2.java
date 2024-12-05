@@ -247,5 +247,20 @@ public class Array_2
 		System.out.println("sum28([2, 2, 2, 2, 2]) → " + sum28(new int[] {2, 2, 2, 2, 2}));
 		System.out.println("sum28([1, 2, 2, 1, 2, 2]) → " + sum28(new int[] {1, 2, 2, 1, 2, 2}));
 		System.out.println("sum28([5, 2, 2, 2, 4, 2]) → " + sum28(new int[] {5, 2, 2, 2, 4, 2}));
+		printFunction("more14");
+		System.out.println("more14([1, 4, 1]) → " + more14(new int[] {1, 4, 1}));
+		System.out.println("more14([1, 4, 1, 4]) → " + more14(new int[] {1, 4, 1, 4}));
+		System.out.println("more14([1, 1]) → " + more14(new int[] {1, 1}));
+		System.out.println("more14([1, 6, 6]) → " + more14(new int[] {1, 6, 6}));
+		System.out.println("more14([1]) → " + more14(new int[] {1}));
+		System.out.println("more14([1, 4]) → " + more14(new int[] {1, 4}));
+		System.out.println("more14([6, 1, 1]) → " + more14(new int[] {6, 1, 1}));
+		System.out.println("more14([1, 6, 4]) → " + more14(new int[] {1, 6, 4}));
+		System.out.println("more14([1, 1, 4, 4, 1]) → " + more14(new int[] {1, 1, 4, 4, 1}));
+		System.out.println("more14([1, 1, 6, 4, 4, 1]) → " + more14(new int[] {1, 1, 6, 4, 4, 1}));
+		System.out.println("more14([]) → " + more14(new int[] {}));
+		System.out.println("more14([4, 1, 4, 6]) → " + more14(new int[] {4, 1, 4, 6}));
+		System.out.println("more14([4, 1, 4, 6, 1]) → " + more14(new int[] {4, 1, 4, 6, 1}));
+		System.out.println("more14([1, 4, 1, 4, 1, 6]) → " + more14(new int[] {1, 4, 1, 4, 1, 6}));
 	}
 }
