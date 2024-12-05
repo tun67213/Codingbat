@@ -27,5 +27,7 @@ public class Main
 		array1.main(args);
 		Logic_1 logic1 = new Logic_1();
 		logic1.main(args);
+		Logic_2 logic2 = new Logic_2();
+		logic2.main(args);
 	}
 }
