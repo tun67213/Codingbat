@@ -249,5 +249,17 @@ public class String_3
 		System.out.println("mirrorEnds(\"\") → \"" + mirrorEnds("") + "\"");
 		System.out.println("mirrorEnds(\"123and then 321\") → \"" + mirrorEnds("123and then 321") + "\"");
 		System.out.println("mirrorEnds(\"band andab\") → \"" + mirrorEnds("band andab") + "\"");
+		printFunction("maxBlock");
+		System.out.println("maxBlock(\"hoopla\") → " + maxBlock("hoopla"));
+		System.out.println("maxBlock(\"abbCCCddBBBxx\") → " + maxBlock("abbCCCddBBBxx"));
+		System.out.println("maxBlock(\"\") → " + maxBlock(""));
+		System.out.println("maxBlock(\"xyz\") → " + maxBlock("xyz"));
+		System.out.println("maxBlock(\"xxyz\") → " + maxBlock("xxyz"));
+		System.out.println("maxBlock(\"xyzz\") → " + maxBlock("xyzz"));
+		System.out.println("maxBlock(\"abbbcbbbxbbbx\") → " + maxBlock("abbbcbbbxbbbx"));
+		System.out.println("maxBlock(\"XXBBBbbxx\") → " + maxBlock("XXBBBbbxx"));
+		System.out.println("maxBlock(\"XXBBBBbbxx\") → " + maxBlock("XXBBBBbbxx"));
+		System.out.println("maxBlock(\"XXBBBbbxxXXXX\") → " + maxBlock("XXBBBbbxxXXXX"));
+		System.out.println("maxBlock(\"XX2222BBBbbXX2222\") → " + maxBlock("XX2222BBBbbXX2222"));
 	}
 }
