@@ -431,5 +431,18 @@ public class Array_2
 		System.out.println("isEverywhere([2, 1, 2, 2, 2, 1, 1, 2], 2) → " + isEverywhere(new int[] {2, 1, 2, 2, 2, 2, 1, 1, 2}, 2));
 		System.out.println("isEverywhere([2, 1, 2, 2, 2, 1, 2, 1], 2) → " + isEverywhere(new int[] {2, 1, 2, 2, 2, 1, 2, 1}, 2));
 		System.out.println("isEverywhere([2, 1, 2, 1, 2], 2) → " + isEverywhere(new int[] {2, 1, 2, 1, 2}, 2));
+		printFunction("either24");
+		System.out.println("either24([1, 2, 2]) → " + either24(new int[] {1, 2, 2}));
+		System.out.println("either24([4, 4, 1]) → " + either24(new int[] {4, 4, 1}));
+		System.out.println("either24([4, 4, 1, 2, 2]) → " + either24(new int[] {4, 4, 1, 2, 2}));
+		System.out.println("either24([1, 2, 3, 4]) → " + either24(new int[] {1, 2, 3, 4}));
+		System.out.println("either24([3, 5, 9]) → " + either24(new int[] {3, 5, 9}));
+		System.out.println("either24([1, 2, 3, 4, 4]) → " + either24(new int[] {1, 2, 3, 4, 4}));
+		System.out.println("either24([1, 2, 3, 2, 2, 4, 4]) → " + either24(new int[] {1, 2, 3, 2, 2, 4, 4}));
+		System.out.println("either24([1, 2]) → " + either24(new int[] {1, 2}));
+		System.out.println("either24([2, 2]) → " + either24(new int[] {2, 2}));
+		System.out.println("either24([4, 4]) → " + either24(new int[] {4, 4}));
+		System.out.println("either24([2]) → " + either24(new int[] {2}));
+		System.out.println("either24([]) → " + either24(new int[] {}));
 	}
 }
