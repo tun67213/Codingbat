@@ -120,6 +120,18 @@ public class Array_2
 	}
 
 	/**
+	 * Given an array of ints, return true if the number of 1's is greater than the number of 4's
+	 *
+	 * more14([1, 4, 1]) → true
+	 * more14([1, 4, 1, 4]) → false
+	 * more14([1, 1]) → true
+	 */
+	public boolean more14(int[] nums)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
