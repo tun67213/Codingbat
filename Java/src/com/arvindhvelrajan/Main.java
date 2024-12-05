@@ -23,5 +23,7 @@ public class Main
 		warmup2.main(args);
 		String_1 string1 = new String_1();
 		string1.main(args);
+		Array_1 array1 = new Array_1();
+		array1.main(args);
 	}
 }
