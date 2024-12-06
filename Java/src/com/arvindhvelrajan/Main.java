@@ -35,5 +35,21 @@ public class Main
 		string3.main(args);
 		Array_2 array2 = new Array_2();
 		array2.main(args);
+		Array_3 array3 = new Array_3();
+		array3.main(args);
+		AP_1 ap1 = new AP_1();
+		ap1.main(args);
+		Recursion_1 recursion1 = new Recursion_1();
+		recursion1.main(args);
+		Recursion_2 recursion2 = new Recursion_2();
+		recursion2.main(args);
+		Map_1 map1 = new Map_1();
+		map1.main(args);
+		Map_2 map2 = new Map_2();
+		map2.main(args);
+		Functional_1 functional1 = new Functional_1();
+		functional1.main(args);
+		Functional_2 functional2 = new Functional_2();
+		functional2.main(args);
 	}
 }
