@@ -157,6 +157,19 @@ public class Warmup_2
 	}
 
 	/**
+	 * Given a string, return a version where all the "x" have been removed.
+	 * Except an "x" at the very start or end should not be removed.
+	 *
+	 * stringX("xxHxix") → "xHix"
+	 * stringX("abxxxcd") → "abcd"
+	 * stringX("xabxxxcdx") → "xabcdx"
+	 */
+	public String stringX(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
