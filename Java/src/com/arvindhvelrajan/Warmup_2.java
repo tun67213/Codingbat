@@ -313,5 +313,14 @@ public class Warmup_2
 		System.out.println("stringX(\"xx\") → \"" + stringX("xx") + "\"");
 		System.out.println("stringX(\"x\") → \"" + stringX("x") + "\"");
 		System.out.println("stringX(\"\") → \"" + stringX("") + "\"");
+		printFunction("altPairs");
+		System.out.println("altPairs(\"kitten\") → \"" + altPairs("kitten") + "\"");
+		System.out.println("altPairs(\"Chocolate\") → \"" + altPairs("Chocolate") + "\"");
+		System.out.println("altPairs(\"CodingHorror\") → \"" + altPairs("CodingHorror") + "\"");
+		System.out.println("altPairs(\"yak\") → \"" + altPairs("yak") + "\"");
+		System.out.println("altPairs(\"ya\") → \"" + altPairs("ya") + "\"");
+		System.out.println("altPairs(\"y\") → \"" + altPairs("y") + "\"");
+		System.out.println("altPairs(\"\") → \"" + altPairs("") + "\"");
+		System.out.println("altPairs(\"ThisThatTheOther\") → \"" + altPairs("ThisThatTheOther") + "\"");
 	}
 }
