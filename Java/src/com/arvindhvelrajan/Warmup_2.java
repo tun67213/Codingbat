@@ -292,5 +292,14 @@ public class Warmup_2
 		System.out.println("stringMatch(\"aabbccdd\", \"abbbxxd\") → " + stringMatch("aabbccdd", "abbbxxd"));
 		System.out.println("stringMatch(\"aaxxaaxx\", \"iaxxai\") → " + stringMatch("aaxxaaxx", "iaxxai"));
 		System.out.println("stringMatch(\"iaxxai\", \"aaxxaaxx\") → " + stringMatch("iaxxai", "aaxxaaxx"));
+		printFunction("stringX");
+		System.out.println("stringX(\"xxHxix\") → \"" + stringX("xxHxix") + "\"");
+		System.out.println("stringX(\"abxxxcd\") → \"" + stringX("abxxxcd") + "\"");
+		System.out.println("stringX(\"xabxxxcdx\") → \"" + stringX("xabxxxcdx") + "\"");
+		System.out.println("stringX(\"xKittenx\") → \"" + stringX("xKittenx") + "\"");
+		System.out.println("stringX(\"Hello\") → \"" + stringX("Hello") + "\"");
+		System.out.println("stringX(\"xx\") → \"" + stringX("xx") + "\"");
+		System.out.println("stringX(\"x\") → \"" + stringX("x") + "\"");
+		System.out.println("stringX(\"\") → \"" + stringX("") + "\"");
 	}
 }
