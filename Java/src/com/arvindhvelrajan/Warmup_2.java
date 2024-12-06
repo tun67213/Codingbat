@@ -405,5 +405,21 @@ public class Warmup_2
 		System.out.println("noTriples([1, 1]) → " + noTriples(new int[] {1, 1}));
 		System.out.println("noTriples([1]) → " + noTriples(new int[] {1}));
 		System.out.println("noTriples([]) → " + noTriples(new int[] {}));
+		printFunction("has271");
+		System.out.println("has271([1, 2, 7, 1]) → " + has271(new int[] {1, 2, 7, 1}));
+		System.out.println("has271([1, 2, 8, 1]) → " + has271(new int[] {1, 2, 8, 1}));
+		System.out.println("has271([2, 7, 1]) → " + has271(new int[] {2, 7, 1}));
+		System.out.println("has271([3, 8, 2]) → " + has271(new int[] {3, 8, 2}));
+		System.out.println("has271([2, 7, 3]) → " + has271(new int[] {2, 7, 3}));
+		System.out.println("has271([2, 7, 4]) → " + has271(new int[] {2, 7, 4}));
+		System.out.println("has271([2, 7, -1]) → " + has271(new int[] {2, 7, -1}));
+		System.out.println("has271([2, 7, -2]) → " + has271(new int[] {2, 7, -2}));
+		System.out.println("has271([4, 5, 3, 8, 0]) → " + has271(new int[] {4, 5, 3, 8, 0}));
+		System.out.println("has271([2, 7, 5, 10, 4]) → " + has271(new int[] {2, 7, 5, 10, 4}));
+		System.out.println("has271([2, 7, -2, 4, 9, 3]) → " + has271(new int[] {2, 7, -2, 4, 9, 3}));
+		System.out.println("has271([2, 7, 5, 10, 1]) → " + has271(new int[] {2, 7, 5, 10, 1}));
+		System.out.println("has271([2, 7, -2, 4, 10, 2]) → " + has271(new int[] {2, 7, -2, 4, 10, 2}));
+		System.out.println("has271([1, 1, 4, 9, 0]) → " + has271(new int[] {1, 1, 4, 9, 0}));
+		System.out.println("has271([1, 1, 4, 9, 4, 9, 2]) → " + has271(new int[] {1, 1, 4, 9, 4, 9, 2}));
 	}
 }
