@@ -170,6 +170,18 @@ public class Warmup_2
 	}
 
 	/**
+	 * Given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so "kittens" yields "kien".
+	 *
+	 * altPairs("kitten") → "kien"
+	 * altPairs("Chocolate") → "Chole"
+	 * altPairs("CodingHorror") → "Congrr"
+	 */
+	public String altPairs(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
