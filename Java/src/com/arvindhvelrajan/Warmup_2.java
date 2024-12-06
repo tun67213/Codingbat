@@ -356,5 +356,19 @@ public class Warmup_2
 		System.out.println("stringYak(\"yakxxxyak\") → \"" + stringYak("yakxxxyak") + "\"");
 		System.out.println("stringYak(\"HiyakHi\") → \"" + stringYak("HiyakHi") + "\"");
 		System.out.println("stringYak(\"xxxyakyyyakzzz\") → \"" + stringYak("xxxyakyyyakzzz") + "\"");
+		printFunction("array667");
+		System.out.println("array667([6, 6, 2]) → " + array667(new int[] {6, 6, 2}));
+		System.out.println("array667([6, 6, 2, 6]) → " + array667(new int[] {6, 6, 2, 6}));
+		System.out.println("array667([6, 7, 2, 6]) → " + array667(new int[] {6, 7, 2, 6}));
+		System.out.println("array667([6, 6, 2, 6, 7]) → " + array667(new int[] {6, 6, 2, 6, 7}));
+		System.out.println("array667([1, 6, 3]) → " + array667(new int[] {1, 6, 3}));
+		System.out.println("array667([6, 1]) → " + array667(new int[] {6, 1}));
+		System.out.println("array667([]) → " + array667(new int[] {}));
+		System.out.println("array667([3, 6, 7, 6]) → " + array667(new int[] {3, 6, 7, 6}));
+		System.out.println("array667([3, 6, 6, 7]) → " + array667(new int[] {3, 6, 6, 7}));
+		System.out.println("array667([6, 3, 6, 6]) → " + array667(new int[] {6, 3, 6, 6}));
+		System.out.println("array667([6, 7, 6, 6]) → " + array667(new int[] {6, 7, 6, 6}));
+		System.out.println("array667([1, 2, 3, 5, 6]) → " + array667(new int[] {1, 2, 3, 5, 6}));
+		System.out.println("array667([1, 2, 3, 6, 6]) → " + array667(new int[] {1, 2, 3, 6, 6}));
 	}
 }
