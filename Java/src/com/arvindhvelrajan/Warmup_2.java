@@ -335,5 +335,13 @@ public class Warmup_2
 		System.out.println("altPairs(\"y\") → \"" + altPairs("y") + "\"");
 		System.out.println("altPairs(\"\") → \"" + altPairs("") + "\"");
 		System.out.println("altPairs(\"ThisThatTheOther\") → \"" + altPairs("ThisThatTheOther") + "\"");
+		printFunction("stringYak");
+		System.out.println("stringYak(\"yakpak\") → \"" + stringYak("yakpak") + "\"");
+		System.out.println("stringYak(\"pakyak\") → \"" + stringYak("pakyak") + "\"");
+		System.out.println("stringYak(\"yak123ya\") → \"" + stringYak("yak123ya") + "\"");
+		System.out.println("stringYak(\"yak\") → \"" + stringYak("yak") + "\"");
+		System.out.println("stringYak(\"yakxxxyak\") → \"" + stringYak("yakxxxyak") + "\"");
+		System.out.println("stringYak(\"HiyakHi\") → \"" + stringYak("HiyakHi") + "\"");
+		System.out.println("stringYak(\"xxxyakyyyakzzz\") → \"" + stringYak("xxxyakyyyakzzz") + "\"");
 	}
 }
