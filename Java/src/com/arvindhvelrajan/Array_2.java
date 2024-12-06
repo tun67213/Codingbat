@@ -458,5 +458,17 @@ public class Array_2
 		System.out.println("either24([4, 4]) → " + either24(new int[] {4, 4}));
 		System.out.println("either24([2]) → " + either24(new int[] {2}));
 		System.out.println("either24([]) → " + either24(new int[] {}));
+		printFunction("matchUp");
+		System.out.println("matchUp([1, 2, 3], [2, 3, 10]) → " + matchUp(new int[] {1, 2, 3}, new int[] {2, 3, 10}));
+		System.out.println("matchUp([1, 2, 3], [2, 3, 5]) → " + matchUp(new int[] {1, 2, 3}, new int[] {2, 3, 5}));
+		System.out.println("matchUp([1, 2, 3], [2, 3, 3]) → " + matchUp(new int[] {1, 2, 3}, new int[] {2, 3, 3}));
+		System.out.println("matchUp([5, 3], [5, 5]) → " + matchUp(new int[] {5, 3}, new int[] {5, 5}));
+		System.out.println("matchUp([5, 3], [4, 4]) → " + matchUp(new int[] {5, 3}, new int[] {4, 4}));
+		System.out.println("matchUp([5, 3], [3, 3]) → " + matchUp(new int[] {5, 3}, new int[] {3, 3}));
+		System.out.println("matchUp([5, 3], [2, 2]) → " + matchUp(new int[] {5, 3}, new int[] {2, 2}));
+		System.out.println("matchUp([5, 3], [1, 1]) → " + matchUp(new int[] {5, 3}, new int[] {1, 1}));
+		System.out.println("matchUp([5, 3], [0, 0]) → " + matchUp(new int[] {5, 3}, new int[] {0, 0}));
+		System.out.println("matchUp([4], [4]) → " + matchUp(new int[] {4}, new int[] {4}));
+		System.out.println("matchUp([4], [5]) → " + matchUp(new int[] {4}, new int[] {5}));
 	}
 }
