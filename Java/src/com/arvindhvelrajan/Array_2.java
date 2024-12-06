@@ -482,5 +482,20 @@ public class Array_2
 		System.out.println("matchUp([5, 3], [0, 0]) → " + matchUp(new int[] {5, 3}, new int[] {0, 0}));
 		System.out.println("matchUp([4], [4]) → " + matchUp(new int[] {4}, new int[] {4}));
 		System.out.println("matchUp([4], [5]) → " + matchUp(new int[] {4}, new int[] {5}));
+		printFunction("has77");
+		System.out.println("has77([1, 7, 7]) → " + has77(new int[] {1, 7, 7}));
+		System.out.println("has77([1, 7, 1, 7]) → " + has77(new int[] {1, 7, 1, 7}));
+		System.out.println("has77([1, 7, 1, 1, 7]) → " + has77(new int[] {1, 7, 1, 1, 7}));
+		System.out.println("has77([7, 7, 1, 1, 7]) → " + has77(new int[] {7, 7, 1, 1, 7}));
+		System.out.println("has77([2, 7, 2, 2, 7, 2]) → " + has77(new int[] {2, 7, 2, 2, 7, 2}));
+		System.out.println("has77([2, 7, 2, 2, 7, 7]) → " + has77(new int[] {2, 7, 2, 2, 7, 7}));
+		System.out.println("has77([7, 2, 7, 2, 2, 7]) → " + has77(new int[] {7, 2, 7, 2, 2, 7}));
+		System.out.println("has77([7, 2, 6, 2, 2, 7]) → " + has77(new int[] {7, 2, 6, 2, 2, 7}));
+		System.out.println("has77([7, 7, 7]) → " + has77(new int[] {7, 7, 7}));
+		System.out.println("has77([7, 1, 7]) → " + has77(new int[] {7, 1, 7}));
+		System.out.println("has77([7, 1, 1]) → " + has77(new int[] {7, 1, 1}));
+		System.out.println("has77([1, 2]) → " + has77(new int[] {1, 2}));
+		System.out.println("has77([1, 7]) → " + has77(new int[] {1, 7}));
+		System.out.println("has77([7]) → " + has77(new int[] {7}));
 	}
 }
