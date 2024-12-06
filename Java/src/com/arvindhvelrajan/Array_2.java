@@ -510,5 +510,23 @@ public class Array_2
 		System.out.println("has77([1, 2]) → " + has77(new int[] {1, 2}));
 		System.out.println("has77([1, 7]) → " + has77(new int[] {1, 7}));
 		System.out.println("has77([7]) → " + has77(new int[] {7}));
+		printFunction("has12");
+		System.out.println("has12([1, 3, 2]) → " + has12(new int[] {1, 3, 2}));
+		System.out.println("has12([3, 1, 2]) → " + has12(new int[] {3, 1, 2}));
+		System.out.println("has12([3, 1, 4, 5, 2]) → " + has12(new int[] {3, 1, 4, 5, 2}));
+		System.out.println("has12([3, 1, 4, 5, 6]) → " + has12(new int[] {3, 1, 4, 5, 6}));
+		System.out.println("has12([3, 1, 4, 1, 6, 2]) → " + has12(new int[] {3, 1, 4, 1, 6, 2}));
+		System.out.println("has12([2, 1, 4, 1, 6, 2]) → " + has12(new int[] {2, 1, 4, 1, 6, 2}));
+		System.out.println("has12([2, 1, 4, 1, 6]) → " + has12(new int[] {2, 1, 4, 1, 6}));
+		System.out.println("has12([1]) → " + has12(new int[] {1}));
+		System.out.println("has12([2, 1, 3]) → " + has12(new int[] {2, 1, 3}));
+		System.out.println("has12([2, 1, 3, 2]) → " + has12(new int[] {2, 1, 3, 2}));
+		System.out.println("has12([2]) → " + has12(new int[] {2}));
+		System.out.println("has12([3, 2]) → " + has12(new int[] {3, 2}));
+		System.out.println("has12([3, 1, 3, 2]) → " + has12(new int[] {3, 1, 3, 2}));
+		System.out.println("has12([3, 5, 9]) → " + has12(new int[] {3, 5, 9}));
+		System.out.println("has12([3, 5, 1]) → " + has12(new int[] {3, 5, 1}));
+		System.out.println("has12([3, 2, 1]) → " + has12(new int[] {3, 2, 1}));
+		System.out.println("has12([1, 2]) → " + has12(new int[] {1, 2}));
 	}
 }
