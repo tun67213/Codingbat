@@ -383,5 +383,15 @@ public class Warmup_2
 		System.out.println("array667([6, 7, 6, 6]) → " + array667(new int[] {6, 7, 6, 6}));
 		System.out.println("array667([1, 2, 3, 5, 6]) → " + array667(new int[] {1, 2, 3, 5, 6}));
 		System.out.println("array667([1, 2, 3, 6, 6]) → " + array667(new int[] {1, 2, 3, 6, 6}));
+		printFunction("noTriples");
+		System.out.println("noTriples([1, 1, 2, 2, 1]) → " + noTriples(new int[] {1, 1, 2, 2, 1}));
+		System.out.println("noTriples([1, 1, 2, 2, 2, 1]) → " + noTriples(new int[] {1, 1, 2, 2, 2, 1}));
+		System.out.println("noTriples([1, 1, 1, 2, 2, 2, 1]) → " + noTriples(new int[] {1, 1, 1, 2, 2, 2, 1}));
+		System.out.println("noTriples([1, 1, 2, 2, 1, 2, 1]) → " + noTriples(new int[] {1, 1, 2, 2, 1, 2, 1}));
+		System.out.println("noTriples([1, 2, 1]) → " + noTriples(new int[] {1, 2, 1}));
+		System.out.println("noTriples([1, 1, 1]) → " + noTriples(new int[] {1, 1, 1}));
+		System.out.println("noTriples([1, 1]) → " + noTriples(new int[] {1, 1}));
+		System.out.println("noTriples([1]) → " + noTriples(new int[] {1}));
+		System.out.println("noTriples([]) → " + noTriples(new int[] {}));
 	}
 }
