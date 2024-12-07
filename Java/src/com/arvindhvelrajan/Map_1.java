@@ -75,5 +75,12 @@ public class Map_1
 		System.out.println("mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) → " + mapShare(new HashMap<>(Map.of("a", "aaa", "c", "meh", "d", "hi"))).toString());
 		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"z\": \"zzz\"}) → " + mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "z", "zzz"))).toString());
 		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"d\": \"ddd\", \"e\": \"everything\"}) → " + mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "d", "ddd", "e", "everything"))).toString());
+		printFunction("mapAB");
+		System.out.println("mapAB({\"a\": \"Hi\", \"b\": \"There\"}) → " + mapAB(new HashMap<>(Map.of("a", "Hi", "b", "There"))).toString());
+		System.out.println("mapAB({\"a\": \"Hi\"}) → " + mapAB(new HashMap<>(Map.of("a", "Hi"))).toString());
+		System.out.println("mapAB({\"b\": \"There\"}) → " + mapAB(new HashMap<>(Map.of("b", "There"))).toString());
+		System.out.println("mapAB({\"c\": \"meh\"}) → " + mapAB(new HashMap<>(Map.of("c", "meh"))).toString());
+		System.out.println("mapAB({\"a\": \"aaa\", \"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) → " + mapAB(new HashMap<>(Map.of("a", "aaa", "ab", "nope", "b", "bbb", "c", "ccc"))).toString());
+		System.out.println("mapAB({\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) → " + mapAB(new HashMap<>(Map.of("ab", "nope", "b", "bbb", "c", "ccc"))).toString());
 	}
 }
