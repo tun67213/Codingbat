@@ -155,5 +155,14 @@ public class Map_1
 		System.out.println("topping3({\"toast\": \"butter\", \"salad\": \"oil\", \"potato\": \"ketchup\"}) → " + topping3(new HashMap<>(Map.of("toast", "butter", "salad", "oil", "potato", "ketchup"))).toString());
 		System.out.println("topping3({}) → " + topping3(new HashMap<>(Map.of())).toString());
 		System.out.println("topping3({\"salad\": \"pepper\", \"fries\": \"salt\"}) → " + topping3(new HashMap<>(Map.of("salad", "pepper", "fries", "salt"))).toString());
+		printFunction("mapAB2");
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) → " + mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "aaa", "c", "cake"))).toString());
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) → " + mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb"))).toString());
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) → " + mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "aaa"))).toString());
+		System.out.println("mapAB2({\"a\": \"aaa\"}) → " + mapAB2(new HashMap<>(Map.of("a", "aaa"))).toString());
+		System.out.println("mapAB({\"b\": \"bbb\"}) → " + mapAB2(new HashMap<>(Map.of("b", "bbb"))).toString());
+		System.out.println("mapAB2({\"a\": \"\", \"b\": \"\", \"c\": \"ccc\"}) → " + mapAB2(new HashMap<>(Map.of("a", "", "b", "", "c", "ccc"))).toString());
+		System.out.println("mapAB2({}) → " + mapAB2(new HashMap<>(Map.of())));
+		System.out.println("mapAB2({\"a\": \"a\", \"b\": \"b\", \"z\": \"zebra\"}) → " + mapAB2(new HashMap<>(Map.of("a", "a", "b", "b", "z", "zebra"))).toString());
 	}
 }
