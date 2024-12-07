@@ -90,5 +90,24 @@ public class Array_3
 		System.out.println("fix34([7, 3, 7, 7, 4]) → " + Arrays.toString(fix34(new int[] {7, 3, 7, 7, 4})));
 		System.out.println("fix34([3, 1, 4, 3, 1, 4]) → " + Arrays.toString(fix34(new int[] {3, 1, 4, 3, 1, 4})));
 		System.out.println("fix34([3, 1, 1, 3, 4, 4]) → " + Arrays.toString(fix34(new int[] {3, 1, 1, 3, 4, 4})));
+		printFunction("fix45");
+		System.out.println("fix45([5, 4, 9, 4, 9, 5]) → " + Arrays.toString(fix45(new int[] {5, 4, 9, 4, 9, 5})));
+		System.out.println("fix45([1, 4, 1, 5]) → " + Arrays.toString(fix45(new int[] {1, 4, 1, 5})));
+		System.out.println("fix45([1, 4, 1, 5, 5, 4, 1]) → " + Arrays.toString(fix45(new int[] {1, 4, 1, 5, 5, 4, 1})));
+		System.out.println("fix45([4, 9, 4, 9, 5, 5, 4, 9, 5]) → " + Arrays.toString(fix45(new int[] {4, 9, 4, 9, 5, 5, 4, 9, 5})));
+		System.out.println("fix45([5, 5, 4, 1, 4, 1]) → " + Arrays.toString(fix45(new int[] {5, 5, 4, 1, 4, 1})));
+		System.out.println("fix45([4, 2, 2, 5]) → " + Arrays.toString(fix45(new int[] {4, 2, 2, 5})));
+		System.out.println("fix45([4, 2, 4, 2, 5, 5]) → " + Arrays.toString(fix45(new int[] {4, 2, 4, 2, 5, 5})));
+		System.out.println("fix45([4, 2, 4, 5, 5]) → " + Arrays.toString(fix45(new int[] {4, 2, 4, 5, 5})));
+		System.out.println("fix45([1, 1, 1]) → " + Arrays.toString(fix45(new int[] {1, 1, 1})));
+		System.out.println("fix45([4, 5]) → " + Arrays.toString(fix45(new int[] {4, 5})));
+		System.out.println("fix45([5, 4, 1]) → " + Arrays.toString(fix45(new int[] {5, 4, 1})));
+		System.out.println("fix45([]) → " + Arrays.toString(fix45(new int[] {})));
+		System.out.println("fix45([5, 4, 5, 4, 1]) → " + Arrays.toString(fix45(new int[] {5, 4, 5, 4, 1})));
+		System.out.println("fix45([4, 5, 4, 1, 5]) → " + Arrays.toString(fix45(new int[] {4, 5, 4, 1, 5})));
+		System.out.println("fix45([3, 4, 5]) → " + Arrays.toString(fix45(new int[] {3, 4, 5})));
+		System.out.println("fix45([4, 1, 5]) → " + Arrays.toString(fix45(new int[] {4, 1, 5})));
+		System.out.println("fix45([5, 4, 1]) → " + Arrays.toString(fix45(new int[] {5, 4, 1})));
+		System.out.println("fix45([2, 4, 2, 5]) → " + Arrays.toString(fix45(new int[] {2, 4, 2, 5})));
 	}
 }
