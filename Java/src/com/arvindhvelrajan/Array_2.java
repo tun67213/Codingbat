@@ -492,28 +492,6 @@ public class Array_2
 	}
 
 	/**
-	 * The following is a helper function to print the string values in an array in the form of a string, i.e. with
-	 * double quotation marks.
-	 */
-	private String toStringStringArray(String[] array)
-	{
-		StringBuilder buff = new StringBuilder();
-		buff.append("[");
-		for(int i = 0; i < array.length; i++)
-		{
-			buff.append("\"");
-			buff.append(array[i]);
-			buff.append("\"");
-			if(i != array.length - 1)
-			{
-				buff.append(", ");
-			}
-		}
-		buff.append("]");
-		return buff.toString();
-	}
-
-	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
