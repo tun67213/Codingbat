@@ -649,5 +649,18 @@ public class Array_2
 		System.out.println("sameEnds([1], 1) → " + sameEnds(new int[] {1}, 1));
 		System.out.println("sameEnds([], 0) → " + sameEnds(new int[] {}, 0));
 		System.out.println("sameEnds([4, 2, 4, 5], 1) → " + sameEnds(new int[] {4, 2, 4, 5}, 1));
+		printFunction("tripleUp");
+		System.out.println("tripleUp([1, 4, 5, 6, 2]) → " + tripleUp(new int[] {1, 4, 5, 6, 2}));
+		System.out.println("tripleUp([1, 2, 3]) → " + tripleUp(new int[] {1, 2, 3}));
+		System.out.println("tripleUp([1, 2, 4]) → " + tripleUp(new int[] {1, 2, 4}));
+		System.out.println("tripleUp([1, 2, 4, 5, 7, 6, 5, 6, 7, 6]) → " + tripleUp(new int[] {1, 2, 4, 5, 7, 6, 5, 6, 7, 6}));
+		System.out.println("tripleUp([1, 2, 4, 5, 7, 6, 5, 7, 7, 6]) → " + tripleUp(new int[] {1, 2, 4, 5, 7, 6, 5, 7, 7, 6}));
+		System.out.println("tripleUp([1, 2]) → " + tripleUp(new int[] {1, 2}));
+		System.out.println("tripleUp([1]) → " + tripleUp(new int[] {1}));
+		System.out.println("tripleUp([]) → " + tripleUp(new int[] {}));
+		System.out.println("tripleUp([10, 9, 8, -100, -99, -98, 100]) → " + tripleUp(new int[] {10, 9, 8, -100, -99, -98, 100}));
+		System.out.println("tripleUp([10, 9, 8, -100, -99, 99, 100]) → " + tripleUp(new int[] {10, 9, 8, -100, -99, 99, 100}));
+		System.out.println("tripleUp([-100, -99, -99, 100, 101, 102]) → " + tripleUp(new int[] {-100, -99, -99, 100, 101, 102}));
+		System.out.println("tripleUp([2, 3, 5, 6, 8, 9, 2, 3]) → " + tripleUp(new int[] {2, 3, 5, 6, 8, 9, 2, 3}));
 	}
 }
