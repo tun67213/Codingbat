@@ -136,5 +136,12 @@ public class Map_1
 		System.out.println("topping2({\"yogurt\": \"salt\", \"bread\": \"butter\"}) → " + topping2(new HashMap<>(Map.of("yogurt", "salt", "bread", "butter"))).toString());
 		System.out.println("topping2({}) → " + topping2(new HashMap<>(Map.of())).toString());
 		System.out.println("topping2({\"ice cream\": \"air\", \"salad\": \"oil\"}) → " + topping2(new HashMap<>(Map.of("ice cream", "air", "salad", "oil"))).toString());
+		printFunction("topping3");
+		System.out.println("topping3({\"potato\": \"ketchup\"}) → " + topping3(new HashMap<>(Map.of("potato", "ketchup"))).toString());
+		System.out.println("topping3({\"potato\": \"butter\"}) → " + topping3(new HashMap<>(Map.of("potato", "butter"))).toString());
+		System.out.println("topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"}) → " + topping3(new HashMap<>(Map.of("salad", "oil", "potato", "ketchup"))).toString());
+		System.out.println("topping3({\"toast\": \"butter\", \"salad\": \"oil\", \"potato\": \"ketchup\"}) → " + topping3(new HashMap<>(Map.of("toast", "butter", "salad", "oil", "potato", "ketchup"))).toString());
+		System.out.println("topping3({}) → " + topping3(new HashMap<>(Map.of())).toString());
+		System.out.println("topping3({\"salad\": \"pepper\", \"fries\": \"salt\"}) → " + topping3(new HashMap<>(Map.of("salad", "pepper", "fries", "salt"))).toString());
 	}
 }
