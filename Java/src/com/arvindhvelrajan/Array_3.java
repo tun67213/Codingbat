@@ -122,5 +122,17 @@ public class Array_3
 		System.out.println("fix45([4, 1, 5]) → " + Arrays.toString(fix45(new int[] {4, 1, 5})));
 		System.out.println("fix45([5, 4, 1]) → " + Arrays.toString(fix45(new int[] {5, 4, 1})));
 		System.out.println("fix45([2, 4, 2, 5]) → " + Arrays.toString(fix45(new int[] {2, 4, 2, 5})));
+		printFunction("canBalance");
+		System.out.println("canBalance([1, 1, 1, 2, 1]) → " + canBalance(new int[] {1, 1, 1, 2, 1}));
+		System.out.println("canBalance([2, 1, 1, 2, 1]) → " + canBalance(new int[] {2, 1, 1, 2, 1}));
+		System.out.println("canBalance([10, 10]) → " + canBalance(new int[] {10, 10}));
+		System.out.println("canBalance([10, 0, 1, -1, 10]) → " + canBalance(new int[] {10, 0, 1, -1, 10}));
+		System.out.println("canBalance([1, 1, 1, 1, 4]) → " + canBalance(new int[] {1, 1, 1, 1, 4}));
+		System.out.println("canBalance([2, 1, 1, 1, 4]) → " + canBalance(new int[] {2, 1, 1, 1, 4}));
+		System.out.println("canBalance([2, 3, 4, 1, 2]) → " + canBalance(new int[] {2, 3, 4, 1, 2}));
+		System.out.println("canBalance([1, 2, 3, 1, 0, 2, 3]) → " + canBalance(new int[] {1, 2, 3, 1, 0, 2, 3}));
+		System.out.println("canBalance([1, 2, 3, 1, 0, 1, 3]) → " + canBalance(new int[] {1, 2, 3, 1, 0, 1, 3}));
+		System.out.println("canBalance([1]) → " + canBalance(new int[] {1}));
+		System.out.println("canBalance([1, 1, 1, 2, 1]) → " + canBalance(new int[] {1, 1, 1, 2, 1}));
 	}
 }
