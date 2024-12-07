@@ -10,4 +10,12 @@ public class Recursion_1
 	{
 		System.out.println("\n\nRecursion-1 Functions\n");
 	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public void main(String[] args)
+	{
+
+	}
 }

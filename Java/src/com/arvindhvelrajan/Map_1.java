@@ -10,4 +10,12 @@ public class Map_1
 	{
 		System.out.println("\n\nMap-1 Functions\n");
 	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public void main(String[] args)
+	{
+
+	}
 }

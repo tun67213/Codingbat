@@ -10,4 +10,12 @@ public class Functional_1
 	{
 		System.out.println("\n\nFunctional-1 Functions\n");
 	}
+
+	/**
+	 * @param args commandline arguments
+	 */
+	public void main(String[] args)
+	{
+
+	}
 }
