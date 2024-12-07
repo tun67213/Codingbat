@@ -247,5 +247,15 @@ public class Array_3
 		System.out.println("maxMirror([5, 9, 9, 4, 5, 4, 9, 9, 2]) → " + maxMirror(new int[] {5, 9, 9, 4, 5, 4, 9, 9, 2}));
 		System.out.println("maxMirror([5, 9, 9, 6, 5, 4, 9, 9, 2]) → " + maxMirror(new int[] {5, 9, 9, 6, 5, 4, 9, 9, 2}));
 		System.out.println("maxMirror([5, 9, 1, 6, 5, 4, 1, 9, 5]) → " + maxMirror(new int[] {5, 9, 1, 6, 5, 4, 1, 9, 5}));
+		printFunction("countClumps");
+		System.out.println("countClumps([1, 2, 2, 3, 4, 4]) → " + countClumps(new int[] {1, 2, 2, 3, 4, 4}));
+		System.out.println("countClumps([1, 1, 2, 1, 1]) → " + countClumps(new int[] {1, 1, 2, 1, 1}));
+		System.out.println("countClumps([1, 1, 1, 1, 1]) → " + countClumps(new int[] {1, 1, 1, 1, 1}));
+		System.out.println("countClumps([1, 2, 3]) → " + countClumps(new int[] {1, 2, 3}));
+		System.out.println("countClumps([2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) → " + countClumps(new int[] {2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) → " + countClumps(new int[] {0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) → " + countClumps(new int[] {0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2]) → " + countClumps(new int[] {0, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2}));
+		System.out.println("countClumps([]) → " + countClumps(new int[] {}));
 	}
 }
