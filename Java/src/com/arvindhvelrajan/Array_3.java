@@ -58,5 +58,20 @@ public class Array_3
 		System.out.println("maxSpan([3, 3]) → " + maxSpan(new int[] {3, 3}));
 		System.out.println("maxSpan([]) → " + maxSpan(new int[] {}));
 		System.out.println("maxSpan([1]) → " + maxSpan(new int[] {1}));
+		printFunction("fix34");
+		System.out.println("fix34([1, 3, 1, 4]) → " + Arrays.toString(fix34(new int[] {1, 3, 1, 4})));
+		System.out.println("fix34([1, 3, 1, 4, 4, 3, 1]) → " + Arrays.toString(fix34(new int[] {1, 3, 1, 4, 4, 3, 1})));
+		System.out.println("fix34([3, 2, 2, 4]) → " + Arrays.toString(fix34(new int[] {3, 2, 2, 4})));
+		System.out.println("fix34([3, 2, 3, 2, 4, 4]) → " + Arrays.toString(fix34(new int[] {3, 2, 3, 2, 4, 4})));
+		System.out.println("fix34([2, 3, 2, 3, 2, 4, 4]) → " + Arrays.toString(fix34(new int[] {2, 3, 2, 3, 2, 4, 4})));
+		System.out.println("fix34([5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5]) → " + Arrays.toString(fix34(new int[] {5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5})));
+		System.out.println("fix34([3, 1, 4]) → " + Arrays.toString(fix34(new int[] {3, 1, 4})));
+		System.out.println("fix34([3, 4, 1]) → " + Arrays.toString(fix34(new int[] {3, 4, 1})));
+		System.out.println("fix34([1, 1, 1]) → " + Arrays.toString(fix34(new int[] {1, 1, 1})));
+		System.out.println("fix34([1]) → " + Arrays.toString(fix34(new int[] {1})));
+		System.out.println("fix34([]) → " + Arrays.toString(fix34(new int[] {})));
+		System.out.println("fix34([7, 3, 7, 7, 4]) → " + Arrays.toString(fix34(new int[] {7, 3, 7, 7, 4})));
+		System.out.println("fix34([3, 1, 4, 3, 1, 4]) → " + Arrays.toString(fix34(new int[] {3, 1, 4, 3, 1, 4})));
+		System.out.println("fix34([3, 1, 1, 3, 4, 4]) → " + Arrays.toString(fix34(new int[] {3, 1, 1, 3, 4, 4})));
 	}
 }
