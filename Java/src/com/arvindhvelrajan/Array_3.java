@@ -196,5 +196,12 @@ public class Array_3
 		System.out.println("squareUp(1) → " + Arrays.toString(squareUp(1)));
 		System.out.println("squareUp(0) → " + Arrays.toString(squareUp(0)));
 		System.out.println("squareUp(6) → " + Arrays.toString(squareUp(6)));
+		printFunction("seriesUp");
+		System.out.println("seriesUp(3) → " + Arrays.toString(seriesUp(3)));
+		System.out.println("seriesUp(4) → " + Arrays.toString(seriesUp(4)));
+		System.out.println("seriesUp(2) → " + Arrays.toString(seriesUp(2)));
+		System.out.println("seriesUp(1) → " + Arrays.toString(seriesUp(1)));
+		System.out.println("seriesUp(0) → " + Arrays.toString(seriesUp(0)));
+		System.out.println("seriesUp(6) → " + Arrays.toString(seriesUp(6)));
 	}
 }
