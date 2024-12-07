@@ -590,5 +590,23 @@ public class Array_2
 		System.out.println("haveThree([1, 3]) → " + haveThree(new int[] {1, 3}));
 		System.out.println("haveThree([3]) → " + haveThree(new int[] {3}));
 		System.out.println("haveThree([1]) → " + haveThree(new int[] {1}));
+		printFunction("twoTwo");
+		System.out.println("twoTwo([4, 2, 2, 3]) → " + twoTwo(new int[] {4, 2, 2, 3}));
+		System.out.println("twoTwo([2, 2, 4]) → " + twoTwo(new int[] {2, 2, 4}));
+		System.out.println("twoTwo([2, 2, 4, 2]) → " + twoTwo(new int[] {2, 2, 4, 2}));
+		System.out.println("twoTwo([1, 3, 4]) → " + twoTwo(new int[] {1, 3, 4}));
+		System.out.println("twoTwo([1, 2, 2, 3, 4]) → " + twoTwo(new int[] {1, 2, 2, 3, 4}));
+		System.out.println("twoTwo([1, 2, 3, 4]) → " + twoTwo(new int[] {1, 2, 3, 4}));
+		System.out.println("twoTwo([2, 2]) → " + twoTwo(new int[] {2, 2}));
+		System.out.println("twoTwo([2, 2, 7]) → " + twoTwo(new int[] {2, 2, 7}));
+		System.out.println("twoTwo([2, 2, 7, 2, 1]) → " + twoTwo(new int[] {2, 2, 7, 2, 1}));
+		System.out.println("twoTwo([4, 2, 2, 2]) → " + twoTwo(new int[] {4, 2, 2, 2}));
+		System.out.println("twoTwo([2, 2, 2]) → " + twoTwo(new int[] {2, 2, 2}));
+		System.out.println("twoTwo([1, 2]) → " + twoTwo(new int[] {1, 2}));
+		System.out.println("twoTwo([2]) → " + twoTwo(new int[] {2}));
+		System.out.println("twoTwo([1]) → " + twoTwo(new int[] {1}));
+		System.out.println("twoTwo([]) → " + twoTwo(new int[] {}));
+		System.out.println("twoTwo([5, 2, 2, 3]) → " + twoTwo(new int[] {5, 2, 2, 3}));
+		System.out.println("twoTwo([2, 2, 5, 2]) → " + twoTwo(new int[] {2, 2, 5, 2}));
 	}
 }
