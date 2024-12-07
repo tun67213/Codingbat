@@ -926,5 +926,18 @@ public class Array_2
 		System.out.println("evenOdd([1, 2]) → " + Arrays.toString(evenOdd(new int[] {1, 2})));
 		System.out.println("evenOdd([2, 1]) → " + Arrays.toString(evenOdd(new int[] {2, 1})));
 		System.out.println("evenOdd([]) → " + Arrays.toString(evenOdd(new int[] {})));
+		printFunction("fizzBuzz");
+		System.out.println("fizzBuzz(1, 6) → " + toString(fizzBuzz(1, 6)));
+		System.out.println("fizzBuzz(1, 8) → " + toString(fizzBuzz(1, 8)));
+		System.out.println("fizzBuzz(1, 11) → " + toString(fizzBuzz(1, 11)));
+		System.out.println("fizzBuzz(1, 16) → " + toString(fizzBuzz(1, 16)));
+		System.out.println("fizzBuzz(1, 4) → " + toString(fizzBuzz(1, 4)));
+		System.out.println("fizzBuzz(1, 2) → " + toString(fizzBuzz(1, 2)));
+		System.out.println("fizzBuzz(50, 56) → " + toString(fizzBuzz(50, 56)));
+		System.out.println("fizzBuzz(15, 17) → " + toString(fizzBuzz(15, 17)));
+		System.out.println("fizzBuzz(30, 36) → " + toString(fizzBuzz(30, 36)));
+		System.out.println("fizzBuzz(1000, 1006) → " + toString(fizzBuzz(1000, 1006)));
+		System.out.println("fizzBuzz(99, 102) → " + toString(fizzBuzz(99, 102)));
+		System.out.println("fizzBuzz(14, 20) → " + toString(fizzBuzz(14, 20)));
 	}
 }
