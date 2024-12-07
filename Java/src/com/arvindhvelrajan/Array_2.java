@@ -794,5 +794,16 @@ public class Array_2
 		System.out.println("post4([2, 4, 1, 4, 3, 2]) → " + Arrays.toString(post4(new int[] {2, 4, 1, 4, 3, 2})));
 		System.out.println("post4([4, 1, 4, 2, 2, 2]) → " + Arrays.toString(post4(new int[] {4, 1, 4, 2, 2, 2})));
 		System.out.println("post4([3, 4, 3, 2]) → " + Arrays.toString(post4(new int[] {3, 4, 3, 2})));
+		printFunction("notAlone");
+		System.out.println("notAlone([1, 2, 3], 2) → " + Arrays.toString(notAlone(new int[] {1, 2, 3}, 2)));
+		System.out.println("notAlone([1, 2, 3, 2, 5, 2], 2) → " + Arrays.toString(notAlone(new int[] {1, 2, 3, 2, 5, 2}, 2)));
+		System.out.println("notAlone([3, 4], 3) → " + Arrays.toString(notAlone(new int[] {3, 4}, 3)));
+		System.out.println("notAlone([3, 3], 3) → " + Arrays.toString(notAlone(new int[] {3, 3}, 3)));
+		System.out.println("notAlone([1, 3, 1, 2], 1) → " + Arrays.toString(notAlone(new int[] {1, 3, 1, 2}, 1)));
+		System.out.println("notAlone([3], 3) → " + Arrays.toString(notAlone(new int[] {3}, 3)));
+		System.out.println("notAlone([], 3) → " + Arrays.toString(notAlone(new int[] {}, 3)));
+		System.out.println("notAlone([7, 1, 6], 1) → " + Arrays.toString(notAlone(new int[] {7, 1, 6}, 1)));
+		System.out.println("notAlone([1, 1, 1], 1) → " + Arrays.toString(notAlone(new int[] {1, 1, 1}, 1)));
+		System.out.println("notAlone([1, 1, 1, 2], 1) → " + Arrays.toString(notAlone(new int[] {1, 1, 1, 2}, 1)));
 	}
 }
