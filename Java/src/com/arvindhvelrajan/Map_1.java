@@ -177,5 +177,16 @@ public class Map_1
 		System.out.println("mapAB2({\"a\": \"\", \"b\": \"\", \"c\": \"ccc\"}) → " + mapAB2(new HashMap<>(Map.of("a", "", "b", "", "c", "ccc"))).toString());
 		System.out.println("mapAB2({}) → " + mapAB2(new HashMap<>(Map.of())));
 		System.out.println("mapAB2({\"a\": \"a\", \"b\": \"b\", \"z\": \"zebra\"}) → " + mapAB2(new HashMap<>(Map.of("a", "a", "b", "b", "z", "zebra"))).toString());
+		printFunction("mapAB3");
+		System.out.println("mapAB3({\"a\": \"aaa\", \"c\": \"cake\"}) → " + mapAB3(new HashMap<>(Map.of("a", "aaa", "c", "cake"))).toString());
+		System.out.println("mapAB3({\"b\": \"bbb\", \"c\": \"cake\"}) → " + mapAB3(new HashMap<>(Map.of("b", "bbb", "c", "cake"))).toString());
+		System.out.println("mapAB3({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) → " + mapAB3(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "cake"))).toString());
+		System.out.println("mapAB3({\"ccc\": \"ccc\"}) → " + mapAB3(new HashMap<>(Map.of("ccc", "ccc"))).toString());
+		System.out.println("mapAB3({\"c\": \"a\", \"d\": \"b\"}) → " + mapAB3(new HashMap<>(Map.of("c", "a", "d", "b"))).toString());
+		System.out.println("mapAB3({}) → " + mapAB3(new HashMap<>(Map.of())));
+		System.out.println("mapAB3({\"a\": \"\"}) → " + mapAB3(new HashMap<>(Map.of("a", ""))).toString());
+		System.out.println("mapAB3({\"b\": \"\"}) → " + mapAB3(new HashMap<>(Map.of("b", ""))).toString());
+		System.out.println("mapAB3({\"a\": \"\", \"b\", \"\"}) → " + mapAB3(new HashMap<>(Map.of("a", "", "b", ""))).toString());
+		System.out.println("mapAB3({\"aa\": \"aa\", \"a\": \"apple\", \"z\": \"zzz\"}) → " + mapAB3(new HashMap<>(Map.of("aa", "aa", "a", "apple", "z", "zzz"))));
 	}
 }
