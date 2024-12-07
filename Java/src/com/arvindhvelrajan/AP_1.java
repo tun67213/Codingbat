@@ -16,6 +16,6 @@ public class AP_1
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
