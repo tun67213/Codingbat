@@ -718,5 +718,17 @@ public class Array_2
 		System.out.println("shiftLeft([1, 1, 2, 2, 4]) → " + Arrays.toString(shiftLeft(new int[] {1, 1, 2, 2, 4})));
 		System.out.println("shiftLeft([1, 1, 1]) → " + Arrays.toString(shiftLeft(new int[] {1, 1, 1})));
 		System.out.println("shiftLeft([1, 2, 3]) → " + Arrays.toString(shiftLeft(new int[] {1, 2, 3})));
+		printFunction("tenRun");
+		System.out.println("tenRun([2, 10, 3, 4, 20, 5]) → " + Arrays.toString(tenRun(new int[] {2, 10, 3, 4, 20, 5})));
+		System.out.println("tenRun([10, 1, 20, 2]) → " + Arrays.toString(tenRun(new int[] {10, 1, 20, 2})));
+		System.out.println("tenRun([10, 1, 9, 20]) → " + Arrays.toString(tenRun(new int[] {10, 1, 9, 20})));
+		System.out.println("tenRun([1, 2, 50, 1]) → " + Arrays.toString(tenRun(new int[] {1, 2, 50, 1})));
+		System.out.println("tenRun([1, 20, 50, 1]) → " + Arrays.toString(tenRun(new int[] {1, 20, 50, 1})));
+		System.out.println("tenRun([10, 10]) → " + Arrays.toString(tenRun(new int[] {10, 10})));
+		System.out.println("tenRun([10, 2]) → " + Arrays.toString(tenRun(new int[] {10, 2})));
+		System.out.println("tenRun([0, 2]) → " + Arrays.toString(tenRun(new int[] {0, 2})));
+		System.out.println("tenRun([1, 2]) → " + Arrays.toString(tenRun(new int[] {1, 2})));
+		System.out.println("tenRun([1]) → " + Arrays.toString(tenRun(new int[] {1})));
+		System.out.println("tenRun([]) → " + Arrays.toString(tenRun(new int[] {})));
 	}
 }
