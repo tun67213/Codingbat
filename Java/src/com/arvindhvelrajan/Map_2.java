@@ -34,5 +34,11 @@ public class Map_2
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("word0");
+		System.out.println("word0([\"a\", \"b\", \"a\", \"b\"]) → " + word0(new String[] {"a", "b", "a", "b"}).toString());
+		System.out.println("word0([\"a\", \"b\", \"a\", \"c\", \"b\"]) → " + word0(new String[] {"a", "b", "a", "c", "b"}).toString());
+		System.out.println("word0([\"c\", \"b\", \"a\"]) → " + word0(new String[] {"c", "b", "a"}).toString());
+		System.out.println("word0([\"c\", \"c\", \"c\", \"c\"]) → " + word0(new String[] {"c", "c", "c", "c"}).toString());
+		System.out.println("word0([]) → " + word0(new String[] {}).toString());
 	}
 }
