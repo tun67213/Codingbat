@@ -33,6 +33,6 @@ public class Map_2
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
