@@ -896,5 +896,15 @@ public class Array_2
 		System.out.println("zeroMax([7, 0, 4, 3, 0, 1]) → " + Arrays.toString(zeroMax(new int[] {7, 0, 4, 3, 0, 1})));
 		System.out.println("zeroMax([7, 0, 4, 3, 0, 0]) → " + Arrays.toString(zeroMax(new int[] {7, 0, 4, 3, 0, 0})));
 		System.out.println("zeroMax([7, 0, 1, 0, 0, 7]) → " + Arrays.toString(zeroMax(new int[] {7, 0, 1, 0, 0, 7})));
+		printFunction("evenOdd");
+		System.out.println("evenOdd([1, 0, 1, 0, 0, 1, 1]) → " + Arrays.toString(evenOdd(new int[] {1, 0, 1, 0, 0, 1, 1})));
+		System.out.println("evenOdd([3, 3, 2]) → " + Arrays.toString(evenOdd(new int[] {3, 3, 2})));
+		System.out.println("evenOdd([2, 2, 2]) → " + Arrays.toString(evenOdd(new int[] {2, 2, 2})));
+		System.out.println("evenOdd([3, 2, 2]) → " + Arrays.toString(evenOdd(new int[] {3, 2, 2})));
+		System.out.println("evenOdd([1, 1, 0, 1, 0]) → " + Arrays.toString(evenOdd(new int[] {1, 1, 0, 1, 0})));
+		System.out.println("evenOdd([1]) → " + Arrays.toString(evenOdd(new int[] {1})));
+		System.out.println("evenOdd([1, 2]) → " + Arrays.toString(evenOdd(new int[] {1, 2})));
+		System.out.println("evenOdd([2, 1]) → " + Arrays.toString(evenOdd(new int[] {2, 1})));
+		System.out.println("evenOdd([]) → " + Arrays.toString(evenOdd(new int[] {})));
 	}
 }
