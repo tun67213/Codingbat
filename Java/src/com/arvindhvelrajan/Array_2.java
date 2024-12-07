@@ -769,5 +769,16 @@ public class Array_2
 		System.out.println("tenRun([1, 2, 1, 4]) → " + Arrays.toString(tenRun(new int[] {1, 2, 1, 4})));
 		System.out.println("tenRun([2, 1, 4, 2]) → " + Arrays.toString(tenRun(new int[] {2, 1, 4, 2})));
 		System.out.println("tenRun([2, 1, 2, 1, 4, 2]) → " + Arrays.toString(tenRun(new int[] {2, 1, 2, 1, 4, 2})));
+		printFunction("post4");
+		System.out.println("post4([2, 4, 1, 2]) → " + Arrays.toString(post4(new int[] {2, 4, 1, 2})));
+		System.out.println("post4([4, 1, 4, 2]) → " + Arrays.toString(post4(new int[] {4, 1, 4, 2})));
+		System.out.println("post4([4, 4, 1, 2, 3]) → " + Arrays.toString(post4(new int[] {4, 4, 1, 2, 3})));
+		System.out.println("post4([4, 2]) → " + Arrays.toString(post4(new int[] {4, 2})));
+		System.out.println("post4([4, 4, 3]) → " + Arrays.toString(post4(new int[] {4, 4, 3})));
+		System.out.println("post4([4, 4]) → " + Arrays.toString(post4(new int[] {4, 4})));
+		System.out.println("post4([4]) → " + Arrays.toString(post4(new int[] {4})));
+		System.out.println("post4([2, 4, 1, 4, 3, 2]) → " + Arrays.toString(post4(new int[] {2, 4, 1, 4, 3, 2})));
+		System.out.println("post4([4, 1, 4, 2, 2, 2]) → " + Arrays.toString(post4(new int[] {4, 1, 4, 2, 2, 2})));
+		System.out.println("post4([3, 4, 3, 2]) → " + Arrays.toString(post4(new int[] {3, 4, 3, 2})));
 	}
 }
