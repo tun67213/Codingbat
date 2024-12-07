@@ -819,5 +819,17 @@ public class Array_2
 		System.out.println("notAlone([7, 1, 6], 1) → " + Arrays.toString(notAlone(new int[] {7, 1, 6}, 1)));
 		System.out.println("notAlone([1, 1, 1], 1) → " + Arrays.toString(notAlone(new int[] {1, 1, 1}, 1)));
 		System.out.println("notAlone([1, 1, 1, 2], 1) → " + Arrays.toString(notAlone(new int[] {1, 1, 1, 2}, 1)));
+		printFunction("zeroFront");
+		System.out.println("zeroFront([1, 0, 0, 1]) → " + Arrays.toString(zeroFront(new int[] {1, 0, 0, 1})));
+		System.out.println("zeroFront([0, 1, 1, 0, 1]) → " + Arrays.toString(zeroFront(new int[] {0, 1, 1, 0, 1})));
+		System.out.println("zeroFront([1, 0]) → " + Arrays.toString(zeroFront(new int[] {1, 0})));
+		System.out.println("zeroFront([0, 1]) → " + Arrays.toString(zeroFront(new int[] {0, 1})));
+		System.out.println("zeroFront([1, 1, 1, 0]) → " + Arrays.toString(zeroFront(new int[] {1, 1, 1, 0})));
+		System.out.println("zeroFront([2, 2, 2, 2]) → " + Arrays.toString(zeroFront(new int[] {2, 2, 2, 2})));
+		System.out.println("zeroFront([0, 0, 1, 0]) → " + Arrays.toString(zeroFront(new int[] {0, 0, 1, 0})));
+		System.out.println("zeroFront([-1, 0, 0, -1, 0]) → " + Arrays.toString(zeroFront(new int[] {-1, 0, 0, -1, 0})));
+		System.out.println("zeroFront([0, -3, 0, -3]) → " + Arrays.toString(zeroFront(new int[] {0, -3, 0, -3})));
+		System.out.println("zeroFront([]) → " + Arrays.toString(zeroFront(new int[] {})));
+		System.out.println("zeroFront([9, 9, 0, 9, 0, 9]) → " + Arrays.toString(zeroFront(new int[] {9, 9, 0, 9, 0, 9})));
 	}
 }
