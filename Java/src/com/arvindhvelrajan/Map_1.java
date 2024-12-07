@@ -50,11 +50,11 @@ public class Map_1
 	{
 		welcome();
 		printFunction("mapBully");
-		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) → " + mapBully(new HashMap<String, String>(Map.of("a", "candy", "b", "dirt"))).toString());
-		System.out.println("mapBully({\"a\": \"candy\"}) → " + mapBully(new HashMap<String, String>(Map.of("a", "candy"))).toString());
-		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\", \"meh\"}) → " + mapBully(new HashMap<String, String>(Map.of("a", "candy", "b", "carrot", "c", "meh"))).toString());
-		System.out.println("mapBully({\"b\": \"carrot\"}) → " + mapBully(new HashMap<String, String>(Map.of("b", "carrot"))).toString());
-		System.out.println("mapBully({\"c\": \"meh\"}) → " + mapBully(new HashMap<String, String>(Map.of("c", "meh"))).toString());
-		System.out.println("mapBully({\"a\": \"sparkle\", \"c\": \"meh\"}) → " + mapBully(new HashMap<String, String>(Map.of("a", "sparkle", "c", "meh"))).toString());
+		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) → " + mapBully(new HashMap<>(Map.of("a", "candy", "b", "dirt"))).toString());
+		System.out.println("mapBully({\"a\": \"candy\"}) → " + mapBully(new HashMap<>(Map.of("a", "candy"))).toString());
+		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\", \"meh\"}) → " + mapBully(new HashMap<>(Map.of("a", "candy", "b", "carrot", "c", "meh"))).toString());
+		System.out.println("mapBully({\"b\": \"carrot\"}) → " + mapBully(new HashMap<>(Map.of("b", "carrot"))).toString());
+		System.out.println("mapBully({\"c\": \"meh\"}) → " + mapBully(new HashMap<>(Map.of("c", "meh"))).toString());
+		System.out.println("mapBully({\"a\": \"sparkle\", \"c\": \"meh\"}) → " + mapBully(new HashMap<>(Map.of("a", "sparkle", "c", "meh"))).toString());
 	}
 }
