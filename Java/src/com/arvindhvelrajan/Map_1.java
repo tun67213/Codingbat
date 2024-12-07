@@ -56,5 +56,11 @@ public class Map_1
 		System.out.println("mapBully({\"b\": \"carrot\"}) → " + mapBully(new HashMap<>(Map.of("b", "carrot"))).toString());
 		System.out.println("mapBully({\"c\": \"meh\"}) → " + mapBully(new HashMap<>(Map.of("c", "meh"))).toString());
 		System.out.println("mapBully({\"a\": \"sparkle\", \"c\": \"meh\"}) → " + mapBully(new HashMap<>(Map.of("a", "sparkle", "c", "meh"))).toString());
+		printFunction("mapShare");
+		System.out.println("mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"}) → " + mapShare(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "ccc"))).toString());
+		System.out.println("mapShare({\"b\": \"xyz\", \"c\": \"ccc\"}) → " + mapShare(new HashMap<>(Map.of("b", "xyz", "c", "ccc"))).toString());
+		System.out.println("mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) → " + mapShare(new HashMap<>(Map.of("a", "aaa", "c", "meh", "d", "hi"))).toString());
+		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"z\": \"zzz\"}) → " + mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "z", "zzz"))).toString());
+		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"d\": \"ddd\", \"e\": \"everything\"}) → " + mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "d", "ddd", "e", "everything"))).toString());
 	}
 }
