@@ -18,6 +18,6 @@ public class Map_1
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
