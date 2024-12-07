@@ -175,5 +175,12 @@ public class Array_3
 		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [-1, 0, 3, 12]) → " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {-1, 0, 3, 12}));
 		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [0, 3, 12, 14]) → " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {0, 3, 12, 14}));
 		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [-1, 10, 11]) → " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {-1, 10, 11}));
+		printFunction("squareUp");
+		System.out.println("squareUp(3) → " + Arrays.toString(squareUp(3)));
+		System.out.println("squareUp(2) → " + Arrays.toString(squareUp(2)));
+		System.out.println("squareUp(4) → " + Arrays.toString(squareUp(4)));
+		System.out.println("squareUp(1) → " + Arrays.toString(squareUp(1)));
+		System.out.println("squareUp(0) → " + Arrays.toString(squareUp(0)));
+		System.out.println("squareUp(6) → " + Arrays.toString(squareUp(6)));
 	}
 }
