@@ -845,5 +845,16 @@ public class Array_2
 		System.out.println("zeroFront([0, -3, 0, -3]) → " + Arrays.toString(zeroFront(new int[] {0, -3, 0, -3})));
 		System.out.println("zeroFront([]) → " + Arrays.toString(zeroFront(new int[] {})));
 		System.out.println("zeroFront([9, 9, 0, 9, 0, 9]) → " + Arrays.toString(zeroFront(new int[] {9, 9, 0, 9, 0, 9})));
+		printFunction("withoutTen");
+		System.out.println("withoutTen([1, 10, 10, 2]) → " + Arrays.toString(withoutTen(new int[] {1, 10, 10, 2})));
+		System.out.println("withoutTen([10, 2, 10]) → " + Arrays.toString(withoutTen(new int[] {10, 2, 10})));
+		System.out.println("withoutTen([1, 99, 10]) → " + Arrays.toString(withoutTen(new int[] {1, 99, 10})));
+		System.out.println("withoutTen([10, 13, 10, 14]) → " + Arrays.toString(withoutTen(new int[] {10, 13, 10, 14})));
+		System.out.println("withoutTen([10, 13, 10, 14, 10]) → " + Arrays.toString(withoutTen(new int[] {10, 13, 10, 14, 10})));
+		System.out.println("withoutTen([10, 10, 3]) → " + Arrays.toString(withoutTen(new int[] {10, 10, 3})));
+		System.out.println("withoutTen([1]) → " + Arrays.toString(withoutTen(new int[] {1})));
+		System.out.println("withoutTen([13, 1]) → " + Arrays.toString(withoutTen(new int[] {13, 1})));
+		System.out.println("withoutTen([10]) → " + Arrays.toString(withoutTen(new int[] {10})));
+		System.out.println("withoutTen([]) → " + Arrays.toString(withoutTen(new int[] {})));
 	}
 }
