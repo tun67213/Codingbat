@@ -677,5 +677,12 @@ public class Array_2
 		System.out.println("tripleUp([10, 9, 8, -100, -99, 99, 100]) → " + tripleUp(new int[] {10, 9, 8, -100, -99, 99, 100}));
 		System.out.println("tripleUp([-100, -99, -99, 100, 101, 102]) → " + tripleUp(new int[] {-100, -99, -99, 100, 101, 102}));
 		System.out.println("tripleUp([2, 3, 5, 6, 8, 9, 2, 3]) → " + tripleUp(new int[] {2, 3, 5, 6, 8, 9, 2, 3}));
+		printFunction("fizzArray3");
+		System.out.println("fizzArray3(5, 10) → " + Arrays.toString(fizzArray3(5, 10)));
+		System.out.println("fizzArray3(11, 18) → " + Arrays.toString(fizzArray3(11, 18)));
+		System.out.println("fizzArray3(1, 3) → " + Arrays.toString(fizzArray3(1, 3)));
+		System.out.println("fizzArray3(1, 2) → " + Arrays.toString(fizzArray3(1, 2)));
+		System.out.println("fizzArray3(1, 1) → " + Arrays.toString(fizzArray3(1, 1)));
+		System.out.println("fizzArray3(1000, 1005) → " + Arrays.toString(fizzArray3(1000, 1005)));
 	}
 }
