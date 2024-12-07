@@ -744,5 +744,16 @@ public class Array_2
 		System.out.println("tenRun([1, 2]) → " + Arrays.toString(tenRun(new int[] {1, 2})));
 		System.out.println("tenRun([1]) → " + Arrays.toString(tenRun(new int[] {1})));
 		System.out.println("tenRun([]) → " + Arrays.toString(tenRun(new int[] {})));
+		printFunction("pre4");
+		System.out.println("tenRun([1, 2, 4, 1]) → " + Arrays.toString(tenRun(new int[] {1, 2, 4, 1})));
+		System.out.println("tenRun([3, 1, 4]) → " + Arrays.toString(tenRun(new int[] {3, 1, 4})));
+		System.out.println("tenRun([1, 4, 4]) → " + Arrays.toString(tenRun(new int[] {1, 4, 4})));
+		System.out.println("tenRun([1, 4, 4, 2]) → " + Arrays.toString(tenRun(new int[] {1, 4, 4, 2})));
+		System.out.println("tenRun([1, 3, 4, 2, 4]) → " + Arrays.toString(tenRun(new int[] {1, 3, 4, 2, 4})));
+		System.out.println("tenRun([4, 4]) → " + Arrays.toString(tenRun(new int[] {4, 4})));
+		System.out.println("tenRun([3, 3, 4]) → " + Arrays.toString(tenRun(new int[] {3, 3, 4})));
+		System.out.println("tenRun([1, 2, 1, 4]) → " + Arrays.toString(tenRun(new int[] {1, 2, 1, 4})));
+		System.out.println("tenRun([2, 1, 4, 2]) → " + Arrays.toString(tenRun(new int[] {2, 1, 4, 2})));
+		System.out.println("tenRun([2, 1, 2, 1, 4, 2]) → " + Arrays.toString(tenRun(new int[] {2, 1, 2, 1, 4, 2})));
 	}
 }
