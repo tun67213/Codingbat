@@ -566,5 +566,17 @@ public class Array_2
 		System.out.println("modThree([9, 7, 2, 9]) → " + modThree(new int[] {9, 7, 2, 9}));
 		System.out.println("modThree([9, 7, 2, 9, 2, 2]) → " + modThree(new int[] {9, 7, 2, 9, 2, 2}));
 		System.out.println("modThree([9, 7, 2, 9, 2, 2, 6]) → " + modThree(new int[] {9, 7, 2, 9, 2, 2, 6}));
+		printFunction("haveThree");
+		System.out.println("haveThree([3, 1, 3, 1, 3]) → " + haveThree(new int[] {3, 1, 3, 1, 3}));
+		System.out.println("haveThree([3, 1, 3, 3]) → " + haveThree(new int[] {3, 1, 3, 3}));
+		System.out.println("haveThree([3, 4, 3, 3, 4]) → " + haveThree(new int[] {3, 4, 3, 3, 4}));
+		System.out.println("haveThree([1, 3, 1, 3, 1, 2]) → " + haveThree(new int[] {1, 3, 1, 3, 1, 2}));
+		System.out.println("haveThree([1, 3, 3, 1, 3]) → " + haveThree(new int[] {1, 3, 3, 1, 3}));
+		System.out.println("haveThree([1, 3, 1, 3, 1, 3, 4, 3]) → " + haveThree(new int[] {1, 3, 1, 3, 1, 3, 4, 3}));
+		System.out.println("haveThree([3, 4, 3, 4, 3, 4, 4]) → " + haveThree(new int[] {3, 4, 3, 4, 3, 4, 4}));
+		System.out.println("haveThree([3, 3, 3]) → " + haveThree(new int[] {3, 3, 3}));
+		System.out.println("haveThree([1, 3]) → " + haveThree(new int[] {1, 3}));
+		System.out.println("haveThree([3]) → " + haveThree(new int[] {3}));
+		System.out.println("haveThree([1]) → " + haveThree(new int[] {1}));
 	}
 }
