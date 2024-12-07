@@ -1,5 +1,7 @@
 package com.arvindhvelrajan;
 
+import java.util.Map;
+
 /**
  * @author arvindhvelrajan
  * @code This class is to demonstrate the implementation for all functions in AP-1 from codingbat.com
