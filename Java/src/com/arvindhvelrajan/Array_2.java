@@ -697,5 +697,13 @@ public class Array_2
 		System.out.println("fizzArray3(1, 2) → " + Arrays.toString(fizzArray3(1, 2)));
 		System.out.println("fizzArray3(1, 1) → " + Arrays.toString(fizzArray3(1, 1)));
 		System.out.println("fizzArray3(1000, 1005) → " + Arrays.toString(fizzArray3(1000, 1005)));
+		printFunction("shiftLeft");
+		System.out.println("shiftLeft([6, 2, 5, 3]) → " + Arrays.toString(shiftLeft(new int[] {6, 2, 5, 3})));
+		System.out.println("shiftLeft([1, 2]) → " + Arrays.toString(shiftLeft(new int[] {1, 2})));
+		System.out.println("shiftLeft([1]) → " + Arrays.toString(shiftLeft(new int[] {1})));
+		System.out.println("shiftLeft([]) → " + Arrays.toString(shiftLeft(new int[] {})));
+		System.out.println("shiftLeft([1, 1, 2, 2, 4]) → " + Arrays.toString(shiftLeft(new int[] {1, 1, 2, 2, 4})));
+		System.out.println("shiftLeft([1, 1, 1]) → " + Arrays.toString(shiftLeft(new int[] {1, 1, 1})));
+		System.out.println("shiftLeft([1, 2, 3]) → " + Arrays.toString(shiftLeft(new int[] {1, 2, 3})));
 	}
 }
