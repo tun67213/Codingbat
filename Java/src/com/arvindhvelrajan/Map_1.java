@@ -115,5 +115,12 @@ public class Map_1
 		System.out.println("topping1({\"pancake\": \"syrup\"}) → " + topping1(new HashMap<>(Map.of("pancake", "syrup"))).toString());
 		System.out.println("topping1({\"bread\": \"dirt\"}, {\"ice cream\", \"strawberries\"}) → " + topping1(new HashMap<>(Map.of("bread", "dirt", "ice cream", "strawberries"))).toString());
 		System.out.println("topping1({\"bread\": \"jam\"}, {\"ice cream\", \"strawberries\", \"salad\", \"oil\"}) → " + topping1(new HashMap<>(Map.of("bread", "jam", "ice cream", "strawberries", "salad", "oil"))).toString());
+		printFunction("topping2");
+		System.out.println("topping2({\"ice cream\": \"cherry\"}) → " + topping2(new HashMap<>(Map.of("ice cream", "cherry"))).toString());
+		System.out.println("topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"}) → " + topping2(new HashMap<>(Map.of("spinach", "dirt", "ice cream", "cherry"))).toString());
+		System.out.println("topping2({\"yogurt\": \"salt\"}) → " + topping2(new HashMap<>(Map.of("yogurt", "salt"))).toString());
+		System.out.println("topping2({\"yogurt\": \"salt\", \"bread\": \"butter\"}) → " + topping2(new HashMap<>(Map.of("yogurt", "salt", "bread", "butter"))).toString());
+		System.out.println("topping2({}) → " + topping2(new HashMap<>(Map.of())).toString());
+		System.out.println("topping2({\"ice cream\": \"air\", \"salad\": \"oil\"}) → " + topping2(new HashMap<>(Map.of("ice cream", "air", "salad", "oil"))).toString());
 	}
 }
