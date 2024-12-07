@@ -869,5 +869,18 @@ public class Array_2
 		System.out.println("withoutTen([13, 1]) → " + Arrays.toString(withoutTen(new int[] {13, 1})));
 		System.out.println("withoutTen([10]) → " + Arrays.toString(withoutTen(new int[] {10})));
 		System.out.println("withoutTen([]) → " + Arrays.toString(withoutTen(new int[] {})));
+		printFunction("zeroMax");
+		System.out.println("zeroMax([0, 5, 0, 3]) → " + Arrays.toString(zeroMax(new int[] {0, 5, 0, 3})));
+		System.out.println("zeroMax([0, 4, 0, 3]) → " + Arrays.toString(zeroMax(new int[] {0, 4, 0, 3})));
+		System.out.println("zeroMax([0, 1, 0]) → " + Arrays.toString(zeroMax(new int[] {0, 1, 0})));
+		System.out.println("zeroMax([0, 1, 5]) → " + Arrays.toString(zeroMax(new int[] {0, 1, 5})));
+		System.out.println("zeroMax([0, 2, 0]) → " + Arrays.toString(zeroMax(new int[] {0, 2, 0})));
+		System.out.println("zeroMax([1]) → " + Arrays.toString(zeroMax(new int[] {1})));
+		System.out.println("zeroMax([0]) → " + Arrays.toString(zeroMax(new int[] {0})));
+		System.out.println("zeroMax([]) → " + Arrays.toString(zeroMax(new int[] {})));
+		System.out.println("zeroMax([7, 0, 4, 3, 0, 2]) → " + Arrays.toString(zeroMax(new int[] {7, 0, 4, 3, 0, 2})));
+		System.out.println("zeroMax([7, 0, 4, 3, 0, 1]) → " + Arrays.toString(zeroMax(new int[] {7, 0, 4, 3, 0, 1})));
+		System.out.println("zeroMax([7, 0, 4, 3, 0, 0]) → " + Arrays.toString(zeroMax(new int[] {7, 0, 4, 3, 0, 0})));
+		System.out.println("zeroMax([7, 0, 1, 0, 0, 7]) → " + Arrays.toString(zeroMax(new int[] {7, 0, 1, 0, 0, 7})));
 	}
 }
