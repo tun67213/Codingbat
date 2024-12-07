@@ -148,5 +148,19 @@ public class Array_3
 		System.out.println("canBalance([1, 2, 3, 1, 0, 1, 3]) → " + canBalance(new int[] {1, 2, 3, 1, 0, 1, 3}));
 		System.out.println("canBalance([1]) → " + canBalance(new int[] {1}));
 		System.out.println("canBalance([1, 1, 1, 2, 1]) → " + canBalance(new int[] {1, 1, 1, 2, 1}));
+		printFunction("linearIn");
+		System.out.println("linearIn([1, 2, 4, 6], [2, 4]) → " + linearIn(new int[] {1, 2, 4, 6}, new int[] {2, 4}));
+		System.out.println("linearIn([1, 2, 4, 6], [2, 3, 4]) → " + linearIn(new int[] {1, 2, 4, 6}, new int[] {2, 3, 4}));
+		System.out.println("linearIn([1, 2, 4, 4, 6], [2, 4]) → " + linearIn(new int[] {1, 2, 4, 4, 6}, new int[] {2, 4}));
+		System.out.println("linearIn([2, 2, 4, 4, 6, 6], [2, 4]) → " + linearIn(new int[] {2, 2, 4, 4, 6, 6}, new int[] {2, 4}));
+		System.out.println("linearIn([2, 2, 2, 2, 2], [2, 2]) → " + linearIn(new int[] {2, 2, 2, 2, 2}, new int[] {2, 2}));
+		System.out.println("linearIn([2, 2, 2, 2, 2], [2, 4]) → " + linearIn(new int[] {2, 2, 2, 2, 2}, new int[] {2, 4}));
+		System.out.println("linearIn([2, 2, 2, 2, 4], [2, 4]) → " + linearIn(new int[] {2, 2, 2, 2, 4}, new int[] {2, 4}));
+		System.out.println("linearIn([1, 2, 3], [2]) → " + linearIn(new int[] {1, 2, 3}, new int[] {2}));
+		System.out.println("linearIn([1, 2, 3], [-1]) → " + linearIn(new int[] {1, 2, 3}, new int[] {-1}));
+		System.out.println("linearIn([1, 2, 3], []) → " + linearIn(new int[] {1, 2, 3}, new int[] {}));
+		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [-1, 0, 3, 12]) → " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {-1, 0, 3, 12}));
+		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [0, 3, 12, 14]) → " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {0, 3, 12, 14}));
+		System.out.println("linearIn([-1, 0, 3, 3, 3, 10, 12], [-1, 10, 11]) → " + linearIn(new int[] {-1, 0, 3, 3, 3, 10, 12}, new int[] {-1, 10, 11}));
 	}
 }
