@@ -30,6 +30,6 @@ public class Array_3
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
