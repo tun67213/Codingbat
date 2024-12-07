@@ -201,6 +201,6 @@ public class Map_1
 		System.out.println("mapAB3({\"a\": \"\"}) → " + mapAB3(new HashMap<>(Map.of("a", ""))).toString());
 		System.out.println("mapAB3({\"b\": \"\"}) → " + mapAB3(new HashMap<>(Map.of("b", ""))).toString());
 		System.out.println("mapAB3({\"a\": \"\", \"b\", \"\"}) → " + mapAB3(new HashMap<>(Map.of("a", "", "b", ""))).toString());
-		System.out.println("mapAB3({\"aa\": \"aa\", \"a\": \"apple\", \"z\": \"zzz\"}) → " + mapAB3(new HashMap<>(Map.of("aa", "aa", "a", "apple", "z", "zzz"))));
+		System.out.println("mapAB3({\"aa\": \"aa\", \"a\": \"apple\", \"z\": \"zzz\"}) → " + mapAB3(new HashMap<>(Map.of("aa", "aa", "a", "apple", "z", "zzz"))).toString());
 	}
 }
