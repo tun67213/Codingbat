@@ -95,5 +95,11 @@ public class Map_1
 		System.out.println("mapAB({\"c\": \"meh\"}) → " + mapAB(new HashMap<>(Map.of("c", "meh"))).toString());
 		System.out.println("mapAB({\"a\": \"aaa\", \"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) → " + mapAB(new HashMap<>(Map.of("a", "aaa", "ab", "nope", "b", "bbb", "c", "ccc"))).toString());
 		System.out.println("mapAB({\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) → " + mapAB(new HashMap<>(Map.of("ab", "nope", "b", "bbb", "c", "ccc"))).toString());
+		printFunction("topping1");
+		System.out.println("topping1({\"ice cream\": \"peanuts\"}) → " + topping1(new HashMap<>(Map.of("ice cream", "peanuts"))).toString());
+		System.out.println("topping1({}) → " + topping1(new HashMap<>(Map.of())).toString());
+		System.out.println("topping1({\"pancake\": \"syrup\"}) → " + topping1(new HashMap<>(Map.of("pancake", "syrup"))).toString());
+		System.out.println("topping1({\"bread\": \"dirt\"}, {\"ice cream\", \"strawberries\"}) → " + topping1(new HashMap<>(Map.of("bread", "dirt", "ice cream", "strawberries"))).toString());
+		System.out.println("topping1({\"bread\": \"jam\"}, {\"ice cream\", \"strawberries\", \"salad\", \"oil\"}) → " + topping1(new HashMap<>(Map.of("bread", "jam", "ice cream", "strawberries", "salad", "oil"))).toString());
 	}
 }
