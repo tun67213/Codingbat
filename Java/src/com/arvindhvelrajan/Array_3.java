@@ -218,5 +218,21 @@ public class Array_3
 		System.out.println("seriesUp(1) → " + Arrays.toString(seriesUp(1)));
 		System.out.println("seriesUp(0) → " + Arrays.toString(seriesUp(0)));
 		System.out.println("seriesUp(6) → " + Arrays.toString(seriesUp(6)));
+		printFunction("maxMirror");
+		System.out.println("maxMirror([1, 2, 3, 8, 9, 3, 2, 1]) → " + maxMirror(new int[] {1, 2, 3, 8, 9, 3, 2, 1}));
+		System.out.println("maxMirror([1, 2, 1, 4]) → " + maxMirror(new int[] {1, 2, 1, 4}));
+		System.out.println("maxMirror([7, 1, 2, 9, 7, 2, 1]) → " + maxMirror(new int[] {7, 1, 2, 9, 7, 2, 1}));
+		System.out.println("maxMirror([21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9]) → " + maxMirror(new int[] {21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9}));
+		System.out.println("maxMirror([1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25]) → " + maxMirror(new int[] {1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25}));
+		System.out.println("maxMirror([1, 2, 3, 2, 1]) → " + maxMirror(new int[] {1, 2, 3, 2, 1}));
+		System.out.println("maxMirror([1, 2, 3, 3, 8]) → " + maxMirror(new int[] {1, 2, 3, 3, 8}));
+		System.out.println("maxMirror([1, 2, 7, 8, 1, 7, 2]) → " + maxMirror(new int[] {1, 2, 7, 8, 1, 7, 2}));
+		System.out.println("maxMirror([1, 1, 1]) → " + maxMirror(new int[] {1, 1, 1}));
+		System.out.println("maxMirror([1]) → " + maxMirror(new int[] {1}));
+		System.out.println("maxMirror([]) → " + maxMirror(new int[] {}));
+		System.out.println("maxMirror([9, 1, 1, 4, 2, 1, 1, 1]) → " + maxMirror(new int[] {9, 1, 1, 4, 2, 1, 1, 1}));
+		System.out.println("maxMirror([5, 9, 9, 4, 5, 4, 9, 9, 2]) → " + maxMirror(new int[] {5, 9, 9, 4, 5, 4, 9, 9, 2}));
+		System.out.println("maxMirror([5, 9, 9, 6, 5, 4, 9, 9, 2]) → " + maxMirror(new int[] {5, 9, 9, 6, 5, 4, 9, 9, 2}));
+		System.out.println("maxMirror([5, 9, 1, 6, 5, 4, 1, 9, 5]) → " + maxMirror(new int[] {5, 9, 1, 6, 5, 4, 1, 9, 5}));
 	}
 }
