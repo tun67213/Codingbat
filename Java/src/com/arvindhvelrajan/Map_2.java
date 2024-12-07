@@ -1,6 +1,6 @@
 package com.arvindhvelrajan;
 
-import com.arvindhvelrajan.UI_Functions.*;
+import static com.arvindhvelrajan.UI_Functions.*;
 import java.util.Map;
 
 /**
