@@ -30,6 +30,23 @@ public class Map_1
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
+	public String toString(Map<String, String> map)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("{");
+		for(Map.Entry<String, String> entry : map.entrySet())
+		{
+			buff.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\", ");
+		}
+		// Remove the trailing comma and space
+		if(buff.length() > 1)
+		{
+			buff.setLength(buff.length() - 2);
+		}
+		buff.append("}");
+		return buff.toString();
+	}
+
 	/**
 	 * Modify and return the given map as follows: if the key "a" has a value, set the key "b" to have that same value.
 	 * In all cases remove the key "c", leaving the rest of the map unchanged.
