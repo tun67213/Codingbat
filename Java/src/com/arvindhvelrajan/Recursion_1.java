@@ -325,5 +325,16 @@ public class Recursion_1
 		System.out.println("changeXY(\"xxx\") → \"" + changeXY("xxx") + "\"");
 		System.out.println("changeXY(\"yyhxyi\") → \"" + changeXY("yyhxyi") + "\"");
 		System.out.println("changeXY(\"hihi\") → \"" + changeXY("hihi") + "\"");
+		printFunction("changePi");
+		System.out.println("changePi(\"xpix\") → \"" + changePi("xpix") + "\"");
+		System.out.println("changePi(\"pipi\") → \"" + changePi("pipi") + "\"");
+		System.out.println("changePi(\"pip\") → \"" + changePi("pip") + "\"");
+		System.out.println("changePi(\"pi\") → \"" + changePi("pi") + "\"");
+		System.out.println("changePi(\"hip\") → \"" + changePi("hip") + "\"");
+		System.out.println("changePi(\"p\") → \"" + changePi("p") + "\"");
+		System.out.println("changePi(\"x\") → \"" + changePi("x") + "\"");
+		System.out.println("changePi(\"\") → \"" + changePi("") + "\"");
+		System.out.println("changePi(\"pixx\") → \"" + changePi("pixx") + "\"");
+		System.out.println("changePi(\"xyzzy\") → \"" + changePi("xyzzy") + "\"");
 	}
 }
