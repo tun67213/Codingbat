@@ -157,5 +157,17 @@ public class Map_2
 		System.out.println("firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"]) → " + map1.toString(firstChar(new String[] {"aa", "bb", "cc", "aAA", "cCC", "d"})));
 		System.out.println("firstChar([]) → " + map1.toString(firstChar(new String[] {})));
 		System.out.println("firstChar([\"apple\", \"bells\", \"salt\", \"aardvark\", \"bells\", \"sun\", \"zen\", \"bells\"]) → " + map1.toString(firstChar(new String[] {"apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells"})));
+		printFunction("wordAppend");
+		System.out.println("wordAppend([\"a\", \"b\", \"a\"]) → \"" + wordAppend(new String[] {"a", "b", "a"}) + "\"");
+		System.out.println("wordAppend([\"a\", \"b\", \"a\", \"c\", \"a\", \"d\", \"a\"]) → \"" + wordAppend(new String[] {"a", "b", "a", "c", "a", "d", "a"}) + "\"");
+		System.out.println("wordAppend([\"a\", \"\", \"a\"]) → \"" + wordAppend(new String[] {"a", "", "a"}) + "\"");
+		System.out.println("wordAppend([]) → \"" + wordAppend(new String[] {}) + "\"");
+		System.out.println("wordAppend([\"a\", \"b\", \"b\", \"a\", \"a\"]) → \"" + wordAppend(new String[] {"a", "b", "b", "a", "a"}) + "\"");
+		System.out.println("wordAppend([\"a\", \"b\", \"b\", \"b\", \"a\", \"c\", \"a\", \"a\"]) → \"" + wordAppend(new String[] {"a", "b", "b", "b", "a", "c", "a", "a"}) + "\"");
+		System.out.println("wordAppend([\"a\", \"b\", \"b\", \"b\", \"a\", \"c\", \"a\", \"a\", \"a\", \"b\", \"a\"]) → \"" + wordAppend(new String[] {"a", "b", "b", "b", "a", "c", "a", "a", "a", "b", "a"}) + "\"");
+		System.out.println("wordAppend([\"not\", \"and\", \"or\", \"and\", \"this\", \"and\", \"or\", \"that\", \"not\"]) → \"" + wordAppend(new String[] {"not", "and", "or", "and", "this", "and", "or", "that", "not"}) + "\"");
+		System.out.println("wordAppend([\"a\", \"b\", \"c\"]) → \"" + wordAppend(new String[] {"a", "b", "c"}) + "\"");
+		System.out.println("wordAppend([\"this\", \"or\", \"that\", \"and\", \"this\", \"and\", \"that\"]) → \"" + wordAppend(new String[] {"this", "or", "that", "and", "this", "and", "that"}) + "\"");
+		System.out.println("wordAppend([\"xx\", \"xx\", \"yy\", \"xx\", \"zz\", \"yy\", \"zz\", \"xx\"]) → \"" + wordAppend(new String[] {"xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx"}) + "\"");
 	}
 }
