@@ -80,5 +80,14 @@ public class Recursion_1
 		System.out.println("bunnyEars(12) → " + bunnyEars(12));
 		System.out.println("bunnyEars(50) → " + bunnyEars(50));
 		System.out.println("bunnyEars(234) → " + bunnyEars(234));
+		printFunction("fibonacci");
+		System.out.println("fibonacci(0) → " + fibonacci(0));
+		System.out.println("fibonacci(1) → " + fibonacci(1));
+		System.out.println("fibonacci(2) → " + fibonacci(2));
+		System.out.println("fibonacci(3) → " + fibonacci(3));
+		System.out.println("fibonacci(4) → " + fibonacci(4));
+		System.out.println("fibonacci(5) → " + fibonacci(5));
+		System.out.println("fibonacci(6) → " + fibonacci(6));
+		System.out.println("fibonacci(7) → " + fibonacci(7));
 	}
 }
