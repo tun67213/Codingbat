@@ -138,5 +138,10 @@ public class Map_2
 		System.out.println("wordCount([\"123\", \"0\", \"123\", \"1\"]) → " + toString(wordCount(new String[] {"123", "0", "123", "1"})));
 		System.out.println("wordCount([\"d\", \"a\", \"e\", \"d\", \"a\", \"d\", \"b\", \"b\", \"z\", \"a\", \"a\", \"b\", \"z\", \"x\", \"b\", \"f\", \"x\", \"two\", \"b\", \"one\", \"two\"]) → " + toString(wordCount(new String[] {"d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x", "b", "f", "x", "two", "b", "one", "two"})));
 		System.out.println("wordCount([\"apple\", \"banana\", \"apple\", \"apple\", \"tea\", \"coffee\", \"banana\"]) → " + toString(wordCount(new String[] {"apple", "banana", "apple", "apple", "tea", "coffee", "banana"})));
+		printFunction("firstChar");
+		System.out.println("firstChar([\"salt\", \"tea\", \"soda\", \"toast\"]) → " + map1.toString(firstChar(new String[] {"salt", "tea", "soda", "toast"})));
+		System.out.println("firstChar([\"aa\", \"bb\", \"cc\", \"aAA\", \"cCC\", \"d\"]) → " + map1.toString(firstChar(new String[] {"aa", "bb", "cc", "aAA", "cCC", "d"})));
+		System.out.println("firstChar([]) → " + map1.toString(firstChar(new String[] {})));
+		System.out.println("firstChar([\"apple\", \"bells\", \"salt\", \"aardvark\", \"bells\", \"sun\", \"zen\", \"bells\"]) → " + map1.toString(firstChar(new String[] {"apple", "bells", "salt", "aardvark", "bells", "sun", "zen", "bells"})));
 	}
 }
