@@ -590,5 +590,12 @@ public class Recursion_1
 		System.out.println("count11(\"1x111\") → " + count11("1x111"));
 		System.out.println("count11(\"1Hello1\") → " + count11("1Hello1"));
 		System.out.println("count11(\"Hello\") → " + count11("Hello"));
+		printFunction("stringClean");
+		System.out.println("stringClean(\"yyzzza\") → \"" + stringClean("yyzzza") + "\"");
+		System.out.println("stringClean(\"abbbcdd\") → \"" + stringClean("abbbcdd") + "\"");
+		System.out.println("stringClean(\"Hello\") → \"" + stringClean("Hello") + "\"");
+		System.out.println("stringClean(\"XXabcYY\") → \"" + stringClean("XXabcYY") + "\"");
+		System.out.println("stringClean(\"112ab445\") → \"" + stringClean("112ab445") + "\"");
+		System.out.println("stringClean(\"Hello Bookkeeper\") → \"" + stringClean("Hello Bookkeeper") + "\"");
 	}
 }
