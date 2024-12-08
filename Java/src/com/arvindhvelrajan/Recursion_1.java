@@ -30,5 +30,15 @@ public class Recursion_1
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("factorial");
+		System.out.println("factorial(1) → " + factorial(1));
+		System.out.println("factorial(2) → " + factorial(2));
+		System.out.println("factorial(3) → " + factorial(3));
+		System.out.println("factorial(4) → " + factorial(4));
+		System.out.println("factorial(5) → " + factorial(5));
+		System.out.println("factorial(6) → " + factorial(6));
+		System.out.println("factorial(7) → " + factorial(7));
+		System.out.println("factorial(8) → " + factorial(8));
+		System.out.println("factorial(12) → " + factorial(12));
 	}
 }
