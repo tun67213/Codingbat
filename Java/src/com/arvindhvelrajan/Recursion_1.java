@@ -392,5 +392,15 @@ public class Recursion_1
 		System.out.println("array6([2, 5], 0) → " + array6(new int[] {2, 5}, 0));
 		System.out.println("array6([1, 9, 4, 6, 6], 0) → " + array6(new int[] {1, 9, 4, 6, 6}, 0));
 		System.out.println("array6([2, 5, 6], 0) → " + array6(new int[] {2, 5, 6}, 0));
+		printFunction("array11");
+		System.out.println("array11([1, 2, 11], 0) → " + array11(new int[] {1, 2, 11}, 0));
+		System.out.println("array11([11, 11], 0) → " + array11(new int[] {11, 11}, 0));
+		System.out.println("array11([1, 2, 3, 4], 0) → " + array11(new int[] {1, 2, 3, 4}, 0));
+		System.out.println("array11([1, 11, 3, 11, 11], 0) → " + array11(new int[] {1, 11, 3, 11, 11}, 0));
+		System.out.println("array11([11], 0) → " + array11(new int[] {11}, 0));
+		System.out.println("array11([1], 0) → " + array11(new int[] {1}, 0));
+		System.out.println("array11([], 0) → " + array11(new int[] {}, 0));
+		System.out.println("array11([11, 2, 3, 4, 11, 5], 0) → " + array11(new int[] {11, 2, 3, 4, 11, 5}, 0));
+		System.out.println("array11([11, 5, 11], 0) → " + array11(new int[] {11, 5, 11}, 0));
 	}
 }
