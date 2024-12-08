@@ -3,6 +3,7 @@ package com.arvindhvelrajan;
 import static com.arvindhvelrajan.UI_Functions.*;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -121,6 +122,24 @@ public class Map_2
 	public String[] allSwap(String[] strings)
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	public String toString(String[] strings)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		for(int i = 0; i < strings.length; i++)
+		{
+			buff.append("\"");
+			buff.append(strings[i]);
+			buff.append("\"");
+			if(i != strings.length - 1)
+			{
+				buff.append(", ");
+			}
+		}
+		buff.append("]");
+		return buff.toString();
 	}
 
 	/**
