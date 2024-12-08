@@ -203,5 +203,23 @@ public class Recursion_1
 		System.out.println("count7(777576197) → " + count7(777576197));
 		System.out.println("count7(99999) → " + count7(99999));
 		System.out.println("count7(99799) → " + count7(99799));
+		printFunction("count8");
+		System.out.println("count8(8) → " + count8(8));
+		System.out.println("count8(818) → " + count8(818));
+		System.out.println("count8(8818) → " + count8(8818));
+		System.out.println("count8(8088) → " + count8(8088));
+		System.out.println("count8(123) → " + count8(123));
+		System.out.println("count8(81238) → " + count8(81238));
+		System.out.println("count8(88788) → " + count8(88788));
+		System.out.println("count8(8234) → " + count8(8234));
+		System.out.println("count8(2348) → " + count8(2348));
+		System.out.println("count8(23884) → " + count8(23884));
+		System.out.println("count8(0) → " + count8(0));
+		System.out.println("count8(1818188) → " + count8(1818188));
+		System.out.println("count8(8818181) → " + count8(8818181));
+		System.out.println("count8(188) → " + count8(188));
+		System.out.println("count8(88888) → " + count8(88888));
+		System.out.println("count8(9898) → " + count8(9898));
+		System.out.println("count8(78) → " + count8(78));
 	}
 }
