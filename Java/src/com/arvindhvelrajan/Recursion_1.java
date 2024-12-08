@@ -138,6 +138,18 @@ public class Recursion_1
 	}
 
 	/**
+	 * Given a string, compute recursively (no loops) the number of lowercase 'x' chars in the string.
+	 *
+	 * countX("xxhixx") → 4
+	 * countX("xhixhix") → 3
+	 * countX("hi") → 0
+	 */
+	public int countX(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
