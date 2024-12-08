@@ -258,5 +258,14 @@ public class Recursion_1
 		System.out.println("powerN(10, 1) → " + powerN(10, 1));
 		System.out.println("powerN(10, 2) → " + powerN(10, 2));
 		System.out.println("powerN(10, 3) → " + powerN(10, 3));
+		printFunction("countX");
+		System.out.println("countX(\"xxhixx\") → " + countX("xxhixx"));
+		System.out.println("countX(\"xhixhix\") → " + countX("xhixhix"));
+		System.out.println("countX(\"hi\") → " + countX("hi"));
+		System.out.println("countX(\"h\") → " + countX("h"));
+		System.out.println("countX(\"x\") → " + countX("x"));
+		System.out.println("countX(\"\") → " + countX(""));
+		System.out.println("countX(\"hihi\") → " + countX("hihi"));
+		System.out.println("countX(\"hiAAhi12hi\") → " + countX("hiAAhi12hi"));
 	}
 }
