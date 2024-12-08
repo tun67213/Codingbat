@@ -127,6 +127,22 @@ public class Map_2
 		buff.append("}");
 		return buff.toString();
 	}
+	public String toString(Map<String, Boolean> map)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("{");
+		for(Map.Entry<String, Boolean> entry : map.entrySet())
+		{
+			buff.append("\"").append(entry.getKey()).append("\": ").append(entry.getValue());
+			buff.append(", ");
+		}
+		if(buff.length() > 1)
+		{
+			buff.setLength(buff.length() - 2);
+		}
+		buff.append("}");
+		return buff.toString();
+	}
 
 	/**
 	 * @param args commandline arguments
