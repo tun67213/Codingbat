@@ -44,6 +44,19 @@ public class Map_2
 	}
 
 	/**
+	 * Given an array of non-empty strings, create and return a Map<String, String> as follows:
+	 * for each string add its first character as a key with its last character as the value.
+	 *
+	 * pairs(["code", "bug"]) → {"b": "g", "c": "e"}
+	 * pairs(["man", "moon", "main"]) → {"m": "n"}
+	 * pairs(["man", "moon", "good", "night"]) → {"g": "d", "m": "n", "n": "t"}
+	 */
+	public Map<String, String> pairs(String[] strings)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * The following function enables a readable output for the reader
 	 */
 	public String toString(Map<String, Integer> map)
