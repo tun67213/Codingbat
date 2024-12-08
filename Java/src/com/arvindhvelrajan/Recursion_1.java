@@ -302,5 +302,16 @@ public class Recursion_1
 		System.out.println("countHi(\"hiAAhi12hi\") → " + countHi("hiAAhi12hi"));
 		System.out.println("countHi(\"xhixhxihihhhih\") → " + countHi("xhixhxihihhhih"));
 		System.out.println("countHi(\"ship\") → " + countHi("ship"));
+		printFunction("changeXY");
+		System.out.println("changeXY(\"codex\") → \"" + changeXY("codex") + "\"");
+		System.out.println("changeXY(\"xxhixx\") → \"" + changeXY("xxhixx") + "\"");
+		System.out.println("changeXY(\"xhixhix\") → \"" + changeXY("xhixhix") + "\"");
+		System.out.println("changeXY(\"hiy\") → \"" + changeXY("hiy") + "\"");
+		System.out.println("changeXY(\"h\") → \"" + changeXY("h") + "\"");
+		System.out.println("changeXY(\"x\") → \"" + changeXY("x") + "\"");
+		System.out.println("changeXY(\"\") → \"" + changeXY("") + "\"");
+		System.out.println("changeXY(\"xxx\") → \"" + changeXY("xxx") + "\"");
+		System.out.println("changeXY(\"yyhxyi\") → \"" + changeXY("yyhxyi") + "\"");
+		System.out.println("changeXY(\"hihi\") → \"" + changeXY("hihi") + "\"");
 	}
 }
