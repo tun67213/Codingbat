@@ -126,5 +126,14 @@ public class Recursion_1
 		System.out.println("bunnyEars2(5) → " + bunnyEars2(5));
 		System.out.println("bunnyEars2(6) → " + bunnyEars2(6));
 		System.out.println("bunnyEars2(10) → " + bunnyEars2(10));
+		printFunction("triangle");
+		System.out.println("triangle(0) → " + triangle(0));
+		System.out.println("triangle(1) → " + triangle(1));
+		System.out.println("triangle(2) → " + triangle(2));
+		System.out.println("triangle(3) → " + triangle(3));
+		System.out.println("triangle(4) → " + triangle(4));
+		System.out.println("triangle(5) → " + triangle(5));
+		System.out.println("triangle(6) → " + triangle(6));
+		System.out.println("triangle(7) → " + triangle(7));
 	}
 }
