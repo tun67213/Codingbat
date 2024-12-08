@@ -489,5 +489,18 @@ public class Recursion_1
 		System.out.println("pairStar(\"noadjacent\") → \"" + pairStar("noadjacent") + "\"");
 		System.out.println("pairStar(\"abba\") → \"" + pairStar("abba") + "\"");
 		System.out.println("pairStar(\"abbba\") → \"" + pairStar("abbba") + "\"");
+		printFunction("endX");
+		System.out.println("endX(\"xxre\") → \"" + endX("xxre") + "\"");
+		System.out.println("endX(\"xxhixx\") → \"" + endX("xxhixx") + "\"");
+		System.out.println("endX(\"xhixhix\") → \"" + endX("xhixhix") + "\"");
+		System.out.println("endX(\"hiy\") → \"" + endX("hiy") + "\"");
+		System.out.println("endX(\"h\") → \"" + endX("h") + "\"");
+		System.out.println("endX(\"x\") → \"" + endX("x") + "\"");
+		System.out.println("endX(\"xx\") → \"" + endX("xx") + "\"");
+		System.out.println("endX(\"\") → \"" + endX("") + "\"");
+		System.out.println("endX(\"bxx\") → \"" + endX("bxx") + "\"");
+		System.out.println("endX(\"bxax\") → \"" + endX("bxax") + "\"");
+		System.out.println("endX(\"axaxax\") → \"" + endX("axaxax") + "\"");
+		System.out.println("endX(\"xxhxi\") → \"" + endX("xxhxi") + "\"");
 	}
 }
