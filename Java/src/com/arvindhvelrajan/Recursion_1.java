@@ -234,5 +234,17 @@ public class Recursion_1
 		System.out.println("count8(88888) → " + count8(88888));
 		System.out.println("count8(9898) → " + count8(9898));
 		System.out.println("count8(78) → " + count8(78));
+		printFunction("powerN");
+		System.out.println("powerN(3, 1) → " + powerN(3, 1));
+		System.out.println("powerN(3, 2) → " + powerN(3, 2));
+		System.out.println("powerN(3, 3) → " + powerN(3, 3));
+		System.out.println("powerN(2, 1) → " + powerN(2, 1));
+		System.out.println("powerN(2, 2) → " + powerN(2, 2));
+		System.out.println("powerN(2, 3) → " + powerN(2, 3));
+		System.out.println("powerN(2, 4) → " + powerN(2, 4));
+		System.out.println("powerN(2, 5) → " + powerN(2, 5));
+		System.out.println("powerN(10, 1) → " + powerN(10, 1));
+		System.out.println("powerN(10, 2) → " + powerN(10, 2));
+		System.out.println("powerN(10, 3) → " + powerN(10, 3));
 	}
 }
