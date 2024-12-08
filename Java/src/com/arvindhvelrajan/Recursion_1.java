@@ -348,5 +348,12 @@ public class Recursion_1
 		System.out.println("changePi(\"\") → \"" + changePi("") + "\"");
 		System.out.println("changePi(\"pixx\") → \"" + changePi("pixx") + "\"");
 		System.out.println("changePi(\"xyzzy\") → \"" + changePi("xyzzy") + "\"");
+		printFunction("noX");
+		System.out.println("noX(\"xaxb\") → \"" + noX("xaxb") + "\"");
+		System.out.println("noX(\"abc\") → \"" + noX("abc") + "\"");
+		System.out.println("noX(\"xx\") → \"" + noX("xx") + "\"");
+		System.out.println("noX(\"\") → \"" + noX("") + "\"");
+		System.out.println("noX(\"axxbxx\") → \"" + noX("axxbxx") + "\"");
+		System.out.println("noX(\"Hellox\") → \"" + noX("Hellox") + "\"");
 	}
 }
