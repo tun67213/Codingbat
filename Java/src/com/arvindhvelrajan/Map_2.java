@@ -77,9 +77,9 @@ public class Map_2
 		welcome();
 		printFunction("word0");
 		System.out.println("word0([\"a\", \"b\", \"a\", \"b\"]) → " + toString(word0(new String[] {"a", "b", "a", "b"})));
-		System.out.println("word0([\"a\", \"b\", \"a\", \"c\", \"b\"]) → " + word0(new String[] {"a", "b", "a", "c", "b"}).toString());
-		System.out.println("word0([\"c\", \"b\", \"a\"]) → " + word0(new String[] {"c", "b", "a"}).toString());
-		System.out.println("word0([\"c\", \"c\", \"c\", \"c\"]) → " + word0(new String[] {"c", "c", "c", "c"}).toString());
-		System.out.println("word0([]) → " + word0(new String[] {}).toString());
+		System.out.println("word0([\"a\", \"b\", \"a\", \"c\", \"b\"]) → " + toString(word0(new String[] {"a", "b", "a", "c", "b"})));
+		System.out.println("word0([\"c\", \"b\", \"a\"]) → " + toString(word0(new String[] {"c", "b", "a"})));
+		System.out.println("word0([\"c\", \"c\", \"c\", \"c\"]) → " + toString(word0(new String[] {"c", "c", "c", "c"})));
+		System.out.println("word0([]) → " + toString(word0(new String[] {})));
 	}
 }
