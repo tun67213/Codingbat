@@ -16,6 +16,6 @@ public class Recursion_1
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
