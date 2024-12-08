@@ -116,5 +116,15 @@ public class Map_2
 		System.out.println("pairs[\"a\", \"b\"]) → " + map1.toString(pairs(new String[] {"a", "b"})));
 		System.out.println("pairs[\"are\", \"codes\", \"and\", \"cods\"]) → " + map1.toString(pairs(new String[] {"are", "codes", "and", "cods"})));
 		System.out.println("pairs[\"apple\", \"banana\", \"tea\", \"coffee\"]) → " + map1.toString(pairs(new String[] {"apple", "banana", "tea", "coffee"})));
+		printFunction("wordCount");
+		System.out.println("wordCount([\"a\", \"b\", \"a\", \"c\", \"b\"]) → " + toString(wordCount(new String[] {"a", "b", "a", "c", "b"})));
+		System.out.println("wordCount([\"c\", \"b\", \"a\"]) → " + toString(wordCount(new String[] {"c", "b", "a"})));
+		System.out.println("wordCount([\"c\", \"c\", \"c\", \"c\"]) → " + toString(wordCount(new String[] {"c", "c", "c", "c"})));
+		System.out.println("wordCount([]) → " + toString(wordCount(new String[] {})));
+		System.out.println("wordCount([\"this\", \"and\", \"this\", \"\"]) → " + toString(wordCount(new String[] {"this", "and", "this", ""})));
+		System.out.println("wordCount([\"x\", \"y\", \"x\", \"Y\", \"X\"]) → " + toString(wordCount(new String[] {"x", "y", "x", "Y", "X"})));
+		System.out.println("wordCount([\"123\", \"0\", \"123\", \"1\"]) → " + toString(wordCount(new String[] {"123", "0", "123", "1"})));
+		System.out.println("wordCount([\"d\", \"a\", \"e\", \"d\", \"a\", \"d\", \"b\", \"b\", \"z\", \"a\", \"a\", \"b\", \"z\", \"x\", \"b\", \"f\", \"x\", \"two\", \"b\", \"one\", \"two\"]) → " + toString(wordCount(new String[] {"d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x", "b", "f", "x", "two", "b", "one", "two"})));
+		System.out.println("wordCount([\"apple\", \"banana\", \"apple\", \"apple\", \"tea\", \"coffee\", \"banana\"]) → " + toString(wordCount(new String[] {"apple", "banana", "apple", "apple", "tea", "coffee", "banana"})));
 	}
 }
