@@ -186,6 +186,18 @@ public class Recursion_1
 	}
 
 	/**
+	 * Given a string, compute recursively a new string where all the 'x' chars have been removed.
+	 *
+	 * noX("xaxb") → "ab"
+	 * noX("abc") → "abc"
+	 * noX("xx") → ""
+	 */
+	public String noX(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
