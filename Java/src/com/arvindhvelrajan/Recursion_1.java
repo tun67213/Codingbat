@@ -234,7 +234,7 @@ public class Recursion_1
 	 * array220([3, 30], 0) → true
 	 * array220([3], 0) → false
 	 */
-	public boolean array220(int[] nums)
+	public boolean array220(int[] nums, int index)
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
