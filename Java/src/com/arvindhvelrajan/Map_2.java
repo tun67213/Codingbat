@@ -95,5 +95,13 @@ public class Map_2
 		System.out.println("wordLen([\"code\", \"code\", \"code\", \"bug\"]) → " + toString(wordLen(new String[] {"code", "code", "code", "bug"})));
 		System.out.println("wordLen([]) → " + toString(wordLen(new String[] {})));
 		System.out.println("wordLen([\"z\"]) → " + toString(wordLen(new String[] {"z"})));
+		printFunction("pairs");
+		System.out.println("pairs[\"code\", \"bug\"]) → " + map1.toString(pairs(new String[] {"code", "bug"})));
+		System.out.println("pairs[\"man\", \"moon\", \"main\"]) → " + map1.toString(pairs(new String[] {"man", "moon", "main"})));
+		System.out.println("pairs[\"man\", \"moon\", \"good\", \"night\"]) → " + map1.toString(pairs(new String[] {"man", "moon", "good", "night"})));
+		System.out.println("pairs[]) → " + map1.toString(pairs(new String[] {})));
+		System.out.println("pairs[\"a\", \"b\"]) → " + map1.toString(pairs(new String[] {"a", "b"})));
+		System.out.println("pairs[\"are\", \"codes\", \"and\", \"cods\"]) → " + map1.toString(pairs(new String[] {"are", "codes", "and", "cods"})));
+		System.out.println("pairs[\"apple\", \"banana\", \"tea\", \"coffee\"]) → " + map1.toString(pairs(new String[] {"apple", "banana", "tea", "coffee"})));
 	}
 }
