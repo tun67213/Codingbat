@@ -278,6 +278,19 @@ public class Recursion_1
 	}
 
 	/**
+	 * We'll say that a "pair" in a string is two instances of a char separated by a char. So "AxA" the A's make a pair.
+	 * Pair's can overlap, so "AxAxA" contains 3 pairs -- 2 for A and 1 for x. Recursively compute the number of pairs in the given string.
+	 *
+	 * countPairs("axa") → 1
+	 * countPairs("axax") → 2
+	 * countPairs("axbx") → 1
+	 */
+	public int countPairs(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
