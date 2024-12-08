@@ -46,11 +46,11 @@ public class Map_2
 	/**
 	 * The following function enables a readable output for the reader
 	 */
-	public String toString(Map<String, String> map)
+	public String toString(Map<String, Integer> map)
 	{
 		StringBuilder buff = new StringBuilder();
 		buff.append("{");
-		for(Map.Entry<String, String> entry : map.entrySet())
+		for(Map.Entry<String, Integer> entry : map.entrySet())
 		{
 			buff.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\", ");
 		}
@@ -68,9 +68,10 @@ public class Map_2
 	 */
 	public void main(String[] args)
 	{
+		Map_1 map1 = new Map_1();
 		welcome();
 		printFunction("word0");
-		System.out.println("word0([\"a\", \"b\", \"a\", \"b\"]) → " + word0(new String[] {"a", "b", "a", "b"}).toString());
+		System.out.println("word0([\"a\", \"b\", \"a\", \"b\"]) → " + toString(word0(new String[] {"a", "b", "a", "b"})));
 		System.out.println("word0([\"a\", \"b\", \"a\", \"c\", \"b\"]) → " + word0(new String[] {"a", "b", "a", "c", "b"}).toString());
 		System.out.println("word0([\"c\", \"b\", \"a\"]) → " + word0(new String[] {"c", "b", "a"}).toString());
 		System.out.println("word0([\"c\", \"c\", \"c\", \"c\"]) → " + word0(new String[] {"c", "c", "c", "c"}).toString());
