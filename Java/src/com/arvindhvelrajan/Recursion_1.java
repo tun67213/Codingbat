@@ -174,5 +174,19 @@ public class Recursion_1
 		System.out.println("sumDigits(11111) → " + sumDigits(11111));
 		System.out.println("sumDigits(10110) → " + sumDigits(10110));
 		System.out.println("sumDigits(235) → " + sumDigits(235));
+		printFunction("count7");
+		System.out.println("count7(717) → " + count7(717));
+		System.out.println("count7(7) → " + count7(7));
+		System.out.println("count7(123) → " + count7(123));
+		System.out.println("count7(77) → " + count7(77));
+		System.out.println("count7(7123) → " + count7(7123));
+		System.out.println("count7(771237) → " + count7(771237));
+		System.out.println("count7(771737) → " + count7(771737));
+		System.out.println("count7(47571) → " + count7(47571));
+		System.out.println("count7(777777) → " + count7(777777));
+		System.out.println("count7(70701277) → " + count7(70701277));
+		System.out.println("count7(777576197) → " + count7(777576197));
+		System.out.println("count7(99999) → " + count7(99999));
+		System.out.println("count7(99799) → " + count7(99799));
 	}
 }
