@@ -197,5 +197,12 @@ public class Map_2
 		System.out.println("wordAppend([\"a\", \"b\", \"c\"]) → \"" + wordAppend(new String[] {"a", "b", "c"}) + "\"");
 		System.out.println("wordAppend([\"this\", \"or\", \"that\", \"and\", \"this\", \"and\", \"that\"]) → \"" + wordAppend(new String[] {"this", "or", "that", "and", "this", "and", "that"}) + "\"");
 		System.out.println("wordAppend([\"xx\", \"xx\", \"yy\", \"xx\", \"zz\", \"yy\", \"zz\", \"xx\"]) → \"" + wordAppend(new String[] {"xx", "xx", "yy", "xx", "zz", "yy", "zz", "xx"}) + "\"");
+		printFunction("wordMultiple");
+		System.out.println("wordMultiple([\"a\", \"b\", \"a\", \"c\", \"b\"]) → " + toStringStringBoolean(wordMultiple(new String[] {"a", "b", "a", "c", "b"})));
+		System.out.println("wordMultiple([\"c\", \"b\", \"a\"]) → " + toStringStringBoolean(wordMultiple(new String[] {"c", "b", "a"})));
+		System.out.println("wordMultiple([\"c\", \"c\", \"c\", \"c\"]) → " + toStringStringBoolean(wordMultiple(new String[] {"c", "c", "c", "c"})));
+		System.out.println("wordMultiple([]) → " + toStringStringBoolean(wordMultiple(new String[] {})));
+		System.out.println("wordMultiple([\"this\", \"and\", \"this\"]) → " + toStringStringBoolean(wordMultiple(new String[] {"this", "and", "this"})));
+		System.out.println("wordMultiple([\"d\", \"a\", \"e\", \"d\", \"a\", \"d\", \"b\", \"b\", \"z\", \"a\", \"a\", \"b\", \"z\", \"x\"]) → " + toStringStringBoolean(wordMultiple(new String[] {"d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x"})));
 	}
 }
