@@ -609,5 +609,22 @@ public class Recursion_1
 		System.out.println("stringClean(\"XXabcYY\") → \"" + stringClean("XXabcYY") + "\"");
 		System.out.println("stringClean(\"112ab445\") → \"" + stringClean("112ab445") + "\"");
 		System.out.println("stringClean(\"Hello Bookkeeper\") → \"" + stringClean("Hello Bookkeeper") + "\"");
+		printFunction("countHi2");
+		System.out.println("countHi2(\"ahixhi\") → " + countHi2("ahixhi"));
+		System.out.println("countHi2(\"ahibhi\") → " + countHi2("ahibhi"));
+		System.out.println("countHi2(\"xhixhi\") → " + countHi2("xhixhi"));
+		System.out.println("countHi2(\"hixhi\") → " + countHi2("hixhi"));
+		System.out.println("countHi2(\"hixhhi\") → " + countHi2("hixhhi"));
+		System.out.println("countHi2(\"hihihi\") → " + countHi2("hihihi"));
+		System.out.println("countHi2(\"hihihix\") → " + countHi2("hihihix"));
+		System.out.println("countHi2(\"xhihihix\") → " + countHi2("xhihihix"));
+		System.out.println("countHi2(\"xxhi\") → " + countHi2("xxhi"));
+		System.out.println("countHi2(\"hixxhi\") → " + countHi2("hixxhi"));
+		System.out.println("countHi2(\"hi\") → " + countHi2("hi"));
+		System.out.println("countHi2(\"xxxx\") → " + countHi2("xxxx"));
+		System.out.println("countHi2(\"h\") → " + countHi2("h"));
+		System.out.println("countHi2(\"x\") → " + countHi2("x"));
+		System.out.println("countHi2(\"\") → " + countHi2(""));
+		System.out.println("countHi2(\"Hellohi\") → " + countHi2("Hellohi"));
 	}
 }
