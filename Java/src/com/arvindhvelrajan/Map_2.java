@@ -126,7 +126,7 @@ public class Map_2
 		buff.append("}");
 		return buff.toString();
 	}
-	public String toStringStringBoolean(Map<String, Boolean> map)
+	private String toStringStringBoolean(Map<String, Boolean> map)
 	{
 		StringBuilder buff = new StringBuilder();
 		buff.append("{");
