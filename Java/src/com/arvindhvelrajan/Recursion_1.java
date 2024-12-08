@@ -416,5 +416,20 @@ public class Recursion_1
 		System.out.println("array11([], 0) → " + array11(new int[] {}, 0));
 		System.out.println("array11([11, 2, 3, 4, 11, 5], 0) → " + array11(new int[] {11, 2, 3, 4, 11, 5}, 0));
 		System.out.println("array11([11, 5, 11], 0) → " + array11(new int[] {11, 5, 11}, 0));
+		printFunction("array220");
+		System.out.println("array220([1, 2, 20], 0) → " + array220(new int[] {1, 2, 20}, 0));
+		System.out.println("array220([3, 30], 0) → " + array220(new int[] {3, 30}, 0));
+		System.out.println("array220([3], 0) → " + array220(new int[] {3}, 0));
+		System.out.println("array220([], 0) → " + array220(new int[] {}, 0));
+		System.out.println("array220([3, 3, 30, 4], 0) → " + array220(new int[] {3, 3, 30, 4}, 0));
+		System.out.println("array220([2, 19, 4], 0) → " + array220(new int[] {2, 19, 4}, 0));
+		System.out.println("array220([20, 2, 21], 0) → " + array220(new int[] {20, 2, 21}, 0));
+		System.out.println("array220([20, 2, 21, 210], 0) → " + array220(new int[] {20, 2, 21, 210}, 0));
+		System.out.println("array220([2, 200, 2000], 0) → " + array220(new int[] {2, 200, 2000}, 0));
+		System.out.println("array220([0, 0], 0) → " + array220(new int[] {0, 0}, 0));
+		System.out.println("array220([1, 2, 3, 4, 5, 6], 0) → " + array220(new int[] {1, 2, 3, 4, 5, 6}, 0));
+		System.out.println("array220([1, 2, 3, 4, 5, 50, 6], 0) → " + array220(new int[] {1, 2, 3, 4, 5, 50, 6}, 0));
+		System.out.println("array220([1, 2, 3, 4, 5, 51, 6], 0) → " + array220(new int[] {1, 2, 3, 4, 5, 51, 6}, 0));
+		System.out.println("array220([1, 2, 3, 4, 4, 50, 500, 6], 0) → " + array220(new int[] {1, 2, 3, 4, 4, 50, 500, 6}, 0));
 	}
 }
