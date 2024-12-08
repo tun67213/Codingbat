@@ -279,5 +279,16 @@ public class Recursion_1
 		System.out.println("countX(\"\") → " + countX(""));
 		System.out.println("countX(\"hihi\") → " + countX("hihi"));
 		System.out.println("countX(\"hiAAhi12hi\") → " + countX("hiAAhi12hi"));
+		printFunction("countHi");
+		System.out.println("countHi(\"xxhixx\") → " + countHi("xxhixx"));
+		System.out.println("countHi(\"xhixhix\") → " + countHi("xhixhix"));
+		System.out.println("countHi(\"hi\") → " + countHi("hi"));
+		System.out.println("countHi(\"h\") → " + countHi("h"));
+		System.out.println("countHi(\"\") → " + countHi(""));
+		System.out.println("countHi(\"ihihihihih\") → " + countHi("ihihihihih"));
+		System.out.println("countHi(\"ihihihihihi\") → " + countHi("ihihihihihi"));
+		System.out.println("countHi(\"hiAAhi12hi\") → " + countHi("hiAAhi12hi"));
+		System.out.println("countHi(\"xhixhxihihhhih\") → " + countHi("xhixhxihihhhih"));
+		System.out.println("countHi(\"ship\") → " + countHi("ship"));
 	}
 }
