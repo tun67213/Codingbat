@@ -465,5 +465,16 @@ public class Recursion_1
 		System.out.println("allStar(\"3.14\") → \"" + allStar("3.14") + "\"");
 		System.out.println("allStar(\"Chocolate\") → \"" + allStar("Chocolate") + "\"");
 		System.out.println("allStar(\"1234\") → \"" + allStar("1234") + "\"");
+		printFunction("pairStar");
+		System.out.println("pairStar(\"hello\") → \"" + pairStar("hello") + "\"");
+		System.out.println("pairStar(\"xxyy\") → \"" + pairStar("xxyy") + "\"");
+		System.out.println("pairStar(\"aaaa\") → \"" + pairStar("aaaa") + "\"");
+		System.out.println("pairStar(\"aaab\") → \"" + pairStar("aaab") + "\"");
+		System.out.println("pairStar(\"aa\") → \"" + pairStar("aa") + "\"");
+		System.out.println("pairStar(\"a\") → \"" + pairStar("a") + "\"");
+		System.out.println("pairStar(\"\") → \"" + pairStar("") + "\"");
+		System.out.println("pairStar(\"noadjacent\") → \"" + pairStar("noadjacent") + "\"");
+		System.out.println("pairStar(\"abba\") → \"" + pairStar("abba") + "\"");
+		System.out.println("pairStar(\"abbba\") → \"" + pairStar("abbba") + "\"");
 	}
 }
