@@ -150,6 +150,18 @@ public class Recursion_1
 	}
 
 	/**
+	 * Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string.
+	 *
+	 * countHi("xxhixx") → 1
+	 * countHi("xhixhix") → 2
+	 * countHi("hi") → 1
+	 */
+	public int countHi(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
