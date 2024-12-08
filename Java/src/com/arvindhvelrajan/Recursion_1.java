@@ -148,5 +148,17 @@ public class Recursion_1
 		System.out.println("triangle(5) → " + triangle(5));
 		System.out.println("triangle(6) → " + triangle(6));
 		System.out.println("triangle(7) → " + triangle(7));
+		printFunction("sumDigits");
+		System.out.println("sumDigits(126) → " + sumDigits(126));
+		System.out.println("sumDigits(49) → " + sumDigits(49));
+		System.out.println("sumDigits(12) → " + sumDigits(12));
+		System.out.println("sumDigits(10) → " + sumDigits(10));
+		System.out.println("sumDigits(1) → " + sumDigits(1));
+		System.out.println("sumDigits(0) → " + sumDigits(0));
+		System.out.println("sumDigits(730) → " + sumDigits(730));
+		System.out.println("sumDigits(1111) → " + sumDigits(1111));
+		System.out.println("sumDigits(11111) → " + sumDigits(11111));
+		System.out.println("sumDigits(10110) → " + sumDigits(10110));
+		System.out.println("sumDigits(235) → " + sumDigits(235));
 	}
 }
