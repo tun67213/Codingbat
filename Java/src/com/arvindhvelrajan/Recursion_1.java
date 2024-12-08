@@ -369,5 +369,14 @@ public class Recursion_1
 		System.out.println("noX(\"\") → \"" + noX("") + "\"");
 		System.out.println("noX(\"axxbxx\") → \"" + noX("axxbxx") + "\"");
 		System.out.println("noX(\"Hellox\") → \"" + noX("Hellox") + "\"");
+		printFunction("array6");
+		System.out.println("array6([1, 6, 4], 0) → " + array6(new int[] {1, 6, 4}, 0));
+		System.out.println("array6([1, 4], 0) → " + array6(new int[] {1, 4}, 0));
+		System.out.println("array6([6], 0) → " + array6(new int[] {6}, 0));
+		System.out.println("array6([], 0) → " + array6(new int[] {}, 0));
+		System.out.println("array6([6, 2, 2], 0) → " + array6(new int[] {6, 2, 2}, 0));
+		System.out.println("array6([2, 5], 0) → " + array6(new int[] {2, 5}, 0));
+		System.out.println("array6([1, 9, 4, 6, 6], 0) → " + array6(new int[] {1, 9, 4, 6, 6}, 0));
+		System.out.println("array6([2, 5, 6], 0) → " + array6(new int[] {2, 5, 6}, 0));
 	}
 }
