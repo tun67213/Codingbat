@@ -30,7 +30,7 @@ public class Map_1
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
-	public static String toString(Map<String, String> map)
+	public String toString(Map<String, String> map)
 	{
 		StringBuilder buff = new StringBuilder();
 		buff.append("{");
