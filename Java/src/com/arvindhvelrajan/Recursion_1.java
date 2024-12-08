@@ -162,6 +162,18 @@ public class Recursion_1
 	}
 
 	/**
+	 * Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars.
+	 *
+	 * changeXY("codex") → "codey"
+	 * changeXY("xxhixx") → "yyhiyy"
+	 * changeXY("xhixhix") → "yhiyhiy"
+	 */
+	public String changeXY(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
