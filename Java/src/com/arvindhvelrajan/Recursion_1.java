@@ -565,5 +565,17 @@ public class Recursion_1
 		System.out.println("countAbc(\"aba\") → " + countAbc("aba"));
 		System.out.println("countAbc(\"aca\") → " + countAbc("aca"));
 		System.out.println("countAbc(\"aaa\") → " + countAbc("aaa"));
+		printFunction("count11");
+		System.out.println("count11(\"11abc11\") → " + count11("11abc11"));
+		System.out.println("count11(\"abc11x11x11\") → " + count11("abc11x11x11"));
+		System.out.println("count11(\"111\") → " + count11("111"));
+		System.out.println("count11(\"1111\") → " + count11("1111"));
+		System.out.println("count11(\"1\") → " + count11("1"));
+		System.out.println("count11(\"\") → " + count11(""));
+		System.out.println("count11(\"hi\") → " + count11("hi"));
+		System.out.println("count11(\"11x111x1111\") → " + count11("11x111x1111"));
+		System.out.println("count11(\"1x111\") → " + count11("1x111"));
+		System.out.println("count11(\"1Hello1\") → " + count11("1Hello1"));
+		System.out.println("count11(\"Hello\") → " + count11("Hello"));
 	}
 }
