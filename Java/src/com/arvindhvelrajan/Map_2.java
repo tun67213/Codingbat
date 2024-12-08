@@ -27,7 +27,12 @@ public class Map_2
 	 */
 	public Map<String, Integer> word0(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap();
+		for(String s:strings)
+		{
+			map.put(s, 0);
+		}
+		return map;
 	}
 
 	/**
@@ -52,7 +57,7 @@ public class Map_2
 		buff.append("{");
 		for(Map.Entry<String, Integer> entry : map.entrySet())
 		{
-			buff.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\", ");
+			buff.append("\"").append(entry.getKey()).append("\": ").append(entry.getValue()).append(", ");
 		}
 		// Remove the trailing comma and space
 		if(buff.length() > 1)
