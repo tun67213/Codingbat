@@ -266,5 +266,16 @@ public class Map_2
 		System.out.println("allSwap([\"aaa\"]) → " + toString(allSwap(new String[] {"aaa"})));
 		System.out.println("allSwap([]) → " + toString(allSwap(new String[] {})));
 		System.out.println("allSwap([\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"]) → " + toString(allSwap(new String[] {"a", "b", "c", "xx", "yy", "zz"})));
+		printFunction("firstSwap");
+		System.out.println("firstSwap([\"ab\", \"ac\"]) → " + toString(firstSwap(new String[] {"ab", "ac"})));
+		System.out.println("firstSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"]) → " + toString(firstSwap(new String[] {"ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"})));
+		System.out.println("firstSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"]) → " + toString(firstSwap(new String[] {"ax", "bx", "ay", "by", "ai", "aj", "bx", "by"})));
+		System.out.println("firstSwap([\"ax\", \"bx\", \"cx\", \"ay\", \"cy\", \"aaa\", \"abb\"]) → " + toString(firstSwap(new String[] {"ax", "bx", "cx", "ay", "cy", "aaa", "abb"})));
+		System.out.println("firstSwap([\"easy\", \"does\", \"it\", \"every\", \"ice\", \"eaten\"]) → " + toString(firstSwap(new String[] {"easy", "does", "it", "every", "ice", "eaten"})));
+		System.out.println("firstSwap([\"list\", \"of\", \"words\", \"swims\", \"over\", \"lily\", \"water\", \"wait\"]) → " + toString(firstSwap(new String[] {"list", "of", "words", "swims", "over", "lily", "water", "wait"})));
+		System.out.println("firstSwap([\"4\", \"8\", \"15\", \"16\", \"23\", \"42\"]) → " + toString(firstSwap(new String[] {"4", "8", "15", "16", "23", "42"})));
+		System.out.println("firstSwap([\"aaa\"]) → " + toString(firstSwap(new String[] {"aaa"})));
+		System.out.println("firstSwap([]) → " + toString(firstSwap(new String[] {})));
+		System.out.println("firstSwap([\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"]) " + toString(firstSwap(new String[] {"a", "b", "c", "xx", "yy", "zz"})));
 	}
 }
