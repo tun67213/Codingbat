@@ -515,5 +515,17 @@ public class Recursion_1
 		System.out.println("endX(\"bxax\") → \"" + endX("bxax") + "\"");
 		System.out.println("endX(\"axaxax\") → \"" + endX("axaxax") + "\"");
 		System.out.println("endX(\"xxhxi\") → \"" + endX("xxhxi") + "\"");
+		printFunction("countPairs");
+		System.out.println("countPairs(\"axa\") → " + countPairs("axa"));
+		System.out.println("countPairs(\"axax\") → " + countPairs("axax"));
+		System.out.println("countPairs(\"axbx\") → " + countPairs("axbx"));
+		System.out.println("countPairs(\"hi\") → " + countPairs("hi"));
+		System.out.println("countPairs(\"hihih\") → " + countPairs("hihih"));
+		System.out.println("countPairs(\"ihihhh\") → " + countPairs("ihihhh"));
+		System.out.println("countPairs(\"ihjxhh\") → " + countPairs("ihjxhh"));
+		System.out.println("countPairs(\"\") → " + countPairs(""));
+		System.out.println("countPairs(\"a\") → " + countPairs("a"));
+		System.out.println("countPairs(\"aa\") → " + countPairs("aa"));
+		System.out.println("countPairs(\"aaa\") → " + countPairs("aaa"));
 	}
 }
