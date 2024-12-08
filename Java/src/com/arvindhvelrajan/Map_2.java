@@ -44,6 +44,26 @@ public class Map_2
 	}
 
 	/**
+	 * The following function enables a readable output for the reader
+	 */
+	public String toString(Map<String, String> map)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("{");
+		for(Map.Entry<String, String> entry : map.entrySet())
+		{
+			buff.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\", ");
+		}
+		// Remove the trailing comma and space
+		if(buff.length() > 1)
+		{
+			buff.setLength(buff.length() - 2);
+		}
+		buff.append("}");
+		return buff.toString();
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
