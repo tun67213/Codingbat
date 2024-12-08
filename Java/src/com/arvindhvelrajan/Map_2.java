@@ -239,5 +239,16 @@ public class Map_2
 		System.out.println("wordMultiple([]) → " + toStringStringBoolean(wordMultiple(new String[] {})));
 		System.out.println("wordMultiple([\"this\", \"and\", \"this\"]) → " + toStringStringBoolean(wordMultiple(new String[] {"this", "and", "this"})));
 		System.out.println("wordMultiple([\"d\", \"a\", \"e\", \"d\", \"a\", \"d\", \"b\", \"b\", \"z\", \"a\", \"a\", \"b\", \"z\", \"x\"]) → " + toStringStringBoolean(wordMultiple(new String[] {"d", "a", "e", "d", "a", "d", "b", "b", "z", "a", "a", "b", "z", "x"})));
+		printFunction("allSwap");
+		System.out.println("allSwap([\"ab\", \"ac\"]) → " + toString(allSwap(new String[] {"ab", "ac"})));
+		System.out.println("allSwap([\"ax\", \"bx\", \"cx\", \"cy\", \"by\", \"ay\", \"aaa\", \"azz\"]) → " + toString(allSwap(new String[] {"ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"})));
+		System.out.println("allSwap([\"ax\", \"bx\", \"ay\", \"by\", \"ai\", \"aj\", \"bx\", \"by\"]) → " + toString(allSwap(new String[] {"ax", "bx", "ay", "by", "ai", "aj", "bx", "by"})));
+		System.out.println("allSwap([\"ax\", \"bx\", \"cx\", \"ay\", \"cy\", \"aaa\", \"abb\"]) → " + toString(allSwap(new String[] {"ax", "bx", "cx", "ay", "cy", "aaa", "abb"})));
+		System.out.println("allSwap([\"easy\", \"does\", \"it\", \"every\", \"ice\", \"eaten\"]) → " + toString(allSwap(new String[] {"easy", "does", "it", "every", "ice", "eaten"})));
+		System.out.println("allSwap([\"list\", \"of\", \"words\", \"swims\", \"over\", \"lily\", \"water\", \"wait\"]) → " + toString(allSwap(new String[] {"list", "of", "words", "swims", "over", "lily", "water", "wait"})));
+		System.out.println("allSwap([\"4\", \"8\", \"15\", \"16\", \"23\", \"42\"]) → " + toString(allSwap(new String[] {"4", "8", "15", "16", "23", "42"})));
+		System.out.println("allSwap([\"aaa\"]) → " + toString(allSwap(new String[] {"aaa"})));
+		System.out.println("allSwap([]) → " + toString(allSwap(new String[] {})));
+		System.out.println("allSwap([\"a\", \"b\", \"c\", \"xx\", \"yy\", \"zz\"]) → " + toString(allSwap(new String[] {"a", "b", "c", "xx", "yy", "zz"})));
 	}
 }
