@@ -76,5 +76,11 @@ public class Map_2
 		System.out.println("word0([\"c\", \"b\", \"a\"]) → " + toString(word0(new String[] {"c", "b", "a"})));
 		System.out.println("word0([\"c\", \"c\", \"c\", \"c\"]) → " + toString(word0(new String[] {"c", "c", "c", "c"})));
 		System.out.println("word0([]) → " + toString(word0(new String[] {})));
+		printFunction("wordLen");
+		System.out.println("wordLen([\"a\", \"bb\", \"a\", \"bb\"]) → " + toString(wordLen(new String[] {"a", "bb", "a", "bb"})));
+		System.out.println("wordLen([\"this\", \"and\", \"that\", \"and\"]) → " + toString(wordLen(new String[] {"this", "and", "that", "and"})));
+		System.out.println("wordLen([\"code\", \"code\", \"code\", \"bug\"]) → " + toString(wordLen(new String[] {"code", "code", "code", "bug"})));
+		System.out.println("wordLen([]) → " + toString(wordLen(new String[] {})));
+		System.out.println("wordLen([\"z\"]) → " + toString(wordLen(new String[] {"z"})));
 	}
 }
