@@ -443,5 +443,14 @@ public class Recursion_1
 		System.out.println("array220([1, 2, 3, 4, 5, 50, 6], 0) → " + array220(new int[] {1, 2, 3, 4, 5, 50, 6}, 0));
 		System.out.println("array220([1, 2, 3, 4, 5, 51, 6], 0) → " + array220(new int[] {1, 2, 3, 4, 5, 51, 6}, 0));
 		System.out.println("array220([1, 2, 3, 4, 4, 50, 500, 6], 0) → " + array220(new int[] {1, 2, 3, 4, 4, 50, 500, 6}, 0));
+		printFunction("allStar");
+		System.out.println("allStar(\"hello\") → \"" + allStar("hello") + "\"");
+		System.out.println("allStar(\"abc\") → \"" + allStar("abc") + "\"");
+		System.out.println("allStar(\"ab\") → \"" + allStar("ab") + "\"");
+		System.out.println("allStar(\"a\") → \"" + allStar("a") + "\"");
+		System.out.println("allStar(\"\") → \"" + allStar("") + "\"");
+		System.out.println("allStar(\"3.14\") → \"" + allStar("3.14") + "\"");
+		System.out.println("allStar(\"Chocolate\") → \"" + allStar("Chocolate") + "\"");
+		System.out.println("allStar(\"1234\") → \"" + allStar("1234") + "\"");
 	}
 }
