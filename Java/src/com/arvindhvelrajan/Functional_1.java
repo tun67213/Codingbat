@@ -95,5 +95,12 @@ public class Functional_1
 		System.out.println("square([12]) → " + square(new ArrayList<>(List.of(12))));
 		System.out.println("square([5, 10]) → " + square(new ArrayList<>(List.of(5, 10))));
 		System.out.println("square([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → " + square(new ArrayList<>(List.of(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2))));
+		printFunction("addStar");
+		System.out.println("addStar([\"a\", \"bb\", \"ccc\"]) → " + toStringStringList(addStar(List.of("a", "bb", "ccc"))));
+		System.out.println("addStar([\"hello\", \"there\"]) → " + toStringStringList(addStar(List.of("hello", "there"))));
+		System.out.println("addStar([\"*\"]) → " + toStringStringList(addStar(List.of("*"))));
+		System.out.println("addStar([]) → " + toStringStringList(addStar(List.of())));
+		System.out.println("addStar([\"kittens\", \"and\", \"chocolate\", \"and\"]) → " + toStringStringList(addStar(List.of("kittens", "and", "chocolate", "and"))));
+		System.out.println("addStar([\"empty\", \"string\", \"\"]) → " + toStringStringList(addStar(List.of("empty", "string", ""))));
 	}
 }
