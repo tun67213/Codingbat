@@ -172,5 +172,13 @@ public class Functional_1
 		System.out.println("math1([5, 10]) → " + math1(List.of(5, 10)));
 		System.out.println("math1([-1, -2, -3, -2, -1]) → " + math1(List.of(-1, -2, -3, -2, -1)));
 		System.out.println("math1([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → " + math1(List.of(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2)));
+		printFunction("rightDigit");
+		System.out.println("rightDigit([1, 22, 93]) → " + rightDigit(List.of(1, 22, 93)));
+		System.out.println("rightDigit([16, 8, 886, 8, 1]) → " + rightDigit(List.of(16, 8, 886, 8, 1)));
+		System.out.println("rightDigit([10, 0]) → " + rightDigit(List.of(10, 0)));
+		System.out.println("rightDigit([]) → " + rightDigit(List.of()));
+		System.out.println("rightDigit([5, 10]) → " + rightDigit(List.of(5, 10)));
+		System.out.println("rightDigit([5, 50, 500, 5000, 5000]) → " + rightDigit(List.of(5, 50, 500, 5000, 5000)));
+		System.out.println("rightDigit([6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2]) → " + rightDigit(List.of(6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2)));
 	}
 }
