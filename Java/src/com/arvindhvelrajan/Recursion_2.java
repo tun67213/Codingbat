@@ -207,5 +207,18 @@ public class Recursion_2
 		System.out.println("splitArray([2, 2, 10, 10, 1, 1]) → " + splitArray(new int[] {2, 2, 10, 10, 1, 1}));
 		System.out.println("splitArray([1, 2, 2, 10, 10, 1, 1]) → " + splitArray(new int[] {1, 2, 2, 10, 10, 1, 1}));
 		System.out.println("splitArray([1, 2, 3, 10, 10, 1, 1]) → " + splitArray(new int[] {1, 2, 3, 10, 10, 1, 1}));
+		printFunction("splitOdd10");
+		System.out.println("splitOdd10([5, 5, 5]) → " + splitOdd10(new int[] {5, 5, 5}));
+		System.out.println("splitOdd10([5, 5, 6]) → " + splitOdd10(new int[] {5, 5, 6}));
+		System.out.println("splitOdd10([5, 5, 6, 1]) → " + splitOdd10(new int[] {5, 5, 6, 1}));
+		System.out.println("splitOdd10([6, 5, 5, 1]) → " + splitOdd10(new int[] {6, 5, 5, 1}));
+		System.out.println("splitOdd10([6, 5, 5, 1, 10]) → " + splitOdd10(new int[] {6, 5, 5, 1, 10}));
+		System.out.println("splitOdd10([6, 5, 5, 5, 1]) → " + splitOdd10(new int[] {6, 5, 5, 5, 1}));
+		System.out.println("splitOdd10([1]) → " + splitOdd10(new int[] {1}));
+		System.out.println("splitOdd10([]) → " + splitOdd10(new int[] {}));
+		System.out.println("splitOdd10([10, 7, 5, 5]) → " + splitOdd10(new int[] {10, 7, 5, 5}));
+		System.out.println("splitOdd10([10, 0, 5, 5]) → " + splitOdd10(new int[] {10, 0, 5, 5}));
+		System.out.println("splitOdd10([10, 7, 5, 5, 2]) → " + splitOdd10(new int[] {10, 7, 5, 5, 2}));
+		System.out.println("splitOdd10([10, 7, 5, 5, 1]) → " + splitOdd10(new int[] {10, 7, 5, 5, 1}));
 	}
 }
