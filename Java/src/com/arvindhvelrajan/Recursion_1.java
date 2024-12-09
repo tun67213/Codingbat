@@ -640,5 +640,18 @@ public class Recursion_1
 		System.out.println("countHi2(\"x\") → " + countHi2("x"));
 		System.out.println("countHi2(\"\") → " + countHi2(""));
 		System.out.println("countHi2(\"Hellohi\") → " + countHi2("Hellohi"));
+		printFunction("parenBit");
+		System.out.println("parenBit(\"xyz(abc)123\") → \"" + parenBit("xyz(abc)123") + "\"");
+		System.out.println("parenBit(\"x(hello)\") → \"" + parenBit("x(hello)") + "\"");
+		System.out.println("parenBit(\"(xy)1\") → \"" + parenBit("(xy)1") + "\"");
+		System.out.println("parenBit(\"not really (possible)\") → \"" + parenBit("not really (possible)") + "\"");
+		System.out.println("parenBit(\"(abc)\") → \"" + parenBit("(abc)") + "\"");
+		System.out.println("parenBit(\"(abc)xyz\") → \"" + parenBit("(abc)xyz") + "\"");
+		System.out.println("parenBit(\"(abc)x\") → \"" + parenBit("(abc)x") + "\"");
+		System.out.println("parenBit(\"(x)\") → \"" + parenBit("(x)") + "\"");
+		System.out.println("parenBit(\"()\") → \"" + parenBit("()") + "\"");
+		System.out.println("parenBit(\"res (ipsa) loquitor\") → \"" + parenBit("res (ipsa) loquitor") + "\"");
+		System.out.println("parenBit(\"hello(not really)there\") → \"" + parenBit("hello(not really)there") + "\"");
+		System.out.println("parenBit(\"ab(ab)ab\") → \"" + parenBit("ab(ab)ab") + "\"");
 	}
 }
