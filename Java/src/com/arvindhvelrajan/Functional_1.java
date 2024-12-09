@@ -133,5 +133,12 @@ public class Functional_1
 		System.out.println("copies3([\"no\"]) → " + toStringStringList(copies3(List.of("no"))));
 		System.out.println("copies3([]) → " + toStringStringList(copies3(List.of())));
 		System.out.println("copies3([\"this\", \"and\", \"that\", \"and\"]) → " + toStringStringList(copies3(List.of("this", "and", "that", "and"))));
+		printFunction("moreY");
+		System.out.println("moreY([\"a\", \"b\", \"c\"]) → " + toStringStringList(moreY(List.of("a", "b", "c"))));
+		System.out.println("moreY([\"hello\", \"there\"]) → " + toStringStringList(moreY(List.of("hello", "there"))));
+		System.out.println("moreY([\"yay\"]) → " + toStringStringList(moreY(List.of("yay"))));
+		System.out.println("moreY([\"\", \"a\", \"xx\"]) → " + toStringStringList(moreY(List.of("", "a", "xx"))));
+		System.out.println("moreY([]) → " + toStringStringList(moreY(List.of())));
+		System.out.println("moreY([\"xx\", \"yy\", \"zz\"]) → " + toStringStringList(moreY(List.of("xx", "yy", "zz"))));
 	}
 }
