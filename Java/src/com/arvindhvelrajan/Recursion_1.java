@@ -394,6 +394,19 @@ public class Recursion_1
 	}
 
 	/**
+	 * Given a string and a non-empty substring sub, compute recursively the largest substring which starts and ends
+	 * with sub and return its length.
+	 *
+	 * strDist("catcowcat", "cat") → 9
+	 * strDist("catcowcat", "cow") → 3
+	 * strDist("cccatcowcatxx", "cat") → 9
+	 */
+	public int strDist(String str, String sub)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
