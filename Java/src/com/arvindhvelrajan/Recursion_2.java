@@ -97,5 +97,18 @@ public class Recursion_2
 		System.out.println("groupSum6(0, [1, 6, 2, 6, 5], 14) → " + groupSum6(0, new int[] {1, 6, 2, 6, 5}, 14));
 		System.out.println("groupSum6(0, [1, 6, 2, 6, 5], 15) → " + groupSum6(0, new int[] {1, 6, 2, 6, 5}, 15));
 		System.out.println("groupSum6(0, [1, 6, 2, 6, 5], 16) → " + groupSum6(0, new int[] {1, 6, 2, 6, 5}, 16));
+		printFunction("groupNoAdj");
+		System.out.println("groupNoAdj(0, [2, 5, 10, 4], 12) → " + groupNoAdj(0, new int[] {2, 5, 10, 4}, 12));
+		System.out.println("groupNoAdj(0, [2, 5, 10, 4], 14) → " + groupNoAdj(0, new int[] {2, 5, 10, 4}, 14));
+		System.out.println("groupNoAdj(0, [2, 5, 10, 4], 7) → " + groupNoAdj(0, new int[] {2, 5, 10, 4}, 7));
+		System.out.println("groupNoAdj(0, [2, 5, 10, 4, 2], 7) → " + groupNoAdj(0, new int[] {2, 5, 10, 4, 2}, 7));
+		System.out.println("groupNoAdj(0, [2, 5, 10, 4], 9) → " + groupNoAdj(0, new int[] {2, 5, 10, 4}, 9));
+		System.out.println("groupNoAdj(0, [10, 2, 2, 3, 3], 15) → " + groupNoAdj(0, new int[] {10, 2, 2, 3, 3}, 15));
+		System.out.println("groupNoAdj(0, [10, 2, 2, 3, 3], 7) → " + groupNoAdj(0, new int[] {10, 2, 2, 3, 3}, 7));
+		System.out.println("groupNoAdj(0, [], 0) → " + groupNoAdj(0, new int[] {}, 0));
+		System.out.println("groupNoAdj(0, [1], 1) → " + groupNoAdj(0, new int[] {1}, 1));
+		System.out.println("groupNoAdj(0, [9], 1) → " + groupNoAdj(0, new int[] {9}, 1));
+		System.out.println("groupNoAdj(0, [9], 0) → " + groupNoAdj(0, new int[] {9}, 0));
+		System.out.println("groupNoAdj(0, [5, 10, 4, 1], 11) → " + groupNoAdj(0, new int[] {5, 10, 4, 1}, 11));
 	}
 }
