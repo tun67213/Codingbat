@@ -16,6 +16,6 @@ public class Functional_1
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
