@@ -751,5 +751,20 @@ public class Recursion_1
 		System.out.println("strCopies(\"ijiiiiij\", \"iiii\", 2) → " + strCopies("iiiiiij", "iii", 2));
 		System.out.println("strCopies(\"ijiiiiij\", \"iiii\", 3) → " + strCopies("iiiiiij", "iii", 3));
 		System.out.println("strCopies(\"dogcatdogcat\", \"dog\", 2) → " + strCopies("dogcatdogcat", "dog", 2));
+		printFunction("strDist");
+		System.out.println("strDist(\"catcowcat\", \"cat\") → " + strDist("catcowcat", "cat"));
+		System.out.println("strDist(\"catcowcat\", \"cow\") → " + strDist("catcowcat", "cow"));
+		System.out.println("strDist(\"cccatcowcatxx\", \"cat\") → " + strDist("cccatcowcatxx", "cat"));
+		System.out.println("strDist(\"abccatcowcatcatxyz\", \"cat\") → " + strDist("abccatcowcatcatcatxyz", "cat"));
+		System.out.println("strDist(\"xyx\", \"x\") → " + strDist("xyx", "x"));
+		System.out.println("strDist(\"xyx\", \"y\") → " + strDist("xyx", "y"));
+		System.out.println("strDist(\"xyx\", \"z\") → " + strDist("xyx", "z"));
+		System.out.println("strDist(\"z\", \"z\") → " + strDist("z", "z"));
+		System.out.println("strDist(\"x\", \"z\") → " + strDist("x", "z"));
+		System.out.println("strDist(\"\", \"z\") → " + strDist("", "z"));
+		System.out.println("strDist(\"hiHellohihihi\", \"hi\") → " + strDist("hiHellohihihi", "hi"));
+		System.out.println("strDist(\"hiHellohihihi\", \"hih\") → " + strDist("hiHellohihihi", "hih"));
+		System.out.println("strDist(\"hiHellohihihi\", \"o\") → " + strDist("hiHellohihihi", "o"));
+		System.out.println("strDist(\"hiHellohihihi\", \"ll\") → " + strDist("hiHellohihihi", "ll"));
 	}
 }
