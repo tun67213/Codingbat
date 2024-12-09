@@ -666,5 +666,21 @@ public class Recursion_1
 		System.out.println("parenBit(\"res (ipsa) loquitor\") → \"" + parenBit("res (ipsa) loquitor") + "\"");
 		System.out.println("parenBit(\"hello(not really)there\") → \"" + parenBit("hello(not really)there") + "\"");
 		System.out.println("parenBit(\"ab(ab)ab\") → \"" + parenBit("ab(ab)ab") + "\"");
+		printFunction("nestParen");
+		System.out.println("nestParen(\"(())\") → " + nestParen("(())"));
+		System.out.println("nestParen(\"((()))\") → " + nestParen("((()))"));
+		System.out.println("nestParen(\"(((x))\") → " + nestParen("(((x))"));
+		System.out.println("nestParen(\"((())\") → " + nestParen("((())"));
+		System.out.println("nestParen(\"((()()\") → " + nestParen("((()()"));
+		System.out.println("nestParen(\"()\") → " + nestParen("()"));
+		System.out.println("nestParen(\"\") → " + nestParen(""));
+		System.out.println("nestParen(\"(yy)\") → " + nestParen("(yy)"));
+		System.out.println("nestParen(\"(())\") → " + nestParen("(())"));
+		System.out.println("nestParen(\"(((y))\") → " + nestParen("(((y))"));
+		System.out.println("nestParen(\"((y)))\") → " + nestParen("((y)))"));
+		System.out.println("nestParen(\"((()))\") → " + nestParen("((()))"));
+		System.out.println("nestParen(\"(())))\") → " + nestParen("(())))"));
+		System.out.println("nestParen(\"((yy())))\") → " + nestParen("((yy())))"));
+		System.out.println("nestParen(\"(((())))\") → " + nestParen("(((())))"));
 	}
 }
