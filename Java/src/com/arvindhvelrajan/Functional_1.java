@@ -114,5 +114,12 @@ public class Functional_1
 		System.out.println("addStar([]) → " + toStringStringList(addStar(List.of())));
 		System.out.println("addStar([\"kittens\", \"and\", \"chocolate\", \"and\"]) → " + toStringStringList(addStar(List.of("kittens", "and", "chocolate", "and"))));
 		System.out.println("addStar([\"empty\", \"string\", \"\"]) → " + toStringStringList(addStar(List.of("empty", "string", ""))));
+		printFunction("copies3");
+		System.out.println("copies3([\"a\", \"bb\", \"ccc\"]) → " + toStringStringList(copies3(List.of("a", "bb", "ccc"))));
+		System.out.println("copies3([\"24\", \"a\", \"\"]) → " + toStringStringList(copies3(List.of("24", "a", ""))));
+		System.out.println("copies3([\"hello\", \"there\"]) → " + toStringStringList(copies3(List.of("hello", "there"))));
+		System.out.println("copies3([\"no\"]) → " + toStringStringList(copies3(List.of("no"))));
+		System.out.println("copies3([]) → " + toStringStringList(copies3(List.of())));
+		System.out.println("copies3([\"this\", \"and\", \"that\", \"and\"]) → " + toStringStringList(copies3(List.of("this", "and", "that", "and"))));
 	}
 }
