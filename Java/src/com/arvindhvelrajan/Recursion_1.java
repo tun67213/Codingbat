@@ -723,5 +723,20 @@ public class Recursion_1
 		System.out.println("strCount(\"aaabababab\", \"aa\") → " + strCount("aaabababab", "aa"));
 		System.out.println("strCount(\"aaabababab\", \"a\") → " + strCount("aaabababab", "a"));
 		System.out.println("strCount(\"aaabababab\", \"b\") → " + strCount("aaabababab", "b"));
+		printFunction("strCopies");
+		System.out.println("strCopies(\"catcowcat\", \"cat\", 2) → " + strCopies("catcowcat", "cat", 2));
+		System.out.println("strCopies(\"catcowcat\", \"cow\", 2) → " + strCopies("catcowcat", "cow", 2));
+		System.out.println("strCopies(\"catcowcat\", \"cow\", 1) → " + strCopies("catcowcat", "cow", 1));
+		System.out.println("strCopies(\"iiijjj\", \"i\", 3) → " + strCopies("iiijjj", "i", 3));
+		System.out.println("strCopies(\"iiijjj\", \"i\", 4) → " + strCopies("iiijjj", "i", 4));
+		System.out.println("strCopies(\"iiijjj\", \"ii\", 2) → " + strCopies("iiijjj", "ii", 2));
+		System.out.println("strCopies(\"iiijjj\", \"ii\", 3) → " + strCopies("iiijjj", "ii", 3));
+		System.out.println("strCopies(\"iiijjj\", \"x\", 3) → " + strCopies("iiijjj", "x", 3));
+		System.out.println("strCopies(\"iiijjj\", \"x\", 0) → " + strCopies("iiijjj", "x", 0));
+		System.out.println("strCopies(\"iiiiij\", \"iii\", 3) → " + strCopies("iiiiij", "iii", 3));
+		System.out.println("strCopies(\"iiiiij\", \"iii\", 4) → " + strCopies("iiiiij", "iii", 4));
+		System.out.println("strCopies(\"ijiiiiij\", \"iiii\", 2) → " + strCopies("iiiiiij", "iii", 2));
+		System.out.println("strCopies(\"ijiiiiij\", \"iiii\", 3) → " + strCopies("iiiiiij", "iii", 3));
+		System.out.println("strCopies(\"dogcatdogcat\", \"dog\", 2) → " + strCopies("dogcatdogcat", "dog", 2));
 	}
 }
