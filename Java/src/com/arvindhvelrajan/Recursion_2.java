@@ -234,5 +234,14 @@ public class Recursion_2
 		System.out.println("splitOdd10([10, 0, 5, 5]) → " + splitOdd10(new int[] {10, 0, 5, 5}));
 		System.out.println("splitOdd10([10, 7, 5, 5, 2]) → " + splitOdd10(new int[] {10, 7, 5, 5, 2}));
 		System.out.println("splitOdd10([10, 7, 5, 5, 1]) → " + splitOdd10(new int[] {10, 7, 5, 5, 1}));
+		printFunction("split53");
+		System.out.println("split53([1, 1]) → " + split53(new int[] {1, 1}));
+		System.out.println("split53([1, 1, 1]) → " + split53(new int[] {1, 1, 1}));
+		System.out.println("split53([2, 4, 2]) → " + split53(new int[] {2, 4, 2}));
+		System.out.println("split53([2, 2, 2, 1]) → " + split53(new int[] {2, 2, 2, 1}));
+		System.out.println("split53([3, 3, 5, 1]) → " + split53(new int[] {3, 3, 5, 1}));
+		System.out.println("split53([3, 5, 8]) → " + split53(new int[] {3, 5, 8}));
+		System.out.println("split53([2, 4, 6]) → " + split53(new int[] {2, 4, 6}));
+		System.out.println("split53([3, 5, 6, 10, 3, 3]) → " + split53(new int[] {3, 5, 6, 10, 3, 3}));
 	}
 }
