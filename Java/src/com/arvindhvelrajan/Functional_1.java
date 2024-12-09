@@ -65,6 +65,18 @@ public class Functional_1
 	}
 
 	/**
+	 * Given a list of strings, return a list where each string has "y" added at its start and end.
+	 *
+	 * moreY(["a", "b", "c"]) → ["yay", "yby", "ycy"]
+	 * moreY(["hello", "there"]) → ["yhelloy", "ytherey"]
+	 * moreY(["yay"]) → ["yyayy"]
+	 */
+	public List<String> moreY(List<String> strings)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * This is a helper function that adds quotations to strings in a list
 	 */
 	public String toStringStringList(List<String> list)
