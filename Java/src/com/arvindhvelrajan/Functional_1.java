@@ -55,5 +55,12 @@ public class Functional_1
 		System.out.println("doubling([8, -5, 7, 3, 109]) → " + doubling(new ArrayList<>(List.of(8, -5, 7, 3, 109))));
 		System.out.println("doubling([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → " + doubling(new ArrayList<>(List.of(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2))));
 		System.out.println("doubling([3, 1, 4, 1, 5, 9]) → " + doubling(new ArrayList<>(List.of(3, 1, 4, 1, 5, 9))));
+		printFunction("square");
+		System.out.println("square([1, 2, 3]) → " + square(new ArrayList<>(List.of(1, 2, 3))));
+		System.out.println("square([6, 8, -6, -8, 1]) → " + square(new ArrayList<>(List.of(6, 8, 6, 8, -1))));
+		System.out.println("square([]) → " + square(new ArrayList<>(List.of())));
+		System.out.println("square([12]) → " + square(new ArrayList<>(List.of(12))));
+		System.out.println("square([5, 10]) → " + square(new ArrayList<>(List.of(5, 10))));
+		System.out.println("square([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → " + square(new ArrayList<>(List.of(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2))));
 	}
 }
