@@ -64,5 +64,24 @@ public class Recursion_2
 		System.out.println("groupSum(0, [10, 2, 2, 5], 17) → " + groupSum(0, new int[] {10, 2, 2, 5}, 17));
 		System.out.println("groupSum(0, [10, 2, 2, 5], 15) → " + groupSum(0, new int[] {10, 2, 2, 5}, 15));
 		System.out.println("groupSum(0, [10, 2, 2, 5], 9) → " + groupSum(0, new int[] {10, 2, 2, 5}, 9));
+		printFunction("groupSum6");
+		System.out.println("groupSum6(0, [5, 6, 2], 8) → " + groupSum6(0, new int[] {5, 6, 2}, 8));
+		System.out.println("groupSum6(0, [5, 6, 2], 9) → " + groupSum6(0, new int[] {5, 6, 2}, 9));
+		System.out.println("groupSum6(0, [5, 6, 2], 7) → " + groupSum6(0, new int[] {5, 6, 2}, 7));
+		System.out.println("groupSum6(0, [1], 1) → " + groupSum6(0, new int[] {1}, 1));
+		System.out.println("groupSum6(0, [9], 1) → " + groupSum6(0, new int[] {9}, 1));
+		System.out.println("groupSum6(0, [], 0) → " + groupSum6(0, new int[] {}, 0));
+		System.out.println("groupSum6(0, [3, 2, 4, 6], 8) → " + groupSum6(0, new int[] {3, 2, 4, 6}, 8));
+		System.out.println("groupSum6(0, [6, 2, 4, 3], 8) → " + groupSum6(0, new int[] {6, 2, 4, 3}, 8));
+		System.out.println("groupSum6(0, [5, 2, 4, 6], 9) → " + groupSum6(0, new int[] {5, 2, 4, 6}, 9));
+		System.out.println("groupSum6(0, [6, 2, 4, 5], 9) → " + groupSum6(0, new int[] {6, 2, 4, 5}, 9));
+		System.out.println("groupSum6(0, [3, 2, 4, 6], 3) → " + groupSum6(0, new int[] {3, 2, 4, 6}, 3));
+		System.out.println("groupSum6(0, [1, 6, 2, 6, 4], 12) → " + groupSum6(0, new int[] {1, 6, 2, 6, 4}, 12));
+		System.out.println("groupSum6(0, [1, 6, 2, 6, 4], 13) → " + groupSum6(0, new int[] {1, 6, 2, 6, 4}, 13));
+		System.out.println("groupSum6(0, [1, 6, 2, 6, 4], 4) → " + groupSum6(0, new int[] {1, 6, 2, 6, 4}, 4));
+		System.out.println("groupSum6(0, [1, 6, 2, 6, 4], 9) → " + groupSum6(0, new int[] {1, 6, 2, 6, 4}, 9));
+		System.out.println("groupSum6(0, [1, 6, 2, 6, 5], 14) → " + groupSum6(0, new int[] {1, 6, 2, 6, 5}, 14));
+		System.out.println("groupSum6(0, [1, 6, 2, 6, 5], 15) → " + groupSum6(0, new int[] {1, 6, 2, 6, 5}, 15));
+		System.out.println("groupSum6(0, [1, 6, 2, 6, 5], 16) → " + groupSum6(0, new int[] {1, 6, 2, 6, 5}, 16));
 	}
 }
