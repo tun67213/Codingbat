@@ -53,6 +53,14 @@ public class Functional_1
 	}
 
 	/**
+	 * This is a helper function that adds quotations to strings in a list
+	 */
+	public String toStringStringList(List<String> list)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
