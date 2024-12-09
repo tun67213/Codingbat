@@ -695,5 +695,20 @@ public class Recursion_1
 		System.out.println("nestParen(\"(())))\") → " + nestParen("(())))"));
 		System.out.println("nestParen(\"((yy())))\") → " + nestParen("((yy())))"));
 		System.out.println("nestParen(\"(((())))\") → " + nestParen("(((())))"));
+		printFunction("strCount");
+		System.out.println("strCount(\"catcowcat\", \"cat\") → " + strCount("catcowcat", "cat"));
+		System.out.println("strCount(\"catcowcat\", \"cow\") → " + strCount("catcowcat", "cow"));
+		System.out.println("strCount(\"catcowcat\", \"dog\") → " + strCount("catcowcat", "dog"));
+		System.out.println("strCount(\"cacatcowcat\", \"cat\") → " + strCount("cacatcowcat", "cat"));
+		System.out.println("strCount(\"xyx\", \"x\") → " + strCount("xyx", "x"));
+		System.out.println("strCount(\"iiiijj\", \"i\") → " + strCount("iiiijj", "i"));
+		System.out.println("strCount(\"iiiijj\", \"ii\") → " + strCount("iiiijj", "ii"));
+		System.out.println("strCount(\"iiiijj\", \"iii\") → " + strCount("iiiijj", "iii"));
+		System.out.println("strCount(\"iiiijj\", \"j\") → " + strCount("iiiijj", "j"));
+		System.out.println("strCount(\"iiiijj\", \"jj\") → " + strCount("iiiijj", "jj"));
+		System.out.println("strCount(\"aaabababab\", \"ab\") → " + strCount("aaabababab", "ab"));
+		System.out.println("strCount(\"aaabababab\", \"aa\") → " + strCount("aaabababab", "aa"));
+		System.out.println("strCount(\"aaabababab\", \"a\") → " + strCount("aaabababab", "a"));
+		System.out.println("strCount(\"aaabababab\", \"b\") → " + strCount("aaabababab", "b"));
 	}
 }
