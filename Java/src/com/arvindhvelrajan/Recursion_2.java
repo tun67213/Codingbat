@@ -178,5 +178,19 @@ public class Recursion_2
 		System.out.println("groupSumClump(0, [8, 2, 2, 1], 11) → " + groupSumClump(0, new int[] {8, 2, 2, 2}, 11));
 		System.out.println("groupSumClump(0, [1], 1) → " + groupSumClump(0, new int[] {1}, 1));
 		System.out.println("groupSumClump(0, [9], 1) → " + groupSumClump(0, new int[] {9}, 1));
+		printFunction("splitArray");
+		System.out.println("splitArray([2, 2]) → " + splitArray(new int[] {2, 2}));
+		System.out.println("splitArray([2, 3]) → " + splitArray(new int[] {2, 3}));
+		System.out.println("splitArray([5, 2, 3]) → " + splitArray(new int[] {5, 2, 3}));
+		System.out.println("splitArray([5, 2, 2]) → " + splitArray(new int[] {5, 2, 2}));
+		System.out.println("splitArray([1, 1, 1, 1, 1, 1]) → " + splitArray(new int[] {1, 1, 1, 1, 1, 1}));
+		System.out.println("splitArray([1, 1, 1, 1, 1]) → " + splitArray(new int[] {1, 1, 1, 1, 1}));
+		System.out.println("splitArray([]) → " + splitArray(new int[] {}));
+		System.out.println("splitArray([1]) → " + splitArray(new int[] {1}));
+		System.out.println("splitArray([3, 5]) → " + splitArray(new int[] {3, 5}));
+		System.out.println("splitArray([5, 3, 2]) → " + splitArray(new int[] {5, 3, 2}));
+		System.out.println("splitArray([2, 2, 10, 10, 1, 1]) → " + splitArray(new int[] {2, 2, 10, 10, 1, 1}));
+		System.out.println("splitArray([1, 2, 2, 10, 10, 1, 1]) → " + splitArray(new int[] {1, 2, 2, 10, 10, 1, 1}));
+		System.out.println("splitArray([1, 2, 3, 10, 10, 1, 1]) → " + splitArray(new int[] {1, 2, 3, 10, 10, 1, 1}));
 	}
 }
