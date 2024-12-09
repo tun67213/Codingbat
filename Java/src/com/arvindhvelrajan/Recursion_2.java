@@ -36,5 +36,19 @@ public class Recursion_2
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("groupSum");
+		System.out.println("groupSum(0, [2, 4, 8], 10) → " + groupSum(0, new int[] {2, 4, 8}, 10));
+		System.out.println("groupSum(0, [2, 4, 8], 14) → " + groupSum(0, new int[] {2, 4, 8}, 14));
+		System.out.println("groupSum(0, [2, 4, 8], 9) → " + groupSum(0, new int[] {2, 4, 8}, 9));
+		System.out.println("groupSum(0, [2, 4, 8], 8) → " + groupSum(0, new int[] {2, 4, 8}, 8));
+		System.out.println("groupSum(1, [2, 4, 8], 8) → " + groupSum(1, new int[] {2, 4, 8}, 8));
+		System.out.println("groupSum(1, [2, 4, 8], 2) → " + groupSum(1, new int[] {2, 4, 8}, 2));
+		System.out.println("groupSum(0, [1], 1) → " + groupSum(0, new int[] {1}, 1));
+		System.out.println("groupSum(0, [9], 1) → " + groupSum(0, new int[] {9}, 1));
+		System.out.println("groupSum(1, [9], 0) → " + groupSum(1, new int[] {9}, 0));
+		System.out.println("groupSum(0, [], 0) → " + groupSum(0, new int[] {0}, 0));
+		System.out.println("groupSum(0, [10, 2, 2, 5], 17) → " + groupSum(0, new int[] {10, 2, 2, 5}, 17));
+		System.out.println("groupSum(0, [10, 2, 2, 5], 15) → " + groupSum(0, new int[] {10, 2, 2, 5}, 15));
+		System.out.println("groupSum(0, [10, 2, 2, 5], 9) → " + groupSum(0, new int[] {10, 2, 2, 5}, 9));
 	}
 }
