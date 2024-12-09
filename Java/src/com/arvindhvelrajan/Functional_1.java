@@ -34,5 +34,14 @@ public class Functional_1
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("doubling");
+		System.out.println("doubling([1, 2, 3]) → " + doubling(new ArrayList<>(List.of(1, 2, 3))));
+		System.out.println("doubling([6, 8, 6, 8, -1]) → " + doubling(new ArrayList<>(List.of(6, 8, 6, 8, -1))));
+		System.out.println("doubling([]) → " + doubling(new ArrayList<>(List.of())));
+		System.out.println("doubling([5]) → " + doubling(new ArrayList<>(List.of(5))));
+		System.out.println("doubling([5, 10]) → " + doubling(new ArrayList<>(List.of(5, 10))));
+		System.out.println("doubling([8, -5, 7, 3, 109]) → " + doubling(new ArrayList<>(List.of(8, -5, 7, 3, 109))));
+		System.out.println("doubling([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → " + doubling(new ArrayList<>(List.of(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2))));
+		System.out.println("doubling([3, 1, 4, 1, 5, 9]) → " + doubling(new ArrayList<>(List.of(3, 1, 4, 1, 5, 9))));
 	}
 }
