@@ -152,5 +152,13 @@ public class Functional_1
 		System.out.println("moreY([\"\", \"a\", \"xx\"]) → " + toStringStringList(moreY(List.of("", "a", "xx"))));
 		System.out.println("moreY([]) → " + toStringStringList(moreY(List.of())));
 		System.out.println("moreY([\"xx\", \"yy\", \"zz\"]) → " + toStringStringList(moreY(List.of("xx", "yy", "zz"))));
+		printFunction("math1");
+		System.out.println("math1([1, 2, 3]) → " + math1(List.of(1, 2, 3)));
+		System.out.println("math1[6, 8, 6, 8, 1]) → " + math1(List.of(6, 8, 6, 8, 1)));
+		System.out.println("math1([10]) → " + math1(List.of(10)));
+		System.out.println("math1([]) → " + math1(List.of()));
+		System.out.println("math1([5, 10]) → " + math1(List.of(5, 10)));
+		System.out.println("math1([-1, -2, -3, -2, -1]) → " + math1(List.of(-1, -2, -3, -2, -1)));
+		System.out.println("math1([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → " + math1(List.of(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2)));
 	}
 }
