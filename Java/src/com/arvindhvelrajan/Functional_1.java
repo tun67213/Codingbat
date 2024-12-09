@@ -57,7 +57,20 @@ public class Functional_1
 	 */
 	public String toStringStringList(List<String> list)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		for(int i = 0; i < list.size(); i++)
+		{
+			buff.append("\"");
+			buff.append(list.get(i));
+			buff.append("\"");
+			if(i != list.size() - 1)
+			{
+				buff.append(",");
+			}
+		}
+		buff.append("]");
+		return buff.toString();
 	}
 
 	/**
