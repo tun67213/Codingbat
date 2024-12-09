@@ -342,6 +342,19 @@ public class Recursion_1
 	}
 
 	/**
+	 * Given a string that contains a single pair of parenthesis, compute recursively a new string made of only of
+	 * the parenthesis and their contents, so "xyz(abc)123" yields "(abc)".
+	 *
+	 * parenBit("xyz(abc)123") → "(abc)"
+	 * parenBit("x(hello)") → "(hello)"
+	 * parenBit("(xy)1") → "(xy)"
+	 */
+	public String parenBit(String str)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
