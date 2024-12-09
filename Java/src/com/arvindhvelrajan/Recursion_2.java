@@ -124,5 +124,21 @@ public class Recursion_2
 		System.out.println("groupNoAdj(0, [9], 1) → " + groupNoAdj(0, new int[] {9}, 1));
 		System.out.println("groupNoAdj(0, [9], 0) → " + groupNoAdj(0, new int[] {9}, 0));
 		System.out.println("groupNoAdj(0, [5, 10, 4, 1], 11) → " + groupNoAdj(0, new int[] {5, 10, 4, 1}, 11));
+		printFunction("groupSum5");
+		System.out.println("groupSum5(0, [2, 5, 10, 4], 19) → " + groupSum5(0, new int[] {2, 5, 10, 4}, 19));
+		System.out.println("groupSum5(0, [2, 5, 10, 4], 17) → " + groupSum5(0, new int[] {2, 5, 10, 4}, 17));
+		System.out.println("groupSum5(0, [2, 5, 10, 4], 12) → " + groupSum5(0, new int[] {2, 5, 10, 4}, 12));
+		System.out.println("groupSum5(0, [2, 5, 4, 10], 12) → " + groupSum5(0, new int[] {2, 5, 4, 10}, 12));
+		System.out.println("groupSum5(0, [3, 5, 1], 4) → " + groupSum5(0, new int[] {3, 5, 1}, 4));
+		System.out.println("groupSum5(0, [3, 5, 1], 5) → " + groupSum5(0, new int[] {3, 5, 1}, 5));
+		System.out.println("groupSum5(0, [1, 3, 5], 5) → " + groupSum5(0, new int[] {1, 3, 5}, 5));
+		System.out.println("groupSum5(0, [3, 5, 1], 9) → " + groupSum5(0, new int[] {3, 5, 1}, 9));
+		System.out.println("groupSum5(0, [2, 5, 10, 4], 7) → " + groupSum5(0, new int[] {2, 5, 10, 4}, 7));
+		System.out.println("groupSum5(0, [2, 5, 10, 4], 15) → " + groupSum5(0, new int[] {2, 5, 10, 4}, 15));
+		System.out.println("groupSum5(0, [2, 5, 10, 4], 11) → " + groupSum5(0, new int[] {2, 5, 10, 4}, 11));
+		System.out.println("groupSum5(0, [1], 1) → " + groupSum5(0, new int[] {1}, 1));
+		System.out.println("groupSum5(0, [9], 1) → " + groupSum5(0, new int[] {9}, 1));
+		System.out.println("groupSum5(0, [9], 0) → " + groupSum5(0, new int[] {9}, 0));
+		System.out.println("groupSum5(0, [], 0) → " + groupSum5(0, new int[] {}, 0));
 	}
 }
