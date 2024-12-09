@@ -156,5 +156,13 @@ public class Recursion_2
 		System.out.println("groupSum5(0, [9], 1) → " + groupSum5(0, new int[] {9}, 1));
 		System.out.println("groupSum5(0, [9], 0) → " + groupSum5(0, new int[] {9}, 0));
 		System.out.println("groupSum5(0, [], 0) → " + groupSum5(0, new int[] {}, 0));
+		printFunction("groupSumClump");
+		System.out.println("groupSumClump(0, [2, 4, 8], 10) → " + groupSumClump(0, new int[] {2, 4, 8}, 10));
+		System.out.println("groupSumClump(0, [1, 2, 4, 8, 1], 14) → " + groupSumClump(0, new int[] {1, 2, 4, 8, 1}, 14));
+		System.out.println("groupSumClump(0, [2, 4, 4, 8], 14) → " + groupSumClump(0, new int[] {2, 4, 4, 8}, 14));
+		System.out.println("groupSumClump(0, [8, 2, 2, 1], 9) → " + groupSumClump(0, new int[] {8, 2, 2, 2}, 9));
+		System.out.println("groupSumClump(0, [8, 2, 2, 1], 11) → " + groupSumClump(0, new int[] {8, 2, 2, 2}, 11));
+		System.out.println("groupSumClump(0, [1], 1) → " + groupSumClump(0, new int[] {1}, 1));
+		System.out.println("groupSumClump(0, [9], 1) → " + groupSumClump(0, new int[] {9}, 1));
 	}
 }
