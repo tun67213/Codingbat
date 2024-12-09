@@ -89,6 +89,18 @@ public class Functional_1
 	}
 
 	/**
+	 * Given a list of non-negative integers, return an integer list of the rightmost digits. (Note: use %)
+	 *
+	 * rightDigit([1, 22, 93]) → [1, 2, 3]
+	 * rightDigit([16, 8, 886, 8, 1]) → [6, 8, 6, 8, 1]
+	 * rightDigit([10, 0]) → [0, 0]
+	 */
+	public List<Integer> rightDigit(List<Integer> nums)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * This is a helper function that adds quotations to strings in a list
 	 */
 	public String toStringStringList(List<String> list)
