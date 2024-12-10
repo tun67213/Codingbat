@@ -467,6 +467,18 @@ public class Warmup_1
 	}
 
 	/**
+	 * The following is a helper function to implement max1020() called fixInt(), which fixes the value provided.
+	 */
+	private int fixInt(int a)
+	{
+		if(inRange(a))
+		{
+			return a;
+		}
+		return 0;
+	}
+
+	/**
 	 * Return true if the given string contains between 1 and 3 'e' chars.
 	 *
 	 * stringE("Hello") → true
