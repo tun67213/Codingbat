@@ -32,5 +32,13 @@ public class Functional_2
 	public void main(String[] args)
 	{
 		welcome();
+		printFunction("noNeg");
+		System.out.println("noNeg([1, -2]) → " + noNeg(List.of(1, -2)));
+		System.out.println("noNeg([-3, -3, 3, 3]) → " + noNeg(List.of(-3, -3, 3, 3)));
+		System.out.println("noNeg([-1, -1, -1]) → " + noNeg(List.of(-1, -1, -1)));
+		System.out.println("noNeg([]) → " + noNeg(List.of()));
+		System.out.println("noNeg([0, 1, 2]) → " + noNeg(List.of(0, 1, 2)));
+		System.out.println("noNeg([3, -10, 1, -1, 4, -400]) → " + noNeg(List.of(3, -10, 1, -1, 4, -400)));
+		System.out.println("noNeg([-1, 3, 1, -1, -10, -100, -111, 5]) → " + noNeg(List.of(-1, 3, 1, -1, -10, -100, -111, 5)));
 	}
 }
