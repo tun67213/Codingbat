@@ -150,6 +150,25 @@ public class Warmup_2
 		}
 		return true;
 	}
+	/**
+	 * The following is a recursive algorithm for solving doubleX().
+	 */
+	private boolean doubleXRecursive(String str)
+	{
+		if(str.isEmpty())
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("x"));
+		}
+		if(str.charAt(0) == 'x')
+		{
+			return str.charAt(1) == 'x';
+		}
+		return doubleX(str.substring(1));
+	}
 
 	/**
 	 * Given a string, return a new string made of every other char starting with the first,
