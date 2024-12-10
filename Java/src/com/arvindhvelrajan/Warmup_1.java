@@ -294,7 +294,7 @@ public class Warmup_1
 	}
 	private boolean inRange(int a)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a >= 10 && a <= 20;
 	}
 
 	/**
