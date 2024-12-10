@@ -158,5 +158,17 @@ public class Functional_2
 		System.out.println("noLong([\"empty\", \"\", \"empty\"]) → " + toStringStringList(new ArrayList<>(noLong(List.of("empty", "", "empty")))));
 		System.out.println("noLong([\"a\"]) → " + toStringStringList(new ArrayList<>(noLong(List.of("a")))));
 		System.out.println("noLong([\"aaaa\", \"bbb\", \"***\", \"333\"]) → " + toStringStringList(noLong(new ArrayList<>(List.of("aaaa", "bbb", "***", "333")))));
+		printFunction("no34");
+		System.out.println("no34([\"a\", \"bb\", \"ccc\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("a", "bb", "ccc")))));
+		System.out.println("no34([\"a\", \"bb\", \"ccc\", \"dddd\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("a", "bb", "ccc", "dddd")))));
+		System.out.println("no34([\"ccc\", \"dddd\", \"apple\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("ccc", "dddd", "apple")))));
+		System.out.println("no34([\"this\", \"not\", \"too\", \"long\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("this", "not", "too", "long")))));
+		System.out.println("no34([\"a\", \"bbb\", \"cccc\", \"xx\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("a", "bbb", "cccc", "xx")))));
+		System.out.println("no34([\"dddd\", \"ddd\", \"xxxxxxx\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("dddd", "ddd", "xxxxxxx")))));
+		System.out.println("no34([]) → " + toStringStringList(no34(new ArrayList<>(List.of()))));
+		System.out.println("no34([\"\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("")))));
+		System.out.println("no34([\"empty\", \"\", \"empty\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("empty", "", "empty")))));
+		System.out.println("no34([\"a\"]) → " + no34(new ArrayList<>(List.of("a"))));
+		System.out.println("no34([\"aaaa\", \"bbb\", \"*****\", \"333\"]) → " + no34(new ArrayList<>(List.of("aaaa", "bbb", "*****", "333"))));
 	}
 }
