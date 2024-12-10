@@ -292,6 +292,10 @@ public class Warmup_1
 	{
 		return inRange(a) || inRange(b);
 	}
+
+	/**
+	 * This helper function is designed to check if the provided value is within the range of 10 (inclusive) and 20 (inclusive)
+	 */
 	private boolean inRange(int a)
 	{
 		return a >= 10 && a <= 20;
