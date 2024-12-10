@@ -320,6 +320,18 @@ public class Warmup_2
 		}
 		return false;
 	}
+	private boolean arrayFront9Recursive(int[] nums, int index)
+	{
+		if(nums.length == 0 || index < 0 || index >= 4 || index >= nums.length)
+		{
+			return false;
+		}
+		if(nums[index] == 9)
+		{
+			return true;
+		}
+		return arrayFront9Recursive(nums, index + 1);
+	}
 
 	/**
 	 * Given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere.
