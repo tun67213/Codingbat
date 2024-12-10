@@ -41,7 +41,7 @@ public class Warmup_1
 	 */
 	public boolean monkeyTrouble(boolean aSmile, boolean bSmile)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return aSmile == bSmile;
 	}
 
 	/**
