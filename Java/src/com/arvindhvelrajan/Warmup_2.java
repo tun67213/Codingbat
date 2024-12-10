@@ -33,6 +33,17 @@ public class Warmup_2
 		}
 		return sub;
 	}
+	/**
+	 * The following is a recursive algorithm for stringTimes().
+	 */
+	private String stringTimesRecursive(String str, int n)
+	{
+		if(n == 0)
+		{
+			return "";
+		}
+		return str + stringTimesRecursive(str, n - 1);
+	}
 
 	/**
 	 * Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;
