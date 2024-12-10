@@ -244,7 +244,20 @@ public class Warmup_2
 	 */
 	public int last2(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return 0;
+		}
+		int count = 0;
+		String sub = str.substring(str.length() - 2);
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 2).equals(sub))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
