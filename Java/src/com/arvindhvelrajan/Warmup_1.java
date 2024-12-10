@@ -345,7 +345,11 @@ public class Warmup_1
 	 */
 	public String delDel(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.startsWith("del", 1))
+		{
+			return str.charAt(0) + str.substring(4);
+		}
+		return str;
 	}
 
 	/**
