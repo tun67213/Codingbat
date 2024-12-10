@@ -236,7 +236,7 @@ public class Warmup_1
 	 */
 	public boolean or35(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return (n % 3 == 0) || (n % 5 == 0);
 	}
 
 	/**
