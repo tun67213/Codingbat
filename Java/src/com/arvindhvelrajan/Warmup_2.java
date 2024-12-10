@@ -189,6 +189,22 @@ public class Warmup_2
 	}
 
 	/**
+	 * The following is a recursive algorithm for solving stringBits().
+	 */
+	private String stringBitsRecursive(String str)
+	{
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			return str.substring(0, 1);
+		}
+		return str.charAt(0) + stringBitsRecursive(str.substring(2));
+	}
+
+	/**
 	 * Given a non-empty string like "Code" return a string like "CCoCodCode".
 	 *
 	 * stringSplosion("Code") → "CCoCodCode"
