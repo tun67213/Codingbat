@@ -315,6 +315,14 @@ public class Warmup_1
 	}
 
 	/**
+	 * This helper function is designed to check if the provided value is a 'teen' value.
+	 */
+	public boolean isTeen(int a)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * We'll say that a number is "teen" if it is in the range 13..19 inclusive.
 	 * Given 2 int values, return true if one or the other is teen, but not both.
 	 *
