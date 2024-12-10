@@ -183,5 +183,16 @@ public class Functional_2
 		System.out.println("no34([\"empty\", \"\", \"empty\"]) → " + toStringStringList(no34(new ArrayList<>(List.of("empty", "", "empty")))));
 		System.out.println("no34([\"a\"]) → " + no34(new ArrayList<>(List.of("a"))));
 		System.out.println("no34([\"aaaa\", \"bbb\", \"*****\", \"333\"]) → " + no34(new ArrayList<>(List.of("aaaa", "bbb", "*****", "333"))));
+		printFunction("noYY");
+		System.out.println("noYY([\"a\", \"b\", \"c\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("a", "b", "c")))));
+		System.out.println("noYY([\"a\", \"b\", \"cy\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("a", "b", "cy")))));
+		System.out.println("noYY([\"xx\", \"ya\", \"zz\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("xx", "ya", "zz")))));
+		System.out.println("noYY([\"xx\", \"yay\", \"zz\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("xx", "yay", "zz")))));
+		System.out.println("noYY([\"yyx\", \"y\", \"zzz\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("yyx", "y", "zzz")))));
+		System.out.println("noYY([\"hello\", \"there\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("hello", "there")))));
+		System.out.println("noYY([\"ya\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("ya")))));
+		System.out.println("noYY([]) → " + toStringStringList(noYY(new ArrayList<>(List.of()))));
+		System.out.println("noYY([\"\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("")))));
+		System.out.println("noYY([\"xx\", \"yy\", \"zz\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("xx", "yy", "zz")))));
 	}
 }
