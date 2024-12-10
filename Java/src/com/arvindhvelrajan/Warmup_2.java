@@ -319,6 +319,8 @@ public class Warmup_2
 			}
 		}
 		return false;
+//		This is how you would call the recursive algorithm if added here:
+//		return arrayFront9Recursive(nums, 0);
 	}
 	/**
 	 * The following is a recursive implementation for arrayFront9()
