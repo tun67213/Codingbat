@@ -193,5 +193,12 @@ public class Functional_1
 		System.out.println("rightDigit([5, 10]) → " + rightDigit(List.of(5, 10)));
 		System.out.println("rightDigit([5, 50, 500, 5000, 5000]) → " + rightDigit(List.of(5, 50, 500, 5000, 5000)));
 		System.out.println("rightDigit([6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2]) → " + rightDigit(List.of(6, 23, 12, 23, 4, 1, 19, 1119, 2, 3, 2)));
+		printFunction("lower");
+		System.out.println("lower([\"Hello\", \"Hi\"]) → " + toStringStringList(lower(List.of("Hello", "Hi"))));
+		System.out.println("lower([\"AAA\", \"BBB\", \"ccc\"]) → " + toStringStringList(lower(List.of("AAA", "BBB", "ccc"))));
+		System.out.println("lower([\"KitteN\", \"ChocolaTE\"]) → " + toStringStringList(lower(List.of("KitteN", "ChocolaTE"))));
+		System.out.println("lower([]) → " + toStringStringList(lower(List.of())));
+		System.out.println("lower([\"EMPTY\", \"\"]) → " + toStringStringList(lower(List.of("EMPTY", ""))));
+		System.out.println("lower([\"aaX\", \"bYb\", \"Ycc\", \"ZZZ\"]) → " +  toStringStringList(lower(List.of("aaX", "bYb", "Ycc", "ZZZ"))));
 	}
 }
