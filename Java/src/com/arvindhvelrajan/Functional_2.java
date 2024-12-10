@@ -118,5 +118,12 @@ public class Functional_2
 		System.out.println("noTeen([0, 1, 2, -3]) → " + noTeen(new ArrayList<>(List.of(0, 1, 2, -3))));
 		System.out.println("noTeen([15, 17, 19, 21, 19]) → " + noTeen(new ArrayList<>(List.of(15, 17, 19, 21, 19))));
 		System.out.println("noTeen([-16, 2, 15, 3, 16, 25]) → " + noTeen(new ArrayList<>(List.of(-16, 2, 15, 3, 16, 25))));
+		printFunction("noZ");
+		System.out.println("noZ([\"aaa\", \"bbb\", \"aza\"]) → " + toStringStringList(noZ(new ArrayList<>(List.of("aaa", "bbb", "aza")))));
+		System.out.println("noZ([\"hziz\", \"hzello\", \"hi\"]) → " + toStringStringList(noZ(new ArrayList<>(List.of("hziz", "hello", "hi")))));
+		System.out.println("noZ([\"hello\", \"howz\", \"are\", \"youz\"]) → " + toStringStringList(noZ(new ArrayList<>(List.of("hello", "are", "youz")))));
+		System.out.println("noZ([]) → " + toStringStringList(noZ(new ArrayList<>(List.of()))));
+		System.out.println("noZ([\"\"]) → " + toStringStringList(noZ(new ArrayList<>(List.of("")))));
+		System.out.println("noZ([\"x\", \"y\", \"z\"]) → " + toStringStringList(noZ(new ArrayList<>(List.of("x", "y", "z")))));
 	}
 }
