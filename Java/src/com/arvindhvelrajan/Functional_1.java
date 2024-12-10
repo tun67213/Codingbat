@@ -212,5 +212,14 @@ public class Functional_1
 		System.out.println("lower([]) → " + toStringStringList(lower(List.of())));
 		System.out.println("lower([\"EMPTY\", \"\"]) → " + toStringStringList(lower(List.of("EMPTY", ""))));
 		System.out.println("lower([\"aaX\", \"bYb\", \"Ycc\", \"ZZZ\"]) → " +  toStringStringList(lower(List.of("aaX", "bYb", "Ycc", "ZZZ"))));
+		printFunction("noX");
+		System.out.println("noX([\"ax\", \"bb\", \"cx\"]) → " + toStringStringList(noX(List.of("ax", "bb", "cx"))));
+		System.out.println("noX([\"xxax\", \"xbxbx\", \"xxcx\"]) → " + toStringStringList(noX(List.of("xxax", "xbxbx", "xxcx"))));
+		System.out.println("noX([\"x\"]) → " + toStringStringList(noX(List.of("x"))));
+		System.out.println("noX([\"\"]) → " + toStringStringList(noX(List.of(""))));
+		System.out.println("noX([]) → " + toStringStringList(noX(List.of())));
+		System.out.println("noX([\"the\", \"taxi\"]) → " + toStringStringList(noX(List.of("the", "taxi"))));
+		System.out.println("noX([\"the\", \"xxtxaxixxx\"]) → " + toStringStringList(noX(List.of("the", "xxtxaxixxx"))));
+		System.out.println("noX([\"this\", \"is\", \"the\", \"x\"]) → " + toStringStringList(noX(List.of("this", "is", "the", "x"))));
 	}
 }
