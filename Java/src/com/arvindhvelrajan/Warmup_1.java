@@ -446,6 +446,14 @@ public class Warmup_1
 	}
 
 	/**
+	 * This helper function will help with implementing in3050().
+	 */
+	private boolean inRange(int a, int b, int c)
+	{
+		return a <= b && b <= c;
+	}
+
+	/**
 	 * Given 2 positive int values, return the larger value that is in the range 10..20 inclusive,
 	 * or return 0 if neither is in that range.
 	 *
