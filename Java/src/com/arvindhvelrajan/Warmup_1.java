@@ -71,7 +71,11 @@ public class Warmup_1
 	 */
 	public int diff21(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n < 21)
+		{
+			return 21 - n;
+		}
+		return 2 * (n - 21);
 	}
 
 	/**
