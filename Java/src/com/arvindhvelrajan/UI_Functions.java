@@ -15,7 +15,7 @@ public class UI_Functions
 			System.out.println();
 			System.out.println();
 		}
-		System.out.println("Function Name: " + functionName);
+		System.out.println("Function Name: " + functionName + "()");
 		System.out.println();
 		callCount++;
 	}
