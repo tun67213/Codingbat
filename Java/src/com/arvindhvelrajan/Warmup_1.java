@@ -559,6 +559,21 @@ public class Warmup_1
 		}
 		return sub;
 	}
+	/**
+	 * The following is a recursive algorithm for everyNth().
+	 */
+	private String everyNthRecursive(String str, int n)
+	{
+		if(str.isEmpty())
+		{
+			return "";
+		}
+		if(str.length() < n)
+		{
+			return str.substring(0, 1);
+		}
+		return str.charAt(0) + everyNthRecursive(str.substring(n), n);
+	}
 
 	/**
 	 * @param args commandline arguments
