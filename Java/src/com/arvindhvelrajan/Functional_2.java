@@ -207,5 +207,13 @@ public class Functional_2
 		System.out.println("noYY([]) → " + toStringStringList(noYY(new ArrayList<>(List.of()))));
 		System.out.println("noYY([\"\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("")))));
 		System.out.println("noYY([\"xx\", \"yy\", \"zz\"]) → " + toStringStringList(noYY(new ArrayList<>(List.of("xx", "yy", "zz")))));
+		printFunction("two2");
+		System.out.println("two2([1, 2, 3]) → " + two2(new ArrayList<>(List.of(1, 2, 3))));
+		System.out.println("two2([2, 6, 11]) → " + two2(new ArrayList<>(List.of(2, 6, 11))));
+		System.out.println("two2([0]) → " + two2(new ArrayList<>(List.of(0))));
+		System.out.println("two2([]) → " + two2(new ArrayList<>(List.of())));
+		System.out.println("two2([1, 11, 111, 16]) → " + two2(new ArrayList<>(List.of(1, 11, 111, 16))));
+		System.out.println("two2([2, 3, 5, 7, 11]) → " + two2(new ArrayList<>(List.of(2, 3, 5, 7, 11))));
+		System.out.println("two2([3, 1, 4, 1, 6, 99, 0]) → " + two2(new ArrayList<>(List.of(3, 1, 4, 1, 6, 99, 0))));
 	}
 }
