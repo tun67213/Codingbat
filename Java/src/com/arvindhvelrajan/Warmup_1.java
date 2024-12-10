@@ -429,9 +429,9 @@ public class Warmup_1
 		System.out.println("sleepIn(true, true) → " + sleepIn(true, true));
 		printFunction("monkeyTrouble");
 		System.out.println("monkeyTrouble(true, true) → " + monkeyTrouble(true, true));
+		System.out.println("monkeyTrouble(false, false) → " + monkeyTrouble(false, false));
 		System.out.println("monkeyTrouble(true, false) → " + monkeyTrouble(true, false));
 		System.out.println("monkeyTrouble(false, true) → " + monkeyTrouble(false, true));
-		System.out.println("monkeyTrouble(false, false) → " + monkeyTrouble(false, false));
 		printFunction("sumDouble");
 		System.out.println("sumDouble(1, 2) → " + sumDouble(1, 2));
 		System.out.println("sumDouble(3, 2) → " + sumDouble(3, 2));
