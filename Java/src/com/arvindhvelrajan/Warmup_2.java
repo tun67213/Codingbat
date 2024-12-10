@@ -65,6 +65,18 @@ public class Warmup_2
 		}
 		return sub;
 	}
+	private String frontTimesRecursive(String str, int n)
+	{
+		if(n == 0)
+		{
+			return "";
+		}
+		if(str.length() > 3)
+		{
+			return frontTimesRecursive(str.substring(0, str.length() - 1), n);
+		}
+		return str + frontTimesRecursive(str, n - 1);
+	}
 
 	/**
 	 * Count the number of "xx" in the given string. We'll say that overlapping is allowed,
