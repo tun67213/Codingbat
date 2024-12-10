@@ -213,7 +213,12 @@ public class Warmup_2
 	 */
 	public String stringSplosion(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		for(int i = 1; i < str.length() + 1; i++)
+		{
+			sub += str.substring(0, i);
+		}
+		return sub;
 	}
 
 	/**
