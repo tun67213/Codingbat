@@ -420,7 +420,16 @@ public class Warmup_1
 	 */
 	public int close10(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int firstNum = Math.abs(a - 10), secondNum = Math.abs(b - 10);
+		if(firstNum == secondNum)
+		{
+			return 0;
+		}
+		if(firstNum < secondNum)
+		{
+			return a;
+		}
+		return b;
 	}
 
 	/**
