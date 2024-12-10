@@ -65,6 +65,27 @@ public class Functional_2
 	}
 
 	/**
+	 * This is a helper function that adds quotations to strings in a list
+	 */
+	public String toStringStringList(List<String> list)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		for(int i = 0; i < list.size(); i++)
+		{
+			buff.append("\"");
+			buff.append(list.get(i));
+			buff.append("\"");
+			if(i != list.size() - 1)
+			{
+				buff.append(",");
+			}
+		}
+		buff.append("]");
+		return buff.toString();
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
