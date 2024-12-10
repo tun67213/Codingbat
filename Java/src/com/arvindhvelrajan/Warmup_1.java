@@ -292,6 +292,10 @@ public class Warmup_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	private boolean inRange(int a)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
 	/**
 	 * We'll say that a number is "teen" if it is in the range 13..19 inclusive.
