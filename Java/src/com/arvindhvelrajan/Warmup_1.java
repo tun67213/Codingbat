@@ -332,7 +332,7 @@ public class Warmup_1
 	 */
 	public boolean loneTeen(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return isTeen(a) ^ isTeen(b);
 	}
 
 	/**
