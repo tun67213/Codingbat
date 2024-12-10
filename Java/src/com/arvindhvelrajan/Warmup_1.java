@@ -193,7 +193,12 @@ public class Warmup_1
 	 */
 	public String front3(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = str;
+		if(sub.length() > 3)
+		{
+			sub = sub.substring(0, 3);
+		}
+		return sub + sub + sub;
 	}
 
 	/**
