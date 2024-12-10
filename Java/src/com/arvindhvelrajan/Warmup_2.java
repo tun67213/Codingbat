@@ -278,6 +278,8 @@ public class Warmup_2
 			}
 		}
 		return count;
+		// This is how you would call the recursive method in this function
+	//	return arrayCount9Recursive(nums, 0);
 	}
 	/**
 	 * The following is a recursive implementation for arrayCount9()
