@@ -306,7 +306,19 @@ public class Warmup_2
 	 */
 	public boolean arrayFront9(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int length = nums.length;
+		if(length > 4)
+		{
+			length = 4;
+		}
+		for(int i = 0; i < length; i++)
+		{
+			if(nums[i] == 9)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
