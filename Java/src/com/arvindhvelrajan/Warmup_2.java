@@ -320,6 +320,9 @@ public class Warmup_2
 		}
 		return false;
 	}
+	/**
+	 * The following is a recursive implementation for arrayFront9()
+	 */
 	private boolean arrayFront9Recursive(int[] nums, int index)
 	{
 		if(nums.length == 0 || index < 0 || index >= 4 || index >= nums.length)
