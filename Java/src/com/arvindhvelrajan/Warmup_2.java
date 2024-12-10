@@ -379,6 +379,21 @@ public class Warmup_2
 		}
 		return count;
 	}
+	/**
+	 * The following is a RECURSIVE implementation for stringMatch().
+	 */
+	private int stringMatchRecursive(String a, String b)
+	{
+		if(a.length() < 2 || b.length() < 2)
+		{
+			return 0;
+		}
+		if(a.substring(0, 2).equals(b.substring(0, 2)))
+		{
+			return 1 + stringMatchRecursive(a.substring(1), b.substring(1));
+		}
+		return stringMatchRecursive(a.substring(1), b.substring(1));
+	}
 
 	/**
 	 * Given a string, return a version where all the "x" have been removed.
