@@ -125,7 +125,30 @@ public class Warmup_2
 	 */
 	public boolean doubleX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("x"));
+		}
+		if(str.charAt(0) == 'x' && !(str.charAt(1) == 'x'))
+		{
+			return false;
+		}
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(str.charAt(i) == 'x')
+			{
+				return (str.charAt(i + 1) == 'x') || (str.charAt(i - 1) == 'x');
+			}
+		}
+		if(str.charAt(str.length() - 1) == 'x')
+		{
+			return str.charAt(str.length() - 2) == 'x';
+		}
+		return true;
 	}
 
 	/**
