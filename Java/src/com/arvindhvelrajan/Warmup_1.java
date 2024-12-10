@@ -27,7 +27,7 @@ public class Warmup_1
 	 */
 	public boolean sleepIn(boolean weekday, boolean vacation)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return vacation || !weekday;
 	}
 
 	/**
