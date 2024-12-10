@@ -290,7 +290,7 @@ public class Warmup_1
 	 */
 	public boolean in1020(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return inRange(a) || inRange(b);
 	}
 	private boolean inRange(int a)
 	{
