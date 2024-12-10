@@ -163,7 +163,7 @@ public class Warmup_1
 	 */
 	public String missingChar(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.substring(0, n) + str.substring(n + 1);
 	}
 
 	/**
