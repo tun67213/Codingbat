@@ -374,7 +374,19 @@ public class Warmup_1
 	 */
 	public String startOz(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.startsWith("oz"))
+		{
+			return "oz";
+		}
+		if(str.startsWith("o"))
+		{
+			return "o";
+		}
+		if(str.startsWith("z", 1))
+		{
+			return "z";
+		}
+		return "";
 	}
 
 	/**
