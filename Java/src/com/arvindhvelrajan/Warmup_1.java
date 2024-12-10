@@ -200,6 +200,14 @@ public class Warmup_1
 		}
 		return sub + sub + sub;
 	}
+	private String front3Recursive(String str)
+	{
+		if(str.length() <= 3)
+		{
+			return str + str + str;
+		}
+		return front3Recursive(str.substring(0, str.length() - 1));
+	}
 
 	/**
 	 * Given a string, take the last char and return a new string with the last char added at the front and back,
