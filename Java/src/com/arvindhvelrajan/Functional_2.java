@@ -137,5 +137,14 @@ public class Functional_2
 		System.out.println("noZ([]) → " + toStringStringList(noZ(new ArrayList<>(List.of()))));
 		System.out.println("noZ([\"\"]) → " + toStringStringList(noZ(new ArrayList<>(List.of("")))));
 		System.out.println("noZ([\"x\", \"y\", \"z\"]) → " + toStringStringList(noZ(new ArrayList<>(List.of("x", "y", "z")))));
+		printFunction("noLong");
+		System.out.println("noLong([\"this\", \"not\", \"too\", \"long\"]) → " + toStringStringList(noLong(new ArrayList<>(List.of("this", "not", "too", "long")))));
+		System.out.println("noLong([\"a\", \"bbb\", \"cccc\"]) → " + toStringStringList(noLong(new ArrayList<>(List.of("a", "bbb", "cccc")))));
+		System.out.println("noLong([\"cccc\", \"cccc\", \"cccc\"]) → " + toStringStringList(noLong(new ArrayList<>(List.of("cccc", "cccc", "cccc")))));
+		System.out.println("noLong([]) → " + toStringStringList(noLong(new ArrayList<>(List.of()))));
+		System.out.println("noLong([\"\"]) → " + toStringStringList(noLong(List.of(""))));
+		System.out.println("noLong([\"empty\", \"\", \"empty\"]) → " + toStringStringList(noLong(List.of("empty", "", "empty"))));
+		System.out.println("noLong([\"a\"]) → " + toStringStringList(noLong(List.of("a"))));
+		System.out.println("noLong([\"aaaa\", \"bbb\", \"***\", \"333\"]) → " + toStringStringList(noLong(List.of("aaaa", "bbb", "***", "333"))));
 	}
 }
