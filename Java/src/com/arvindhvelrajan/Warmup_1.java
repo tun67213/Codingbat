@@ -319,7 +319,7 @@ public class Warmup_1
 	 */
 	public boolean isTeen(int a)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a >= 13 && a <= 19;
 	}
 
 	/**
