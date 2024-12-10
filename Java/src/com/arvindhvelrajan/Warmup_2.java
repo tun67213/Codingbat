@@ -180,7 +180,12 @@ public class Warmup_2
 	 */
 	public String stringBits(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		for(int i = 0; i < str.length(); i += 2)
+		{
+			sub += str.substring(i, i + 1);
+		}
+		return sub;
 	}
 
 	/**
