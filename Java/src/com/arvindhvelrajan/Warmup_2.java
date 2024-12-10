@@ -279,6 +279,21 @@ public class Warmup_2
 		}
 		return count;
 	}
+	/**
+	 * The following is a recursive implementation for arrayCount9()
+	 */
+	private int arrayCount9Recursive(int[] nums, int index)
+	{
+		if(nums.length == 0 || index < 0 || index >= nums.length)
+		{
+			return 0;
+		}
+		if(nums[index] == 9)
+		{
+			return 1 + arrayCount9Recursive(nums, index + 1);
+		}
+		return arrayCount9Recursive(nums, index + 1);
+	}
 
 	/**
 	 * Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.
