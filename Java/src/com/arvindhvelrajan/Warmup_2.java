@@ -102,6 +102,18 @@ public class Warmup_2
 		}
 		return count;
 	}
+	private int countXXRecursive(String str)
+	{
+		if(str.length() < 2)
+		{
+			return 0;
+		}
+		if(str.startsWith("xx"))
+		{
+			return 1 + countXXRecursive(str.substring(1));
+		}
+		return countXXRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given a string, return true if the first instance of "x" in the string is immediately followed
