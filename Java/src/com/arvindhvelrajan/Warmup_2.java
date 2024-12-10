@@ -26,7 +26,12 @@ public class Warmup_2
 	 */
 	public String stringTimes(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		for(int i = 0; i < n; i++)
+		{
+			sub += str;
+		}
+		return sub;
 	}
 
 	/**
