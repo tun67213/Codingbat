@@ -54,5 +54,15 @@ public class Functional_2
 		System.out.println("noNeg([0, 1, 2]) → " + noNeg(new ArrayList<>(List.of(0, 1, 2))));
 		System.out.println("noNeg([3, -10, 1, -1, 4, -400]) → " + noNeg(new ArrayList<>(List.of(3, -10, 1, -1, 4, -400))));
 		System.out.println("noNeg([-1, 3, 1, -1, -10, -100, -111, 5]) → " + noNeg(new ArrayList<>(List.of(-1, 3, 1, -1, -10, -100, -111, 5))));
+		printFunction("no9");
+		System.out.println("no9([1, 2, 19]) → " + no9(new ArrayList<>(List.of(1, 2, 19))));
+		System.out.println("no9([9, 19, 29, 3]) → " + no9(new ArrayList<>(List.of(9, 19, 29, 3))));
+		System.out.println("no9([1, 2, 3]) → " + no9(new ArrayList<>(List.of(1, 2, 3))));
+		System.out.println("no9([45, 99, 90, 28, 13, 999, 0]) → " + no9(new ArrayList<>(List.of(45, 99, 90, 28, 13, 999, 0))));
+		System.out.println("no9([1, 2, 3]) → " + no9(new ArrayList<>(List.of(1, 2, 3))));
+		System.out.println("no9([45, 99, 90, 28, 13, 999, 0]) → " + no9(new ArrayList<>(List.of(45, 99, 90, 28, 13, 999, 0))));
+		System.out.println("no9([]) → " + no9(new ArrayList<>(List.of())));
+		System.out.println("no9([9]) → " + no9(new ArrayList<>(List.of(9))));
+		System.out.println("no9([0, 9, 0]) → " + no9(new ArrayList<>(List.of(0, 9, 0))));
 	}
 }
