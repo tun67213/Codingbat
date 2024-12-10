@@ -228,5 +228,16 @@ public class Functional_2
 		System.out.println("two2([1, 11, 111, 16]) → " + two2(new ArrayList<>(List.of(1, 11, 111, 16))));
 		System.out.println("two2([2, 3, 5, 7, 11]) → " + two2(new ArrayList<>(List.of(2, 3, 5, 7, 11))));
 		System.out.println("two2([3, 1, 4, 1, 6, 99, 0]) → " + two2(new ArrayList<>(List.of(3, 1, 4, 1, 6, 99, 0))));
+		printFunction("square56");
+		System.out.println("square56([3, 1, 4]) → " + square56(new ArrayList<>(List.of(3, 1, 4))));
+		System.out.println("square56([1]) → " + square56(new ArrayList<>(List.of(1))));
+		System.out.println("square56([2]) → " + square56(new ArrayList<>(List.of(2))));
+		System.out.println("square56([3]) → " + square56(new ArrayList<>(List.of(3))));
+		System.out.println("square56([4]) → " + square56(new ArrayList<>(List.of(4))));
+		System.out.println("square56([5]) → " + square56(new ArrayList<>(List.of(5))));
+		System.out.println("square56([6]) → " + square56(new ArrayList<>(List.of(6))));
+		System.out.println("square56([7]) → " + square56(new ArrayList<>(List.of(7))));
+		System.out.println("square56([1, 2, 3, 4, 5, 6, 7]) → " + square56(new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7))));
+		System.out.println("square56([3, -1, -4, 1, 5, 9]) → " + square56(new ArrayList<>(List.of(3, -1, -4, 1, 5, 9))));
 	}
 }
