@@ -463,7 +463,9 @@ public class Warmup_1
 	 */
 	public int max1020(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		a = fixInt(a);
+		b = fixInt(b);
+		return Math.max(a, b);
 	}
 
 	/**
