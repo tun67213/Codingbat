@@ -76,5 +76,14 @@ public class Functional_2
 		System.out.println("no9([]) → " + no9(new ArrayList<>(List.of())));
 		System.out.println("no9([9]) → " + no9(new ArrayList<>(List.of(9))));
 		System.out.println("no9([0, 9, 0]) → " + no9(new ArrayList<>(List.of(0, 9, 0))));
+		printFunction("noTeen");
+		System.out.println("noTeen([12, 13, 19, 20]) → " + noTeen(new ArrayList<>(List.of(12, 13, 19, 20))));
+		System.out.println("noTeen([1, 14, 1]) → " + noTeen(new ArrayList<>(List.of(1, 14, 1))));
+		System.out.println("noTeen([15]) → " + noTeen(new ArrayList<>(List.of(15))));
+		System.out.println("noTeen([-15]) → " + noTeen(new ArrayList<>(List.of(-15))));
+		System.out.println("noTeen([]) → " + noTeen(new ArrayList<>(List.of())));
+		System.out.println("noTeen([0, 1, 2, -3]) → " + noTeen(new ArrayList<>(List.of(0, 1, 2, -3))));
+		System.out.println("noTeen([15, 17, 19, 21, 19]) → " + noTeen(new ArrayList<>(List.of(15, 17, 19, 21, 19))));
+		System.out.println("noTeen([-16, 2, 15, 3, 16, 25]) → " + noTeen(new ArrayList<>(List.of(-16, 2, 15, 3, 16, 25))));
 	}
 }
