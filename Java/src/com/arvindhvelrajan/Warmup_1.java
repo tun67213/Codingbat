@@ -521,7 +521,14 @@ public class Warmup_1
 	 */
 	public String endUp(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 3)
+		{
+			return str.toUpperCase();
+		}
+		String sub = "";
+		sub += str.substring(0, str.length() - 3);
+		sub += str.substring(str.length() - 3).toUpperCase();
+		return sub;
 	}
 
 	/**
