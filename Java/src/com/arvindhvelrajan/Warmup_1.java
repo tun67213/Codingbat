@@ -442,7 +442,7 @@ public class Warmup_1
 	 */
 	public boolean in3050(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return (inRange(30, a, 40) && inRange(30, b, 40)) || (inRange(40, a, 50) && inRange(40, b, 50));
 	}
 
 	/**
