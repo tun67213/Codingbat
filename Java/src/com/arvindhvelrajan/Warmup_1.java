@@ -362,7 +362,7 @@ public class Warmup_1
 	 */
 	public boolean mixStart(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.startsWith("ix", 1);
 	}
 
 	/**
