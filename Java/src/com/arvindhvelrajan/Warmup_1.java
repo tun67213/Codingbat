@@ -311,7 +311,7 @@ public class Warmup_1
 	 */
 	public boolean hasTeen(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return isTeen(a) || isTeen(b) || isTeen(c);
 	}
 
 	/**
