@@ -93,7 +93,13 @@ public class Array_1
 	 */
 	public int[] rotateLeft3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int temp = nums[0];
+		for(int i = 0; i < 2; i++)
+		{
+			nums[i] = nums[i + 1];
+		}
+		nums[2] = temp;
+		return nums;
 	}
 
 	/**
