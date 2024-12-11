@@ -249,7 +249,7 @@ public class String_1
 	 */
 	public String middleTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.substring(str.length() / 2 - 1, str.length() / 2);
 	}
 
 	/**
