@@ -111,7 +111,11 @@ public class String_1
 	 */
 	public String firstTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return str.substring(0, 2);
 	}
 
 	/**
