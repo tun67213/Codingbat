@@ -407,7 +407,18 @@ public class Warmup_2
 	 */
 	public String stringX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		String sub = "";
+		sub += str.substring(0, 1);
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			sub += ((str.charAt(i) == 'x') ? "" : str.substring(i, i + 1));
+		}
+		sub += str.substring(str.length() - 1);
+		return sub;
 	}
 
 	/**
