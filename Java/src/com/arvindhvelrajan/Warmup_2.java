@@ -482,6 +482,21 @@ public class Warmup_2
 		}
 		return sub;
 	}
+	/**
+	 * The following is a recursive algorithm for stringYak()
+	 */
+	private String stringYakRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		if(str.charAt(0) == 'y' && str.charAt(2) == 'k')
+		{
+			return stringYakRecursive(str.substring(3));
+		}
+		return str.charAt(0) + stringYakRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given an array of ints, return the number of times that two 6's are next to each other in the array.
