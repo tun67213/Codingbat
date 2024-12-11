@@ -324,6 +324,17 @@ public class String_1
 		}
 		return str.substring(str.length() / 2 - 1, str.length() / 2 + 2);
 	}
+	/**
+	 * The following is the recursive approach for the function middleThree() mentioned above.
+	 */
+	private String middleThreeRecursive(String str)
+	{
+		if(str.length() <= 3)
+		{
+			return str;
+		}
+		return middleThreeRecursive(str.substring(1, str.length() - 1));
+	}
 
 	/**
 	 * Given a string, return true if "bad" appears starting at index 0 or 1 in the string,
