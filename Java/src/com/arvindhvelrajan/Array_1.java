@@ -76,7 +76,12 @@ public class Array_1
 	 */
 	public int sum3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int sum = 0;
+		for(int num : nums)
+		{
+			sum += num;
+		}
+		return sum;
 	}
 
 	/**
