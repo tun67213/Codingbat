@@ -13,7 +13,7 @@ public class String_2
 	 */
 	private void welcome()
 	{
-		System.out.print("\n\nString-2 Functions");
+		System.out.print("\n\nString-2 Functions\n");
 	}
 
 	/**
@@ -295,6 +295,7 @@ public class String_2
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("doubleChar");
 		System.out.println("doubleChar(\"The\") → \"" + doubleChar("The") + "\"");
