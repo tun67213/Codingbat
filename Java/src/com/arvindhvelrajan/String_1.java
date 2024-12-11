@@ -90,7 +90,7 @@ public class String_1
 	/**
 	 * The following function is a recursive implementation of extraEnd().
 	 */
-	public String extraEndRecursive(String str)
+	private String extraEndRecursive(String str)
 	{
 		if(str.length() <= 2)
 		{
