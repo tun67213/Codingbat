@@ -366,6 +366,7 @@ public class Array_1
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("firstLast6");
 		System.out.println("firstLast6([1, 2, 6]) → " + firstLast6(new int[] {1, 2, 6}));
