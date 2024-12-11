@@ -180,7 +180,7 @@ public class Array_1
 	 */
 	public int[] middleWay(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return new int[] {a[1], b[1]};
 	}
 
 	/**
