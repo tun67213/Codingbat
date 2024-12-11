@@ -206,7 +206,7 @@ public class Logic_1
 	 */
 	public boolean specialEleven(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return n % 11 <= 1;
 	}
 
 	/**
