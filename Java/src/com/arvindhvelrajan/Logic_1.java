@@ -330,7 +330,21 @@ public class Logic_1
 	 */
 	public String fizzString(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		boolean starts = str.startsWith("f"), ends = str.endsWith("b");
+		String sub = "";
+		if(str.startsWith("f"))
+		{
+			sub += "Fizz";
+		}
+		if(str.endsWith("b"))
+		{
+			sub += "Buzz";
+		}
+		if(sub.isEmpty())
+		{
+			return str;
+		}
+		return sub;
 	}
 
 	/**
