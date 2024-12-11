@@ -205,7 +205,14 @@ public class Array_1
 	 */
 	public boolean has23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		for(int num : nums)
+		{
+			if(num == 2 || num == 3)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
