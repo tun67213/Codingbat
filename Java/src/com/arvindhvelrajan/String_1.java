@@ -249,7 +249,7 @@ public class String_1
 	 */
 	public String middleTwo(String str)
 	{
-		return str.substring(str.length() / 2 - 1, str.length() / 2);
+		return str.substring(str.length() / 2 - 1, str.length() / 2 + 1);
 		// Comment out the return statement above and uncomment the one below to test the recursive method
 		// return middleTwoRecursive(str);
 	}
