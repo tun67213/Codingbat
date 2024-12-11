@@ -25,7 +25,7 @@ public class String_1
 	 */
 	public String helloName(String name)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return "Hello " + name + "!";
 	}
 
 	/**
