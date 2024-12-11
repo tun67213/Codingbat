@@ -158,6 +158,7 @@ public class Map_1
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("mapBully");
 		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) → " + toString(mapBully(new HashMap<>(Map.of("a", "candy", "b", "dirt")))));

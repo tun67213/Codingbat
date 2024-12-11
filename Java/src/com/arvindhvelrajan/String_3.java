@@ -172,6 +172,7 @@ public class String_3
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("countYZ");
 		System.out.println("countYZ(\"fez day\") → " + countYZ("fez day"));

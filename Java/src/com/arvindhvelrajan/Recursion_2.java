@@ -136,6 +136,7 @@ public class Recursion_2
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("groupSum");
 		System.out.println("groupSum(0, [2, 4, 8], 10) → " + groupSum(0, new int[] {2, 4, 8}, 10));

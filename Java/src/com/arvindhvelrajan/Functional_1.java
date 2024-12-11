@@ -151,6 +151,7 @@ public class Functional_1
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("doubling");
 		System.out.println("doubling([1, 2, 3]) → " + doubling(new ArrayList<>(List.of(1, 2, 3))));

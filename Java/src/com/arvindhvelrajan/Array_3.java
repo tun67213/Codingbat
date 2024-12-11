@@ -145,6 +145,7 @@ public class Array_3
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("maxSpan");
 		System.out.println("maxSpan([1, 2, 1, 1, 3]) → " + maxSpan(new int[] {1, 2, 1, 1, 3}));

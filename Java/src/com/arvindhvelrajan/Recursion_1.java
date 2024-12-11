@@ -411,6 +411,7 @@ public class Recursion_1
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("factorial");
 		System.out.println("factorial(1) → " + factorial(1));

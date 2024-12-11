@@ -199,6 +199,7 @@ public class Map_2
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		Map_1 map1 = new Map_1();
 		welcome();
 		printFunction("word0");

@@ -449,6 +449,7 @@ public class Logic_1
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("cigarParty");
 		System.out.println("cigarParty(30, false) → " + cigarParty(30, false));

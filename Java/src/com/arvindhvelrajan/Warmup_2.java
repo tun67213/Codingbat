@@ -567,6 +567,7 @@ public class Warmup_2
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("stringTimes");
 		System.out.println("stringTimes(\"Hi\", 2) → \"" + stringTimes("Hi", 2) + "\"");

@@ -149,6 +149,7 @@ public class Logic_2
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("makeBricks");
 		System.out.println("makeBricks(3, 1, 8) → " + makeBricks(3, 1, 8));
