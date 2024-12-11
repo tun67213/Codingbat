@@ -245,7 +245,9 @@ public class Array_1
 	 */
 	public int[] makeLast(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] newArray = new int[nums.length * 2];
+		newArray[newArray.length - 1] = nums[nums.length - 1];
+		return newArray;
 	}
 
 	/**
