@@ -38,7 +38,7 @@ public class String_1
 	 */
 	public String makeAbba(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a + b + b + a;
 	}
 
 	/**
