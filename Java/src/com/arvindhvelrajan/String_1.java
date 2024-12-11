@@ -595,7 +595,45 @@ public class String_1
 	 */
 	public String withoutX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return "";
+		}
+		if(str.length() == 1)
+		{
+			if(str.equals("x"))
+			{
+				return "";
+			}
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			if(str.startsWith("x") && str.endsWith("x"))
+			{
+				return "";
+			}
+			if(str.startsWith("x"))
+			{
+				return str.substring(1);
+			}
+			if(str.endsWith("x"))
+			{
+				return str.substring(0, 1);
+			}
+			return str;
+		}
+		String sub = "";
+		if(str.charAt(0) != 'x')
+		{
+			sub += str.substring(0, 1);
+		}
+		sub += str.substring(1, str.length() - 1);
+		if(str.charAt(str.length() - 1) != 'x')
+		{
+			sub += str.substring(str.length() - 1);
+		}
+		return sub;
 	}
 
 	/**
