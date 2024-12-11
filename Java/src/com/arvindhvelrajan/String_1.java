@@ -80,7 +80,12 @@ public class String_1
 	 */
 	public String extraEnd(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = str;
+		if(sub.length() > 2)
+		{
+			sub = sub.substring(sub.length() - 2);
+		}
+		return sub + sub + sub;
 	}
 
 	/**
