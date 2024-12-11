@@ -232,7 +232,11 @@ public class String_1
 	 */
 	public String withouEnd2(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return "";
+		}
+		return str.substring(1, str.length() - 1);
 	}
 
 	/**
