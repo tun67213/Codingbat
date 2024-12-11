@@ -443,7 +443,7 @@ public class Logic_1
 	 */
 	public boolean lessBy10(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 || Math.abs(b - c) >= 10;
 	}
 
 	/**
