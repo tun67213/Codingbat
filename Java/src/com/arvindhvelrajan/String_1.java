@@ -646,7 +646,19 @@ public class String_1
 	 */
 	public String withoutX2(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.startsWith("xx"))
+		{
+			return str.substring(2);
+		}
+		if(str.startsWith("x"))
+		{
+			return str.substring(1);
+		}
+		if(str.length() >= 2 && str.charAt(1) == 'x')
+		{
+			return str.charAt(0) + str.substring(2);
+		}
+		return str;
 	}
 
 	/**
