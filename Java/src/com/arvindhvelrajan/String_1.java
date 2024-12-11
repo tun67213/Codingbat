@@ -487,7 +487,8 @@ public class String_1
 	 */
 	public String minCat(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int min = Math.min(a.length(), b.length());
+		return a.substring(a.length() - min) + b.substring(b.length() - min);
 	}
 
 	/**
