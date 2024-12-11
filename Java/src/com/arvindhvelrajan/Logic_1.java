@@ -383,7 +383,7 @@ public class Logic_1
 	 */
 	public boolean twoAsOne(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return (a + b == c) || (a + c == b) || (b + c == a);
 	}
 
 	/**
