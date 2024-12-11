@@ -360,7 +360,15 @@ public class String_1
 	 */
 	public String atFirst(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return "@@";
+		}
+		if(str.length() == 1)
+		{
+			return str + "@";
+		}
+		return str.substring(0, 2);
 	}
 
 	/**
