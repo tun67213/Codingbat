@@ -215,7 +215,11 @@ public class String_1
 	 */
 	public String theEnd(String str, boolean front)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(front)
+		{
+			return str.substring(0, 1);
+		}
+		return str.substring(str.length() - 1);
 	}
 
 	/**
