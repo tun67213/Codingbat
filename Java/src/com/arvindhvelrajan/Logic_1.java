@@ -356,7 +356,22 @@ public class Logic_1
 	 */
 	public String fizzString2(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		boolean mod3 = (n % 3 == 0), mod5 = (n % 5 == 0);
+		String sub = "";
+		if(mod3)
+		{
+			sub += "Fizz";
+		}
+		if(mod5)
+		{
+			sub += "Buzz";
+		}
+		if(sub.isEmpty())
+		{
+			sub += String.valueOf(n);
+		}
+		sub += "!";
+		return sub;
 	}
 
 	/**
