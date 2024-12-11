@@ -632,7 +632,12 @@ public class Logic_1
 	 */
 	public int sumLimit(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int sum = a + b;
+		if(length(sum) > length(a))
+		{
+			return a;
+		}
+		return sum;
 	}
 
 	/**
