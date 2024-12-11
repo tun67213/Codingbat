@@ -52,7 +52,7 @@ public class String_1
 	 */
 	public String makeTags(String tag, String word)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return "<" + tag + ">" + word + "</" + tag + ">";
 	}
 
 	/**
