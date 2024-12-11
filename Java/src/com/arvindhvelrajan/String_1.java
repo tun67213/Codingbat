@@ -140,7 +140,7 @@ public class String_1
 	 */
 	public String withoutEnd(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.substring(1, str.length() - 1);
 	}
 
 	/**
