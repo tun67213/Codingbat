@@ -414,7 +414,11 @@ public class Logic_1
 	 */
 	public boolean inOrderEqual(int a, int b, int c, boolean equalOk)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(equalOk)
+		{
+			return a <= b && b <= c;
+		}
+		return a < b && b < c;
 	}
 
 	/**
