@@ -258,7 +258,7 @@ public class Logic_1
 	 */
 	public boolean nearTen(int num)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return num % 10 <= 2 || num % 10 >= 8;
 	}
 
 	/**
