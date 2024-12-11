@@ -347,7 +347,7 @@ public class String_1
 	 */
 	public boolean hasBad(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.startsWith("bad") || str.startsWith("bad", 1);
 	}
 
 	/**
