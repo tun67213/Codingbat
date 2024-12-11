@@ -431,7 +431,7 @@ public class Logic_1
 	 */
 	public boolean lastDigit(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a % 10 == b % 10 || a % 10 == c % 10 || b % 10 == c % 10;
 	}
 
 	/**
