@@ -272,7 +272,11 @@ public class Logic_1
 	 */
 	public int teenSum(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if((a >= 13 && a <= 19) || (b >= 13 && b <= 19))
+		{
+			return 19;
+		}
+		return a + b;
 	}
 
 	/**
