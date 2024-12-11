@@ -424,7 +424,20 @@ public class Array_1
 	 */
 	public int maxTriple(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length == 0)
+		{
+			return 0;
+		}
+		int max = nums[0];
+		if(nums[nums.length / 2] > max)
+		{
+			max = nums[nums.length / 2];
+		}
+		if(nums[nums.length - 1] > max)
+		{
+			max = nums[nums.length - 1];
+		}
+		return max;
 	}
 
 	/**
