@@ -67,7 +67,7 @@ public class String_1
 	 */
 	public String makeOutWord(String out, String word)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return out.substring(0, 2) + word + out.substring(2);
 	}
 
 	/**
