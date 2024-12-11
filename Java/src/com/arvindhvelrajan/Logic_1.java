@@ -245,7 +245,7 @@ public class Logic_1
 	 */
 	public boolean less20(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return n % 20 >= 18;
 	}
 
 	/**
