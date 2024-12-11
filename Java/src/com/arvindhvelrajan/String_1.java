@@ -549,7 +549,20 @@ public class String_1
 	 */
 	public String deFront(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		if(str.startsWith("ab"))
+		{
+			sub += "ab";
+		}
+		else if(str.startsWith("a"))
+		{
+			sub += "a";
+		}
+		else if(str.charAt(1) == 'b')
+		{
+			sub += "b";
+		}
+		return sub + str.substring(2);
 	}
 
 	/**
