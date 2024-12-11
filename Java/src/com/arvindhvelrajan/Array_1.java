@@ -193,7 +193,7 @@ public class Array_1
 	 */
 	public int[] makeEnds(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return new int[] {nums[0], nums[nums.length - 1]};
 	}
 
 	/**
