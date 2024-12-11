@@ -274,7 +274,7 @@ public class String_1
 	 */
 	public boolean endsLy(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.endsWith("ly");
 	}
 
 	/**
