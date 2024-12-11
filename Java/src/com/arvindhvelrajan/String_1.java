@@ -382,7 +382,24 @@ public class String_1
 	 */
 	public String lastChars(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		if(a.isEmpty())
+		{
+			sub += "@";
+		}
+		else
+		{
+			sub += a.substring(0, 1);
+		}
+		if(b.isEmpty())
+		{
+			sub += "@";
+		}
+		else
+		{
+			sub += b.substring(b.length() - 1);
+		}
+		return sub;
 	}
 
 	/**
