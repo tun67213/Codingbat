@@ -368,7 +368,17 @@ public class Array_1
 	 */
 	public int[] plusTwo(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] newArray = new int[a.length + b.length];
+		int size = 0;
+		for(int num : a)
+		{
+			newArray[size++] = num;
+		}
+		for(int num : b)
+		{
+			newArray[size++] = num;
+		}
+		return newArray;
 	}
 
 	/**
