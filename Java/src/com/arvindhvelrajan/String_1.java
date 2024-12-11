@@ -13,7 +13,7 @@ public class String_1
 	 */
 	private void welcome()
 	{
-		System.out.print("\n\nString-1 Functions\n");
+		System.out.println("\n\nString-1 Functions\n");
 	}
 
 	/**
@@ -666,6 +666,7 @@ public class String_1
 	 */
 	public void main(String[] args)
 	{
+		resetCallCount();
 		welcome();
 		printFunction("helloName");
 		System.out.println("helloName(\"Bob\") → \"" + helloName("Bob") + "\"");
