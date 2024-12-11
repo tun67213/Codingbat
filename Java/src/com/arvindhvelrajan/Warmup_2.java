@@ -430,7 +430,16 @@ public class Warmup_2
 	 */
 	public String altPairs(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		String sub = "";
+		for(int i = 0; i < str.length() - 1; i += 4)
+		{
+			sub += str.substring(i, i + 2);
+		}
+		return sub;
 	}
 
 	/**
