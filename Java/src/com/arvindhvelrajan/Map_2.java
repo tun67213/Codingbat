@@ -14,7 +14,7 @@ public class Map_2
 {
 	private void welcome()
 	{
-		System.out.println("\n\nMap-2 Functions\n");
+		System.out.print("\n\nMap-2 Functions");
 	}
 
 	/**

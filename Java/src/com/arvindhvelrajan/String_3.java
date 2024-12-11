@@ -13,7 +13,7 @@ public class String_3
 	 */
 	private void welcome()
 	{
-		System.out.println("\n\nString-3 Functions\n");
+		System.out.println("\n\nString-3 Functions");
 	}
 
 	/**

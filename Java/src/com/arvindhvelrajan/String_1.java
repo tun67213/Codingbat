@@ -13,7 +13,7 @@ public class String_1
 	 */
 	private void welcome()
 	{
-		System.out.println("\n\nString-1 Functions\n");
+		System.out.print("\n\nString-1 Functions");
 	}
 
 	/**
