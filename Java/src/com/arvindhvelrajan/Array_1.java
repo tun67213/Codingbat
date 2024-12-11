@@ -64,7 +64,7 @@ public class Array_1
 	 */
 	public boolean commonEnd(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a.length > 0 && b.length > 0 && ((a[0] == b[0]) || (a[a.length - 1] == b[b.length - 1]));
 	}
 
 	/**
