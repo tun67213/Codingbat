@@ -504,7 +504,19 @@ public class Logic_1
 	 */
 	public int redTicket(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(a == 2 && b == 2 && c == 2)
+		{
+			return 10;
+		}
+		if(a == b && b == c)
+		{
+			return 5;
+		}
+		if(a != b && a != c)
+		{
+			return 1;
+		}
+		return 0;
 	}
 
 	/**
