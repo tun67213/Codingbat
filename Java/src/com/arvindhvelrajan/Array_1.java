@@ -51,7 +51,7 @@ public class Array_1
 	 */
 	public int[] makePi()
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return new int[] {3, 1, 4};
 	}
 
 	/**
