@@ -318,7 +318,11 @@ public class String_1
 	 */
 	public String middleThree(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 3)
+		{
+			return str;
+		}
+		return str.substring(str.length() / 2 - 1, str.length() / 2 + 2);
 	}
 
 	/**
