@@ -507,6 +507,17 @@ public class String_1
 		}
 		return str.substring(0, 2) + str.substring(0, 2) + str.substring(0, 2);
 	}
+	/**
+	 * The following is a recursive implementation of the extraFront() method above.
+	 */
+	private String extraFrontRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return str + str + str;
+		}
+		return extraFrontRecursive(str.substring(0, str.length() - 1));
+	}
 
 	/**
 	 * Given a string, if a length 2 substring appears at both its beginning and end,
