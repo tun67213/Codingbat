@@ -577,7 +577,18 @@ public class Logic_1
 	 */
 	public boolean shareDigit(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] aValues = splitInt(a), bValues = splitInt(b);
+		for(int value : aValues)
+		{
+			for(int val : bValues)
+			{
+				if(value == val)
+				{
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 	/**
 	 * This helper function will find the length of the provided integer.
