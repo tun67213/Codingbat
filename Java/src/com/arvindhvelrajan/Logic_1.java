@@ -480,7 +480,15 @@ public class Logic_1
 	 */
 	public int maxMod5(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(a == b)
+		{
+			return 0;
+		}
+		if(a % 5 == b % 5)
+		{
+			return Math.min(a, b);
+		}
+		return Math.max(a, b);
 	}
 
 	/**
