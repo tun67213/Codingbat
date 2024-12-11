@@ -906,7 +906,7 @@ public class String_1
 		System.out.println("startWord(\"\", \"i\") → \"" + startWord("", "i") + "\"");
 		System.out.println("startWord(\"hip\", \"zi\") → \"" + startWord("hip", "zi") + "\"");
 		System.out.println("startWord(\"hip\", \"zip\") → \"" + startWord("hip", "zip") + "\"");
-		System.out.println("startWord(\"hip\", \"zig\") → \"" + startWord("hip", "zip") + "\"");
+		System.out.println("startWord(\"hip\", \"zig\") → \"" + startWord("hip", "zig") + "\"");
 		System.out.println("startWord(\"h\", \"z\") → \"" + startWord("h", "z") + "\"");
 		System.out.println("startWord(\"hippo\", \"xippo\") → \"" + startWord("hippo", "xippo") + "\"");
 		System.out.println("startWord(\"hippo\", \"xyz\") → \"" + startWord("hippo", "xyz") + "\"");
