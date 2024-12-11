@@ -378,6 +378,8 @@ public class Warmup_2
 			}
 		}
 		return count;
+		// If done recursively, the following would be the call;
+		// stringMatchRecursive(a, b);
 	}
 	/**
 	 * The following is a RECURSIVE implementation for stringMatch().
