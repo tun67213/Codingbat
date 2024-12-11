@@ -327,6 +327,15 @@ public class Array_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	private int sumUpArray(int[] nums)
+	{
+		int sum = 0;
+		for(int num : nums)
+		{
+			sum += num;
+		}
+		return sum;
+	}
 
 	/**
 	 * Given an array of ints of even length, return a new array length 2 containing the middle two elements
