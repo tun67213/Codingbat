@@ -168,7 +168,7 @@ public class String_1
 	 */
 	public String nonStart(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a.substring(1) + b.substring(1);
 	}
 
 	/**
