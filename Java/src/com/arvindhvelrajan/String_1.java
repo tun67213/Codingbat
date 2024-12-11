@@ -87,6 +87,17 @@ public class String_1
 		}
 		return sub + sub + sub;
 	}
+	/**
+	 * The following function is a recursive implementation of extraEnd().
+	 */
+	public String extraEndRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return str + str + str;
+		}
+		return extraEndRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given a string, return the string made of its first two chars, so the String "Hello" yields "He".
