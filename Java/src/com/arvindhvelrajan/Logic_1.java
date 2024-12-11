@@ -532,6 +532,7 @@ public class Logic_1
 		System.out.println("caughtSpeeding(65, true) → " + caughtSpeeding(65, true));
 		System.out.println("caughtSpeeding(80, false) → " + caughtSpeeding(80, false));
 		System.out.println("caughtSpeeding(85, false) → " + caughtSpeeding(85, false));
+		System.out.println("caughtSpeeding(85, true) → " + caughtSpeeding(85, true));
 		System.out.println("caughtSpeeding(70, false) → " + caughtSpeeding(70, false));
 		System.out.println("caughtSpeeding(75, false) → " + caughtSpeeding(75, false));
 		System.out.println("caughtSpeeding(75, true) → " + caughtSpeeding(75, true));
