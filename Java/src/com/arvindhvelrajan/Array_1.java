@@ -325,7 +325,12 @@ public class Array_1
 	 */
 	public int[] biggerTwo(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int sumA = sumUpArray(a), sumB = sumUpArray(b);
+		if(sumB > sumA)
+		{
+			return b;
+		}
+		return a;
 	}
 	private int sumUpArray(int[] nums)
 	{
