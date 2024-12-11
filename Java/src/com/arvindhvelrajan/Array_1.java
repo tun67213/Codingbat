@@ -526,7 +526,26 @@ public class Array_1
 	 */
 	public int[] front11(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int arraySize = 0;
+		if(a.length > 0)
+		{
+			arraySize++;
+		}
+		if(b.length > 0)
+		{
+			arraySize++;
+		}
+		int[] newArray = new int[arraySize];
+		int size = 0;
+		if(a.length > 0)
+		{
+			newArray[size++] = a[0];
+		}
+		if(b.length > 0)
+		{
+			newArray[size++] = b[0];
+		}
+		return newArray;
 	}
 
 	/**
