@@ -251,6 +251,17 @@ public class String_1
 	{
 		return str.substring(str.length() / 2 - 1, str.length() / 2);
 	}
+	/**
+	 * The following is a recursive algorithm for the method above called middleTwo()
+	 */
+	private String middleTwoRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return middleTwoRecursive(str.substring(1, str.length() - 1));
+	}
 
 	/**
 	 * Given a string, return true if it ends in "ly".
