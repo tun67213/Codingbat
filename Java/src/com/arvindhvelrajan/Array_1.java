@@ -156,6 +156,17 @@ public class Array_1
 		}
 		return nums[0] + nums[1];
 	}
+	/**
+	 * The following is a recursive method for implementing sum2(), that adds an extra variable to the equation.
+	 */
+	private int sum2Recursive(int[] nums, int index)
+	{
+		if(nums.length == 0 || index < 0 || index >= nums.length || index >= 2)
+		{
+			return 0;
+		}
+		return nums[index] + sum2Recursive(nums, index + 1);
+	}
 
 	/**
 	 * Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
