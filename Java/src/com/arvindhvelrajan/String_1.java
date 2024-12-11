@@ -501,7 +501,11 @@ public class String_1
 	 */
 	public String extraFront(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return str + str + str;
+		}
+		return str.substring(0, 2) + str.substring(0, 2) + str.substring(0, 2);
 	}
 
 	/**
