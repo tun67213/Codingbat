@@ -8,6 +8,10 @@ public class UI_Functions
 {
 	private static int callCount = 0;
 
+	public static void resetCallCount()
+	{
+		callCount = 0;
+	}
 	public static void printFunction(String functionName)
 	{
 		if(callCount != 0)
