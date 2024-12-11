@@ -95,7 +95,27 @@ public class Logic_1
 	 */
 	public int caughtSpeeding(int speed, boolean isBirthday)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(isBirthday)
+		{
+			if(speed > 85)
+			{
+				return 2;
+			}
+			if(speed <= 65)
+			{
+				return 0;
+			}
+			return 1;
+		}
+		if(speed <= 60)
+		{
+			return 0;
+		}
+		if(speed > 80)
+		{
+			return 2;
+		}
+		return 1;
 	}
 
 	/**
