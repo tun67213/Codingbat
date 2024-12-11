@@ -594,6 +594,20 @@ public class Logic_1
 		}
 		return 1 + length(n / 10);
 	}
+	/**
+	 * This helper function will split the number into its individual digits.
+	 */
+	private int[] splitInt(int n)
+	{
+		int len = length(n);
+		int[] newArray = new int[len];
+		for(int i = len - 1; i >= 0; i--)
+		{
+			newArray[i] = n % 10;
+			n /= 10;
+		}
+		return newArray;
+	}
 
 	/**
 	 * Given 2 non-negative ints, a and b, return their sum, so long as the sum has the same number of digits as a.
