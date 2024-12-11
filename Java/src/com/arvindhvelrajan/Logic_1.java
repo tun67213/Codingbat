@@ -579,6 +579,21 @@ public class Logic_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * This helper function will find the length of the provided integer.
+	 */
+	private int length(int n)
+	{
+		if(n < 0)
+		{
+			return length(Math.abs(n));
+		}
+		if(n <= 9)
+		{
+			return 1;
+		}
+		return 1 + length(n / 10);
+	}
 
 	/**
 	 * Given 2 non-negative ints, a and b, return their sum, so long as the sum has the same number of digits as a.
