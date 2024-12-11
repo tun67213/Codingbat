@@ -531,7 +531,15 @@ public class Logic_1
 	 */
 	public int greenTicket(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(a != b && a != c && b != c)
+		{
+			return 0;
+		}
+		if(a == b && b == c)
+		{
+			return 20;
+		}
+		return 10;
 	}
 
 	/**
