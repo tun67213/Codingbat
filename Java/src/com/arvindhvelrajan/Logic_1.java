@@ -396,7 +396,11 @@ public class Logic_1
 	 */
 	public boolean inOrder(int a, int b, int c, boolean bOk)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(bOk)
+		{
+			return c > b;
+		}
+		return a < b && b < c;
 	}
 
 	/**
