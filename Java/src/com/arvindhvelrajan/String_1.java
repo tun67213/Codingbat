@@ -152,7 +152,11 @@ public class String_1
 	 */
 	public String comboString(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(a.length() < b.length())
+		{
+			return a + b + a;
+		}
+		return b + a + b;
 	}
 
 	/**
