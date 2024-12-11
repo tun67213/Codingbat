@@ -290,7 +290,7 @@ public class Logic_1
 	 */
 	public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return !(isAsleep || (isMorning && !isMom));
 	}
 
 	/**
