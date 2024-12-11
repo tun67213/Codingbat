@@ -451,7 +451,15 @@ public class String_1
 	 */
 	public String seeColor(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.startsWith("red"))
+		{
+			return "red";
+		}
+		if(str.startsWith("blue"))
+		{
+			return "blue";
+		}
+		return "";
 	}
 
 	/**
