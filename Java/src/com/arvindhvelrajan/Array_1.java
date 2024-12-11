@@ -128,7 +128,12 @@ public class Array_1
 	 */
 	public int[] maxEnd3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int max = nums[0];
+		if(nums[nums.length - 1] > max)
+		{
+			max = nums[nums.length - 1];
+		}
+		return new int[] {max, max, max};
 	}
 
 	/**
