@@ -188,7 +188,11 @@ public class Logic_1
 	 */
 	public boolean in1To10(int n, boolean outsideMode)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(outsideMode)
+		{
+			return n <= 1 || n >= 10;
+		}
+		return n >= 1 && n <= 10;
 	}
 
 	/**
