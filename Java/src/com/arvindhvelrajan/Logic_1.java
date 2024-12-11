@@ -232,7 +232,7 @@ public class Logic_1
 	 */
 	public boolean old35(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return (n % 3 == 0) ^ (n % 5 == 0);
 	}
 
 	/**
