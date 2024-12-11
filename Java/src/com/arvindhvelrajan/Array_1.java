@@ -450,7 +450,11 @@ public class Array_1
 	 */
 	public int[] frontPiece(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length <= 2)
+		{
+			return nums;
+		}
+		return new int[] {nums[0], nums[1]};
 	}
 
 	/**
