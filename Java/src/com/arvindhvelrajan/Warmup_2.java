@@ -441,6 +441,21 @@ public class Warmup_2
 		}
 		return sub;
 	}
+	/**
+	 * The following is a recursive approach for the altPairs() function above
+	 */
+	private String altPairsRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		if(str.length() <= 4)
+		{
+			return str.substring(0, 2);
+		}
+		return str.substring(0, 2) + altPairsRecursive(str.substring(4));
+	}
 
 	/**
 	 * Suppose the string "yak" is unlucky. Given a string, return a version where all the "yak" are removed,
@@ -627,6 +642,7 @@ public class Warmup_2
 		System.out.println("stringX(\"\") → \"" + stringX("") + "\"");
 		printFunction("altPairs");
 		System.out.println("altPairs(\"kitten\") → \"" + altPairs("kitten") + "\"");
+//		System.out.println("altPairs(\"kitten\") → \"" + altPairsRecursive("kitten") + "\"");
 		System.out.println("altPairs(\"Chocolate\") → \"" + altPairs("Chocolate") + "\"");
 		System.out.println("altPairs(\"CodingHorror\") → \"" + altPairs("CodingHorror") + "\"");
 		System.out.println("altPairs(\"yak\") → \"" + altPairs("yak") + "\"");
