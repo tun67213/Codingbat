@@ -155,6 +155,9 @@ public class Array_1
 			return nums[0];
 		}
 		return nums[0] + nums[1];
+		// In order to call the recursive method, you would simply uncomment the statement below, commenting out
+		// everything above in this function:
+//		return sum2Recursive(nums, 0);
 	}
 	/**
 	 * The following is a recursive method for implementing sum2(), that adds an extra variable to the equation.
