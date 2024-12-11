@@ -287,7 +287,7 @@ public class String_1
 	 */
 	public String nTwice(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.substring(0, n) + str.substring(str.length() - n);
 	}
 
 	/**
