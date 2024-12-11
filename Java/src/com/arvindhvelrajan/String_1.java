@@ -430,7 +430,15 @@ public class String_1
 	 */
 	public String lastTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			return str.substring(1) + str.charAt(0);
+		}
+		return str.substring(0, str.length() - 2) + str.substring(str.length() - 1) + str.charAt(str.length() - 2);
 	}
 
 	/**
