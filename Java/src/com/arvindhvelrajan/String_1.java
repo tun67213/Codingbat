@@ -127,7 +127,7 @@ public class String_1
 	 */
 	public String firstHalf(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return str.substring(0, str.length() / 2);
 	}
 
 	/**
