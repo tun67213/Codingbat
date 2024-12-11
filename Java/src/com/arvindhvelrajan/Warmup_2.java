@@ -467,7 +467,20 @@ public class Warmup_2
 	 */
 	public String stringYak(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		int i = 0;
+		for(i = 0; i < str.length() - 2; i++)
+		{
+			if(str.charAt(i) == 'y' && str.charAt(i + 2) == 'k')
+			{
+				i += 2;
+			}
+			else
+			{
+				sub += str.substring(i, i + 1);
+			}
+		}
+		return sub;
 	}
 
 	/**
