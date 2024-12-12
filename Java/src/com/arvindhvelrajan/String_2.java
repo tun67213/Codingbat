@@ -157,7 +157,17 @@ public class String_2
 	 */
 	public boolean xyzThere(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		for(int i = 0; i <= str.length() - 3; i++)
+		{
+			if(str.substring(i, i + 3).equals("xyz"))
+			{
+				if(i == 0 || str.charAt(i - 1) != '.')
+				{
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 
 	/**
