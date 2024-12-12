@@ -321,7 +321,12 @@ public class String_2
 	 */
 	public String repeatFront(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String finalAnswer = "";
+		for(int i = n; i < 0; i--)
+		{
+			finalAnswer += str.substring(0, i);
+		}
+		return finalAnswer;
 	}
 
 	/**
