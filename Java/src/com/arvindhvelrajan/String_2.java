@@ -62,9 +62,7 @@ public class String_2
 		}
 		return count;
 	}
-	/**
-	 * The following is a recursive approach for the function countHi().
-	 */
+	// The following is a recursive approach for the function countHi().
 	private int countHiRecursive(String str)
 	{
 		if(str.length() <= 2)
