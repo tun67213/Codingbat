@@ -99,6 +99,17 @@ public class Logic_2
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * This is the helper function for noTeenSum().
+	 */
+	private int noTeen(int a)
+	{
+		if(a >= 13 && a <= 19 && a != 15 && a != 16)
+		{
+			return a;
+		}
+		return 0;
+	}
 
 	/**
 	 * For this problem, we'll round an int value up to the next multiple of 10 if its rightmost digit is
