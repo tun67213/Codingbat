@@ -125,7 +125,7 @@ public class Logic_2
 	 */
 	public int roundSum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return round10(a) + round10(b) + round10(c);
 	}
 	/**
 	 * The following is a helper function for roundSum().
