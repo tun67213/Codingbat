@@ -301,7 +301,13 @@ public class String_2
 	 */
 	public String repeatEnd(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = str.substring(str.length() - n);
+		String finalAnswer = "";
+		for(int i = 0; i < n; i++)
+		{
+			finalAnswer += sub;
+		}
+		return finalAnswer;
 	}
 
 	/**
