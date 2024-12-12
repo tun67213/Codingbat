@@ -770,6 +770,10 @@ public class String_2
 		System.out.println("sameStarChar(\"*xa*a*b\") → " + sameStarChar("*xa*a*b"));
 		System.out.println("sameStarChar(\"*12*2*2\") → " + sameStarChar("*12*2*2"));
 		System.out.println("sameStarChar(\"12*2*3*\") → " + sameStarChar("12*2*3*"));
+		System.out.println("sameStarChar(\"abcDEF\") → " + sameStarChar("abcDEF"));
+		System.out.println("sameStarChar(\"XY*YYYY*Z*\") → " + sameStarChar("XY*YYYY*Z*"));
+		System.out.println("sameStarChar(\"XY*YYYY*Y*\") → " + sameStarChar("XY*YYYY*Y*"));
+		System.out.println("sameStarChar(\"12*2*3*\") → " + sameStarChar("12*2*3*"));
 		System.out.println("sameStarChar(\"*\") → " + sameStarChar("*"));
 		System.out.println("sameStarChar(\"**\") → " + sameStarChar("**"));
 		printFunction("oneTwo");
