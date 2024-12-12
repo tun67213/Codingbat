@@ -86,7 +86,19 @@ public class String_2
 	 */
 	public boolean catDog(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int cats = 0, dogs = 0;
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 3).equals("cat"))
+			{
+				cats++;
+			}
+			else if(str.substring(i, i + 3).equals("dog"))
+			{
+				dogs++;
+			}
+		}
+		return cats == dogs;
 	}
 
 	/**
