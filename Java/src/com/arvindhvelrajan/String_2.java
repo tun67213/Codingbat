@@ -120,6 +120,19 @@ public class String_2
 		}
 		return count;
 	}
+	// The following is a recursive approach for the function countCode() impemented above.
+	private int countCodeRecursive(String str)
+	{
+		if(str.length() <= 3)
+		{
+			return 0;
+		}
+		if(str.substring(0, 2).equals("co") && str.charAt(3) == 'e')
+		{
+			return 1 + countCodeRecursive(str.substring(1));
+		}
+		return countCodeRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given two strings, return true if either of the strings appears at the very end of the other string,
