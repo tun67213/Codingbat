@@ -165,6 +165,14 @@ public class Logic_2
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	private int fixInt(int a)
+	{
+		if(a < 0 || a > 21)
+		{
+			return 0;
+		}
+		return a;
+	}
 
 	/**
 	 * Given three ints, a b c, one of them is small, one is medium and one is large.
