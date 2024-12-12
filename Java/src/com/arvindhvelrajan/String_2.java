@@ -25,7 +25,12 @@ public class String_2
 	 */
 	public String doubleChar(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			sub += str.substring(i, i + 1) + str.substring(i, i + 1);
+		}
+		return sub;
 	}
 
 	/**
