@@ -229,7 +229,20 @@ public class Logic_2
 	 */
 	public int makeChocolate(int small, int big, int goal)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int remainder = goal % 5;
+		if(small + 5 * big < goal)
+		{
+			return -1;
+		}
+		if(remainder <= small)
+		{
+			if(goal <= 5 * big)
+			{
+				return remainder;
+			}
+			return goal - (5 * big);
+		}
+		return -1;
 	}
 
 	/**
