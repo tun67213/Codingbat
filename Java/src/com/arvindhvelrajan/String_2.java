@@ -279,6 +279,17 @@ public class String_2
 		}
 		return sub;
 	}
+	/**
+	 * The following is the recursive solution for mixString().
+	 */
+	private String mixStringRecursive(String a, String b)
+	{
+		if(a.length() == 0 || b.length() == 0)
+		{
+			return a + b;
+		}
+		return a.charAt(0) + b.charAt(0) + mixStringRecursive(a.substring(1), b.substring(1));
+	}
 
 	/**
 	 * Given a string and an int n, return a string made of n repetitions of the last n characters
