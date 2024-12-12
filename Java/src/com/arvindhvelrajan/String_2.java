@@ -145,7 +145,7 @@ public class String_2
 	 */
 	public boolean endOther(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return a.toLowerCase().endsWith(b.toLowerCase()) || b.toLowerCase().endsWith(a.toLowerCase());
 	}
 
 	/**
