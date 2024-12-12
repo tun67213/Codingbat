@@ -61,6 +61,21 @@ public class String_2
 		}
 		return count;
 	}
+	/**
+	 * The following is a recursive approach for the function countHi().
+	 */
+	private int countHiRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return 0;
+		}
+		if(str.substring(0, 2).equals("hi"))
+		{
+			return 1 + countHiRecursive(str.substring(2));
+		}
+		return countHiRecursive(str.substring(1));
+	}
 
 	/**
 	 * Return true if the string "cat" and "dog" appear the same number of times in the given string.
