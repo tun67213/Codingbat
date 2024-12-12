@@ -386,7 +386,19 @@ public class String_2
 	 */
 	public boolean prefixAgain(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 2 && n == 1 && str.charAt(0) == str.charAt(1))
+		{
+			return true;
+		}
+		String sub = str.substring(0, n);
+		for(int i = 1; i < str.length() - n; i++)
+		{
+			if(str.substring(i, i + n).equals(sub))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
