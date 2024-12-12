@@ -209,6 +209,21 @@ public class String_2
 		}
 		return false;
 	}
+	/**
+	 * The following is a recursive implementation for the method bobThere().
+	 */
+	private boolean bobThereRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return false;
+		}
+		if(str.charAt(0) == 'b' && str.charAt(2) == 'b')
+		{
+			return true;
+		}
+		return bobThereRecursive(str.substring(1));
+	}
 
 	/**
 	 * We'll say that a String is xy-balanced if for all the 'x' chars in the string,
