@@ -262,7 +262,22 @@ public class String_2
 	 */
 	public String mixString(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String sub = "";
+		int min = Math.min(a.length(), b.length());
+		for(int i = 0; i < min; i++)
+		{
+			sub += a.charAt(i);
+			sub += b.charAt(i);
+		}
+		if(a.length() > b.length())
+		{
+			sub += a.substring(b.length());
+		}
+		else
+		{
+			sub += b.substring(a.length());
+		}
+		return sub;
 	}
 
 	/**
