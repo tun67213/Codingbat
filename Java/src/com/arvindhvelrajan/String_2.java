@@ -169,6 +169,23 @@ public class String_2
 		}
 		return false;
 	}
+	// The following is a recursive algorithm for xyzThere().
+	private boolean xyzThereRecursive(String str)
+	{
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		if(str.length() >= 4 && str.substring(0, 4).equals(".xyz"))
+		{
+			return xyzThere(str.substring(4));
+		}
+		if(str.startsWith("xyz"))
+		{
+			return true;
+		}
+		return xyzThereRecursive(str.substring(1));
+	}
 
 	/**
 	 * Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.
