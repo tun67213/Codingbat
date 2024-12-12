@@ -163,7 +163,11 @@ public class Logic_2
 	 */
 	public int blackjack(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(a < 0 || a > 21 || b < 0 || b > 21)
+		{
+			return blackjack(fixInt(a), fixInt(b));
+		}
+		return Math.max(a, b);
 	}
 	private int fixInt(int a)
 	{
