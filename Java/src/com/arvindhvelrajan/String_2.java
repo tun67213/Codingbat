@@ -469,7 +469,18 @@ public class String_2
 	 */
 	public boolean sameStarChar(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return true;
+		}
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(str.charAt(i) == '*' && !(str.charAt(i - 1) == str.charAt(i + 1)))
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
