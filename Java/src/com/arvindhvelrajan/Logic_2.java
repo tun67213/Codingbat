@@ -150,7 +150,7 @@ public class Logic_2
 	 */
 	public boolean closeFar(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return (Math.abs(a - b) <= 1) ^ (Math.abs(a - c) <= 1) ^ (Math.abs(b - c) <= 1);
 	}
 
 	/**
