@@ -189,7 +189,32 @@ public class Logic_2
 	 */
 	public boolean evenlySpaced(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int min = a, mid = b, max = c;
+		if(b < min)
+		{
+			min = b;
+		}
+		if(c < min)
+		{
+			min = c;
+		}
+		if(a > max)
+		{
+			max = a;
+		}
+		if(b > max)
+		{
+			max = b;
+		}
+		if(a != min && a != max)
+		{
+			mid = a;
+		}
+		if(c != min && c != max)
+		{
+			mid = c;
+		}
+		return min - mid == mid - max;
 	}
 
 	/**
