@@ -236,7 +236,19 @@ public class String_2
 	 */
 	public boolean xyBalance(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		boolean found = false;
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(str.charAt(i) == 'x')
+			{
+				found = true;
+			}
+			if(found && str.charAt(i) == 'y')
+			{
+				found = false;
+			}
+		}
+		return !found;
 	}
 
 	/**
