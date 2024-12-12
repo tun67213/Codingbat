@@ -24,7 +24,11 @@ public class Logic_2
 	 */
 	public boolean makeBricks(int small, int big, int goal)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(goal > 5 * big + small)
+		{
+			return false;
+		}
+		return goal % 5 <= small;
 	}
 
 	/**
