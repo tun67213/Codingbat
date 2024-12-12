@@ -412,7 +412,15 @@ public class String_2
 	 */
 	public boolean xyzMiddle(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		if(str.equals("xyz"))
+		{
+			return true;
+		}
+		return (str.substring(str.length() / 2 - 2, str.length() / 2 + 1).equals("xyz") || str.substring(str.length() / 2 - 1, str.length() / 2 + 2).equals("xyz") || str.substring(str.length() / 2, str.length() / 2 + 3).equals("xyz"));
 	}
 
 	/**
