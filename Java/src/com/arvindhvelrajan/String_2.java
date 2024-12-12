@@ -362,6 +362,18 @@ public class String_2
 		finalAnswer += word;
 		return finalAnswer;
 	}
+	private String repeatSeparatorRecursive(String word, String sep, int count)
+	{
+		if(count == 0)
+		{
+			return "";
+		}
+		if(count == 1)
+		{
+			return word;
+		}
+		return word + sep + repeatSeparatorRecursive(word, sep, count - 1);
+	}
 
 	/**
 	 * Given a string, consider the prefix string made of the first N chars of the string.
