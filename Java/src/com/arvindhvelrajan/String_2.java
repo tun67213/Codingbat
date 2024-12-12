@@ -354,7 +354,13 @@ public class String_2
 	 */
 	public String repeatSeparator(String word, String sep, int count)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String finalAnswer = "";
+		for(int i = 0; i < count - 1; i++)
+		{
+			finalAnswer += word + sep;
+		}
+		finalAnswer += word;
+		return finalAnswer;
 	}
 
 	/**
