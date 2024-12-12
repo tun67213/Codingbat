@@ -28,7 +28,7 @@ public class String_2
 		String sub = "";
 		for(int i = 0; i < str.length(); i++)
 		{
-			sub += str.substring(i, i + 1) + str.substring(i, i + 1);
+			sub += str.charAt(i) + str.charAt(i);
 		}
 		return sub;
 	}
