@@ -127,6 +127,17 @@ public class Logic_2
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * The following is a helper function for roundSum().
+	 */
+	private int round10(int num)
+	{
+		if(num % 10 >= 5)
+		{
+			return (num / 10 + 1) * 10;
+		}
+		return num / 10 * 10;
+	}
 
 	/**
 	 * Given three ints, a b c, return true if one of b or c is "close" (differing from a by at most 1),
