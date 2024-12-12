@@ -32,6 +32,14 @@ public class String_2
 		}
 		return sub;
 	}
+	private String doubleCharRecursive(String str)
+	{
+		if(str.isEmpty())
+		{
+			return str;
+		}
+		return str.substring(0, 1) + str.substring(0, 1) + doubleCharRecursive(str.substring(1));
+	}
 
 	/**
 	 * Return the number of times that the string "hi" appears anywhere in the given string.
