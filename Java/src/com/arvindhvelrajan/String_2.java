@@ -328,6 +328,21 @@ public class String_2
 		}
 		return finalAnswer;
 	}
+	/**
+	 * The following is a recursive algorithm for repeatFront().
+	 */
+	private String repeatFrontRecursive(String str, int n)
+	{
+		if(str.length() > n)
+		{
+			return repeatFrontRecursive(str.substring(0, n), n);
+		}
+		if(n == 0)
+		{
+			return "";
+		}
+		return str + repeatFrontRecursive(str, n - 1);
+	}
 
 	/**
 	 * Given two strings, word and a separator sep, return a big string made of count occurrences of the word,
