@@ -97,7 +97,7 @@ public class Logic_2
 	 */
 	public int noTeenSum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return noTeen(a) + noTeen(b) + noTeen(c);
 	}
 	/**
 	 * This is the helper function for noTeenSum().
