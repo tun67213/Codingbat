@@ -32,6 +32,7 @@ public class String_2
 		}
 		return sub;
 	}
+	// The following is a recursive algorithm for doubleChar()
 	private String doubleCharRecursive(String str)
 	{
 		if(str.isEmpty())
