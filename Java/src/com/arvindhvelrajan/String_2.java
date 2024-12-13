@@ -542,6 +542,18 @@ public class String_2
 		}
 		return sub;
 	}
+	private String zipZapRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		if(str.charAt(0) == 'z' && str.charAt(2) == 'p')
+		{
+			return "zp" + zipZapRecursive(str.substring(3));
+		}
+		return str.substring(0, 1) + zipZapRecursive(str.substring(1));
+	}
 
 	/**
 	 * Return a version of the given string, where for every star (*) in the string the star and the chars immediately to its left and right are gone. So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
