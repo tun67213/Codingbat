@@ -521,7 +521,26 @@ public class String_2
 	 */
 	public String zipZap(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		String sub = "";
+		int i = 0;
+		while(i < str.length())
+		{
+			if(str.charAt(i) == 'z' && str.charAt(i + 2) == 'p')
+			{
+				sub += "zp";
+				i += 2;
+			}
+			else
+			{
+				sub += str.substring(i, i + 1);
+			}
+			i++;
+		}
+		return sub;
 	}
 
 	/**
