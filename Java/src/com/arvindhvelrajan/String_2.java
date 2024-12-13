@@ -494,7 +494,13 @@ public class String_2
 	 */
 	public String oneTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String finalAnswer = "";
+		for(int i = 0; i < str.length() - 2; i += 3)
+		{
+			finalAnswer += str.substring(i + 1, i + 3);
+			finalAnswer += str.substring(i, i + 1);
+		}
+		return finalAnswer;
 	}
 
 	/**
