@@ -502,6 +502,14 @@ public class String_2
 		}
 		return finalAnswer;
 	}
+	private String oneTwoRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return str.substring(1, 3) + str.substring(0, 1) + oneTwoRecursive(str.substring(3));
+	}
 
 	/**
 	 * Look for patterns like "zip" and "zap" in the string -- length-3, starting with 'z' and ending with 'p'.
