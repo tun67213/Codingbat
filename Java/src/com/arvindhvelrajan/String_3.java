@@ -212,6 +212,21 @@ public class String_3
 		}
 		return count;
 	}
+	/**
+	 * The following is a recursive implementation for the method countTriple().
+	 */
+	private int countTripleRecursive(String str)
+	{
+		if(str.length() <= 2)
+		{
+			return 0;
+		}
+		if(str.charAt(0) == str.charAt(1) && str.charAt(0) == str.charAt(2))
+		{
+			return 1 + countTripleRecursive(str.substring(1));
+		}
+		return countTripleRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given a string, return the sum of the digits 0-9 that appear in the string,
