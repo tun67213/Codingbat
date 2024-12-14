@@ -865,7 +865,28 @@ public class Array_2
 	 */
 	public int[] zeroMax(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length == 0)
+		{
+			return nums;
+		}
+		int i = 0;
+		while(i != nums.length - 1)
+		{
+			if(nums[i] == 0)
+			{
+				int max = nums[i];
+				for(int j = i; j < nums.length; j++)
+				{
+					if(nums[j] % 2 == 1 && nums[j] > max)
+					{
+						max = nums[j];
+					}
+				}
+				nums[i] = max;
+			}
+			i++;
+		}
+		return nums;
 	}
 
 	/**
