@@ -140,7 +140,26 @@ public class Array_2
 	 */
 	public int sum67(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int sum = 0;
+		boolean found = false;
+		int i = 0;
+		while(i < nums.length)
+		{
+			if(nums[i] == 6 && !found)
+			{
+				found = true;
+			}
+			else if(found && nums[i] == 7)
+			{
+				found = false;
+			}
+			else if(!found)
+			{
+				sum += nums[i];
+			}
+			i++;
+		}
+		return sum;
 	}
 
 	/**
