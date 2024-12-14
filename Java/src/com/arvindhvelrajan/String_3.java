@@ -32,6 +32,32 @@ public class String_3
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * This is a helper function to split the String into a List of words.
+	 */
+	private List<String> splitString(String str)
+	{
+		str = str.toLowerCase();
+		List<String> list = new ArrayList<>();
+		String currentWord = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(Character.isLetter(str.charAt(i)))
+			{
+				currentWord += str.substring(i, i + 1);
+			}
+			else if(!currentWord.isEmpty())
+			{
+				list.add(currentWord);
+				currentWord = "";
+			}
+		}
+		if(!currentWord.isEmpty())
+		{
+			list.add(currentWord);
+		}
+		return list;
+	}
 
 	/**
 	 * Given two strings, base and remove, return a version of the base string where all instances of the remove string
