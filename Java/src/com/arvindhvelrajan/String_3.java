@@ -359,7 +359,25 @@ public class String_3
 	 */
 	public int sumNumbers(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int sum = 0;
+		String currentString = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(Character.isDigit(str.charAt(i)))
+			{
+				currentString += str.substring(i, i + 1);
+			}
+			else if(!currentString.isEmpty())
+			{
+				sum += Integer.parseInt(currentString);
+				currentString = "";
+			}
+		}
+		if(!currentString.isEmpty())
+		{
+			sum += Integer.parseInt(currentString);
+		}
+		return sum;
 	}
 
 	/**
