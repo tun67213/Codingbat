@@ -194,7 +194,14 @@ public class Array_2
 	 */
 	public boolean lucky13(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		for(int num : nums)
+		{
+			if(num == 1 || num == 3)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
