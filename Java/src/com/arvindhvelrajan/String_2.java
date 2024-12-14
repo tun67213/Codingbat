@@ -635,6 +635,21 @@ public class String_2
 		}
 		return result.toString();
 	}
+	/**
+	 * This is a recursive approach for the function plusOut() above.
+	 */
+	private String plusOutRecursive(String str, String word)
+	{
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		if(str.length() >= word.length() && str.startsWith(word))
+		{
+			return word + plusOutRecursive(str.substring(word.length()), word);
+		}
+		return "+" + plusOutRecursive(str.substring(1), word);
+	}
 
 	/**
 	 * Given a string and a non-empty word string, return a string made of each char just before and just after every appearance of the word in the string. Ignore cases where there is no char before or after the word, and a char may be included twice if it is between two words.
