@@ -466,7 +466,19 @@ public class Array_2
 	 */
 	public boolean has12(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		boolean found = false;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 1 && !found)
+			{
+				found = true;
+			}
+			if(found && nums[i] == 2)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
