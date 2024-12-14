@@ -276,7 +276,16 @@ public class String_3
 	 */
 	public String sameEnds(String string)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int rightNow = string.length() / 2;
+		while(!string.substring(0, rightNow).equals(string.substring(string.length() - rightNow)))
+		{
+			rightNow--;
+		}
+		if(rightNow <= 0)
+		{
+			return "";
+		}
+		return string.substring(0, rightNow);
 	}
 
 	/**
