@@ -590,7 +590,25 @@ public class Array_2
 	 */
 	public boolean sameEnds(int[] nums, int len)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		List<Integer> list1 = new ArrayList<>();
+		List<Integer> list2 = new ArrayList<>();
+		for(int i = 0; i < len; i++)
+		{
+			list1.add(nums[i]);
+		}
+		for(int i = nums.length - len; i < nums.length; i++)
+		{
+			list2.add(nums[i]);
+		}
+		for(int i = 0; i < list1.size(); i++)
+		{
+			int num1 = list1.get(i), num2 = list2.get(i);
+			if(num1 != num2)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
