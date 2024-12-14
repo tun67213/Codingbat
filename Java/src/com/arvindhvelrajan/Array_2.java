@@ -542,8 +542,40 @@ public class Array_2
 	 */
 	public boolean twoTwo(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length == 0)
+		{
+			return true;
+		}
+		if(nums.length == 1)
+		{
+			return nums[0] != 2;
+		}
+		if(nums.length == 2)
+		{
+			if(nums[0] == 2 || nums[1] == 2)
+			{
+				return nums[0] == 2 && nums[1] == 2;
+			}
+			return true;
+		}
+		if(nums[0] == 2 && nums[1] != 2)
+		{
+			return false;
+		}
+		for(int i = 1; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 2 && !((nums[i - 1] == 2) || (nums[i + 1] == 2)))
+			{
+				return false;
+			}
+		}
+		if(nums[nums.length - 1] == 2)
+		{
+			return nums[nums.length - 2] == 2;
+		}
+		return true;
 	}
+
 
 	/**
 	 * Return true if the group of N numbers at the start and end of the array are the same.
