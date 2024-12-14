@@ -233,7 +233,18 @@ public class Array_2
 	 */
 	public boolean more14(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int countOnes = 0, countFours = 0;
+		for(int num : nums)
+		{
+			if(num == 1)
+			{
+				countOnes++;
+			}
+			{
+				countFours++;
+			}
+		}
+		return countOnes > countFours;
 	}
 
 	/**
