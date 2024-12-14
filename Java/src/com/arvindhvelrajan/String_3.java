@@ -353,13 +353,13 @@ public class String_3
 		System.out.println("gHappy(\"yyygggxyy\") → " + gHappy("yyygggxyy"));
 		printFunction("countTriple");
 		System.out.println("countTriple(\"abcXXXabc\") → " + countTriple("abcXXXabc"));
-		System.out.println("countTriple(\"xxxabyyyycd\") → " + countTriple("xxxabyyycd"));
+		System.out.println("countTriple(\"xxxabyyyycd\") → " + countTriple("xxxabyyyycd"));
 		System.out.println("countTriple(\"a\") → " + countTriple("a"));
 		System.out.println("countTriple(\"\") → " + countTriple(""));
 		System.out.println("countTriple(\"XXXabc\") → " + countTriple("XXXabc"));
 		System.out.println("countTriple(\"XXXXabc\") → " + countTriple("XXXXabc"));
 		System.out.println("countTriple(\"XXXXXabc\") → " + countTriple("XXXXXabc"));
-		System.out.println("countTriple(\"222abyyycdXXX\") → " + countTriple("222abyyycd"));
+		System.out.println("countTriple(\"222abyyycdXXX\") → " + countTriple("222abyyycdXXX"));
 		System.out.println("countTriple(\"abYYYabXXXXXab\") → " + countTriple("abYYYabXXXXXab"));
 		System.out.println("countTriple(\"abYYXabXXYXXab\") → " + countTriple("abYYXabXXYXXab"));
 		System.out.println("countTriple(\"abYYXabXXYXXab\") → " + countTriple("abYYXabXXYXXab"));
