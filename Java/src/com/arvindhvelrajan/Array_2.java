@@ -900,7 +900,23 @@ public class Array_2
 	 */
 	public int[] evenOdd(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] array = new int[nums.length];
+		int size = 0;
+		for(int num : nums)
+		{
+			if(num % 2 == 0)
+			{
+				array[size++] = num;
+			}
+		}
+		for(int num : nums)
+		{
+			if(num % 2 == 1)
+			{
+				array[size++] = num;
+			}
+		}
+		return array;
 	}
 
 	/**
