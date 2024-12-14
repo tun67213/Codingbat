@@ -783,7 +783,23 @@ public class Array_2
 	 */
 	public int[] notAlone(int[] nums, int val)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length <= 2)
+		{
+			return nums;
+		}
+		if(nums[0] == val && nums[1] > val)
+		{
+			nums[0] = nums[1];
+		}
+		for(int i = 1; i < nums.length - 1; i++)
+		{
+			if(nums[i] == val && !(nums[i - 1] == val || nums[i + 1] == val))
+			{
+				int max = Math.max(nums[i - 1], nums[i + 1]);
+				nums[i] = max;
+			}
+		}
+		return nums;
 	}
 
 	/**
