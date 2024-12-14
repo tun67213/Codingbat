@@ -843,7 +843,16 @@ public class Array_2
 	 */
 	public int[] withoutTen(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] newArray = new int[nums.length];
+		int size = 0;
+		for(int num : nums)
+		{
+			if(num != 10)
+			{
+				newArray[size++] = num;
+			}
+		}
+		return newArray;
 	}
 
 	/**
