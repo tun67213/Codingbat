@@ -213,7 +213,15 @@ public class Array_2
 	 */
 	public boolean sum28(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int count = 0;
+		for(int num : nums)
+		{
+			if(num == 2)
+			{
+				count++;
+			}
+		}
+		return count == 4;
 	}
 
 	/**
