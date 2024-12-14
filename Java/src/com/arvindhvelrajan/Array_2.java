@@ -646,7 +646,13 @@ public class Array_2
 	 */
 	public int[] fizzArray3(int start, int end)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] newArray = new int[end - start];
+		int size = 0;
+		for(int i = start; i < end; i++)
+		{
+			newArray[size++] = i;
+		}
+		return newArray;
 	}
 
 	/**
