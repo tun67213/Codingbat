@@ -98,6 +98,22 @@ public class String_3
 		}
 		return newWord.toString();
 	}
+	/**
+	 * The following is a recursive algorithm for the withoutString() method above.
+	 */
+	private String withoutStringRecursive(String base, String remove)
+	{
+		if(base.isEmpty() || remove.isEmpty() || base.length() < remove.length())
+		{
+			return base;
+		}
+		String newBase = base.toLowerCase(), newRemove = remove.toLowerCase();
+		if(newBase.startsWith(newRemove))
+		{
+			return withoutStringRecursive(base.substring(remove.length()), remove);
+		}
+		return base.charAt(0) + withoutStringRecursive(base.substring(1), remove);
+	}
 
 	/**
 	 * Given a string, return true if the number of appearances of "is" anywhere in the string is equal to the number of
