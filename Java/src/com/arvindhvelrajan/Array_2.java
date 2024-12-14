@@ -688,7 +688,19 @@ public class Array_2
 	 */
 	public int[] tenRun(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int temp = 0;
+		for(int num : nums)
+		{
+			if(num % 10 == 0)
+			{
+				temp = num;
+			}
+			else if(temp != 0)
+			{
+				num = temp;
+			}
+		}
+		return nums;
 	}
 
 	/**
