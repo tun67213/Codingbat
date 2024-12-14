@@ -158,7 +158,38 @@ public class String_3
 	 */
 	public boolean gHappy(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("g"));
+		}
+		if(str.length() == 2)
+		{
+			if(str.charAt(0) == 'g' || str.charAt(1) == 'g')
+			{
+				return str.equals("gg");
+			}
+			return true;
+		}
+		if(str.charAt(0) == 'g' && !(str.charAt(1) == 'g'))
+		{
+			return false;
+		}
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(str.charAt(i) == 'g' && !(str.charAt(i - 1) == 'g' || str.charAt(i + 1) == 'g'))
+			{
+				return false;
+			}
+		}
+		if(str.charAt(str.length() - 1) == 'g')
+		{
+			return str.charAt(str.length() - 2) == 'g';
+		}
+		return true;
 	}
 
 	/**
