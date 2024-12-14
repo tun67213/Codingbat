@@ -49,7 +49,19 @@ public class Array_2
 	 */
 	public int bigDiff(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int min = nums[0], max = nums[0];
+		for(int i = 1; i < nums.length; i++)
+		{
+			if(nums[i] < min)
+			{
+				min = nums[i];
+			}
+			if(nums[i] > max)
+			{
+				max = nums[i];
+			}
+		}
+		return max - min;
 	}
 
 	/**
