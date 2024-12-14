@@ -30,7 +30,16 @@ public class String_3
 	 */
 	public int countYZ(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		List<String> list = splitString(str);
+		int count = 0;
+		for(String currentString : list)
+		{
+			if(currentString.endsWith("y") || currentString.endsWith("z"))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 	/**
 	 * This is a helper function to split the String into a List of words.
