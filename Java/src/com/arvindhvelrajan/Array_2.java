@@ -431,7 +431,30 @@ public class Array_2
 	 */
 	public boolean has77(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length < 2)
+		{
+			return false;
+		}
+		if(nums.length == 2)
+		{
+			if((nums[0] == 7) || (nums[1] == 7))
+			{
+				return (nums[0] == 7) && (nums[1] == 7);
+			}
+			return false;
+		}
+		for(int i = 0; i < nums.length - 2; i++)
+		{
+			if(nums[i] == 7 && (nums[i + 1] == 7 || nums[i + 2] == 7))
+			{
+				return true;
+			}
+		}
+		if(nums[nums.length - 2] == 7)
+		{
+			return nums[nums.length - 1] == 7;
+		}
+		return false;
 	}
 
 	/**
