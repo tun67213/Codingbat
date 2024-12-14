@@ -726,7 +726,18 @@ public class Array_2
 	 */
 	public int[] pre4(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int index = 0;
+		while(index < nums.length && nums[index] != 4)
+		{
+			index++;
+		}
+		if(index == nums.length)
+		{
+			return nums;
+		}
+		int[] newArray = new int[index];
+		System.arraycopy(nums, 0, newArray, 0, index);
+		return newArray;
 	}
 
 	/**
