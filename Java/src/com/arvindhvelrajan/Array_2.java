@@ -300,7 +300,12 @@ public class Array_2
 	 */
 	public String[] fizzArray2(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String[] newArray = new String[n];
+		for(int i = 0; i < n; i++)
+		{
+			newArray[i] = String.valueOf(i);
+		}
+		return newArray;
 	}
 
 	private String toString(String[] nums)
