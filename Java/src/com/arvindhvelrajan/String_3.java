@@ -79,7 +79,24 @@ public class String_3
 	 */
 	public String withoutString(String base, String remove)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String newBase = base.toLowerCase();
+		String newRemove = remove.toLowerCase();
+		StringBuilder newWord = new StringBuilder();
+
+		int i = 0;
+		while(i < base.length())
+		{
+			if(i + remove.length() <= base.length() && newBase.substring(i, i + remove.length()).equals(newRemove))
+			{
+				i += remove.length();
+			}
+			else
+			{
+				newWord.append(base.charAt(i));
+				i++;
+			}
+		}
+		return newWord.toString();
 	}
 
 	/**
