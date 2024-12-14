@@ -113,7 +113,21 @@ public class Array_2
 	 */
 	public int sum13(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int i = 0;
+		int sum = 0;
+		while(i < nums.length)
+		{
+			if(nums[i] == 13)
+			{
+				i++;
+			}
+			else
+			{
+				sum += nums[i];
+			}
+			i++;
+		}
+		return sum;
 	}
 
 	/**
