@@ -936,7 +936,26 @@ public class Array_2
 	 */
 	public String[] fizzBuzz(int start, int end)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String[] newArray = new String[end - start];
+		int size = 0;
+		for(int i = start; i < end; i++)
+		{
+			String newString = String.valueOf(i);
+			if(i % 15 == 0)
+			{
+				newString = "FizzBuzz";
+			}
+			else if(i % 3 == 0)
+			{
+				newString = "Fizz";
+			}
+			else if(i % 5 == 0)
+			{
+				newString = "Buzz";
+			}
+			newArray[size++] = newString;
+		}
+		return newArray;
 	}
 
 	/**
