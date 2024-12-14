@@ -688,17 +688,29 @@ public class Array_2
 	 */
 	public int[] tenRun(int[] nums)
 	{
-		int temp = 0;
-		for(int num : nums)
+		int current;
+		int i = 0;
+		while(i < nums.length && nums[i] % 10 != 0)
 		{
-			if(num % 10 == 0)
+			i++;
+		}
+		if(i >= nums.length)
+		{
+			return nums;
+		}
+		current = nums[i];
+		i++;
+		while(i < nums.length)
+		{
+			if(nums[i] % 10 == 0)
 			{
-				temp = num;
+				current = nums[i];
 			}
-			else if(temp != 0)
+			else
 			{
-				num = temp;
+				nums[i] = current;
 			}
+			i++;
 		}
 		return nums;
 	}
