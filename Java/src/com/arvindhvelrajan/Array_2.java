@@ -76,7 +76,31 @@ public class Array_2
 	 */
 	public int centeredAverage(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int minIndex = 0, maxIndex = 0;
+		int min = nums[minIndex], max = nums[maxIndex];
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] < min)
+			{
+				minIndex = i;
+				min = nums[minIndex];
+			}
+			if(nums[i] > max)
+			{
+				maxIndex = i;
+				max = nums[maxIndex];
+			}
+		}
+		int sum = 0, length = 0;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(i != minIndex && i != maxIndex)
+			{
+				sum += nums[i];
+				length++;
+			}
+		}
+		return sum / length;
 	}
 
 	/**
