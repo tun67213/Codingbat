@@ -751,7 +751,25 @@ public class Array_2
 	 */
 	public int[] post4(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int index = -1;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 4)
+			{
+				index = i;
+			}
+		}
+		if(index == -1)
+		{
+			return nums;
+		}
+		int[] newArray = new int[nums.length - index - 1];
+		int size = 0;
+		for(int i = index + 1; i < nums.length; i++)
+		{
+			newArray[size++] = nums[i];
+		}
+		return newArray;
 	}
 
 	/**
