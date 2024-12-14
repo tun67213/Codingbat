@@ -30,6 +30,7 @@ public class String_3
 	 */
 	public int countYZ(String str)
 	{
+		str = str.toLowerCase();
 		List<String> list = splitString(str);
 		int count = 0;
 		for(String currentString : list)
@@ -46,7 +47,6 @@ public class String_3
 	 */
 	private List<String> splitString(String str)
 	{
-		str = str.toLowerCase();
 		List<String> list = new ArrayList<>();
 		String currentWord = "";
 		for(int i = 0; i < str.length(); i++)
