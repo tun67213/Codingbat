@@ -335,7 +335,19 @@ public class Array_2
 	 */
 	public boolean no14(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		boolean found1 = false, found4 = false;
+		for(int num : nums)
+		{
+			if(num == 1)
+			{
+				found1 = true;
+			}
+			if(num == 4)
+			{
+				found4 = true;
+			}
+		}
+		return !found1 || !found4;
 	}
 
 	/**
