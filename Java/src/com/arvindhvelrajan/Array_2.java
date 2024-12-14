@@ -240,6 +240,7 @@ public class Array_2
 			{
 				countOnes++;
 			}
+			if(num == 4)
 			{
 				countFours++;
 			}
