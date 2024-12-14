@@ -391,7 +391,27 @@ public class String_3
 	 */
 	public String notReplace(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		List<String> words = splitString(str);
+		for(int i = 0; i < words.size(); i++)
+		{
+			String word = words.get(i);
+			if(word.equals("is-is"))
+			{
+				word = "is not-is not";
+			}
+			else if(word.equals("is"))
+			{
+				word = "is not";
+			}
+			words.set(i, word);
+		}
+		StringBuilder buff = new StringBuilder();
+		for(String word : words)
+		{
+			buff.append(word);
+			buff.append(" ");
+		}
+		return buff.toString();
 	}
 
 	/**
