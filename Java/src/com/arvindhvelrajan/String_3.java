@@ -250,6 +250,21 @@ public class String_3
 		}
 		return sum;
 	}
+	/**
+	 * The following is a recursive implementation of sumDigits().
+	 */
+	private int sumDigitsRecursive(String str)
+	{
+		if(str.isEmpty())
+		{
+			return 0;
+		}
+		if(Character.isDigit(str.charAt(0)))
+		{
+			return Integer.parseInt(str.substring(0, 1)) + sumDigitsRecursive(str.substring(1));
+		}
+		return sumDigitsRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given a string, return the longest substring that appears at both the beginning and end of the string without
