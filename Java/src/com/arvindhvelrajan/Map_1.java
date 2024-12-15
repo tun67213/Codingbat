@@ -82,7 +82,12 @@ public class Map_1
 	 */
 	public Map<String, String> mapAB(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a") && map.containsKey("b"))
+		{
+			String temporary = map.get("a") + map.get("b");
+			map.put("ab", temporary);
+		}
+		return map;
 	}
 
 	/**
