@@ -137,5 +137,12 @@ public class AP_1
 		System.out.println("wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1) → " + wordsCount(new String[] {"xx", "yyy", "x", "yy", "z"}, 1));
 		System.out.println("wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2) → " + wordsCount(new String[] {"xx", "yyy", "x", "yy", "z"}, 2));
 		System.out.println("wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 3) → " + wordsCount(new String[] {"xx", "yyy", "x", "yy", "z"}, 3));
+		printFunction("wordsFront");
+		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 1) → " + toString(wordsFront(new String[] {"a", "b", "c", "d"}, 1)));
+		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 2) → " + toString(wordsFront(new String[] {"a", "b", "c", "d"}, 2)));
+		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 3) → " + toString(wordsFront(new String[] {"a", "b", "c", "d"}, 3)));
+		System.out.println("wordsFront([\"a\", \"b\", \"c\", \"d\"], 4) → " + toString(wordsFront(new String[] {"a", "b", "c", "d"}, 4)));
+		System.out.println("wordsFront([\"Hi\", \"There\"], 1) → " + toString(wordsFront(new String[] {"Hi", "There"}, 1)));
+		System.out.println("wordsFront([\"Hi\", \"There\"], 2) → " + toString(wordsFront(new String[] {"Hi", "There"}, 2)));
 	}
 }
