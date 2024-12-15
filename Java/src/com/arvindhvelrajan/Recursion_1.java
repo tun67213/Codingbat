@@ -278,7 +278,15 @@ public class Recursion_1
 	 */
 	public String noX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return "";
+		}
+		if(str.startsWith("x"))
+		{
+			return noX(str.substring(1));
+		}
+		return str.substring(0, 1) + noX(str.substring(1));
 	}
 
 	/**
