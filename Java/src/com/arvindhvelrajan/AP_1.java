@@ -569,7 +569,42 @@ public class AP_1
 	 */
 	public String[] mergeTwo(String[] a, String[] b, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		List<String> list = new ArrayList<>();
+		int indexA = 0, indexB = 0;
+		while(list.size() < n)
+		{
+			if(a[indexA].compareTo(b[indexB]) < 0)
+			{
+				if(!list.contains(a[indexA]))
+				{
+					list.add(a[indexA]);
+				}
+				indexA++;
+			}
+			else if(a[indexA].compareTo(b[indexB]) > 0)
+			{
+				if(!list.contains(b[indexB]))
+				{
+					list.add(b[indexB]);
+				}
+				indexB++;
+			}
+			else
+			{
+				if(!list.contains(a[indexA]))
+				{
+					list.add(a[indexA]);
+				}
+				indexA++;
+				indexB++;
+			}
+		}
+		String[] newArray = new String[list.size()];
+		for(int i = 0; i < newArray.length; i++)
+		{
+			newArray[i] = list.get(i);
+		}
+		return newArray;
 	}
 
 	/**
