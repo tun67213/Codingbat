@@ -99,5 +99,12 @@ public class AP_1
 		System.out.println("scoresClump([3, 3, 6, 7, 9]) → " + scoresClump(new int[] {3, 3, 6, 7, 9}));
 		System.out.println("scoresClump([3, 3, 7, 7, 9]) → " + scoresClump(new int[] {3, 3, 7, 7, 9}));
 		System.out.println("scoresClump([4, 5, 8]) → " + scoresClump(new int[] {4, 5, 8}));
+		printFunction("scoresAverage");
+		System.out.println("scoresAverage([2, 2, 4, 4]) → " + scoresAverage(new int[] {2, 2, 4, 4}));
+		System.out.println("scoresAverage([4, 4, 4, 2, 2, 2]) → " + scoresAverage(new int[] {4, 4, 4, 2, 2, 2}));
+		System.out.println("scoresAverage([3, 4, 5, 1, 2, 3]) → " + scoresAverage(new int[] {3, 4, 5, 1, 2, 3}));
+		System.out.println("scoresAverage([5, 6]) → " + scoresAverage(new int[] {5, 6}));
+		System.out.println("scoresAverage([5, 4]) → " + scoresAverage(new int[] {5, 4}));
+		System.out.println("scoresAverage([5, 4, 5, 6, 2, 1, 2, 3]) → " + scoresAverage(new int[] {5, 4, 5, 6, 2, 1, 2, 3}));
 	}
 }
