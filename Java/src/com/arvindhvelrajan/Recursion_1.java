@@ -344,7 +344,15 @@ public class Recursion_1
 	 */
 	public boolean array220(int[] nums, int index)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length <= 1 || index < 0 || index >= nums.length - 1)
+		{
+			return false;
+		}
+		if(nums[index] * 10 == nums[index + 1])
+		{
+			return true;
+		}
+		return array220(nums, index + 1);
 	}
 
 	/**
