@@ -103,7 +103,8 @@ public class Functional_1
 	 */
 	public List<Integer> rightDigit(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> num % 10);
+		return nums;
 	}
 
 	/**
