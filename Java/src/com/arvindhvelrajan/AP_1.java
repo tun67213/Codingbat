@@ -92,6 +92,10 @@ public class AP_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	private String toString(String[] words)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
 	/**
 	 * @param args commandline arguments
