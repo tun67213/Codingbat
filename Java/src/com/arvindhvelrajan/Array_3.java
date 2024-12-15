@@ -169,6 +169,7 @@ public class Array_3
 				if(innerNumber == outerNumber)
 				{
 					found = true;
+					break;
 				}
 			}
 			if(!found)
