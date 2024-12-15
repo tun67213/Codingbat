@@ -137,7 +137,9 @@ public class AP_1
 	 */
 	public String[] wordsFront(String[] words, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		String[] newArray = new String[n];
+		System.arraycopy(words, 0, newArray, 0, n);
+		return newArray;
 	}
 	private String toString(String[] words)
 	{
