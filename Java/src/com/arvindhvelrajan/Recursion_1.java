@@ -116,7 +116,11 @@ public class Recursion_1
 	 */
 	public int sumDigits(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 0;
+		}
+		return n % 10 + sumDigits(n / 10);
 	}
 
 	/**
