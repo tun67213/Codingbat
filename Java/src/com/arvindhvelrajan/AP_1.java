@@ -325,6 +325,10 @@ public class AP_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	private boolean isEndy(int n)
+	{
+		return (n >= 0 && n <= 10) || (n >= 90 && n <= 100);
+	}
 
 	/**
 	 * Given 2 arrays that are the same length containing strings, compare the 1st string in one array to the 1st string
