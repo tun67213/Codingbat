@@ -443,7 +443,7 @@ public class AP_1
 	}
 	private int findSpecialScore(int[] a)
 	{
-		int max = (a[0] % 10 == 0) ? a[0] : 0;
+		int max = (a.length > 0 && a[0] % 10 == 0) ? a[0] : 0;
 		for(int num : a)
 		{
 			if(num % 10 == 0 && num > max)
