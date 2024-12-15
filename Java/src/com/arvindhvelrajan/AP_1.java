@@ -351,7 +351,16 @@ public class AP_1
 	 */
 	public int matchUp(String[] a, String[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int count = 0;
+		for(int i = 0; i < a.length; i++)
+		{
+			String aStr = a[i], bStr = b[i];
+			if(!aStr.isEmpty() && !bStr.isEmpty() && aStr.charAt(0) == bStr.charAt(0))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
