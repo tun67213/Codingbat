@@ -59,7 +59,11 @@ public class Recursion_1
 	 */
 	public int fibonacci(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n <= 1)
+		{
+			return n;
+		}
+		return fibonacci(n - 1) + fibonacci(n - 2);
 	}
 
 	/**
