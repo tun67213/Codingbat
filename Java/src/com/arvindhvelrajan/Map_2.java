@@ -46,7 +46,12 @@ public class Map_2
 	 */
 	public Map<String, Integer> wordLen(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<>();
+		for(String str : strings)
+		{
+			map.put(str, str.length());
+		}
+		return map;
 	}
 
 	/**
