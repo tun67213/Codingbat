@@ -627,7 +627,31 @@ public class Recursion_1
 	 */
 	public int strDist(String str, String sub)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty() || sub.isEmpty() || str.length() < sub.length())
+		{
+			return 0;
+		}
+		if(str.length() == sub.length())
+		{
+			if(str.equals(sub))
+			{
+				return str.length();
+			}
+			return 0;
+		}
+		if(str.startsWith(sub) && str.endsWith(sub))
+		{
+			return str.length();
+		}
+		if(str.startsWith(sub))
+		{
+			return strDist(str.substring(0, str.length() - 1), sub);
+		}
+		if(str.endsWith(sub))
+		{
+			return strDist(str.substring(1), sub);
+		}
+		return strDist(str.substring(1, str.length() - 1), sub);
 	}
 
 	/**
