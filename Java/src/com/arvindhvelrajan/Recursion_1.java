@@ -198,7 +198,15 @@ public class Recursion_1
 	 */
 	public int countX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return 0;
+		}
+		if(str.charAt(0) == 'x')
+		{
+			return 1 + countX(str.substring(1));
+		}
+		return countX(str.substring(1));
 	}
 
 	/**
