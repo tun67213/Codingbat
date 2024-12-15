@@ -247,7 +247,15 @@ public class AP_1
 	 */
 	public boolean dividesSelf(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] digits = splitInt(n);
+		for(int num : digits)
+		{
+			if(num == 0 || n % num != 0)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 	/**
 	 * The following helps to find the length of the given integer.
