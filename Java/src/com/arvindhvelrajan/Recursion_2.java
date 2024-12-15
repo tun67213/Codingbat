@@ -150,16 +150,7 @@ public class Recursion_2
 	 */
 	private boolean splitCheck(int[] nums, int index)
 	{
-		int sumOne = 0, sumTwo = 0;
-		for(int i = 0; i < index; i++)
-		{
-			sumOne += nums[i];
-		}
-		for(int i = index; i < nums.length; i++)
-		{
-			sumTwo += nums[i];
-		}
-		return sumOne == sumTwo;
+		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
 	/**
