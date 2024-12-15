@@ -375,7 +375,25 @@ public class AP_1
 	 */
 	public int scoreUp(String[] key, String[] answers)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int score = 0;
+		for(int i = 0; i < answers.length; i++)
+		{
+			String answer = answers[i];
+			String correctAnswer = key[i];
+			if(answer.equals("?"))
+			{
+				score += 0;
+			}
+			else if(answer.equals(correctAnswer))
+			{
+				score += 4;
+			}
+			else
+			{
+				score -= 1;
+			}
+		}
+		return score;
 	}
 
 	/**
