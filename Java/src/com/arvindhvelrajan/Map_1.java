@@ -100,7 +100,12 @@ public class Map_1
 	 */
 	public Map<String, String> topping1(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("ice cream"))
+		{
+			map.put("ice cream", "cherry");
+		}
+		map.put("bread", "butter");
+		return map;
 	}
 
 	/**
