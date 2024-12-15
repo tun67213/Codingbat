@@ -512,7 +512,15 @@ public class AP_1
 	 */
 	public int bigHeights(int[] heights, int start, int end)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int count = 0;
+		for(int i = start; i < end; i++)
+		{
+			if(Math.abs(heights[i] - heights[i + 1]) >= 5)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
