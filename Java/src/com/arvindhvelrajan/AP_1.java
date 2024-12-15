@@ -249,6 +249,21 @@ public class AP_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * The following helps to find the length of the given integer.
+	 */
+	private int length(int n)
+	{
+		if(n < 0)
+		{
+			return length(n * -1);
+		}
+		if(n <= 9)
+		{
+			return 1;
+		}
+		return 1 + length(n / 10);
+	}
 
 	/**
 	 * Given an array of positive ints, return a new array of length "count" containing the first even numbers from the
