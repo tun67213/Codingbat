@@ -262,5 +262,18 @@ public class AP_1
 		System.out.println("copyEvens([1, 8, 4], 1) → " + Arrays.toString(copyEvens(new int[] {1, 8, 4}, 1)));
 		System.out.println("copyEvens([1, 8, 4], 2) → " + Arrays.toString(copyEvens(new int[] {1, 8, 4}, 2)));
 		System.out.println("copyEvens([2, 8, 4], 2) → " + Arrays.toString(copyEvens(new int[] {2, 8, 4}, 2)));
+		printFunction("copyEndy");
+		System.out.println("copyEndy([9, 11, 90, 22, 6], 2) → " + Arrays.toString(copyEndy(new int[] {9, 11, 90, 22, 6}, 2)));
+		System.out.println("copyEndy([9, 11, 90, 22, 6], 3) → " + Arrays.toString(copyEndy(new int[] {9, 11, 90, 22, 6}, 3)));
+		System.out.println("copyEndy([12, 1, 1, 13, 0, 20], 2) → " + Arrays.toString(copyEndy(new int[] {12, 1, 1, 13, 0, 2}, 2)));
+		System.out.println("copyEndy([12, 1, 1, 13, 0, 20], 3) → " + Arrays.toString(copyEndy(new int[] {12, 1, 1, 13, 0, 2}, 3)));
+		System.out.println("copyEndy([0], 1) → " + Arrays.toString(copyEndy(new int[] {0}, 1)));
+		System.out.println("copyEndy([10, 11, 90], 2) → " + Arrays.toString(copyEndy(new int[] {10, 11, 90}, 2)));
+		System.out.println("copyEndy([90, 22, 100], 2) → " + Arrays.toString(copyEndy(new int[] {90, 22, 100}, 2)));
+		System.out.println("copyEndy([12, 11, 10, 89, 101, 4], 1) → " + Arrays.toString(copyEndy(new int[] {12, 11, 10, 89, 101, 4}, 1)));
+		System.out.println("copyEndy([13, 2, 2, 0], 2) → " + Arrays.toString(copyEndy(new int[] {13, 2, 2, 0}, 2)));
+		System.out.println("copyEndy([13, 2, 2, 0], 3) → " + Arrays.toString(copyEndy(new int[] {13, 2, 2, 0}, 3)));
+		System.out.println("copyEndy([13, 2, 13, 2, 0, 30], 2) → " + Arrays.toString(copyEndy(new int[] {13, 2, 13, 2, 0, 30}, 2)));
+		System.out.println("copyEndy([13, 2, 13, 2, 0, 30], 3) → " + Arrays.toString(copyEndy(new int[] {13, 2, 13, 2, 0, 30}, 3)));
 	}
 }
