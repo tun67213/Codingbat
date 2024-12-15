@@ -485,7 +485,15 @@ public class Recursion_1
 	 */
 	public String stringClean(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.charAt(0) == str.charAt(1))
+		{
+			return stringClean(str.substring(1));
+		}
+		return str.substring(0, 1) + stringClean(str.substring(1));
 	}
 
 	/**
