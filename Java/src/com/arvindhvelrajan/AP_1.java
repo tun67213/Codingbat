@@ -407,7 +407,24 @@ public class AP_1
 	 */
 	public String[] wordsWithout(String[] words, String target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int count = 0;
+		for(String word : words)
+		{
+			if(!word.equals(target))
+			{
+				count++;
+			}
+		}
+		String[] newArray = new String[count];
+		int size = 0;
+		for(String str : words)
+		{
+			if(!str.equals(target))
+			{
+				newArray[size++] = str;
+			}
+		}
+		return newArray;
 	}
 
 	/**
