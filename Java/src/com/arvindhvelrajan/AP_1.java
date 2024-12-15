@@ -297,7 +297,18 @@ public class AP_1
 	 */
 	public int[] copyEvens(int[] nums, int count)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] newArray = new int[count];
+		int size = 0;
+		int i = 0;
+		while(i < nums.length && size < count)
+		{
+			if(nums[i] % 2 == 0)
+			{
+				newArray[size++] = nums[i];
+			}
+			i++;
+		}
+		return newArray;
 	}
 
 	/**
