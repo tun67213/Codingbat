@@ -72,5 +72,15 @@ public class AP_1
 		System.out.println("scores100([100, 1, 100, 1]) → " + scores100(new int[] {100, 1, 100, 1}));
 		System.out.println("scores100([1, 2, 3, 4, 5]) → " + scores100(new int[] {1, 2, 3, 4, 5}));
 		System.out.println("scores100([1, 2, 100, 4, 5]) → " + scores100(new int[] {1, 2, 100, 4, 5}));
+		printFunction("scoresClump");
+		System.out.println("scoresClump([3, 4, 5]) → " + scoresClump(new int[] {3, 4, 5}));
+		System.out.println("scoresClump([3, 4, 6]) → " + scoresClump(new int[] {3, 4, 6}));
+		System.out.println("scoresClump([1, 3, 5, 5]) → " + scoresClump(new int[] {1, 3, 5, 5}));
+		System.out.println("scoresClump([2, 4, 5, 6]) → " + scoresClump(new int[] {2, 4, 5, 6}));
+		System.out.println("scoresClump([2, 4, 5, 7]) → " + scoresClump(new int[] {2, 4, 5, 7}));
+		System.out.println("scoresClump([2, 4, 4, 7]) → " + scoresClump(new int[] {2, 4, 4, 7}));
+		System.out.println("scoresClump([3, 3, 6, 7, 9]) → " + scoresClump(new int[] {3, 3, 6, 7, 9}));
+		System.out.println("scoresClump([3, 3, 7, 7, 9]) → " + scoresClump(new int[] {3, 3, 7, 7, 9}));
+		System.out.println("scoresClump([4, 5, 8]) → " + scoresClump(new int[] {4, 5, 8}));
 	}
 }
