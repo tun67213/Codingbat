@@ -194,7 +194,7 @@ public class Recursion_2
 	 */
 	public boolean split53(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return helper(0, nums, 0, 0);
 	}
 	/**
 	 * This helper method will be called inside split53() as the solution.
