@@ -95,6 +95,16 @@ public class AP_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	private int scoresAverage(int[] scores, int start, int end)
+	{
+		int length = end - start;
+		int sum = 0;
+		for(int i = start; i < end; i++)
+		{
+			sum += scores[i];
+		}
+		return sum / length;
+	}
 
 	/**
 	 * Given an array of strings, return the count of the number of strings with the given length.
