@@ -556,7 +556,19 @@ public class Recursion_1
 	 */
 	public boolean nestParen(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("(") || str.equals(")"));
+		}
+		if(str.startsWith("(") && str.endsWith(")"))
+		{
+			return nestParen(str.substring(1, str.length() - 1));
+		}
+		return false;
 	}
 
 	/**
