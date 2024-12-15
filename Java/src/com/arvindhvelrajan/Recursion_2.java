@@ -143,7 +143,7 @@ public class Recursion_2
 	 */
 	public boolean splitArray(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return splitCheck(nums, 0);
 	}
 	/**
 	 * This helper function will do the splitting and checking for me.
