@@ -402,7 +402,15 @@ public class Recursion_1
 	 */
 	public String endX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.startsWith("x"))
+		{
+			return endX(str.substring(1)) + "x";
+		}
+		return str.substring(0, 1) + endX(str.substring(1));
 	}
 
 	/**
