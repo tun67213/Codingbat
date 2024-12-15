@@ -441,6 +441,18 @@ public class AP_1
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	private int findSpecialScore(int[] a)
+	{
+		int max = (a[0] % 10 == 0) ? a[0] : 0;
+		for(int num : a)
+		{
+			if(num % 10 == 0 && num > max)
+			{
+				max = num;
+			}
+		}
+		return max;
+	}
 
 	/**
 	 * We have an array of heights, representing the altitude along a walking trail. Given start/end indexes into the
