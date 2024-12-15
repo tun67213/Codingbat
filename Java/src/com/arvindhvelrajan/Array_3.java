@@ -218,6 +218,17 @@ public class Array_3
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * This helper function will be used to decide the size of the array.
+	 */
+	private int sumUp(int n)
+	{
+		if(n == 0)
+		{
+			return 0;
+		}
+		return n + sumUp(n - 1);
+	}
 
 	/**
 	 * We'll say that a "mirror" section in an array is a group of contiguous elements such that somewhere in the array,
