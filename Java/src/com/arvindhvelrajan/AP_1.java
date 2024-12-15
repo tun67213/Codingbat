@@ -345,5 +345,13 @@ public class AP_1
 		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\", \"c\", \"c\"], [\"a\", \"c\", \"?\", \"?\", \"a\", \"c\"]) → " + scoreUp(new String[] {"a", "a", "b", "b", "c", "c"}, new String[] {"a", "c", "?", "?", "a", "c"}));
 		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\", \"c\", \"c\"], [\"a\", \"c\", \"?\", \"?\", \"c\", \"c\"]) → " + scoreUp(new String[] {"a", "a", "b", "b", "c", "c"}, new String[] {"a", "c", "?", "?", "c", "c"}));
 		System.out.println("scoreUp([\"a\", \"b\", \"c\"], [\"a\", \"b\", \"c\"]) → " + scoreUp(new String[] {"a", "b", "c"}, new String[] {"a", "b", "c"}));
+		printFunction("wordsWithout");
+		System.out.println("wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"a\") → " + toString(wordsWithout(new String[] {"a", "b", "c", "a"}, "a")));
+		System.out.println("wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"b\") → " + toString(wordsWithout(new String[] {"a", "b", "c", "a"}, "b")));
+		System.out.println("wordsWithout([\"a\", \"b\", \"c\", \"a\"], \"c\") → " + toString(wordsWithout(new String[] {"a", "b", "c", "a"}, "c")));
+		System.out.println("wordsWithout([\"b\", \"c\", \"a\", \"a\"], \"b\") → " + toString(wordsWithout(new String[] {"b", "c", "a", "a"}, "b")));
+		System.out.println("wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"x\") → " + toString(wordsWithout(new String[] {"xx", "yyy", "x", "yy", "x"}, "x")));
+		System.out.println("wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"yy\") → " + toString(wordsWithout(new String[] {"xx", "yyy", "x", "yy", "x"}, "yy")));
+		System.out.println("wordsWithout([\"aa\", \"ab\", \"ac\", \"aa\"], \"aa\") → " + toString(wordsWithout(new String[] {"aa", "ab", "ac", "aa"}, "aa")));
 	}
 }
