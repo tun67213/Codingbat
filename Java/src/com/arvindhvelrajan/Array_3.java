@@ -130,7 +130,12 @@ public class Array_3
 	 */
 	public boolean canBalance(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int i = 1;
+		while(i < nums.length && (sumUp(nums, 0, i) != sumUp(nums, i, nums.length)))
+		{
+			i++;
+		}
+		return i < nums.length;
 	}
 	/**
 	 * Helper function to sum values within specific indices.
