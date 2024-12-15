@@ -77,7 +77,8 @@ public class Functional_2
 	 */
 	public List<String> noLong(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.removeIf(str -> str.length() >= 4);
+		return strings;
 	}
 
 	/**
