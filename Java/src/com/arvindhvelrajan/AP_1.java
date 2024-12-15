@@ -65,5 +65,12 @@ public class AP_1
 		System.out.println("scoresIncreasing([1, 1, 2, 4, 4, 7]) → " + scoresIncreasing(new int[] {1, 1, 2, 4, 4, 7}));
 		System.out.println("scoresIncreasing([1, 1, 2, 4, 3, 7]) → " + scoresIncreasing(new int[] {1, 1, 2, 4, 3, 7}));
 		System.out.println("scoresIncreasing([-5, 4, 11]) → " + scoresIncreasing(new int[] {-5, 4, 11}));
+		printFunction("scores100");
+		System.out.println("scores100([1, 100, 100]) → " + scores100(new int[] {1, 100, 100}));
+		System.out.println("scores100([1, 100, 99, 100]) → " + scores100(new int[] {1, 100, 99, 100}));
+		System.out.println("scores100([100, 1, 100, 100]) → " + scores100(new int[] {100, 1, 100, 100}));
+		System.out.println("scores100([100, 1, 100, 1]) → " + scores100(new int[] {100, 1, 100, 1}));
+		System.out.println("scores100([1, 2, 3, 4, 5]) → " + scores100(new int[] {1, 2, 3, 4, 5}));
+		System.out.println("scores100([1, 2, 100, 4, 5]) → " + scores100(new int[] {1, 2, 100, 4, 5}));
 	}
 }
