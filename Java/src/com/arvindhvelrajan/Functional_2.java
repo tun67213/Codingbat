@@ -64,7 +64,8 @@ public class Functional_2
 	 */
 	public List<String> noZ(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.removeIf(str -> str.contains("z"));
+		return strings;
 	}
 
 	/**
