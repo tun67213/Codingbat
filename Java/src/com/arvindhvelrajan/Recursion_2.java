@@ -171,6 +171,17 @@ public class Recursion_2
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * This helper function will support solving splitOdd10().
+	 */
+	private boolean splitOdd10Helper(int start, int[] nums, int sum1, int sum2)
+	{
+		if(start >= nums.length)
+		{
+			return sum1 % 10 == 0 && sum2 % 2 == 1 || sum1 % 2 == 1 && sum2 % 10 == 0;
+		}
+		return splitOdd10Helper(start + 1, nums, sum1 + nums[start], sum2) || splitOdd10Helper(start + 1, nums, sum1, sum2 + nums[start]);
+	}
 
 	/**
 	 * Given an array of ints, is it possible to divide the ints into two groups, so that the sum of the two groups is
