@@ -439,7 +439,7 @@ public class AP_1
 	 */
 	public int scoresSpecial(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return findSpecialScore(a) + findSpecialScore(b);
 	}
 	private int findSpecialScore(int[] a)
 	{
