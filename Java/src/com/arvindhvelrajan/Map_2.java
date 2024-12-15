@@ -64,7 +64,14 @@ public class Map_2
 	 */
 	public Map<String, String> pairs(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, String> map = new HashMap<>();
+		for(String str : strings)
+		{
+			String first = str.substring(0, 1);
+			String last = str.substring(str.length() - 1);
+			map.put(first, last);
+		}
+		return map;
 	}
 
 	/**
