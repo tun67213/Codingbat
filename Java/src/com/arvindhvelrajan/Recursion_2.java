@@ -71,7 +71,11 @@ public class Recursion_2
 	 */
 	public boolean groupNoAdj(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(start >= nums.length)
+		{
+			return target == 0;
+		}
+		return groupNoAdj(start + 2, nums, target - nums[start]) || groupNoAdj(start + 1, nums, target);
 	}
 
 	/**
