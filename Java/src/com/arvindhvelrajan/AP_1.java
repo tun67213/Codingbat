@@ -264,6 +264,20 @@ public class AP_1
 		}
 		return 1 + length(n / 10);
 	}
+	/**
+	 * The following is for splitting up the integer into its individual numbers.
+	 */
+	private int[] splitInt(int n)
+	{
+		int len = length(n);
+		int[] newArray = new int[len];
+		for(int i = 0; i < len; i++)
+		{
+			newArray[i] = n % 10;
+			n /= 10;
+		}
+		return newArray;
+	}
 
 	/**
 	 * Given an array of positive ints, return a new array of length "count" containing the first even numbers from the
