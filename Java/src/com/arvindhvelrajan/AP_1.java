@@ -93,7 +93,9 @@ public class AP_1
 	 */
 	public int scoresAverage(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int averageOne = scoresAverage(scores, 0, scores.length / 2);
+		int averageTwo = scoresAverage(scores, scores.length / 2, scores.length);
+		return Math.max(averageOne, averageTwo);
 	}
 	private int scoresAverage(int[] scores, int start, int end)
 	{
