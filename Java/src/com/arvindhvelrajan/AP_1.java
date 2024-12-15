@@ -425,5 +425,18 @@ public class AP_1
 		System.out.println("sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 3, 6) → " + sumHeights(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 3, 6));
 		System.out.println("sumHeights([10, 8, 7, 7, 7, 6, 7], 1, 4) → " + sumHeights(new int[] {10, 8, 7, 7, 7, 6, 7}, 1, 4));
 		System.out.println("sumHeights([10, 8, 7, 7, 7, 6, 7], 1, 5) → " + sumHeights(new int[] {10, 8, 7, 7, 7, 6, 7}, 1, 5));
+		printFunction("sumHeights2");
+		System.out.println("sumHeights2([5, 3, 6, 7, 2], 2, 4) → " + sumHeights2(new int[] {5, 3, 6, 7, 2}, 2, 4));
+		System.out.println("sumHeights2([5, 3, 6, 7, 2], 0, 1) → " + sumHeights2(new int[] {5, 3, 6, 7, 2}, 0, 1));
+		System.out.println("sumHeights2([5, 3, 6, 7, 2], 0, 4) → " + sumHeights2(new int[] {5, 3, 6, 7, 2}, 0, 4));
+		System.out.println("sumHeights2([5, 3, 6, 7, 2], 1, 1) → " + sumHeights2(new int[] {5, 3, 6, 7, 2}, 1, 1));
+		System.out.println("sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 0, 3) → " + sumHeights2(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 0, 3));
+		System.out.println("sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 4, 8) → " + sumHeights2(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 4, 8));
+		System.out.println("sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 7, 8) → " + sumHeights2(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 7, 8));
+		System.out.println("sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 8, 8) → " + sumHeights2(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 8, 8));
+		System.out.println("sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 2, 2) → " + sumHeights2(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 2, 2));
+		System.out.println("sumHeights2([1, 2, 3, 4, 5, 4, 3, 2, 10], 3, 6) → " + sumHeights2(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 3, 6));
+		System.out.println("sumHeights2([10, 8, 7, 7, 7, 6, 7], 1, 4) → " + sumHeights2(new int[] {10, 8, 7, 7, 7, 6, 7}, 1, 4));
+		System.out.println("sumHeights2([10, 8, 7, 7, 7, 6, 7], 1, 5) → " + sumHeights2(new int[] {10, 8, 7, 7, 7, 6, 7}, 1, 5));
 	}
 }
