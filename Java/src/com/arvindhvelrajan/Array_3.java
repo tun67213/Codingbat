@@ -190,7 +190,19 @@ public class Array_3
 	 */
 	public int[] squareUp(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] arr = new int[n*n];
+		if(n == 0)
+		{
+			return arr;
+		}
+		for(int i = n - 1; i < arr.length; i += n)
+		{
+			for(int j = i; j >= i - i / n; j--)
+			{
+				arr[j] = i - j + 1;
+			}
+		}
+		return arr;
 	}
 
 	/**
