@@ -487,7 +487,17 @@ public class AP_1
 	 */
 	public int sumHeights2(int[] heights, int start, int end)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int sum = 0;
+		for(int i = start; i < end; i++)
+		{
+			int value = Math.abs(heights[i] - heights[i + 1]);
+			if(value < 0)
+			{
+				value *= -2;
+			}
+			sum += value;
+		}
+		return sum;
 	}
 
 	/**
