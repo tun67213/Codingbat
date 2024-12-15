@@ -323,7 +323,17 @@ public class AP_1
 	 */
 	public int[] copyEndy(int[] nums, int count)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] newArray = new int[count];
+		int size = 0, i = 0;
+		while(i < nums.length && size < count)
+		{
+			if(isEndy(nums[i]))
+			{
+				newArray[size++] = nums[i];
+			}
+			i++;
+		}
+		return newArray;
 	}
 	private boolean isEndy(int n)
 	{
