@@ -1,5 +1,6 @@
 package com.arvindhvelrajan;
 
+import static com.arvindhvelrajan.UI_Functions.*;
 
 /**
  * @author arvindhvelrajan
