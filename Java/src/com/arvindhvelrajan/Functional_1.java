@@ -173,12 +173,12 @@ public class Functional_1
 		System.out.println("square([5, 10]) → " + square(new ArrayList<>(List.of(5, 10))));
 		System.out.println("square([6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2]) → " + square(new ArrayList<>(List.of(6, -3, 12, 23, 4, 1, 19, 11, 2, 3, 2))));
 		printFunction("addStar");
-		System.out.println("addStar([\"a\", \"bb\", \"ccc\"]) → " + toStringStringList(new ArrayList<>(Arrays.asList("a", "bb", "ccc"))));
-		System.out.println("addStar([\"hello\", \"there\"]) → " + toStringStringList(new ArrayList<>(Arrays.asList("hello", "there"))));
-		System.out.println("addStar([\"*\"]) → " + toStringStringList(new ArrayList<>(Arrays.asList("*"))));
-		System.out.println("addStar([]) → " + toStringStringList(new ArrayList<>()));
-		System.out.println("addStar([\"kittens\", \"and\", \"chocolate\", \"and\"]) → " + toStringStringList(new ArrayList<>(Arrays.asList("kittens", "and", "chocolate", "and"))));
-		System.out.println("addStar([\"empty\", \"string\", \"\"]) → " + toStringStringList(new ArrayList<>(Arrays.asList("empty", "string", ""))));
+		System.out.println("addStar([\"a\", \"bb\", \"ccc\"]) → " + toStringStringList(addStar(new ArrayList<>(Arrays.asList("a", "bb", "ccc")))));
+		System.out.println("addStar([\"hello\", \"there\"]) → " + toStringStringList(addStar(new ArrayList<>(Arrays.asList("hello", "there")))));
+		System.out.println("addStar([\"*\"]) → " + toStringStringList(addStar(new ArrayList<>(Arrays.asList("*")))));
+		System.out.println("addStar([]) → " + toStringStringList(addStar(new ArrayList<>())));
+		System.out.println("addStar([\"kittens\", \"and\", \"chocolate\", \"and\"]) → " + toStringStringList(addStar(new ArrayList<>(Arrays.asList("kittens", "and", "chocolate", "and")))));
+		System.out.println("addStar([\"empty\", \"string\", \"\"]) → " + toStringStringList(addStar(new ArrayList<>(Arrays.asList("empty", "string", "")))));
 		printFunction("copies3");
 		System.out.println("copies3([\"a\", \"bb\", \"ccc\"]) → " + toStringStringList(copies3(List.of("a", "bb", "ccc"))));
 		System.out.println("copies3([\"24\", \"a\", \"\"]) → " + toStringStringList(copies3(List.of("24", "a", ""))));
