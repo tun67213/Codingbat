@@ -176,7 +176,6 @@ public class Array_3
 			{
 				return false;
 			}
-			found = false;
 		}
 		return true;
 	}
