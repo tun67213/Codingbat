@@ -622,8 +622,8 @@ public class AP_1
 		System.out.println("matchUp([\"b\", \"x\", \"y\", \"z\"], [\"a\", \"xx\", \"yyy\", \"zzz\"]) → " + matchUp(new String[] {"b", "x", "y", "z"}, new String[] {"a", "xx", "yyy", "zzz"}));
 		System.out.println("matchUp([\"aaa\", \"bb\", \"c\"], [\"aaa\", \"xx\", \"bb\"]) → " + matchUp(new String[] {"aaa", "bb", "c"}, new String[] {"aaa", "xx", "bb"}));
 		printFunction("scoreUp");
-		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) → " + matchUp(new String[] {"a", "a", "b", "b"}, new String[] {"a", "c", "b", "c"}));
-		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) → " + matchUp(new String[] {"a", "a", "b", "b"}, new String[] {"a", "a", "b", "c"}));
+		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"c\", \"b\", \"c\"]) → " + scoreUp(new String[] {"a", "a", "b", "b"}, new String[] {"a", "c", "b", "c"}));
+		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"c\"]) → " + scoreUp(new String[] {"a", "a", "b", "b"}, new String[] {"a", "a", "b", "c"}));
 		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"a\", \"a\", \"b\", \"b\"]) → " + scoreUp(new String[] {"a", "a", "b", "b"}, new String[] {"a", "a", "b", "b"}));
 		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"?\", \"c\", \"b\", \"?\"]) → " + scoreUp(new String[] {"a", "a", "b", "b"}, new String[] {"?", "c", "b", "?"}));
 		System.out.println("scoreUp([\"a\", \"a\", \"b\", \"b\"], [\"?\", \"c\", \"?\", \"?\"]) → " + scoreUp(new String[] {"a", "a", "b", "b"}, new String[] {"?", "c", "?", "?"}));
