@@ -112,6 +112,19 @@ public class AP_1
 	}
 
 	/**
+	 * Given a positive int n, return true if it contains a 1 digit. Note: use % to get the rightmost digit, and / to
+	 * discard the rightmost digit.
+	 *
+	 * hasOne(10) → true
+	 * hasOne(22) → false
+	 * hasOne(220) → false
+	 */
+	public boolean hasOne(int n)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	/**
 	 * @param args commandline arguments
 	 */
 	public void main(String[] args)
