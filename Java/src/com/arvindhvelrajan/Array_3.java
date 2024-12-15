@@ -132,6 +132,18 @@ public class Array_3
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * Helper function to sum values within specific indices.
+	 */
+	private int sumUp(int[] nums, int start, int end)
+	{
+		int sum = 0;
+		for(int i = start; i < end; i++)
+		{
+			sum += nums[i];
+		}
+		return sum;
+	}
 
 	/**
 	 * Given two arrays of ints sorted in increasing order, outer and inner, return true if all of the numbers in inner
