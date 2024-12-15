@@ -602,7 +602,19 @@ public class Recursion_1
 	 */
 	public boolean strCopies(String str, String sub, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return true;
+		}
+		if(str.length() < sub.length())
+		{
+			return false;
+		}
+		if(str.startsWith(sub))
+		{
+			return strCopies(str.substring(sub.length()), sub, n - 1);
+		}
+		return strCopies(str.substring(1), sub, n);
 	}
 
 	/**
