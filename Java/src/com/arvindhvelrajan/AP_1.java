@@ -181,5 +181,17 @@ public class AP_1
 		System.out.println("wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) → " + wordsWithoutList(new String[]{"a", "bb", "b", "ccc"}, 4));
 		System.out.println("wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1) → " + wordsWithoutList(new String[]{"xx", "yyy", "x", "yy", "z"}, 1));
 		System.out.println("wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2) → " + wordsWithoutList(new String[]{"xx", "yyy", "x", "yy", "z"}, 2));
+		printFunction("hasOne");
+		System.out.println("hasOne(10) → " + hasOne(10));
+		System.out.println("hasOne(22) → " + hasOne(22));
+		System.out.println("hasOne(220) → " + hasOne(220));
+		System.out.println("hasOne(212) → " + hasOne(212));
+		System.out.println("hasOne(1) → " + hasOne(1));
+		System.out.println("hasOne(9) → " + hasOne(9));
+		System.out.println("hasOne(211112) → " + hasOne(211112));
+		System.out.println("hasOne(121121) → " + hasOne(121121));
+		System.out.println("hasOne(222222) → " + hasOne(222222));
+		System.out.println("hasOne(56156) → " + hasOne(56156));
+		System.out.println("hasOne(56556) → " + hasOne(56556));
 	}
 }
