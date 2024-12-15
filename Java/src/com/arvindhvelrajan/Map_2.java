@@ -110,7 +110,21 @@ public class Map_2
 	 */
 	public Map<String, String> firstChar(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, String> map = new HashMap<>();
+		for(String str : strings)
+		{
+			String key = String.valueOf(str.charAt(0));
+			if(map.containsKey(key))
+			{
+				String value = map.get(key) + str;
+				map.put(key, value);
+			}
+			else
+			{
+				map.put(key, str);
+			}
+		}
+		return map;
 	}
 
 	/**
@@ -123,7 +137,26 @@ public class Map_2
 	 */
 	public String wordAppend(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<>();
+		String result = "";
+		for(String str : strings)
+		{
+			if(map.containsKey(str))
+			{
+				int value = map.get(str);
+				value++;
+				if(value % 2 == 0)
+				{
+					result += str;
+				}
+				map.put(str, value);
+			}
+			else
+			{
+				map.put(str, 1);
+			}
+		}
+		return result;
 	}
 
 	/**
