@@ -171,7 +171,15 @@ public class AP_1
 	 */
 	public List wordsWithoutList(String[] words, int len)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		List<String> list = new ArrayList<>();
+		for(String str : words)
+		{
+			if(str.length() != len)
+			{
+				list.add(str);
+			}
+		}
+		return list;
 	}
 
 	/**
