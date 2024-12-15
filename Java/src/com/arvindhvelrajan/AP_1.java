@@ -618,7 +618,18 @@ public class AP_1
 	 */
 	public int commonTwo(String[] a, String[] b)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		List<String> list = new ArrayList<>();
+		for(String aString : a)
+		{
+			for(String bString : b)
+			{
+				if(!aString.isEmpty() && !bString.isEmpty() && aString.equals(bString) && !list.contains(aString))
+				{
+					list.add(aString);
+				}
+			}
+		}
+		return list.size();
 	}
 
 	/**
