@@ -150,7 +150,11 @@ public class Recursion_2
 	 */
 	private boolean splitCheck(int start, int[] nums, int sum1, int sum2)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(start >= nums.length)
+		{
+			return sum1 == sum2;
+		}
+		return splitCheck(start + 1, nums, sum1 + nums[start], sum2) || splitCheck(start + 1, nums, sum1, sum2 + nums[start]);
 	}
 
 	/**
