@@ -130,7 +130,8 @@ public class Functional_1
 	 */
 	public List<String> noX(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.replaceAll(str -> str.replaceAll("x", ""));
+		return strings;
 	}
 
 	/**
