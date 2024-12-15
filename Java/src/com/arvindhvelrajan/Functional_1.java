@@ -64,7 +64,8 @@ public class Functional_1
 	 */
 	public List<String> copies3(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.replaceAll(str -> str + str + str);
+		return strings;
 	}
 
 	/**
