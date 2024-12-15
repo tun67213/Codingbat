@@ -145,6 +145,22 @@ public class Recursion_2
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * This helper function will do the splitting and checking for me.
+	 */
+	private boolean splitCheck(int[] nums, int index)
+	{
+		int sumOne = 0, sumTwo = 0;
+		for(int i = 0; i < index; i++)
+		{
+			sumOne += nums[i];
+		}
+		for(int i = index; i < nums.length; i++)
+		{
+			sumTwo += nums[i];
+		}
+		return sumOne == sumTwo;
+	}
 
 	/**
 	 * Given an array of ints, is it possible to divide the ints into two groups, so that the sum of one group is a
