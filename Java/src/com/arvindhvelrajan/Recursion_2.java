@@ -143,7 +143,7 @@ public class Recursion_2
 	 */
 	public boolean splitArray(int[] nums)
 	{
-		return splitCheck(nums, 0);
+		return splitCheck(0, nums, 0, 0);
 	}
 	/**
 	 * This helper function will do the splitting and checking for me.
