@@ -235,7 +235,29 @@ public class Map_2
 	 */
 	public String[] firstSwap(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for (int i = 0; i < strings.length; i++)
+		{
+			String key = String.valueOf(strings[i].charAt(0));
+			if(map.containsKey(key))
+			{
+				int val = map.get(key);
+				if(val == -1)
+				{
+					continue;
+				}
+				int pos = map.get(key);
+				String tmp = strings[pos];
+				strings[pos] = strings[i];
+				strings[i] = tmp ;
+				map.put(key, -1);
+			}
+			else
+			{
+				map.put(key, i);
+			}
+		}
+		return strings;
 	}
 
 	public String toString(String[] strings)
