@@ -581,7 +581,15 @@ public class Recursion_1
 	 */
 	public int strCount(String str, String sub)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty() || sub.isEmpty() || str.length() < sub.length())
+		{
+			return 0;
+		}
+		if(str.startsWith(sub))
+		{
+			return 1 + strCount(str.substring(sub.length()), sub);
+		}
+		return strCount(str.substring(1), sub);
 	}
 
 	/**
