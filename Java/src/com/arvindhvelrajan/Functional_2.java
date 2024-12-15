@@ -134,7 +134,9 @@ public class Functional_2
 	 */
 	public List<Integer> square56(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> num * num + 10);
+		nums.removeIf(num -> num % 10 == 5 || num % 10 == 6);
+		return nums;
 	}
 
 	/**
