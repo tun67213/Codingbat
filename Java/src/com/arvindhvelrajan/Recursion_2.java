@@ -196,6 +196,25 @@ public class Recursion_2
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * This helper method will be called inside split53() as the solution.
+	 */
+	private boolean helper(int start, int[] nums, int sum1, int sum2)
+	{
+		if(start >= nums.length)
+		{
+			return sum1 == sum2;
+		}
+		if(nums[start] % 5 == 0)
+		{
+			return helper(start + 1, nums, sum1 + nums[start], sum2);
+		}
+		if(nums[start] % 3 == 0)
+		{
+			return helper(start + 1, nums, sum1, sum2 + nums[start]);
+		}
+		return helper(start + 1, nums, sum1 + nums[start], sum2) || helper(start + 1, nums, sum1, sum2 + nums[start]);
+	}
 
 	/**
 	 * @param args commandline arguments
