@@ -38,7 +38,8 @@ public class Functional_1
 	 */
 	public List<Integer> square(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> num * num);
+		return nums;
 	}
 
 	/**
