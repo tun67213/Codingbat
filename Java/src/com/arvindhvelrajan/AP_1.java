@@ -143,7 +143,20 @@ public class AP_1
 	}
 	private String toString(String[] words)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		for(int i = 0; i < words.length; i++)
+		{
+			buff.append("\"");
+			buff.append(words[i]);
+			buff.append("\"");
+			if(i != words.length - 1)
+			{
+				buff.append(", ");
+			}
+		}
+		buff.append("]");
+		return buff.toString();
 	}
 
 	/**
