@@ -40,7 +40,11 @@ public class Recursion_1
 	 */
 	public int bunnyEars(int bunnies)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(bunnies == 0)
+		{
+			return 0;
+		}
+		return 2 + bunnyEars(bunnies - 1);
 	}
 
 	/**
