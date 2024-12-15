@@ -118,5 +118,12 @@ public class AP_1
 		System.out.println("scoresAverage([5, 6]) → " + scoresAverage(new int[] {5, 6}));
 		System.out.println("scoresAverage([5, 4]) → " + scoresAverage(new int[] {5, 4}));
 		System.out.println("scoresAverage([5, 4, 5, 6, 2, 1, 2, 3]) → " + scoresAverage(new int[] {5, 4, 5, 6, 2, 1, 2, 3}));
+		printFunction("wordsCount");
+		System.out.println("wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 1) → " + wordsCount(new String[] {"a", "bb", "b", "ccc"}, 1));
+		System.out.println("wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 3) → " + wordsCount(new String[] {"a", "bb", "b", "ccc"}, 3));
+		System.out.println("wordsCount([\"a\", \"bb\", \"b\", \"ccc\"], 4) → " + wordsCount(new String[] {"a", "bb", "b", "ccc"}, 4));
+		System.out.println("wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1) → " + wordsCount(new String[] {"xx", "yyy", "x", "yy", "z"}, 1));
+		System.out.println("wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2) → " + wordsCount(new String[] {"xx", "yyy", "x", "yy", "z"}, 2));
+		System.out.println("wordsCount([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 3) → " + wordsCount(new String[] {"xx", "yyy", "x", "yy", "z"}, 3));
 	}
 }
