@@ -238,7 +238,15 @@ public class Recursion_1
 	 */
 	public String changeXY(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.isEmpty())
+		{
+			return str;
+		}
+		if(str.charAt(0) == 'x')
+		{
+			return "y" + changeXY(str.substring(1));
+		}
+		return str.substring(0, 1) + changeXY(str.substring(1));
 	}
 
 	/**
