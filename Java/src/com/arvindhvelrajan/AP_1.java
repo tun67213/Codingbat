@@ -233,5 +233,18 @@ public class AP_1
 		System.out.println("dividesSelf(212) → " + dividesSelf(212));
 		System.out.println("dividesSelf(213) → " + dividesSelf(213));
 		System.out.println("dividesSelf(162) → " + dividesSelf(162));
+		printFunction("copyEvens");
+		System.out.println("copyEvens([3, 2, 4, 5, 8], 2) → " + Arrays.toString(copyEvens(new int[] {3, 2, 4, 5, 8}, 2)));
+		System.out.println("copyEvens([3, 2, 4, 5, 8], 3) → " + Arrays.toString(copyEvens(new int[] {3, 2, 4, 5, 8}, 3)));
+		System.out.println("copyEvens([6, 1, 2, 4, 5, 8], 3) → " + Arrays.toString(copyEvens(new int[] {6, 1, 2, 4, 5, 8}, 3)));
+		System.out.println("copyEvens([6, 1, 2, 4, 5, 8], 4) → " + Arrays.toString(copyEvens(new int[] {6, 1, 2, 4, 5, 8}, 4)));
+		System.out.println("copyEvens([3, 1, 4, 1, 5], 1) → " + Arrays.toString(copyEvens(new int[] {3, 1, 4, 1, 5}, 1)));
+		System.out.println("copyEvens([2], 1) → " + Arrays.toString(copyEvens(new int[] {2}, 1)));
+		System.out.println("copyEvens([6, 2, 4, 8], 2) → " + Arrays.toString(copyEvens(new int[] {6, 2, 4, 8}, 2)));
+		System.out.println("copyEvens([6, 2, 4, 8], 3) → " + Arrays.toString(copyEvens(new int[] {6, 2, 4, 8}, 3)));
+		System.out.println("copyEvens([6, 2, 4, 8], 4) → " + Arrays.toString(copyEvens(new int[] {6, 2, 4, 8}, 4)));
+		System.out.println("copyEvens([1, 8, 4], 1) → " + Arrays.toString(copyEvens(new int[] {1, 8, 4}, 1)));
+		System.out.println("copyEvens([1, 8, 4], 2) → " + Arrays.toString(copyEvens(new int[] {1, 8, 4}, 2)));
+		System.out.println("copyEvens([2, 8, 4], 2) → " + Arrays.toString(copyEvens(new int[] {2, 8, 4}, 2)));
 	}
 }
