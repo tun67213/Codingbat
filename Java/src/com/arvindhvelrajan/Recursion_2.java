@@ -169,7 +169,7 @@ public class Recursion_2
 	 */
 	public boolean splitOdd10(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return splitOdd10Helper(0, nums, 0, 0);
 	}
 	/**
 	 * This helper function will support solving splitOdd10().
