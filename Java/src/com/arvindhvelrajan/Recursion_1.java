@@ -218,7 +218,15 @@ public class Recursion_1
 	 */
 	public int countHi(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 2)
+		{
+			return 0;
+		}
+		if(str.startsWith("hi"))
+		{
+			return 1 + countHi(str.substring(2));
+		}
+		return countHi(str.substring(1));
 	}
 
 	/**
