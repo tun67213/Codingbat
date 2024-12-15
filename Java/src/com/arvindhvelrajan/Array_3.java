@@ -216,7 +216,16 @@ public class Array_3
 	 */
 	public int[] seriesUp(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int[] newArray = new int[sumUp(n)];
+		int arraySize = 0;
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				newArray[arraySize++] = j;
+			}
+		}
+		return newArray;
 	}
 	/**
 	 * This helper function will be used to decide the size of the array.
