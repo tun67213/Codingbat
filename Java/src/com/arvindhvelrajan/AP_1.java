@@ -368,5 +368,18 @@ public class AP_1
 		System.out.println("wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"x\") → " + toString(wordsWithout(new String[] {"xx", "yyy", "x", "yy", "x"}, "x")));
 		System.out.println("wordsWithout([\"xx\", \"yyy\", \"x\", \"yy\", \"x\"], \"yy\") → " + toString(wordsWithout(new String[] {"xx", "yyy", "x", "yy", "x"}, "yy")));
 		System.out.println("wordsWithout([\"aa\", \"ab\", \"ac\", \"aa\"], \"aa\") → " + toString(wordsWithout(new String[] {"aa", "ab", "ac", "aa"}, "aa")));
+		printFunction("scoresSpecial");
+		System.out.println("scoresSpecial([12, 10, 4], [2, 20, 30]) → " + scoresSpecial(new int[] {12, 10, 4}, new int[] {2, 20, 30}));
+		System.out.println("scoresSpecial([20, 10, 4], [2, 20, 10]) → " + scoresSpecial(new int[] {20, 10, 4}, new int[] {2, 20, 10}));
+		System.out.println("scoresSpecial([12, 11, 4], [2, 20, 31]) → " + scoresSpecial(new int[] {12, 11, 4}, new int[] {2, 20, 31}));
+		System.out.println("scoresSpecial([1, 20, 2, 50], [3, 4, 5]) → " + scoresSpecial(new int[] {1, 20, 2, 50}, new int[] {3, 4, 5}));
+		System.out.println("scoresSpecial([3, 4, 5], [1, 50, 2, 20]) → " + scoresSpecial(new int[] {3, 4, 5}, new int[] {1, 50, 2, 20}));
+		System.out.println("scoresSpecial([10, 4, 20, 30], [20]) → " + scoresSpecial(new int[] {10, 4, 20, 30}, new int[] {20}));
+		System.out.println("scoresSpecial([10, 4, 20, 30], [20]) → " + scoresSpecial(new int[] {10, 4, 20, 30}, new int[] {20}));
+		System.out.println("scoresSpecial([10, 4, 20, 30], [3, 20, 99]) → " + scoresSpecial(new int[] {10, 4, 20, 30}, new int[] {3, 20, 99}));
+		System.out.println("scoresSpecial([10, 4, 20, 30], [30, 20, 99]) → " + scoresSpecial(new int[] {10, 4, 20, 30}, new int[] {30, 20, 99}));
+		System.out.println("scoresSpecial([], [2]) → " + scoresSpecial(new int[] {}, new int[] {2}));
+		System.out.println("scoresSpecial([], [20]) → " + scoresSpecial(new int[] {}, new int[] {20}));
+		System.out.println("scoresSpecial([14, 10, 4], [4, 20, 30]) → " + scoresSpecial(new int[] {14, 10, 4}, new int[] {4, 20, 30}));
 	}
 }
