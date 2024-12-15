@@ -25,7 +25,14 @@ public class AP_1
 	 */
 	public boolean scoresIncreasing(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		for(int i = 0; i < scores.length - 1; i++)
+		{
+			if(scores[i] > scores[i + 1])
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
