@@ -458,11 +458,11 @@ public class AP_1
 		System.out.println("wordsFront([\"Hi\", \"There\"], 1) → " + toString(wordsFront(new String[] {"Hi", "There"}, 1)));
 		System.out.println("wordsFront([\"Hi\", \"There\"], 2) → " + toString(wordsFront(new String[] {"Hi", "There"}, 2)));
 		printFunction("wordsWithoutList");
-		System.out.println("wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1) → " + wordsWithoutList(new String[] {"a", "bb", "b", "ccc"}, 1));
-		System.out.println("wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3) → " + wordsWithoutList(new String[]{"a", "bb", "b", "ccc"}, 3));
-		System.out.println("wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) → " + wordsWithoutList(new String[]{"a", "bb", "b", "ccc"}, 4));
-		System.out.println("wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1) → " + wordsWithoutList(new String[]{"xx", "yyy", "x", "yy", "z"}, 1));
-		System.out.println("wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2) → " + wordsWithoutList(new String[]{"xx", "yyy", "x", "yy", "z"}, 2));
+		System.out.println("wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 1) → " + toString(wordsWithoutList(new String[] {"a", "bb", "b", "ccc"}, 1)));
+		System.out.println("wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 3) → " + toString(wordsWithoutList(new String[]{"a", "bb", "b", "ccc"}, 3)));
+		System.out.println("wordsWithoutList([\"a\", \"bb\", \"b\", \"ccc\"], 4) → " + toString(wordsWithoutList(new String[]{"a", "bb", "b", "ccc"}, 4)));
+		System.out.println("wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 1) → " + toString(wordsWithoutList(new String[]{"xx", "yyy", "x", "yy", "z"}, 1)));
+		System.out.println("wordsWithoutList([\"xx\", \"yyy\", \"x\", \"yy\", \"z\"], 2) → " + toString(wordsWithoutList(new String[]{"xx", "yyy", "x", "yy", "z"}, 2)));
 		printFunction("hasOne");
 		System.out.println("hasOne(10) → " + hasOne(10));
 		System.out.println("hasOne(22) → " + hasOne(22));
