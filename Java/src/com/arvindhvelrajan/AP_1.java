@@ -219,6 +219,21 @@ public class AP_1
 		}
 		return false;
 	}
+	/**
+	 * The following is a recursive implementation for hasOne().
+	 */
+	private boolean hasOneRecursive(int n)
+	{
+		if(n == 0)
+		{
+			return false;
+		}
+		if(n % 10 == 1)
+		{
+			return true;
+		}
+		return hasOneRecursive(n / 10);
+	}
 
 	/**
 	 * We'll say that a positive int divides itself if every digit in the number divides into the number evenly.
