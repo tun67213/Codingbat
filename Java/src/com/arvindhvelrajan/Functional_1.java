@@ -25,7 +25,8 @@ public class Functional_1
 	 */
 	public List<Integer> doubling(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> num * 2);
+		return nums;
 	}
 
 	/**
