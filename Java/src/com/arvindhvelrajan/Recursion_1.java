@@ -99,7 +99,11 @@ public class Recursion_1
 	 */
 	public int triangle(int rows)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(rows == 0)
+		{
+			return 0;
+		}
+		return rows + triangle(rows - 1);
 	}
 
 	/**
