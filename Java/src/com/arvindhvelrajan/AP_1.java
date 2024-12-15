@@ -209,7 +209,15 @@ public class AP_1
 	 */
 	public boolean hasOne(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		while(n > 0)
+		{
+			if(n % 10 == 1)
+			{
+				return true;
+			}
+			n /= 10;
+		}
+		return false;
 	}
 
 	/**
