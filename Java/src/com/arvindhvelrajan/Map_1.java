@@ -204,7 +204,7 @@ public class Map_1
 	 */
 	public Map<String, String> mapAB4(Map<String, String> map)
 	{
-		if(map.containsKey("a") && !map.containsKey("b"))
+		if(map.containsKey("a") && map.containsKey("b"))
 		{
 			String a = map.get("a");
 			String b = map.get("b");
@@ -293,20 +293,20 @@ public class Map_1
 		System.out.println("mapAB3({\"a\": \"\", \"b\", \"\"}) → " + toString(mapAB3(new HashMap<>(Map.of("a", "", "b", "")))));
 		System.out.println("mapAB3({\"aa\": \"aa\", \"a\": \"apple\", \"z\": \"zzz\"}) → " + toString(mapAB3(new HashMap<>(Map.of("aa", "aa", "a", "apple", "z", "zzz")))));
 		printFunction("mapAB4");
-		System.out.println("mapAB4({\"a\": \"aaa\": \"b\": \"bb\", \"c\": \"cake\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "aaa", "b", "bb", "c", "cake")))));
-		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb", "c", "cake")))));
-		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb")))));
-		System.out.println("mapAB4({\"a\": \"aaa\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "aaa")))));
-		System.out.println("mapAB4({\"b\": \"bbb\"}) → " + toString(mapAB4(new HashMap<>(Map.of("b", "bbb")))));
-		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "cake")))));
-		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"b\", \"c\": \"cake\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "a", "b", "b", "c", "cake")))));
-		System.out.println("mapAB4({\"a\": \"\", \"b\": \"b\", \"c\": \"cake\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "", "b", "b", "c", "cake")))));
-		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"\", \"c\": \"cake\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "a", "b", "", "c", "cake")))));
-		System.out.println("mapAB4({\"c\": \"cat\", \"d\": \"dog\"}) → " + toString(mapAB4(new HashMap<>(Map.of("c", "cat", "d", "dog")))));
-		System.out.println("mapAB4({\"ccc\": \"ccc\"}) → " + toString(mapAB4(new HashMap<>(Map.of("ccc", "ccc")))));
-		System.out.println("mapAB4({\"c\": \"a\", \"d\": \"b\"}) → " + toString(mapAB4(new HashMap<>(Map.of("c", "a", "d", "b")))));
-		System.out.println("mapAB4({}}) → " + toString(mapAB4(new HashMap<>(Map.of()))));
-		System.out.println("mapAB4({\"a\": \"\", \"z\": \"z\"}) → " + toString(mapAB4(new HashMap<>(Map.of("a", "", "z", "z")))));
-		System.out.println("mapAB4({\"b\": \"\", \"z\": \"z\"}) → " + toString(mapAB4(new HashMap<>(Map.of("b", "", "z", "z")))));
+		System.out.println("mapAB4({\"a\": \"aaa\": \"b\": \"bb\", \"c\": \"cake\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "aaa", "b", "bb", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "aa", "b", "bbb", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "aa", "b", "bbb")))));
+		System.out.println("mapAB4({\"a\": \"aaa\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "aaa")))));
+		System.out.println("mapAB4({\"b\": \"bbb\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("b", "bbb")))));
+		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"b\", \"c\": \"cake\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "a", "b", "b", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"\", \"b\": \"b\", \"c\": \"cake\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "", "b", "b", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"\", \"c\": \"cake\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "a", "b", "", "c", "cake")))));
+		System.out.println("mapAB4({\"c\": \"cat\", \"d\": \"dog\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("c", "cat", "d", "dog")))));
+		System.out.println("mapAB4({\"ccc\": \"ccc\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("ccc", "ccc")))));
+		System.out.println("mapAB4({\"c\": \"a\", \"d\": \"b\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("c", "a", "d", "b")))));
+		System.out.println("mapAB4({}}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of()))));
+		System.out.println("mapAB4({\"a\": \"\", \"z\": \"z\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("a", "", "z", "z")))));
+		System.out.println("mapAB4({\"b\": \"\", \"z\": \"z\"}) → " + toString(mapAB4(new LinkedHashMap<>(Map.of("b", "", "z", "z")))));
 	}
 }
