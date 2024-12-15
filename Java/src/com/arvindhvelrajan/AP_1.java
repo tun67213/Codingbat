@@ -289,5 +289,19 @@ public class AP_1
 		System.out.println("copyEndy([13, 2, 2, 0], 3) → " + Arrays.toString(copyEndy(new int[] {13, 2, 2, 0}, 3)));
 		System.out.println("copyEndy([13, 2, 13, 2, 0, 30], 2) → " + Arrays.toString(copyEndy(new int[] {13, 2, 13, 2, 0, 30}, 2)));
 		System.out.println("copyEndy([13, 2, 13, 2, 0, 30], 3) → " + Arrays.toString(copyEndy(new int[] {13, 2, 13, 2, 0, 30}, 3)));
+		printFunction("matchUp");
+		System.out.println("matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"xx\", \"bb\"]) → " + matchUp(new String[] {"aa", "bb", "cc"}, new String[] {"aaa", "xx", "bb"}));
+		System.out.println("matchUp([\"aa\", \"bb\", \"cc\"], [\"aaa\", \"b\", \"bb\"]) → " + matchUp(new String[] {"aa", "bb", "cc"}, new String[] {"aaa", "b", "bb"}));
+		System.out.println("matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"ccc\"]) → " + matchUp(new String[] {"aa", "bb", "cc"}, new String[] {"", "", "ccc"}));
+		System.out.println("matchUp([\"\", \"\", \"ccc\"], [\"aa\", \"bb\", \"cc\"]) → " + matchUp(new String[] {"", "", "ccc"}, new String[] {"aa", "bb", "cc"}));
+		System.out.println("matchUp([\"\", \"\", \"\"], [\"\", \"bb\", \"cc\"]) → " + matchUp(new String[] {"", "", ""}, new String[] {"", "bb", "cc"}));
+		System.out.println("matchUp([\"aa\", \"bb\", \"cc\"], [\"\", \"\", \"\"]) → " + matchUp(new String[] {"aa", "bb", "cc"}, new String[] {"", "", ""}));
+		System.out.println("matchUp([\"aa\", \"\", \"ccc\"], [\"\", \"bb\", \"cc\"]) → " + matchUp(new String[] {"aa", "bb", "cc"}, new String[] {"", "", ""}));
+		System.out.println("matchUp([\"x\", \"y\", \"z\"], [\"y\", \"z\", \"x\"]) → " + matchUp(new String[] {"x", "y", "z"}, new String[] {"y", "z", "x"}));
+		System.out.println("matchUp([\"\", \"y\", \"z\"], [\"\", \"y\", \"x\"]) → " + matchUp(new String[] {"", "y", "z"}, new String[] {"", "y", "x"}));
+		System.out.println("matchUp([\"x\", \"y\", \"z\"], [\"xx\", \"yyy\", \"zzz\"]) → " + matchUp(new String[] {"x", "y", "z"}, new String[] {"xx", "yyy", "zzz"}));
+		System.out.println("matchUp([\"x\", \"y\", \"z\"], [\"xx\", \"yyy\", \"\"]) → " + matchUp(new String[] {"x", "y", "z"}, new String[] {"xx", "yyy", ""}));
+		System.out.println("matchUp([\"b\", \"x\", \"y\", \"z\"], [\"a\", \"xx\", \"yyy\", \"zzz\"]) → " + matchUp(new String[] {"b", "x", "y", "z"}, new String[] {"a", "xx", "yyy", "zzz"}));
+		System.out.println("matchUp([\"aaa\", \"bb\", \"c\"], [\"aaa\", \"xx\", \"bb\"]) → " + matchUp(new String[] {"aaa", "bb", "c"}, new String[] {"aaa", "xx", "bb"}));
 	}
 }
