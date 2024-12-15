@@ -45,7 +45,18 @@ public class AP_1
 	 */
 	public boolean scores100(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(scores.length < 2)
+		{
+			return false;
+		}
+		for(int i = 0; i < scores.length - 1; i++)
+		{
+			if(scores[i] == 100 && scores[i + 1] == 100)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
