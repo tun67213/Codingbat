@@ -181,6 +181,23 @@ public class AP_1
 		}
 		return list;
 	}
+	private String toString(List<String> list)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		for(int i = 0; i < list.size(); i++)
+		{
+			buff.append("\"");
+			buff.append(list.get(i));
+			buff.append("\"");
+			if(i != list.size() - 1)
+			{
+				buff.append(", ");
+			}
+		}
+		buff.append("]");
+		return buff.toString();
+	}
 
 	/**
 	 * Given a positive int n, return true if it contains a 1 digit. Note: use % to get the rightmost digit, and / to
