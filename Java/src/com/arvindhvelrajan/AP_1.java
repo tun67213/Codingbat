@@ -512,5 +512,15 @@ public class AP_1
 		System.out.println("userCompare(\"adam\", 1, \"bob\", 2) → " + userCompare("adam", 1, "bob", 2));
 		System.out.println("userCompare(\"bob\", 1, \"bob\", 2) → " + userCompare("bob", 1, "bob", 2));
 		System.out.println("userCompare(\"bzb\", 1, \"bob\", 2) → " + userCompare("bzb", 1, "bob", 2));
+		printFunction("mergeTwo");
+		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"b\", \"f\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"b", "f", "z"}, 3)));
+		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"c\", \"f\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"c", "f", "z"}, 3)));
+		System.out.println("mergeTwo([\"f\", \"g\", \"z\"], [\"c\", \"f\", \"g\"], 3) → " + toString(mergeTwo(new String[] {"f", "g", "z"}, new String[] {"c", "f", "g"}, 3)));
+		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"a", "c", "z"}, 3)));
+		System.out.println("mergeTwo([\"a\", \"b\", \"c\", \"z\"], [\"a\", \"c\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"a", "b", "c", "z"}, new String[] {"a", "c", "z"}, 3)));
+		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"b\", \"c\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"a", "b", "c", "z"}, 3)));
+		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"z\"], 2) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"a", "c", "z"}, 2)));
+		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"y\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"a", "c", "y", "z"}, 3)));
+		System.out.println("mergeTwo([\"x\", \"y\", \"z\"], [\"a\", \"b\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"x", "y", "z"}, new String[] {"a", "b", "z"}, 3)));
 	}
 }
