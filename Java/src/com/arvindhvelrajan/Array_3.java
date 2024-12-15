@@ -26,7 +26,22 @@ public class Array_3
 	 */
 	public int maxSpan(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		int max = 0;
+		for(int i = 0; i < nums.length; i++)
+		{
+			for(int j = nums.length - 1; j >= 0; j--)
+			{
+				if(nums[i] == nums[j])
+				{
+					int span =  j - i + 1;
+					if(span > max)
+					{
+						max = span;
+					}
+				}
+			}
+		}
+		return max;
 	}
 
 	/**
