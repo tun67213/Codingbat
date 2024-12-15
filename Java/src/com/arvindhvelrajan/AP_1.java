@@ -169,7 +169,7 @@ public class AP_1
 	 * wordsWithoutList(["a", "bb", "b", "ccc"], 3) → ["a", "bb", "b"]
 	 * wordsWithoutList(["a", "bb", "b", "ccc"], 4) → ["a", "bb", "b", "ccc"]
 	 */
-	public List wordsWithoutList(String[] words, int len)
+	public List<String> wordsWithoutList(String[] words, int len)
 	{
 		List<String> list = new ArrayList<>();
 		for(String str : words)
