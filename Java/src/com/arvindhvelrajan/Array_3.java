@@ -161,7 +161,23 @@ public class Array_3
 	 */
 	public boolean linearIn(int[] outer, int[] inner)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		for(int innerNumber : inner)
+		{
+			boolean found = false;
+			for(int outerNumber : outer)
+			{
+				if(innerNumber == outerNumber)
+				{
+					found = true;
+				}
+			}
+			if(!found)
+			{
+				return false;
+			}
+			found = false;
+		}
+		return true;
 	}
 
 	/**
