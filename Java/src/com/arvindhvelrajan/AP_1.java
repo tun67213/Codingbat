@@ -396,5 +396,18 @@ public class AP_1
 		System.out.println("scoresSpecial([], [2]) → " + scoresSpecial(new int[] {}, new int[] {2}));
 		System.out.println("scoresSpecial([], [20]) → " + scoresSpecial(new int[] {}, new int[] {20}));
 		System.out.println("scoresSpecial([14, 10, 4], [4, 20, 30]) → " + scoresSpecial(new int[] {14, 10, 4}, new int[] {4, 20, 30}));
+		printFunction("sumHeights");
+		System.out.println("sumHeights([5, 3, 6, 7, 2], 2, 4) → " + sumHeights(new int[] {5, 3, 6, 7, 2}, 2, 4));
+		System.out.println("sumHeights([5, 3, 6, 7, 2], 0, 1) → " + sumHeights(new int[] {5, 3, 6, 7, 2}, 0, 1));
+		System.out.println("sumHeights([5, 3, 6, 7, 2], 0, 4) → " + sumHeights(new int[] {5, 3, 6, 7, 2}, 0, 4));
+		System.out.println("sumHeights([5, 3, 6, 7, 2], 1, 1) → " + sumHeights(new int[] {5, 3, 6, 7, 2}, 1, 1));
+		System.out.println("sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 0, 3) → " + sumHeights(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 0, 3));
+		System.out.println("sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 4, 8) → " + sumHeights(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 4, 8));
+		System.out.println("sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 7, 8) → " + sumHeights(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 7, 8));
+		System.out.println("sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 8, 8) → " + sumHeights(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 8, 8));
+		System.out.println("sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 2, 2) → " + sumHeights(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 2, 2));
+		System.out.println("sumHeights([1, 2, 3, 4, 5, 4, 3, 2, 10], 3, 6) → " + sumHeights(new int[] {1, 2, 3, 4, 5, 4, 3, 2, 10}, 3, 6));
+		System.out.println("sumHeights([10, 8, 7, 7, 7, 6, 7], 1, 4) → " + sumHeights(new int[] {10, 8, 7, 7, 7, 6, 7}, 1, 4));
+		System.out.println("sumHeights([10, 8, 7, 7, 7, 6, 7], 1, 5) → " + sumHeights(new int[] {10, 8, 7, 7, 7, 6, 7}, 1, 5));
 	}
 }
