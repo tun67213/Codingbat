@@ -536,5 +536,22 @@ public class AP_1
 		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"z\"], 2) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"a", "c", "z"}, 2)));
 		System.out.println("mergeTwo([\"a\", \"c\", \"z\"], [\"a\", \"c\", \"y\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"a", "c", "z"}, new String[] {"a", "c", "y", "z"}, 3)));
 		System.out.println("mergeTwo([\"x\", \"y\", \"z\"], [\"a\", \"b\", \"z\"], 3) → " + toString(mergeTwo(new String[] {"x", "y", "z"}, new String[] {"a", "b", "z"}, 3)));
+		printFunction("commonTwo");
+		System.out.println("commonTwo([\"a\", \"c\", \"x\"], [\"b\", \"c\", \"d\", \"x\"]) → " + commonTwo(new String[] {"a", "c", "x"}, new String[] {"b", "c", "d", "x"}));
+		System.out.println("commonTwo([\"a\", \"c\", \"x\"], [\"a\", \"b\", \"c\", \"x\", \"z\"]) → " + commonTwo(new String[] {"a", "c", "x"}, new String[] {"a", "b", "c", "x", "z"}));
+		System.out.println("commonTwo([\"a\", \"b\", \"c\"], [\"a\", \"b\", \"c\"]) → " + commonTwo(new String[] {"a", "b", "c"}, new String[] {"a", "b", "c"}));
+		System.out.println("commonTwo([\"a\", \"a\", \"b\", \"b\", \"c\"], [\"a\", \"b\", \"c\"]) → " + commonTwo(new String[] {"a", "a", "b", "b", "c"}, new String[] {"a", "b", "c"}));
+		System.out.println("commonTwo([\"a\", \"a\", \"b\", \"b\", \"c\"], [\"a\", \"b\", \"b\", \"b\", \"c\"]) → " + commonTwo(new String[] {"a", "a", "b", "b", "c"}, new String[] {"a", "b", "b", "b", "c"}));
+		System.out.println("commonTwo([\"a\", \"a\", \"b\", \"b\", \"c\"], [\"a\", \"b\", \"b\", \"c\", \"c\"]) → " + commonTwo(new String[] {"a", "a", "b", "b", "c"}, new String[] {"a", "b", "b", "c", "c"}));
+		System.out.println("commonTwo([\"b\", \"b\", \"b\", \"b\", \"c\"], [\"a\", \"b\", \"b\", \"b\", \"c\"]) → " + commonTwo(new String[] {"b", "b", "b", "b", "c"}, new String[] {"a", "b", "b", "b", "c"}));
+		System.out.println("commonTwo([\"a\", \"b\", \"c\", \"c\", \"d\"], [\"a\", \"b\", \"b\", \"c\", \"d\", \"d\"]) → " + commonTwo(new String[] {"a", "b", "c", "c", "d"}, new String[] {"a", "b", "b", "c", "d", "d"}));
+		System.out.println("commonTwo([\"a\", \"a\", \"b\", \"b\", \"c\"], [\"b\", \"b\", \"b\"]) → " + commonTwo(new String[] {"a", "a", "b", "b", "c"}, new String[] {"b", "b", "b"}));
+		System.out.println("commonTwo([\"a\", \"a\", \"b\", \"b\", \"c\"], [\"c\", \"c\"]) → " + commonTwo(new String[] {"a", "a", "b", "b", "c"}, new String[] {"c", "c"}));
+		System.out.println("commonTwo([\"a\", \"a\", \"b\", \"b\", \"c\"], [\"b\", \"b\", \"b\", \"x\"]) → " + commonTwo(new String[] {"a", "a", "b", "b", "c"}, new String[] {"b", "b", "b", "x"}));
+		System.out.println("commonTwo([\"a\", \"a\", \"b\", \"b\", \"c\"], [\"b\", \"b\"]) → " + commonTwo(new String[] {"a", "a", "b", "b", "c"}, new String[] {"b", "b"}));
+		System.out.println("commonTwo([\"a\"], [\"a\", \"b\"]) → " + commonTwo(new String[] {"a"}, new String[] {"a", "b"}));
+		System.out.println("commonTwo([\"a\"], [\"b\"]) → " + commonTwo(new String[] {"a"}, new String[] {"b"}));
+		System.out.println("commonTwo([\"a\", \"a\"], [\"b\", \"b\"]) → " + commonTwo(new String[] {"a", "a"}, new String[] {"b", "b"}));
+		System.out.println("commonTwo([\"a\", \"b\"], [\"a\", \"b\"]) → " + commonTwo(new String[] {"a", "b"}, new String[] {"a", "b"}));
 	}
 }
