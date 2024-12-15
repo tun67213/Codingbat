@@ -364,7 +364,11 @@ public class Recursion_1
 	 */
 	public String allStar(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		return str.charAt(0) + "*" + allStar(str.substring(1));
 	}
 
 	/**
