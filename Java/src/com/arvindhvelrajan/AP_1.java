@@ -208,5 +208,17 @@ public class AP_1
 		System.out.println("hasOne(222222) → " + hasOne(222222));
 		System.out.println("hasOne(56156) → " + hasOne(56156));
 		System.out.println("hasOne(56556) → " + hasOne(56556));
+		printFunction("dividesSelf");
+		System.out.println("dividesSelf(128) → " + dividesSelf(128));
+		System.out.println("dividesSelf(12) → " + dividesSelf(12));
+		System.out.println("dividesSelf(120) → " + dividesSelf(120));
+		System.out.println("dividesSelf(122) → " + dividesSelf(122));
+		System.out.println("dividesSelf(13) → " + dividesSelf(13));
+		System.out.println("dividesSelf(32) → " + dividesSelf(32));
+		System.out.println("dividesSelf(22) → " + dividesSelf(22));
+		System.out.println("dividesSelf(42) → " + dividesSelf(42));
+		System.out.println("dividesSelf(212) → " + dividesSelf(212));
+		System.out.println("dividesSelf(213) → " + dividesSelf(213));
+		System.out.println("dividesSelf(162) → " + dividesSelf(162));
 	}
 }
