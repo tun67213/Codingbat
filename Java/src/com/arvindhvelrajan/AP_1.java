@@ -487,5 +487,14 @@ public class AP_1
 		System.out.println("bigHeights([1, 2, 3, 14, 5, 4, 3, 2, 10], 7, 8) → " + bigHeights(new int[] {1, 2, 3, 14, 5, 4, 3, 2, 10}, 7, 8));
 		System.out.println("bigHeights([1, 2, 3, 14, 5, 4, 3, 2, 10], 3, 8) → " + bigHeights(new int[] {1, 2, 3, 14, 5, 4, 3, 2, 10}, 3, 8));
 		System.out.println("bigHeights([1, 2, 3, 14, 5, 4, 3, 2, 10], 2, 8) → " + bigHeights(new int[] {1, 2, 3, 14, 5, 4, 3, 2, 10}, 2, 8));
+		printFunction("userCompare");
+		System.out.println("userCompare(\"bb\", 1, \"zz\", 2) → " + userCompare("bb", 1, "zz", 2));
+		System.out.println("userCompare(\"bb\", 1, \"aa\", 2) → " + userCompare("bb", 1, "aa", 2));
+		System.out.println("userCompare(\"bb\", 1, \"bb\", 1) → " + userCompare("bb", 1, "bb", 1));
+		System.out.println("userCompare(\"bb\", 5, \"bb\", 1) → " + userCompare("bb", 5, "bb", 1));
+		System.out.println("userCompare(\"bb\", 5, \"bb\", 10) → " + userCompare("bb", 5, "bb", 10));
+		System.out.println("userCompare(\"adam\", 1, \"bob\", 2) → " + userCompare("adam", 1, "bob", 2));
+		System.out.println("userCompare(\"bob\", 1, \"bob\", 2) → " + userCompare("bob", 1, "bob", 2));
+		System.out.println("userCompare(\"bzb\", 1, \"bob\", 2) → " + userCompare("bzb", 1, "bob", 2));
 	}
 }
