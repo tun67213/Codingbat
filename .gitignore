@@ -5,3 +5,6 @@ src/.DS_Store
 src/Python/__pycache__/Warmup_1.cpython-312.pyc
 *.pyc
 *.pyc
+*.pyc
+.idea/.name
+src/Python/__pycache__/Warmup_1.cpython-312.pyc
