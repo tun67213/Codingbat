@@ -4,7 +4,7 @@ def welcome1():
     print("\nWelcome to Codingbat.com Method Implementations\n\n")
 
 def welcome2():
-    print("\nPython Implementations\n")
+    print("Python Implementations\n")
 
 if __name__ == "__main__":
     welcome1()
