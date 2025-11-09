@@ -2,7 +2,7 @@
 import HelperMethods
 
 def welcome():
-    print("\n\nWarmup_2 Functions\n")
+    print("\n\nWarmup-2 Functions\n")
 
 """
 Given a string and a non-negative int n, return a larger string that is n copies of the original string.
