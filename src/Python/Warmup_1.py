@@ -1,3 +1,4 @@
+import HelperMethods
 
 def welcome():
     print("\nWarmup_1 Functions\n")
@@ -128,6 +129,7 @@ def front3(str):
 
 def main():
     welcome()
+    HelperMethods.printMethod("sleep_in")
 
 if __name__ == "__main__":
     main()
