@@ -1,4 +1,4 @@
-import Warmup_1, Warmup_2
+import Warmup_1, Warmup_2, String_1
 
 def welcome1():
     print("\nWelcome to Codingbat.com Method Implementations\n\n")
@@ -11,3 +11,4 @@ if __name__ == "__main__":
     welcome2()
     Warmup_1.main()
     Warmup_2.main()
+    String_1.main()
