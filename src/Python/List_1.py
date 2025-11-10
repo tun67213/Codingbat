@@ -217,7 +217,15 @@ def main():
     print(f"make_ends([5, 2, 9]) -> {make_ends([5, 2, 9])}")
     print(f"make_ends([2, 3, 4, 1]) -> {make_ends([2, 3, 4, 1])}")
     HelperMethods.printMethod("has23")
-    print(f"")
+    print(f"has23([2, 5]) -> {has23([2, 5])}")
+    print(f"has23([4, 3]) -> {has23([4, 3])}")
+    print(f"has23([4, 5]) -> {has23([4, 5])}")
+    print(f"has23([2, 2]) -> {has23([2, 2])}")
+    print(f"has23([3, 2]) -> {has23([3, 2])}")
+    print(f"has23([3, 3]) -> {has23([3, 3])}")
+    print(f"has23([7, 7]) -> {has23([7, 7])}")
+    print(f"has23([3, 9]) -> {has23([3, 9])}")
+    print(f"has23([9, 5]) -> {has23([9, 5])}")
 
 if __name__ == "__main__":
     main()
