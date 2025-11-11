@@ -5,7 +5,7 @@ package src;
  */
 public class HelperMethods
 {
-	protected static int callTimes = 0;
+	public static int callTimes = 0;
 
 	public static void printMethod(String methodName)
 	{
