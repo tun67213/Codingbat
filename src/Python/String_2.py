@@ -67,7 +67,7 @@ xyz_there('xyz.abc') → True
 def xyz_there(str):
     pass
 
-if __name__ == "__main__":
+def main():
     welcome()
     HelperMethods.callTimes = 0
     HelperMethods.printMethod("double_char")
@@ -149,3 +149,6 @@ if __name__ == "__main__":
     print(f"xyz_there('12.xyz') -> {xyz_there('12.xyz')}")
     print(f"xyz_there('12xyz') -> {xyz_there('12xyz')}")
     print(f"xyz_there('1.xyz.xyz2.xyz') -> {xyz_there('1.xyz.xyz2.xyz')}")
+
+if __name__ == "__main__":
+    main()
