@@ -2,5 +2,7 @@
 /**
  * @author arvindhvelrajan
  */
-public class Warmup_2 {
+public class Warmup_2
+{
+
 }

@@ -2,5 +2,7 @@
 /**
  * @author arvindhvelrajan
  */
-public class String_2 {
+public class String_2
+{
+
 }

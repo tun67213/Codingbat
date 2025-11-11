@@ -2,5 +2,7 @@
 /**
  * @author arvindhvelrajan
  */
-public class Logic_1 {
+public class Logic_1
+{
+
 }
