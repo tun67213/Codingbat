@@ -2,7 +2,7 @@
 import HelperMethods
 
 def welcome():
-    print("\n\nLogic-1 Functions\n")
+    print("\n\nString-2 Functions\n")
     
 """
 Given a string, return a string where for every char in the original, there are two chars.

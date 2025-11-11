@@ -2,7 +2,7 @@
 import HelperMethods
 
 def welcome():
-    print("\n\nString-1 Functions\n")
+    print("\n\nList-2 Functions\n")
 
 def main():
     pass
