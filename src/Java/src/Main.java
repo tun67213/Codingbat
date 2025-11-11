@@ -5,10 +5,19 @@
 public class Main
 {
 	/**
+	 * @code This method welcomes the user to this program.
+	 */
+	public static void welcome()
+	{
+		System.out.println();
+		System.out.println("Welcome to the Java Implementation for Codingbat methods!\n");
+	}
+
+	/**
 	 * @param args command line arguments
 	 */
 	public static void main(String[] args)
 	{
-		
+		welcome();
 	}
 }
