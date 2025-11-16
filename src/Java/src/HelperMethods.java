@@ -9,13 +9,28 @@ public class HelperMethods
 
 	public static void printMethod(String methodName)
 	{
+		String method = methodName;
 		if(callTimes > 0)
 		{
-			System.out.println("\nMethod Name: " + methodName + "()\n");
+			if(method.contains("()"))
+			{
+				System.out.println("\nMethod Name: " + methodName + "\n");
+			}
+			else
+			{
+				System.out.println("\nMethod Name: " + methodName + "()\n");
+			}
 		}
 		else
 		{
-			System.out.println("Method Name: " + methodName + "()\n");
+			if(method.contains("()"))
+			{
+				System.out.println("\nMethod Name: " + methodName + "\n");
+			}
+			else
+			{
+				System.out.println("\nMethod Name: " + methodName + "()\n");
+			}
 		}
 		callTimes++;
 	}
