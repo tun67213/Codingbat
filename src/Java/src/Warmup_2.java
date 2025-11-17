@@ -18,6 +18,7 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
+		callTimes = 0;
 		welcome();
 	}
 }
