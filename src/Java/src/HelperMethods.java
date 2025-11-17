@@ -10,27 +10,17 @@ public class HelperMethods
 	public static void printMethod(String methodName)
 	{
 		String method = methodName;
+		if(!method.endsWith("()"))
+		{
+			method += "()";
+		}
 		if(callTimes > 0)
 		{
-			if(method.contains("()"))
-			{
-				System.out.println("\nMethod Name: " + methodName + "\n");
-			}
-			else
-			{
-				System.out.println("\nMethod Name: " + methodName + "()\n");
-			}
+			System.out.println("\n\nMethod Name: " + method + "\n");
 		}
 		else
 		{
-			if(method.contains("()"))
-			{
-				System.out.println("\nMethod Name: " + methodName + "\n");
-			}
-			else
-			{
-				System.out.println("\nMethod Name: " + methodName + "()\n");
-			}
+			System.out.println("Method Name: " + method + "\n");
 		}
 		callTimes++;
 	}
