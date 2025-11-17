@@ -3,7 +3,7 @@ package src;
 /**
  * @author arvindhvelrajan
  */
-public class Array_3
+public class Array_3 extends HelperMethods
 {
 	/**
 	 * @param args command line arguments
