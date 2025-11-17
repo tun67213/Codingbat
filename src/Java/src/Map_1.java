@@ -3,7 +3,7 @@ package src;
 /**
  * @author arvindhvelrajan
  */
-public class Map_1
+public class Map_1 extends HelperMethods
 {
 	/**
 	 * @param args command line arguments
