@@ -1,133 +1,205 @@
 
+import HelperMethods
+
 def welcome():
-    print("\n\nWarmup_2 Functions\n")
+    print("\n\nWarmup-2 Functions\n")
 
 """
-The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. 
-We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
+Given a string and a non-negative int n, return a larger string that is n copies of the original string.
 
-sleep_in(False, False) → True
-sleep_in(True, False) → False
-sleep_in(False, True) → True
+string_times('Hi', 2) → 'HiHi'
+string_times('Hi', 3) → 'HiHiHi'
+string_times('Hi', 1) → 'Hi'
 """
-def sleep_in(weekday, vacation):
+def string_times(str, n):
     pass
 
 """
-We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. 
-We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.
+Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, 
+or whatever is there if the string is less than length 3. Return n copies of the front;
 
-monkey_trouble(True, True) → True
-monkey_trouble(False, False) → True
-monkey_trouble(True, False) → False
+front_times('Chocolate', 2) → 'ChoCho'
+front_times('Chocolate', 3) → 'ChoChoCho'
+front_times('Abc', 3) → 'AbcAbcAbc'
 """
-def monkey_trouble(a_smile, b_smile):
+def front_times(str, n):
     pass
 
 """
-Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
 
-sum_double(1, 2) → 3
-sum_double(3, 2) → 5
-sum_double(2, 2) → 8
+string_bits('Hello') → 'Hlo'
+string_bits('Hi') → 'H'
+string_bits('Heeololeo') → 'Hello'
 """
-def sum_double(a, b):
+def string_bits(str):
     pass
 
 """
-Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
+Given a non-empty string like "Code" return a string like "CCoCodCode".
 
-diff21(19) → 2
-diff21(10) → 11
-diff21(21) → 0
+string_splosion('Code') → 'CCoCodCode'
+string_splosion('abc') → 'aababc'
+string_splosion('ab') → 'aab'
 """
-def diff21(n):
+def string_splosion(str):
     pass
 
 """
-We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. 
-We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.
+Given a string, return the count of the number of times that a substring length 2 appears in the string 
+and also as the last 2 chars of the string, so "hixxxhi" yields 1 (we won't count the end substring).
 
-parrot_trouble(True, 6) → True
-parrot_trouble(True, 7) → False
-parrot_trouble(False, 6) → False
+last2('hixxhi') → 1
+last2('xaxxaxaxx') → 1
+last2('axxxaaxx') → 2
 """
-def parrot_trouble(talking, hour):
+def last2(str):
+    pass
+
+
+"""
+Given an array of ints, return the number of 9's in the array.
+
+array_count9([1, 2, 9]) → 1
+array_count9([1, 9, 9]) → 2
+array_count9([1, 9, 9, 3, 9]) → 3
+"""
+def array_count9(nums):
     pass
 
 """
-Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.
+Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
 
-makes10(9, 10) → True
-makes10(9, 9) → False
-makes10(1, 9) → True
+array_front9([1, 2, 9, 3, 4]) → True
+array_front9([1, 2, 3, 4, 9]) → False
+array_front9([1, 2, 3, 4, 5]) → False
 """
-def makes10(a, b):
+def array_front9(nums):
+    pass
+
+
+"""
+Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
+array123([1, 1, 2, 3, 1]) → True
+array123([1, 1, 2, 4, 1]) → False
+array123([1, 1, 2, 1, 2, 3]) → True
+"""
+def array123(nums):
     pass
 
 """
-Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num) computes the absolute value of a number.
+Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. 
+So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings.
 
-near_hundred(93) → True
-near_hundred(90) → True
-near_hundred(89) → False
+string_match('xxcaazz', 'xxbaaz') → 3
+string_match('abc', 'abc') → 2
+string_match('abc', 'axc') → 0
 """
-def near_hundred(n):
-    pass
-
-"""
-Given 2 int values, return True if one is negative and one is positive. 
-Except if the parameter "negative" is True, then return True only if both are negative.
-
-pos_neg(1, -1, False) → True
-pos_neg(-1, 1, False) → True
-pos_neg(-4, -5, True) → True
-"""
-def pos_neg(a, b, negative):
-    pass
-
-"""
-Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
-
-not_string('candy') → 'not candy'
-not_string('x') → 'not x'
-not_string('not bad') → 'not bad'
-"""
-def not_string(str):
-    pass
-
-"""
-Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive).
-
-missing_char('kitten', 1) → 'ktten'
-missing_char('kitten', 0) → 'itten'
-missing_char('kitten', 4) → 'kittn'
-"""
-def missing_char(str, n):
-    pass
-
-"""
-Given a string, return a new string where the first and last chars have been exchanged.
-
-front_back('code') → 'eodc'
-front_back('a') → 'a'
-front_back('ab') → 'ba'
-"""
-def front_back(str):
-    pass
-
-"""
-Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
-
-front3('Java') → 'JavJavJav'
-front3('Chocolate') → 'ChoChoCho'
-front3('abc') → 'abcabcabc'
-"""
-def front3(str):
+def string_match(a, b):
     pass
 
 def main():
     welcome()
+    HelperMethods.callTimes = 0
+    HelperMethods.printMethod("string_times")
+    print(f"string_times('Hi', 2) -> '{string_times('Hi', 2)}'")
+    print(f"string_times('Hi', 3) -> '{string_times('Hi', 3)}'")
+    print(f"string_times('Hi', 1) -> '{string_times('Hi', 1)}'")
+    print(f"string_times('Hi', 0) -> '{string_times('Hi', 0)}'")
+    print(f"string_times('Hi', 5) -> '{string_times('Hi', 5)}'")
+    print(f"string_times('Oh Boy!', 2) -> '{string_times('Oh Boy!', 2)}'")
+    print(f"string_times('x', 4) -> '{string_times('x', 4)}'")
+    print(f"string_times('', 4) -> '{string_times('', 4)}'")
+    print(f"string_times('code', 2) -> '{string_times('code', 2)}'")
+    print(f"string_times('code', 3) -> '{string_times('code', 3)}'")
+    HelperMethods.printMethod("front_times")
+    print(f"front_times('Chocolate', 2) -> '{front_times('Chocolate', 2)}'")
+    print(f"front_times('Chocolate', 3) -> '{front_times('Chocolate', 3)}'")
+    print(f"front_times('Abc', 3) -> '{front_times('Abc', 3)}'")
+    print(f"front_times('Ab', 4) -> '{front_times('Ab', 4)}'")
+    print(f"front_times('A', 4) -> '{front_times('A', 4)}'")
+    print(f"front_times('', 4) -> '{front_times('', 4)}'")
+    print(f"front_times('Abc', 0) -> '{front_times('Abc', 0)}'")
+    HelperMethods.printMethod("string_bits")
+    print(f"string_bits('Hello') -> '{string_bits('Hello')}'")
+    print(f"string_bits('Hi') -> '{string_bits('Hi')}'")
+    print(f"string_bits('Heeololeo') -> '{string_bits('Heeololeo')}'")
+    print(f"string_bits('HiHiHi') -> '{string_bits('HiHiHi')}'")
+    print(f"string_bits('') -> '{string_bits('')}'")
+    print(f"string_bits('Greetings') -> '{string_bits('Greetings')}'")
+    print(f"string_bits('Chocoate') -> '{string_bits('Chocoate')}'")
+    print(f"string_bits('pi') -> '{string_bits('pi')}'")
+    print(f"string_bits('Hello Kitten') -> '{string_bits('Hello Kitten')}'")
+    print(f"string_bits('hxaxpxpxy') -> '{string_bits('hxaxpxpxy')}'")
+    HelperMethods.printMethod("string_splosion")
+    print(f"string_splosion('Code') -> '{string_splosion('Code')}'")
+    print(f"string_splosion('abc') -> '{string_splosion('abc')}'")
+    print(f"string_splosion('ab') -> '{string_splosion('ab')}'")
+    print(f"string_splosion('x') -> '{string_splosion('x')}'")
+    print(f"string_splosion('fade') -> '{string_splosion('fade')}'")
+    print(f"string_splosion('There') -> '{string_splosion('There')}'")
+    print(f"string_splosion('Kitten') -> '{string_splosion('Kitten')}'")
+    print(f"string_splosion('Bye') -> '{string_splosion('Bye')}'")
+    print(f"string_splosion('Good') -> '{string_splosion('Good')}'")
+    print(f"string_splosion('Bad') -> '{string_splosion('Bad')}'")
+    HelperMethods.printMethod("last2")
+    print(f"last2('hixxhi') -> {last2('hixxhi')}")
+    print(f"last2('xaxxaxaxx') -> {last2('xaxxaxaxx')}")
+    print(f"last2('axxxaaxx') -> {last2('axxxaaxx')}")
+    print(f"last2('xxaxxaxxaxx') -> {last2('xxaxxaxxaxx')}")
+    print(f"last2('xaxaxaxx') -> {last2('xaxaxaxx')}")
+    print(f"last2('xxxx') -> {last2('xxxx')}")
+    print(f"last2('13121312') -> {last2('13121312')}")
+    print(f"last2('11212') -> {last2('11212')}")
+    print(f"last2('13121311') -> {last2('13121311')}")
+    print(f"last2('1717171') -> {last2('1717171')}")
+    print(f"last2('hi') -> {last2('hi')}")
+    print(f"last2('h') -> {last2('h')}")
+    print(f"last2('') -> {last2('')}")
+    HelperMethods.printMethod("array_count9")
+    print(f"array_count9([1, 2, 9]) -> {array_count9([1, 2, 9])}")
+    print(f"array_count9([1, 9, 9]) -> {array_count9([1, 9, 9])}")
+    print(f"array_count9([1, 9, 9, 3, 9]) -> {array_count9([1, 9, 9, 3, 9])}")
+    print(f"array_count9([1, 2, 3]) -> {array_count9([1, 2, 3])}")
+    print(f"array_count9([]) -> {array_count9([])}")
+    print(f"array_count9([4, 2, 4, 3, 1]) -> {array_count9([4, 2, 4, 3, 1])}")
+    print(f"array_count9([9, 2, 4, 3, 1]) -> {array_count9([9, 2, 4, 3, 1])}")
+    HelperMethods.printMethod("array_front9")
+    print(f"array_front9([1, 2, 9, 3, 4]) -> {array_front9([1, 2, 9, 3, 4])}")
+    print(f"array_front9([1, 2, 3, 4, 9]) -> {array_front9([1, 2, 3, 4, 9])}")
+    print(f"array_front9([1, 2, 3, 4, 5]) -> {array_front9([1, 2, 3, 4, 5])}")
+    print(f"array_front9([9, 2, 3]) -> {array_front9([9, 2, 3])}")
+    print(f"array_front9([1, 9, 9]) -> {array_front9([1, 9, 9])}")
+    print(f"array_front9([1, 2, 3]) -> {array_front9([1, 2, 3])}")
+    print(f"array_front9([1, 9]) -> {array_front9([1, 9])}")
+    print(f"array_front9([5, 5]) -> {array_front9([5, 5])}")
+    print(f"array_front9([2]) -> {array_front9([2])}")
+    print(f"array_front9([9]) -> {array_front9([9])}")
+    print(f"array_front9([]) -> {array_front9([])}")
+    print(f"array_front9([3, 9, 2, 3, 3]) -> {array_front9([3, 9, 2, 3, 3])}")
+    HelperMethods.printMethod("array123")
+    print(f"array123([1, 1, 2, 3, 4]) -> {array123([1, 1, 2, 3, 4])}")
+    print(f"array123([1, 1, 2, 4, 1]) -> {array123([1, 1, 2, 4, 1])}")
+    print(f"array123([1, 1, 2, 1, 2, 3]) -> {array123([1, 1, 2, 1, 2, 3])}")
+    print(f"array123([1, 1, 2, 1, 2, 1]) -> {array123([1, 1, 2, 1, 2, 1])}")
+    print(f"array123([1, 2, 3, 1, 2, 3]) -> {array123([1, 2, 3, 1, 2, 3])}")
+    print(f"array123([1, 2, 3]) -> {array123([1, 2, 3])}")
+    print(f"array123([1, 1, 1]) -> {array123([1, 1, 1])}")
+    print(f"array123([1, 2]) -> {array123([1, 2])}")
+    print(f"array123([1]) -> {array123([1])}")
+    print(f"array123([]) -> {array123([])}")
+    HelperMethods.printMethod("string_match")
+    print(f"string_match('xxcaazz', 'xxbaaz') -> {string_match('xxcaazz', 'xxbaaz')}")
+    print(f"string_match('abc', 'abc') -> {string_match('abc', 'abc')}")
+    print(f"string_match('abc', 'axc') -> {string_match('abc', 'axc')}")
+    print(f"string_match('hello', 'he') -> {string_match('hello', 'he')}")
+    print(f"string_match('he', 'hello') -> {string_match('he', 'hello')}")
+    print(f"string_match('h', 'hello') -> {string_match('h', 'hello')}")
+    print(f"string_match('', 'hello') -> {string_match('', 'hello')}")
+    print(f"string_match('aabbccdd', 'abbbxxd') -> {string_match('aabbccdd', 'abbbxxd')}")
+    print(f"string_match('aaxxaaxx', 'iaxxai') -> {string_match('aaxxaaxx', 'iaxxai')}")
+    print(f"string_match('iaxxai', 'aaxxaaxx') -> {string_match('iaxxai', 'aaxxaaxx')}")
 
 if __name__ == "__main__":
     main()
