@@ -738,5 +738,13 @@ public class Warmup_1 extends HelperMethods
 		System.out.println("endUp(\"xyz12\") -> \"" + endUp("xyz12") + "\"");
 		System.out.println("endUp(\"x\") -> \"" + endUp("x") + "\"");
 		System.out.println("endUp(\"\") -> \"" + endUp("") + "\"");
+		printMethod("everyNth");
+		System.out.println("everyNth(\"Miracle\", 2) -> \"" + everyNth("Miracle", 2) + "\"");
+		System.out.println("everyNth(\"abcdefg\", 2) -> \"" + everyNth("abcdefg", 2) + "\"");
+		System.out.println("everyNth(\"abcdefg\", 3) -> \"" + everyNth("abcdefg", 3) + "\"");
+		System.out.println("everyNth(\"Chocolate\", 3) -> \"" + everyNth("Chocolate", 3) + "\"");
+		System.out.println("everyNth(\"Chocolates\", 3) -> \"" + everyNth("Chocolates", 3) + "\"");
+		System.out.println("everyNth(\"Chocolates\", 4) -> \"" + everyNth("Chocolates", 4) + "\"");
+		System.out.println("everyNth(\"Chocolates\", 100) -> \"" + everyNth("Chocolates", 100) + "\"");
 	}
 }
