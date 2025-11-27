@@ -19,6 +19,6 @@ public class Array_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
