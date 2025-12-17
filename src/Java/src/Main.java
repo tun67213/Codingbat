@@ -35,5 +35,8 @@ public class Main
 		welcome();
 		warmup1.main(args);
 		warmup2.main(args);
+		string1.main(args);
+		array1.main(args);
+		logic1.main(args);
 	}
 }
