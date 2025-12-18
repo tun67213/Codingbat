@@ -12,12 +12,12 @@ public class String_2 extends HelperMethods
 	{
 		System.out.println("\n\nString-1 Methods\n");
 	}
-	
+
 	/**
 	 * @param args command line arguments
 	 */
 	public void main(String[] args)
 	{
-
+		HelperMethods.callTimes = 0;
 	}
 }
