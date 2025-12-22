@@ -10,6 +10,10 @@ public class HelperMethods
 	public static void printMethod(String methodName)
 	{
 		String method = methodName;
+		if(methodName == null)
+		{
+			throw new NullPointerException("You MUST provide a method name. methodName cannot be null.");
+		}
 		if(!method.endsWith("()"))
 		{
 			method += "()";
