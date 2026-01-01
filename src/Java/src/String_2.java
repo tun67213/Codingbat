@@ -10,7 +10,7 @@ public class String_2 extends HelperMethods
 	 */
 	public void welcome()
 	{
-		System.out.println("\n\nString-1 Methods\n");
+		System.out.println("\n\nString-2 Methods\n");
 	}
 
 	/**
