@@ -19,5 +19,6 @@ public class Array_2 extends HelperMethods
 	public void main(String[] args)
 	{
 		HelperMethods.callTimes = 0;
+		welcome();
 	}
 }
