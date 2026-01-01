@@ -32,11 +32,27 @@ public class Main
 		AP_1 ap1 = new AP_1();
 		Recursion_1 recursion1 = new Recursion_1();
 		Recursion_2 recursion2 = new Recursion_2();
+		Map_1 map1 = new Map_1();
+		Map_2 map2 = new Map_2();
+		Functional_1 functional1 = new Functional_1();
+		Functional_2 functional2 = new Functional_2();
 		welcome();
 		warmup1.main(args);
 		warmup2.main(args);
 		string1.main(args);
 		array1.main(args);
 		logic1.main(args);
+		logic2.main(args);
+		string2.main(args);
+		string3.main(args);
+		array2.main(args);
+		array3.main(args);
+		ap1.main(args);
+		recursion1.main(args);
+		recursion2.main(args);
+		map1.main(args);
+		map2.main(args);
+		functional1.main(args);
+		functional2.main(args);
 	}
 }
