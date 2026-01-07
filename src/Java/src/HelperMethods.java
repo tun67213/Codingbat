@@ -28,4 +28,19 @@ public class HelperMethods
 		}
 		callTimes++;
 	}
+
+	public static String formatStringArray(String[] array)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		for(int i = 0; i < array.length; i++)
+		{
+			buff.append("\"").append(array[i]).append("\"");
+			if(i != array.length - 1)
+			{
+				buff.append(", ");
+			}
+		}
+		buff.append("]");
+	}
 }
