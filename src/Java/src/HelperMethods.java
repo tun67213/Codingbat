@@ -42,5 +42,6 @@ public class HelperMethods
 			}
 		}
 		buff.append("]");
+		return buff.toString();
 	}
 }
