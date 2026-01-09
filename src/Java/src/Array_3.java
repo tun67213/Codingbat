@@ -18,6 +18,6 @@ public class Array_3 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-
+		HelperMethods.callTimes = 0;
 	}
 }
