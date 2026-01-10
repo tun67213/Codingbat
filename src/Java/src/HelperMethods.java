@@ -1,7 +1,10 @@
 package src;
 
+import java.util.List;
+
 /**
  * @author arvindhvelrajan
+ * @param <E> Generic variable for this class
  */
 public class HelperMethods
 {
@@ -37,6 +40,35 @@ public class HelperMethods
 		{
 			buff.append("\"").append(array[i]).append("\"");
 			if(i != array.length - 1)
+			{
+				buff.append(", ");
+			}
+		}
+		buff.append("]");
+		return buff.toString();
+	}
+
+	public String formatList(List list)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("[");
+		boolean isString = list.getFirst() instanceof String;
+		boolean isCharacter = list.getFirst() instanceof Character;
+		for(int i = 0; i < list.size(); i++)
+		{
+			if(isString)
+			{
+				buff.append("\"").append(list.get(i)).append("\"");
+			}
+			else if(isCharacter)
+			{
+				buff.append("'").append(list.get(i)).append("'");
+			}
+			else
+			{
+				buff.append(list.get(i));
+			}
+			if(i != list.size() - 1)
 			{
 				buff.append(", ");
 			}
