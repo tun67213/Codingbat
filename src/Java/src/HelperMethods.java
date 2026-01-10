@@ -6,7 +6,7 @@ import java.util.List;
  * @author arvindhvelrajan
  * @param <E> Generic variable for this class
  */
-public class HelperMethods<E>
+public class HelperMethods
 {
 	public static int callTimes = 0;
 
@@ -48,7 +48,7 @@ public class HelperMethods<E>
 		return buff.toString();
 	}
 
-	public String formatList(List<E> list)
+	public String formatList(List list)
 	{
 		StringBuilder buff = new StringBuilder();
 		buff.append("[");
