@@ -18,6 +18,7 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-
+		HelperMethods.callTimes = 0;
+		welcome();
 	}
 }
