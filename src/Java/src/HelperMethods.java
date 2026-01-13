@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * @author arvindhvelrajan
- * @param <E> Generic variable for this class
  */
 public class HelperMethods
 {
