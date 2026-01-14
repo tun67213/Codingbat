@@ -12,7 +12,7 @@ public class Array_3 extends HelperMethods
 	 */
 	public void welcome()
 	{
-		System.out.println("\n\nArray-3g Methods\n");
+		System.out.println("\n\nArray-3 Methods\n");
 	}
 
 	/**
