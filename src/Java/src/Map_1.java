@@ -6,10 +6,18 @@ package src;
 public class Map_1 extends HelperMethods
 {
 	/**
+	 * This method welcomes the user to this program.
+	 */
+	public void welcome()
+	{
+		System.out.println("\n\nArray-3 Methods\n");
+	}
+
+	/**
 	 * @param args command line arguments
 	 */
 	public void main(String[] args)
 	{
-
+		welcome();
 	}
 }
