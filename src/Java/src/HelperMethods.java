@@ -1,6 +1,7 @@
 package src;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author arvindhvelrajan
@@ -73,6 +74,18 @@ public class HelperMethods
 			}
 		}
 		buff.append("]");
+		return buff.toString();
+	}
+
+	public String mapToString(Map<String, String> map)
+	{
+		StringBuilder buff = new StringBuilder();
+		buff.append("{");
+		for(Map.Entry<String, String> entry : map.entrySet())
+		{
+			buff.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\"");
+		}
+		buff.append("}");
 		return buff.toString();
 	}
 }
