@@ -48,7 +48,7 @@ public class HelperMethods
 		return buff.toString();
 	}
 
-	public String formatList(List list)
+	public static String formatList(List list)
 	{
 		StringBuilder buff = new StringBuilder();
 		buff.append("[");
@@ -77,7 +77,7 @@ public class HelperMethods
 		return buff.toString();
 	}
 
-	public String mapToString(Map<String, String> map)
+	public static String mapToString(Map<String, String> map)
 	{
 		StringBuilder buff = new StringBuilder();
 		buff.append("{");
