@@ -20,6 +20,7 @@ public class Map_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
+		HelperMethods.callTimes = 0;
 		welcome();
 	}
 }
