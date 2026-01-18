@@ -77,13 +77,21 @@ public class HelperMethods
 		return buff.toString();
 	}
 
-	public static String mapToString(Map<String, String> map)
+	public static <V> String mapToString(Map<String, V> map)
 	{
 		StringBuilder buff = new StringBuilder();
 		buff.append("{");
-		for(Map.Entry<String, String> entry : map.entrySet())
+		boolean first = true;
+		for(Map.Entry<String, V> entry : map.entrySet())
 		{
-			buff.append("\"").append(entry.getKey()).append("\": \"").append(entry.getValue()).append("\"");
+			if(!first)
+			{
+				buff.append(", ");
+			}
+			first = false;
+
+			buff.append("\"").append(entry.getKey()).append("\": \"")
+				.append(entry.getValue()).append("\"");
 		}
 		buff.append("}");
 		return buff.toString();
