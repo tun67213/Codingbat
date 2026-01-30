@@ -383,13 +383,26 @@ public class Warmup_1 extends HelperMethods
 	}
 
 	/**
-	 * Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.
+	 * Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there.
+	 * Note that str.toUpperCase() returns the uppercase version of a string.
 	 *
 	 * endUp("Hello") → "HeLLO"
 	 * endUp("hi there") → "hi thERE"
 	 * endUp("hi") → "HI"
 	 */
 	public String endUp(String str)
+	{
+		throw new UnsupportedOperationException("Not implemented yet");
+	}
+
+	/**
+	 * Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
+	 *
+	 * everyNth("Miracle", 2) → "Mrce"
+	 * everyNth("abcdefg", 2) → "aceg"
+	 * everyNth("abcdefg", 3) → "adg"
+	 */
+	public String everyNth(String str, int n)
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
@@ -725,5 +738,13 @@ public class Warmup_1 extends HelperMethods
 		System.out.println("endUp(\"xyz12\") -> \"" + endUp("xyz12") + "\"");
 		System.out.println("endUp(\"x\") -> \"" + endUp("x") + "\"");
 		System.out.println("endUp(\"\") -> \"" + endUp("") + "\"");
+		printMethod("everyNth");
+		System.out.println("everyNth(\"Miracle\", 2) -> \"" + everyNth("Miracle", 2) + "\"");
+		System.out.println("everyNth(\"abcdefg\", 2) -> \"" + everyNth("abcdefg", 2) + "\"");
+		System.out.println("everyNth(\"abcdefg\", 3) -> \"" + everyNth("abcdefg", 3) + "\"");
+		System.out.println("everyNth(\"Chocolate\", 3) -> \"" + everyNth("Chocolate", 3) + "\"");
+		System.out.println("everyNth(\"Chocolates\", 3) -> \"" + everyNth("Chocolates", 3) + "\"");
+		System.out.println("everyNth(\"Chocolates\", 4) -> \"" + everyNth("Chocolates", 4) + "\"");
+		System.out.println("everyNth(\"Chocolates\", 100) -> \"" + everyNth("Chocolates", 100) + "\"");
 	}
 }
