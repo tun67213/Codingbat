@@ -150,7 +150,7 @@ public class String_3 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("countYZ");
 		System.out.println("countYZ(\"fez day\") -> " + countYZ("fez day"));

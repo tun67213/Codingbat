@@ -428,7 +428,7 @@ public class Array_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("countEvens");
 		System.out.println("countEvens([2, 1, 2, 3, 4]) -> " + countEvens(new int[] {2, 1, 2, 3, 4}));

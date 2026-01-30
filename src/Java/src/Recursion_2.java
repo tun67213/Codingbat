@@ -114,7 +114,7 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("groupSum");
 		System.out.println("groupSum(0, [2, 4, 8], 10) -> " + groupSum(0, new int[] {2, 4, 8}, 10));

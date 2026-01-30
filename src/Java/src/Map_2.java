@@ -128,7 +128,7 @@ public class Map_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("word0");
 		System.out.println("word0([\"a\", \"b\", \"a\", \"b\"]) -> " + HelperMethods.mapToString(word0(new String[] {"a", "b", "a", "b"})));

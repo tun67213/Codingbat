@@ -275,7 +275,7 @@ public class AP_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("scoresIncreasing");
 		System.out.println("scoresIncreasing([1, 3, 4]) -> " + scoresIncreasing(new int[] {1, 3, 4}));

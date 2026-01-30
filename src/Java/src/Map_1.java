@@ -128,7 +128,7 @@ public class Map_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("mapBully");
 		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) -> " + HelperMethods.mapToString(mapBully(Map.of("a", "candy", "b", "dirt"))));

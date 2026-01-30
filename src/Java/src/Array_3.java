@@ -128,7 +128,7 @@ public class Array_3 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("maxSpan");
 		System.out.println("maxSpan([1, 2, 1, 1, 3]) -> " + maxSpan(new int[] {1, 2, 1, 1, 3}));

@@ -270,7 +270,7 @@ public class String_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("doubleChar");
 		System.out.println("doubleChar(\"The\") -> \"" + doubleChar("The") + "\"");
