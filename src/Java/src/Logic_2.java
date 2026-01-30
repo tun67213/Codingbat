@@ -126,7 +126,7 @@ public class Logic_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("makeBricks");
 		System.out.println("makeBricks(3, 1, 8) -> " + makeBricks(3, 1, 8));

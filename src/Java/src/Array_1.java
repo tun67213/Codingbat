@@ -343,7 +343,7 @@ public class Array_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("firstLast6");
 		System.out.println("firstLast6([1, 2, 6]) -> " + firstLast6(new int[] {1, 2, 6}));

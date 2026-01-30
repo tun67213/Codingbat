@@ -223,7 +223,7 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("stringTimes");
 		System.out.println("stringTimes(\"Hi\", 2) -> \"" + stringTimes("Hi", 2) + "\"");

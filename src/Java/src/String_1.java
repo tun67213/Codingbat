@@ -414,7 +414,7 @@ public class String_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("helloName");
 		System.out.println("helloName(\"Bob\") -> \"" + helloName("Bob") + "\"");

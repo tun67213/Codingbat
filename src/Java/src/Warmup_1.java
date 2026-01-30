@@ -412,7 +412,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("sleepIn");
 		System.out.println("sleepIn(false, false) -> " + sleepIn(false, false));
