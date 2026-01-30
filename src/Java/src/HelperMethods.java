@@ -8,7 +8,12 @@ import java.util.Map;
  */
 public class HelperMethods
 {
-	public static int callTimes = 0;
+	private static int callTimes = 0;
+
+	public static void resetCallTimes()
+	{
+		callTimes = 0;
+	}
 
 	public static void printMethod(String methodName)
 	{
