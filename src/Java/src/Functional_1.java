@@ -13,7 +13,7 @@ public class Functional_1 extends HelperMethods
 	 */
 	public void welcome()
 	{
-		System.out.println("\n\nRecursion-2 Methods\n");
+		System.out.println("\n\nFunctional-1 Methods\n");
 	}
 
 	/**
