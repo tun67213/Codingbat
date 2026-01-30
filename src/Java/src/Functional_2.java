@@ -18,6 +18,7 @@ public class Functional_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-
+		HelperMethods.resetCallTimes();
+		welcome();
 	}
 }
