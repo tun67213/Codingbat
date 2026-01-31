@@ -393,7 +393,15 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int intMax(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a > b && a > c)
+		{
+			return a;
+		}
+		if(b > a && b > c)
+		{
+			return b;
+		}
+		return c;
 	}
 
 	/**
