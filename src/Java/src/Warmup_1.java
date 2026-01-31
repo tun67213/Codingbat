@@ -352,7 +352,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String delDel(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.startsWith("del", 1))
+		{
+			return str.charAt(0) + str.substring(4);
+		}
+		return str;
 	}
 
 	/**
