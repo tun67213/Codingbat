@@ -194,6 +194,24 @@ public class Warmup_1 extends HelperMethods
 		}
 		return sub + sub + sub;
 	}
+	/**
+	 * Think of how the code below is the SAME as the code above, just recursive (the method calls itself).
+	 * With each time it runs until the string is of 3 characters, it cuts off one character at the end of the string.
+	 * If you wish to test this method out, comment out the portion with the code above, and instead run this:
+	 * public String front3(String str)
+	 * {
+	 *     return front3Recursive(str);
+	 * }
+	 * This will produce the same result.
+	 */
+	private String front3Recursive(String str)
+	{
+		if(str.length() <= 3)
+		{
+			return str + str + str;
+		}
+		return front3Recursive(str.substring(0, str.length() - 1));
+	}
 
 	/**
 	 * Given a string, take the last char and return a new string with the last char added at the front and back, so
