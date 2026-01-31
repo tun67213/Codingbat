@@ -98,7 +98,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean makes10(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return a == 10 || b == 10 || a + b == 10;
 	}
 
 	/**
