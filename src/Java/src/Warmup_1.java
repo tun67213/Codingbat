@@ -285,7 +285,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean icyHot(int temp1, int temp2)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0);
 	}
 
 	/**
