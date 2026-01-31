@@ -381,7 +381,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String startOz(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (str.startsWith("o") ? "o" : "") + (str.startsWith("z") ? "z": "");
 	}
 
 	/**
