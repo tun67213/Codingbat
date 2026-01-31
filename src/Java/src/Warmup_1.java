@@ -25,7 +25,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean sleepIn(boolean weekday, boolean vacation)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return vacation || !weekday;
 	}
 
 	/**
