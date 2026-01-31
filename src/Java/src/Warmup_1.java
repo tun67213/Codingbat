@@ -310,7 +310,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean hasTeen(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return isTeen(a) || isTeen(b) || isTeen(c);
 	}
 
 	/**
