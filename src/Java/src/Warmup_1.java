@@ -158,7 +158,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String missingChar(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return str.substring(0, n) + str.substring(n + 1);
 	}
 
 	/**
