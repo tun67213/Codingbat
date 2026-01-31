@@ -38,7 +38,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean monkeyTrouble(boolean aSmile, boolean bSmile)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return aSmile == bSmile;
 	}
 
 	/**
