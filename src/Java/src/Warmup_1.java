@@ -111,7 +111,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean nearHundred(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return Math.abs(n - 100) <= 10 || Math.abs(n - 20) <= 10;
 	}
 
 	/**
