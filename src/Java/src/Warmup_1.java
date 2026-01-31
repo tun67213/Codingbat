@@ -731,6 +731,7 @@ public class Warmup_1 extends HelperMethods
 		System.out.println("mixStart(\"ni\") -> " + mixStart("ni"));
 		System.out.println("mixStart(\"n\") -> " + mixStart("n"));
 		System.out.println("mixStart(\"\") -> " + mixStart(""));
+		printMethod("startOz");
 		System.out.println("startOz(\"ozymandias\") → \"" + startOz("ozymandias") + "\"");
 		System.out.println("startOz(\"bzoo\") -> \"" + startOz("bzoo") + "\"");
 		System.out.println("startOz(\"oxx\") -> \"" + startOz("oxx") + "\"");
