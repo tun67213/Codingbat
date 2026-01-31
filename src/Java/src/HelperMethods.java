@@ -55,17 +55,23 @@ public class HelperMethods
 
 	public static String formatList(List list)
 	{
+		if (list.isEmpty()) {
+			return "[]";
+		}
+
 		StringBuilder buff = new StringBuilder();
 		buff.append("[");
-		boolean isString = list.getFirst() instanceof String;
-		boolean isCharacter = list.getFirst() instanceof Character;
-		for(int i = 0; i < list.size(); i++)
+
+		boolean isString = list.get(0) instanceof String;
+		boolean isCharacter = list.get(0) instanceof Character;
+
+		for (int i = 0; i < list.size(); i++)
 		{
-			if(isString)
+			if (isString)
 			{
 				buff.append("\"").append(list.get(i)).append("\"");
 			}
-			else if(isCharacter)
+			else if (isCharacter)
 			{
 				buff.append("'").append(list.get(i)).append("'");
 			}
@@ -73,11 +79,13 @@ public class HelperMethods
 			{
 				buff.append(list.get(i));
 			}
-			if(i != list.size() - 1)
+
+			if (i != list.size() - 1)
 			{
 				buff.append(", ");
 			}
 		}
+
 		buff.append("]");
 		return buff.toString();
 	}
