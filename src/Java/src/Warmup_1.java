@@ -297,7 +297,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean in1020(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return inRange(a) || inRange(b);
 	}
 
 	/**
