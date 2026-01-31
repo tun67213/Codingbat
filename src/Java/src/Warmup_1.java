@@ -448,7 +448,19 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int max1020(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a < 10 || a > 20)
+		{
+			a = 0;
+		}
+		if(b < 10 || b > 20)
+		{
+			b = 0;
+		}
+		if(a > b)
+		{
+			return a;
+		}
+		return b;
 	}
 
 	/**
