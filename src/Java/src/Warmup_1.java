@@ -86,7 +86,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean parrotTrouble(boolean talking, int hour)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return talking && (hour < 7 || hour > 20);
 	}
 
 	/**
