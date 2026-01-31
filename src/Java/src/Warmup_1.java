@@ -187,7 +187,12 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String front3(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String sub = str;
+		if(sub.length() > 3)
+		{
+			sub = sub.substring(0, 3);
+		}
+		return sub + sub + sub;
 	}
 
 	/**
