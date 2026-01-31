@@ -50,7 +50,12 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int sumDouble(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = a + b;
+		if(a == b)
+		{
+			return 2 * sum;
+		}
+		return sum;
 	}
 
 	/**
