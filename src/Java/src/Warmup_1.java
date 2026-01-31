@@ -240,7 +240,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean or35(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (n % 3 == 0) || (n % 5 == 0);
 	}
 
 	/**
