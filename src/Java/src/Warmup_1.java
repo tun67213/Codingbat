@@ -269,7 +269,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean startHi(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 2)
+		{
+			return false;
+		}
+		return str.startsWith("hi");
 	}
 
 	/**
