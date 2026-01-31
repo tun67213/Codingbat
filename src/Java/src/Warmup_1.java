@@ -141,7 +141,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String notString(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.startsWith("not"))
+		{
+			return str;
+		}
+		return "not " + str;
 	}
 
 	/**
