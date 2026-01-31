@@ -68,7 +68,12 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int diff21(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int difference = 21 - n;
+		if(difference < 0)
+		{
+			return -2 * difference;
+		}
+		return difference;
 	}
 
 	/**
