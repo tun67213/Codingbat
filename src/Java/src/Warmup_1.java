@@ -327,6 +327,14 @@ public class Warmup_1 extends HelperMethods
 	}
 
 	/**
+	 * The following method is a helper method for the above hasTeen() and loneTeen() methods.
+	 */
+	private boolean isTeen(int n)
+	{
+		return n >= 13 && n <= 19;
+	}
+
+	/**
 	 * Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted.
 	 * Otherwise, return the string unchanged.
 	 *
