@@ -414,7 +414,16 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int close10(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int modA = Math.abs(a - 10), modB = Math.abs(b - 10);
+		if(modA == modB)
+		{
+			return 0;
+		}
+		if(modB < modA)
+		{
+			return b;
+		}
+		return a;
 	}
 
 	/**
