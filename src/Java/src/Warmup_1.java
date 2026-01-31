@@ -301,6 +301,14 @@ public class Warmup_1 extends HelperMethods
 	}
 
 	/**
+	 * The method below is a helper method for in1020() to avoid repeating the same set of code twice within one method.
+	 */
+	private boolean inRange(int a)
+	{
+		return a >= 10 && a <= 20;
+	}
+
+	/**
 	 * We'll say that a number is "teen" if it is in the range 13..19 inclusive.
 	 * Given 3 int values, return true if 1 or more of them are teen.
 	 *
