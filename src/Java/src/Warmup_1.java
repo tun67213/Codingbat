@@ -223,7 +223,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String backAround(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str + str + str;
+		}
+		return str.substring(str.length() - 1) + str + str.substring(str.length() - 1);
 	}
 
 	/**
