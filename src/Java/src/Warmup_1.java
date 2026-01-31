@@ -368,7 +368,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean mixStart(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return str.startsWith("ix", 1);
 	}
 
 	/**
