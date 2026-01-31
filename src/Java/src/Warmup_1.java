@@ -435,7 +435,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean in3050(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (a >= 30 && a <= 40 && b >= 30 && b <= 40) || (a >= 40 && a <= 50 && b >= 40 && b <= 50);
 	}
 
 	/**
