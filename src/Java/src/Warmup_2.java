@@ -204,7 +204,15 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public int arrayCount9(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int num : nums)
+		{
+			if(num == 9)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
