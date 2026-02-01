@@ -210,7 +210,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String theEnd(String str, boolean front)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(front)
+		{
+			return str.substring(0, 1);
+		}
+		return str.substring(str.length() - 1);
 	}
 
 	/**
