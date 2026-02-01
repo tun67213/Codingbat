@@ -20,7 +20,7 @@ public class String_1 extends HelperMethods
 	 * helloName("Alice") → "Hello Alice!"
 	 * helloName("X") → "Hello X!"
 	 */
-	public String helloName(String str)
+	public String helloName(String name)
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
