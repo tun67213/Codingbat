@@ -97,7 +97,20 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean doubleX(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return false;
+		}
+		int i = 0;
+		while(i < str.length() - 1 && str.charAt(i) != 'x')
+		{
+			i++;
+		}
+		if(str.charAt(i + 1) != 'x')
+		{
+			return false;
+		}
+		return true;
 	}
 
 	/**
