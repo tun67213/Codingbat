@@ -22,7 +22,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String helloName(String name)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return "Hello " + name + "!";
 	}
 
 	/**
