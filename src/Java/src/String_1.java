@@ -290,7 +290,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String twoChar(String str, int index)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(index < 0 || index >= str.length() - 1)
+		{
+			return str.substring(0, 2);
+		}
+		return str.substring(index, index + 2);
 	}
 
 	/**
