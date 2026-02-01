@@ -178,7 +178,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String left2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return str.substring(2) + str.substring(0, 2);
 	}
 
 	/**
