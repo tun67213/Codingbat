@@ -355,7 +355,21 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringYak(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String result = "";
+		int i = 0;
+		while(i < str.length())
+		{
+			if(i <= str.length() - 3 && str.charAt(i) == 'y' && str.charAt(i + 2) == 'k')
+			{
+				i += 3;
+			}
+			else
+			{
+				result += str.charAt(i);
+				i++;
+			}
+		}
+		return result;
 	}
 
 	/**
