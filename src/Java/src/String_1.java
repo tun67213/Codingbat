@@ -58,7 +58,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String makeOutWord(String out, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return out.substring(0, 2) + word + out.substring(2);
 	}
 
 	/**
