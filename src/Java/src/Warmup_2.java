@@ -272,7 +272,23 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public int stringMatch(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.length() < 2 || b.length() < 2)
+		{
+			return 0;
+		}
+		int count = 0;
+		int minLength = a.length();
+		if(b.length() < minLength)
+		{
+			minLength = b.length();
+		}
+		for(int i = 0; i < minLength - 1; i++)
+		{
+			if(a.substring(i, i + 2).equals(b.substring(i, i + 2)))
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
