@@ -225,7 +225,19 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean arrayFront9(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int endingIndex = 4;
+		if(nums.length < 4)
+		{
+			endingIndex = nums.length;
+		}
+		for(int i = 0; i < endingIndex; i++)
+		{
+			if(nums[i] == 9)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
