@@ -506,7 +506,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String endUp(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 3)
+		{
+			return str.toUpperCase();
+		}
+		return str.substring(0, str.length() - 3) + str.substring(str.length() - 3).toUpperCase();
 	}
 
 	/**
