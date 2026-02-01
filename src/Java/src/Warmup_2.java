@@ -162,7 +162,12 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringSplosion(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalString = "";
+		for(int i = 1; i <= str.length(); i++)
+		{
+			finalString += str.substring(0, i);
+		}
+		return finalString;
 	}
 
 	/**
