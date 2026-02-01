@@ -71,6 +71,22 @@ public class Warmup_2 extends HelperMethods
 		}
 		return count;
 	}
+	/**
+	 * Think of how this implementation is the exact same as that above.
+	 * If you wish to test this, comment out the code above and instead replace it with the code below.
+	 */
+	private int countXXRecursive(String str)
+	{
+		if(str.length() <= 1)
+		{
+			return 0;
+		}
+		if(str.startsWith("xx"))
+		{
+			return 1 + countXXRecursive(str.substring(1));
+		}
+		return countXXRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
