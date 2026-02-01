@@ -39,7 +39,17 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String frontTimes(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n == 0)
+		{
+			return "";
+		}
+		String sub = (str.length() <= 3) ? str : str.substring(0, 3);
+		String finalString = "";
+		for(int i = 0; i < n; i++)
+		{
+			finalString += sub;
+		}
+		return finalString;
 	}
 
 	/**
