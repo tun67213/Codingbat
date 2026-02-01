@@ -274,7 +274,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String nTwice(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		return str.substring(0, n) + str.substring(str.length() - n);
 	}
 
 	/**
