@@ -327,7 +327,23 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String altPairs(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		String finalAnswer = "";
+		for(int i = 0; i < str.length(); i += 4)
+		{
+			if(i + 1 < str.length())
+			{
+				finalAnswer += str.substring(i, i + 2);
+			}
+			else
+			{
+				finalAnswer += str.substring(i, i + 1);
+			}
+		}
+		return finalAnswer;
 	}
 
 	/**
