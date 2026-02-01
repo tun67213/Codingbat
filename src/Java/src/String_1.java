@@ -46,7 +46,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String makeTags(String tag, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return "<" + tag + ">" + word + "</" + tag + ">";
 	}
 
 	/**
