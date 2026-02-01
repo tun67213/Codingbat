@@ -112,6 +112,21 @@ public class Warmup_2 extends HelperMethods
 		}
 		return true;
 	}
+	/**
+	 * As for some previous methods above, the method below is a recursive algorithm for doubleX().
+	 */
+	private boolean doubleXRecursive(String str)
+	{
+		if(str.length() <= 1)
+		{
+			return false;
+		}
+		if(str.startsWith("x"))
+		{
+			return str.startsWith("xx");
+		}
+		return doubleXRecursive(str.substring(1));
+	}
 
 	/**
 	 * Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
