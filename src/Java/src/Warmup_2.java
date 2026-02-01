@@ -97,18 +97,22 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean doubleX(String str)
 	{
-		if(str.length() <= 1)
+		if(str.isEmpty())
 		{
-			return false;
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("x"));
 		}
 		int i = 0;
 		while(i < str.length() - 1 && str.charAt(i) != 'x')
 		{
 			i++;
 		}
-		if(str.charAt(i + 1) != 'x')
+		if(str.substring(str.length() - 1).equals("x"))
 		{
-			return false;
+			return str.substring(str.length() - 2, str.length() - 1).equals("x");
 		}
 		return true;
 	}
@@ -137,7 +141,7 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringBits(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
 	/**
