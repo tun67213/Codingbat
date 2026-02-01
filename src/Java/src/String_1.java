@@ -34,7 +34,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String makeAbba(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return a + b + b + a;
 	}
 
 	/**
