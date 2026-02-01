@@ -522,7 +522,16 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String everyNth(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		String finalString = "";
+		for(int i = 0; i < str.length(); i += n)
+		{
+			finalString += str.charAt(i);
+		}
+		return finalString;
 	}
 
 	/**
