@@ -301,7 +301,21 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringX(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		String finalString = "";
+		finalString += str.substring(0, 1);
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(!(str.substring(i, i + 1).equals("x")))
+			{
+				finalString += str.substring(i, i + 1);
+			}
+		}
+		finalString += str.substring(str.length() - 1);
+		return finalString;
 	}
 
 	/**
