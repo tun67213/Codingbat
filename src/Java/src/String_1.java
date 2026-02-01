@@ -131,7 +131,18 @@ public class String_1 extends HelperMethods
 	 */
 	public String comboString(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String min, max;
+		if(a.length() < b.length())
+		{
+			min = a;
+			max = b;
+		}
+		else
+		{
+			min = b;
+			max = a;
+		}
+		return min + max + min;
 	}
 
 	/**
