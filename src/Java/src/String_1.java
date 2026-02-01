@@ -258,7 +258,11 @@ public class String_1 extends HelperMethods
 	 */
 	public boolean endsLy(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() >= 2 && str.substring(str.length() - 2).equals("ly"))
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
