@@ -154,7 +154,19 @@ public class String_1 extends HelperMethods
 	 */
 	public String nonStart(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.isEmpty())
+		{
+			if(b.isEmpty() || b.length() == 1)
+			{
+				return "";
+			}
+			return b.substring(1);
+		}
+		if(b.isEmpty())
+		{
+			return a.substring(1);
+		}
+		return a.substring(1) + b.substring(1);
 	}
 
 	/**
