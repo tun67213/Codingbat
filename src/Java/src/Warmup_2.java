@@ -22,7 +22,12 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringTimes(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String sub = "";
+		for(int i = 0; i < n; i++)
+		{
+			sub += str;
+		}
+		return sub;
 	}
 
 	/**
