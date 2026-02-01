@@ -285,6 +285,7 @@ public class Warmup_2 extends HelperMethods
 		for(int i = 0; i < minLength - 1; i++)
 		{
 			if(a.substring(i, i + 2).equals(b.substring(i, i + 2)))
+			{
 				count++;
 			}
 		}
