@@ -141,7 +141,16 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringBits(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		String finalString = "";
+		for(int i = 0; i < str.length(); i += 2)
+		{
+			finalString += str.charAt(i);
+		}
+		return finalString;
 	}
 
 	/**
