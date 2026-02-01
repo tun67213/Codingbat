@@ -103,7 +103,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String firstHalf(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return str.substring(0, str.length() / 2);
 	}
 
 	/**
