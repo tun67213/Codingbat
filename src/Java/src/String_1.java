@@ -403,7 +403,19 @@ public class String_1 extends HelperMethods
 	 */
 	public String lastTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			return str.substring(1, 2) + str.substring(0, 1);
+		}
+		String newString = "";
+		newString += str.substring(0, str.length() - 2);
+		newString += str.substring(str.length() - 1);
+		newString += str.substring(str.length() - 2, str.length() - 1);
+		return newString;
 	}
 
 	/**
