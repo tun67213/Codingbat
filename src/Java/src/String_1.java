@@ -480,7 +480,12 @@ public class String_1 extends HelperMethods
 	 */
 	public String extraFront(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String front = str;
+		if(front.length() > 2)
+		{
+			front = front.substring(0, 2);
+		}
+		return front + front + front;
 	}
 
 	/**
