@@ -322,7 +322,11 @@ public class String_1 extends HelperMethods
 	 */
 	public boolean hasBad(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		return str.substring(0, 3).equals("bad") || str.substring(1, 4).equals("bad");
 	}
 
 	/**
