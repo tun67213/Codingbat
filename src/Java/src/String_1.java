@@ -447,7 +447,11 @@ public class String_1 extends HelperMethods
 	 */
 	public boolean frontAgain(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 2)
+		{
+			return false;
+		}
+		return str.substring(0, 2).equals(str.substring(str.length() - 2));
 	}
 
 	/**
