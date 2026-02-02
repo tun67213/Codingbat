@@ -497,7 +497,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String without2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() >= 2 && str.substring(0, 2).equals(str.substring(str.length() - 2)))
+		{
+			return str.substring(2);
+		}
+		return str;
 	}
 
 	/**
