@@ -326,7 +326,7 @@ public class String_1 extends HelperMethods
 		{
 			return false;
 		}
-		return str.substring(0, 3).equals("bad") || str.substring(1, 4).equals("bad");
+		return str.substring(0, 3).equals("bad") || (str.length() >= 4 && str.substring(1, 4).equals("bad"));
 	}
 
 	/**
