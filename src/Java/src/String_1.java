@@ -427,7 +427,15 @@ public class String_1 extends HelperMethods
 	 */
 	public String seeColor(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() >= 3 && str.substring(0, 3).equals("red"))
+		{
+			return "red";
+		}
+		if(str.length() >= 4 && str.substring(0, 4).equals("blue"))
+		{
+			return "blue";
+		}
+		return "";
 	}
 
 	/**
