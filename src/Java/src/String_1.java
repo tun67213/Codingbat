@@ -358,7 +358,24 @@ public class String_1 extends HelperMethods
 	 */
 	public String lastChars(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		if(a.length() == 0)
+		{
+			finalAnswer += "@";
+		}
+		else
+		{
+			finalAnswer += a.substring(0, 1);
+		}
+		if(b.length() == 0)
+		{
+			finalAnswer += "@";
+		}
+		else
+		{
+			finalAnswer += b.substring(b.length() - 1);
+		}
+		return finalAnswer;
 	}
 
 	/**
