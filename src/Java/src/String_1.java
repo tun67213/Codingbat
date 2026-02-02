@@ -387,7 +387,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String conCat(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.length() > 0 && b.length() > 0 && a.substring(a.length() - 1).equals(b.substring(0, 1)))
+		{
+			return a + b.substring(1);
+		}
+		return a + b;
 	}
 
 	/**
