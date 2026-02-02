@@ -338,7 +338,15 @@ public class String_1 extends HelperMethods
 	 */
 	public String atFirst(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return "@@";
+		}
+		if(str.length() == 1)
+		{
+			return str + "@";
+		}
+		return str.substring(0, 2);
 	}
 
 	/**
