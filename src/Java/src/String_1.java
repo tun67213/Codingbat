@@ -463,7 +463,12 @@ public class String_1 extends HelperMethods
 	 */
 	public String minCat(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int minimumLength = a.length();
+		if(b.length() < minimumLength)
+		{
+			minimumLength = b.length();
+		}
+		return a.substring(a.length() - minimumLength) + b.substring(b.length() - minimumLength);
 	}
 
 	/**
