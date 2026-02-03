@@ -131,7 +131,10 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] reverse3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int temp = nums[0];
+		nums[0] = nums[2];
+		nums[2] = temp;
+		return nums;
 	}
 
 	/**
