@@ -166,6 +166,7 @@ public class Array_1 extends HelperMethods
 	{
 		int len = nums.length;
 		if(len > 2)
+		{
 			len = 2;
 		}
 		int sum = 0;
