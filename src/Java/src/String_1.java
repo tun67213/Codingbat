@@ -608,7 +608,49 @@ public class String_1 extends HelperMethods
 	 */
 	public String withoutX2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		if(str.length() == 1)
+		{
+			if(str.equals("x"))
+			{
+				return "";
+			}
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			if(str.substring(0, 1).equals("x") && str.substring(1, 2).equals("x"))
+			{
+				return "";
+			}
+			if(str.substring(0, 1).equals("x"))
+			{
+				return str.substring(1, 2);
+			}
+			if(str.substring(1, 2).equals("x"))
+			{
+				return str.substring(0, 1);
+			}
+			return str;
+		}
+		boolean startsX = str.substring(0, 1).equals("x");
+		boolean secondX = str.substring(1, 2).equals("x");
+		if(startsX && secondX)
+		{
+			return str.substring(2);
+		}
+		if(startsX)
+		{
+			return str.substring(1);
+		}
+		if(secondX)
+		{
+			return str.substring(0, 1) + str.substring(2);
+		}
+		return str;
 	}
 
 	/**
