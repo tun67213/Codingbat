@@ -55,7 +55,9 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] makePi()
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		// The phrase new int[] or new String[] or whatever type you desire basically creates an immutable array that cannot be modified.
+		// It can be done in one line like below.
+		return new int[] {3, 1, 4};
 	}
 
 	/**
