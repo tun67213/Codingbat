@@ -92,6 +92,17 @@ public class Array_1 extends HelperMethods
 		}
 		return sum;
 	}
+	// Below is an alternative implementation of the sum3() method above, but using a different type of for-loop.
+	// Think about how the method below is the same as the method above.
+	private int sum3_forEach(int[] nums)
+	{
+		int sum = 0;
+		for(int num : nums)
+		{
+			sum += num;
+		}
+		return sum;
+	}
 
 	/**
 	 * Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
