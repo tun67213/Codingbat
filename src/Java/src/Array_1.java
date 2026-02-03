@@ -146,7 +146,13 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] maxEnd3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int max = nums[0];
+		if(nums[2] > max)
+		{
+			max = nums[2];
+		}
+		nums = new int[] {max, max, max};
+		return nums;
 	}
 
 	/**
