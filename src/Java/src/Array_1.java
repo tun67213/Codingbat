@@ -113,7 +113,13 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] rotateLeft3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int temp = nums[0];
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			nums[i] = nums[i + 1];
+		}
+		nums[nums.length - 1] = temp;
+		return nums;
 	}
 
 	/**
