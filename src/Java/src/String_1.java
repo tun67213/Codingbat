@@ -513,7 +513,20 @@ public class String_1 extends HelperMethods
 	 */
 	public String deFront(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalString = "";
+		if(str.length() >= 1 && str.charAt(0) == 'a')
+		{
+			finalString += "a";
+		}
+		if(str.length() >= 2 && str.charAt(1) == 'b')
+		{
+			finalString += "b";
+		}
+		if(str.length() >= 3)
+		{
+			return finalString + str.substring(2);
+		}
+		return finalString;
 	}
 
 	/**
