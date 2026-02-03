@@ -164,7 +164,17 @@ public class Array_1 extends HelperMethods
 	 */
 	public int sum2(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int len = nums.length;
+		if(len > 2)
+		{
+			len = 2;
+		}
+		int sum = 0;
+		for(int i = 0; i < len; i++)
+		{
+			sum += nums[i];
+		}
+		return sum;
 	}
 
 	/**
