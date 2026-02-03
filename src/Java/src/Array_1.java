@@ -69,7 +69,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean commonEnd(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.length > 0 && b.length > 0 && (a[0] == b[0] || a[a.length - 1] == b[b.length - 1]))
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
