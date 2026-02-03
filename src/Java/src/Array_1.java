@@ -186,7 +186,7 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] middleWay(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return new int[] {a[1], b[1]};
 	}
 
 	/**
