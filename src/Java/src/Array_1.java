@@ -320,7 +320,16 @@ public class Array_1 extends HelperMethods
 	 */
 	public int start1(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		if(a.length > 0 && a[0] == 1)
+		{
+			count++;
+		}
+		if(b.length > 0 && b[0] == 1)
+		{
+			count++;
+		}
+		return count;
 	}
 
 	/**
