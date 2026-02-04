@@ -277,7 +277,19 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean double23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count2 = 0, count3 = 0;
+		for(int num : nums)
+		{
+			if(num == 2)
+			{
+				count2++;
+			}
+			if(num == 3)
+			{
+				count3++;
+			}
+		}
+		return count2 == 2 || count3 == 2;
 	}
 
 	/**
