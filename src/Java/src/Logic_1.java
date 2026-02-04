@@ -255,7 +255,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int teenSum(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isTeen(a) || isTeen(b))
+		{
+			return 20;
+		}
+		return a + b;
 	}
 	/**
 	 * The following is a helper method for solving teenSum().
