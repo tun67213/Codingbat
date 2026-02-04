@@ -380,7 +380,17 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] plusTwo(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[a.length + b.length];
+		int currentSize = 0;
+		for(int value : a)
+		{
+			newArray[currentSize++] = value;
+		}
+		for(int value : b)
+		{
+			newArray[currentSize++] = value;
+		}
+		return newArray;
 	}
 
 	/**
