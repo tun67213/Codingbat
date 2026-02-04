@@ -458,7 +458,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] frontPiece(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 2)
+		{
+			return nums;
+		}
+		return new int[] {nums[0], nums[1]};
 	}
 
 	/**
