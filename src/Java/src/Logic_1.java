@@ -84,7 +84,7 @@ public class Logic_1 extends HelperMethods
 			{
 				return 0;
 			}
-			if(speed > 95)
+			if(speed > 85)
 			{
 				return 2;
 			}
@@ -94,7 +94,7 @@ public class Logic_1 extends HelperMethods
 		{
 			return 0;
 		}
-		if(speed > 90)
+		if(speed > 80)
 		{
 			return 2;
 		}
