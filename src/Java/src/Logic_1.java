@@ -257,6 +257,13 @@ public class Logic_1 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+	/**
+	 * The following is a helper method for solving teenSum().
+	 */
+	private boolean isTeen(int a)
+	{
+		return a >= 13 && a <= 19;
+	}
 
 	/**
 	 * Your cell phone rings. Return true if you should answer it. Normally you answer, except in the morning you only answer if it is your mom calling. In all cases, if you are asleep, you do not answer.
