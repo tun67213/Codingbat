@@ -58,7 +58,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean squirrelPlay(int temp, boolean isSummer)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(temp < 60)
+		{
+			return false;
+		}
+		if(isSummer)
+		{
+			return temp <= 100;
+		}
+		return temp <= 90;
 	}
 
 	/**
