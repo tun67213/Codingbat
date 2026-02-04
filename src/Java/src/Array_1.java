@@ -437,7 +437,16 @@ public class Array_1 extends HelperMethods
 	 */
 	public int maxTriple(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int max = nums[0];
+		if(nums[nums.length  / 2] > max)
+		{
+			max = nums[nums.length / 2];
+		}
+		if(nums[nums.length - 1] > max)
+		{
+			max = nums[nums.length - 1];
+		}
+		return max;
 	}
 
 	/**
