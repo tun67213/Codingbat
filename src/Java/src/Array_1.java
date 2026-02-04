@@ -301,7 +301,14 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] fix23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 2 && nums[i + 1] == 3)
+			{
+				nums[i + 1] = 0;
+			}
+		}
+		return nums;
 	}
 
 	/**
