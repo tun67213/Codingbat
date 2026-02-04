@@ -207,7 +207,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean more20(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (n % 20 == 1) || (n % 20 == 2);
 	}
 
 	/**
