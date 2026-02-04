@@ -244,7 +244,14 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean no23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int num : nums)
+		{
+			if(num == 2 || num == 3)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
