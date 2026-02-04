@@ -167,7 +167,19 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean in1To10(int n, boolean outsideMode)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(outsideMode)
+		{
+			if(n <= 1 || n >= 10)
+			{
+				return true;
+			}
+			return false;
+		}
+		if(n >= 1 && n <= 10)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
