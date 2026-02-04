@@ -243,7 +243,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean nearTen(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (n % 10 >= 8) || (n % 10 <= 2);
 	}
 
 	/**
