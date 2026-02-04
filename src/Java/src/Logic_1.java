@@ -151,7 +151,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean love6(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a == 6 || b == 6 || a + b == 6 || Math.abs(a - b) == 6)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
