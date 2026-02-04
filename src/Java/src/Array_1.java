@@ -198,7 +198,13 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] makeEnds(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[2];
+		newArray[0] = nums[0];
+		newArray[1] = nums[nums.length - 1];
+		return newArray;
+		
+		// Think of how the code below is equivalent to what is above. If interested to see if it works, comment the code above, uncomment the line below, and try running it.
+		// return new int[] {nums[0], nums[nums.length - 1]};
 	}
 
 	/**
