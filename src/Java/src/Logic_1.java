@@ -22,7 +22,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean cigarParty(int cigars, boolean isWeekend)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isWeekend)
+		{
+			return cigars >= 40;
+		}
+		return cigars >= 40 && cigars <= 60;
 	}
 
 	/**
