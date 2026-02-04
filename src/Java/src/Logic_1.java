@@ -191,7 +191,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean specialEleven(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n % 11 <= 1)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
