@@ -78,7 +78,27 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int caughtSpeeding(int speed, boolean isBirthday)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isBirthday)
+		{
+			if(speed <= 65)
+			{
+				return 0;
+			}
+			if(speed > 95)
+			{
+				return 2;
+			}
+			return 1;
+		}
+		if(speed <= 60)
+		{
+			return 0;
+		}
+		if(speed > 90)
+		{
+			return 2;
+		}
+		return 1;
 	}
 
 	/**
