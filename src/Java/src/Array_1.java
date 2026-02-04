@@ -518,7 +518,26 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] front11(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int size = 0;
+		if(a.length > 0)
+		{
+			size++;
+		}
+		if(b.length > 0)
+		{
+			size++;
+		}
+		int[] newArray = new int[size];
+		int currentSize = 0;
+		if(a.length > 0)
+		{
+			newArray[currentSize++] = a[0];
+		}
+		if(b.length > 0)
+		{
+			newArray[currentSize++] = b[0];
+		}
+		return newArray;
 	}
 
 	/**
