@@ -263,7 +263,9 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] makeLast(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length * 2];
+		newArray[newArray.length - 1] = nums[nums.length - 1];
+		return newArray;
 	}
 
 	/**
