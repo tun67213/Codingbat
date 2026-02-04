@@ -385,7 +385,7 @@ public class Logic_1 extends HelperMethods
 		System.out.println("cigarParty(50, false) -> " + cigarParty(50, false));
 		System.out.println("cigarParty(70, true) -> " + cigarParty(70, true));
 		System.out.println("cigarParty(30, true) -> " + cigarParty(30, true));
-		System.out.println("cigarParty(50, true) -> " + cigarParty(60, true));
+		System.out.println("cigarParty(50, true) -> " + cigarParty(50, true));
 		System.out.println("cigarParty(60, false) -> " + cigarParty(60, false));
 		System.out.println("cigarParty(61, false) -> " + cigarParty(61, false));
 		System.out.println("cigarParty(40, false) -> " + cigarParty(40, false));
