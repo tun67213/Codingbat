@@ -216,7 +216,23 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean has23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 2 || nums[i] == 3)
+			{
+				return true;
+			}
+		}
+		return false;
+		// Think of how the code below is the same as that above:
+		// for(int num : nums)
+		// {
+		// 	if(num == 2 || num == 3)
+		// 	{
+		// 		return true;
+		// 	}
+		// }
+		// return false;
 	}
 
 	/**
