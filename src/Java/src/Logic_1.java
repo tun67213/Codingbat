@@ -278,7 +278,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isAsleep)
+		{
+			return false;
+		}
+		if(isMorning)
+		{
+			return isMom;
+		}
+		return true;
 	}
 
 	/**
