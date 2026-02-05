@@ -345,7 +345,19 @@ public class Logic_1 extends HelperMethods
 	 */
 	public String fizzString2(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n % 15 == 0)
+		{
+			return "FizzBuzz!";
+		}
+		if(n % 3 == 0)
+		{
+			return "Fizz!";
+		}
+		if(n % 5 == 0)
+		{
+			return "Buzz!";
+		}
+		return n + "!";
 	}
 
 	/**
