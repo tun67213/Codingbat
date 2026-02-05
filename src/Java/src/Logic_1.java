@@ -369,7 +369,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean twoAsOne(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (a + b == c) || (a + c == b) || (b + c == a);
 	}
 
 	/**
