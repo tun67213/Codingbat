@@ -318,7 +318,22 @@ public class Logic_1 extends HelperMethods
 	 */
 	public String fizzString(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean startsWithF = (str.length() > 0 && str.substring(0, 1).equals("f"));
+		boolean endsWithB = (str.length() > 0 && str.substring(str.length() - 1).equals("b"));
+
+		if(startsWithF && endsWithB)
+		{
+			return "FizzBuzz";
+		}
+		if(startsWithF)
+		{
+			return "Fizz";
+		}
+		if(endsWithB)
+		{
+			return "Buzz";
+		}
+		return str;
 	}
 
 	/**
