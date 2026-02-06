@@ -437,7 +437,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int withoutDoubles(int die1, int die2, boolean noDoubles)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(noDoubles && die1 == die2)
+		{
+			if(die1 == 6)
+			{
+				return 1 + die2;
+			}
+			return 1 + die1 + die2;
+		}
+		return die1 + die2;
 	}
 
 	/**
