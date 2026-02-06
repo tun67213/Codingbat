@@ -413,7 +413,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean lastDigit(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return a % 10 == b % 10 || a % 10 == c % 10 || b % 10 == c % 10;
 	}
 
 	/**
