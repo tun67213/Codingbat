@@ -457,7 +457,23 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int maxMod5(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a == b)
+		{
+			return 0;
+		}
+		if(a % 5 == b % 5)
+		{
+			if(a < b)
+			{
+				return a;
+			}
+			return b;
+		}
+		if(a > b)
+		{
+			return a;
+		}
+		return b;
 	}
 
 	/**
