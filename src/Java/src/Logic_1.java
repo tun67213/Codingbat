@@ -381,7 +381,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean inOrder(int a, int b, int c, boolean bOk)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(bOk)
+		{
+			return c > b;
+		}
+		return a < b && b < c;
 	}
 
 	/**
