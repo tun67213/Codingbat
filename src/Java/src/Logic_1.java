@@ -862,7 +862,7 @@ public class Logic_1 extends HelperMethods
 		System.out.println("lessBy10(10, 7, 1) -> " + lessBy10(10, 7, 1));
 		System.out.println("lessBy10(-10, 2, 2) -> " + lessBy10(-10, 2, 2));
 		System.out.println("lessBy10(2, 11, 11) -> " + lessBy10(2, 11, 11));
-		System.out.println("lessBy10(3, 3, 30) -> " + lessBy10(3, 3, 10));
+		System.out.println("lessBy10(3, 3, 30) -> " + lessBy10(3, 3, 30));
 		System.out.println("lessBy10(3, 3, 3) -> " + lessBy10(3, 3, 3));
 		System.out.println("lessBy10(10, 1, 11) -> " + lessBy10(10, 1, 11));
 		System.out.println("lessBy10(10, 11, 1) -> " + lessBy10(10, 11, 1));
