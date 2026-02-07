@@ -141,6 +141,17 @@ public class Logic_2 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+	/**
+	 * The following are helper methods to avoid code-repetition in closeFar.
+	 */
+	private boolean isClose(int a, int b)
+	{
+		return Math.abs(a - b) <= 1;
+	}
+	private boolean isFar(int a, int b)
+	{
+		return Math.abs(a - b) > 1;
+	}
 
 	/**
 	 * Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. Return 0 if they both go over.
