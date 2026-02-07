@@ -174,7 +174,7 @@ public class Logic_2 extends HelperMethods
 		{
 			return 0;
 		}
-		return 21;
+		return n;
 	}
 
 	/**
