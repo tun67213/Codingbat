@@ -339,7 +339,22 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean xyzMiddle(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int len = str.length();
+		if(len < 3)
+		{
+			return false;
+		}
+
+		for (int i = 0; i <= len - 3; i++)
+		{
+			if (str.startsWith("xyz", i))
+			{
+				int left = i;
+				int right = len - (i + 3);
+				if (Math.abs(left - right) <= 1) return true;
+			}
+		}
+		return false;
 	}
 
 	/**
