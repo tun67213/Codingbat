@@ -165,6 +165,17 @@ public class Logic_2 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+	/**
+	 * The following is a helper method for blackjack that will fix the integer to be valid when playing blackjack.
+	 */
+	private int fixInt(int n)
+	{
+		if(n < 0 || n > 21)
+		{
+			return 0;
+		}
+		return 21;
+	}
 
 	/**
 	 * Given three ints, a b c, one of them is small, one is medium and one is large. Return true if the three values are evenly spaced, so the difference between small and medium is the same as the difference between medium and large.
