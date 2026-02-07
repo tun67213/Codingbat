@@ -77,7 +77,27 @@ public class String_3 extends HelperMethods
 	 */
 	public String withoutString(String base, String remove)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(base.length() == 0 || remove.length() == 0 || base.length() < remove.length())
+		{
+			return base;
+		}
+		String finalString = "";
+		String modBase = base.toLowerCase(), modRemove = remove.toLowerCase();
+		int i = 0;
+		while(i <= modBase.length() - modRemove.length())
+		{
+			if(modBase.substring(i, i + modRemove.length()).equals(modRemove))
+			{
+				i += modRemove.length();
+			}
+			else
+			{
+				finalString += base.substring(i, i + 1);
+				i++;
+			}
+		}
+		finalString += base.substring(i);
+		return finalString;
 	}
 
 	/**
