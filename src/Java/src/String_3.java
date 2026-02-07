@@ -107,7 +107,7 @@ public class String_3 extends HelperMethods
 	 * equalIsNot("This is notnot") → true
 	 * equalIsNot("noisxxnotyynotxisi") → true
 	 */
-	public String equalIsNot(String str)
+	public boolean equalIsNot(String str)
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
