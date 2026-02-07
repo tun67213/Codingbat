@@ -22,7 +22,18 @@ public class String_2 extends HelperMethods
 	 */
 	public String doubleChar(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return str;
+		}
+		String finalAnswer = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			String characterToAdd = str.substring(i, i + 1);
+			finalAnswer += characterToAdd;
+			finalAnswer += characterToAdd;
+		}
+		return finalAnswer;
 	}
 
 	/**
