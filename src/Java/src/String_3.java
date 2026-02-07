@@ -141,7 +141,38 @@ public class String_3 extends HelperMethods
 	 */
 	public boolean gHappy(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("g"));
+		}
+		if(str.length() == 2)
+		{
+			if(str.substring(0, 1).equals("g") || str.substring(1, 2).equals("g"))
+			{
+				return str.equals("gg");
+			}
+			return true;
+		}
+		if(str.substring(0, 1).equals("g") && !(str.substring(1, 2).equals("g")))
+		{
+			return false;
+		}
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(str.substring(i, i + 1).equals("g") && !(str.substring(i - 1, i).equals("g") || str.substring(i + 1, i + 2).equals("g")))
+			{
+				return false;
+			}
+		}
+		if(str.substring(str.length() - 1).equals("g"))
+		{
+			return str.substring(str.length() - 2, str.length() - 1).equals("g");
+		}
+		return true;
 	}
 
 	/**
