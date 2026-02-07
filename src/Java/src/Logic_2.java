@@ -22,7 +22,17 @@ public class Logic_2 extends HelperMethods
 	 */
 	public boolean makeBricks(int small, int big, int goal)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int useBig;
+		if(goal / 5 < big)
+		{
+			useBig = goal / 5;
+		}
+		else
+		{
+			useBig = big;
+		}
+		int remaining = goal - useBig * 5;
+		return remaining <= small;
 	}
 
 	/**
