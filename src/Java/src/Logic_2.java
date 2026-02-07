@@ -139,7 +139,7 @@ public class Logic_2 extends HelperMethods
 	 */
 	public boolean closeFar(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (isClose(a, b) && isFarFromBoth(c, a, b)) || (isClose(a, c) && isFarFromBoth(b, a, c));
 	}
 	/**
 	 * The following are helper methods to avoid code-repetition in closeFar.
