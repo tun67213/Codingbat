@@ -144,14 +144,15 @@ public class Logic_2 extends HelperMethods
 	/**
 	 * The following are helper methods to avoid code-repetition in closeFar.
 	 */
-	private boolean isClose(int a, int b)
+	private boolean isClose(int x, int y)
 	{
-		return Math.abs(a - b) <= 1;
+		return Math.abs(x - y) <= 1;
 	}
-	private boolean isFar(int a, int b)
+	private boolean isFarFromBoth(int far, int other1, int other2)
 	{
-		return Math.abs(a - b) > 1;
+		return Math.abs(far - other1) >= 2 && Math.abs(far - other2) >= 2;
 	}
+
 
 	/**
 	 * Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. Return 0 if they both go over.
