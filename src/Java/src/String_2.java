@@ -119,7 +119,9 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean endOther(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String aMod = a.toLowerCase();
+		String bMod = b.toLowerCase();
+		return aMod.endsWith(bMod) || bMod.endsWith(aMod);
 	}
 
 	/**
