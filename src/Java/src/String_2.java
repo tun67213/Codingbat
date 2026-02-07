@@ -69,7 +69,21 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean catDog(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int cats = 0;
+		int dogs = 0;
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			String current = str.substring(i, i + 3);
+			if(current.equals("cat"))
+			{
+				cats++;
+			}
+			if(current.equals("dog"))
+			{
+				dogs++;
+			}
+		}
+		return cats == dogs;
 	}
 
 	/**
