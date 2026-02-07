@@ -518,7 +518,26 @@ public class String_2 extends HelperMethods
 	 */
 	public String wordEnds(String str, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		int w = word.length();
+
+		if (str.length() < w) return "";
+
+		for (int i = 0; i <= str.length() - w; i++)
+		{
+			if (str.substring(i, i + w).equals(word))
+			{
+				if (i > 0)
+				{
+					finalAnswer += str.substring(i - 1, i);
+				}
+				if (i + w < str.length())
+				{
+					finalAnswer += str.substring(i + w, i + w + 1);
+				}
+			}
+		}
+		return finalAnswer;
 	}
 
 	/**
