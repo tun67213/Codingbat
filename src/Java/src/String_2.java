@@ -366,7 +366,15 @@ public class String_2 extends HelperMethods
 	 */
 	public String getSandwich(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int first = str.indexOf("bread");
+		int last  = str.lastIndexOf("bread");
+
+		if (first == -1 || last == -1 || first == last)
+		{
+			return "";
+		}
+
+		return str.substring(first + 5, last);
 	}
 
 	/**
