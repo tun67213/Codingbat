@@ -485,7 +485,19 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int redTicket(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if((a == 2) && (b == 2) && (c == 2))
+		{
+			return 10;
+		}
+		if((a == b) && (a == c))
+		{
+			return 5;
+		}
+		if(a != b && a != c)
+		{
+			return 1;
+		}
+		return 0;
 	}
 
 	/**
