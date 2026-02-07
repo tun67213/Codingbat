@@ -100,7 +100,7 @@ public class Logic_2 extends HelperMethods
 	 */
 	private boolean isTeen(int n)
 	{
-		if(n >= 13 && n <= 19)
+		if(n >= 13 && n <= 19 && n != 15 && n != 16)
 		{
 			return true;
 		}
