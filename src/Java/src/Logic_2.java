@@ -69,7 +69,19 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int luckySum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a == 13)
+		{
+			return 0;
+		}
+		if(b == 13)
+		{
+			return a;
+		}
+		if(c == 13)
+		{
+			return a + b;
+		}
+		return a + b + c;
 	}
 
 	/**
