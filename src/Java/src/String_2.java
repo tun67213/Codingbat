@@ -192,7 +192,20 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean xyBalance(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean foundX = false;
+		for(int i = 0; i < str.length(); i++)
+		{
+			String currentCharacter = str.substring(i, i + 1);
+			if(currentCharacter.equals("x"))
+			{
+				foundX = true;
+			}
+			if(foundX && currentCharacter.equals("y"))
+			{
+				foundX = false;
+			}
+		}
+		return !foundX;
 	}
 
 	/**
