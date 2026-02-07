@@ -222,7 +222,18 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int makeChocolate(int small, int big, int goal)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int maxBig = goal / 5;
+		int bigToUse = big;
+		if(maxBig < bigToUse)
+		{
+			bigToUse = maxBig;
+		}
+		int remainder = goal - 5 * bigToUse;
+		if(remainder <= small)
+		{
+			return remainder;
+		}
+		return -1;
 	}
 
 	/**
