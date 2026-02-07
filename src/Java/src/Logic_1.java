@@ -550,7 +550,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean shareDigit(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int leftA = a / 10;
+		int rightA = a  % 10;
+		int leftB = b / 10;
+		int rightB = b % 10;
+		if(leftA == leftB || leftA == rightB || rightA == leftB || rightA == rightB)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
