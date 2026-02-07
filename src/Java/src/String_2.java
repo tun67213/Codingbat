@@ -243,7 +243,21 @@ public class String_2 extends HelperMethods
 	 */
 	public String repeatEnd(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n == 0)
+		{
+			return "";
+		}
+		String theEnd = str;
+		if(theEnd.length() > n)
+		{
+			theEnd = theEnd.substring(theEnd.length() - n);
+		}
+		String finalAnswer = "";
+		for(int i = 0; i < n; i++)
+		{
+			finalAnswer += theEnd;
+		}
+		return finalAnswer;
 	}
 
 	/**
