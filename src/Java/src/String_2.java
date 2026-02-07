@@ -217,7 +217,21 @@ public class String_2 extends HelperMethods
 	 */
 	public String mixString(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		String shorterString = a;
+		String longerString = b;
+		if(b.length() < shorterString.length())
+		{
+			shorterString = b;
+			longerString = a;
+		}
+		for(int i = 0; i < shorterString.length(); i++)
+		{
+			finalAnswer += a.substring(i, i + 1);
+			finalAnswer += b.substring(i, i + 1);
+		}
+		finalAnswer += longerString.substring(shorterString.length());
+		return finalAnswer;
 	}
 
 	/**
