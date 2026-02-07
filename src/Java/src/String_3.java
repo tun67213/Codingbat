@@ -27,6 +27,37 @@ public class String_3 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+	/**
+	 * The following is a helper method for countYZ that will split the string into separate words.
+	 */
+	private String[] splitString(String str)
+	{
+		str = str.toLowerCase();
+		String currentString = "";
+		List<String> list = new ArrayList<>();
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(Character.isLetter(str.charAt(i)))
+			{
+				currentString += str.substring(i, i + 1);
+			}
+			else if(currentString.length() > 0)
+			{
+				list.add(currentString);
+				currentString = "";
+			}
+		}
+		if(currentString.length() > 0)
+		{
+			list.add(currentString);
+		}
+		String[] values = new String[list.size()];
+		for(int i = 0; i < list.size(); i++)
+		{
+			values[i] = list.get(i);
+		}
+		return values;
+	}
 
 	/**
 	 * Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (not case sensitive). You may assume that the remove string is length 1 or more. Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x".
