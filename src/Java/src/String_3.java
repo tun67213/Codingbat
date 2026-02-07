@@ -25,7 +25,16 @@ public class String_3 extends HelperMethods
 	 */
 	public int countYZ(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		String[] values = splitString(str);
+		for(String value : values)
+		{
+			if(value.length() > 0 && (value.substring(value.length() - 1).equals("y") || value.substring(value.length() - 1).equals("z")))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 	/**
 	 * The following is a helper method for countYZ that will split the string into separate words.
