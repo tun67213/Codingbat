@@ -260,7 +260,7 @@ public class Logic_2 extends HelperMethods
 		System.out.println("roundSum(12, 13, 14) -> " + roundSum(12, 13, 14));
 		System.out.println("roundSum(6, 4, 4) -> " + roundSum(6, 4, 4));
 		System.out.println("roundSum(4, 6, 5) -> " + roundSum(4, 6, 5));
-		System.out.println("roundSUm(4, 4, 6) -> " + roundSum(4, 4, 6));
+		System.out.println("roundSum(4, 4, 6) -> " + roundSum(4, 4, 6));
 		System.out.println("roundSum(9, 4, 4) -> " + roundSum(9, 4, 4));
 		System.out.println("roundSum(0, 0, 1) -> " + roundSum(0, 0, 1));
 		System.out.println("roundSum(0, 9, 0) -> " + roundSum(0, 9, 0));
