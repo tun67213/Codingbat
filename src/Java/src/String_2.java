@@ -427,7 +427,23 @@ public class String_2 extends HelperMethods
 	 */
 	public String zipZap(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		int i = 0;
+		while(i < str.length() - 2)
+		{
+			if(str.substring(i, i + 1).equals("z") && str.substring(i + 2, i + 3).equals("p"))
+			{
+				finalAnswer += "zp";
+				i += 3;
+			}
+			else
+			{
+				finalAnswer += str.substring(i, i + 1);
+				i++;
+			}
+		}
+		finalAnswer += str.substring(i);
+		return finalAnswer;
 	}
 
 	/**
