@@ -286,7 +286,24 @@ public class String_2 extends HelperMethods
 	 */
 	public String repeatSeparator(String word, String sep, int count)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(count == 0)
+		{
+			return "";
+		}
+		if(count == 1)
+		{
+			return word;
+		}
+		String finalAnswer = "";
+		int repetitions = count;
+		while(repetitions > 1)
+		{
+			finalAnswer += word;
+			finalAnswer += sep;
+			repetitions--;
+		}
+		finalAnswer += word;
+		return finalAnswer;
 	}
 
 	/**
