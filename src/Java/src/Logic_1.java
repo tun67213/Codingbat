@@ -570,7 +570,12 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int sumLimit(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = a + b;
+		if(String.valueOf(sum).length() > String.valueOf(a).length())
+		{
+			return a;
+		}
+		return sum;
 	}
 
 	/**
