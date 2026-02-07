@@ -269,7 +269,12 @@ public class String_2 extends HelperMethods
 	 */
 	public String repeatFront(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		for(int i = n; i > 0; i--)
+		{
+			finalAnswer += str.substring(0, i);
+		}
+		return finalAnswer;
 	}
 
 	/**
