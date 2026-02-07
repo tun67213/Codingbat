@@ -163,7 +163,13 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int blackjack(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		a = fixInt(a);
+		b = fixInt(b);
+		if(b > a)
+		{
+			return b;
+		}
+		return a;
 	}
 	/**
 	 * The following is a helper method for blackjack that will fix the integer to be valid when playing blackjack.
