@@ -93,7 +93,7 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int noTeenSum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return fixTeen(a) + fixTeen(b) + fixTeen(c);
 	}
 	/**
 	 * The following is a helper method to fix numbers in noTeenSum.
