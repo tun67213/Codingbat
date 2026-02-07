@@ -315,7 +315,19 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean prefixAgain(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n == 0)
+		{
+			return true;
+		}
+		String prefix = str.substring(0, n);
+		for(int i = 1; i <= str.length() - n; i++)
+		{
+			if(str.substring(i, i + n).equals(prefix))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
