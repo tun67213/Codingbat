@@ -529,7 +529,16 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int blueTicket(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int ab = a + b, ac = a + c, bc = b + c;
+		if(ab == 10 || ac == 10 || bc == 10)
+		{
+			return 10;
+		}
+		if(ab == ac + 10 || ab == bc + 10)
+		{
+			return 5;
+		}
+		return 0;
 	}
 
 	/**
