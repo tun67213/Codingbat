@@ -116,7 +116,7 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int roundSum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return round10(a) + round10(b) + round10(c);
 	}
 	/**
 	 * The following is a helper method to fix numbers in roundSum.
