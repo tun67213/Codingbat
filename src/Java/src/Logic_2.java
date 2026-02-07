@@ -182,7 +182,6 @@ public class Logic_2 extends HelperMethods
 		System.out.println("makeBricks(20, 4, 51) -> " + makeBricks(20, 4, 51));
 		System.out.println("makeBricks(20, 4, 39) -> " + makeBricks(20, 4, 39));
 		printMethod("loneSum");
-		System.out.println("loneSum");
 		System.out.println("loneSum(1, 2, 3) -> " + loneSum(1, 2, 3));
 		System.out.println("loneSum(3, 2, 3) -> " + loneSum(3, 2, 3));
 		System.out.println("loneSum(3, 3, 3) -> " + loneSum(3, 3, 3));
