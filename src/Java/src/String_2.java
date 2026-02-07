@@ -169,7 +169,18 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean bobThere(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 1).equals("b") && str.substring(i + 2, i + 3).equals("b"))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
