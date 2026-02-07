@@ -109,7 +109,27 @@ public class String_3 extends HelperMethods
 	 */
 	public boolean equalIsNot(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 2)
+		{
+			return true;
+		}
+		int countIs = 0, countNot = 0;
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 2).equals("is"))
+			{
+				countIs++;
+			}
+			if(str.substring(i, i + 3).equals("not"))
+			{
+				countNot++;
+			}
+		}
+		if(str.length() >= 2 && str.substring(str.length() - 2).equals("is"))
+		{
+			countIs++;
+		}
+		return countIs == countNot;
 	}
 
 	/**
