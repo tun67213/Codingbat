@@ -133,7 +133,31 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean xyzThere(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		int i = 0;
+		while(i < str.length() - 3)
+		{
+			if(str.substring(i, i + 4).equals(".xyz"))
+			{
+				i += 4;
+			}
+			else if(str.substring(i, i + 3).equals("xyz"))
+			{
+				return true;
+			}
+			else
+			{
+				i++;
+			}
+		}
+		if(str.length() >= 4 && str.substring(i - 1).equals(".xyz"))
+		{
+			return false;
+		}
+		return str.substring(i).equals("xyz");
 	}
 
 	/**
