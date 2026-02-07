@@ -484,7 +484,29 @@ public class String_2 extends HelperMethods
 	 */
 	public String plusOut(String str, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		int i = 0;
+		while(i <= str.length() - word.length())
+		{
+			if(str.substring(i, i + word.length()).equals(word))
+			{
+				finalAnswer += word;
+				i += word.length();
+			}
+			else
+			{
+				finalAnswer += "+";
+				i++;
+			}
+		}
+		if(i < str.length())
+		{
+			for(int j = i; j < str.length(); j++)
+			{
+				finalAnswer += "+";
+			}
+		}
+		return finalAnswer;
 	}
 
 	/**
