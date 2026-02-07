@@ -455,7 +455,24 @@ public class String_2 extends HelperMethods
 	 */
 	public String starOut(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(str.charAt(i) == '*')
+			{
+				continue;
+			}
+			if(i > 0 && str.charAt(i - 1) == '*')
+			{
+				continue;
+			}
+			if(i < str.length() - 1 && str.charAt(i + 1) == '*')
+			{
+				continue;
+			}
+			finalAnswer += str.substring(i, i + 1);
+		}
+		return finalAnswer;
 	}
 
 	/**
