@@ -232,7 +232,16 @@ public class String_3 extends HelperMethods
 	 */
 	public String sameEnds(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int current = str.length() / 2;
+		while(current >= 0)
+		{
+			if(str.substring(0, current).equals(str.substring(str.length() - current)))
+			{
+				return str.substring(0, current);
+			}
+			current--;
+		}
+		return "";
 	}
 
 	/**
