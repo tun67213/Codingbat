@@ -542,7 +542,18 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean tripleUp(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length < 3)
+		{
+			return false;
+		}
+		for(int i = 0; i < nums.length - 2; i++)
+		{
+			if(nums[i] + 1 == nums[i + 1] && nums[i + 1] + 1 == nums[i + 2])
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
