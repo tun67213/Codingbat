@@ -124,7 +124,24 @@ public class Array_2 extends HelperMethods
 	 */
 	public int sum67(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean found = false;
+		int sum = 0;
+		for(int num : nums)
+		{
+			if(!found && num == 6)
+			{
+				found = true;
+			}
+			else if(found && num == 7)
+			{
+				found = false;
+			}
+			else if(!found)
+			{
+				sum += num;
+			}
+		}
+		return sum;
 	}
 
 	/**
