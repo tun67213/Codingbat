@@ -523,7 +523,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean sameEnds(int[] nums, int len)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < len; i++)
+		{
+			if(nums[i] != nums[nums.length - len + i])
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
