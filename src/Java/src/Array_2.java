@@ -632,7 +632,24 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] pre4(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int first4Occurrence = -1;
+		for(int i = nums.length - 1; i >= 0; i--)
+		{
+			if(nums[i] == 4)
+			{
+				first4Occurrence = i;
+			}
+		}
+		if(first4Occurrence == -1)
+		{
+			return nums;
+		}
+		int[] newArray = new int[first4Occurrence];
+		for(int i = 0; i < first4Occurrence; i++)
+		{
+			newArray[i] = nums[i];
+		}
+		return newArray;
 	}
 
 	/**
