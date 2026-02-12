@@ -606,7 +606,21 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] tenRun(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int multipleOf10 = 0;
+		boolean multipleFound = false;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] % 10 == 0)
+			{
+				multipleOf10 = nums[i];
+				multipleFound = true;
+			}
+			else if(multipleFound)
+			{
+				nums[i] = multipleOf10;
+			}
+		}
+		return nums;
 	}
 
 	/**
