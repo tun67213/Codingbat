@@ -692,7 +692,22 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] notAlone(int[] nums, int val)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length > 2)
+		{
+			for(int i = 1; i < nums.length - 1; i++)
+			{
+				if(nums[i] == val && nums[i + 1] != val && nums[i - 1] != val)
+				{
+					int max = nums[i - 1];
+					if(nums[i + 1] > max)
+					{
+						max = nums[i + 1];
+					}
+					nums[i] = max;
+				}
+			}
+		}
+		return nums;
 	}
 
 	/**
