@@ -340,7 +340,23 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean either24(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 1)
+		{
+			return false;
+		}
+		boolean found22 = false, found44 = false;
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 2 && nums[i + 1] == 2)
+			{
+				found22 = true;
+			}
+			if(nums[i] == 4 && nums[i + 1] == 4)
+			{
+				found44 = true;
+			}
+		}
+		return found22 ^ found44;
 	}
 
 	/**
