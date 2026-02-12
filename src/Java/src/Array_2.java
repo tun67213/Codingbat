@@ -661,7 +661,26 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] post4(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int lastOccurrenceOf4 = -1;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 4)
+			{
+				lastOccurrenceOf4 = i;
+			}
+		}
+		if(lastOccurrenceOf4 == -1)
+		{
+			return nums;
+		}
+		int newArrayLength = nums.length - lastOccurrenceOf4 - 1;
+		int[] newArray = new int[newArrayLength];
+		int currentSize = 0;
+		for(int i = lastOccurrenceOf4 + 1; i < nums.length; i++)
+		{
+			newArray[currentSize++] = nums[i];
+		}
+		return newArray;
 	}
 
 	/**
