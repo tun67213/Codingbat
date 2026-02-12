@@ -795,7 +795,23 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] evenOdd(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length];
+		int currentSize = 0;
+		for(int num : nums)
+		{
+			if(num % 2 == 0)
+			{
+				newArray[currentSize++] = num;
+			}
+		}
+		for(int num : nums)
+		{
+			if(num % 2 != 0)
+			{
+				newArray[currentSize++] = num;
+			}
+		}
+		return newArray;
 	}
 
 	/**
