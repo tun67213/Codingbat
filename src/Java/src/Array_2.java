@@ -215,7 +215,20 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean more14(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count1 = 0;
+		int count4 = 0;
+		for(int num : nums)
+		{
+			if(num == 1)
+			{
+				count1++;
+			}
+			if(num == 4)
+			{
+				count4++;
+			}
+		}
+		return count1 > count4;
 	}
 
 	/**
