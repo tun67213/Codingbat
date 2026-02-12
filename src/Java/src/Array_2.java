@@ -368,7 +368,17 @@ public class Array_2 extends HelperMethods
 	 */
 	public int matchUp(int[] nums1, int[] nums2)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < nums1.length; i++)
+		{
+			int num1 = nums1[i];
+			int num2 = nums2[i];
+			if(num1 != num2 && Math.abs(num1 - num2) <= 2)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
