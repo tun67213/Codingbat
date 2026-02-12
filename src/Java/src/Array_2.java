@@ -413,7 +413,19 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean has12(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean found1 = false;
+		for(int num : nums)
+		{
+			if(num == 1)
+			{
+				found1 = true;
+			}
+			if(found1 && num == 2)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
