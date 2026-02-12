@@ -176,7 +176,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean lucky13(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int num : nums)
+		{
+			if(num == 1 || num == 3)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
