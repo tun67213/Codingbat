@@ -315,7 +315,25 @@ public class String_3 extends HelperMethods
 	 */
 	public int sumNumbers(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		String currentNumber = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(Character.isDigit(str.charAt(i)))
+			{
+				currentNumber += str.substring(i, i + 1);
+			}
+			else if(currentNumber.length() > 0)
+			{
+				sum += Integer.parseInt(currentNumber);
+				currentNumber = "";
+			}
+		}
+		if(currentNumber.length() > 0)
+		{
+			sum += Integer.parseInt(currentNumber);
+		}
+		return sum;
 	}
 
 	/**
