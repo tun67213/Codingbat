@@ -195,7 +195,15 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean sum28(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int num : nums)
+		{
+			if(num == 2)
+			{
+				count++;
+			}
+		}
+		return count == 4;
 	}
 
 	/**
