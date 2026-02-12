@@ -565,7 +565,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] fizzArray3(int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int length = end - start;
+		int[] fizzArray = new int[length];
+		int size = 0;
+		for(int i = start; i < end; i++)
+		{
+			fizzArray[size++] = i;
+		}
+		return fizzArray;
 	}
 
 	/**
