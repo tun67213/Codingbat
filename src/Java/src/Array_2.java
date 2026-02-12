@@ -68,7 +68,25 @@ public class Array_2 extends HelperMethods
 	 */
 	public int centeredAverage(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		int min = nums[0];
+		int max = nums[0];
+		for(int num : nums)
+		{
+			sum += num;
+
+			if(num < min)
+			{
+				min = num;
+			}
+
+			if(num > max)
+			{
+				max = num;
+			}
+		}
+		sum = sum - min - max;
+		return sum / (nums.length - 2);
 	}
 
 	/**
