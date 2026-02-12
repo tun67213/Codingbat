@@ -719,7 +719,23 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] zeroFront(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length];
+		int size = 0;
+		for(int num : nums)
+		{
+			if(num == 0)
+			{
+				newArray[size++] = num;
+			}
+		}
+		for(int num : nums)
+		{
+			if(num != 0)
+			{
+				newArray[size++] = num;
+			}
+		}
+		return newArray;
 	}
 
 	/**
