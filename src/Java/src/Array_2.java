@@ -747,7 +747,16 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] withoutTen(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length];
+		int currentSize = 0;
+		for(int num : nums)
+		{
+			if(num != 10)
+			{
+				newArray[currentSize++] = num;
+			}
+		}
+		return newArray;
 	}
 
 	/**
