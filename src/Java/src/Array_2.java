@@ -257,7 +257,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean only14(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int num : nums)
+		{
+			if(num != 1 && num != 4)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
