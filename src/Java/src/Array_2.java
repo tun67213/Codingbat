@@ -24,7 +24,15 @@ public class Array_2 extends HelperMethods
 	 */
 	public int countEvens(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int num : nums)
+		{
+			if(num % 2 == 0)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
