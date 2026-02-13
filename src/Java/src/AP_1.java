@@ -25,7 +25,14 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean scoresIncreasing(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < scores.length - 1; i++)
+		{
+			if(scores[i] > scores[i + 1])
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
