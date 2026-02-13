@@ -126,7 +126,15 @@ public class AP_1 extends HelperMethods
 	 */
 	public int wordsCount(String[] words, int len)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int wordsOfLength = 0;
+		for(String word : words)
+		{
+			if(word.length() == len)
+			{
+				wordsOfLength++;
+			}
+		}
+		return wordsOfLength;
 	}
 
 	/**
