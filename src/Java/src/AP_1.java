@@ -165,7 +165,15 @@ public class AP_1 extends HelperMethods
 	@SuppressWarnings("rawtypes")
 	public List wordsWithoutList(String[] words, int len)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		List<String> list = new ArrayList<>();
+		for(String word : words)
+		{
+			if(word.length() != len)
+			{
+				list.add(word);
+			}
+		}
+		return list;
 	}
 
 	/**
