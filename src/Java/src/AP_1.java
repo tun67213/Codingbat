@@ -436,7 +436,21 @@ public class AP_1 extends HelperMethods
 	 */
 	public int sumHeights2(int[] heights, int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		int currentDifference = 0;
+		for(int i = start; i < end; i++)
+		{
+			currentDifference = heights[i] - heights[i + 1];
+			if(currentDifference < 0)
+			{
+				sum += currentDifference * -2;
+			}
+			else
+			{
+				sum += currentDifference;
+			}
+		}
+		return sum;
 	}
 
 	/**
