@@ -258,7 +258,26 @@ public class Array_3 extends HelperMethods
 	 */
 	public int countClumps(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int clumps = 0;
+		int i = 0;
+		while(i < nums.length - 1)
+		{
+			if(nums[i] == nums[i + 1])
+			{
+				clumps++;
+				int value = nums[i];
+
+				while(i < nums.length && nums[i] == value)
+				{
+					i++;
+				}
+			}
+			else
+			{
+				i++;
+			}
+		}
+		return clumps;
 	}
 
 	/**
