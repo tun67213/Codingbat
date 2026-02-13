@@ -282,7 +282,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public boolean array6(int[] nums, int index)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(index >= nums.length)
+		{
+			return false;
+		}
+		if(nums[index] == 6)
+		{
+			return true;
+		}
+		return array6(nums, index + 1);
 	}
 
 	/**
