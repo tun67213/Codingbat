@@ -202,7 +202,18 @@ public class Array_3 extends HelperMethods
 	 */
 	public int[] seriesUp(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int arraySize = n * (n + 1) / 2;
+		int[] seriesArray = new int[arraySize];
+		int currentSize = 0;
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				seriesArray[currentSize] = j;
+				currentSize++;
+			}
+		}
+		return seriesArray;
 	}
 
 	/**
