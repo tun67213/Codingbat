@@ -392,7 +392,7 @@ public class AP_1 extends HelperMethods
 	 */
 	public int scoresSpecial(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return findSpecial(a) + findSpecial(b);
 	}
 	/**
 	 * As a support above, this method will find the special value in a given array.
