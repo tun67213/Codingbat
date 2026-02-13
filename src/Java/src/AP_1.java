@@ -509,7 +509,30 @@ public class AP_1 extends HelperMethods
 	 */
 	public String[] mergeTwo(String[] a, String[] b, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String[] result = new String[n];
+		int i = 0;
+		int j = 0;
+		int k = 0;
+		while(k < n)
+		{
+			int comparison = a[i].compareTo(b[j]);
+
+			if(comparison < 0)
+			{
+				result[k++] = a[i++];
+			}
+			else if(comparison > 0)
+			{
+				result[k++] = b[j++];
+			}
+			else
+			{
+				result[k++] = a[i];
+				i++;
+				j++;
+			}
+		}
+		return result;
 	}
 
 	/**
