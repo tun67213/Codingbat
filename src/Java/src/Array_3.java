@@ -125,7 +125,23 @@ public class Array_3 extends HelperMethods
 	 */
 	public boolean canBalance(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 1; i < nums.length; i++)
+		{
+			int sumLeft = 0, sumRight = 0;
+			for(int j = 0; j < i; j++)
+			{
+				sumLeft += nums[j];
+			}
+			for(int j = i; j < nums.length; j++)
+			{
+				sumRight += nums[j];
+			}
+			if(sumLeft == sumRight)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
