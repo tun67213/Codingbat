@@ -484,7 +484,20 @@ public class AP_1 extends HelperMethods
 	 */
 	public int userCompare(String aName, int aId, String bName, int bId)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int nameComparison = aName.compareTo(bName);
+		if(nameComparison != 0)
+		{
+			return nameComparison;
+		}
+		if(aId < bId)
+		{
+			return -1;
+		}
+		if(aId > bId)
+		{
+			return 1;
+		}
+		return 0;
 	}
 
 	/**
