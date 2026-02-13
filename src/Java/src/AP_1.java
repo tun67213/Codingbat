@@ -462,7 +462,17 @@ public class AP_1 extends HelperMethods
 	 */
 	public int bigHeights(int[] heights, int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int bigDifferences = 0;
+		int currentDifference = 0;
+		for(int i = start; i < end; i++)
+		{
+			currentDifference = Math.abs(heights[i] - heights[i + 1]);
+			if(currentDifference >= 5)
+			{
+				bigDifferences++;
+			}
+		}
+		return bigDifferences;
 	}
 
 	/**
