@@ -93,6 +93,23 @@ public class AP_1 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+	/**
+	 * The following method is a helper method for scoresAverage created as per the recommendation of the question.
+	 */
+	private int average(int[] scores, int start, int end)
+	{
+		int sum = 0;
+		int length = end - start;
+		for(int i = start; i < end; i++)
+		{
+			sum += scores[i];
+		}
+		if(length == 0)
+		{
+			return 0;
+		}
+		return sum / length;
+	}
 
 	/**
 	 * Given an array of strings, return the count of the number of strings with the given length.
