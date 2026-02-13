@@ -122,7 +122,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int count7(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 0;
+		}
+		if(n % 10 == 7)
+		{
+			return 1 + count7(n / 10);
+		}
+		return count7(n / 10);
 	}
 
 	/**
