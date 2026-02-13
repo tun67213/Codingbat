@@ -262,7 +262,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String noX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		if(str.substring(0, 1).equals("x"))
+		{
+			return noX(str.substring(1));
+		}
+		return str.substring(0, 1) + noX(str.substring(1));
 	}
 
 	/**
