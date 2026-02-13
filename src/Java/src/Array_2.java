@@ -823,7 +823,29 @@ public class Array_2 extends HelperMethods
 	 */
 	public String[] fizzBuzz(int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int arrayLength = end - start;
+		String[] fizzBuzzValues = new String[arrayLength];
+		int currentSize = 0;
+		for(int i = start; i < end; i++)
+		{
+			if(i % 15 == 0)
+			{
+				fizzBuzzValues[currentSize++] = "FizzBuzz";
+			}
+			else if(i % 3 == 0)
+			{
+				fizzBuzzValues[currentSize++] = "Fizz";
+			}
+			else if(i % 5 == 0)
+			{
+				fizzBuzzValues[currentSize++] = "Buzz";
+			}
+			else
+			{
+				fizzBuzzValues[currentSize++] = String.valueOf(i);
+			}
+		}
+		return fizzBuzzValues;
 	}
 
 	/**
