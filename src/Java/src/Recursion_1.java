@@ -342,7 +342,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String allStar(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		return str.substring(0, 1) + "*" + allStar(str.substring(1));
 	}
 
 	/**
