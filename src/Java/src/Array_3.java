@@ -198,7 +198,7 @@ public class Array_3 extends HelperMethods
 		printMethod("canBalance");
 		System.out.println("canBalance([1, 1, 1, 2, 1]) -> " + canBalance(new int[] {1, 1, 1, 2, 1}));
 		System.out.println("canBalance([2, 1, 1, 2, 1]) -> " + canBalance(new int[] {2, 1, 1, 2, 1}));
-		System.out.println("canBalance([10, 10]) -> " +  canBalance(new int[] {10, 10}));
+		System.out.println("canBalance([10, 10]) -> " + canBalance(new int[] {10, 10}));
 		System.out.println("canBalance([10, 0, 1, -1, 10]) -> " + canBalance(new int[] {10, 0, 1, -1, 10}));
 		System.out.println("canBalance([1, 1, 1, 1, 4]) -> " + canBalance(new int[] {1, 1, 1, 1, 4}));
 		System.out.println("canBalance([2, 1, 1, 1, 4]) -> " + canBalance(new int[] {2, 1, 1, 1, 4}));
