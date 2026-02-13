@@ -288,6 +288,10 @@ public class AP_1 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+	private boolean isEndy(int n)
+	{
+		return (n >= 0 && n <= 10) || (n >= 90 && n <= 100);
+	}
 
 	/**
 	 * Given 2 arrays that are the same length containing strings, compare the 1st string in one array to the 1st string in the other array, the 2nd to the 2nd and so on. Count the number of times that the 2 strings are non-empty and start with the same char. The strings may be any length, including 0.
