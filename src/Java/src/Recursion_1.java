@@ -166,7 +166,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int powerN(int base, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 1;
+		}
+		return base * powerN(base, n - 1);
 	}
 
 	/**
