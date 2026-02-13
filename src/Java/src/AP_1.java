@@ -544,7 +544,39 @@ public class AP_1 extends HelperMethods
 	 */
 	public int commonTwo(String[] a, String[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int i = 0;
+		int j = 0;
+		int count = 0;
+		while(i < a.length && j < b.length)
+		{
+			int comparison = a[i].compareTo(b[j]);
+
+			if(comparison < 0)
+			{
+				i++;
+			}
+			else if(comparison > 0)
+			{
+				j++;
+			}
+			else
+			{
+				count++;
+
+				String value = a[i];
+
+				while(i < a.length && a[i].equals(value))
+				{
+					i++;
+				}
+
+				while(j < b.length && b[j].equals(value))
+				{
+					j++;
+				}
+			}
+		}
+		return count;
 	}
 
 	/**
