@@ -22,7 +22,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int factorial(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 1;
+		}
+		return n * factorial(n - 1);
 	}
 
 	/**
