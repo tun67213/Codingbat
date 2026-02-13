@@ -206,7 +206,15 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean dividesSelf(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] digitsInN = splitValue(n);
+		for(int digit : digitsInN)
+		{
+			if(digit == 0 || n % digit != 0)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 	/**
 	 * The following is a helper method that will find the current length of an integer.
