@@ -337,7 +337,21 @@ public class AP_1 extends HelperMethods
 	 */
 	public int scoreUp(String[] key, String[] answer)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int score = 0;
+		for(int i = 0; i < key.length; i++)
+		{
+			String correctAnswer = key[i];
+			String studentAnswer = answer[i];
+			if(studentAnswer.equals(correctAnswer))
+			{
+				score += 4;
+			}
+			else if(!(studentAnswer.equals("?")))
+			{
+				score -= 1;
+			}
+		}
+		return score;
 	}
 
 	/**
