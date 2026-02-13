@@ -286,7 +286,18 @@ public class AP_1 extends HelperMethods
 	 */
 	public int[] copyEndy(int[] nums, int count)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[count];
+		int currentSize = 0;
+		int currentIndex = 0;
+		while(currentIndex < nums.length && currentSize < count)
+		{
+			if(isEndy(nums[currentIndex]))
+			{
+				newArray[currentSize++] = nums[currentIndex];
+			}
+			currentIndex++;
+		}
+		return newArray;
 	}
 
 	/**
