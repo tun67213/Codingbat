@@ -261,7 +261,20 @@ public class AP_1 extends HelperMethods
 	 */
 	public int[] copyEvens(int[] nums, int count)
 	{
-		throw new NullPointerException("Not implemented yet");
+		int[] newArray = new int[count];
+		int currentSize = 0;
+		for(int num : nums)
+		{
+			if(num % 2 == 0)
+			{
+				newArray[currentSize++] = num;
+			}
+			if(currentSize == count)
+			{
+				break;
+			}
+		}
+		return newArray;
 	}
 
 	/**
