@@ -208,6 +208,42 @@ public class AP_1 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+	/**
+	 * The following is a helper method that will find the current length of an integer.
+	 */
+	private int length(int n)
+	{
+		if(n < 0)
+		{
+			n *= -1;
+		}
+		if(n < 10)
+		{
+			return 1;
+		}
+		int length = 1;
+		while(n >= 10)
+		{
+			n /= 10;
+			length++;
+		}
+		length++;
+		return length;
+	}
+	/**
+	 * The following is a helper method that will split a number into its individual digits.
+	 */
+	private int[] splitValue(int n)
+	{
+		int len = length(n);
+		int[] digits = new int[len];
+		for(int i = 0; i < len; i++)
+		{
+			digits[len - i - 1] = n % 10;
+			n /= 10;
+		}
+		return digits;
+	}
 
 	/**
 	 * Given an array of positive ints, return a new array of length "count" containing the first even numbers from the original array. The original array will contain at least "count" even numbers.
