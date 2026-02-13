@@ -399,7 +399,7 @@ public class AP_1 extends HelperMethods
 	 */
 	private int findSpecial(int[] a)
 	{
-		int specialNumber = -1;
+		int specialNumber = 0;
 		for(int num : a)
 		{
 			if(num % 10 == 0 && num > specialNumber)
