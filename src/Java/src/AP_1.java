@@ -91,7 +91,13 @@ public class AP_1 extends HelperMethods
 	 */
 	public int scoresAverage(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int firstHalf = average(scores, 0, scores.length / 2);
+		int secondHalf = average(scores, scores.length / 2, scores.length);
+		if(firstHalf > secondHalf)
+		{
+			return firstHalf;
+		}
+		return secondHalf;
 	}
 	/**
 	 * The following method is a helper method for scoresAverage created as per the recommendation of the question.
