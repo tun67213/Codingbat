@@ -316,7 +316,16 @@ public class AP_1 extends HelperMethods
 	 */
 	public int matchUp(String[] a, String[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < a.length; i++)
+		{
+			String aString = a[i], bString = b[i];
+			if(aString.length() > 0 && bString.length() > 0 && aString.substring(0, 1).equals(bString.substring(0, 1)))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
