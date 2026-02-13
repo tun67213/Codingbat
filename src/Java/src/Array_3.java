@@ -225,7 +225,28 @@ public class Array_3 extends HelperMethods
 	 */
 	public int maxMirror(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int max = 0;
+		for(int i = 0; i < nums.length; i++)
+		{
+			for(int j = nums.length - 1; j >= 0; j--)
+			{
+				int a = i;
+				int b = j;
+				int count = 0;
+
+				while(a < nums.length && b >= 0 && nums[a] == nums[b])
+				{
+					count++;
+					a++;
+					b--;
+				}
+				if(count > max)
+				{
+					max = count;
+				}
+			}
+		}
+		return max;
 	}
 
 	/**
