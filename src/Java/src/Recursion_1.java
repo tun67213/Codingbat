@@ -70,7 +70,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int bunnyEars2(int bunnies)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(bunnies == 0)
+		{
+			return 0;
+		}
+		if(bunnies % 2 == 0)
+		{
+			return 3 + bunnyEars2(bunnies - 1);
+		}
+		return 2 + bunnyEars2(bunnies - 1);
 	}
 
 	/**
