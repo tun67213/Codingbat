@@ -146,7 +146,12 @@ public class AP_1 extends HelperMethods
 	 */
 	public String[] wordsFront(String[] words, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String[] newArray = new String[n];
+		for(int i = 0; i < n; i++)
+		{
+			newArray[i] = words[i];
+		}
+		return newArray;
 	}
 
 	/**
