@@ -227,7 +227,6 @@ public class AP_1 extends HelperMethods
 			n /= 10;
 			length++;
 		}
-		length++;
 		return length;
 	}
 	/**
