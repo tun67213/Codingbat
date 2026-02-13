@@ -182,7 +182,15 @@ public class Array_3 extends HelperMethods
 	 */
 	public int[] squareUp(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] arr = new int[n * n];
+		for (int group = 1; group <= n; group++)
+		{
+			for (int val = 1; val <= group; val++)
+			{
+				arr[group * n - val] = val;
+			}
+		}
+		return arr;
 	}
 
 	/**
