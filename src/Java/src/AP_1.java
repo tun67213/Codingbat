@@ -288,6 +288,10 @@ public class AP_1 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not implemented yet");
 	}
+
+	/**
+	 * The following is a helper method for copyEndy that will distinguish if each individual value is classified as 'endy'.
+	 */
 	private boolean isEndy(int n)
 	{
 		return (n >= 0 && n <= 10) || (n >= 90 && n <= 100);
