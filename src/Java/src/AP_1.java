@@ -185,7 +185,16 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean hasOne(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int currentValue = n;
+		while(currentValue > 0)
+		{
+			if(currentValue % 10 == 1)
+			{
+				return true;
+			}
+			currentValue /= 10;
+		}
+		return false;
 	}
 
 	/**
