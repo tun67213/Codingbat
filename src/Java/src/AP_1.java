@@ -299,7 +299,6 @@ public class AP_1 extends HelperMethods
 		}
 		return newArray;
 	}
-
 	/**
 	 * The following is a helper method for copyEndy that will distinguish if each individual value is classified as 'endy'.
 	 */
