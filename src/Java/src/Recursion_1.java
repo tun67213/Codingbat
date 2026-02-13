@@ -106,7 +106,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int sumDigits(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n <= 9)
+		{
+			return n;
+		}
+		return n % 10 + sumDigits(n / 10);
 	}
 
 	/**
