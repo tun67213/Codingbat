@@ -182,7 +182,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int countX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0)
+		{
+			return 0;
+		}
+		if(str.substring(0, 1).equals("x"))
+		{
+			return 1 + countX(str.substring(1));
+		}
+		return countX(str.substring(1));
 	}
 
 	/**
