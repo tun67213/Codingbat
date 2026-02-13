@@ -363,16 +363,24 @@ public class AP_1 extends HelperMethods
 	 */
 	public String[] wordsWithout(String[] words, String target)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
-	}
-	private String[] listToString(List<String> list)
-	{
-		String[] newArray = new String[list.size()];
-		for(int i = 0; i < list.size(); i++)
+		int count = 0;
+		for(String word : words)
 		{
-			newArray[i] = list.get(i);
+			if(word.equals(target))
+			{
+				count++;
+			}
 		}
-		return newArray;
+		String[] result = new String[words.length - count];
+		int index = 0;
+		for(String word : words)
+		{
+			if(!word.equals(target))
+			{
+				result[index++] = word;
+			}
+		}
+		return result;
 	}
 
 	/**
