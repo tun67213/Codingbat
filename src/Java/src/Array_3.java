@@ -24,7 +24,27 @@ public class Array_3 extends HelperMethods
 	 */
 	public int maxSpan(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 1)
+		{
+			return nums.length;
+		}
+		int maximumSpan = 1;
+		for(int i = 0; i < nums.length; i++)
+		{
+			for(int j = nums.length - 1; j > i; j--)
+			{
+				if(nums[i] == nums[j])
+				{
+					int span = j - i + 1;
+					if(span > maximumSpan)
+					{
+						maximumSpan = span;
+					}
+					break;
+				}
+			}
+		}
+		return maximumSpan;
 	}
 
 	/**
