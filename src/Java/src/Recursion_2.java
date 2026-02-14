@@ -46,7 +46,19 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupSum6(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(start == nums.length)
+		{
+			return target == 0;
+		}
+		if(nums[start] == 6)
+		{
+			return groupSum6(start + 1, nums, target - nums[start]);
+		}
+		if(groupSum6(start + 1, nums, target - nums[start]))
+		{
+			return true;
+		}
+		return groupSum6(start + 1, nums, target);
 	}
 
 	/**
