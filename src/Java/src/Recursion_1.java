@@ -502,7 +502,23 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String parenBit(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 2)
+		{
+			return "";
+		}
+		if(str.startsWith("(") && str.endsWith(")"))
+		{
+			return str;
+		}
+		if(str.startsWith("("))
+		{
+			return parenBit(str.substring(0, str.length() - 1));
+		}
+		if(str.endsWith(")"))
+		{
+			return parenBit(str.substring(1));
+		}
+		return parenBit(str.substring(1, str.length() - 1));
 	}
 
 	/**
