@@ -200,6 +200,29 @@ public class Recursion_2 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * THe following is a helper method for implement split53.
+	 */
+	private boolean sidesAreEqual53(int[] nums, int i, int balance)
+	{
+		if(i == nums.length)
+		{
+			return (balance == 0);
+		}
+		if(nums[i] % 5 == 0)
+		{
+			return sidesAreEqual53(nums, i + 1, balance + nums[i]);
+		}
+		if(nums[i] % 3 == 0)
+		{
+			return sidesAreEqual53(nums, i + 1, balance - nums[i]);
+		}
+		if(sidesAreEqual53(nums, i + 1, balance + nums[i]))
+		{
+			return true;
+		}
+		return sidesAreEqual53(nums, i + 1, balance - nums[i]);
+	}
 
 	/**
 	 * @param args command line arguments
