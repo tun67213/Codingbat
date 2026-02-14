@@ -122,7 +122,17 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupSumClump(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(start >= nums.length)
+		{
+			return target == 0;
+		}
+		int i = start + 1;
+		for(;  i < nums.length && nums[start] == nums[i]; i++);
+		if(groupSumClump(i, nums, target - ((i - start) * nums[start])))
+		{
+			return true;
+		}
+		return groupSumClump(i, nums, target);
 	}
 
 	/**
