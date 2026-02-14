@@ -12,7 +12,7 @@ public class Map_2 extends HelperMethods
 	 */
 	public void welcome()
 	{
-		System.out.println("\n\nMap-1 Methods\n");
+		System.out.println("\n\nMap-2 Methods\n");
 	}
 
 	/**
