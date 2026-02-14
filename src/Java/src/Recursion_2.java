@@ -144,7 +144,7 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean splitArray(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return sidesAreEqual(nums, 0, 0);
 	}
 	/**
 	 * The following is a helper method for splitArray that will make implement the recursive splitArray method.
