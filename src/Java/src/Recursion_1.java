@@ -528,7 +528,7 @@ public class Recursion_1 extends HelperMethods
 	 * nestParen("((()))") → true
 	 * nestParen("(((x))") → false
 	 */
-	public String nestParen(String str)
+	public boolean nestParen(String str)
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
