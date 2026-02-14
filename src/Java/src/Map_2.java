@@ -23,7 +23,7 @@ public class Map_2 extends HelperMethods
 	 * word0(["a", "b", "a", "c", "b"]) → {"a": 0, "b": 0, "c": 0}
 	 * word0(["c", "b", "a"]) → {"a": 0, "b": 0, "c": 0}
 	 */
-	public Map<String, Integer> word0(String[] words)
+	public Map<String, Integer> word0(String[] strings)
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
