@@ -173,6 +173,21 @@ public class Recursion_2 extends HelperMethods
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+	/**
+	 * The following is a helper method for implementing splitOdd10.
+	 */
+	private boolean sidesAreOdd10(int[] nums, int i, int group1, int group2)
+	{
+		if(i == nums.length)
+		{
+			return ((group1 % 2 == 1 && group2 % 10 == 0 || group2 % 2 == 1 && group1 % 10 == 0));
+		}
+		if(sidesAreOdd10(nums, i + 1, group1 + nums[i], group2))
+		{
+			return true;
+		}
+		return sidesAreOdd10(nums, i + 1, group1, group2 + nums[i]);g
+	}
 
 	/**
 	 * Given an array of ints, is it possible to divide the ints into two groups, so that the sum of the two groups is the same, with these constraints: all the values that are multiple of 5 must be in one group, and all the values that are a multiple of 3 (and not a multiple of 5) must be in the other. (No loops needed.)
