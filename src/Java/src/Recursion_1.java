@@ -765,7 +765,7 @@ public class Recursion_1 extends HelperMethods
 		System.out.println("countAbc(\"hello\") -> " + countAbc("hello"));
 		System.out.println("countAbc(\"\") -> " + countAbc(""));
 		System.out.println("countAbc(\"ab\") -> " + countAbc("ab"));
-		System.out.println("countAbc(\"aba\"9 -> " + countAbc("aba"));
+		System.out.println("countAbc(\"aba\") -> " + countAbc("aba"));
 		System.out.println("countAbc(\"aca\") -> " + countAbc("aca"));
 		System.out.println("countAbc(\"aaa\") -> " + countAbc("aaa"));
 		printMethod("count11");
