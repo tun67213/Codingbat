@@ -198,7 +198,7 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean split53(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return sidesAreEqual53(nums, 0, 0);
 	}
 	/**
 	 * THe following is a helper method for implement split53.
