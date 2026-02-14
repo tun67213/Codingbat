@@ -135,7 +135,15 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapAB2(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a") && map.containsKey("b"))
+		{
+			if(map.get("a").equals(map.get("b")))
+			{
+				map.remove("a");
+				map.remove("b");
+			}
+		}
+		return map;
 	}
 
 	/**
