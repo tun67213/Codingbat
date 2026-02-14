@@ -25,7 +25,13 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapBully(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a"))
+		{
+			String temporary = map.get("a");
+			map.put("a", "");
+			map.put("b", temporary);
+		}
+		return map;
 	}
 
 	/**
