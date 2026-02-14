@@ -22,7 +22,19 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupSum(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(target == 0)
+		{
+			return true;
+		}
+		if(start == nums.length)
+		{
+			return false;
+		}
+		if(groupSum(start + 1, nums, target - nums[start]))
+		{
+			return true;
+		}
+		return groupSum(start + 1, nums, target);
 	}
 
 	/**
