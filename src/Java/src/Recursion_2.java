@@ -186,7 +186,7 @@ public class Recursion_2 extends HelperMethods
 		{
 			return true;
 		}
-		return sidesAreOdd10(nums, i + 1, group1, group2 + nums[i]);g
+		return sidesAreOdd10(nums, i + 1, group1, group2 + nums[i]);
 	}
 
 	/**
