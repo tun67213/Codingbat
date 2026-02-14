@@ -530,7 +530,19 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public boolean nestParen(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0)
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("(") || str.equals(")"));
+		}
+		if(str.substring(0, 1).equals("(") && str.substring(str.length() - 1).equals(")"))
+		{
+			return nestParen(str.substring(1, str.length() - 1));
+		}
+		return false;
 	}
 
 	/**
