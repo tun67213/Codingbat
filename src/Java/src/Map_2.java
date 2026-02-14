@@ -59,7 +59,14 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, String> pairs(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, String> map = new HashMap<>();
+		for(String str : strings)
+		{
+			String first = String.valueOf(str.charAt(0));
+			String last = String.valueOf(str.charAt(str.length() - 1));
+			map.put(first, last);
+		}
+		return map;
 	}
 
 	/**
