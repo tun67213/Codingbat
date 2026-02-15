@@ -128,7 +128,8 @@ public class Functional_1 extends HelperMethods
 	 */
 	public List<String> noX(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.replaceAll(str -> str.replaceAll("x", ""));
+		return strings;
 	}
 
 	/**
