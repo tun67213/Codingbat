@@ -102,7 +102,9 @@ public class Functional_2 extends HelperMethods
 	 */
 	public List<String> noYY(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.replaceAll(str -> str + "y");
+		strings.removeIf(str -> str.contains("yy"));
+		return strings;
 	}
 
 	/**
