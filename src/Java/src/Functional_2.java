@@ -89,7 +89,8 @@ public class Functional_2 extends HelperMethods
 	 */
 	public List<String> no34(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.removeIf(str -> str.length() == 3 || str.length() == 4);
+		return strings;
 	}
 
 	/**
