@@ -37,7 +37,8 @@ public class Functional_2 extends HelperMethods
 	 */
 	public List<Integer> no9(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.removeIf(num -> num % 10 == 9);
+		return nums;
 	}
 
 	/**
