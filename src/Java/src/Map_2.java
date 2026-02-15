@@ -112,6 +112,7 @@ public class Map_2 extends HelperMethods
 				String value = map.get(key) + str;
 				map.put(key, value);
 			}
+			else
 			{
 				map.put(key, str);
 			}
