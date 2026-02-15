@@ -103,7 +103,20 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, String> firstChar(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, String> map = new HashMap<>();
+		for(String str : strings)
+		{
+			String key = String.valueOf(str.charAt(0));
+			if(map.containsKey(key))
+			{
+				String value = map.get(key) + str;
+				map.put(key, value);
+			}
+			{
+				map.put(key, str);
+			}
+		}
+		return map;
 	}
 
 	/**
