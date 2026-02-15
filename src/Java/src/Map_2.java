@@ -78,7 +78,20 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, Integer> wordCount(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<>();
+		for(String str : strings)
+		{
+			if(map.containsKey(str))
+			{
+				int count = map.get(str);
+				map.put(str, count + 1);
+			}
+			else
+			{
+				map.put(str, 1);
+			}
+		}
+		return map;
 	}
 
 	/**
