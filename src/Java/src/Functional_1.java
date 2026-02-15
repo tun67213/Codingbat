@@ -24,7 +24,8 @@ public class Functional_1 extends HelperMethods
 	 */
 	public List<Integer> doubling(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> num * 2);
+		return nums;
 	}
 
 	/**
