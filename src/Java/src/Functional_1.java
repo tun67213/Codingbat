@@ -76,7 +76,8 @@ public class Functional_1 extends HelperMethods
 	 */
 	public List<String> moreY(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.replaceAll(str -> "y" + str + "y");
+		return strings;
 	}
 
 	/**
