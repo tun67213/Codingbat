@@ -89,7 +89,8 @@ public class Functional_1 extends HelperMethods
 	 */
 	public List<Integer> math1(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> (num + 1) * 10);
+		return nums;
 	}
 
 	/**
