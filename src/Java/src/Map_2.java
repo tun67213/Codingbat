@@ -129,7 +129,26 @@ public class Map_2 extends HelperMethods
 	 */
 	public String wordAppend(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<>();
+		String result = "";
+		for(String str : strings)
+		{
+			if(map.containsKey(str))
+			{
+				int value = map.get(str);
+				value++;
+				if(value % 2 == 0)
+				{
+					result += str;
+				}
+				map.put(str, value);
+			}
+			else
+			{
+				map.put(str, 1);
+			}
+		}
+		return result;
 	}
 
 	/**
