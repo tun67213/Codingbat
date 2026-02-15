@@ -160,7 +160,23 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, Boolean> wordMultiple(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> counts = new HashMap<>();
+		Map<String, Boolean> result = new HashMap<>();
+		for(String str : strings)
+		{
+			if(counts.containsKey(str))
+			{
+				int value = counts.get(str);
+				value++;
+				counts.put(str, value);
+			}
+			else
+			{
+				counts.put(str, 1);
+			}
+			result.put(str, counts.get(str) >= 2);
+		}
+		return result;
 	}
 
 	/**
