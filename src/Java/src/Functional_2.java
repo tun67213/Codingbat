@@ -50,7 +50,8 @@ public class Functional_2 extends HelperMethods
 	 */
 	public List<Integer> noTeen(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.removeIf(num -> num >= 13 && num <= 19);
+		return nums;
 	}
 
 	/**
