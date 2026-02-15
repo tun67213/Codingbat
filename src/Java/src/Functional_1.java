@@ -37,7 +37,8 @@ public class Functional_1 extends HelperMethods
 	 */
 	public List<Integer> square(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> num * num);
+		return nums;
 	}
 
 	/**
