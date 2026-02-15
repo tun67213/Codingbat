@@ -116,7 +116,9 @@ public class Functional_2 extends HelperMethods
 	 */
 	public List<Integer> two2(List<Integer> nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		nums.replaceAll(num -> num * 2);
+		nums.removeIf(num -> num % 10 == 2);
+		return nums;
 	}
 
 	/**
