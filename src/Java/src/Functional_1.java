@@ -50,7 +50,8 @@ public class Functional_1 extends HelperMethods
 	 */
 	public List<String> addStar(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.replaceAll(str -> str + "*");
+		return strings;
 	}
 
 	/**
