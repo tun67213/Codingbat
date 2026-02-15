@@ -115,7 +115,8 @@ public class Functional_1 extends HelperMethods
 	 */
 	public List<String> lower(List<String> strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		strings.replaceAll(str -> str.toLowerCase());
+		return strings;
 	}
 
 	/**
