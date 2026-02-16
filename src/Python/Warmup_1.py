@@ -13,7 +13,7 @@ sleep_in(True, False) → False
 sleep_in(False, True) → True
 """
 def sleep_in(weekday, vacation):
-    pass
+    return vacation or not weekday
 
 """
 We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. 
