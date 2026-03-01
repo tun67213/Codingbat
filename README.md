@@ -14,6 +14,14 @@ The purpose of this project is to strengthen problem-solving skills, reinforce l
 
 Each language directory includes a `Main` file that serves as the entry point for executing and testing the implemented methods.
 
+## How to Compile and Run
+For Java:
+```bash
+cd Java
+javac Main.java
+java Main
+```
+
 ## Author
 <p align="center">
   <img src="https://github.com/tun67213.png" width="120" />
