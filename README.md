@@ -45,6 +45,13 @@ cd Python
 python3 Main.py
 ```
 
+For Windows Users:
+
+If the system does not recognize "python3", please use the command below:
+```bash
+python Main.py
+```
+
 ## Author
 <p align="center">
   <img src="https://github.com/tun67213.png" width="120" />
