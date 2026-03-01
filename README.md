@@ -5,7 +5,7 @@
 3. Implementations
     - Java
     - Python
-4. Author
+4. [Author](https://github.com/tun67213/Codingbat#author)
 
 ## Author
 <p align="center">
