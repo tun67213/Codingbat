@@ -1,11 +1,11 @@
 # Codingbat
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. Project Structure
-3. How to Compile and Run
-4. Implementations
-    - Java
-    - Python
+2. [Project Structure](#project-structure)
+3. [How to Compile and Run](#how-to-compile-and-run)
+4. [Implementations](#implementations)
+    - [Java](#java)
+    - [Python](#python)
 5. [Author](#author)
 
 ## Project Overview
