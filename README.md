@@ -1,6 +1,6 @@
 # Codingbat
 ## Table of Contents
-1. Project Overview
+1. [Project Overview](https://github.com/tun67213/Codingbat#project-overview)
 2. Project Structure
 3. Implementations
     - Java
