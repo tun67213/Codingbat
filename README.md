@@ -2,10 +2,11 @@
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. Project Structure
-3. Implementations
+3. How to Compile and Run
+4. Implementations
     - Java
     - Python
-4. [Author](#author)
+5. [Author](#author)
 
 ## Project Overview
 This repository contains solutions to CodingBat problems implemented in both Java and Python.  
