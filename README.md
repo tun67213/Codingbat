@@ -15,11 +15,34 @@ The purpose of this project is to strengthen problem-solving skills, reinforce l
 Each language directory includes a `Main` file that serves as the entry point for executing and testing the implemented methods.
 
 ## How to Compile and Run
-For Java:
+1. Clone the whole repository onto the local computer:
+```bash
+git clone https://github.com/tun67213/Codingbat.git
+```
+2. Navigate into the project directory:
+```bash
+cd Codingbat
+```
+
+---
+
+### Java
+Compile and run the Java implementations:
+
 ```bash
 cd Java
 javac Main.java
 java Main
+```
+
+---
+
+### Python
+Run the Python implementations:
+
+```bash
+cd Python
+python3 Main.py
 ```
 
 ## Author
