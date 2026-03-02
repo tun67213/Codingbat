@@ -46,7 +46,10 @@ diff21(10) → 11
 diff21(21) → 0
 """
 def diff21(n):
-    raise NotImplementedError("Not implemented yet")
+    diff = 21 - n
+    if diff < 0:
+        return -2 * diff
+    return diff
 
 """
 We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. 
