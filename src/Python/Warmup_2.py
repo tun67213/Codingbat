@@ -12,7 +12,7 @@ string_times('Hi', 3) → 'HiHiHi'
 string_times('Hi', 1) → 'Hi'
 """
 def string_times(str, n):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, 
@@ -23,7 +23,7 @@ front_times('Chocolate', 3) → 'ChoChoCho'
 front_times('Abc', 3) → 'AbcAbcAbc'
 """
 def front_times(str, n):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
@@ -33,7 +33,7 @@ string_bits('Hi') → 'H'
 string_bits('Heeololeo') → 'Hello'
 """
 def string_bits(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given a non-empty string like "Code" return a string like "CCoCodCode".
@@ -43,7 +43,7 @@ string_splosion('abc') → 'aababc'
 string_splosion('ab') → 'aab'
 """
 def string_splosion(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given a string, return the count of the number of times that a substring length 2 appears in the string 
@@ -54,7 +54,7 @@ last2('xaxxaxaxx') → 1
 last2('axxxaaxx') → 2
 """
 def last2(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 
 """
@@ -65,7 +65,7 @@ array_count9([1, 9, 9]) → 2
 array_count9([1, 9, 9, 3, 9]) → 3
 """
 def array_count9(nums):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
@@ -75,7 +75,7 @@ array_front9([1, 2, 3, 4, 9]) → False
 array_front9([1, 2, 3, 4, 5]) → False
 """
 def array_front9(nums):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 
 """
@@ -86,7 +86,7 @@ array123([1, 1, 2, 4, 1]) → False
 array123([1, 1, 2, 1, 2, 3]) → True
 """
 def array123(nums):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. 
@@ -97,7 +97,7 @@ string_match('abc', 'abc') → 2
 string_match('abc', 'axc') → 0
 """
 def string_match(a, b):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 def main():
     welcome()

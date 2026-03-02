@@ -11,7 +11,7 @@ cigar_party(50, False) → True
 cigar_party(70, True) → True
 """
 def cigar_party(cigars, is_weekend):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 You and your date are trying to get a table at a restaurant. The parameter "you" is the stylishness of your clothes, in the range 0..10, and "date" is the stylishness of your date's clothes. The result getting the table is encoded as an int value with 0=no, 1=maybe, 2=yes. If either of you is very stylish, 8 or more, then the result is 2 (yes). With the exception that if either of you has style of 2 or less, then the result is 0 (no). Otherwise the result is 1 (maybe).
@@ -21,7 +21,7 @@ date_fashion(5, 2) → 0
 date_fashion(5, 5) → 1
 """
 def date_fashion(you, date):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 The squirrels in Palo Alto spend most of the day playing. In particular, they play if the temperature is between 60 and 90 (inclusive). Unless it is summer, then the upper limit is 100 instead of 90. Given an int temperature and a boolean is_summer, return True if the squirrels play and False otherwise.
@@ -31,7 +31,7 @@ squirrel_play(95, False) → False
 squirrel_play(95, True) → True
 """
 def squirrel_play(temp, is_summer):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 You are driving a little too fast, and a police officer stops you. Write code to compute the result, 
@@ -45,7 +45,7 @@ caught_speeding(65, False) → 1
 caught_speeding(65, True) → 0
 """
 def caught_speeding(speed, is_birthday):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, are forbidden, so in that case just return 20.
@@ -55,7 +55,7 @@ sorta_sum(9, 4) → 20
 sorta_sum(10, 11) → 21
 """
 def sorta_sum(a, b):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, 
@@ -68,7 +68,7 @@ alarm_clock(5, False) → '7:00'
 alarm_clock(0, False) → '10:00'
 """
 def alarm_clock(day, vacation):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 The number 6 is a truly great number. Given two int values, a and b, return True if either one is 6. 
@@ -79,7 +79,7 @@ love6(4, 5) → False
 love6(1, 5) → True
 """
 def love6(a, b):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given a number n, return True if n is in the range 1..10, inclusive. 
@@ -90,14 +90,14 @@ in1to10(11, False) → False
 in1to10(11, True) → True
 """
 def in1to10(n ,outside_mode):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given a non-negative number "num", return True if num is within 2 of a multiple of 10. 
 Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2.
 """
 def near_ten(num):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 def main():
     welcome()

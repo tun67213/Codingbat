@@ -14,7 +14,7 @@ make_bricks(3, 1, 9) → False
 make_bricks(3, 2, 10) → True
 """
 def make_bricks(small, big, goal):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count 
@@ -25,7 +25,7 @@ lone_sum(3, 2, 3) → 2
 lone_sum(3, 3, 3) → 0
 """
 def lone_sum(a, b, c):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not count towards the sum and values 
@@ -36,7 +36,7 @@ lucky_sum(1, 2, 13) → 3
 lucky_sum(1, 13, 3) → 1
 """
 def lucky_sum(a, b, c):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given 3 int values, a b c, return their sum. However, if any of the values is a teen -- in the range 13..19 inclusive -- then that 
@@ -49,7 +49,7 @@ no_teen_sum(2, 13, 1) → 3
 no_teen_sum(2, 1, 14) → 3
 """
 def no_teen_sum(a, b, c):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 For this problem, we'll round an int value up to the next multiple of 10 if its rightmost digit is 5 or more, so 15 rounds up to 20. 
@@ -63,7 +63,7 @@ round_sum(12, 13, 14) → 30
 round_sum(6, 4, 4) → 10
 """
 def round_sum(a, b, c):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given three ints, a b c, return True if one of b or c is "close" (differing from a by at most 1), while the other is "far", 
@@ -75,7 +75,7 @@ close_far(1, 2, 3) → False
 close_far(4, 1, 3) → True
 """
 def close_far(a, b, c):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 We want make a package of goal kilos of chocolate. We have small bars (1 kilo each) and big bars (5 kilos each). 
@@ -86,7 +86,7 @@ make_chocolate(4, 1, 10) → -1
 make_chocolate(4, 1, 7) → 2
 """
 def make_chocolate(small, big, goal):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 def main():
     welcome()

@@ -12,7 +12,7 @@ double_char('AAbb') → 'AAAAbbbb'
 double_char('Hi-There') → 'HHii--TThheerree'
 """
 def double_char(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Return the number of times that the string "hi" appears anywhere in the given string.
@@ -22,7 +22,7 @@ count_hi('ABChi hi') → 2
 count_hi('hihi') → 2
 """
 def count_hi(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Return True if the string "cat" and "dog" appear the same number of times in the given string.
@@ -32,7 +32,7 @@ cat_dog('catcat') → False
 cat_dog('1cat1cadodog') → True
 """
 def cat_dog(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Return the number of times that the string "code" appears anywhere in the given string, 
@@ -43,7 +43,7 @@ count_code('codexxcode') → 2
 count_code('cozexxcope') → 2
 """
 def count_code(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Given two strings, return True if either of the strings appears at the very end of the other string, ignoring upper/lower case 
@@ -55,7 +55,7 @@ end_other('AbC', 'HiaBc') → True
 end_other('abc', 'abXabc') → True
 """
 def end_other(a, b):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 """
 Return True if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
@@ -65,7 +65,7 @@ xyz_there('abc.xyz') → False
 xyz_there('xyz.abc') → True
 """
 def xyz_there(str):
-    pass
+    raise NotImplementedError("Not implemented yet")
 
 def main():
     welcome()
