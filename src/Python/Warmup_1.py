@@ -24,7 +24,7 @@ monkey_trouble(False, False) → True
 monkey_trouble(True, False) → False
 """
 def monkey_trouble(a_smile, b_smile):
-    raise NotImplementedError("Not implemented yet")
+    return a_smile == b_smile;
 
 """
 Given two int values, return their sum. Unless the two values are the same, then return double their sum.
