@@ -137,7 +137,9 @@ front3('Chocolate') → 'ChoChoCho'
 front3('abc') → 'abcabcabc'
 """
 def front3(str):
-    raise NotImplementedError("Not implemented yet")
+    if len(str) <= 3:
+        return str + str + str
+    return str[:3] + str[:3] + str[:3]
 
 def main():
     welcome()
