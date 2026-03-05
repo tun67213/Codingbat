@@ -80,7 +80,7 @@ near_hundred(90) → True
 near_hundred(89) → False
 """
 def near_hundred(n):
-    raise NotImplementedError("Not implemented yet")
+    return abs(n - 100) <= 10 or abs(n - 200) <= 10
 
 """
 Given 2 int values, return True if one is negative and one is positive. 
