@@ -103,7 +103,9 @@ not_string('x') → 'not x'
 not_string('not bad') → 'not bad'
 """
 def not_string(str):
-    raise NotImplementedError("Not implemented yet")
+    if len(str) >= 3 and str[:3] == "not":
+        return str
+    return "not " + str
 
 """
 Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive).
