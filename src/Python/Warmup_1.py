@@ -70,7 +70,7 @@ makes10(9, 9) → False
 makes10(1, 9) → True
 """
 def makes10(a, b):
-    raise NotImplementedError("Not implemented yet")
+    return a == 10 or b == 10 or a + b == 10
 
 """
 Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num) computes the absolute value of a number.
