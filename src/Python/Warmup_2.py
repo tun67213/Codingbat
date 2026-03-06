@@ -42,7 +42,10 @@ string_bits('Hi') → 'H'
 string_bits('Heeololeo') → 'Hello'
 """
 def string_bits(str):
-    raise NotImplementedError("Not implemented yet")
+    finalString = ""
+    for i in range(0, len(str), 2):
+        finalString += str[i]
+    return finalString
 
 """
 Given a non-empty string like "Code" return a string like "CCoCodCode".
