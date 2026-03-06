@@ -12,7 +12,10 @@ string_times('Hi', 3) → 'HiHiHi'
 string_times('Hi', 1) → 'Hi'
 """
 def string_times(str, n):
-    raise NotImplementedError("Not implemented yet")
+    finalString = ""
+    for i in range(0, n):
+        finalString += str
+    return finalString
 
 """
 Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, 
