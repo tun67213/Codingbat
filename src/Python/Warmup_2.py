@@ -55,7 +55,10 @@ string_splosion('abc') → 'aababc'
 string_splosion('ab') → 'aab'
 """
 def string_splosion(str):
-    raise NotImplementedError("Not implemented yet")
+    finalAnswer = ""
+    for i in range(1, len(str) + 1):
+        finalAnswer += str[:i]
+    return finalAnswer
 
 """
 Given a string, return the count of the number of times that a substring length 2 appears in the string 
