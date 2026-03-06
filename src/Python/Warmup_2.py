@@ -69,8 +69,14 @@ last2('xaxxaxaxx') → 1
 last2('axxxaaxx') → 2
 """
 def last2(str):
-    raise NotImplementedError("Not implemented yet")
-
+    if len(str) < 2:
+        return 0
+    count = 0
+    theEnd = str[len(str) - 2:]
+    for i in range(0, len(str) - 2):
+        if str[i : i + 2] == theEnd:
+            count += 1
+    return count
 
 """
 Given an array of ints, return the number of 9's in the array.
