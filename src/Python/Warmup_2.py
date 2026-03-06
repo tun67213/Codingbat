@@ -12,7 +12,10 @@ string_times('Hi', 3) → 'HiHiHi'
 string_times('Hi', 1) → 'Hi'
 """
 def string_times(str, n):
-    raise NotImplementedError("Not implemented yet")
+    finalString = ""
+    for i in range(0, n):
+        finalString += str
+    return finalString
 
 """
 Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, 
@@ -23,7 +26,13 @@ front_times('Chocolate', 3) → 'ChoChoCho'
 front_times('Abc', 3) → 'AbcAbcAbc'
 """
 def front_times(str, n):
-    raise NotImplementedError("Not implemented yet")
+    stringToAppend = str
+    if len(stringToAppend) > 3:
+        stringToAppend = str[:3]
+    stringToReturn = ""
+    for i in range(n):
+        stringToReturn += stringToAppend
+    return stringToReturn
 
 """
 Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
