@@ -44,7 +44,7 @@ make_out_word('<<>>', 'WooHoo') → '<<WooHoo>>'
 make_out_word('[[]]', 'word') → '[[word]]'
 """
 def make_out_word(out, word):
-    raise NotImplementedError("Not implemented yet")
+    return out[:2] + word + out[2:]
 
 """
 Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
