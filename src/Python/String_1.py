@@ -22,7 +22,7 @@ make_abba('Yo', 'Alice') → 'YoAliceAliceYo'
 make_abba('What', 'Up') → 'WhatUpUpWhat'
 """
 def make_abba(a, b):
-    raise NotImplementedError("Not implemented yet")
+    return a + b + b + a
 
 """
 The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> 
