@@ -54,7 +54,10 @@ extra_end('ab') → 'ababab'
 extra_end('Hi') → 'HiHiHi'
 """
 def extra_end(str):
-    raise NotImplementedError("Not implemented yet")
+    theEnd = str
+    if len(theEnd) > 2:
+        theEnd = theEnd[len(theEnd) - 2:]
+    return theEnd + theEnd + theEnd
 
 """
 Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "".
