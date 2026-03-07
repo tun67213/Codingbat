@@ -100,8 +100,13 @@ array_front9([1, 2, 3, 4, 9]) → False
 array_front9([1, 2, 3, 4, 5]) → False
 """
 def array_front9(nums):
-    raise NotImplementedError("Not implemented yet")
-
+    search_length = len(nums)
+    if search_length > 4:
+        search_length = 4
+    for i in range(0, search_length):
+        if nums[i] == 9:
+            return True
+    return False
 
 """
 Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
