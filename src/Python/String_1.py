@@ -125,7 +125,9 @@ left2('java') → 'vaja'
 left2('Hi') → 'Hi'
 """
 def left2(str):
-    raise NotImplementedError("Not implemented yet")
+    if len(str) <= 2:
+        return str
+    return str[2:] + str[:2]
 
 def main():
     welcome()
