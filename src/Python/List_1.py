@@ -12,7 +12,9 @@ first_last6([6, 1, 2, 3]) → True
 first_last6([13, 6, 1, 2, 3]) → False
 """
 def first_last6(nums):
-    raise NotImplementedError("Not implemented yet")
+    if len(nums) > 0 and (nums[0] == 6 or nums[len(nums) - 1] == 6):
+        return True
+    return False
 
 """
 Given an array of ints, return True if the array is length 1 or more, and the first element and the last element are equal.
