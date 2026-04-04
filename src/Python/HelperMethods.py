@@ -1,4 +1,6 @@
 callTimes = 0
+def resetCallTimes():
+    callTimes = 0
 def printMethod(methodName):
     global callTimes
     if callTimes > 0:
