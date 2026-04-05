@@ -1,5 +1,5 @@
 
-import HelperMethods
+from HelperMethods import HelperMethods
 
 def welcome():
     print("\nWarmup-1 Functions\n")
