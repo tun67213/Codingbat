@@ -7,3 +7,5 @@ src/Python/__pycache__/Warmup_1.cpython-312.pyc
 .idea/.name
 *.class
 *.pyc
+*.pyc
+src/Python/tempCodeRunnerFile.py
