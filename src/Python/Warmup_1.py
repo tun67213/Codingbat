@@ -1,5 +1,5 @@
 
-import HelperMethods
+from HelperMethods import HelperMethods
 
 def welcome():
     print("\nWarmup-1 Functions\n")
@@ -16,8 +16,7 @@ def sleep_in(weekday, vacation):
     pass
 
 """
-We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. 
-We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.
+We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.
 
 monkey_trouble(True, True) → True
 monkey_trouble(False, False) → True
@@ -47,8 +46,7 @@ def diff21(n):
     pass
 
 """
-We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. 
-We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.
+We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.
 
 parrot_trouble(True, 6) → True
 parrot_trouble(True, 7) → False
@@ -78,8 +76,7 @@ def near_hundred(n):
     pass
 
 """
-Given 2 int values, return True if one is negative and one is positive. 
-Except if the parameter "negative" is True, then return True only if both are negative.
+Given 2 int values, return True if one is negative and one is positive. Except if the parameter "negative" is True, then return True only if both are negative.
 
 pos_neg(1, -1, False) → True
 pos_neg(-1, 1, False) → True
@@ -129,6 +126,7 @@ def front3(str):
     pass
 
 def main():
+    HelperMethods.resetCallTimes()
     welcome()
     HelperMethods.printMethod("sleep_in")
     print(f"sleep_in(False, False) -> {sleep_in(False, False)}")
@@ -208,7 +206,6 @@ def main():
     print(f"pos_neg(-1, 1, False) -> {pos_neg(-1, 1, False)}")
     print(f"pos_neg(-4, -5, True) -> {pos_neg(-4, -5, True)}")
     print(f"pos_neg(-4, -5, False) -> {pos_neg(-4, -5, False)}")
-    print(f"pos_neg(-4, 5, False) -> {pos_neg(-4, -5, False)}")
     print(f"pos_neg(-4, 5, True) -> {pos_neg(-4, 5, True)}")
     print(f"pos_neg(1, 1, False) -> {pos_neg(1, 1, False)}")
     print(f"pos_neg(-1, -1, False) -> {pos_neg(-1, -1, False)}")
@@ -226,8 +223,8 @@ def main():
     HelperMethods.printMethod("not_string")
     print(f"not_string('candy') -> '{not_string('candy')}'")
     print(f"not_string('x') -> '{not_string('x')}'")
-    print(f"not_string('not bad') -> '{not_string('not bad')}")
-    print(f"not_string('bad') -> '{not_string('bad')}")
+    print(f"not_string('not bad') -> '{not_string('not bad')}'")
+    print(f"not_string('bad') -> '{not_string('bad')}'")
     print(f"not_string('not') -> '{not_string('not')}'")
     print(f"not_string('is not') -> '{not_string('is not')}'")
     print(f"not_string('no') -> '{not_string('no')}'")

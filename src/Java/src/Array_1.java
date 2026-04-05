@@ -25,7 +25,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean firstLast6(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums[0] == 6 || nums[nums.length - 1] == 6)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -37,7 +41,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean sameFirstLast(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length > 0 && nums[0] == nums[nums.length - 1])
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -47,7 +55,9 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] makePi()
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		// The phrase new int[] or new String[] or whatever type you desire basically creates an immutable array that cannot be modified.
+		// It can be done in one line like below.
+		return new int[] {3, 1, 4};
 	}
 
 	/**
@@ -59,7 +69,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean commonEnd(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.length > 0 && b.length > 0 && (a[0] == b[0] || a[a.length - 1] == b[b.length - 1]))
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -71,7 +85,23 @@ public class Array_1 extends HelperMethods
 	 */
 	public int sum3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		for(int i = 0; i < nums.length; i++)
+		{
+			sum += nums[i];
+		}
+		return sum;
+	}
+	// Below is an alternative implementation of the sum3() method above, but using a different type of for-loop.
+	// Think about how the method below is the same as the method above.
+	private int sum3_forEach(int[] nums)
+	{
+		int sum = 0;
+		for(int num : nums)
+		{
+			sum += num;
+		}
+		return sum;
 	}
 
 	/**
@@ -83,7 +113,13 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] rotateLeft3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int temp = nums[0];
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			nums[i] = nums[i + 1];
+		}
+		nums[nums.length - 1] = temp;
+		return nums;
 	}
 
 	/**
@@ -95,7 +131,10 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] reverse3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int temp = nums[0];
+		nums[0] = nums[2];
+		nums[2] = temp;
+		return nums;
 	}
 
 	/**
@@ -107,7 +146,13 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] maxEnd3(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int max = nums[0];
+		if(nums[2] > max)
+		{
+			max = nums[2];
+		}
+		nums = new int[] {max, max, max};
+		return nums;
 	}
 
 	/**
@@ -119,7 +164,17 @@ public class Array_1 extends HelperMethods
 	 */
 	public int sum2(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int len = nums.length;
+		if(len > 2)
+		{
+			len = 2;
+		}
+		int sum = 0;
+		for(int i = 0; i < len; i++)
+		{
+			sum += nums[i];
+		}
+		return sum;
 	}
 
 	/**
@@ -131,7 +186,7 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] middleWay(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return new int[] {a[1], b[1]};
 	}
 
 	/**
@@ -143,7 +198,13 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] makeEnds(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[2];
+		newArray[0] = nums[0];
+		newArray[1] = nums[nums.length - 1];
+		return newArray;
+		
+		// Think of how the code below is equivalent to what is above. If interested to see if it works, comment the code above, uncomment the line below, and try running it.
+		// return new int[] {nums[0], nums[nums.length - 1]};
 	}
 
 	/**
@@ -155,7 +216,23 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean has23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 2 || nums[i] == 3)
+			{
+				return true;
+			}
+		}
+		return false;
+		// Think of how the code below is the same as that above:
+		// for(int num : nums)
+		// {
+		// 	if(num == 2 || num == 3)
+		// 	{
+		// 		return true;
+		// 	}
+		// }
+		// return false;
 	}
 
 	/**
@@ -167,7 +244,14 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean no23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int num : nums)
+		{
+			if(num == 2 || num == 3)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -179,7 +263,9 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] makeLast(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length * 2];
+		newArray[newArray.length - 1] = nums[nums.length - 1];
+		return newArray;
 	}
 
 	/**
@@ -191,7 +277,19 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean double23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count2 = 0, count3 = 0;
+		for(int num : nums)
+		{
+			if(num == 2)
+			{
+				count2++;
+			}
+			if(num == 3)
+			{
+				count3++;
+			}
+		}
+		return count2 == 2 || count3 == 2;
 	}
 
 	/**
@@ -203,7 +301,14 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] fix23(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 2 && nums[i + 1] == 3)
+			{
+				nums[i + 1] = 0;
+			}
+		}
+		return nums;
 	}
 
 	/**
@@ -215,7 +320,16 @@ public class Array_1 extends HelperMethods
 	 */
 	public int start1(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		if(a.length > 0 && a[0] == 1)
+		{
+			count++;
+		}
+		if(b.length > 0 && b[0] == 1)
+		{
+			count++;
+		}
+		return count;
 	}
 
 	/**
@@ -227,7 +341,18 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] biggerTwo(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sumA = 0;
+		int sumB = 0;
+		for(int i = 0; i < a.length; i++)
+		{
+			sumA += a[i];
+			sumB += b[i];
+		}
+		if(sumB > sumA)
+		{
+			return b;
+		}
+		return a;
 	}
 
 	/**
@@ -239,7 +364,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] makeMiddle(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 2)
+		{
+			return nums;
+		}
+		return new int[] {nums[nums.length / 2 - 1], nums[nums.length / 2]};
 	}
 
 	/**
@@ -251,7 +380,17 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] plusTwo(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[a.length + b.length];
+		int currentSize = 0;
+		for(int value : a)
+		{
+			newArray[currentSize++] = value;
+		}
+		for(int value : b)
+		{
+			newArray[currentSize++] = value;
+		}
+		return newArray;
 	}
 
 	/**
@@ -263,7 +402,14 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] swapEnds(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length < 2)
+		{
+			return nums;
+		}
+		int temp = nums[0];
+		nums[0] = nums[nums.length - 1];
+		nums[nums.length - 1] = temp;
+		return nums;
 	}
 
 	/**
@@ -275,7 +421,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] midThree(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 3)
+		{
+			return nums;
+		}
+		return new int[] {nums[nums.length / 2 - 1], nums[nums.length / 2], nums[nums.length / 2 + 1]};
 	}
 
 	/**
@@ -287,7 +437,16 @@ public class Array_1 extends HelperMethods
 	 */
 	public int maxTriple(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int max = nums[0];
+		if(nums[nums.length  / 2] > max)
+		{
+			max = nums[nums.length / 2];
+		}
+		if(nums[nums.length - 1] > max)
+		{
+			max = nums[nums.length - 1];
+		}
+		return max;
 	}
 
 	/**
@@ -299,7 +458,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] frontPiece(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 2)
+		{
+			return nums;
+		}
+		return new int[] {nums[0], nums[1]};
 	}
 
 	/**
@@ -311,7 +474,11 @@ public class Array_1 extends HelperMethods
 	 */
 	public boolean unlucky1(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if((nums.length >= 2 && ((nums[0] == 1 && nums[1] == 3) || (nums[nums.length - 2] == 1 && nums[nums.length - 1] == 3))) || (nums.length >= 3 && ((nums[1] == 1 && nums[2] == 3) || (nums[nums.length - 3] == 1 && nums[nums.length - 2] == 3))))
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -323,7 +490,23 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] make2(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.length >= 2)
+		{
+			return new int[] {a[0], a[1]};
+		}
+		if(a.length >= 1)
+		{
+			if(b.length >= 1)
+			{
+				return new int[] {a[0], b[0]};
+			}
+			return a;
+		}
+		if(b.length >= 2)
+		{
+			return new int[] {b[0], b[1]};
+		}
+		return b;
 	}
 
 	/**
@@ -335,7 +518,26 @@ public class Array_1 extends HelperMethods
 	 */
 	public int[] front11(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int size = 0;
+		if(a.length > 0)
+		{
+			size++;
+		}
+		if(b.length > 0)
+		{
+			size++;
+		}
+		int[] newArray = new int[size];
+		int currentSize = 0;
+		if(a.length > 0)
+		{
+			newArray[currentSize++] = a[0];
+		}
+		if(b.length > 0)
+		{
+			newArray[currentSize++] = b[0];
+		}
+		return newArray;
 	}
 
 	/**
@@ -343,7 +545,7 @@ public class Array_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("firstLast6");
 		System.out.println("firstLast6([1, 2, 6]) -> " + firstLast6(new int[] {1, 2, 6}));

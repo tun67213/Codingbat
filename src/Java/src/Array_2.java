@@ -24,7 +24,15 @@ public class Array_2 extends HelperMethods
 	 */
 	public int countEvens(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int num : nums)
+		{
+			if(num % 2 == 0)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -36,7 +44,19 @@ public class Array_2 extends HelperMethods
 	 */
 	public int bigDiff(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int min = nums[0], max = nums[0];
+		for(int num : nums)
+		{
+			if(num < min)
+			{
+				min = num;
+			}
+			if(num > max)
+			{
+				max = num;
+			}
+		}
+		return max - min;
 	}
 
 	/**
@@ -48,7 +68,25 @@ public class Array_2 extends HelperMethods
 	 */
 	public int centeredAverage(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		int min = nums[0];
+		int max = nums[0];
+		for(int num : nums)
+		{
+			sum += num;
+
+			if(num < min)
+			{
+				min = num;
+			}
+
+			if(num > max)
+			{
+				max = num;
+			}
+		}
+		sum = sum - min - max;
+		return sum / (nums.length - 2);
 	}
 
 	/**
@@ -60,7 +98,21 @@ public class Array_2 extends HelperMethods
 	 */
 	public int sum13(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		int i = 0;
+		while(i < nums.length)
+		{
+			if(nums[i] == 13)
+			{
+				i += 2;
+			}
+			else
+			{
+				sum += nums[i];
+				i++;
+			}
+		}
+		return sum;
 	}
 
 	/**
@@ -72,7 +124,24 @@ public class Array_2 extends HelperMethods
 	 */
 	public int sum67(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean found = false;
+		int sum = 0;
+		for(int num : nums)
+		{
+			if(!found && num == 6)
+			{
+				found = true;
+			}
+			else if(found && num == 7)
+			{
+				found = false;
+			}
+			else if(!found)
+			{
+				sum += num;
+			}
+		}
+		return sum;
 	}
 
 	/**
@@ -84,7 +153,18 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean has22(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length < 2)
+		{
+			return false;
+		}
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 2 && nums[i + 1] == 2)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -96,7 +176,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean lucky13(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int num : nums)
+		{
+			if(num == 1 || num == 3)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -108,7 +195,15 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean sum28(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int num : nums)
+		{
+			if(num == 2)
+			{
+				count++;
+			}
+		}
+		return count == 4;
 	}
 
 	/**
@@ -120,7 +215,20 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean more14(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count1 = 0;
+		int count4 = 0;
+		for(int num : nums)
+		{
+			if(num == 1)
+			{
+				count1++;
+			}
+			if(num == 4)
+			{
+				count4++;
+			}
+		}
+		return count1 > count4;
 	}
 
 	/**
@@ -132,7 +240,12 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] fizzArray(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[n];
+		for(int i = 0; i < n; i++)
+		{
+			newArray[i] = i;
+		}
+		return newArray;
 	}
 
 	/**
@@ -144,7 +257,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean only14(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int num : nums)
+		{
+			if(num != 1 && num != 4)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -156,7 +276,12 @@ public class Array_2 extends HelperMethods
 	 */
 	public String[] fizzArray2(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String[] newArray = new String[n];
+		for(int i = 0; i < n; i++)
+		{
+			newArray[i] = String.valueOf(i);
+		}
+		return newArray;
 	}
 
 	/**
@@ -168,7 +293,19 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean no14(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count1 = 0, count4 = 0;
+		for(int num : nums)
+		{
+			if(num == 1)
+			{
+				count1++;
+			}
+			if(num == 4)
+			{
+				count4++;
+			}
+		}
+		return (count1 == 0) || (count4 == 0);
 	}
 
 	/**
@@ -180,7 +317,18 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean isEverywhere(int[] nums, int val)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 1)
+		{
+			return true;
+		}
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] != val && nums[i + 1] != val)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -192,7 +340,23 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean either24(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 1)
+		{
+			return false;
+		}
+		boolean found22 = false, found44 = false;
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 2 && nums[i + 1] == 2)
+			{
+				found22 = true;
+			}
+			if(nums[i] == 4 && nums[i + 1] == 4)
+			{
+				found44 = true;
+			}
+		}
+		return found22 ^ found44;
 	}
 
 	/**
@@ -204,7 +368,17 @@ public class Array_2 extends HelperMethods
 	 */
 	public int matchUp(int[] nums1, int[] nums2)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < nums1.length; i++)
+		{
+			int num1 = nums1[i];
+			int num2 = nums2[i];
+			if(num1 != num2 && Math.abs(num1 - num2) <= 2)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -216,7 +390,18 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean has77(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 7 && nums[i + 1] == 7)
+			{
+				return true;
+			}
+			if(nums[i] == 7 && i + 2 < nums.length && nums[i + 2] == 7)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -228,7 +413,19 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean has12(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean found1 = false;
+		for(int num : nums)
+		{
+			if(num == 1)
+			{
+				found1 = true;
+			}
+			if(found1 && num == 2)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -240,7 +437,22 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean modThree(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length < 3)
+		{
+			return false;
+		}
+		for(int i = 0; i < nums.length - 2; i++)
+		{
+			if((nums[i] % 2 == 0) && (nums[i + 1] % 2 == 0) && (nums[i + 2] % 2 == 0))
+			{
+				return true;
+			}
+			if((nums[i] % 2 == 1) && (nums[i + 1] % 2 == 1) && (nums[i + 2] % 2 == 1))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -252,7 +464,19 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean haveThree(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 3)
+			{
+				count++;
+				if(i > 0 && nums[i - 1] == 3)
+				{
+					return false;
+				}
+			}
+		}
+		return count == 3;
 	}
 
 	/**
@@ -264,7 +488,30 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean twoTwo(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length == 0)
+		{
+			return true;
+		}
+		if(nums.length == 1)
+		{
+			return nums[0] != 2;
+		}
+		if(nums[0] == 2 && nums[1] != 2)
+		{
+			return false;
+		}
+		for(int i = 1; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 2 && !((nums[i + 1] == 2) || (nums[i - 1] == 2)))
+			{
+				return false;
+			}
+		}
+		if(nums[nums.length - 1] == 2)
+		{
+			return nums[nums.length - 2] == 2;
+		}
+		return true;
 	}
 
 	/**
@@ -276,7 +523,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean sameEnds(int[] nums, int len)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < len; i++)
+		{
+			if(nums[i] != nums[nums.length - len + i])
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -288,7 +542,18 @@ public class Array_2 extends HelperMethods
 	 */
 	public boolean tripleUp(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length < 3)
+		{
+			return false;
+		}
+		for(int i = 0; i < nums.length - 2; i++)
+		{
+			if(nums[i] + 1 == nums[i + 1] && nums[i + 1] + 1 == nums[i + 2])
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -300,7 +565,14 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] fizzArray3(int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int length = end - start;
+		int[] fizzArray = new int[length];
+		int size = 0;
+		for(int i = start; i < end; i++)
+		{
+			fizzArray[size++] = i;
+		}
+		return fizzArray;
 	}
 
 	/**
@@ -312,7 +584,17 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] shiftLeft(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 1)
+		{
+			return nums;
+		}
+		int temp = nums[0];
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			nums[i] = nums[i + 1];
+		}
+		nums[nums.length - 1] = temp;
+		return nums;
 	}
 
 	/**
@@ -324,7 +606,21 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] tenRun(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int multipleOf10 = 0;
+		boolean multipleFound = false;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] % 10 == 0)
+			{
+				multipleOf10 = nums[i];
+				multipleFound = true;
+			}
+			else if(multipleFound)
+			{
+				nums[i] = multipleOf10;
+			}
+		}
+		return nums;
 	}
 
 	/**
@@ -336,7 +632,24 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] pre4(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int first4Occurrence = -1;
+		for(int i = nums.length - 1; i >= 0; i--)
+		{
+			if(nums[i] == 4)
+			{
+				first4Occurrence = i;
+			}
+		}
+		if(first4Occurrence == -1)
+		{
+			return nums;
+		}
+		int[] newArray = new int[first4Occurrence];
+		for(int i = 0; i < first4Occurrence; i++)
+		{
+			newArray[i] = nums[i];
+		}
+		return newArray;
 	}
 
 	/**
@@ -348,7 +661,26 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] post4(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int lastOccurrenceOf4 = -1;
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 4)
+			{
+				lastOccurrenceOf4 = i;
+			}
+		}
+		if(lastOccurrenceOf4 == -1)
+		{
+			return nums;
+		}
+		int newArrayLength = nums.length - lastOccurrenceOf4 - 1;
+		int[] newArray = new int[newArrayLength];
+		int currentSize = 0;
+		for(int i = lastOccurrenceOf4 + 1; i < nums.length; i++)
+		{
+			newArray[currentSize++] = nums[i];
+		}
+		return newArray;
 	}
 
 	/**
@@ -360,7 +692,22 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] notAlone(int[] nums, int val)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length > 2)
+		{
+			for(int i = 1; i < nums.length - 1; i++)
+			{
+				if(nums[i] == val && nums[i + 1] != val && nums[i - 1] != val)
+				{
+					int max = nums[i - 1];
+					if(nums[i + 1] > max)
+					{
+						max = nums[i + 1];
+					}
+					nums[i] = max;
+				}
+			}
+		}
+		return nums;
 	}
 
 	/**
@@ -372,7 +719,23 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] zeroFront(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length];
+		int size = 0;
+		for(int num : nums)
+		{
+			if(num == 0)
+			{
+				newArray[size++] = num;
+			}
+		}
+		for(int num : nums)
+		{
+			if(num != 0)
+			{
+				newArray[size++] = num;
+			}
+		}
+		return newArray;
 	}
 
 	/**
@@ -384,7 +747,16 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] withoutTen(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length];
+		int currentSize = 0;
+		for(int num : nums)
+		{
+			if(num != 10)
+			{
+				newArray[currentSize++] = num;
+			}
+		}
+		return newArray;
 	}
 
 	/**
@@ -396,7 +768,22 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] zeroMax(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < nums.length; i++)
+		{
+			if(nums[i] == 0)
+			{
+				int maxOdd = 0;
+				for(int j = i + 1; j < nums.length; j++)
+				{
+					if(nums[j] % 2 == 1 && nums[j] > maxOdd)
+					{
+						maxOdd = nums[j];
+					}
+				}
+				nums[i] = maxOdd;
+			}
+		}
+		return nums;
 	}
 
 	/**
@@ -408,7 +795,23 @@ public class Array_2 extends HelperMethods
 	 */
 	public int[] evenOdd(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[nums.length];
+		int currentSize = 0;
+		for(int num : nums)
+		{
+			if(num % 2 == 0)
+			{
+				newArray[currentSize++] = num;
+			}
+		}
+		for(int num : nums)
+		{
+			if(num % 2 != 0)
+			{
+				newArray[currentSize++] = num;
+			}
+		}
+		return newArray;
 	}
 
 	/**
@@ -420,7 +823,29 @@ public class Array_2 extends HelperMethods
 	 */
 	public String[] fizzBuzz(int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int arrayLength = end - start;
+		String[] fizzBuzzValues = new String[arrayLength];
+		int currentSize = 0;
+		for(int i = start; i < end; i++)
+		{
+			if(i % 15 == 0)
+			{
+				fizzBuzzValues[currentSize++] = "FizzBuzz";
+			}
+			else if(i % 3 == 0)
+			{
+				fizzBuzzValues[currentSize++] = "Fizz";
+			}
+			else if(i % 5 == 0)
+			{
+				fizzBuzzValues[currentSize++] = "Buzz";
+			}
+			else
+			{
+				fizzBuzzValues[currentSize++] = String.valueOf(i);
+			}
+		}
+		return fizzBuzzValues;
 	}
 
 	/**
@@ -428,7 +853,7 @@ public class Array_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("countEvens");
 		System.out.println("countEvens([2, 1, 2, 3, 4]) -> " + countEvens(new int[] {2, 1, 2, 3, 4}));

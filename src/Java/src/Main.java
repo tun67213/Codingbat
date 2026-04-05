@@ -54,5 +54,6 @@ public class Main
 		map2.main(args);
 		functional1.main(args);
 		functional2.main(args);
+		System.out.println("\n\nAnd that concludes all Java implementations for methods in Codingbat.com! I hope you enjoyed it and hope this helps!");
 	}
 }

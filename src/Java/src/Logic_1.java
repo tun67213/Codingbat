@@ -22,7 +22,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean cigarParty(int cigars, boolean isWeekend)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isWeekend)
+		{
+			return cigars >= 40;
+		}
+		return cigars >= 40 && cigars <= 60;
 	}
 
 	/**
@@ -34,7 +38,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int dateFashion(int you, int date)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(you <= 2 || date <= 2)
+		{
+			return 0;
+		}
+		if(you >= 8 || date >= 8)
+		{
+			return 2;
+		}
+		return 1;
 	}
 
 	/**
@@ -46,7 +58,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean squirrelPlay(int temp, boolean isSummer)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(temp < 60)
+		{
+			return false;
+		}
+		if(isSummer)
+		{
+			return temp <= 100;
+		}
+		return temp <= 90;
 	}
 
 	/**
@@ -58,7 +78,27 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int caughtSpeeding(int speed, boolean isBirthday)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isBirthday)
+		{
+			if(speed <= 65)
+			{
+				return 0;
+			}
+			if(speed > 85)
+			{
+				return 2;
+			}
+			return 1;
+		}
+		if(speed <= 60)
+		{
+			return 0;
+		}
+		if(speed > 80)
+		{
+			return 2;
+		}
+		return 1;
 	}
 
 	/**
@@ -70,7 +110,12 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int sortaSum(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = a + b;
+		if(sum >= 10 && sum <= 19)
+		{
+			return 20;
+		}
+		return sum;
 	}
 
 	/**
@@ -82,7 +127,19 @@ public class Logic_1 extends HelperMethods
 	 */
 	public String alarmClock(int day, boolean vacation)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(vacation)
+		{
+			if((day == 0) || (day == 6))
+			{
+				return "off";
+			}
+			return "10:00";
+		}
+		if((day == 0) || (day == 6))
+		{
+			return "10:00";
+		}
+		return "7:00";
 	}
 
 	/**
@@ -94,7 +151,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean love6(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a == 6 || b == 6 || a + b == 6 || Math.abs(a - b) == 6)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -106,7 +167,19 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean in1To10(int n, boolean outsideMode)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(outsideMode)
+		{
+			if(n <= 1 || n >= 10)
+			{
+				return true;
+			}
+			return false;
+		}
+		if(n >= 1 && n <= 10)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -118,7 +191,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean specialEleven(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n % 11 <= 1)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -130,7 +207,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean more20(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (n % 20 == 1) || (n % 20 == 2);
 	}
 
 	/**
@@ -142,7 +219,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean old35(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (n % 3 == 0) ^ (n % 5 == 0);
 	}
 
 	/**
@@ -154,7 +231,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean less20(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return n % 20 >= 18;
 	}
 
 	/**
@@ -166,7 +243,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean nearTen(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (n % 10 >= 8) || (n % 10 <= 2);
 	}
 
 	/**
@@ -178,7 +255,18 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int teenSum(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isTeen(a) || isTeen(b))
+		{
+			return 20;
+		}
+		return a + b;
+	}
+	/**
+	 * The following is a helper method for solving teenSum().
+	 */
+	private boolean isTeen(int a)
+	{
+		return a >= 13 && a <= 19;
 	}
 
 	/**
@@ -190,7 +278,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(isAsleep)
+		{
+			return false;
+		}
+		if(isMorning)
+		{
+			return isMom;
+		}
+		return true;
 	}
 
 	/**
@@ -202,7 +298,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int teaParty(int tea, int candy)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if((tea < 5) || (candy < 5))
+		{
+			return 0;
+		}
+		if((tea >= 2 * candy) || (candy >= 2 * tea))
+		{
+			return 2;
+		}
+		return 1;
 	}
 
 	/**
@@ -214,7 +318,22 @@ public class Logic_1 extends HelperMethods
 	 */
 	public String fizzString(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean startsWithF = (str.length() > 0 && str.substring(0, 1).equals("f"));
+		boolean endsWithB = (str.length() > 0 && str.substring(str.length() - 1).equals("b"));
+
+		if(startsWithF && endsWithB)
+		{
+			return "FizzBuzz";
+		}
+		if(startsWithF)
+		{
+			return "Fizz";
+		}
+		if(endsWithB)
+		{
+			return "Buzz";
+		}
+		return str;
 	}
 
 	/**
@@ -226,7 +345,19 @@ public class Logic_1 extends HelperMethods
 	 */
 	public String fizzString2(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n % 15 == 0)
+		{
+			return "FizzBuzz!";
+		}
+		if(n % 3 == 0)
+		{
+			return "Fizz!";
+		}
+		if(n % 5 == 0)
+		{
+			return "Buzz!";
+		}
+		return n + "!";
 	}
 
 	/**
@@ -238,7 +369,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean twoAsOne(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (a + b == c) || (a + c == b) || (b + c == a);
 	}
 
 	/**
@@ -250,7 +381,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean inOrder(int a, int b, int c, boolean bOk)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(bOk)
+		{
+			return c > b;
+		}
+		return a < b && b < c;
 	}
 
 	/**
@@ -262,7 +397,11 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean inOrderEqual(int a, int b, int c, boolean equalOk)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(equalOk)
+		{
+			return a <= b && b <= c;
+		}
+		return a < b && b < c;
 	}
 
 	/**
@@ -274,7 +413,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean lastDigit(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return a % 10 == b % 10 || a % 10 == c % 10 || b % 10 == c % 10;
 	}
 
 	/**
@@ -286,7 +425,7 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean lessBy10(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 || Math.abs(b - c) >= 10;
 	}
 
 	/**
@@ -298,7 +437,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int withoutDoubles(int die1, int die2, boolean noDoubles)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(noDoubles && die1 == die2)
+		{
+			if(die1 == 6)
+			{
+				return 1 + die2;
+			}
+			return 1 + die1 + die2;
+		}
+		return die1 + die2;
 	}
 
 	/**
@@ -310,7 +457,23 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int maxMod5(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a == b)
+		{
+			return 0;
+		}
+		if(a % 5 == b % 5)
+		{
+			if(a < b)
+			{
+				return a;
+			}
+			return b;
+		}
+		if(a > b)
+		{
+			return a;
+		}
+		return b;
 	}
 
 	/**
@@ -322,7 +485,19 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int redTicket(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if((a == 2) && (b == 2) && (c == 2))
+		{
+			return 10;
+		}
+		if((a == b) && (a == c))
+		{
+			return 5;
+		}
+		if(a != b && a != c)
+		{
+			return 1;
+		}
+		return 0;
 	}
 
 	/**
@@ -334,7 +509,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int greenTicket(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a != b && a != c && b != c)
+		{
+			return 0;
+		}
+		if(a == b && b == c)
+		{
+			return 20;
+		}
+		return 10;
 	}
 
 	/**
@@ -346,7 +529,16 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int blueTicket(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int ab = a + b, ac = a + c, bc = b + c;
+		if(ab == 10 || ac == 10 || bc == 10)
+		{
+			return 10;
+		}
+		if(ab == ac + 10 || ab == bc + 10)
+		{
+			return 5;
+		}
+		return 0;
 	}
 
 	/**
@@ -358,7 +550,15 @@ public class Logic_1 extends HelperMethods
 	 */
 	public boolean shareDigit(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int leftA = a / 10;
+		int rightA = a  % 10;
+		int leftB = b / 10;
+		int rightB = b % 10;
+		if(leftA == leftB || leftA == rightB || rightA == leftB || rightA == rightB)
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -370,7 +570,12 @@ public class Logic_1 extends HelperMethods
 	 */
 	public int sumLimit(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = a + b;
+		if(String.valueOf(sum).length() > String.valueOf(a).length())
+		{
+			return a;
+		}
+		return sum;
 	}
 
 	/**
@@ -378,14 +583,14 @@ public class Logic_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("cigarParty");
 		System.out.println("cigarParty(30, false) -> " + cigarParty(30, false));
 		System.out.println("cigarParty(50, false) -> " + cigarParty(50, false));
 		System.out.println("cigarParty(70, true) -> " + cigarParty(70, true));
 		System.out.println("cigarParty(30, true) -> " + cigarParty(30, true));
-		System.out.println("cigarParty(50, true) -> " + cigarParty(60, true));
+		System.out.println("cigarParty(50, true) -> " + cigarParty(50, true));
 		System.out.println("cigarParty(60, false) -> " + cigarParty(60, false));
 		System.out.println("cigarParty(61, false) -> " + cigarParty(61, false));
 		System.out.println("cigarParty(40, false) -> " + cigarParty(40, false));
@@ -723,7 +928,7 @@ public class Logic_1 extends HelperMethods
 		System.out.println("lessBy10(10, 7, 1) -> " + lessBy10(10, 7, 1));
 		System.out.println("lessBy10(-10, 2, 2) -> " + lessBy10(-10, 2, 2));
 		System.out.println("lessBy10(2, 11, 11) -> " + lessBy10(2, 11, 11));
-		System.out.println("lessBy10(3, 3, 30) -> " + lessBy10(3, 3, 10));
+		System.out.println("lessBy10(3, 3, 30) -> " + lessBy10(3, 3, 30));
 		System.out.println("lessBy10(3, 3, 3) -> " + lessBy10(3, 3, 3));
 		System.out.println("lessBy10(10, 1, 11) -> " + lessBy10(10, 1, 11));
 		System.out.println("lessBy10(10, 11, 1) -> " + lessBy10(10, 11, 1));

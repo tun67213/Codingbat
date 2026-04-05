@@ -24,7 +24,27 @@ public class Array_3 extends HelperMethods
 	 */
 	public int maxSpan(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 1)
+		{
+			return nums.length;
+		}
+		int maximumSpan = 1;
+		for(int i = 0; i < nums.length; i++)
+		{
+			for(int j = nums.length - 1; j > i; j--)
+			{
+				if(nums[i] == nums[j])
+				{
+					int span = j - i + 1;
+					if(span > maximumSpan)
+					{
+						maximumSpan = span;
+					}
+					break;
+				}
+			}
+		}
+		return maximumSpan;
 	}
 
 	/**
@@ -36,7 +56,32 @@ public class Array_3 extends HelperMethods
 	 */
 	public int[] fix34(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int i = 0;
+		while(i < nums.length && nums[i] != 3)
+		{
+			i++;
+		}
+		int j = i + 1;
+		while(j < nums.length && nums[j] != 4)
+		{
+			j++;
+		}
+		while(i < nums.length)
+		{
+			if(nums[i] == 3)
+			{
+				int temp = nums[i + 1];
+				nums[i + 1] = nums[j];
+				nums[j] = temp;
+
+				while(j < nums.length && nums[j] != 4)
+				{
+					j++;
+				}
+			}
+			i++;
+		}
+		return nums;
 	}
 
 	/**
@@ -48,7 +93,27 @@ public class Array_3 extends HelperMethods
 	 */
 	public int[] fix45(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int i = 0, j = 0;
+		while(j < nums.length && nums[j] != 5)
+		{
+			j++;
+		}
+		while(i < nums.length)
+		{
+			if(nums[i] == 4)
+			{
+				int temp = nums[i + 1];
+				nums[i + 1] = nums[j];
+				nums[j] = temp;
+
+				while((j < nums.length && nums[j] != 5) || j == i + 1)
+				{
+					j++;
+				}
+			}
+			i++;
+		}
+		return nums;
 	}
 
 	/**
@@ -60,7 +125,23 @@ public class Array_3 extends HelperMethods
 	 */
 	public boolean canBalance(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 1; i < nums.length; i++)
+		{
+			int sumLeft = 0, sumRight = 0;
+			for(int j = 0; j < i; j++)
+			{
+				sumLeft += nums[j];
+			}
+			for(int j = i; j < nums.length; j++)
+			{
+				sumRight += nums[j];
+			}
+			if(sumLeft == sumRight)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -72,7 +153,24 @@ public class Array_3 extends HelperMethods
 	 */
 	public boolean linearIn(int[] outer, int[] inner)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int i = 0;
+		int j = 0;
+		while(i < inner.length && j < outer.length)
+		{
+			if(inner[i] > outer[j])
+			{
+				j++;
+			}
+			else if(inner[i] < outer[j])
+			{
+				return false;
+			}
+			else
+			{
+				i++;
+			}
+		}
+		return i == inner.length;
 	}
 
 	/**
@@ -84,7 +182,15 @@ public class Array_3 extends HelperMethods
 	 */
 	public int[] squareUp(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] arr = new int[n * n];
+		for (int group = 1; group <= n; group++)
+		{
+			for (int val = 1; val <= group; val++)
+			{
+				arr[group * n - val] = val;
+			}
+		}
+		return arr;
 	}
 
 	/**
@@ -96,7 +202,18 @@ public class Array_3 extends HelperMethods
 	 */
 	public int[] seriesUp(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int arraySize = n * (n + 1) / 2;
+		int[] seriesArray = new int[arraySize];
+		int currentSize = 0;
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= i; j++)
+			{
+				seriesArray[currentSize] = j;
+				currentSize++;
+			}
+		}
+		return seriesArray;
 	}
 
 	/**
@@ -108,7 +225,28 @@ public class Array_3 extends HelperMethods
 	 */
 	public int maxMirror(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int max = 0;
+		for(int i = 0; i < nums.length; i++)
+		{
+			for(int j = nums.length - 1; j >= 0; j--)
+			{
+				int a = i;
+				int b = j;
+				int count = 0;
+
+				while(a < nums.length && b >= 0 && nums[a] == nums[b])
+				{
+					count++;
+					a++;
+					b--;
+				}
+				if(count > max)
+				{
+					max = count;
+				}
+			}
+		}
+		return max;
 	}
 
 	/**
@@ -120,7 +258,26 @@ public class Array_3 extends HelperMethods
 	 */
 	public int countClumps(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int clumps = 0;
+		int i = 0;
+		while(i < nums.length - 1)
+		{
+			if(nums[i] == nums[i + 1])
+			{
+				clumps++;
+				int value = nums[i];
+
+				while(i < nums.length && nums[i] == value)
+				{
+					i++;
+				}
+			}
+			else
+			{
+				i++;
+			}
+		}
+		return clumps;
 	}
 
 	/**
@@ -128,7 +285,7 @@ public class Array_3 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("maxSpan");
 		System.out.println("maxSpan([1, 2, 1, 1, 3]) -> " + maxSpan(new int[] {1, 2, 1, 1, 3}));
@@ -178,7 +335,7 @@ public class Array_3 extends HelperMethods
 		printMethod("canBalance");
 		System.out.println("canBalance([1, 1, 1, 2, 1]) -> " + canBalance(new int[] {1, 1, 1, 2, 1}));
 		System.out.println("canBalance([2, 1, 1, 2, 1]) -> " + canBalance(new int[] {2, 1, 1, 2, 1}));
-		System.out.println("canBalance([10, 10]) -> " +  canBalance(new int[] {10, 10}));
+		System.out.println("canBalance([10, 10]) -> " + canBalance(new int[] {10, 10}));
 		System.out.println("canBalance([10, 0, 1, -1, 10]) -> " + canBalance(new int[] {10, 0, 1, -1, 10}));
 		System.out.println("canBalance([1, 1, 1, 1, 4]) -> " + canBalance(new int[] {1, 1, 1, 1, 4}));
 		System.out.println("canBalance([2, 1, 1, 1, 4]) -> " + canBalance(new int[] {2, 1, 1, 1, 4}));

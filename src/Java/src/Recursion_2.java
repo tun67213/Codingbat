@@ -22,7 +22,19 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupSum(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(target == 0)
+		{
+			return true;
+		}
+		if(start == nums.length)
+		{
+			return false;
+		}
+		if(groupSum(start + 1, nums, target - nums[start]))
+		{
+			return true;
+		}
+		return groupSum(start + 1, nums, target);
 	}
 
 	/**
@@ -34,7 +46,19 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupSum6(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(start == nums.length)
+		{
+			return target == 0;
+		}
+		if(nums[start] == 6)
+		{
+			return groupSum6(start + 1, nums, target - nums[start]);
+		}
+		if(groupSum6(start + 1, nums, target - nums[start]))
+		{
+			return true;
+		}
+		return groupSum6(start + 1, nums, target);
 	}
 
 	/**
@@ -46,7 +70,19 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupNoAdj(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(target == 0)
+		{
+			return true;
+		}
+		if(start >= nums.length)
+		{
+			return false;
+		}
+		if(groupNoAdj(start + 2, nums, target - nums[start]))
+		{
+			return true;
+		}
+		return groupNoAdj(start + 1, nums, target);
 	}
 
 	/**
@@ -58,7 +94,23 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupSum5(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(start >= nums.length)
+		{
+			return target == 0;
+		}
+		if(nums[start] % 5 == 0)
+		{
+			if(start < nums.length - 1 && nums[start + 1] == 1)
+			{
+				return groupSum5(start + 2, nums, target - nums[start]);
+			}
+			return groupSum5(start + 1, nums, target - nums[start]);
+		}
+		if(groupSum5(start + 1, nums, target - nums[start]))
+		{
+			return true;
+		}
+		return groupSum5(start + 1, nums, target);
 	}
 
 	/**
@@ -70,7 +122,17 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean groupSumClump(int start, int[] nums, int target)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(start >= nums.length)
+		{
+			return target == 0;
+		}
+		int i = start + 1;
+		for(;  i < nums.length && nums[start] == nums[i]; i++);
+		if(groupSumClump(i, nums, target - ((i - start) * nums[start])))
+		{
+			return true;
+		}
+		return groupSumClump(i, nums, target);
 	}
 
 	/**
@@ -82,7 +144,22 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean splitArray(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return sidesAreEqual(nums, 0, 0);
+	}
+	/**
+	 * The following is a helper method for splitArray that will make implement the recursive splitArray method.
+	 */
+	private boolean sidesAreEqual(int[] nums, int i, int balance)
+	{
+		if(i == nums.length)
+		{
+			return (balance == 0);
+		}
+		if(sidesAreEqual(nums, i + 1, balance + nums[i]))
+		{
+			return true;
+		}
+		return sidesAreEqual(nums, i + 1, balance - nums[i]);
 	}
 
 	/**
@@ -94,7 +171,22 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean splitOdd10(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return sidesAreOdd10(nums, 0, 0, 0);
+	}
+	/**
+	 * The following is a helper method for implementing splitOdd10.
+	 */
+	private boolean sidesAreOdd10(int[] nums, int i, int group1, int group2)
+	{
+		if(i == nums.length)
+		{
+			return ((group1 % 2 == 1 && group2 % 10 == 0 || group2 % 2 == 1 && group1 % 10 == 0));
+		}
+		if(sidesAreOdd10(nums, i + 1, group1 + nums[i], group2))
+		{
+			return true;
+		}
+		return sidesAreOdd10(nums, i + 1, group1, group2 + nums[i]);
 	}
 
 	/**
@@ -106,7 +198,30 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public boolean split53(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		return sidesAreEqual53(nums, 0, 0);
+	}
+	/**
+	 * THe following is a helper method for implement split53.
+	 */
+	private boolean sidesAreEqual53(int[] nums, int i, int balance)
+	{
+		if(i == nums.length)
+		{
+			return (balance == 0);
+		}
+		if(nums[i] % 5 == 0)
+		{
+			return sidesAreEqual53(nums, i + 1, balance + nums[i]);
+		}
+		if(nums[i] % 3 == 0)
+		{
+			return sidesAreEqual53(nums, i + 1, balance - nums[i]);
+		}
+		if(sidesAreEqual53(nums, i + 1, balance + nums[i]))
+		{
+			return true;
+		}
+		return sidesAreEqual53(nums, i + 1, balance - nums[i]);
 	}
 
 	/**
@@ -114,7 +229,7 @@ public class Recursion_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("groupSum");
 		System.out.println("groupSum(0, [2, 4, 8], 10) -> " + groupSum(0, new int[] {2, 4, 8}, 10));

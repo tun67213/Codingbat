@@ -22,7 +22,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int factorial(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 1;
+		}
+		return n * factorial(n - 1);
 	}
 
 	/**
@@ -34,7 +38,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int bunnyEars(int bunnies)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(bunnies == 0)
+		{
+			return 0;
+		}
+		return 2 + bunnyEars(bunnies - 1);
 	}
 
 	/**
@@ -46,7 +54,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int fibonacci(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n <= 1)
+		{
+			return n;
+		}
+		return fibonacci(n - 1) + fibonacci(n - 2);
 	}
 
 	/**
@@ -58,7 +70,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int bunnyEars2(int bunnies)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(bunnies == 0)
+		{
+			return 0;
+		}
+		if(bunnies % 2 == 0)
+		{
+			return 3 + bunnyEars2(bunnies - 1);
+		}
+		return 2 + bunnyEars2(bunnies - 1);
 	}
 
 	/**
@@ -70,7 +90,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int triangle(int rows)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(rows == 0)
+		{
+			return 0;
+		}
+		return rows + triangle(rows - 1);
 	}
 
 	/**
@@ -82,7 +106,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int sumDigits(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n <= 9)
+		{
+			return n;
+		}
+		return n % 10 + sumDigits(n / 10);
 	}
 
 	/**
@@ -94,7 +122,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int count7(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 0;
+		}
+		if(n % 10 == 7)
+		{
+			return 1 + count7(n / 10);
+		}
+		return count7(n / 10);
 	}
 
 	/**
@@ -106,7 +142,19 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int count8(int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 0;
+		}
+		if(n % 100 == 88)
+		{
+			return 2 + count8(n / 10);
+		}
+		if(n % 10 == 8)
+		{
+			return 1 + count8(n / 10);
+		}
+		return count8(n / 10);
 	}
 
 	/**
@@ -118,7 +166,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int powerN(int base, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return 1;
+		}
+		return base * powerN(base, n - 1);
 	}
 
 	/**
@@ -130,7 +182,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int countX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0)
+		{
+			return 0;
+		}
+		if(str.substring(0, 1).equals("x"))
+		{
+			return 1 + countX(str.substring(1));
+		}
+		return countX(str.substring(1));
 	}
 
 	/**
@@ -142,7 +202,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int countHi(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 2)
+		{
+			return 0;
+		}
+		if(str.substring(0, 2).equals("hi"))
+		{
+			return 1 + countHi(str.substring(2));
+		}
+		return countHi(str.substring(1));
 	}
 
 	/**
@@ -154,7 +222,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String changeXY(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		if(str.substring(0, 1).equals("x"))
+		{
+			return "y" + changeXY(str.substring(1));
+		}
+		return str.substring(0, 1) + changeXY(str.substring(1));
 	}
 
 	/**
@@ -166,7 +242,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String changePi(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 2)
+		{
+			return str;
+		}
+		if(str.substring(0, 2).equals("pi"))
+		{
+			return "3.14" + changePi(str.substring(2));
+		}
+		return str.substring(0, 1) + changePi(str.substring(1));
 	}
 
 	/**
@@ -178,7 +262,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String noX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		if(str.substring(0, 1).equals("x"))
+		{
+			return noX(str.substring(1));
+		}
+		return str.substring(0, 1) + noX(str.substring(1));
 	}
 
 	/**
@@ -190,7 +282,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public boolean array6(int[] nums, int index)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(index >= nums.length)
+		{
+			return false;
+		}
+		if(nums[index] == 6)
+		{
+			return true;
+		}
+		return array6(nums, index + 1);
 	}
 
 	/**
@@ -202,7 +302,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int array11(int[] nums, int index)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(index >= nums.length)
+		{
+			return 0;
+		}
+		if(nums[index] == 11)
+		{
+			return 1 + array11(nums, index + 1);
+		}
+		return array11(nums, index + 1);
 	}
 
 	/**
@@ -214,7 +322,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public boolean array220(int[] nums, int index)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(nums.length < 2 || index >= nums.length - 1)
+		{
+			return false;
+		}
+		if(nums[index] * 10 == nums[index + 1])
+		{
+			return true;
+		}
+		return array220(nums, index + 1);
 	}
 
 	/**
@@ -226,7 +342,11 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String allStar(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		return str.substring(0, 1) + "*" + allStar(str.substring(1));
 	}
 
 	/**
@@ -238,7 +358,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String pairStar(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.substring(0, 1).equals(str.substring(1, 2)))
+		{
+			return str.substring(0, 1) + "*" + pairStar(str.substring(1));
+		}
+		return str.substring(0, 1) + pairStar(str.substring(1));
 	}
 
 	/**
@@ -250,7 +378,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String endX(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.substring(0, 1).equals("x"))
+		{
+			return endX(str.substring(1)) + "x";
+		}
+		return str.substring(0, 1) + endX(str.substring(1));
 	}
 
 	/**
@@ -262,7 +398,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int countPairs(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 3)
+		{
+			return 0;
+		}
+		if(str.substring(0, 1).equals(str.substring(2, 3)))
+		{
+			return 1 + countPairs(str.substring(1));
+		}
+		return countPairs(str.substring(1));
 	}
 
 	/**
@@ -274,7 +418,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int countAbc(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 3)
+		{
+			return 0;
+		}
+		if(str.substring(0, 3).equals("abc") || str.substring(0, 3).equals("aba"))
+		{
+			return 1 + countAbc(str.substring(1));
+		}
+		return countAbc(str.substring(1));
 	}
 
 	/**
@@ -286,7 +438,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int count11(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 2)
+		{
+			return 0;
+		}
+		if(str.substring(0, 2).equals("11"))
+		{
+			return 1 + count11(str.substring(2));
+		}
+		return count11(str.substring(1));
 	}
 
 	/**
@@ -298,7 +458,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String stringClean(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.substring(0, 1).equals(str.substring(1, 2)))
+		{
+			return stringClean(str.substring(1));
+		}
+		return str.substring(0, 1) + stringClean(str.substring(1));
 	}
 
 	/**
@@ -310,7 +478,19 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int countHi2(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 2)
+		{
+			return 0;
+		}
+		if(str.length() >= 3 && str.substring(0, 3).equals("xhi"))
+		{
+			return countHi2(str.substring(3));
+		}
+		if(str.substring(0, 2).equals("hi"))
+		{
+			return 1 + countHi2(str.substring(2));
+		}
+		return countHi2(str.substring(1));
 	}
 
 	/**
@@ -322,7 +502,23 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public String parenBit(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < 2)
+		{
+			return "";
+		}
+		if(str.startsWith("(") && str.endsWith(")"))
+		{
+			return str;
+		}
+		if(str.startsWith("("))
+		{
+			return parenBit(str.substring(0, str.length() - 1));
+		}
+		if(str.endsWith(")"))
+		{
+			return parenBit(str.substring(1));
+		}
+		return parenBit(str.substring(1, str.length() - 1));
 	}
 
 	/**
@@ -332,9 +528,21 @@ public class Recursion_1 extends HelperMethods
 	 * nestParen("((()))") → true
 	 * nestParen("(((x))") → false
 	 */
-	public String nestParen(String str)
+	public boolean nestParen(String str)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0)
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("(") || str.equals(")"));
+		}
+		if(str.substring(0, 1).equals("(") && str.substring(str.length() - 1).equals(")"))
+		{
+			return nestParen(str.substring(1, str.length() - 1));
+		}
+		return false;
 	}
 
 	/**
@@ -346,7 +554,15 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int strCount(String str, String sub)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() == 0 || sub.length() == 0 || str.length() < sub.length())
+		{
+			return 0;
+		}
+		if(str.substring(0, sub.length()).equals(sub))
+		{
+			return 1 + strCount(str.substring(sub.length()), sub);
+		}
+		return strCount(str.substring(1), sub);
 	}
 
 	/**
@@ -358,7 +574,19 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public boolean strCopies(String str, String sub, int n)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(n == 0)
+		{
+			return true;
+		}
+		if(str.length() < sub.length())
+		{
+			return false;
+		}
+		if(str.substring(0, sub.length()).equals(sub))
+		{
+			return strCopies(str.substring(1), sub, n - 1);
+		}
+		return strCopies(str.substring(1), sub, n);
 	}
 
 	/**
@@ -370,7 +598,19 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public int strDist(String str, String sub)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(str.length() < sub.length())
+		{
+			return 0;
+		}
+		if(!str.startsWith(sub))
+		{
+			return strDist(str.substring(1), sub);
+		}
+		if(!str.endsWith(sub))
+		{
+			return strDist(str.substring(0, str.length() - 1), sub);
+		}
+		return str.length();
 	}
 
 	/**
@@ -378,7 +618,7 @@ public class Recursion_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("factorial");
 		System.out.println("factorial(1) -> " + factorial(1));
@@ -621,7 +861,7 @@ public class Recursion_1 extends HelperMethods
 		System.out.println("countAbc(\"hello\") -> " + countAbc("hello"));
 		System.out.println("countAbc(\"\") -> " + countAbc(""));
 		System.out.println("countAbc(\"ab\") -> " + countAbc("ab"));
-		System.out.println("countAbc(\"aba\"9 -> " + countAbc("aba"));
+		System.out.println("countAbc(\"aba\") -> " + countAbc("aba"));
 		System.out.println("countAbc(\"aca\") -> " + countAbc("aca"));
 		System.out.println("countAbc(\"aaa\") -> " + countAbc("aaa"));
 		printMethod("count11");

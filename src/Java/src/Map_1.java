@@ -1,5 +1,6 @@
 package src;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -24,7 +25,13 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapBully(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a"))
+		{
+			String temporary = map.get("a");
+			map.put("a", "");
+			map.put("b", temporary);
+		}
+		return map;
 	}
 
 	/**
@@ -36,7 +43,13 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapShare(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a"))
+		{
+			String temporary = map.get("a");
+			map.put("b", temporary);
+		}
+		map.remove("c");
+		return map;
 	}
 
 	/**
@@ -48,7 +61,12 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapAB(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a") && map.containsKey("b"))
+		{
+			String temporary = map.get("a") + map.get("b");
+			map.put("ab", temporary);
+		}
+		return map;
 	}
 
 	/**
@@ -60,7 +78,12 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> topping1(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("ice cream"))
+		{
+			map.put("ice cream", "cherry");
+		}
+		map.put("bread", "butter");
+		return map;
 	}
 
 	/**
@@ -72,7 +95,15 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> topping2(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("ice cream"))
+		{
+			map.put("yogurt", map.get("ice cream"));
+		}
+		if(map.containsKey("spinach"))
+		{
+			map.put("spinach", "nuts");
+		}
+		return map;
 	}
 
 	/**
@@ -84,7 +115,15 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> topping3(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("potato"))
+		{
+			map.put("fries", map.get("potato"));
+		}
+		if(map.containsKey("salad"))
+		{
+			map.put("spinach", map.get("salad"));
+		}
+		return map;
 	}
 
 	/**
@@ -96,7 +135,15 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapAB2(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a") && map.containsKey("b"))
+		{
+			if(map.get("a").equals(map.get("b")))
+			{
+				map.remove("a");
+				map.remove("b");
+			}
+		}
+		return map;
 	}
 
 	/**
@@ -108,7 +155,15 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapAB3(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a") && !map.containsKey("b"))
+		{
+			map.put("b", map.get("a"));
+		}
+		else if(!map.containsKey("a") && map.containsKey("b"))
+		{
+			map.put("a", map.get("b"));
+		}
+		return map;
 	}
 
 	/**
@@ -120,7 +175,25 @@ public class Map_1 extends HelperMethods
 	 */
 	public Map<String, String> mapAB4(Map<String, String> map)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		if(map.containsKey("a") && map.containsKey("b"))
+		{
+			String a = map.get("a");
+			String b = map.get("b");
+			if(a.length() > b.length())
+			{
+				map.put("c", a);
+			}
+			else if(b.length() > a.length())
+			{
+				map.put("c", b);
+			}
+			else
+			{
+				map.put("a", "");
+				map.put("b", "");
+			}
+		}
+		return map;
 	}
 
 	/**
@@ -128,83 +201,83 @@ public class Map_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("mapBully");
-		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) -> " + HelperMethods.mapToString(mapBully(Map.of("a", "candy", "b", "dirt"))));
-		System.out.println("mapBully({\"a\": \"candy\"}) -> " + HelperMethods.mapToString(mapBully(Map.of("a", "candy"))));
-		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapBully(Map.of("a", "candy", "b", "carrot", "c", "meh"))));
-		System.out.println("mapBully({\"b\": \"carrot\"}) -> " + HelperMethods.mapToString(mapBully(Map.of("b", "carrot"))));
-		System.out.println("mapBully({\"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapBully(Map.of("c", "meh"))));
-		System.out.println("mapBully({\"a\": \"sparkle\", \"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapBully(Map.of("a", "sparkle", "c", "meh"))));
+		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"dirt\"}) -> " + HelperMethods.mapToString(mapBully(new HashMap<>(Map.of("a", "candy", "b", "dirt")))));
+		System.out.println("mapBully({\"a\": \"candy\"}) -> " + HelperMethods.mapToString(mapBully(new HashMap<>(Map.of("a", "candy")))));
+		System.out.println("mapBully({\"a\": \"candy\", \"b\": \"carrot\", \"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapBully(new HashMap<>(Map.of("a", "candy", "b", "carrot", "c", "meh")))));
+		System.out.println("mapBully({\"b\": \"carrot\"}) -> " + HelperMethods.mapToString(mapBully(new HashMap<>(Map.of("b", "carrot")))));
+		System.out.println("mapBully({\"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapBully(new HashMap<>(Map.of("c", "meh")))));
+		System.out.println("mapBully({\"a\": \"sparkle\", \"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapBully(new HashMap<>(Map.of("a", "sparkle", "c", "meh")))));
 		printMethod("mapShare");
-		System.out.println("mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapShare(Map.of("a", "aaa", "b", "bbb", "c", "ccc"))));
-		System.out.println("mapShare({\"b\": \"xyz\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapShare(Map.of("b", "xyz", "c", "ccc"))));
-		System.out.println("mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) -> " + HelperMethods.mapToString(mapShare(Map.of("a", "aaa", "c", "meh", "d", "hi"))));
-		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"z\": \"zzz\"}) -> " + HelperMethods.mapToString(mapShare(Map.of("a", "xyz", "b", "1234", "c", "yo", "z", "zzz"))));
-		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"d\": \"ddd\", \"e\": \"everything\"}) -> "  + HelperMethods.mapToString(mapShare(Map.of("a", "xyz", "b", "1234", "c", "yo", "d", "ddd", "e", "everything"))));
+		System.out.println("mapShare({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapShare(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "ccc")))));
+		System.out.println("mapShare({\"b\": \"xyz\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapShare(new HashMap<>(Map.of("b", "xyz", "c", "ccc")))));
+		System.out.println("mapShare({\"a\": \"aaa\", \"c\": \"meh\", \"d\": \"hi\"}) -> " + HelperMethods.mapToString(mapShare(new HashMap<>(Map.of("a", "aaa", "c", "meh", "d", "hi")))));
+		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"z\": \"zzz\"}) -> " + HelperMethods.mapToString(mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "z", "zzz")))));
+		System.out.println("mapShare({\"a\": \"xyz\", \"b\": \"1234\", \"c\": \"yo\", \"d\": \"ddd\", \"e\": \"everything\"}) -> "  + HelperMethods.mapToString(mapShare(new HashMap<>(Map.of("a", "xyz", "b", "1234", "c", "yo", "d", "ddd", "e", "everything")))));
 		printMethod("mapAB");
-		System.out.println("mapAB({\"a\": \"Hi\", \"b\": \"There\"}) -> " + HelperMethods.mapToString(mapAB(Map.of("a", "Hi", "b", "There"))));
-		System.out.println("mapAB({\"a\": \"Hi\"}) -> " + HelperMethods.mapToString(mapAB(Map.of("a", "Hi"))));
-		System.out.println("mapAB({\"b\": \"There\"}) -> " + HelperMethods.mapToString(mapAB(Map.of("b", "There"))));
-		System.out.println("mapAB({\"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapAB(Map.of("c", "meh"))));
-		System.out.println("mapAB({\"a\": \"aaa\", \"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB(Map.of("a", "aaa", "ab", "nope", "b", "bbb", "c", "ccc"))));
-		System.out.println("mapAB({\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB(Map.of("ab", "nope", "b", "bbb", "c", "ccc"))));
+		System.out.println("mapAB({\"a\": \"Hi\", \"b\": \"There\"}) -> " + HelperMethods.mapToString(mapAB(new HashMap<>(Map.of("a", "Hi", "b", "There")))));
+		System.out.println("mapAB({\"a\": \"Hi\"}) -> " + HelperMethods.mapToString(mapAB(new HashMap<>(Map.of("a", "Hi")))));
+		System.out.println("mapAB({\"b\": \"There\"}) -> " + HelperMethods.mapToString(mapAB(new HashMap<>(Map.of("b", "There")))));
+		System.out.println("mapAB({\"c\": \"meh\"}) -> " + HelperMethods.mapToString(mapAB(new HashMap<>(Map.of("c", "meh")))));
+		System.out.println("mapAB({\"a\": \"aaa\", \"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB(new HashMap<>(Map.of("a", "aaa", "ab", "nope", "b", "bbb", "c", "ccc")))));
+		System.out.println("mapAB({\"ab\": \"nope\", \"b\": \"bbb\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB(new HashMap<>(Map.of("ab", "nope", "b", "bbb", "c", "ccc")))));
 		printMethod("topping1");
-		System.out.println("topping1({\"ice cream\": \"peanuts\"}) -> " + HelperMethods.mapToString(topping1(Map.of("ice cream", "peanuts"))));
-		System.out.println("topping1({}) -> " + HelperMethods.mapToString(topping1(Map.of())));
-		System.out.println("topping1({\"pancake\": \"syrup\"}) -> " + HelperMethods.mapToString(topping1(Map.of("pancake", "syrup"))));
-		System.out.println("topping1({\"bread\": \"dirt\", \"ice cream\": \"strawberries\"}) -> " + HelperMethods.mapToString(topping1(Map.of("bread", "dirt", "ice cream", "strawberries"))));
-		System.out.println("topping1({\"bread\": \"jam\", \"ice cream\": \"strawberries\", \"salad\": \"oil\"}) -> " + HelperMethods.mapToString(topping1(Map.of("bread", "jam", "ice cream", "strawberries", "salad", "oil"))));
+		System.out.println("topping1({\"ice cream\": \"peanuts\"}) -> " + HelperMethods.mapToString(topping1(new HashMap<>(Map.of("ice cream", "peanuts")))));
+		System.out.println("topping1({}) -> " + HelperMethods.mapToString(topping1(new HashMap<>(Map.of()))));
+		System.out.println("topping1({\"pancake\": \"syrup\"}) -> " + HelperMethods.mapToString(topping1(new HashMap<>(Map.of("pancake", "syrup")))));
+		System.out.println("topping1({\"bread\": \"dirt\", \"ice cream\": \"strawberries\"}) -> " + HelperMethods.mapToString(topping1(new HashMap<>(Map.of("bread", "dirt", "ice cream", "strawberries")))));
+		System.out.println("topping1({\"bread\": \"jam\", \"ice cream\": \"strawberries\", \"salad\": \"oil\"}) -> " + HelperMethods.mapToString(topping1(new HashMap<>(Map.of("bread", "jam", "ice cream", "strawberries", "salad", "oil")))));
 		printMethod("topping2");
-		System.out.println("topping2({\"ice cream\": \"cherry\"}) -> " + HelperMethods.mapToString(topping2(Map.of("ice cream", "cherry"))));
-		System.out.println("topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"}) -> " + HelperMethods.mapToString(topping2(Map.of("spinach", "dirt", "ice cream", "cherry"))));
-		System.out.println("topping2({\"yogurt\": \"salt\"}) -> " + HelperMethods.mapToString(topping2(Map.of("yogurt", "salt"))));
-		System.out.println("topping2({\"yogurt\": \"salt\", \"bread\": \"butter\"}) -> " + HelperMethods.mapToString(topping2(Map.of("yogurt", "salt", "bread", "butter"))));
-		System.out.println("topping2({}) -> " + HelperMethods.mapToString(topping2(Map.of())));
-		System.out.println("topping2({\"ice cream\": \"air\", \"salad\": \"oil\"}) -> " + HelperMethods.mapToString(topping2(Map.of("ice cream", "air", "salad", "oil"))));
+		System.out.println("topping2({\"ice cream\": \"cherry\"}) -> " + HelperMethods.mapToString(topping2(new HashMap<>(Map.of("ice cream", "cherry")))));
+		System.out.println("topping2({\"spinach\": \"dirt\", \"ice cream\": \"cherry\"}) -> " + HelperMethods.mapToString(topping2(new HashMap<>(Map.of("spinach", "dirt", "ice cream", "cherry")))));
+		System.out.println("topping2({\"yogurt\": \"salt\"}) -> " + HelperMethods.mapToString(topping2(new HashMap<>(Map.of("yogurt", "salt")))));
+		System.out.println("topping2({\"yogurt\": \"salt\", \"bread\": \"butter\"}) -> " + HelperMethods.mapToString(topping2(new HashMap<>(Map.of("yogurt", "salt", "bread", "butter")))));
+		System.out.println("topping2({}) -> " + HelperMethods.mapToString(topping2(new HashMap<>(Map.of()))));
+		System.out.println("topping2({\"ice cream\": \"air\", \"salad\": \"oil\"}) -> " + HelperMethods.mapToString(topping2(new HashMap<>(Map.of("ice cream", "air", "salad", "oil")))));
 		printMethod("topping3");
-		System.out.println("topping3({\"potato\": \"ketchup\"}) -> " + HelperMethods.mapToString(topping3(Map.of("potato", "ketchup"))));
-		System.out.println("topping3({\"potato\": \"butter\"}) -> " + HelperMethods.mapToString(topping3(Map.of("potato", "butter"))));
-		System.out.println("topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"}) -> " + HelperMethods.mapToString(topping3(Map.of("salad", "oil", "potato", "ketchup"))));
-		System.out.println("topping3({\"toast\": \"butter\", \"salad\": \"oil\", \"potato\": \"ketchup\"}) -> " + HelperMethods.mapToString(topping3(Map.of("toast", "butter", "salad", "oil", "potato", "ketchup"))));
-		System.out.println("topping3({}) -> " + HelperMethods.mapToString(topping3(Map.of())));
-		System.out.println("topping3({\"salad\": \"pepper\", \"fries\": \"salt\"}) -> " + HelperMethods.mapToString(topping3(Map.of("salad", "pepper", "fries", "salt"))));
+		System.out.println("topping3({\"potato\": \"ketchup\"}) -> " + HelperMethods.mapToString(topping3(new HashMap<>(Map.of("potato", "ketchup")))));
+		System.out.println("topping3({\"potato\": \"butter\"}) -> " + HelperMethods.mapToString(topping3(new HashMap<>(Map.of("potato", "butter")))));
+		System.out.println("topping3({\"salad\": \"oil\", \"potato\": \"ketchup\"}) -> " + HelperMethods.mapToString(topping3(new HashMap<>(Map.of("salad", "oil", "potato", "ketchup")))));
+		System.out.println("topping3({\"toast\": \"butter\", \"salad\": \"oil\", \"potato\": \"ketchup\"}) -> " + HelperMethods.mapToString(topping3(new HashMap<>(Map.of("toast", "butter", "salad", "oil", "potato", "ketchup")))));
+		System.out.println("topping3({}) -> " + HelperMethods.mapToString(topping3(new HashMap<>(Map.of()))));
+		System.out.println("topping3({\"salad\": \"pepper\", \"fries\": \"salt\"}) -> " + HelperMethods.mapToString(topping3(new HashMap<>(Map.of("salad", "pepper", "fries", "salt")))));
 		printMethod("mapAB2");
-		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB2(Map.of("a", "aaa", "b", "aaa", "c", "cake"))));
-		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB2(Map.of("a", "aaa", "b", "bbb"))));
-		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) -> " + HelperMethods.mapToString(mapAB2(Map.of("a", "aaa", "b", "bbb", "c", "aaa"))));
-		System.out.println("mapAB2({\"a\": \"aaa\"}) -> " + HelperMethods.mapToString(mapAB2(Map.of("a", "aaa"))));
-		System.out.println("mapAB2({\"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB2(Map.of("b", "bbb"))));
-		System.out.println("mapAB2({\"a\": \"\", \"b\": \"\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB2(Map.of("a", "", "b", "", "c", "ccc"))));
-		System.out.println("mapAB2({}) -> " + HelperMethods.mapToString(mapAB2(Map.of())));
-		System.out.println("mapAB2({\"a\": \"a\", \"b\": \"b\", \"z\": \"zebra\"}) -> " + HelperMethods.mapToString(mapAB2(Map.of("a", "a", "b", "b", "z", "zebra"))));
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"aaa\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "aaa", "c", "cake")))));
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb")))));
+		System.out.println("mapAB2({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"aaa\"}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "aaa")))));
+		System.out.println("mapAB2({\"a\": \"aaa\"}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of("a", "aaa")))));
+		System.out.println("mapAB2({\"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of("b", "bbb")))));
+		System.out.println("mapAB2({\"a\": \"\", \"b\": \"\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of("a", "", "b", "", "c", "ccc")))));
+		System.out.println("mapAB2({}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of()))));
+		System.out.println("mapAB2({\"a\": \"a\", \"b\": \"b\", \"z\": \"zebra\"}) -> " + HelperMethods.mapToString(mapAB2(new HashMap<>(Map.of("a", "a", "b", "b", "z", "zebra")))));
 		printMethod("mapAB3");
-		System.out.println("mapAB3({\"a\": \"aaa\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("a", "aaa", "c", "cake"))));
-		System.out.println("mapAB3({\"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("b", "bbb", "c", "cake"))));
-		System.out.println("mapAB3({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("a", "aaa", "b", "bbb", "c", "cake"))));
-		System.out.println("mapAB3({\"ccc\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("ccc", "ccc"))));
-		System.out.println("mapAB3({\"c\": \"a\", \"d\": \"b\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("c", "a", "d", "b"))));
-		System.out.println("mapAB3({}) -> " + HelperMethods.mapToString(mapAB3(Map.of())));
-		System.out.println("mapAB3({\"a\": \"\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("a", ""))));
-		System.out.println("mapAB3({\"b\": \"\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("b", ""))));
-		System.out.println("mapAB3({\"a\": \"\", \"b\": \"\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("a", "", "b", ""))));
-		System.out.println("mapAB3({\"aa\": \"aa\", \"a\": \"apple\", \"z\": \"zzz\"}) -> " + HelperMethods.mapToString(mapAB3(Map.of("aa", "aa", "a", "apple", "z", "zzz"))));
+		System.out.println("mapAB3({\"a\": \"aaa\", \"c\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("a", "aaa", "c", "cake")))));
+		System.out.println("mapAB3({\"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("b", "bbb", "c", "cake")))));
+		System.out.println("mapAB3({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "cake")))));
+		System.out.println("mapAB3({\"ccc\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("ccc", "ccc")))));
+		System.out.println("mapAB3({\"c\": \"a\", \"d\": \"b\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("c", "a", "d", "b")))));
+		System.out.println("mapAB3({}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of()))));
+		System.out.println("mapAB3({\"a\": \"\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("a", "")))));
+		System.out.println("mapAB3({\"b\": \"\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("b", "")))));
+		System.out.println("mapAB3({\"a\": \"\", \"b\": \"\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("a", "", "b", "")))));
+		System.out.println("mapAB3({\"aa\": \"aa\", \"a\": \"apple\", \"z\": \"zzz\"}) -> " + HelperMethods.mapToString(mapAB3(new HashMap<>(Map.of("aa", "aa", "a", "apple", "z", "zzz")))));
 		printMethod("mapAB4");
-		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "aaa", "b", "bb", "c", "cake"))));
-		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "aa", "b", "bbb", "c", "cake"))));
-		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "aa", "b", "bbb"))));
-		System.out.println("mapAB4({\"a\": \"aaa\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "aaa"))));
-		System.out.println("mapAB4({\"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("b", "bbb"))));
-		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "aaa", "b", "bbb", "c", "cake"))));
-		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"b\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "a", "b", "b", "c", "cake"))));
-		System.out.println("mapAB4({\"a\": \"\", \"b\": \"b\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "", "b", "b", "c", "cake"))));
-		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "a", "b", "", "c", "cake"))));
-		System.out.println("mapAB4({\"c\": \"cat\", \"d\": \"dog\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("c", "cat", "d", "dog"))));
-		System.out.println("mapAB4({\"ccc\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("ccc", "ccc"))));
-		System.out.println("mapAB4({\"c\": \"a\", \"d\": \"b\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("c", "a", "d", "b"))));
-		System.out.println("mapAB4({}) -> " + HelperMethods.mapToString(mapAB4(Map.of())));
-		System.out.println("mapAB4({\"a\": \"\", \"z\": \"z\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("a", "", "z", "z"))));
-		System.out.println("mapAB4({\"b\": \"\", \"z\": \"z\"}) -> " + HelperMethods.mapToString(mapAB4(Map.of("b", "", "z", "z"))));
+		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "aaa", "b", "bb", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"aa\", \"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "aa", "b", "bbb")))));
+		System.out.println("mapAB4({\"a\": \"aaa\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "aaa")))));
+		System.out.println("mapAB4({\"b\": \"bbb\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("b", "bbb")))));
+		System.out.println("mapAB4({\"a\": \"aaa\", \"b\": \"bbb\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"b\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "a", "b", "b", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"\", \"b\": \"b\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "", "b", "b", "c", "cake")))));
+		System.out.println("mapAB4({\"a\": \"a\", \"b\": \"\", \"c\": \"cake\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "a", "b", "", "c", "cake")))));
+		System.out.println("mapAB4({\"c\": \"cat\", \"d\": \"dog\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("c", "cat", "d", "dog")))));
+		System.out.println("mapAB4({\"ccc\": \"ccc\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("ccc", "ccc")))));
+		System.out.println("mapAB4({\"c\": \"a\", \"d\": \"b\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("c", "a", "d", "b")))));
+		System.out.println("mapAB4({}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of()))));
+		System.out.println("mapAB4({\"a\": \"\", \"z\": \"z\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("a", "", "z", "z")))));
+		System.out.println("mapAB4({\"b\": \"\", \"z\": \"z\"}) -> " + HelperMethods.mapToString(mapAB4(new HashMap<>(Map.of("b", "", "z", "z")))));
 	}
 }

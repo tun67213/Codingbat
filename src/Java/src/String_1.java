@@ -20,9 +20,9 @@ public class String_1 extends HelperMethods
 	 * helloName("Alice") → "Hello Alice!"
 	 * helloName("X") → "Hello X!"
 	 */
-	public String helloName(String str)
+	public String helloName(String name)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return "Hello " + name + "!";
 	}
 
 	/**
@@ -34,7 +34,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String makeAbba(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return a + b + b + a;
 	}
 
 	/**
@@ -46,7 +46,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String makeTags(String tag, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return "<" + tag + ">" + word + "</" + tag + ">";
 	}
 
 	/**
@@ -58,7 +58,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String makeOutWord(String out, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return out.substring(0, 2) + word + out.substring(2);
 	}
 
 	/**
@@ -70,7 +70,12 @@ public class String_1 extends HelperMethods
 	 */
 	public String extraEnd(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String sub = str;
+		if(sub.length() > 2)
+		{
+			sub = sub.substring(sub.length() - 2);
+		}
+		return sub + sub + sub;
 	}
 
 	/**
@@ -82,7 +87,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String firstTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return str.substring(0, 2);
 	}
 
 	/**
@@ -94,7 +103,7 @@ public class String_1 extends HelperMethods
 	 */
 	public String firstHalf(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return str.substring(0, str.length() / 2);
 	}
 
 	/**
@@ -106,7 +115,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String withoutEnd(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return "";
+		}
+		return str.substring(1, str.length() - 1);
 	}
 
 	/**
@@ -118,7 +131,18 @@ public class String_1 extends HelperMethods
 	 */
 	public String comboString(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String min, max;
+		if(a.length() < b.length())
+		{
+			min = a;
+			max = b;
+		}
+		else
+		{
+			min = b;
+			max = a;
+		}
+		return min + max + min;
 	}
 
 	/**
@@ -130,7 +154,19 @@ public class String_1 extends HelperMethods
 	 */
 	public String nonStart(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.isEmpty())
+		{
+			if(b.isEmpty() || b.length() == 1)
+			{
+				return "";
+			}
+			return b.substring(1);
+		}
+		if(b.isEmpty())
+		{
+			return a.substring(1);
+		}
+		return a.substring(1) + b.substring(1);
 	}
 
 	/**
@@ -142,7 +178,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String left2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return str.substring(2) + str.substring(0, 2);
 	}
 
 	/**
@@ -154,7 +194,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String right2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return str.substring(str.length() - 2) + str.substring(0, str.length() - 2);
 	}
 
 	/**
@@ -166,7 +210,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String theEnd(String str, boolean front)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(front)
+		{
+			return str.substring(0, 1);
+		}
+		return str.substring(str.length() - 1);
 	}
 
 	/**
@@ -178,7 +226,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String withouEnd2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return "";
+		}
+		return str.substring(1, str.length() - 1);
 	}
 
 	/**
@@ -190,7 +242,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String middleTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		return str.substring(str.length() / 2 - 1, str.length() / 2 + 1);
 	}
 
 	/**
@@ -202,7 +258,11 @@ public class String_1 extends HelperMethods
 	 */
 	public boolean endsLy(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() >= 2 && str.substring(str.length() - 2).equals("ly"))
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -214,7 +274,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String nTwice(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		return str.substring(0, n) + str.substring(str.length() - n);
 	}
 
 	/**
@@ -226,7 +290,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String twoChar(String str, int index)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(index < 0 || index >= str.length() - 1)
+		{
+			return str.substring(0, 2);
+		}
+		return str.substring(index, index + 2);
 	}
 
 	/**
@@ -238,7 +306,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String middleThree(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 3)
+		{
+			return str;
+		}
+		return str.substring(str.length() / 2 - 1, str.length() / 2 + 2);
 	}
 
 	/**
@@ -250,7 +322,11 @@ public class String_1 extends HelperMethods
 	 */
 	public boolean hasBad(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		return str.substring(0, 3).equals("bad") || (str.length() >= 4 && str.substring(1, 4).equals("bad"));
 	}
 
 	/**
@@ -262,7 +338,15 @@ public class String_1 extends HelperMethods
 	 */
 	public String atFirst(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return "@@";
+		}
+		if(str.length() == 1)
+		{
+			return str + "@";
+		}
+		return str.substring(0, 2);
 	}
 
 	/**
@@ -274,7 +358,24 @@ public class String_1 extends HelperMethods
 	 */
 	public String lastChars(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		if(a.length() == 0)
+		{
+			finalAnswer += "@";
+		}
+		else
+		{
+			finalAnswer += a.substring(0, 1);
+		}
+		if(b.length() == 0)
+		{
+			finalAnswer += "@";
+		}
+		else
+		{
+			finalAnswer += b.substring(b.length() - 1);
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -286,7 +387,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String conCat(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.length() > 0 && b.length() > 0 && a.substring(a.length() - 1).equals(b.substring(0, 1)))
+		{
+			return a + b.substring(1);
+		}
+		return a + b;
 	}
 
 	/**
@@ -298,7 +403,19 @@ public class String_1 extends HelperMethods
 	 */
 	public String lastTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			return str.substring(1, 2) + str.substring(0, 1);
+		}
+		String newString = "";
+		newString += str.substring(0, str.length() - 2);
+		newString += str.substring(str.length() - 1);
+		newString += str.substring(str.length() - 2, str.length() - 1);
+		return newString;
 	}
 
 	/**
@@ -310,7 +427,15 @@ public class String_1 extends HelperMethods
 	 */
 	public String seeColor(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() >= 3 && str.substring(0, 3).equals("red"))
+		{
+			return "red";
+		}
+		if(str.length() >= 4 && str.substring(0, 4).equals("blue"))
+		{
+			return "blue";
+		}
+		return "";
 	}
 
 	/**
@@ -322,7 +447,11 @@ public class String_1 extends HelperMethods
 	 */
 	public boolean frontAgain(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 2)
+		{
+			return false;
+		}
+		return str.substring(0, 2).equals(str.substring(str.length() - 2));
 	}
 
 	/**
@@ -334,7 +463,12 @@ public class String_1 extends HelperMethods
 	 */
 	public String minCat(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int minimumLength = a.length();
+		if(b.length() < minimumLength)
+		{
+			minimumLength = b.length();
+		}
+		return a.substring(a.length() - minimumLength) + b.substring(b.length() - minimumLength);
 	}
 
 	/**
@@ -346,7 +480,12 @@ public class String_1 extends HelperMethods
 	 */
 	public String extraFront(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String front = str;
+		if(front.length() > 2)
+		{
+			front = front.substring(0, 2);
+		}
+		return front + front + front;
 	}
 
 	/**
@@ -358,7 +497,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String without2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() >= 2 && str.substring(0, 2).equals(str.substring(str.length() - 2)))
+		{
+			return str.substring(2);
+		}
+		return str;
 	}
 
 	/**
@@ -370,7 +513,20 @@ public class String_1 extends HelperMethods
 	 */
 	public String deFront(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalString = "";
+		if(str.length() >= 1 && str.charAt(0) == 'a')
+		{
+			finalString += "a";
+		}
+		if(str.length() >= 2 && str.charAt(1) == 'b')
+		{
+			finalString += "b";
+		}
+		if(str.length() >= 3)
+		{
+			return finalString + str.substring(2);
+		}
+		return finalString;
 	}
 
 	/**
@@ -382,7 +538,11 @@ public class String_1 extends HelperMethods
 	 */
 	public String startWord(String str, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() >= word.length() && str.substring(1, word.length()).equals(word.substring(1)))
+		{
+			return str.substring(0, word.length());
+		}
+		return "";
 	}
 
 	/**
@@ -394,7 +554,49 @@ public class String_1 extends HelperMethods
 	 */
 	public String withoutX(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		if(str.length() == 1)
+		{
+			if(str.equals("x"))
+			{
+				return "";
+			}
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			if(str.equals("xx"))
+			{
+				return "";
+			}
+			if(str.substring(0, 1).equals("x"))
+			{
+				return str.substring(1, 2);
+			}
+			if(str.substring(1, 2).equals("x"))
+			{
+				return str.substring(0, 1);
+			}
+			return str;
+		}
+		boolean startsX = str.substring(0, 1).equals("x");
+		boolean endsX = str.substring(str.length() - 1).equals("x");
+		if(startsX && endsX)
+		{
+			return str.substring(1, str.length() - 1);
+		}
+		if(endsX)
+		{
+			return str.substring(0, str.length() - 1);
+		}
+		if(startsX)
+		{
+			return str.substring(1);
+		}
+		return str;
 	}
 
 	/**
@@ -406,7 +608,49 @@ public class String_1 extends HelperMethods
 	 */
 	public String withoutX2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return "";
+		}
+		if(str.length() == 1)
+		{
+			if(str.equals("x"))
+			{
+				return "";
+			}
+			return str;
+		}
+		if(str.length() == 2)
+		{
+			if(str.substring(0, 1).equals("x") && str.substring(1, 2).equals("x"))
+			{
+				return "";
+			}
+			if(str.substring(0, 1).equals("x"))
+			{
+				return str.substring(1, 2);
+			}
+			if(str.substring(1, 2).equals("x"))
+			{
+				return str.substring(0, 1);
+			}
+			return str;
+		}
+		boolean startsX = str.substring(0, 1).equals("x");
+		boolean secondX = str.substring(1, 2).equals("x");
+		if(startsX && secondX)
+		{
+			return str.substring(2);
+		}
+		if(startsX)
+		{
+			return str.substring(1);
+		}
+		if(secondX)
+		{
+			return str.substring(0, 1) + str.substring(2);
+		}
+		return str;
 	}
 
 	/**
@@ -414,7 +658,7 @@ public class String_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("helloName");
 		System.out.println("helloName(\"Bob\") -> \"" + helloName("Bob") + "\"");

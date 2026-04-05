@@ -22,7 +22,17 @@ public class Logic_2 extends HelperMethods
 	 */
 	public boolean makeBricks(int small, int big, int goal)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int useBig;
+		if(goal / 5 < big)
+		{
+			useBig = goal / 5;
+		}
+		else
+		{
+			useBig = big;
+		}
+		int remaining = goal - useBig * 5;
+		return remaining <= small;
 	}
 
 	/**
@@ -34,7 +44,20 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int loneSum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		if(a != b && a != c)
+		{
+			sum += a;
+		}
+		if(b != a && b != c)
+		{
+			sum += b;
+		}
+		if(c != a && c != b)
+		{
+			sum += c;
+		}
+		return sum;
 	}
 
 	/**
@@ -46,7 +69,19 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int luckySum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a == 13)
+		{
+			return 0;
+		}
+		if(b == 13)
+		{
+			return a;
+		}
+		if(c == 13)
+		{
+			return a + b;
+		}
+		return a + b + c;
 	}
 
 	/**
@@ -58,7 +93,18 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int noTeenSum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return fixTeen(a) + fixTeen(b) + fixTeen(c);
+	}
+	/**
+	 * The following is a helper method to fix numbers in noTeenSum.
+	 */
+	private int fixTeen(int n)
+	{
+		if(n >= 13 && n <= 19 && n != 15 && n != 16)
+		{
+			return 0;
+		}
+		return n;
 	}
 
 	/**
@@ -70,7 +116,18 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int roundSum(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return round10(a) + round10(b) + round10(c);
+	}
+	/**
+	 * The following is a helper method to fix numbers in roundSum.
+	 */
+	private int round10(int n)
+	{
+		if(n % 10 >= 5)
+		{
+			return (n / 10 + 1) * 10;
+		}
+		return n / 10 * 10;
 	}
 
 	/**
@@ -82,8 +139,20 @@ public class Logic_2 extends HelperMethods
 	 */
 	public boolean closeFar(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (isClose(a, b) && isFarFromBoth(c, a, b)) || (isClose(a, c) && isFarFromBoth(b, a, c));
 	}
+	/**
+	 * The following are helper methods to avoid code-repetition in closeFar.
+	 */
+	private boolean isClose(int x, int y)
+	{
+		return Math.abs(x - y) <= 1;
+	}
+	private boolean isFarFromBoth(int far, int other1, int other2)
+	{
+		return Math.abs(far - other1) >= 2 && Math.abs(far - other2) >= 2;
+	}
+
 
 	/**
 	 * Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. Return 0 if they both go over.
@@ -94,7 +163,24 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int blackjack(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		a = fixInt(a);
+		b = fixInt(b);
+		if(b > a)
+		{
+			return b;
+		}
+		return a;
+	}
+	/**
+	 * The following is a helper method for blackjack that will fix the integer to be valid when playing blackjack.
+	 */
+	private int fixInt(int n)
+	{
+		if(n < 0 || n > 21)
+		{
+			return 0;
+		}
+		return n;
 	}
 
 	/**
@@ -106,7 +192,25 @@ public class Logic_2 extends HelperMethods
 	 */
 	public boolean evenlySpaced(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int min = a, max = a;
+		if(b < min)
+		{
+			min = b;
+		}
+		if(c < min)
+		{
+			min = c;
+		}
+		if(b > max)
+		{
+			max = b;
+		}
+		if(c > max)
+		{
+			max = c;
+		}
+		int mid = a + b + c - min - max;
+		return mid - min == max - mid;
 	}
 
 	/**
@@ -118,7 +222,18 @@ public class Logic_2 extends HelperMethods
 	 */
 	public int makeChocolate(int small, int big, int goal)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int maxBig = goal / 5;
+		int bigToUse = big;
+		if(maxBig < bigToUse)
+		{
+			bigToUse = maxBig;
+		}
+		int remainder = goal - 5 * bigToUse;
+		if(remainder <= small)
+		{
+			return remainder;
+		}
+		return -1;
 	}
 
 	/**
@@ -126,7 +241,7 @@ public class Logic_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("makeBricks");
 		System.out.println("makeBricks(3, 1, 8) -> " + makeBricks(3, 1, 8));
@@ -159,7 +274,6 @@ public class Logic_2 extends HelperMethods
 		System.out.println("makeBricks(20, 4, 51) -> " + makeBricks(20, 4, 51));
 		System.out.println("makeBricks(20, 4, 39) -> " + makeBricks(20, 4, 39));
 		printMethod("loneSum");
-		System.out.println("loneSum");
 		System.out.println("loneSum(1, 2, 3) -> " + loneSum(1, 2, 3));
 		System.out.println("loneSum(3, 2, 3) -> " + loneSum(3, 2, 3));
 		System.out.println("loneSum(3, 3, 3) -> " + loneSum(3, 3, 3));
@@ -204,7 +318,7 @@ public class Logic_2 extends HelperMethods
 		System.out.println("roundSum(12, 13, 14) -> " + roundSum(12, 13, 14));
 		System.out.println("roundSum(6, 4, 4) -> " + roundSum(6, 4, 4));
 		System.out.println("roundSum(4, 6, 5) -> " + roundSum(4, 6, 5));
-		System.out.println("roundSUm(4, 4, 6) -> " + roundSum(4, 4, 6));
+		System.out.println("roundSum(4, 4, 6) -> " + roundSum(4, 4, 6));
 		System.out.println("roundSum(9, 4, 4) -> " + roundSum(9, 4, 4));
 		System.out.println("roundSum(0, 0, 1) -> " + roundSum(0, 0, 1));
 		System.out.println("roundSum(0, 9, 0) -> " + roundSum(0, 9, 0));

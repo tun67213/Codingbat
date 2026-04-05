@@ -22,7 +22,18 @@ public class String_2 extends HelperMethods
 	 */
 	public String doubleChar(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return str;
+		}
+		String finalAnswer = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			String characterToAdd = str.substring(i, i + 1);
+			finalAnswer += characterToAdd;
+			finalAnswer += characterToAdd;
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -34,7 +45,19 @@ public class String_2 extends HelperMethods
 	 */
 	public int countHi(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return 0;
+		}
+		int count = 0;
+		for(int i = 0; i < str.length() - 1; i++)
+		{
+			if(str.substring(i, i + 2).equals("hi"))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -46,7 +69,21 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean catDog(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int cats = 0;
+		int dogs = 0;
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			String current = str.substring(i, i + 3);
+			if(current.equals("cat"))
+			{
+				cats++;
+			}
+			if(current.equals("dog"))
+			{
+				dogs++;
+			}
+		}
+		return cats == dogs;
 	}
 
 	/**
@@ -58,7 +95,19 @@ public class String_2 extends HelperMethods
 	 */
 	public int countCode(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 3)
+		{
+			return 0;
+		}
+		int count = 0;
+		for(int i = 0; i < str.length() - 3; i++)
+		{
+			if(str.substring(i, i + 2).equals("co") && str.substring(i + 3, i + 4).equals("e"))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -70,7 +119,9 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean endOther(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String aMod = a.toLowerCase();
+		String bMod = b.toLowerCase();
+		return aMod.endsWith(bMod) || bMod.endsWith(aMod);
 	}
 
 	/**
@@ -82,7 +133,31 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean xyzThere(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		int i = 0;
+		while(i < str.length() - 3)
+		{
+			if(str.substring(i, i + 4).equals(".xyz"))
+			{
+				i += 4;
+			}
+			else if(str.substring(i, i + 3).equals("xyz"))
+			{
+				return true;
+			}
+			else
+			{
+				i++;
+			}
+		}
+		if(str.length() >= 4 && str.substring(i - 1).equals(".xyz"))
+		{
+			return false;
+		}
+		return str.substring(i).equals("xyz");
 	}
 
 	/**
@@ -94,7 +169,18 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean bobThere(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 3)
+		{
+			return false;
+		}
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 1).equals("b") && str.substring(i + 2, i + 3).equals("b"))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -106,7 +192,20 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean xyBalance(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		boolean foundX = false;
+		for(int i = 0; i < str.length(); i++)
+		{
+			String currentCharacter = str.substring(i, i + 1);
+			if(currentCharacter.equals("x"))
+			{
+				foundX = true;
+			}
+			if(foundX && currentCharacter.equals("y"))
+			{
+				foundX = false;
+			}
+		}
+		return !foundX;
 	}
 
 	/**
@@ -118,7 +217,21 @@ public class String_2 extends HelperMethods
 	 */
 	public String mixString(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		String shorterString = a;
+		String longerString = b;
+		if(b.length() < shorterString.length())
+		{
+			shorterString = b;
+			longerString = a;
+		}
+		for(int i = 0; i < shorterString.length(); i++)
+		{
+			finalAnswer += a.substring(i, i + 1);
+			finalAnswer += b.substring(i, i + 1);
+		}
+		finalAnswer += longerString.substring(shorterString.length());
+		return finalAnswer;
 	}
 
 	/**
@@ -130,7 +243,21 @@ public class String_2 extends HelperMethods
 	 */
 	public String repeatEnd(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n == 0)
+		{
+			return "";
+		}
+		String theEnd = str;
+		if(theEnd.length() > n)
+		{
+			theEnd = theEnd.substring(theEnd.length() - n);
+		}
+		String finalAnswer = "";
+		for(int i = 0; i < n; i++)
+		{
+			finalAnswer += theEnd;
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -142,7 +269,12 @@ public class String_2 extends HelperMethods
 	 */
 	public String repeatFront(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		for(int i = n; i > 0; i--)
+		{
+			finalAnswer += str.substring(0, i);
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -154,7 +286,24 @@ public class String_2 extends HelperMethods
 	 */
 	public String repeatSeparator(String word, String sep, int count)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(count == 0)
+		{
+			return "";
+		}
+		if(count == 1)
+		{
+			return word;
+		}
+		String finalAnswer = "";
+		int repetitions = count;
+		while(repetitions > 1)
+		{
+			finalAnswer += word;
+			finalAnswer += sep;
+			repetitions--;
+		}
+		finalAnswer += word;
+		return finalAnswer;
 	}
 
 	/**
@@ -166,7 +315,19 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean prefixAgain(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n == 0)
+		{
+			return true;
+		}
+		String prefix = str.substring(0, n);
+		for(int i = 1; i <= str.length() - n; i++)
+		{
+			if(str.substring(i, i + n).equals(prefix))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -178,7 +339,22 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean xyzMiddle(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int len = str.length();
+		if(len < 3)
+		{
+			return false;
+		}
+
+		for (int i = 0; i <= len - 3; i++)
+		{
+			if (str.startsWith("xyz", i))
+			{
+				int left = i;
+				int right = len - (i + 3);
+				if (Math.abs(left - right) <= 1) return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -190,7 +366,15 @@ public class String_2 extends HelperMethods
 	 */
 	public String getSandwich(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int first = str.indexOf("bread");
+		int last  = str.lastIndexOf("bread");
+
+		if (first == -1 || last == -1 || first == last)
+		{
+			return "";
+		}
+
+		return str.substring(first + 5, last);
 	}
 
 	/**
@@ -202,7 +386,18 @@ public class String_2 extends HelperMethods
 	 */
 	public boolean sameStarChar(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return true;
+		}
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(str.charAt(i) == '*' && str.charAt(i - 1) != str.charAt(i + 1))
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -214,7 +409,13 @@ public class String_2 extends HelperMethods
 	 */
 	public String oneTwo(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		for(int i = 0; i < str.length() - 2; i += 3)
+		{
+			finalAnswer += str.substring(i + 1, i + 3);
+			finalAnswer += str.substring(i, i + 1);
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -226,7 +427,23 @@ public class String_2 extends HelperMethods
 	 */
 	public String zipZap(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		int i = 0;
+		while(i < str.length() - 2)
+		{
+			if(str.substring(i, i + 1).equals("z") && str.substring(i + 2, i + 3).equals("p"))
+			{
+				finalAnswer += "zp";
+				i += 3;
+			}
+			else
+			{
+				finalAnswer += str.substring(i, i + 1);
+				i++;
+			}
+		}
+		finalAnswer += str.substring(i);
+		return finalAnswer;
 	}
 
 	/**
@@ -238,7 +455,24 @@ public class String_2 extends HelperMethods
 	 */
 	public String starOut(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(str.charAt(i) == '*')
+			{
+				continue;
+			}
+			if(i > 0 && str.charAt(i - 1) == '*')
+			{
+				continue;
+			}
+			if(i < str.length() - 1 && str.charAt(i + 1) == '*')
+			{
+				continue;
+			}
+			finalAnswer += str.substring(i, i + 1);
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -250,7 +484,29 @@ public class String_2 extends HelperMethods
 	 */
 	public String plusOut(String str, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		int i = 0;
+		while(i <= str.length() - word.length())
+		{
+			if(str.substring(i, i + word.length()).equals(word))
+			{
+				finalAnswer += word;
+				i += word.length();
+			}
+			else
+			{
+				finalAnswer += "+";
+				i++;
+			}
+		}
+		if(i < str.length())
+		{
+			for(int j = i; j < str.length(); j++)
+			{
+				finalAnswer += "+";
+			}
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -262,7 +518,26 @@ public class String_2 extends HelperMethods
 	 */
 	public String wordEnds(String str, String word)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalAnswer = "";
+		int w = word.length();
+
+		if (str.length() < w) return "";
+
+		for (int i = 0; i <= str.length() - w; i++)
+		{
+			if (str.substring(i, i + w).equals(word))
+			{
+				if (i > 0)
+				{
+					finalAnswer += str.substring(i - 1, i);
+				}
+				if (i + w < str.length())
+				{
+					finalAnswer += str.substring(i + w, i + w + 1);
+				}
+			}
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -270,7 +545,7 @@ public class String_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("doubleChar");
 		System.out.println("doubleChar(\"The\") -> \"" + doubleChar("The") + "\"");

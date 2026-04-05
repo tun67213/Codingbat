@@ -1,6 +1,7 @@
 package src;
 
 import java.util.Map;
+import java.util.HashMap;
 
 /**
  * @author arvindhvelrajan
@@ -12,7 +13,7 @@ public class Map_2 extends HelperMethods
 	 */
 	public void welcome()
 	{
-		System.out.println("\n\nMap-1 Methods\n");
+		System.out.println("\n\nMap-2 Methods\n");
 	}
 
 	/**
@@ -22,9 +23,14 @@ public class Map_2 extends HelperMethods
 	 * word0(["a", "b", "a", "c", "b"]) → {"a": 0, "b": 0, "c": 0}
 	 * word0(["c", "b", "a"]) → {"a": 0, "b": 0, "c": 0}
 	 */
-	public Map<String, Integer> word0(String[] words)
+	public Map<String, Integer> word0(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<>();
+		for(String str : strings)
+		{
+			map.put(str, 0);
+		}
+		return map;
 	}
 
 	/**
@@ -36,7 +42,12 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, Integer> wordLen(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for(String str : strings)
+		{
+			map.put(str, str.length());
+		}
+		return map;
 	}
 
 	/**
@@ -48,7 +59,14 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, String> pairs(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, String> map = new HashMap<>();
+		for(String str : strings)
+		{
+			String first = String.valueOf(str.charAt(0));
+			String last = String.valueOf(str.charAt(str.length() - 1));
+			map.put(first, last);
+		}
+		return map;
 	}
 
 	/**
@@ -60,7 +78,20 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, Integer> wordCount(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<>();
+		for(String str : strings)
+		{
+			if(map.containsKey(str))
+			{
+				int count = map.get(str);
+				map.put(str, count + 1);
+			}
+			else
+			{
+				map.put(str, 1);
+			}
+		}
+		return map;
 	}
 
 	/**
@@ -72,7 +103,21 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, String> firstChar(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, String> map = new HashMap<>();
+		for(String str : strings)
+		{
+			String key = String.valueOf(str.charAt(0));
+			if(map.containsKey(key))
+			{
+				String value = map.get(key) + str;
+				map.put(key, value);
+			}
+			else
+			{
+				map.put(key, str);
+			}
+		}
+		return map;
 	}
 
 	/**
@@ -84,7 +129,26 @@ public class Map_2 extends HelperMethods
 	 */
 	public String wordAppend(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<>();
+		String result = "";
+		for(String str : strings)
+		{
+			if(map.containsKey(str))
+			{
+				int value = map.get(str);
+				value++;
+				if(value % 2 == 0)
+				{
+					result += str;
+				}
+				map.put(str, value);
+			}
+			else
+			{
+				map.put(str, 1);
+			}
+		}
+		return result;
 	}
 
 	/**
@@ -96,7 +160,23 @@ public class Map_2 extends HelperMethods
 	 */
 	public Map<String, Boolean> wordMultiple(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> counts = new HashMap<>();
+		Map<String, Boolean> result = new HashMap<>();
+		for(String str : strings)
+		{
+			if(counts.containsKey(str))
+			{
+				int value = counts.get(str);
+				value++;
+				counts.put(str, value);
+			}
+			else
+			{
+				counts.put(str, 1);
+			}
+			result.put(str, counts.get(str) >= 2);
+		}
+		return result;
 	}
 
 	/**
@@ -108,7 +188,26 @@ public class Map_2 extends HelperMethods
 	 */
 	public String[] allSwap(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for(int i = 0; i < strings.length; i++)
+		{
+			String key = String.valueOf(strings[i].charAt(0));
+
+			if(map.containsKey(key))
+			{
+				int pos = map.get(key);
+				String tmp = strings[pos];
+				strings[pos] = strings[i];
+				strings[i] = tmp ;
+
+				map.remove(key);
+			}
+			else
+			{
+				map.put(key, i);
+			}
+		}
+		return strings;
 	}
 
 	/**
@@ -120,7 +219,29 @@ public class Map_2 extends HelperMethods
 	 */
 	public String[] firstSwap(String[] strings)
 	{
-		throw new UnsupportedOperationException("Not supported yet.");
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for(int i = 0; i < strings.length; i++)
+		{
+			String key = String.valueOf(strings[i].charAt(0));
+			if(map.containsKey(key))
+			{
+				int val = map.get(key);
+				if(val == -1)
+				{
+					continue;
+				}
+				int pos = map.get(key);
+				String tmp = strings[pos];
+				strings[pos] = strings[i];
+				strings[i] = tmp ;
+				map.put(key, -1);
+			}
+			else
+			{
+				map.put(key, i);
+			}
+		}
+		return strings;
 	}
 
 	/**
@@ -128,7 +249,7 @@ public class Map_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("word0");
 		System.out.println("word0([\"a\", \"b\", \"a\", \"b\"]) -> " + HelperMethods.mapToString(word0(new String[] {"a", "b", "a", "b"})));

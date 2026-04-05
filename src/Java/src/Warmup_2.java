@@ -22,7 +22,12 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringTimes(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String sub = "";
+		for(int i = 0; i < n; i++)
+		{
+			sub += str;
+		}
+		return sub;
 	}
 
 	/**
@@ -34,7 +39,17 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String frontTimes(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(n == 0)
+		{
+			return "";
+		}
+		String sub = (str.length() <= 3) ? str : str.substring(0, 3);
+		String finalString = "";
+		for(int i = 0; i < n; i++)
+		{
+			finalString += sub;
+		}
+		return finalString;
 	}
 
 	/**
@@ -46,7 +61,31 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public int countXX(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < str.length() - 1; i++)
+		{
+			if(str.substring(i, i + 2).equals("xx"))
+			{
+				count++;
+			}
+		}
+		return count;
+	}
+	/**
+	 * Think of how this implementation is the exact same as that above.
+	 * If you wish to test this, comment out the code above and instead replace it with the code below.
+	 */
+	private int countXXRecursive(String str)
+	{
+		if(str.length() <= 1)
+		{
+			return 0;
+		}
+		if(str.startsWith("xx"))
+		{
+			return 1 + countXXRecursive(str.substring(1));
+		}
+		return countXXRecursive(str.substring(1));
 	}
 
 	/**
@@ -58,7 +97,39 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean doubleX(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.isEmpty())
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("x"));
+		}
+		int i = 0;
+		while(i < str.length() - 1 && str.charAt(i) != 'x')
+		{
+			i++;
+		}
+		if(str.substring(str.length() - 1).equals("x"))
+		{
+			return str.substring(str.length() - 2, str.length() - 1).equals("x");
+		}
+		return true;
+	}
+	/**
+	 * As for some previous methods above, the method below is a recursive algorithm for doubleX().
+	 */
+	private boolean doubleXRecursive(String str)
+	{
+		if(str.length() <= 1)
+		{
+			return false;
+		}
+		if(str.startsWith("x"))
+		{
+			return str.startsWith("xx");
+		}
+		return doubleXRecursive(str.substring(1));
 	}
 
 	/**
@@ -70,7 +141,16 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringBits(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		String finalString = "";
+		for(int i = 0; i < str.length(); i += 2)
+		{
+			finalString += str.charAt(i);
+		}
+		return finalString;
 	}
 
 	/**
@@ -82,7 +162,12 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringSplosion(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String finalString = "";
+		for(int i = 1; i <= str.length(); i++)
+		{
+			finalString += str.substring(0, i);
+		}
+		return finalString;
 	}
 
 	/**
@@ -94,7 +179,20 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public int last2(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return 0;
+		}
+		int count = 0;
+		String last = str.substring(str.length() - 2);
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 2).equals(last))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -106,7 +204,15 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public int arrayCount9(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int num : nums)
+		{
+			if(num == 9)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -119,7 +225,19 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean arrayFront9(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int endingIndex = 4;
+		if(nums.length < 4)
+		{
+			endingIndex = nums.length;
+		}
+		for(int i = 0; i < endingIndex; i++)
+		{
+			if(nums[i] == 9)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -131,7 +249,18 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean array123(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length < 3)
+		{
+			return false;
+		}
+		for(int i = 0; i < nums.length - 2; i++)
+		{
+			if(nums[i] == 1 && nums[i + 1] == 2 && nums[i + 2] == 3)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -143,7 +272,24 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public int stringMatch(String a, String b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a.length() < 2 || b.length() < 2)
+		{
+			return 0;
+		}
+		int count = 0;
+		int minLength = a.length();
+		if(b.length() < minLength)
+		{
+			minLength = b.length();
+		}
+		for(int i = 0; i < minLength - 1; i++)
+		{
+			if(a.substring(i, i + 2).equals(b.substring(i, i + 2)))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -155,7 +301,21 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringX(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		String finalString = "";
+		finalString += str.substring(0, 1);
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(!(str.substring(i, i + 1).equals("x")))
+			{
+				finalString += str.substring(i, i + 1);
+			}
+		}
+		finalString += str.substring(str.length() - 1);
+		return finalString;
 	}
 
 	/**
@@ -167,7 +327,23 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String altPairs(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str;
+		}
+		String finalAnswer = "";
+		for(int i = 0; i < str.length(); i += 4)
+		{
+			if(i + 1 < str.length())
+			{
+				finalAnswer += str.substring(i, i + 2);
+			}
+			else
+			{
+				finalAnswer += str.substring(i, i + 1);
+			}
+		}
+		return finalAnswer;
 	}
 
 	/**
@@ -179,7 +355,21 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public String stringYak(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String result = "";
+		int i = 0;
+		while(i < str.length())
+		{
+			if(i <= str.length() - 3 && str.charAt(i) == 'y' && str.charAt(i + 2) == 'k')
+			{
+				i += 3;
+			}
+			else
+			{
+				result += str.charAt(i);
+				i++;
+			}
+		}
+		return result;
 	}
 
 	/**
@@ -191,7 +381,15 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public int array667(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < nums.length - 1; i++)
+		{
+			if(nums[i] == 6 && (nums[i + 1] == 6 || nums[i + 1] == 7))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -203,7 +401,18 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean noTriples(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(nums.length <= 2)
+		{
+			return true;
+		}
+		for(int i = 0; i < nums.length - 2; i++)
+		{
+			if(nums[i] == nums[i + 1] && nums[i] == nums[i + 2])
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -215,7 +424,14 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public boolean has271(int[] nums)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < nums.length - 2; i++)
+		{
+			if(nums[i + 1] == nums[i] + 5 && Math.abs(nums[i + 2] - (nums[i] - 1)) <= 2)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -223,7 +439,7 @@ public class Warmup_2 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("stringTimes");
 		System.out.println("stringTimes(\"Hi\", 2) -> \"" + stringTimes("Hi", 2) + "\"");

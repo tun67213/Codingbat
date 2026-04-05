@@ -1,5 +1,8 @@
 package src;
 
+import java.util.List;
+import java.util.ArrayList;
+
 /**
  * @author arvindhvelrajan
  */
@@ -22,7 +25,47 @@ public class String_3 extends HelperMethods
 	 */
 	public int countYZ(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		String[] values = splitString(str);
+		for(String value : values)
+		{
+			if(value.length() > 0 && (value.substring(value.length() - 1).equals("y") || value.substring(value.length() - 1).equals("z")))
+			{
+				count++;
+			}
+		}
+		return count;
+	}
+	/**
+	 * The following is a helper method for countYZ that will split the string into separate words.
+	 */
+	private String[] splitString(String str)
+	{
+		str = str.toLowerCase();
+		String currentString = "";
+		List<String> list = new ArrayList<>();
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(Character.isLetter(str.charAt(i)))
+			{
+				currentString += str.substring(i, i + 1);
+			}
+			else if(currentString.length() > 0)
+			{
+				list.add(currentString);
+				currentString = "";
+			}
+		}
+		if(currentString.length() > 0)
+		{
+			list.add(currentString);
+		}
+		String[] values = new String[list.size()];
+		for(int i = 0; i < list.size(); i++)
+		{
+			values[i] = list.get(i);
+		}
+		return values;
 	}
 
 	/**
@@ -34,7 +77,27 @@ public class String_3 extends HelperMethods
 	 */
 	public String withoutString(String base, String remove)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(base.length() == 0 || remove.length() == 0 || base.length() < remove.length())
+		{
+			return base;
+		}
+		String finalString = "";
+		String modBase = base.toLowerCase(), modRemove = remove.toLowerCase();
+		int i = 0;
+		while(i <= modBase.length() - modRemove.length())
+		{
+			if(modBase.substring(i, i + modRemove.length()).equals(modRemove))
+			{
+				i += modRemove.length();
+			}
+			else
+			{
+				finalString += base.substring(i, i + 1);
+				i++;
+			}
+		}
+		finalString += base.substring(i);
+		return finalString;
 	}
 
 	/**
@@ -44,9 +107,29 @@ public class String_3 extends HelperMethods
 	 * equalIsNot("This is notnot") → true
 	 * equalIsNot("noisxxnotyynotxisi") → true
 	 */
-	public String equalIsNot(String str)
+	public boolean equalIsNot(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 2)
+		{
+			return true;
+		}
+		int countIs = 0, countNot = 0;
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 2).equals("is"))
+			{
+				countIs++;
+			}
+			if(str.substring(i, i + 3).equals("not"))
+			{
+				countNot++;
+			}
+		}
+		if(str.length() >= 2 && str.substring(str.length() - 2).equals("is"))
+		{
+			countIs++;
+		}
+		return countIs == countNot;
 	}
 
 	/**
@@ -58,7 +141,38 @@ public class String_3 extends HelperMethods
 	 */
 	public boolean gHappy(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return true;
+		}
+		if(str.length() == 1)
+		{
+			return !(str.equals("g"));
+		}
+		if(str.length() == 2)
+		{
+			if(str.substring(0, 1).equals("g") || str.substring(1, 2).equals("g"))
+			{
+				return str.equals("gg");
+			}
+			return true;
+		}
+		if(str.substring(0, 1).equals("g") && !(str.substring(1, 2).equals("g")))
+		{
+			return false;
+		}
+		for(int i = 1; i < str.length() - 1; i++)
+		{
+			if(str.substring(i, i + 1).equals("g") && !(str.substring(i - 1, i).equals("g") || str.substring(i + 1, i + 2).equals("g")))
+			{
+				return false;
+			}
+		}
+		if(str.substring(str.length() - 1).equals("g"))
+		{
+			return str.substring(str.length() - 2, str.length() - 1).equals("g");
+		}
+		return true;
 	}
 
 	/**
@@ -70,7 +184,19 @@ public class String_3 extends HelperMethods
 	 */
 	public int countTriple(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 3)
+		{
+			return 0;
+		}
+		int count = 0;
+		for(int i = 0; i < str.length() - 2; i++)
+		{
+			if(str.substring(i, i + 1).equals(str.substring(i + 1, i + 2)) && str.substring(i, i + 1).equals(str.substring(i + 2, i + 3)))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -82,7 +208,19 @@ public class String_3 extends HelperMethods
 	 */
 	public int sumDigits(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return 0;
+		}
+		int sum = 0;
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(Character.isDigit(str.charAt(i)))
+			{
+				sum += Integer.parseInt(str.substring(i, i + 1));
+			}
+		}
+		return sum;
 	}
 
 	/**
@@ -94,7 +232,16 @@ public class String_3 extends HelperMethods
 	 */
 	public String sameEnds(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int current = str.length() / 2;
+		while(current >= 0)
+		{
+			if(str.substring(0, current).equals(str.substring(str.length() - current)))
+			{
+				return str.substring(0, current);
+			}
+			current--;
+		}
+		return "";
 	}
 
 	/**
@@ -106,7 +253,20 @@ public class String_3 extends HelperMethods
 	 */
 	public String mirrorEnds(String string)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String result = "";
+		for(int i = 0; i < string.length(); i++)
+		{
+			if(string.charAt(i) == string.charAt(string.length() - 1 - i))
+			{
+				result += string.substring(i, i + 1);
+			}
+			else
+			{
+				break;
+			}
+		}
+
+		return result;
 	}
 
 	/**
@@ -118,7 +278,32 @@ public class String_3 extends HelperMethods
 	 */
 	public int maxBlock(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() == 0)
+		{
+			return 0;
+		}
+		int max = 1;
+		int count = 1;
+		for(int i = 1; i < str.length(); i++)
+		{
+			if(str.charAt(i) == str.charAt(i - 1))
+			{
+				count++;
+			}
+			else
+			{
+				if(count > max)
+				{
+					max = count;
+				}
+				count = 1;
+			}
+		}
+		if(count > max)
+		{
+			max = count;
+		}
+		return max;
 	}
 
 	/**
@@ -130,7 +315,25 @@ public class String_3 extends HelperMethods
 	 */
 	public int sumNumbers(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		String currentNumber = "";
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(Character.isDigit(str.charAt(i)))
+			{
+				currentNumber += str.substring(i, i + 1);
+			}
+			else if(currentNumber.length() > 0)
+			{
+				sum += Integer.parseInt(currentNumber);
+				currentNumber = "";
+			}
+		}
+		if(currentNumber.length() > 0)
+		{
+			sum += Integer.parseInt(currentNumber);
+		}
+		return sum;
 	}
 
 	/**
@@ -142,7 +345,22 @@ public class String_3 extends HelperMethods
 	 */
 	public String notReplace(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String result = "";
+		int i = 0;
+		while(i < str.length())
+		{
+			if(i < str.length() - 1 && str.substring(i, i + 2).equals("is") && (i == 0 || !Character.isLetter(str.charAt(i - 1))) && (i + 2 >= str.length() || !Character.isLetter(str.charAt(i + 2))))
+			{
+				result += "is not";
+				i += 2;
+			}
+			else
+			{
+				result += str.charAt(i);
+				i++;
+			}
+		}
+		return result;
 	}
 
 	/**
@@ -150,7 +368,7 @@ public class String_3 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("countYZ");
 		System.out.println("countYZ(\"fez day\") -> " + countYZ("fez day"));

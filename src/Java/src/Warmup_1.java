@@ -25,7 +25,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean sleepIn(boolean weekday, boolean vacation)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return vacation || !weekday;
 	}
 
 	/**
@@ -38,7 +38,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean monkeyTrouble(boolean aSmile, boolean bSmile)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return aSmile == bSmile;
 	}
 
 	/**
@@ -50,7 +50,12 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int sumDouble(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = a + b;
+		if(a == b)
+		{
+			return 2 * sum;
+		}
+		return sum;
 	}
 
 	/**
@@ -63,7 +68,12 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int diff21(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int difference = 21 - n;
+		if(difference < 0)
+		{
+			return -2 * difference;
+		}
+		return difference;
 	}
 
 	/**
@@ -76,7 +86,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean parrotTrouble(boolean talking, int hour)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return talking && (hour < 7 || hour > 20);
 	}
 
 	/**
@@ -88,7 +98,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean makes10(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return a == 10 || b == 10 || a + b == 10;
 	}
 
 	/**
@@ -101,7 +111,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean nearHundred(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return Math.abs(n - 100) <= 10 || Math.abs(n - 20) <= 10;
 	}
 
 	/**
@@ -114,7 +124,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean posNeg(int a, int b, boolean negative)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(negative)
+		{
+			return a < 0 && b < 0;
+		}
+		return (a < 0) ^ (b < 0);
 	}
 
 	/**
@@ -127,7 +141,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String notString(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.startsWith("not"))
+		{
+			return str;
+		}
+		return "not " + str;
 	}
 
 	/**
@@ -140,7 +158,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String missingChar(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return str.substring(0, n) + str.substring(n + 1);
 	}
 
 	/**
@@ -152,7 +170,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String frontBack(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		return str.substring(str.length() - 1) + str.substring(1, str.length() - 1) + str.substring(0, 1);
 	}
 
 	/**
@@ -165,7 +187,30 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String front3(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String sub = str;
+		if(sub.length() > 3)
+		{
+			sub = sub.substring(0, 3);
+		}
+		return sub + sub + sub;
+	}
+	/**
+	 * Think of how the code below is the SAME as the code above, just recursive (the method calls itself).
+	 * With each time it runs until the string is of 3 characters, it cuts off one character at the end of the string.
+	 * If you wish to test this method out, comment out the portion with the code above, and instead run this:
+	 * public String front3(String str)
+	 * {
+	 *     return front3Recursive(str);
+	 * }
+	 * This will produce the same result.
+	 */
+	private String front3Recursive(String str)
+	{
+		if(str.length() <= 3)
+		{
+			return str + str + str;
+		}
+		return front3Recursive(str.substring(0, str.length() - 1));
 	}
 
 	/**
@@ -178,7 +223,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String backAround(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str + str + str;
+		}
+		return str.substring(str.length() - 1) + str + str.substring(str.length() - 1);
 	}
 
 	/**
@@ -191,7 +240,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean or35(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (n % 3 == 0) || (n % 5 == 0);
 	}
 
 	/**
@@ -204,7 +253,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String front22(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 2)
+		{
+			return str + str + str;
+		}
+		return str.substring(0, 2) + str + str.substring(0, 2);
 	}
 
 	/**
@@ -216,7 +269,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean startHi(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() < 2)
+		{
+			return false;
+		}
+		return str.startsWith("hi");
 	}
 
 	/**
@@ -228,7 +285,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean icyHot(int temp1, int temp2)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0);
 	}
 
 	/**
@@ -240,7 +297,15 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean in1020(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return inRange(a) || inRange(b);
+	}
+
+	/**
+	 * The method below is a helper method for in1020() to avoid repeating the same set of code twice within one method.
+	 */
+	private boolean inRange(int a)
+	{
+		return a >= 10 && a <= 20;
 	}
 
 	/**
@@ -253,7 +318,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean hasTeen(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return isTeen(a) || isTeen(b) || isTeen(c);
 	}
 
 	/**
@@ -266,7 +331,15 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean loneTeen(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return isTeen(a) ^ isTeen(b);
+	}
+
+	/**
+	 * The following method is a helper method for the above hasTeen() and loneTeen() methods.
+	 */
+	private boolean isTeen(int n)
+	{
+		return n >= 13 && n <= 19;
 	}
 
 	/**
@@ -279,7 +352,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String delDel(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.startsWith("del", 1))
+		{
+			return str.charAt(0) + str.substring(4);
+		}
+		return str;
 	}
 
 	/**
@@ -291,7 +368,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean mixStart(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return str.startsWith("ix", 1);
 	}
 
 	/**
@@ -304,7 +381,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String startOz(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (str.startsWith("o") ? "o" : "") + (str.startsWith("z") ? "z": "");
 	}
 
 	/**
@@ -316,7 +393,15 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int intMax(int a, int b, int c)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a > b && a > c)
+		{
+			return a;
+		}
+		if(b > a && b > c)
+		{
+			return b;
+		}
+		return c;
 	}
 
 	/**
@@ -329,7 +414,16 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int close10(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int modA = Math.abs(a - 10), modB = Math.abs(b - 10);
+		if(modA == modB)
+		{
+			return 0;
+		}
+		if(modB < modA)
+		{
+			return b;
+		}
+		return a;
 	}
 
 	/**
@@ -341,7 +435,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean in3050(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return (a >= 30 && a <= 40 && b >= 30 && b <= 40) || (a >= 40 && a <= 50 && b >= 40 && b <= 50);
 	}
 
 	/**
@@ -354,7 +448,19 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public int max1020(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(a < 10 || a > 20)
+		{
+			a = 0;
+		}
+		if(b < 10 || b > 20)
+		{
+			b = 0;
+		}
+		if(a > b)
+		{
+			return a;
+		}
+		return b;
 	}
 
 	/**
@@ -366,7 +472,15 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean stringE(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < str.length(); i++)
+		{
+			if(str.charAt(i) == 'e')
+			{
+				count++;
+			}
+		}
+		return count >= 1 && count <= 3;
 	}
 
 	/**
@@ -379,7 +493,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public boolean lastDigit(int a, int b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return a % 10 == b % 10;
 	}
 
 	/**
@@ -392,7 +506,11 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String endUp(String str)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 3)
+		{
+			return str.toUpperCase();
+		}
+		return str.substring(0, str.length() - 3) + str.substring(str.length() - 3).toUpperCase();
 	}
 
 	/**
@@ -404,7 +522,16 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public String everyNth(String str, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(str.length() <= 1)
+		{
+			return str;
+		}
+		String finalString = "";
+		for(int i = 0; i < str.length(); i += n)
+		{
+			finalString += str.charAt(i);
+		}
+		return finalString;
 	}
 
 	/**
@@ -412,7 +539,7 @@ public class Warmup_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("sleepIn");
 		System.out.println("sleepIn(false, false) -> " + sleepIn(false, false));
@@ -654,6 +781,7 @@ public class Warmup_1 extends HelperMethods
 		System.out.println("mixStart(\"ni\") -> " + mixStart("ni"));
 		System.out.println("mixStart(\"n\") -> " + mixStart("n"));
 		System.out.println("mixStart(\"\") -> " + mixStart(""));
+		printMethod("startOz");
 		System.out.println("startOz(\"ozymandias\") → \"" + startOz("ozymandias") + "\"");
 		System.out.println("startOz(\"bzoo\") -> \"" + startOz("bzoo") + "\"");
 		System.out.println("startOz(\"oxx\") -> \"" + startOz("oxx") + "\"");

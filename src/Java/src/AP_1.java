@@ -2,6 +2,7 @@ package src;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 
 /**
  * @author arvindhvelrajan
@@ -13,7 +14,7 @@ public class AP_1 extends HelperMethods
 	 */
 	public void welcome()
 	{
-		System.out.println("AP-1 Methods\n");
+		System.out.println("\n\nAP-1 Methods\n");
 	}
 
 	/**
@@ -25,7 +26,14 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean scoresIncreasing(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		for(int i = 0; i < scores.length - 1; i++)
+		{
+			if(scores[i] > scores[i + 1])
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -37,7 +45,18 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean scores100(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(scores.length < 2)
+		{
+			return false;
+		}
+		for(int i = 0; i < scores.length - 1; i++)
+		{
+			if(scores[i] == 100 && scores[i + 1] == 100)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -49,7 +68,18 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean scoresClump(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		if(scores.length <= 2)
+		{
+			return false;
+		}
+		for(int i = 0; i < scores.length - 2; i++)
+		{
+			if((Math.abs(scores[i] - scores[i + 1]) <= 2) && (Math.abs(scores[i] - scores[i + 2]) <= 2) && (Math.abs(scores[i + 1] - scores[i + 2]) <= 2))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -62,19 +92,50 @@ public class AP_1 extends HelperMethods
 	 */
 	public int scoresAverage(int[] scores)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int firstHalf = average(scores, 0, scores.length / 2);
+		int secondHalf = average(scores, scores.length / 2, scores.length);
+		if(firstHalf > secondHalf)
+		{
+			return firstHalf;
+		}
+		return secondHalf;
+	}
+	/**
+	 * The following method is a helper method for scoresAverage created as per the recommendation of the question.
+	 */
+	private int average(int[] scores, int start, int end)
+	{
+		int sum = 0;
+		int length = end - start;
+		for(int i = start; i < end; i++)
+		{
+			sum += scores[i];
+		}
+		if(length == 0)
+		{
+			return 0;
+		}
+		return sum / length;
 	}
 
 	/**
 	 * Given an array of strings, return the count of the number of strings with the given length.
 	 *
-	 * wordsCount(new String[] {}}"a", "bb", "b", "ccc"],}1) → 2
-	 * wordsCount(new String[] {}"a", "bb", "b", "ccc"],}3) → 1
-	 * wordsCount(new String[] {}"a", "bb", "b", "ccc"],}4) → 0
+	 * wordsCount(["a", "bb", "b", "ccc"], 1) → 2
+	 * wordsCount(["a", "bb", "b", "ccc"], 3) → 1
+	 * wordsCount(["a", "bb", "b", "ccc"], 4) → 0
 	 */
 	public int wordsCount(String[] words, int len)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int wordsOfLength = 0;
+		for(String word : words)
+		{
+			if(word.length() == len)
+			{
+				wordsOfLength++;
+			}
+		}
+		return wordsOfLength;
 	}
 
 	/**
@@ -86,7 +147,12 @@ public class AP_1 extends HelperMethods
 	 */
 	public String[] wordsFront(String[] words, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String[] newArray = new String[n];
+		for(int i = 0; i < n; i++)
+		{
+			newArray[i] = words[i];
+		}
+		return newArray;
 	}
 
 	/**
@@ -99,7 +165,15 @@ public class AP_1 extends HelperMethods
 	@SuppressWarnings("rawtypes")
 	public List wordsWithoutList(String[] words, int len)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		List<String> list = new ArrayList<>();
+		for(String word : words)
+		{
+			if(word.length() != len)
+			{
+				list.add(word);
+			}
+		}
+		return list;
 	}
 
 	/**
@@ -111,7 +185,16 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean hasOne(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int currentValue = n;
+		while(currentValue > 0)
+		{
+			if(currentValue % 10 == 1)
+			{
+				return true;
+			}
+			currentValue /= 10;
+		}
+		return false;
 	}
 
 	/**
@@ -123,7 +206,50 @@ public class AP_1 extends HelperMethods
 	 */
 	public boolean dividesSelf(int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] digitsInN = splitValue(n);
+		for(int digit : digitsInN)
+		{
+			if(digit == 0 || n % digit != 0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	/**
+	 * The following is a helper method that will find the current length of an integer.
+	 */
+	private int length(int n)
+	{
+		if(n < 0)
+		{
+			n *= -1;
+		}
+		if(n < 10)
+		{
+			return 1;
+		}
+		int length = 1;
+		while(n >= 10)
+		{
+			n /= 10;
+			length++;
+		}
+		return length;
+	}
+	/**
+	 * The following is a helper method that will split a number into its individual digits.
+	 */
+	private int[] splitValue(int n)
+	{
+		int len = length(n);
+		int[] digits = new int[len];
+		for(int i = 0; i < len; i++)
+		{
+			digits[len - i - 1] = n % 10;
+			n /= 10;
+		}
+		return digits;
 	}
 
 	/**
@@ -135,7 +261,20 @@ public class AP_1 extends HelperMethods
 	 */
 	public int[] copyEvens(int[] nums, int count)
 	{
-		throw new NullPointerException("Not implemented yet");
+		int[] newArray = new int[count];
+		int currentSize = 0;
+		for(int num : nums)
+		{
+			if(num % 2 == 0)
+			{
+				newArray[currentSize++] = num;
+			}
+			if(currentSize == count)
+			{
+				break;
+			}
+		}
+		return newArray;
 	}
 
 	/**
@@ -147,7 +286,25 @@ public class AP_1 extends HelperMethods
 	 */
 	public int[] copyEndy(int[] nums, int count)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int[] newArray = new int[count];
+		int currentSize = 0;
+		int currentIndex = 0;
+		while(currentIndex < nums.length && currentSize < count)
+		{
+			if(isEndy(nums[currentIndex]))
+			{
+				newArray[currentSize++] = nums[currentIndex];
+			}
+			currentIndex++;
+		}
+		return newArray;
+	}
+	/**
+	 * The following is a helper method for copyEndy that will distinguish if each individual value is classified as 'endy'.
+	 */
+	private boolean isEndy(int n)
+	{
+		return (n >= 0 && n <= 10) || (n >= 90 && n <= 100);
 	}
 
 	/**
@@ -159,7 +316,16 @@ public class AP_1 extends HelperMethods
 	 */
 	public int matchUp(String[] a, String[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(int i = 0; i < a.length; i++)
+		{
+			String aString = a[i], bString = b[i];
+			if(aString.length() > 0 && bString.length() > 0 && aString.substring(0, 1).equals(bString.substring(0, 1)))
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -171,7 +337,21 @@ public class AP_1 extends HelperMethods
 	 */
 	public int scoreUp(String[] key, String[] answer)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int score = 0;
+		for(int i = 0; i < key.length; i++)
+		{
+			String correctAnswer = key[i];
+			String studentAnswer = answer[i];
+			if(studentAnswer.equals(correctAnswer))
+			{
+				score += 4;
+			}
+			else if(!(studentAnswer.equals("?")))
+			{
+				score -= 1;
+			}
+		}
+		return score;
 	}
 
 	/**
@@ -183,7 +363,24 @@ public class AP_1 extends HelperMethods
 	 */
 	public String[] wordsWithout(String[] words, String target)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int count = 0;
+		for(String word : words)
+		{
+			if(word.equals(target))
+			{
+				count++;
+			}
+		}
+		String[] result = new String[words.length - count];
+		int index = 0;
+		for(String word : words)
+		{
+			if(!word.equals(target))
+			{
+				result[index++] = word;
+			}
+		}
+		return result;
 	}
 
 	/**
@@ -195,7 +392,22 @@ public class AP_1 extends HelperMethods
 	 */
 	public int scoresSpecial(int[] a, int[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		return findSpecial(a) + findSpecial(b);
+	}
+	/**
+	 * As a support above, this method will find the special value in a given array.
+	 */
+	private int findSpecial(int[] a)
+	{
+		int specialNumber = 0;
+		for(int num : a)
+		{
+			if(num % 10 == 0 && num > specialNumber)
+			{
+				specialNumber = num;
+			}
+		}
+		return specialNumber;
 	}
 
 	/**
@@ -207,7 +419,12 @@ public class AP_1 extends HelperMethods
 	 */
 	public int sumHeights(int[] heights, int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		for(int i = start; i < end; i++)
+		{
+			sum += Math.abs(heights[i] - heights[i + 1]);
+		}
+		return sum;
 	}
 
 	/**
@@ -219,7 +436,21 @@ public class AP_1 extends HelperMethods
 	 */
 	public int sumHeights2(int[] heights, int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int sum = 0;
+		int currentDifference = 0;
+		for(int i = start; i < end; i++)
+		{
+			currentDifference = heights[i] - heights[i + 1];
+			if(currentDifference < 0)
+			{
+				sum += currentDifference * -2;
+			}
+			else
+			{
+				sum += currentDifference;
+			}
+		}
+		return sum;
 	}
 
 	/**
@@ -231,7 +462,17 @@ public class AP_1 extends HelperMethods
 	 */
 	public int bigHeights(int[] heights, int start, int end)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int bigDifferences = 0;
+		int currentDifference = 0;
+		for(int i = start; i < end; i++)
+		{
+			currentDifference = Math.abs(heights[i] - heights[i + 1]);
+			if(currentDifference >= 5)
+			{
+				bigDifferences++;
+			}
+		}
+		return bigDifferences;
 	}
 
 	/**
@@ -243,7 +484,20 @@ public class AP_1 extends HelperMethods
 	 */
 	public int userCompare(String aName, int aId, String bName, int bId)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int nameComparison = aName.compareTo(bName);
+		if(nameComparison != 0)
+		{
+			return nameComparison;
+		}
+		if(aId < bId)
+		{
+			return -1;
+		}
+		if(aId > bId)
+		{
+			return 1;
+		}
+		return 0;
 	}
 
 	/**
@@ -255,7 +509,30 @@ public class AP_1 extends HelperMethods
 	 */
 	public String[] mergeTwo(String[] a, String[] b, int n)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		String[] result = new String[n];
+		int i = 0;
+		int j = 0;
+		int k = 0;
+		while(k < n)
+		{
+			int comparison = a[i].compareTo(b[j]);
+
+			if(comparison < 0)
+			{
+				result[k++] = a[i++];
+			}
+			else if(comparison > 0)
+			{
+				result[k++] = b[j++];
+			}
+			else
+			{
+				result[k++] = a[i];
+				i++;
+				j++;
+			}
+		}
+		return result;
 	}
 
 	/**
@@ -267,7 +544,39 @@ public class AP_1 extends HelperMethods
 	 */
 	public int commonTwo(String[] a, String[] b)
 	{
-		throw new UnsupportedOperationException("Not implemented yet");
+		int i = 0;
+		int j = 0;
+		int count = 0;
+		while(i < a.length && j < b.length)
+		{
+			int comparison = a[i].compareTo(b[j]);
+
+			if(comparison < 0)
+			{
+				i++;
+			}
+			else if(comparison > 0)
+			{
+				j++;
+			}
+			else
+			{
+				count++;
+
+				String value = a[i];
+
+				while(i < a.length && a[i].equals(value))
+				{
+					i++;
+				}
+
+				while(j < b.length && b[j].equals(value))
+				{
+					j++;
+				}
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -275,7 +584,7 @@ public class AP_1 extends HelperMethods
 	 */
 	public void main(String[] args)
 	{
-		HelperMethods.callTimes = 0;
+		HelperMethods.resetCallTimes();
 		welcome();
 		printMethod("scoresIncreasing");
 		System.out.println("scoresIncreasing([1, 3, 4]) -> " + scoresIncreasing(new int[] {1, 3, 4}));
