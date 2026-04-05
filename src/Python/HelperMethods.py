@@ -1,10 +1,15 @@
-callTimes = 0
-def resetCallTimes():
-    callTimes = 0
-def printMethod(methodName):
-    global callTimes
-    if callTimes > 0:
-        print("\n\nMethod Name: " + methodName + "()\n")
-    else:
-        print("Method Name: " + methodName + "()\n")
-    callTimes += 1
+
+class HelperMethods:
+    __callTimes = 0
+    
+    @classmethod
+    def resetCallTimes(cls):
+        cls.__callTimes = 0
+    
+    @classmethod
+    def printMethod(cls, methodName):
+        if cls.__callTimes > 0:
+            print("\n\nMethod Name: " + methodName + "()\n")
+        else:
+            print("Method Name: " + methodName + "()\n")
+        cls.__callTimes += 1
