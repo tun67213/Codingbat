@@ -1,7 +1,2 @@
-Warmup_2.main()
-    # String_1.main()
-    # List_1.main()
-    # Logic_1.main()
-    # Logic_2.main()
-    # String_2.main()
-    # List_2.main()
+def welcome():
+    print("\nWarmup-1 Functions\n")
