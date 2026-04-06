@@ -2,7 +2,7 @@
 from HelperMethods import HelperMethods
 
 def main():
-    pass
+    HelperMethods.resetCallTimes()
 
 if __name__ == "__main__":
     main()
