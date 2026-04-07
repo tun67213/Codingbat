@@ -5,6 +5,7 @@ def welcome():
     print("\n\nList-1 Functions\n")
 
 def main():
+    HelperMethods.resetCallTimes()
     welcome()
 
 if __name__ == "__main__":
