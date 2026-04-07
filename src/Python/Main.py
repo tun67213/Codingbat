@@ -1,14 +1,10 @@
 import Warmup_1, Warmup_2, String_1, List_1, Logic_1, Logic_2, String_2, List_2
 
-def welcome1():
-    print("\nWelcome to Codingbat.com Method Implementations\n\n")
-
-def welcome2():
-    print("\nPython Implementations\n")
+def welcome():
+    print("\nWelcome to Codingbat.com Python Method Implementations\n")
 
 if __name__ == "__main__":
-    welcome1()
-    welcome2()
+    welcome()
     Warmup_1.main()
     Warmup_2.main()
     String_1.main()
