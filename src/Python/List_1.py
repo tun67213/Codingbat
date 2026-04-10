@@ -100,7 +100,7 @@ middle_way([7, 7, 7], [3, 8, 0]) → [7, 8]
 middle_way([5, 2, 9], [1, 4, 5]) → [2, 4]
 """
 def middle_way(a: list[int], b: list[int]) -> list[int]:
-    pass
+    raise NotImplementedError("middle_way not implemented yet")
 
 """
 Given an array of ints, return a new array length 2 containing the first and last elements from the original array. The original array will be length 1 or more.
@@ -110,7 +110,7 @@ make_ends([1, 2, 3, 4]) → [1, 4]
 make_ends([7, 4, 6, 2]) → [7, 2]
 """
 def make_ends(nums: list[int]) -> list[int]:
-    pass
+    raise NotImplementedError("make_ends not implemented yet")
 
 """
 Given an int array length 2, return True if it contains a 2 or a 3.
@@ -120,7 +120,7 @@ has23([4, 3]) → True
 has23([4, 5]) → False
 """
 def has23(nums: list[int]) -> bool:
-    pass
+    raise NotImplementedError("has23 not implemented yet")
 
 def main():
     HelperMethods.resetCallTimes()
