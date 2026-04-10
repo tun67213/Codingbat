@@ -11,7 +11,7 @@ string_times('Hi', 2) → 'HiHi'
 string_times('Hi', 3) → 'HiHiHi'
 string_times('Hi', 1) → 'Hi'
 """
-def string_times(str, n):
+def string_times(str: str, n: int) -> str:
     raise NotImplementedError("string_times not implemented yet")
 
 """
@@ -21,7 +21,7 @@ front_times('Chocolate', 2) → 'ChoCho'
 front_times('Chocolate', 3) → 'ChoChoCho'
 front_times('Abc', 3) → 'AbcAbcAbc'
 """
-def front_times(str, n):
+def front_times(str: str, n: int) -> str:
     raise NotImplementedError("front_times not implemented yet")
 
 """
@@ -31,7 +31,7 @@ string_bits('Hello') → 'Hlo'
 string_bits('Hi') → 'H'
 string_bits('Heeololeo') → 'Hello'
 """
-def string_bits(str):
+def string_bits(str: str) -> str:
     raise NotImplementedError("string_bits not implemented yet")
 
 """
@@ -41,7 +41,7 @@ string_splosion('Code') → 'CCoCodCode'
 string_splosion('abc') → 'aababc'
 string_splosion('ab') → 'aab'
 """
-def string_splosion(str):
+def string_splosion(str: str) -> str:
     raise NotImplementedError("string_splosion not implemented yet")
 
 """
@@ -51,7 +51,7 @@ last2('hixxhi') → 1
 last2('xaxxaxaxx') → 1
 last2('axxxaaxx') → 2
 """
-def last2(str):
+def last2(str: str) -> str:
     raise NotImplementedError("last2 not implemented yet")
 
 """ 
@@ -61,7 +61,7 @@ array_count9([1, 2, 9]) → 1
 array_count9([1, 9, 9]) → 2
 array_count9([1, 9, 9, 3, 9]) → 3
 """
-def array_count9(nums):
+def array_count9(nums: list[int]) -> int:
     raise NotImplementedError("array_count9 not implemented yet")
 
 """
@@ -71,7 +71,7 @@ array_front9([1, 2, 9, 3, 4]) → True
 array_front9([1, 2, 3, 4, 9]) → False
 array_front9([1, 2, 3, 4, 5]) → False
 """
-def array_front9(nums):
+def array_front9(nums: list[int]) -> bool:
     raise NotImplementedError("array_front9 not implemented yet")
 
 """
@@ -81,7 +81,7 @@ array123([1, 1, 2, 3, 1]) → True
 array123([1, 1, 2, 4, 1]) → False
 array123([1, 1, 2, 1, 2, 3]) → True
 """
-def array123(nums):
+def array123(nums: list[int]) -> bool:
     raise NotImplementedError("array123 not implemented yet")
 
 """
@@ -91,7 +91,7 @@ string_match('xxcaazz', 'xxbaaz') → 3
 string_match('abc', 'abc') → 2
 string_match('abc', 'axc') → 0
 """
-def string_match(a, b):
+def string_match(a: str, b: str) -> int:
     raise NotImplementedError("string_match not implemented yet")
 
 def main():

@@ -11,7 +11,7 @@ first_last6([1, 2, 6]) → True
 first_last6([6, 1, 2, 3]) → True
 first_last6([13, 6, 1, 2, 3]) → False
 """
-def first_last6(nums):
+def first_last6(nums: list[int]) -> bool:
     raise NotImplementedError("first_last6 not implemented yet")
 
 """
@@ -21,7 +21,7 @@ same_first_last([1, 2, 3]) → False
 same_first_last([1, 2, 3, 1]) → True
 same_first_last([1, 2, 1]) → True
 """
-def same_first_last(nums):
+def same_first_last(nums: list[int]) -> bool:
     raise NotImplementedError("same_first_last not implemented yet")
 
 """
@@ -29,7 +29,7 @@ Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
 
 make_pi() → [3, 1, 4]
 """
-def make_pi():
+def make_pi() -> list[int]:
     raise NotImplementedError("make_pi not implemented yet")
 
 """
@@ -39,7 +39,7 @@ common_end([1, 2, 3], [7, 3]) → True
 common_end([1, 2, 3], [7, 3, 2]) → False
 common_end([1, 2, 3], [1, 3]) → True
 """
-def common_end(a, b):
+def common_end(a: list[int], b: list[int]) -> bool:
     raise NotImplementedError("common_end not implemented yet")
 
 """
@@ -49,7 +49,7 @@ sum3([1, 2, 3]) → 6
 sum3([5, 11, 2]) → 18
 sum3([7, 0, 0]) → 7
 """
-def sum3(nums):
+def sum3(nums: list[int]) -> int:
     raise NotImplementedError("sum3 not implemented yet")
 
 """
@@ -59,7 +59,7 @@ rotate_left3([1, 2, 3]) → [2, 3, 1]
 rotate_left3([5, 11, 9]) → [11, 9, 5]
 rotate_left3([7, 0, 0]) → [0, 0, 7]
 """
-def rotate_left3(nums):
+def rotate_left3(nums: list[int]) -> list[int]:
     raise NotImplementedError("rotate_left3 not implemented yet")
 
 """
@@ -69,7 +69,7 @@ reverse3([1, 2, 3]) → [3, 2, 1]
 reverse3([5, 11, 9]) → [9, 11, 5]
 reverse3([7, 0, 0]) → [0, 0, 7]
 """
-def reverse3(nums):
+def reverse3(nums: list[int]) -> list[int]:
     raise NotImplementedError("reverse3 not implemented yet")
 
 """
@@ -79,7 +79,7 @@ max_end3([1, 2, 3]) → [3, 3, 3]
 max_end3([11, 5, 9]) → [11, 11, 11]
 max_end3([2, 11, 3]) → [3, 3, 3]
 """
-def max_end3(nums):
+def max_end3(nums: list[int]) -> list[int]:
     raise NotImplementedError("max_end3 not implemented yet")
 
 """
@@ -89,7 +89,7 @@ sum2([1, 2, 3]) → 3
 sum2([1, 1]) → 2
 sum2([1, 1, 1, 1]) → 2
 """
-def sum2(nums):
+def sum2(nums: list[int]) -> int:
     raise NotImplementedError("sum2 not implemented yet")
 
 """
@@ -99,7 +99,7 @@ middle_way([1, 2, 3], [4, 5, 6]) → [2, 5]
 middle_way([7, 7, 7], [3, 8, 0]) → [7, 8]
 middle_way([5, 2, 9], [1, 4, 5]) → [2, 4]
 """
-def middle_way(a, b):
+def middle_way(a: list[int], b: list[int]) -> list[int]:
     pass
 
 """
@@ -109,7 +109,7 @@ make_ends([1, 2, 3]) → [1, 3]
 make_ends([1, 2, 3, 4]) → [1, 4]
 make_ends([7, 4, 6, 2]) → [7, 2]
 """
-def make_ends(nums):
+def make_ends(nums: list[int]) -> list[int]:
     pass
 
 """
@@ -119,7 +119,7 @@ has23([2, 5]) → True
 has23([4, 3]) → True
 has23([4, 5]) → False
 """
-def has23(nums):
+def has23(nums: list[int]) -> bool:
     pass
 
 def main():
