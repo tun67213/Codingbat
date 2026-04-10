@@ -10,6 +10,7 @@ Given an array of ints, return True if 6 appears as either the first or last ele
 first_last6([1, 2, 6]) → True
 first_last6([6, 1, 2, 3]) → True
 first_last6([13, 6, 1, 2, 3]) → False
+"""
 def first_last6(nums):
     raise NotImplementedError("first_last6 not implemented yet")
 
