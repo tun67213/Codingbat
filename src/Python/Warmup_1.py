@@ -12,7 +12,7 @@ sleep_in(False, False) → True
 sleep_in(True, False) → False
 sleep_in(False, True) → True
 """
-def sleep_in(weekday, vacation):
+def sleep_in(weekday: bool, vacation: bool) -> bool:
     raise NotImplementedError("sleep_in not implemented yet")
 
 """
@@ -22,7 +22,7 @@ monkey_trouble(True, True) → True
 monkey_trouble(False, False) → True
 monkey_trouble(True, False) → False
 """
-def monkey_trouble(a_smile, b_smile):
+def monkey_trouble(a_smile: bool, b_smile: bool) -> bool:
     raise NotImplementedError("monkey_trouble not implemented yet")
 
 """
@@ -32,7 +32,7 @@ sum_double(1, 2) → 3
 sum_double(3, 2) → 5
 sum_double(2, 2) → 8
 """
-def sum_double(a, b):
+def sum_double(a: int, b: int) -> int:
     raise NotImplementedError("sum_double not implemented yet")
 
 """
@@ -42,7 +42,7 @@ diff21(19) → 2
 diff21(10) → 11
 diff21(21) → 0
 """
-def diff21(n):
+def diff21(n: int) -> int:
     raise NotImplementedError("diff21 not implemented yet")
 
 """
@@ -52,7 +52,7 @@ parrot_trouble(True, 6) → True
 parrot_trouble(True, 7) → False
 parrot_trouble(False, 6) → False
 """
-def parrot_trouble(talking, hour):
+def parrot_trouble(talking: bool, hour: int) -> bool:
     raise NotImplementedError("parrot_trouble not implemented yet")
 
 """
@@ -62,7 +62,7 @@ makes10(9, 10) → True
 makes10(9, 9) → False
 makes10(1, 9) → True
 """
-def makes10(a, b):
+def makes10(a: int, b: int) -> bool:
     raise NotImplementedError("makes10 not implemented yet")
 
 """
@@ -72,7 +72,7 @@ near_hundred(93) → True
 near_hundred(90) → True
 near_hundred(89) → False
 """
-def near_hundred(n):
+def near_hundred(n: int) -> bool:
     raise NotImplementedError("near_hundred not implemented yet")
 
 """
@@ -82,7 +82,7 @@ pos_neg(1, -1, False) → True
 pos_neg(-1, 1, False) → True
 pos_neg(-4, -5, True) → True
 """
-def pos_neg(a, b, negative):
+def pos_neg(a: int, b: int, negative: bool) -> bool:
     raise NotImplementedError("pos_neg not implemented yet")
 
 """
@@ -92,7 +92,7 @@ not_string('candy') → 'not candy'
 not_string('x') → 'not x'
 not_string('not bad') → 'not bad'
 """
-def not_string(str):
+def not_string(str: str) -> str:
     raise NotImplementedError("not_string not implemented yet")
 
 """
@@ -102,7 +102,7 @@ missing_char('kitten', 1) → 'ktten'
 missing_char('kitten', 0) → 'itten'
 missing_char('kitten', 4) → 'kittn'
 """
-def missing_char(str, n):
+def missing_char(str: str, n: int) -> str:
     raise NotImplementedError("missing_char not implemented yet")
 
 """
@@ -112,7 +112,7 @@ front_back('code') → 'eodc'
 front_back('a') → 'a'
 front_back('ab') → 'ba'
 """
-def front_back(str):
+def front_back(str: str) -> str:
     raise NotImplementedError("front_back not implemented yet")
 
 """
@@ -122,7 +122,7 @@ front3('Java') → 'JavJavJav'
 front3('Chocolate') → 'ChoChoCho'
 front3('abc') → 'abcabcabc'
 """
-def front3(str):
+def front3(str: str) -> str:
     raise NotImplementedError("front3 not implemented yet")
 
 def main():

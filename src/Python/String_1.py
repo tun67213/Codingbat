@@ -11,7 +11,7 @@ hello_name('Bob') → 'Hello Bob!'
 hello_name('Alice') → 'Hello Alice!'
 hello_name('X') → 'Hello X!'
 """
-def hello_name(name):
+def hello_name(name: str) -> str:
     raise NotImplementedError("hello_name not implemented yet")
 
 """
@@ -21,7 +21,7 @@ make_abba('Hi', 'Bye') → 'HiByeByeHi'
 make_abba('Yo', 'Alice') → 'YoAliceAliceYo'
 make_abba('What', 'Up') → 'WhatUpUpWhat'
 """
-def make_abba(a, b):
+def make_abba(a: str, b: str) -> str:
     raise NotImplementedError("make_abba not implemented yet")
 
 """
@@ -31,7 +31,7 @@ make_tags('i', 'Yay') → '<i>Yay</i>'
 make_tags('i', 'Hello') → '<i>Hello</i>'
 make_tags('cite', 'Yay') → '<cite>Yay</cite>'
 """
-def make_tags(tag, word):
+def make_tags(tag: str, word: str) -> str:
     raise NotImplementedError("make_tags not implemented yet")
 
 """
@@ -41,7 +41,7 @@ make_out_word('<<>>', 'Yay') → '<<Yay>>'
 make_out_word('<<>>', 'WooHoo') → '<<WooHoo>>'
 make_out_word('[[]]', 'word') → '[[word]]'
 """
-def make_out_word(out, word):
+def make_out_word(out: str, word: str) -> str:
     raise NotImplementedError("make_out_word not implemented yet")
 
 """
@@ -51,7 +51,7 @@ extra_end('Hello') → 'lololo'
 extra_end('ab') → 'ababab'
 extra_end('Hi') → 'HiHiHi'
 """
-def extra_end(str):
+def extra_end(str: str) -> str:
     raise NotImplementedError("extra_end not implemented yet")
 
 """
@@ -61,7 +61,7 @@ first_two('Hello') → 'He'
 first_two('abcdefg') → 'ab'
 first_two('ab') → 'ab'
 """
-def first_two(str):
+def first_two(str: str) -> str:
     raise NotImplementedError("first_two not implemented yet")
 
 """
@@ -71,7 +71,7 @@ first_half('WooHoo') → 'Woo'
 first_half('HelloThere') → 'Hello'
 first_half('abcdef') → 'abc'
 """
-def first_half(str):
+def first_half(st: str) -> str:
     raise NotImplementedError("first_half not implemented yet")
 
 """
@@ -81,7 +81,7 @@ without_end('Hello') → 'ell'
 without_end('java') → 'av'
 without_end('coding') → 'odin'
 """
-def without_end(str):
+def without_end(str: str) -> str:
     raise NotImplementedError("without_end not implemented yet")
 
 """
@@ -91,7 +91,7 @@ combo_string('Hello', 'hi') → 'hiHellohi'
 combo_string('hi', 'Hello') → 'hiHellohi'
 combo_string('aaa', 'b') → 'baaab'
 """
-def combo_string(a, b):
+def combo_string(a: str, b: str) -> str:
     raise NotImplementedError("combo_string not implemented yet")
 
 """
@@ -101,7 +101,7 @@ non_start('Hello', 'There') → 'ellohere'
 non_start('java', 'code') → 'avaode'
 non_start('shotl', 'java') → 'hotlava'
 """
-def non_start(a, b):
+def non_start(a: str, b: str) -> str:
     raise NotImplementedError("non_start not implemented yet")
 
 """
@@ -111,7 +111,7 @@ left2('Hello') → 'lloHe'
 left2('java') → 'vaja'
 left2('Hi') → 'Hi'
 """
-def left2(str):
+def left2(str: str) -> str:
     raise NotImplementedError("left2 not implemented yet")
     
 def main():
