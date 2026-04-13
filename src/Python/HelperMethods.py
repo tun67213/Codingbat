@@ -7,7 +7,7 @@ class HelperMethods:
         cls.__callTimes = 0
     
     @classmethod
-    def printMethod(cls, methodName):
+    def printMethod(cls, methodName: str):
         if cls.__callTimes > 0:
             print("\n\nMethod Name: " + methodName + "()\n")
         else:
