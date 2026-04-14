@@ -48,7 +48,9 @@ diff21(10) → 11
 diff21(21) → 0
 """
 def diff21(n: int) -> int:
-    raise NotImplementedError("diff21 not implemented yet")
+    if n > 21:
+        return 2 * (n - 21)
+    return 21 - n
 
 """
 We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.
