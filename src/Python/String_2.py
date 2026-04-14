@@ -3,6 +3,7 @@ from HelperMethods import HelperMethods
 
 def welcome():
     print("\n\String-2 Functions\n")
+    print("------------------\n")
     
 """
 Given a string, return a string where for every char in the original, there are two chars.

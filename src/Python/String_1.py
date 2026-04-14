@@ -3,6 +3,7 @@ from HelperMethods import HelperMethods
 
 def welcome():
     print("\n\nString-1 Functions\n")
+    print("------------------\n")
     
 """
 Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".

@@ -3,6 +3,7 @@ from HelperMethods import HelperMethods
 
 def welcome():
     print("\nWarmup-1 Functions\n")
+    print("------------------\n")
 
 """
 The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. 
