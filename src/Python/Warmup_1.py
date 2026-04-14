@@ -84,7 +84,7 @@ near_hundred(90) → True
 near_hundred(89) → False
 """
 def near_hundred(n: int) -> bool:
-    raise NotImplementedError("near_hundred not implemented yet")
+    return abs(n - 100) <= 10 or abs(n - 200) <= 10
 
 """
 Given 2 int values, return True if one is negative and one is positive. Except if the parameter "negative" is True, then return True only if both are negative.
