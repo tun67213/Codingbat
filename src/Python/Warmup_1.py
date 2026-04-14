@@ -60,7 +60,9 @@ parrot_trouble(True, 7) → False
 parrot_trouble(False, 6) → False
 """
 def parrot_trouble(talking: bool, hour: int) -> bool:
-    raise NotImplementedError("parrot_trouble not implemented yet")
+    if talking and (hour < 7 or hour > 20):
+        return True
+    return False
 
 """
 Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.
