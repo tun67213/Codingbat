@@ -118,7 +118,7 @@ missing_char('kitten', 0) → 'itten'
 missing_char('kitten', 4) → 'kittn'
 """
 def missing_char(str: str, n: int) -> str:
-    raise NotImplementedError("missing_char not implemented yet")
+    return str[:n] + str[n + 1:]
 
 """
 Given a string, return a new string where the first and last chars have been exchanged.
