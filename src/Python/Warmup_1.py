@@ -94,7 +94,9 @@ pos_neg(-1, 1, False) → True
 pos_neg(-4, -5, True) → True
 """
 def pos_neg(a: int, b: int, negative: bool) -> bool:
-    raise NotImplementedError("pos_neg not implemented yet")
+    if negative:
+        return a < 0 and b < 0
+    return (a < 0) ^ (b < 0)
 
 """
 Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
