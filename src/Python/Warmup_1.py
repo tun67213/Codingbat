@@ -36,7 +36,9 @@ sum_double(3, 2) → 5
 sum_double(2, 2) → 8
 """
 def sum_double(a: int, b: int) -> int:
-    raise NotImplementedError("sum_double not implemented yet")
+    if a == b:
+        return 2 * (a + b)
+    return a + b
 
 """
 Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
