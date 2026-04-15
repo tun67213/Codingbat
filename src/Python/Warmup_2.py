@@ -62,7 +62,12 @@ string_splosion('abc') → 'aababc'
 string_splosion('ab') → 'aab'
 """
 def string_splosion(str: str) -> str:
-    raise NotImplementedError("string_splosion not implemented yet")
+    if len(str) <= 1:
+        return str
+    finalAnswer = ""
+    for i in range(0, len(str) + 1):
+        finalAnswer += str[:i]
+    return finalAnswer
 
 """
 Given a string, return the count of the number of times that a substring length 2 appears in the string and also as the last 2 chars of the string, so "hixxxhi" yields 1 (we won't count the end substring).
