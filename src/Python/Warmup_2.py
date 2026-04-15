@@ -28,7 +28,16 @@ front_times('Chocolate', 3) → 'ChoChoCho'
 front_times('Abc', 3) → 'AbcAbcAbc'
 """
 def front_times(str: str, n: int) -> str:
-    raise NotImplementedError("front_times not implemented yet")
+    if len(str) == 0 or n == 0:
+        return ""
+    repetitions = n
+    currentString = str
+    if len(currentString) > 3:
+        currentString = currentString[:3]
+    finalAnswer = ""
+    for i in range(0, repetitions):
+        finalAnswer += currentString
+    return finalAnswer
 
 """
 Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
