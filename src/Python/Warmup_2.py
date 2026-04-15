@@ -76,7 +76,7 @@ last2('hixxhi') → 1
 last2('xaxxaxaxx') → 1
 last2('axxxaaxx') → 2
 """
-def last2(str: str) -> str:
+def last2(str: str) -> int:
     raise NotImplementedError("last2 not implemented yet")
 
 """ 
