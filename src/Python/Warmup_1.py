@@ -140,7 +140,10 @@ front3('Chocolate') → 'ChoChoCho'
 front3('abc') → 'abcabcabc'
 """
 def front3(str: str) -> str:
-    raise NotImplementedError("front3 not implemented yet")
+    currentString = str
+    if len(currentString) >= 3:
+        currentString = str[:3]
+    return currentString + currentString + currentString
 
 def main():
     HelperMethods.resetCallTimes()
