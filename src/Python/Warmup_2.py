@@ -93,7 +93,17 @@ array_count9([1, 9, 9]) → 2
 array_count9([1, 9, 9, 3, 9]) → 3
 """
 def array_count9(nums: list[int]) -> int:
-    raise NotImplementedError("array_count9 not implemented yet")
+    count = 0
+    for i in range(0, len(nums)):
+        if nums[i] == 9:
+            count += 1
+    return count
+    # Think of how the code below is the same as this:
+    # count = 0
+    # for num in nums:
+    #     if num == 9:
+    #         count += 1
+    # return count
 
 """
 Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
