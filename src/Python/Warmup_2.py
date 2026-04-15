@@ -13,7 +13,12 @@ string_times('Hi', 3) → 'HiHiHi'
 string_times('Hi', 1) → 'Hi'
 """
 def string_times(str: str, n: int) -> str:
-    raise NotImplementedError("string_times not implemented yet")
+    if len(str) == 0 or n == 0:
+        return ""
+    finalAnswer = ""
+    for i in range(n):
+        finalAnswer += str
+    return finalAnswer
 
 """
 Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;
