@@ -129,7 +129,12 @@ array123([1, 1, 2, 4, 1]) → False
 array123([1, 1, 2, 1, 2, 3]) → True
 """
 def array123(nums: list[int]) -> bool:
-    raise NotImplementedError("array123 not implemented yet")
+    if len(nums) < 3:
+        return False
+    for i in range(0, len(nums) - 2):
+        if nums[i] == 1 and nums[i + 1] == 2 and nums[i + 2] == 3:
+            return True
+    return False
 
 """
 Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings.
