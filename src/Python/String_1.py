@@ -13,7 +13,7 @@ hello_name('Alice') → 'Hello Alice!'
 hello_name('X') → 'Hello X!'
 """
 def hello_name(name: str) -> str:
-    raise NotImplementedError("hello_name not implemented yet")
+    return "Hello " + name + "!"
 
 """
 Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
