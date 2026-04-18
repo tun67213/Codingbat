@@ -33,7 +33,7 @@ make_tags('i', 'Hello') → '<i>Hello</i>'
 make_tags('cite', 'Yay') → '<cite>Yay</cite>'
 """
 def make_tags(tag: str, word: str) -> str:
-    raise NotImplementedError("make_tags not implemented yet")
+    return "<" + tag + ">" + word + "</" + tag + ">"
 
 """
 Given an "out" string length 4, such as "<<>>", and a word, return a new string where the word is in the middle of the out string, e.g. "<<word>>".
