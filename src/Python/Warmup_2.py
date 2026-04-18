@@ -144,7 +144,14 @@ string_match('abc', 'abc') → 2
 string_match('abc', 'axc') → 0
 """
 def string_match(a: str, b: str) -> int:
-    raise NotImplementedError("string_match not implemented yet")
+    if len(a) < 2 or len(b) < 2:
+        return 0
+    count = 0
+    lengthToCheck = min(len(a) - 1, len(b) - 1)
+    for i in range(0, lengthToCheck):
+        if a[i:i + 2] == b[i:i + 2]:
+            count += 1
+    return count
 
 def main():
     HelperMethods.resetCallTimes()
