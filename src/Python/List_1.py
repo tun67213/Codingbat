@@ -123,7 +123,7 @@ middle_way([7, 7, 7], [3, 8, 0]) → [7, 8]
 middle_way([5, 2, 9], [1, 4, 5]) → [2, 4]
 """
 def middle_way(a: list[int], b: list[int]) -> list[int]:
-    raise NotImplementedError("middle_way not implemented yet")
+    return [a[1], b[1]]
 
 """
 Given an array of ints, return a new array length 2 containing the first and last elements from the original array. The original array will be length 1 or more.
