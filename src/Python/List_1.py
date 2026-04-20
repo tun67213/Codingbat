@@ -96,7 +96,10 @@ max_end3([11, 5, 9]) → [11, 11, 11]
 max_end3([2, 11, 3]) → [3, 3, 3]
 """
 def max_end3(nums: list[int]) -> list[int]:
-    raise NotImplementedError("max_end3 not implemented yet")
+    maximum = nums[0]
+    if nums[2] > maximum:
+        maximum = nums[2]
+    return [maximum, maximum, maximum]
 
 """
 Given an array of ints, return the sum of the first 2 elements in the array. If the array length is less than 2, just sum up the elements that exist, returning 0 if the array is length 0.
