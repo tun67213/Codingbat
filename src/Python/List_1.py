@@ -13,7 +13,9 @@ first_last6([6, 1, 2, 3]) → True
 first_last6([13, 6, 1, 2, 3]) → False
 """
 def first_last6(nums: list[int]) -> bool:
-    raise NotImplementedError("first_last6 not implemented yet")
+    if len(nums) == 0:
+        return False
+    return (nums[0] == 6) or (nums[len(nums) - 1] == 6)
 
 """
 Given an array of ints, return True if the array is length 1 or more, and the first element and the last element are equal.
