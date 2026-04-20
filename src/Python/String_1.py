@@ -122,7 +122,9 @@ left2('java') → 'vaja'
 left2('Hi') → 'Hi'
 """
 def left2(str: str) -> str:
-    raise NotImplementedError("left2 not implemented yet")
+    if len(str) <= 2:
+        return str
+    return str[2:] + str[:2]
     
 def main():
     HelperMethods.resetCallTimes()
