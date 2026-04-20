@@ -45,7 +45,9 @@ common_end([1, 2, 3], [7, 3, 2]) → False
 common_end([1, 2, 3], [1, 3]) → True
 """
 def common_end(a: list[int], b: list[int]) -> bool:
-    raise NotImplementedError("common_end not implemented yet")
+    if len(a) == 0 or len(b) == 0:
+        return False
+    return (a[0] == b[0]) or (a[len(a) - 1] == b[len(b) - 1])
 
 """
 Given an array of ints length 3, return the sum of all the elements.
