@@ -66,7 +66,9 @@ first_two('abcdefg') → 'ab'
 first_two('ab') → 'ab'
 """
 def first_two(str: str) -> str:
-    raise NotImplementedError("first_two not implemented yet")
+    if len(str) <= 2:
+        return str
+    return str[:2]
 
 """
 Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
