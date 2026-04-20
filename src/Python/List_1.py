@@ -35,7 +35,7 @@ Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
 make_pi() → [3, 1, 4]
 """
 def make_pi() -> list[int]:
-    raise NotImplementedError("make_pi not implemented yet")
+    return [3, 1, 4]
 
 """
 Given 2 arrays of ints, a and b, return True if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
