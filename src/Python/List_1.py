@@ -109,7 +109,11 @@ sum2([1, 1]) → 2
 sum2([1, 1, 1, 1]) → 2
 """
 def sum2(nums: list[int]) -> int:
-    raise NotImplementedError("sum2 not implemented yet")
+    if len(nums) == 0:
+        return 0
+    if len(nums) == 1:
+        return nums[0]
+    return nums[0] + nums[1]
 
 """
 Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
