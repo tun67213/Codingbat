@@ -77,7 +77,7 @@ first_half('WooHoo') → 'Woo'
 first_half('HelloThere') → 'Hello'
 first_half('abcdef') → 'abc'
 """
-def first_half(st: str) -> str:
+def first_half(str: str) -> str:
     raise NotImplementedError("first_half not implemented yet")
 
 """
