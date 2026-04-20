@@ -25,7 +25,9 @@ same_first_last([1, 2, 3, 1]) → True
 same_first_last([1, 2, 1]) → True
 """
 def same_first_last(nums: list[int]) -> bool:
-    raise NotImplementedError("same_first_last not implemented yet")
+    if len(nums) <= 1:
+        return True
+    return nums[0] == nums[len(nums) - 1]
 
 """
 Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
