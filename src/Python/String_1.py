@@ -98,7 +98,11 @@ combo_string('hi', 'Hello') → 'hiHellohi'
 combo_string('aaa', 'b') → 'baaab'
 """
 def combo_string(a: str, b: str) -> str:
-    raise NotImplementedError("combo_string not implemented yet")
+    short, long = a, b
+    if len(b) > len(short):
+        short = b
+        long = a
+    return short + long + short
 
 """
 Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
