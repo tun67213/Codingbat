@@ -84,7 +84,9 @@ reverse3([5, 11, 9]) → [9, 11, 5]
 reverse3([7, 0, 0]) → [0, 0, 7]
 """
 def reverse3(nums: list[int]) -> list[int]:
-    raise NotImplementedError("reverse3 not implemented yet")
+    temporary = nums[0]
+    nums[0] = nums[2]
+    nums[2] = temporary
 
 """
 Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.
