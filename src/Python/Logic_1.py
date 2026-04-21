@@ -27,7 +27,12 @@ date_fashion(5, 2) → 0
 date_fashion(5, 5) → 1
 """
 def date_fashion(you: int, date: int) -> int:
-    raise NotImplementedError("date_fashion not implemented yet")
+    if you <= 2 or date <= 2:
+        return 0
+    elif you >= 8 or date >= 8:
+        return 2
+    else:
+        return 1
 
 """
 The squirrels in Palo Alto spend most of the day playing. In particular, they play if the temperature is between 60 and 90 (inclusive). Unless it is summer, then the upper limit is 100 instead of 90. Given an int temperature and a boolean is_summer, return True if the squirrels play and False otherwise.
