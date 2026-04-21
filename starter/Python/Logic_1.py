@@ -52,7 +52,13 @@ caught_speeding(65, False) → 1
 caught_speeding(65, True) → 0
 """
 def caught_speeding(speed: int, is_birthday: bool) -> int:
-    raise NotImplementedError("caught_speeding not implemented yet")
+    if is_birthday:
+        speed -= 5
+    if speed <= 60:
+        return 0
+    if speed > 80:
+        return 2
+    return 1
 
 """
 Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, are forbidden, so in that case just return 20.
