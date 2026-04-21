@@ -68,7 +68,10 @@ sorta_sum(9, 4) → 20
 sorta_sum(10, 11) → 21
 """
 def sorta_sum(a: int, b: int) -> int:
-    raise NotImplementedError("sorta_sum not implemented yet")
+    sumOfNumbers = a + b
+    if sumOfNumbers >= 10 and sumOfNumbers <= 19:
+        sumOfNumbers = 20
+    return sumOfNumbers
 
 """
 Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, return a string of the form "7:00" indicating when the alarm clock should ring. Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".
