@@ -12,9 +12,7 @@ cigar_party(50, False) → True
 cigar_party(70, True) → True
 """
 def cigar_party(cigars: int, is_weekend: bool) -> bool:
-    if cigars < 40:
-        return False
-    return is_weekend or cigars <= 60
+    raise NotImplementedError("alarm_clock not implemented yet")
 
 """
 You and your date are trying to get a table at a restaurant. The parameter "you" is the stylishness of your clothes, in the range 0..10, and "date" is the stylishness of your date's clothes. The result getting the table is encoded as an int value with 0=no, 1=maybe, 2=yes. If either of you is very stylish, 8 or more, then the result is 2 (yes). With the exception that if either of you has style of 2 or less, then the result is 0 (no). Otherwise the result is 1 (maybe).
@@ -24,11 +22,7 @@ date_fashion(5, 2) → 0
 date_fashion(5, 5) → 1
 """
 def date_fashion(you: int, date: int) -> int:
-    if you <= 2 or date <= 2:
-        return 0
-    if you >= 8 or date >= 8:
-        return 2
-    return 1
+    raise NotImplementedError("alarm_clock not implemented yet")
 
 """
 The squirrels in Palo Alto spend most of the day playing. In particular, they play if the temperature is between 60 and 90 (inclusive). Unless it is summer, then the upper limit is 100 instead of 90. Given an int temperature and a boolean is_summer, return True if the squirrels play and False otherwise.
@@ -38,11 +32,7 @@ squirrel_play(95, False) → False
 squirrel_play(95, True) → True
 """
 def squirrel_play(temp: int, is_summer: bool) -> bool:
-    if temp < 60:
-        return False
-    if is_summer:
-        return temp <= 100
-    return temp <= 90
+    raise NotImplementedError("alarm_clock not implemented yet")
 
 """
 You are driving a little too fast, and a police officer stops you. Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1. If speed is 81 or more, the result is 2. Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.
@@ -52,13 +42,7 @@ caught_speeding(65, False) → 1
 caught_speeding(65, True) → 0
 """
 def caught_speeding(speed: int, is_birthday: bool) -> int:
-    if is_birthday:
-        speed -= 5
-    if speed <= 60:
-        return 0
-    if speed > 80:
-        return 2
-    return 1
+    raise NotImplementedError("alarm_clock not implemented yet")
 
 """
 Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, are forbidden, so in that case just return 20.
@@ -68,10 +52,7 @@ sorta_sum(9, 4) → 20
 sorta_sum(10, 11) → 21
 """
 def sorta_sum(a: int, b: int) -> int:
-    sumOfNumbers = a + b
-    if sumOfNumbers >= 10 and sumOfNumbers <= 19:
-        sumOfNumbers = 20
-    return sumOfNumbers
+    raise NotImplementedError("alarm_clock not implemented yet")
 
 """
 Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, return a string of the form "7:00" indicating when the alarm clock should ring. Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".
