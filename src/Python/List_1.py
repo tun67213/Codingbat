@@ -143,7 +143,7 @@ has23([4, 3]) → True
 has23([4, 5]) → False
 """
 def has23(nums: list[int]) -> bool:
-    if len(nums) <= 1:
+    if len(nums) < 1:
         return False
     for num in nums:
         if num == 2 or num == 3:
