@@ -196,7 +196,7 @@ def main():
     print(f"love6(6, 6) -> {love6(6, 6)}")
     print(f"love6(-6, 2) -> {love6(-6, 2)}")
     print(f"love6(-4, -10) -> {love6(-4, -10)}")
-    print(f"love6(-7, 1) -> {love6(-7, -1)}")
+    print(f"love6(-7, 1) -> {love6(-7, 1)}")
     print(f"love6(7, -1) -> {love6(7, -1)}")
     print(f"love6(-6, 12) -> {love6(-6, 12)}")
     print(f"love6(-2, -4) -> {love6(-2, -4)}")
