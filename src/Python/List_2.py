@@ -88,7 +88,18 @@ sum67([1, 2, 2, 6, 99, 99, 7]) → 5
 sum67([1, 1, 6, 7, 2]) → 4
 """
 def sum67(nums: list[int]) -> int:
-    raise NotImplementedError("sum67 not implemented yet")
+    found6 = False
+    currentTotal = 0
+    
+    for num in nums:
+        if num == 6:
+            found6 = True
+        elif found6 and num == 7:
+            found6 = False
+        elif not found6:
+            currentTotal += num
+    
+    return currentTotal
 
 """
 Given an array of ints, return True if the array contains a 2 next to a 2 somewhere.
