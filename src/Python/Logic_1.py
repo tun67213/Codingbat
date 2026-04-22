@@ -108,7 +108,10 @@ love6(4, 5) → False
 love6(1, 5) → True
 """
 def love6(a: int, b: int) -> bool:
-    raise NotImplementedError("love6 not implemented yet")
+    if a == 6 or b == 6 or a + b == 6 or abs(a - b) == 6:
+        return True
+    else:
+        return False
 
 """
 Given a number n, return True if n is in the range 1..10, inclusive. Unless outside_mode is True, in which case return True if the number is less or equal to 1, or greater or equal to 10.
