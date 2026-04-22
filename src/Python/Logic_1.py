@@ -137,7 +137,8 @@ near_ten(17) → False
 near_ten(19) → True
 """
 def near_ten(num: int) -> bool:
-    raise NotImplementedError("near_ten not implemented yet")
+    adjustedValue = num % 10
+    return adjustedValue <= 2 or adjustedValue >= 8
 
 def main():
     HelperMethods.resetCallTimes()
