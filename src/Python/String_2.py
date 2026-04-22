@@ -66,7 +66,13 @@ count_code('codexxcode') → 2
 count_code('cozexxcope') → 2
 """
 def count_code(str: str) -> int:
-    raise NotImplementedError("count_code not implemented yet")
+    if len(str) <= 3:
+        return 0
+    countCode = 0
+    for i in range(0, len(str) - 3):
+        if str[i : i + 2] == "co" and str[i + 3 : i + 4] == "e":
+            countCode += 1
+    return countCode
 
 """
 Given two strings, return True if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). Note: s.lower() returns the lowercase version of a string.
