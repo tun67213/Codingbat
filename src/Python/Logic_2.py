@@ -29,7 +29,14 @@ lone_sum(3, 2, 3) → 2
 lone_sum(3, 3, 3) → 0
 """
 def lone_sum(a: int, b: int, c: int) -> int:
-    raise NotImplementedError("lone_sum not implemented yet")
+    loneSum = 0
+    if a != b and a != c:
+        loneSum += a
+    if b != a and b != c:
+        loneSum += b
+    if c != a and c != b:
+        loneSum += c
+    return loneSum
 
 """
 Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not count towards the sum and values to its right do not count. So for example, if b is 13, then both b and c do not count.
