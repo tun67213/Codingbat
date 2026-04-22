@@ -13,7 +13,13 @@ make_bricks(3, 1, 9) → False
 make_bricks(3, 2, 10) → True
 """
 def make_bricks(small: int, big: int, goal: int) -> bool:
-    raise NotImplementedError("make_bricks not implemented yet")
+    big_to_use = goal // 5
+    
+    if big_to_use > big:
+        big_to_use = big
+        
+    remaining = goal - big_to_use * 5
+    return remaining <= small
 
 """
 Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum.
