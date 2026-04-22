@@ -47,7 +47,18 @@ centered_average([1, 1, 5, 5, 10, 8, 7]) → 5
 centered_average([-10, -4, -2, -4, -2, 0]) → -3
 """
 def centered_average(nums: list[int]) -> int:
-    raise NotImplementedError("centered_average not implemented yet")
+    total = 0
+    minimum = nums[0]
+    maximum = nums[0]
+
+    for num in nums:
+        total += num
+        if num < minimum:
+            minimum = num
+        if num > maximum:
+            maximum = num
+
+    return (total - minimum - maximum) // (len(nums) - 2)
 
 """
 Return the sum of the numbers in the array, returning 0 for an empty array. Except the number 13 is very unlucky, so it does not count and numbers that come immediately after a 13 also do not count.
