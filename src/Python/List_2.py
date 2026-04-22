@@ -68,7 +68,17 @@ sum13([1, 1]) → 2
 sum13([1, 2, 2, 1, 13]) → 6
 """
 def sum13(nums: list[int]) -> int:
-    raise NotImplementedError("sum13 not implemented yet")
+    theSum = 0
+    currentIndex = 0
+    
+    while currentIndex < len(nums):
+        if nums[currentIndex] == 13:
+            currentIndex += 2
+        else:
+            theSum += nums[currentIndex]
+            currentIndex += 1
+        
+    return theSum
 
 """
 Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.
