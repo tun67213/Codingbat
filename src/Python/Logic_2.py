@@ -94,7 +94,9 @@ close_far(1, 2, 3) → False
 close_far(4, 1, 3) → True
 """
 def close_far(a: int, b: int, c: int) -> bool:
-    raise NotImplementedError("close_far not implemented yet")
+    closeAB = abs(a - b) <= 1 and abs(a - c) > 1 and abs(b - c) > 1
+    closeAC = abs(a - c) <= 1 and abs(a - b) > 1 and abs(b - c) > 1
+    return closeAB ^ closeAC
 
 """
 We want make a package of goal kilos of chocolate. We have small bars (1 kilo each) and big bars (5 kilos each). Return the number of small bars to use, assuming we always use big bars before small bars. Return -1 if it can't be done.
