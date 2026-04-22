@@ -121,7 +121,13 @@ in1to10(11, False) → False
 in1to10(11, True) → True
 """
 def in1to10(n: int, outside_mode: bool) -> bool:
-    raise NotImplementedError("in1to10 not implemented yet")
+    lowerBound = 1
+    upperBound = 10
+    
+    if outside_mode:
+        return n <= lowerBound or n >= upperBound
+    else:
+        return lowerBound <= n and n <= upperBound
 
 """
 Given a non-negative number "num", return True if num is within 2 of a multiple of 10. Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. See also: Introduction to Mod
