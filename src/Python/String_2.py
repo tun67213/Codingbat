@@ -27,7 +27,7 @@ count_hi('abc hi ho') → 1
 count_hi('ABChi hi') → 2
 count_hi('hihi') → 2
 """
-def count_hi(str: str) -> str:
+def count_hi(str: str) -> int:
     raise NotImplementedError("count_hi not implemented yet")
 
 """
