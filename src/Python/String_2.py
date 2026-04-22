@@ -82,7 +82,10 @@ end_other('AbC', 'HiaBc') → True
 end_other('abc', 'abXabc') → True
 """
 def end_other(a: str, b: str) -> bool:
-    raise NotImplementedError("end_other not implemented yet")
+    a = a.lower()
+    b = b.lower()
+    
+    return a.endswith(b) or b.endswith(a)
 
 """
 Return True if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
