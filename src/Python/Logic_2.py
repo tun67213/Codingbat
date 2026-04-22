@@ -81,6 +81,10 @@ round_sum(6, 4, 4) → 10
 """
 def round_sum(a: int, b: int, c: int) -> int:
     raise NotImplementedError("round_sum not implemented yet")
+def round10(num: int) -> int:
+    if num % 10 >= 5:
+        return (num / 10 + 1) * 10
+    return num / 10 * 10
 
 """
 Given three ints, a b c, return True if one of b or c is "close" (differing from a by at most 1), while the other is "far", differing from both other values by 2 or more. Note: abs(num) computes the absolute value of a number.
