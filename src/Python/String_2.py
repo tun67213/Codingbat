@@ -117,6 +117,7 @@ def main():
     print(f"count_code('AAcodeBBcoleCCccoreDD') -> {count_code('AAcodeBBcoleCCccoreDD')}")
     print(f"count_code('AAcodeBBcoleCCccorfDD') -> {count_code('AAcodeBBcoleCCccorfDD')}")
     print(f"count_code('coAcodeBcoleccoreDD') -> {count_code('coAcodeBcoleccoreDD')}")
+    HelperMethods.printMethod("end_other")
     print(f"end_other('Hiabc', 'abc') -> {end_other('Hiabc', 'abc')}")
     print(f"end_other('AbC', 'HiaBc') -> {end_other('AbC', 'HiaBc')}")
     print(f"end_other('abc', 'abXabc') -> {end_other('abc', 'abXabc')}")
