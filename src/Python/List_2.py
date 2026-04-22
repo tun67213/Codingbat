@@ -109,7 +109,14 @@ has22([1, 2, 1, 2]) → False
 has22([2, 1, 2]) → False
 """
 def has22(nums: list[int]) -> bool:
-    raise NotImplementedError("has22 not implemented yet")
+    if len(nums) < 2:
+        return False
+    
+    for i in range(0, len(nums) - 1):
+        if nums[i] == 2 and nums[i + 1] == 2:
+            return True
+    
+    return False
 
 def main():
     HelperMethods.resetCallTimes()
