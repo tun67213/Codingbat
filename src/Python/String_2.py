@@ -28,7 +28,13 @@ count_hi('ABChi hi') → 2
 count_hi('hihi') → 2
 """
 def count_hi(str: str) -> int:
-    raise NotImplementedError("count_hi not implemented yet")
+    if len(str) < 2:
+        return 0
+    hiCounts = 0
+    for i in range(0, len(str) - 1):
+        if str[i : i + 2] == "hi":
+            hiCounts += 1
+    return hiCounts
 
 """
 Return True if the string "cat" and "dog" appear the same number of times in the given string.
