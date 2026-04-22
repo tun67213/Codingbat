@@ -106,7 +106,18 @@ make_chocolate(4, 1, 10) → -1
 make_chocolate(4, 1, 7) → 2
 """
 def make_chocolate(small: int, big: int, goal: int) -> int:
-    raise NotImplementedError("make_chocolate not implemented yet")
+    big_to_use = goal // 5
+    
+    if big_to_use > big:
+        big_to_use = big
+
+
+    remaining = goal - big_to_use * 5
+
+    if remaining <= small:
+        return remaining
+    else:
+        return -1
     
 def main():
     HelperMethods.resetCallTimes()
