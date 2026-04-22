@@ -55,6 +55,16 @@ end_other('abc', 'abXabc') → True
 def end_other(a: str, b: str) -> bool:
     raise NotImplementedError("end_other not implemented yet")
 
+"""
+Return True if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
+
+xyz_there('abcxyz') → True
+xyz_there('abc.xyz') → False
+xyz_there('xyz.abc') → True
+"""
+def xyz_there(str: str) -> bool:
+    raise NotImplementedError("xyz_there not implemented yet")
+
 def main():
     HelperMethods.resetCallTimes()
     welcome()
@@ -121,6 +131,21 @@ def main():
     print(f"end_other('abcXYZ', 'abcDEF') -> {end_other('abcXYZ', 'abcDEF')}")
     print(f"end_other('ab', 'ab12') -> {end_other('ab', 'ab12')}")
     print(f"end_other('ab', '12ab') -> {end_other('ab', '12ab')}")
+    HelperMethods.printMethod("xyz_there")
+    print(f"xyz_there('abcxyz') -> {xyz_there('abcxyz')}")
+    print(f"xyz_there('abc.xyz') -> {xyz_there('abc.xyz')}")
+    print(f"xyz_there('xyz.abc') -> {xyz_there('xyz.abc')}")
+    print(f"xyz_there('abcxy') -> {xyz_there('abcxy')}")
+    print(f"xyz_there('xyz') -> {xyz_there('xyz')}")
+    print(f"xyz_there('xy') -> {xyz_there('xy')}")
+    print(f"xyz_there('x') -> {xyz_there('x')}")
+    print(f"xyz_there('') -> {xyz_there('')}")
+    print(f"xyz_there('abc.xyzxyz') -> {xyz_there('abc.xyzxyz')}")
+    print(f"xyz_there('abc.xxyz') -> {xyz_there('abc.xxyz')}")
+    print(f"xyz_there('.xyz') -> {xyz_there('.xyz')}")
+    print(f"xyz_there('12.xyz') -> {xyz_there('12.xyz')}")
+    print(f"xyz_there('12xyz') -> {xyz_there('12xyz')}")
+    print(f"xyz_there('1.xyz.xyz2.xyz') -> {xyz_there('1.xyz.xyz2.xyz')}")
 
 if __name__ == "__main__":
     main()
