@@ -95,7 +95,14 @@ xyz_there('abc.xyz') → False
 xyz_there('xyz.abc') → True
 """
 def xyz_there(str: str) -> bool:
-    raise NotImplementedError("xyz_there not implemented yet")
+    if len(str) < 3:
+        return False
+    elif len(str) >= 4 and str.startswith(".xyz"):
+        return xyz_there(str[4:])
+    elif str.startswith("xyz"):
+        return True
+    else:
+        return xyz_there(str[1:])
 
 def main():
     HelperMethods.resetCallTimes()
