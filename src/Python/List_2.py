@@ -27,7 +27,17 @@ big_diff([7, 2, 10, 9]) → 8
 big_diff([2, 10, 7, 2]) → 8
 """
 def big_diff(nums: list[int]) -> int:
-    raise NotImplementedError("big_diff not implemented yet")
+    if len(nums) <= 1:
+        return 0
+    
+    minimum = nums[0]
+    maximum = nums[0]
+    
+    for num in nums:
+        minimum = min(minimum, num)
+        maximum = max(maximum, num)
+    
+    return maximum - minimum
 
 """
 Return the "centered" average of an array of ints, which we'll say is the mean average of the values, except ignoring the largest and smallest values in the array. If there are multiple copies of the smallest value, ignore just one copy, and likewise for the largest value. Use int division to produce the final average. You may assume that the array is length 3 or more.
