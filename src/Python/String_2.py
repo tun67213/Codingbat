@@ -44,7 +44,19 @@ cat_dog('catcat') → False
 cat_dog('1cat1cadodog') → True
 """
 def cat_dog(str: str) -> bool:
-    raise NotImplementedError("cat_dog not implemented yet")
+    catCount = 0
+    dogCount = 0
+    
+    if len(str) <= 2:
+        return True
+    
+    for i in range(0, len(str) - 2):
+        if str[i : i + 3] == "cat":
+            catCount += 1
+        if str[i : i + 3] == "dog":
+            dogCount += 1
+        
+    return catCount == dogCount
 
 """
 Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any letter for the 'd', so "cope" and "cooe" count.
