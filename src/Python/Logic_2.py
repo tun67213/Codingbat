@@ -63,7 +63,14 @@ no_teen_sum(2, 13, 1) → 3
 no_teen_sum(2, 1, 14) → 3
 """
 def no_teen_sum(a: int, b: int, c: int) -> int:
-    raise NotImplementedError("no_teen_sum not implemented yet")
+    return fix_teen(a) + fix_teen(b) + fix_teen(c)
+def _isTeen(a: int) -> bool:
+    return a >= 13 and a <= 19 and a != 15 and a != 16
+def fix_teen(n: int) -> int:
+    if _isTeen(n):
+        return 0
+    else:
+        return n
 
 """
 For this problem, we'll round an int value up to the next multiple of 10 if its rightmost digit is 5 or more, so 15 rounds up to 20. Alternately, round down to the previous multiple of 10 if its rightmost digit is less than 5, so 12 rounds down to 10. Given 3 ints, a b c, return the sum of their rounded values. To avoid code repetition, write a separate helper "def round10(num):" and call it 3 times. Write the helper entirely below and at the same indent level as round_sum().
