@@ -13,7 +13,12 @@ double_char('AAbb') → 'AAAAbbbb'
 double_char('Hi-There') → 'HHii--TThheerree'
 """
 def double_char(str: str) -> str:
-    raise NotImplementedError("double_char not implemented yet")
+    finalAnswer = ""
+    for i in range(0, len(str)):
+        characterAtPosition = str[i : i + 1]
+        finalAnswer += characterAtPosition
+        finalAnswer += characterAtPosition
+    return finalAnswer
 
 """
 Return the number of times that the string "hi" appears anywhere in the given string.
