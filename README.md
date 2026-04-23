@@ -1,12 +1,12 @@
 # CodingBat
+
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Project Structure](#project-structure)
 3. [How to Compile and Run](#how-to-compile-and-run)
-4. [Implementations](#implementations)
-    - [Java](#java)
-    - [Python](#python)
-5. [Author](#author)
+   - [Java](#java)
+   - [Python](#python)
+4. [Author](#author)
 
 ## Project Overview
 This repository contains solutions to CodingBat problems implemented in both Java and Python.  
@@ -14,28 +14,55 @@ The purpose of this project is to strengthen problem-solving skills, reinforce p
 
 Each language directory includes a `Main` file that serves as the entry point for executing and testing the implemented methods.
 
+## Project Structure
+
+This CodingBat project is structured as follows:
+
+```text
+Python/
+  ├── Warmup_1.py
+  ├── Warmup_2.py
+  ├── ...
+  └── Main.py
+
+starter/
+  └── Python/
+      ├── Warmup_1.py
+      ├── Warmup_2.py
+      └── ...
+```
+
+The Python and Java directories contain implementations of CodingBat methods.
+
+The starter directory contains unimplemented versions of those methods for practice.
+
 ## How to Compile and Run
+
 ### Using the Command Prompt
 1. Clone the repository to your local computer:
 ```bash
 git clone https://github.com/tun67213/Codingbat.git
 ```
+
 2. Navigate to the project directory:
 ```bash
 cd Codingbat
 ```
-### Using GitHub Desktop 
+
+### Using GitHub Desktop
 (Note: if GitHub Desktop is not installed, you can download it [here](https://desktop.github.com/download/).)
+
 #### From the GitHub repository page
-1. Open the repository [here](https://github.com/tun67213/Codingbat.git)
+1. Open the repository [here](https://github.com/tun67213/Codingbat)
 2. Click the "<> Code" button
 3. Ensure that "Local" is selected
 4. Do the following:
-  1. Select "Open with GitHub Desktop"
-  2. Click "Clone Repository"
+   1. Select "Open with GitHub Desktop"
+   2. Click "Clone Repository"
 5. GitHub Desktop will open automatically and begin cloning the repository.
 6. Once completed, the repository will be available on your local device.
 7. You can now proceed to the steps below.
+
 ---
 
 ### Java
