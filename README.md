@@ -16,7 +16,7 @@ Each language directory includes a `Main` file that serves as the entry point fo
 
 ## Project Structure
 
-This CodingBat project is structured as follows:
+The repository is organized as follows:
 
 ```text
 Python/
@@ -31,29 +31,29 @@ starter/
       ├── Warmup_2.py
       └── ...
 ```
+- The Python/ directory contains completed CodingBat solutions.
+- The starter/ directory contains unimplemented versions for practice.
+- Java implementations are located in a separate directory (e.g., src/Java), if included.
 
-The Python and Java directories contain implementations of CodingBat methods.
+## Setup and Run
 
-The starter directory contains unimplemented versions of those methods for practice.
+### 1. Download the Repository
 
-## How to Compile and Run
-
-### Using the Command Prompt
+#### Option A: Using the Command Prompt
 1. Clone the repository to your local computer:
 ```bash
-git clone https://github.com/tun67213/Codingbat.git
+git clone https://github.com/tun67213/CodingBat.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd Codingbat
+cd CodingBat
 ```
 
-### Using GitHub Desktop
+### Option B: Using GitHub Desktop
 (Note: if GitHub Desktop is not installed, you can download it [here](https://desktop.github.com/download/).)
 
-#### From the GitHub repository page
-1. Open the repository [here](https://github.com/tun67213/Codingbat)
+1. Open the GitHub repository: [https://github.com/tun67213/CodingBat]
 2. Click the "<> Code" button
 3. Ensure that "Local" is selected
 4. Do the following:
@@ -63,13 +63,11 @@ cd Codingbat
 6. Once completed, the repository will be available on your local device.
 7. You can now proceed to the steps below.
 
----
-
 ### Java
 Compile and run the Java implementations:
 
 ```bash
-cd Codingbat/src/Java
+cd CodingBat/src/Java
 javac Main.java
 java Main
 ```
@@ -79,9 +77,16 @@ java Main
 ### Python
 Run the Python implementations:
 
+To run all Python related implementations:
 ```bash
 cd Python
 python3 Main.py
+```
+
+To run module-specific implementations, add the file name after python3 (the following shows how to run Warmup-1 methods):
+```bash
+cd Python
+python3 Warmup_1.py
 ```
 
 For Windows users:
@@ -97,7 +102,7 @@ python Main.py
   <br/>
   <b>Arvindh Velrajan</b>
   <br/>
-  <i>Codingbat Practice Repository</i>
+  <i>CodingBat Practice Repository</i>
   <br/>
   <a href="https://github.com/tun67213">@tun67213</a>
 </p>
