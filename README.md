@@ -2,11 +2,12 @@
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. [Project Structure](#project-structure)
-3. [How to Compile and Run](#how-to-compile-and-run)
+2. [Solution Index](#solution-index)
+3. [Project Structure](#project-structure)
+4. [How to Compile and Run](#how-to-compile-and-run)
    - [Java](#java)
    - [Python](#python)
-4. [Author](#author)
+5. [Author](#author)
 
 ## Project Overview
 This repository contains solutions to CodingBat problems implemented in both Java and Python.  
@@ -14,23 +15,24 @@ The purpose of this project is to strengthen problem-solving skills, reinforce p
 
 Each language directory includes a `Main` file that serves as the entry point for executing and testing the implemented methods.
 
+## Solution Index
+For quick access to all CodingBat solutions, see the full index below:
+- [Browse All Solutions](SolutionIndex.md)
+  This index organizes solutions by language and category for easier navigation.
+
 ## Project Structure
 
 The repository is organized as follows:
 
 ```text
-Python/
-  ├── Warmup_1.py
-  ├── Warmup_2.py
-  ├── ...
-  └── Main.py
+src/
+  ├── Python/
+  └── Java/
 
 starter/
   └── Python/
-      ├── Warmup_1.py
-      ├── Warmup_2.py
-      └── ...
 ```
+
 - The Python/ directory contains completed CodingBat solutions.
 - The starter/ directory contains unimplemented versions for practice.
 - Java implementations are located in a separate directory (e.g., src/Java), if included.
