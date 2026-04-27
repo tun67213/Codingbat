@@ -2,9 +2,9 @@
 
 This page lets you quickly navigate to all CodingBat solutions in this repository.
 
-## Java 
+## Base Files
+### Java
 
-### Base Files
 #### Warmup
 - [Warmup-1](starter/Java/Warmup_1.java)
 - [Warmup-2](starter/Java/Warmup_2.java)
@@ -39,7 +39,27 @@ This page lets you quickly navigate to all CodingBat solutions in this repositor
 - [Functional-2](starter/Java/Functional_2.java)
 
 
-### Solutions
+### Python
+#### Warmup
+- [Warmup 1](starter/Python/Warmup_1.py)
+- [Warmup 2](starter/Python/Warmup_2.py)
+
+#### Strings
+- [String 1](starter/Python/String_1.py)
+- [String 2](starter/Python/String_2.py)
+
+#### List
+- [List-1](starter/Python/List_1.py)
+- [List-2](starter/Python/List_2.py)
+
+#### Logic
+- [Logic-1](starter/Python/Logic_1.py)
+- [Logic-2](starter/Python/Logic_2.py)
+
+
+## Solutions
+
+### Java
 #### Warmup
 - [Warmup-1](src/Java/src/Warmup_1.java)
 - [Warmup-2](src/Java/src/Warmup_2.java)
@@ -74,27 +94,7 @@ This page lets you quickly navigate to all CodingBat solutions in this repositor
 - [Functional-2](src/Java/src/Functional_2.java)
 
 
-## Python 
-
-### Base Files
-#### Warmup
-- [Warmup 1](starter/Python/Warmup_1.py)
-- [Warmup 2](starter/Python/Warmup_2.py)
-
-#### Strings
-- [String 1](starter/Python/String_1.py)
-- [String 2](starter/Python/String_2.py)
-
-#### List
-- [List-1](starter/Python/List_1.py)
-- [List-2](starter/Python/List_2.py)
-
-#### Logic
-- [Logic-1](starter/Python/Logic_1.py)
-- [Logic-2](starter/Python/Logic_2.py)
-
-
-### Solutions
+### Python
 #### Warmup
 - [Warmup 1](src/Python/Warmup_1.py)
 - [Warmup 2](src/Python/Warmup_2.py)
