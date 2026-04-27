@@ -30,12 +30,12 @@ src/
   └── Java/
 
 starter/
-  └── Python/
+  ├── Python/
+  └── Java/
 ```
 
-- The Python/ directory contains completed CodingBat solutions.
+- The src/ directory contains completed CodingBat solutions.
 - The starter/ directory contains unimplemented versions for practice.
-- Java implementations are located in a separate directory (e.g., src/Java), if included.
 
 ## Setup and Run
 
